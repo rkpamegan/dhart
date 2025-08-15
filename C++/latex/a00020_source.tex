@@ -74,7 +74,7 @@
 \DoxyCodeLine{\Hypertarget{a00020_source_l00107}00107 }
 \DoxyCodeLine{\Hypertarget{a00020_source_l00108}00108             \textcolor{comment}{// Check for nans. These can sometimes occur at the beginning and end of the result set}}
 \DoxyCodeLine{\Hypertarget{a00020_source_l00109}00109             \textcolor{comment}{// due to imprecision.}}
-\DoxyCodeLine{\Hypertarget{a00020_source_l00110}00110             \textcolor{keywordflow}{if} (!isnan(x) \&\& !isnan(y) \&\& !isnan(z)) \{}
+\DoxyCodeLine{\Hypertarget{a00020_source_l00110}00110             \textcolor{keywordflow}{if} (!std::isnan(x) \&\& !std::isnan(y) \&\& !std::isnan(z)) \{}
 \DoxyCodeLine{\Hypertarget{a00020_source_l00111}00111                 \textcolor{keyword}{auto} new\_point = std::array<float, 3>\{x, y, z\};}
 \DoxyCodeLine{\Hypertarget{a00020_source_l00112}00112                 \mbox{\hyperlink{a00466_a38ed3d26d2fcc4bde1790c53eda3945a}{Normalize}}(new\_point);}
 \DoxyCodeLine{\Hypertarget{a00020_source_l00113}00113                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{a00466_a94327f2628a43ffe3dc4ab854e8aa20d}{AltitudeWithinRange}}(new\_point, max\_phi, min\_phi))}

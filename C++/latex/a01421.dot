@@ -1,0 +1,18 @@
+digraph "nanort::StackAllocator&lt; T, stack_capacity &gt;"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="nanort::StackAllocator\l\< T, stack_capacity \>",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="std::allocator\< T \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="darkorchid3",style="dashed",label=" elements" ];
+  Node3 [label="T",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" source_" ];
+  Node4 [label="nanort::StackAllocator\l\< T, stack_capacity \>\l::Source",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$a01427.html",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="darkorchid3",style="dashed",label=" stack_buffer_" ];
+  Node5 [label="char",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node4 [dir="back",color="darkorchid3",style="dashed",label=" used_stack_buffer_" ];
+  Node6 [label="bool",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+}

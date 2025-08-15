@@ -1,0 +1,12 @@
+digraph "HF::SpatialStructures::EdgeCostSet"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="HF::SpatialStructures\l::EdgeCostSet",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="A set of edge costs for a graph."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" costs" ];
+  Node2 [label="std::vector\< float \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="darkorchid3",style="dashed",label=" elements" ];
+  Node3 [label="float",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+}

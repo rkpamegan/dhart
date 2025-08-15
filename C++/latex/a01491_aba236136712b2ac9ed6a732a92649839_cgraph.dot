@@ -1,0 +1,11 @@
+digraph "nanort::TriangleMesh::BoundingBox"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="nanort::TriangleMesh\l::BoundingBox",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Compute bounding box for prim_indexth triangle. This function is called for each primitive in BVH bui..."];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="nanort::get_vertex_addr",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00474.html#a91c0c4ec5d542629d67b60c3bf0e7848",tooltip=" "];
+}

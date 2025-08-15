@@ -7,14 +7,10 @@
 {\ttfamily \#include $<$graph.\+h$>$}\newline
 {\ttfamily \#include $<$path\+\_\+finder.\+h$>$}\newline
 {\ttfamily \#include $<$path.\+h$>$}\newline
+{\ttfamily \#include $<$numeric$>$}\newline
+{\ttfamily \#include $<$boost\+\_\+graph.\+h$>$}\newline
 Include dependency graph for pathfinder\+\_\+\+C.\+cpp\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a00423}
-\end{center}
-\end{figure}
+% FIG 0
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -29,4 +25,6 @@ Include dependency graph for pathfinder\+\_\+\+C.\+cpp\+:
 \mbox{\hyperlink{a00407_a91fa3b2bb3a7312ec39d74cc1fbc7bbe}{C\+\_\+\+INTERFACE}} \mbox{\hyperlink{a00456_gaba6ec6ce84974dd6a311d7d65dd34221}{Create\+All\+To\+All\+Paths}} (const \mbox{\hyperlink{a01551}{HF\+::\+Spatial\+Structures\+::\+Graph}} $\ast$g, const char $\ast$cost\+\_\+type, \mbox{\hyperlink{a02083}{HF\+::\+Spatial\+Structures\+::\+Path}} $\ast$$\ast$out\+\_\+path\+\_\+ptr\+\_\+holder, \mbox{\hyperlink{a02079}{HF\+::\+Spatial\+Structures\+::\+Path\+Member}} $\ast$$\ast$out\+\_\+path\+\_\+member\+\_\+ptr\+\_\+holder, int $\ast$out\+\_\+sizes, int num\+\_\+paths)
 \begin{DoxyCompactList}\small\item\em Find a path from every node in a graph to every other node. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{a00407_a91fa3b2bb3a7312ec39d74cc1fbc7bbe}{C\+\_\+\+INTERFACE}} \mbox{\hyperlink{a00456_ga27b1f45019ccbda909301520d1c738ca}{Calculate\+Distance\+And\+Predecessor}} (const \mbox{\hyperlink{a01551}{Graph}} $\ast$g, const char $\ast$cost\+\_\+name, vector$<$ float $>$ $\ast$$\ast$out\+\_\+dist\+\_\+vector, float $\ast$$\ast$out\+\_\+dist\+\_\+data, vector$<$ int $>$ $\ast$$\ast$out\+\_\+pred\+\_\+vector, int $\ast$$\ast$out\+\_\+pred\+\_\+data)
-\begin{DoxyCompactList}\small\item\em Calculate the distance and predecessor matricies for a graph. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Calculate the distance and predecessor matricies for a graph. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{a00407_a91fa3b2bb3a7312ec39d74cc1fbc7bbe}{C\+\_\+\+INTERFACE}} \mbox{\hyperlink{a00456_gaff8b6c35105e6a465af490691069727a}{Create\+All\+Pred\+To\+Path}} (const \mbox{\hyperlink{a01551}{Graph}} $\ast$g, const char $\ast$cost\+\_\+name, vector$<$ int $>$ $\ast$$\ast$out\+\_\+nodes\+\_\+vector, int $\ast$$\ast$out\+\_\+nodes\+\_\+data, vector$<$ int $>$ $\ast$$\ast$out\+\_\+lengths\+\_\+vector, int $\ast$$\ast$out\+\_\+lengths\+\_\+data)
+\end{DoxyCompactItemize}

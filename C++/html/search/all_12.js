@@ -42,7 +42,7 @@ var searchData=
   ['rend_39',['rend',['../a01659.html#a7a328b29b290cc300345376c54f618cb',1,'nlohmann::basic_json::rend() noexcept'],['../a01659.html#a2e4cbf41d593d41847b90aea55e5e84d',1,'nlohmann::basic_json::rend() const noexcept']]],
   ['replace_40',['replace',['../a00477.html#a5a76b60b26dc8c47256a996d18d967dfa9dde360102c103867bd2f45872f1129c',1,'nlohmann::detail']]],
   ['replace_5fsubstring_41',['replace_substring',['../a01663.html#aa7649d30da9fc10b0e20704a27aea2a9',1,'nlohmann::json_pointer']]],
-  ['repository_20walkthrough_20_28video_29_42',['Repository walkthrough (video)',['../a03531.html',1,'']]],
+  ['repository_20walkthrough_20_28video_29_42',['Repository walkthrough (video)',['../a03535.html',1,'']]],
   ['repositorywalkthrough_2emd_43',['RepositoryWalkthrough.md',['../a00170.html',1,'']]],
   ['reset_44',['reset',['../a01983.html#a3bda093837339813916d11fb6e396606',1,'nlohmann::detail::lexer']]],
   ['resizeifneeded_45',['ResizeIfNeeded',['../a01547.html#a22bf925d64a8ab8c0920d668068dc3db',1,'HF::SpatialStructures::EdgeCostSet::ResizeIfNeeded()'],['../a01551.html#a174c4c57d4849cd014ec3b1e9cc474de',1,'HF::SpatialStructures::Graph::ResizeIfNeeded()']]],
@@ -54,6 +54,8 @@ var searchData=
   ['roundhf_5ftail_51',['roundhf_tail',['../a00465.html#a0e6690272fb70b92279b9ab082a24302',1,'HF::SpatialStructures']]],
   ['roundhf_5ftmp_52',['roundhf_tmp',['../a00465.html#a5db5f0307882796fcf7cdad83cb20c65',1,'HF::SpatialStructures::roundhf_tmp(numeric_type f, numeric_type p, numeric_type r)'],['../a00465.html#a34027bdf606bd5f03f7a473c61a3a4de',1,'HF::SpatialStructures::roundhf_tmp(numeric_type f, numeric_type p)'],['../a00465.html#a863bb6ac51410385569635e0b0e08ee2',1,'HF::SpatialStructures::roundhf_tmp(numeric_type f)']]],
   ['rounding_5fprecision_53',['ROUNDING_PRECISION',['../a00465.html#a0140105869479399be75147c8f77e724',1,'HF::SpatialStructures']]],
-  ['rows_54',['rows',['../a01539.html#ab7ef161d6dfc8b606c120cbf5181ed68',1,'HF::SpatialStructures::CSRPtrs']]],
-  ['rt_5ftype_55',['RT_Type',['../a01419.html#ab55089d50434891b9fc5dcc523eb1425',1,'HF::RayTracer::MultiRT']]]
+  ['row_5fbegin_54',['row_begin',['../a01539.html#a9ca24cfb89e6aa56761ad041dbecfd56',1,'HF::SpatialStructures::CSRPtrs']]],
+  ['row_5fend_55',['row_end',['../a01539.html#ade635c77fdaf7f5ba326edad25f23202',1,'HF::SpatialStructures::CSRPtrs']]],
+  ['rows_56',['rows',['../a01539.html#ab7ef161d6dfc8b606c120cbf5181ed68',1,'HF::SpatialStructures::CSRPtrs']]],
+  ['rt_5ftype_57',['RT_Type',['../a01419.html#ab55089d50434891b9fc5dcc523eb1425',1,'HF::RayTracer::MultiRT']]]
 ];

@@ -1,7 +1,11 @@
 <map id="Cpp/spatialstructures/src/cost_algorithms.h" name="Cpp/spatialstructures/src/cost_algorithms.h">
-<area shape="rect" id="node1" title="Contains implementation for the HF::SpatialStructures::CostAlgorithms namespace." alt="" coords="37,5,187,48"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,96,61,123"/>
-<area shape="rect" id="node3" title=" " alt="" coords="85,96,138,123"/>
-<area shape="rect" id="node4" href="$a00251.html" title="Contains definitions for the HF::SpatialStructures namespace." alt="" coords="162,96,253,123"/>
-<area shape="rect" id="node5" title=" " alt="" coords="179,171,236,197"/>
+<area shape="rect" id="node1" title="Contains implementation for the HF::SpatialStructures::CostAlgorithms namespace." alt="" coords="31,5,181,48"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,171,63,197"/>
+<area shape="rect" id="node3" title=" " alt="" coords="39,96,93,123"/>
+<area shape="rect" id="node4" href="$a00263.html" title="Contains definitions for the Edge structure." alt="" coords="117,96,178,123"/>
+<area shape="rect" id="node8" href="$a00251.html" title="Contains definitions for the HF::SpatialStructures namespace." alt="" coords="201,96,291,123"/>
+<area shape="rect" id="node5" href="$a00275.html" title="Contains definitions for the Node structure." alt="" coords="117,171,178,197"/>
+<area shape="rect" id="node6" title=" " alt="" coords="80,245,130,272"/>
+<area shape="rect" id="node7" title=" " alt="" coords="154,245,223,272"/>
+<area shape="rect" id="node9" title=" " alt="" coords="217,171,275,197"/>
 </map>

@@ -12,19 +12,13 @@ A collection of nodes that form a path.
 
 
 Collaboration diagram for HF\+::Spatial\+Structures\+::Path\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=212pt]{a02081}
-\end{center}
-\end{figure}
+% FIG 0
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{a02083_a61a8a911a572d91683229a80ede5f541}{Path\+::\+Path}} ()
+\mbox{\hyperlink{a02083_a149e399da7720d11fa0fc3a5cb4d6700}{Path}} ()
 \begin{DoxyCompactList}\small\item\em Construct an empty path. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{a02083_a6d38f5fb939535a26e10ea2a969b2333}{Path\+::\+Path}} (const std\+::vector$<$ \mbox{\hyperlink{a02079}{Path\+Member}} $>$ \&pm)
+\mbox{\hyperlink{a02083_a7a3658b6f2fe18df24a96d4cf16ceb5a}{Path}} (const std\+::vector$<$ \mbox{\hyperlink{a02079}{Path\+Member}} $>$ \&pm)
 \begin{DoxyCompactList}\small\item\em Construct a path from an ordered list of Path\+Members.  \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{a02083_a55ded4e02787eb739770ebe28ef386a9}{Add\+Node}} (int node, float cost)
 \begin{DoxyCompactList}\small\item\em Add a new node to the path. \end{DoxyCompactList}\item 
@@ -51,6 +45,65 @@ std\+::vector$<$ \mbox{\hyperlink{a02079}{Path\+Member}} $>$ \mbox{\hyperlink{a0
 A collection of nodes that form a path.  
 
 Definition at line \mbox{\hyperlink{a00281_source_l00076}{76}} of file \mbox{\hyperlink{a00281_source}{path.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a02083_a149e399da7720d11fa0fc3a5cb4d6700}\label{a02083_a149e399da7720d11fa0fc3a5cb4d6700}} 
+\index{HF::SpatialStructures::Path@{HF::SpatialStructures::Path}!Path@{Path}}
+\index{Path@{Path}!HF::SpatialStructures::Path@{HF::SpatialStructures::Path}}
+\doxysubsubsection{\texorpdfstring{Path()}{Path()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily HF\+::\+Spatial\+Structures\+::\+Path\+::\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct an empty path. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// be sure to \#include "{}path.h"{}}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{a02083}{HF::SpatialStructures::Path}} path;}
+
+\end{DoxyCode}
+ 
+
+Definition at line \mbox{\hyperlink{a00281_source_l00088}{88}} of file \mbox{\hyperlink{a00281_source}{path.\+h}}.
+
+\mbox{\Hypertarget{a02083_a7a3658b6f2fe18df24a96d4cf16ceb5a}\label{a02083_a7a3658b6f2fe18df24a96d4cf16ceb5a}} 
+\index{HF::SpatialStructures::Path@{HF::SpatialStructures::Path}!Path@{Path}}
+\index{Path@{Path}!HF::SpatialStructures::Path@{HF::SpatialStructures::Path}}
+\doxysubsubsection{\texorpdfstring{Path()}{Path()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily HF\+::\+Spatial\+Structures\+::\+Path\+::\+Path (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{a02079}{Path\+Member}} $>$ \&}]{pm }\end{DoxyParamCaption})}
+
+
+
+Construct a path from an ordered list of Path\+Members.  
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// be sure to \#include "{}path.h"{}}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Create the PathMembers}}
+\DoxyCodeLine{\mbox{\hyperlink{a02079}{HF::SpatialStructures::PathMember}} p0 = \{ 3.14f, 3 \};}
+\DoxyCodeLine{\mbox{\hyperlink{a02079}{HF::SpatialStructures::PathMember}} p1 = \{ 2.78f, 2 \};}
+\DoxyCodeLine{\mbox{\hyperlink{a02079}{HF::SpatialStructures::PathMember}} p2 = \{ 1.64f, 1 \};}
+\DoxyCodeLine{\mbox{\hyperlink{a02079}{HF::SpatialStructures::PathMember}} p3 = \{ 9.35, 7 \};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Create the container of PathMembers}}
+\DoxyCodeLine{std::vector<HF::SpatialStructures::PathMember> \mbox{\hyperlink{a02083_a864cebbf4e5d7c135c501a63d42f8708}{members}}\{p0, p1, p2, p3\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Create the path, using the container of PathMembers}}
+\DoxyCodeLine{\mbox{\hyperlink{a02083}{HF::SpatialStructures::Path}} path(\mbox{\hyperlink{a02083_a864cebbf4e5d7c135c501a63d42f8708}{members}});}
+
+\end{DoxyCode}
+ 
+
+Definition at line \mbox{\hyperlink{a00278_source_l00052}{52}} of file \mbox{\hyperlink{a00278_source}{path.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{a00281_source_l00078}{members}}.
 
 
 
@@ -110,13 +163,7 @@ References \mbox{\hyperlink{a00281_source_l00078}{members}}.
 Referenced by \mbox{\hyperlink{a00203_source_l00078}{HF\+::\+Pathfinding\+::\+Construct\+Shortest\+Path\+From\+Pred()}}.
 
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a02083_a55ded4e02787eb739770ebe28ef386a9_icgraph}
-\end{center}
-\end{figure}
+% FIG 1
 \mbox{\Hypertarget{a02083_a3066bac2d76b5c8a28b35a8d1f6ace71}\label{a02083_a3066bac2d76b5c8a28b35a8d1f6ace71}} 
 \index{HF::SpatialStructures::Path@{HF::SpatialStructures::Path}!empty@{empty}}
 \index{empty@{empty}!HF::SpatialStructures::Path@{HF::SpatialStructures::Path}}
@@ -157,16 +204,10 @@ References \mbox{\hyperlink{a00281_source_l00078}{members}}.
 
 
 
-Referenced by \mbox{\hyperlink{a00422_source_l00023}{Create\+Path()}}.
+Referenced by \mbox{\hyperlink{a00422_source_l00025}{Create\+Path()}}.
 
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=291pt]{a02083_a3066bac2d76b5c8a28b35a8d1f6ace71_icgraph}
-\end{center}
-\end{figure}
+% FIG 2
 \mbox{\Hypertarget{a02083_a942cb49007bbeb5588e2d526c68bdcf9}\label{a02083_a942cb49007bbeb5588e2d526c68bdcf9}} 
 \index{HF::SpatialStructures::Path@{HF::SpatialStructures::Path}!GetPMPointer@{GetPMPointer}}
 \index{GetPMPointer@{GetPMPointer}!HF::SpatialStructures::Path@{HF::SpatialStructures::Path}}
@@ -215,16 +256,10 @@ References \mbox{\hyperlink{a00281_source_l00078}{members}}.
 
 
 
-Referenced by \mbox{\hyperlink{a00422_source_l00023}{Create\+Path()}}, \mbox{\hyperlink{a00422_source_l00115}{Get\+Path\+Info()}}, and \mbox{\hyperlink{a00203_source_l00201}{HF\+::\+Pathfinding\+::\+Insert\+Paths\+Into\+Array()}}.
+Referenced by \mbox{\hyperlink{a00422_source_l00025}{Create\+Path()}}, \mbox{\hyperlink{a00422_source_l00117}{Get\+Path\+Info()}}, and \mbox{\hyperlink{a00203_source_l00201}{HF\+::\+Pathfinding\+::\+Insert\+Paths\+Into\+Array()}}.
 
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a02083_a942cb49007bbeb5588e2d526c68bdcf9_icgraph}
-\end{center}
-\end{figure}
+% FIG 3
 \mbox{\Hypertarget{a02083_ac8cd7f5bcbaf0f399ce196c8967ae87e}\label{a02083_ac8cd7f5bcbaf0f399ce196c8967ae87e}} 
 \index{HF::SpatialStructures::Path@{HF::SpatialStructures::Path}!operator==@{operator==}}
 \index{operator==@{operator==}!HF::SpatialStructures::Path@{HF::SpatialStructures::Path}}
@@ -295,13 +330,7 @@ Definition at line \mbox{\hyperlink{a00278_source_l00028}{28}} of file \mbox{\hy
 References \mbox{\hyperlink{a00278_source_l00020}{size()}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=336pt]{a02083_ac8cd7f5bcbaf0f399ce196c8967ae87e_cgraph}
-\end{center}
-\end{figure}
+% FIG 4
 \mbox{\Hypertarget{a02083_a4bbba8e48932e990cc6d523ac628765a}\label{a02083_a4bbba8e48932e990cc6d523ac628765a}} 
 \index{HF::SpatialStructures::Path@{HF::SpatialStructures::Path}!operator\mbox{[}\mbox{]}@{operator[]}}
 \index{operator\mbox{[}\mbox{]}@{operator[]}!HF::SpatialStructures::Path@{HF::SpatialStructures::Path}}
@@ -358,55 +387,7 @@ Definition at line \mbox{\hyperlink{a00278_source_l00048}{48}} of file \mbox{\hy
 
 References \mbox{\hyperlink{a00281_source_l00078}{members}}.
 
-\mbox{\Hypertarget{a02083_a61a8a911a572d91683229a80ede5f541}\label{a02083_a61a8a911a572d91683229a80ede5f541}} 
-\index{HF::SpatialStructures::Path@{HF::SpatialStructures::Path}!Path::Path@{Path::Path}}
-\index{Path::Path@{Path::Path}!HF::SpatialStructures::Path@{HF::SpatialStructures::Path}}
-\doxysubsubsection{\texorpdfstring{Path::Path()}{Path::Path()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily HF\+::\+Spatial\+Structures\+::\+Path\+::\+Path\+::\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-Construct an empty path. 
-
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{\textcolor{comment}{// be sure to \#include "{}path.h"{}}}
-\DoxyCodeLine{}
-\DoxyCodeLine{\mbox{\hyperlink{a02083}{HF::SpatialStructures::Path}} path;}
-
-\end{DoxyCode}
- 
-
-Definition at line \mbox{\hyperlink{a00281_source_l00088}{88}} of file \mbox{\hyperlink{a00281_source}{path.\+h}}.
-
-\mbox{\Hypertarget{a02083_a6d38f5fb939535a26e10ea2a969b2333}\label{a02083_a6d38f5fb939535a26e10ea2a969b2333}} 
-\index{HF::SpatialStructures::Path@{HF::SpatialStructures::Path}!Path::Path@{Path::Path}}
-\index{Path::Path@{Path::Path}!HF::SpatialStructures::Path@{HF::SpatialStructures::Path}}
-\doxysubsubsection{\texorpdfstring{Path::Path()}{Path::Path()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily HF\+::\+Spatial\+Structures\+::\+Path\+::\+Path\+::\+Path (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{a02079}{Path\+Member}} $>$ \&}]{pm }\end{DoxyParamCaption})}
-
-
-
-Construct a path from an ordered list of Path\+Members.  
-
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{\textcolor{comment}{// be sure to \#include "{}path.h"{}}}
-\DoxyCodeLine{}
-\DoxyCodeLine{\textcolor{comment}{// Create the PathMembers}}
-\DoxyCodeLine{\mbox{\hyperlink{a02079}{HF::SpatialStructures::PathMember}} p0 = \{ 3.14f, 3 \};}
-\DoxyCodeLine{\mbox{\hyperlink{a02079}{HF::SpatialStructures::PathMember}} p1 = \{ 2.78f, 2 \};}
-\DoxyCodeLine{\mbox{\hyperlink{a02079}{HF::SpatialStructures::PathMember}} p2 = \{ 1.64f, 1 \};}
-\DoxyCodeLine{\mbox{\hyperlink{a02079}{HF::SpatialStructures::PathMember}} p3 = \{ 9.35, 7 \};}
-\DoxyCodeLine{}
-\DoxyCodeLine{\textcolor{comment}{// Create the container of PathMembers}}
-\DoxyCodeLine{std::vector<HF::SpatialStructures::PathMember> \mbox{\hyperlink{a02083_a864cebbf4e5d7c135c501a63d42f8708}{members}}\{p0, p1, p2, p3\};}
-\DoxyCodeLine{}
-\DoxyCodeLine{\textcolor{comment}{// Create the path, using the container of PathMembers}}
-\DoxyCodeLine{\mbox{\hyperlink{a02083}{HF::SpatialStructures::Path}} path(\mbox{\hyperlink{a02083_a864cebbf4e5d7c135c501a63d42f8708}{members}});}
-
-\end{DoxyCode}
- \mbox{\Hypertarget{a02083_adf2bad9ac73dbdc436c365654d54ad98}\label{a02083_adf2bad9ac73dbdc436c365654d54ad98}} 
+\mbox{\Hypertarget{a02083_adf2bad9ac73dbdc436c365654d54ad98}\label{a02083_adf2bad9ac73dbdc436c365654d54ad98}} 
 \index{HF::SpatialStructures::Path@{HF::SpatialStructures::Path}!Reverse@{Reverse}}
 \index{Reverse@{Reverse}!HF::SpatialStructures::Path@{HF::SpatialStructures::Path}}
 \doxysubsubsection{\texorpdfstring{Reverse()}{Reverse()}}
@@ -451,13 +432,7 @@ References \mbox{\hyperlink{a00281_source_l00078}{members}}.
 Referenced by \mbox{\hyperlink{a00203_source_l00078}{HF\+::\+Pathfinding\+::\+Construct\+Shortest\+Path\+From\+Pred()}}.
 
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a02083_adf2bad9ac73dbdc436c365654d54ad98_icgraph}
-\end{center}
-\end{figure}
+% FIG 5
 \mbox{\Hypertarget{a02083_a28f61f0f57b38a5249a11a725d9d692b}\label{a02083_a28f61f0f57b38a5249a11a725d9d692b}} 
 \index{HF::SpatialStructures::Path@{HF::SpatialStructures::Path}!size@{size}}
 \index{size@{size}!HF::SpatialStructures::Path@{HF::SpatialStructures::Path}}
@@ -504,16 +479,10 @@ References \mbox{\hyperlink{a00281_source_l00078}{members}}.
 
 
 
-Referenced by \mbox{\hyperlink{a00203_source_l00078}{HF\+::\+Pathfinding\+::\+Construct\+Shortest\+Path\+From\+Pred()}}, \mbox{\hyperlink{a00422_source_l00023}{Create\+Path()}}, \mbox{\hyperlink{a00422_source_l00115}{Get\+Path\+Info()}}, \mbox{\hyperlink{a00203_source_l00201}{HF\+::\+Pathfinding\+::\+Insert\+Paths\+Into\+Array()}}, \mbox{\hyperlink{a00281_source_l00344}{std\+::operator$<$$<$()}}, and \mbox{\hyperlink{a00278_source_l00028}{operator==()}}.
+Referenced by \mbox{\hyperlink{a00203_source_l00078}{HF\+::\+Pathfinding\+::\+Construct\+Shortest\+Path\+From\+Pred()}}, \mbox{\hyperlink{a00422_source_l00025}{Create\+Path()}}, \mbox{\hyperlink{a00422_source_l00117}{Get\+Path\+Info()}}, \mbox{\hyperlink{a00203_source_l00201}{HF\+::\+Pathfinding\+::\+Insert\+Paths\+Into\+Array()}}, \mbox{\hyperlink{a00281_source_l00344}{std\+::operator$<$$<$()}}, and \mbox{\hyperlink{a00278_source_l00028}{operator==()}}.
 
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a02083_a28f61f0f57b38a5249a11a725d9d692b_icgraph}
-\end{center}
-\end{figure}
+% FIG 6
 
 
 \doxysubsection{Member Data Documentation}
@@ -533,7 +502,7 @@ Definition at line \mbox{\hyperlink{a00281_source_l00078}{78}} of file \mbox{\hy
 
 
 
-Referenced by \mbox{\hyperlink{a00278_source_l00012}{Add\+Node()}}, \mbox{\hyperlink{a00278_source_l00016}{empty()}}, \mbox{\hyperlink{a00278_source_l00056}{Get\+PMPointer()}}, \mbox{\hyperlink{a00278_source_l00048}{operator\mbox{[}$\,$\mbox{]}()}}, \mbox{\hyperlink{a00278_source_l00024}{Reverse()}}, and \mbox{\hyperlink{a00278_source_l00020}{size()}}.
+Referenced by \mbox{\hyperlink{a00278_source_l00052}{Path()}}, \mbox{\hyperlink{a00278_source_l00012}{Add\+Node()}}, \mbox{\hyperlink{a00278_source_l00016}{empty()}}, \mbox{\hyperlink{a00278_source_l00056}{Get\+PMPointer()}}, \mbox{\hyperlink{a00278_source_l00048}{operator\mbox{[}$\,$\mbox{]}()}}, \mbox{\hyperlink{a00278_source_l00024}{Reverse()}}, and \mbox{\hyperlink{a00278_source_l00020}{size()}}.
 
 
 

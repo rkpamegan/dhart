@@ -1,0 +1,31 @@
+digraph "HF::GraphGenerator::CompareCheckConnections"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="HF::GraphGenerator\l::CompareCheckConnections",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="HF::GraphGenerator\l::CastToReal",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00463.html#a73b53db067a504d36e9481dfe3326b60",tooltip="Cast an input value to real_t using static cast."];
+  Node1 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="HF::GraphGenerator\l::CastToReal3",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00463.html#a58892abe1152c28d26d3ca749c99ea4d",tooltip="Cast an array of 3 values to the graph_generator's real_3 type."];
+  Node3 -> Node2 [color="steelblue1",style="solid"];
+  Node1 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="HF::GraphGenerator\l::CheckConnection",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00463.html#a260a25e02193ce904849ee090daefa2e",tooltip="Determine what kind of step (if any) is between parent and child, given that a connection was verifie..."];
+  Node4 -> Node5 [color="steelblue1",style="solid"];
+  Node5 [label="HF::GraphGenerator\l::OcclusionCheck",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00463.html#ace66c1b60785c32433402f012019ab81",tooltip="Determine if there is a valid line of sight between parent and child."];
+  Node5 -> Node6 [color="steelblue1",style="solid"];
+  Node6 [label="HF::GraphGenerator\l::DirectionTo",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00463.html#a750afc15c798c79a8b6a0784ed092f3c",tooltip="Calculate the normalized direction from one node to another."];
+  Node6 -> Node7 [color="steelblue1",style="solid"];
+  Node7 [label="HF::GraphGenerator\l::Normalize",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00463.html#ad2e09e0825a1db4fc511907179eddf00",tooltip="Normalize a vector."];
+  Node5 -> Node8 [color="steelblue1",style="solid"];
+  Node8 [label="HF::GraphGenerator\l::DistanceTo",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00463.html#a7f96186b8f24f878404d1feccf2f64db",tooltip="Calculate the distance between two nodes."];
+  Node5 -> Node9 [color="steelblue1",style="solid"];
+  Node9 [label="HF::RayTracer::MultiRT\l::Occluded",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01419.html#a22ebf97e859ef651e81deb40b74f668f",tooltip=" "];
+  Node9 -> Node9 [color="steelblue1",style="solid"];
+  Node1 -> Node10 [color="steelblue1",style="solid"];
+  Node10 [label="HF::SpatialStructures\l::Graph::NodeFromID",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01551.html#a794c342603cefb342fdc698ba539b25f",tooltip="Retrieve the node that corresponds to id."];
+  Node1 -> Node11 [color="steelblue1",style="solid"];
+  Node11 [label="HF::SpatialStructures\l::Graph::Nodes",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01551.html#aa70347b8a33b57c6f0a72d6eca4248d7",tooltip="Get a list of nodes from the graph sorted by ID."];
+}

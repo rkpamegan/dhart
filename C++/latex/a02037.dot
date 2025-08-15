@@ -1,0 +1,12 @@
+digraph "nlohmann::detail::binary_writer&lt; BasicJsonType, CharType &gt;"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="nlohmann::detail::binary\l_writer\< BasicJsonType,\l CharType \>",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="serialization to CBOR and MessagePack values"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" is_little_endian" ];
+  Node2 [label="bool",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" oa" ];
+  Node3 [label="output_adapter_t\< CharType \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+}

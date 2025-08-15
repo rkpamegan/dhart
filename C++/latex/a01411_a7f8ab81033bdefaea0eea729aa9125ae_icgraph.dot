@@ -1,0 +1,13 @@
+digraph "HF::RayTracer::EmbreeRayTracer::IntersectOutputArguments"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="HF::RayTracer::EmbreeRay\lTracer::IntersectOutputArguments",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Cast a ray from origin in direction and update the parameters instead of returning a hitstruct."];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="CastRaysDistance",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00457.html#ga81a505c14bba3bed1515384b209b3422",tooltip="Cast rays for each node in origins/directions as ordered pairs and get distance back as a result."];
+  Node1 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="CastSingleRayDistance",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00457.html#ga1377ba0807c3141ef68b1c94682853e6",tooltip="Cast a single ray and get the distance to its hit and the mesh ID if it hit anything...."];
+}

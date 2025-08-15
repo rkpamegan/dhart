@@ -1,0 +1,11 @@
+digraph "HF::RayTracer::EmbreeRayTracer::Occlusions"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="HF::RayTracer::EmbreeRay\lTracer::Occlusions",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Cast multiple occlusion rays in parallel."];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="CastOcclusionRays",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00457.html#gad1ec557a577507e2da4dfcb0717ea05c",tooltip="Cast one or more occlusion rays in parallel."];
+}

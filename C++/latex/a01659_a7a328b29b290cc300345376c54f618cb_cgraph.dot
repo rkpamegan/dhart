@@ -1,0 +1,17 @@
+digraph "nlohmann::basic_json::rend"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="nlohmann::basic_json\l::rend",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="returns an iterator to the reverse-end"];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="nlohmann::basic_json\l::begin",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01659.html#a23b495b4c282e4afacf382f5b49af7c7",tooltip="returns an iterator to the first element"];
+  Node2 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="nlohmann::detail::iter\l_impl::set_begin",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a02011.html#a5d5f92c7f6848814bc82cf7e4e541820",tooltip="set the iterator to the first value"];
+  Node3 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="nlohmann::detail::primitive\l_iterator_t::set_begin",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a02003.html#a9d9b005906106e12aed738f97d7fee42",tooltip="set iterator to a defined beginning"];
+  Node3 -> Node5 [color="steelblue1",style="solid"];
+  Node5 [label="nlohmann::detail::primitive\l_iterator_t::set_end",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a02003.html#ad26a823483846a12d890c3feed3097eb",tooltip="set iterator to a defined past the end"];
+}

@@ -1,0 +1,5 @@
+<map id="HF::SpatialStructures::Graph::AlternateCostsAlongPath" name="HF::SpatialStructures::Graph::AlternateCostsAlongPath">
+<area shape="rect" id="node1" title="Computes an alternate cost type between nodes along a path." alt="" coords="270,23,489,65"/>
+<area shape="rect" id="node2" href="$a00458.html#ga2adf501db7a52d3a210f7020d4ecad13" title="Get the alternate costs of traversing a given path." alt="" coords="12,5,215,32"/>
+<area shape="rect" id="node3" href="$a00458.html#gad96687ba2fee8a0792a91d4d36588908" title="Get the alternate costs of traversing a given path." alt="" coords="5,56,222,83"/>
+</map>

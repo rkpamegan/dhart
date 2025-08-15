@@ -1,0 +1,13 @@
+digraph "ClearGraph"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="ClearGraph",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Clear the nodes/edges for the given graph, or clear a specific cost type."];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="HF::SpatialStructures\l::Graph::Clear",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01551.html#a994dbd15119eb6548d2e15f4de4b88a6",tooltip="Clear all nodes and edges from the graph."];
+  Node1 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="HF::SpatialStructures\l::Graph::ClearCostArrays",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01551.html#a8f51b29e611c7bb59a0f4242d6e01c73",tooltip="Clear one or more cost arrays from the graph."];
+}

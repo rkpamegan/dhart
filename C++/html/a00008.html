@@ -108,7 +108,8 @@ $(document).ready(function(){initNavTree('a00008.html',''); initResizable(); });
 <code>#include &lt;set&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;array&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00275_source.html">Node.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00275_source.html">node.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00269_source.html">graph.h</a>&gt;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;variant&gt;</code><br />
 <code>#include &lt;<a class="el" href="a00224_source.html">MultiRT.h</a>&gt;</code><br />
@@ -118,7 +119,7 @@ $(document).ready(function(){initNavTree('a00008.html',''); initResizable(); });
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00009.svg" width="754" height="203"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00009.svg" width="1120" height="352"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -126,7 +127,7 @@ $(document).ready(function(){initNavTree('a00008.html',''); initResizable(); });
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00010.svg" width="502" height="144"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00010.svg" width="504" height="144"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -242,9 +243,20 @@ Functions</h2></td></tr>
 <tr class="memitem:a4b7cc0ad0002975404acef5064f4f546"><td class="memItemLeft" align="right" valign="top">std::vector&lt; real3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00463.html#a4b7cc0ad0002975404acef5064f4f546">HF::GraphGenerator::CheckChildren</a> (const real3 &amp;parent, const std::vector&lt; real3 &gt; &amp;possible_children, RayTracer &amp;rt, const GraphParams &amp;params)</td></tr>
 <tr class="memdesc:a4b7cc0ad0002975404acef5064f4f546"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether children are over valid ground, and and meet upstep/downstep requirements.  <a href="a00463.html#a4b7cc0ad0002975404acef5064f4f546">More...</a><br /></td></tr>
 <tr class="separator:a4b7cc0ad0002975404acef5064f4f546"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a260a25e02193ce904849ee090daefa2e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00465.html#af0378d900074d484ba791d4317e5935e">HF::SpatialStructures::STEP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00463.html#a260a25e02193ce904849ee090daefa2e">HF::GraphGenerator::CheckConnection</a> (const real3 &amp;parent, const real3 &amp;child, RayTracer &amp;rt)</td></tr>
+<tr class="memdesc:a260a25e02193ce904849ee090daefa2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine what kind of step (if any) is between parent and child, given that a connection was verified using the graph generator.  <a href="a00463.html#a260a25e02193ce904849ee090daefa2e">More...</a><br /></td></tr>
+<tr class="separator:a260a25e02193ce904849ee090daefa2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeab1db37b5aa614235f109d5dd9711a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00465.html#af0378d900074d484ba791d4317e5935e">HF::SpatialStructures::STEP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00463.html#aeab1db37b5aa614235f109d5dd9711a9">HF::GraphGenerator::CheckConnection</a> (const real3 &amp;parent, const real3 &amp;child, RayTracer &amp;rt, const GraphParams &amp;params)</td></tr>
 <tr class="memdesc:aeab1db37b5aa614235f109d5dd9711a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine what kind of step (if any) is between parent and child.  <a href="a00463.html#aeab1db37b5aa614235f109d5dd9711a9">More...</a><br /></td></tr>
 <tr class="separator:aeab1db37b5aa614235f109d5dd9711a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a176c58b25fb5cb545d17128d4535f921"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01535.html">HF::SpatialStructures::EdgeSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00463.html#a176c58b25fb5cb545d17128d4535f921">HF::GraphGenerator::CalculateStepType</a> (const <a class="el" href="a00465.html#a01543">HF::SpatialStructures::Subgraph</a> &amp;sg, <a class="el" href="a01419.html">HF::RayTracer::MultiRT</a> &amp;rt)</td></tr>
+<tr class="separator:a176c58b25fb5cb545d17128d4535f921"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81398de53e151ae58b206523e555309e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="a01535.html">HF::SpatialStructures::EdgeSet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00463.html#a81398de53e151ae58b206523e555309e">HF::GraphGenerator::CalculateStepType</a> (const <a class="el" href="a01551.html">HF::SpatialStructures::Graph</a> &amp;g, <a class="el" href="a01419.html">HF::RayTracer::MultiRT</a> &amp;rt)</td></tr>
+<tr class="separator:a81398de53e151ae58b206523e555309e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0251caf5a32eb2c1f9d846d88eb7fe22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00463.html#a0251caf5a32eb2c1f9d846d88eb7fe22">HF::GraphGenerator::CalculateAndStoreStepType</a> (<a class="el" href="a01551.html">HF::SpatialStructures::Graph</a> &amp;g, <a class="el" href="a01419.html">HF::RayTracer::MultiRT</a> &amp;rt)</td></tr>
+<tr class="separator:a0251caf5a32eb2c1f9d846d88eb7fe22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d2ad6de2131b1a90a80f901ac8dd185"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00463.html#a5d2ad6de2131b1a90a80f901ac8dd185">HF::GraphGenerator::CompareCheckConnections</a> (<a class="el" href="a01551.html">HF::SpatialStructures::Graph</a> &amp;g, RayTracer &amp;rt, const GraphParams &amp;params, std::vector&lt; <a class="el" href="a01535.html">HF::SpatialStructures::EdgeSet</a> &gt; to_compare)</td></tr>
+<tr class="separator:a5d2ad6de2131b1a90a80f901ac8dd185"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace66c1b60785c32433402f012019ab81"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00463.html#ace66c1b60785c32433402f012019ab81">HF::GraphGenerator::OcclusionCheck</a> (const real3 &amp;parent, const real3 &amp;child, RayTracer &amp;RT)</td></tr>
 <tr class="memdesc:ace66c1b60785c32433402f012019ab81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if there is a valid line of sight between parent and child.  <a href="a00463.html#ace66c1b60785c32433402f012019ab81">More...</a><br /></td></tr>
 <tr class="separator:ace66c1b60785c32433402f012019ab81"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -281,13 +293,13 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <div class="textblock"><p >Various parameters to set the precision of certain parts of the graph generator. </p>
 
-<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00111">111</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00114">114</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
 </div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for HF::GraphGenerator::Precision:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a01293.svg" width="162" height="176"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01293.svg" width="163" height="176"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="fieldtable">
@@ -327,13 +339,13 @@ node_z</td>
 </div><div class="memdoc">
 <div class="textblock"><p >Holds parameters for the <a class="el" href="a01311.html" title="Generate a graph of accessible space from a given start point.">GraphGenerator</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00255">255</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00258">258</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
 </div><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Collaboration diagram for HF::GraphGenerator::GraphParams:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a01301.svg" width="463" height="411"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01301.svg" width="466" height="411"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="fieldtable">

@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('a01311.html',''); initResizable(); });
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a01309.svg" width="1234" height="496"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01309.svg" width="1242" height="496"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -165,7 +165,7 @@ Public Attributes</h2></td></tr>
 <p >The Graph Generator maps out "accessible" space on a model from a given starting point. In graphs created by this algorithm, node represents a point in space that a human can occupy, and each edge between nodes indicates that a human can traverse from one node to another node. The Graph Generator is a powerful tool for analyzing space, since the graph or nodes it outputs can be used as input to all the analysis methods offered by DHARTAPI, allowing for it to be the starting point of other analysis methods within DHARTAPI.</p>
 <dl class="section note"><dt>Note</dt><dd>All arguments are in meters for distances and degrees for angles unless otherwise specified. For all calculations, the Graph Generator assumes geometry is Z-Up i.e. upstep is how high the step is in the z-direction, ground checks are performed in the -z direction etc. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00344">344</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00347">347</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="afd9c31d0470d6e401949b91669029341" name="afd9c31d0470d6e401949b91669029341"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afd9c31d0470d6e401949b91669029341">&#9670;&#160;</a></span>GraphGenerator() <span class="overload">[1/3]</span></h2>
@@ -306,13 +306,13 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="a00005_source.html#l00063">63</a> of file <a class="el" href="a00005_source.html">graph_generator.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="a00008_source.html#l00261">HF::GraphGenerator::GraphParams::geom_ids</a>, <a class="el" href="a00008_source.html#l00354">params</a>, <a class="el" href="a00008_source.html#l00356">ray_tracer</a>, and <a class="el" href="a00008_source.html#l00200">HF::GraphGenerator::GeometryFlagMap::SetGeometryIds()</a>.</p>
+<p class="reference">References <a class="el" href="a00008_source.html#l00264">HF::GraphGenerator::GraphParams::geom_ids</a>, <a class="el" href="a00008_source.html#l00357">params</a>, <a class="el" href="a00008_source.html#l00359">ray_tracer</a>, and <a class="el" href="a00008_source.html#l00203">HF::GraphGenerator::GeometryFlagMap::SetGeometryIds()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a01311_a804c4c9a8169aa9901cb32ee0f64c555_cgraph.svg" width="770" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01311_a804c4c9a8169aa9901cb32ee0f64c555_cgraph.svg" width="772" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -455,11 +455,11 @@ template&lt;typename node_type , typename node2_type , typename up_step_type , t
 <div class="line">    </div>
 <div class="ttc" id="aa00469_html_a06c0c11adb62f8b204e42f75ac1990ac"><div class="ttname"><a href="a00469.html#a06c0c11adb62f8b204e42f75ac1990ac">HF::Geometry::LoadMeshObjects</a></div><div class="ttdeci">vector&lt; MeshInfo&lt; float &gt; &gt; LoadMeshObjects(std::string path, GROUP_METHOD gm, bool change_coords, int scale)</div><div class="ttdoc">Create MeshInfo instances from the OBJ at path.</div><div class="ttdef"><b>Definition:</b> <a href="a00188_source.html#l00195">objloader.cpp:195</a></div></div>
 <div class="ttc" id="aa00469_html_aa9f0bc5275641fe23f6a7d760751bbc5a1f09cac4eec7512c5db99bd1c050ee1e"><div class="ttname"><a href="a00469.html#aa9f0bc5275641fe23f6a7d760751bbc5a1f09cac4eec7512c5db99bd1c050ee1e">HF::Geometry::ONLY_FILE</a></div><div class="ttdeci">@ ONLY_FILE</div><div class="ttdoc">Treat all the geometry in the file as a single mesh.</div><div class="ttdef"><b>Definition:</b> <a href="a00191_source.html#l00065">objloader.h:65</a></div></div>
-<div class="ttc" id="aa01311_html_a5801e0e8dbaaa13ccab14ff0cae69de0"><div class="ttname"><a href="a01311.html#a5801e0e8dbaaa13ccab14ff0cae69de0">HF::GraphGenerator::GraphGenerator::ray_tracer</a></div><div class="ttdeci">RayTracer ray_tracer</div><div class="ttdoc">A pointer to the raytracer to use for ray intersections.</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00356">graph_generator.h:356</a></div></div>
-<div class="ttc" id="aa01411_html"><div class="ttname"><a href="a01411.html">HF::RayTracer::EmbreeRayTracer</a></div><div class="ttdoc">A wrapper for Intel's Embree Library.</div><div class="ttdef"><b>Definition:</b> <a href="a00212_source.html#l00080">embree_raytracer.h:80</a></div></div>
+<div class="ttc" id="aa01311_html_a5801e0e8dbaaa13ccab14ff0cae69de0"><div class="ttname"><a href="a01311.html#a5801e0e8dbaaa13ccab14ff0cae69de0">HF::GraphGenerator::GraphGenerator::ray_tracer</a></div><div class="ttdeci">RayTracer ray_tracer</div><div class="ttdoc">A pointer to the raytracer to use for ray intersections.</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00359">graph_generator.h:359</a></div></div>
+<div class="ttc" id="aa01411_html"><div class="ttname"><a href="a01411.html">HF::RayTracer::EmbreeRayTracer</a></div><div class="ttdoc">A wrapper for Intel's Embree Library.</div><div class="ttdef"><b>Definition:</b> <a href="a00212_source.html#l00083">embree_raytracer.h:83</a></div></div>
 </div><!-- fragment --> <div class="fragment"><div class="line">    </div>
 <div class="line">    <span class="comment">// Create a graphgenerator using the raytracer we just created</span></div>
-<div class="line">    <a class="code hl_class" href="a01311.html">HF::GraphGenerator::GraphGenerator</a> GG = <a class="code hl_class" href="a01311.html">GraphGenerator::GraphGenerator</a>(<a class="code hl_variable" href="a01311.html#a5801e0e8dbaaa13ccab14ff0cae69de0">ray_tracer</a>);</div>
+<div class="line">    <a class="code hl_class" href="a01311.html">HF::GraphGenerator::GraphGenerator</a> GG(<a class="code hl_variable" href="a01311.html#a5801e0e8dbaaa13ccab14ff0cae69de0">ray_tracer</a>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Setup Graph Parameters</span></div>
 <div class="line">    std::array&lt;float, 3&gt; start_point{ 0,0,0.25 };</div>
@@ -471,7 +471,7 @@ template&lt;typename node_type , typename node2_type , typename up_step_type , t
 <div class="line">    <span class="keywordtype">int</span> <a class="code hl_variable" href="a01311.html#aa04d1ae908956afc43e540b0cc6849f7">min_connections</a> = 1;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Generate the graph using our parameters</span></div>
-<div class="line">    <a class="code hl_class" href="a01551.html">HF::SpatialStructures::Graph</a> g = GG.<a class="code hl_function" href="a01311.html#a0c12341433bbec41cc12cc1dbb41a976">BuildNetwork</a>(</div>
+<div class="line">    <a class="code hl_class" href="a01551.html">HF::SpatialStructures::Graph</a> g = GG.BuildNetwork(</div>
 <div class="line">        start_point,</div>
 <div class="line">        <a class="code hl_variable" href="a01311.html#a9aba1df499733b653dff3ec59bf3871f">spacing</a>,</div>
 <div class="line">        <a class="code hl_variable" href="a01311.html#a6afac9c527d8483943ef61e9e9a1ca15">max_nodes</a>,</div>
@@ -481,12 +481,11 @@ template&lt;typename node_type , typename node2_type , typename up_step_type , t
 <div class="line">        <a class="code hl_variable" href="a01311.html#aa04d1ae908956afc43e540b0cc6849f7">min_connections</a></div>
 <div class="line">    );</div>
 <div class="line"> </div>
-<div class="ttc" id="aa01311_html"><div class="ttname"><a href="a01311.html">HF::GraphGenerator::GraphGenerator</a></div><div class="ttdoc">Generate a graph of accessible space from a given start point.</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00344">graph_generator.h:345</a></div></div>
-<div class="ttc" id="aa01311_html_a0c12341433bbec41cc12cc1dbb41a976"><div class="ttname"><a href="a01311.html#a0c12341433bbec41cc12cc1dbb41a976">HF::GraphGenerator::GraphGenerator::BuildNetwork</a></div><div class="ttdeci">SpatialStructures::Graph BuildNetwork(const node_type &amp;start_point, const node2_type &amp;Spacing, int MaxNodes, up_step_type UpStep, up_slope_type UpSlope, down_step_type DownStep, down_slope_type DownSlope, int max_step_connections, int min_connections=1, int cores=-1, z_precision_type node_z_precision=default_z_precision, connect_offset_type node_spacing_precision=default_spacing_precision, spacing_precision_type ground_offset=default_ground_offset)</div><div class="ttdoc">Generate a graph of accessible space.</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00464">graph_generator.h:464</a></div></div>
-<div class="ttc" id="aa01311_html_a6afac9c527d8483943ef61e9e9a1ca15"><div class="ttname"><a href="a01311.html#a6afac9c527d8483943ef61e9e9a1ca15">HF::GraphGenerator::GraphGenerator::max_nodes</a></div><div class="ttdeci">int max_nodes</div><div class="ttdoc">Maximum number of nodes to generate. If less than zero, generate nodes without a limit.</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00347">graph_generator.h:347</a></div></div>
-<div class="ttc" id="aa01311_html_a9aba1df499733b653dff3ec59bf3871f"><div class="ttname"><a href="a01311.html#a9aba1df499733b653dff3ec59bf3871f">HF::GraphGenerator::GraphGenerator::spacing</a></div><div class="ttdeci">real3 spacing</div><div class="ttdoc">Spacing between nodes. New nodes will be generated with atleast this much distance between them.</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00352">graph_generator.h:352</a></div></div>
-<div class="ttc" id="aa01311_html_aa04d1ae908956afc43e540b0cc6849f7"><div class="ttname"><a href="a01311.html#aa04d1ae908956afc43e540b0cc6849f7">HF::GraphGenerator::GraphGenerator::min_connections</a></div><div class="ttdeci">int min_connections</div><div class="ttdoc">Minimum number of step connections for a node to be valid (minimum out degree of node)</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00350">graph_generator.h:350</a></div></div>
-<div class="ttc" id="aa01551_html"><div class="ttname"><a href="a01551.html">HF::SpatialStructures::Graph</a></div><div class="ttdoc">A Graph of nodes connected by edges that supports both integers and HF::SpatialStructures::Node.</div><div class="ttdef"><b>Definition:</b> <a href="a00269_source.html#l00486">graph.h:486</a></div></div>
+<div class="ttc" id="aa01311_html"><div class="ttname"><a href="a01311.html">HF::GraphGenerator::GraphGenerator</a></div><div class="ttdoc">Generate a graph of accessible space from a given start point.</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00347">graph_generator.h:348</a></div></div>
+<div class="ttc" id="aa01311_html_a6afac9c527d8483943ef61e9e9a1ca15"><div class="ttname"><a href="a01311.html#a6afac9c527d8483943ef61e9e9a1ca15">HF::GraphGenerator::GraphGenerator::max_nodes</a></div><div class="ttdeci">int max_nodes</div><div class="ttdoc">Maximum number of nodes to generate. If less than zero, generate nodes without a limit.</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00350">graph_generator.h:350</a></div></div>
+<div class="ttc" id="aa01311_html_a9aba1df499733b653dff3ec59bf3871f"><div class="ttname"><a href="a01311.html#a9aba1df499733b653dff3ec59bf3871f">HF::GraphGenerator::GraphGenerator::spacing</a></div><div class="ttdeci">real3 spacing</div><div class="ttdoc">Spacing between nodes. New nodes will be generated with atleast this much distance between them.</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00355">graph_generator.h:355</a></div></div>
+<div class="ttc" id="aa01311_html_aa04d1ae908956afc43e540b0cc6849f7"><div class="ttname"><a href="a01311.html#aa04d1ae908956afc43e540b0cc6849f7">HF::GraphGenerator::GraphGenerator::min_connections</a></div><div class="ttdeci">int min_connections</div><div class="ttdoc">Minimum number of step connections for a node to be valid (minimum out degree of node)</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00353">graph_generator.h:353</a></div></div>
+<div class="ttc" id="aa01551_html"><div class="ttname"><a href="a01551.html">HF::SpatialStructures::Graph</a></div><div class="ttdoc">A Graph of nodes connected by edges that supports both integers and HF::SpatialStructures::Node.</div><div class="ttdef"><b>Definition:</b> <a href="a00269_source.html#l00490">graph.h:490</a></div></div>
 </div><!-- fragment --> <div class="fragment"><div class="line">    </div>
 <div class="line">    <span class="comment">// Get nodes from the graph</span></div>
 <div class="line">    <span class="keyword">auto</span> nodes = g.<a class="code hl_function" href="a01551.html#aa70347b8a33b57c6f0a72d6eca4248d7">Nodes</a>();</div>
@@ -504,9 +503,9 @@ template&lt;typename node_type , typename node2_type , typename up_step_type , t
 <div class="ttc" id="aa01551_html_aa70347b8a33b57c6f0a72d6eca4248d7"><div class="ttname"><a href="a01551.html#aa70347b8a33b57c6f0a72d6eca4248d7">HF::SpatialStructures::Graph::Nodes</a></div><div class="ttdeci">std::vector&lt; Node &gt; Nodes() const</div><div class="ttdoc">Get a list of nodes from the graph sorted by ID.</div></div>
 </div><!-- fragment --> <code>[(0, 0, -0),(-1, -1, -0),(-1, 0, -0),(-1, 1, 0),(0, -1, -0),(0, 1, 0),(1, -1, -0),(1, 0, -0),(1, 1, 0),(-2, -2, -0),(-2, -1, -0),(-2, 0, -0),(-1, -2, -0),(0, -2, -0),(-2, 1, 0),(-2, 2, 0),(-1, 2, 0),(0, 2, 0),(1, -2, -0)]</code> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00464">464</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00467">467</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
 
-<p class="reference">References <a class="el" href="a00008_source.html#l00091">HF::GraphGenerator::CastToReal()</a>, <a class="el" href="a00008_source.html#l00104">HF::GraphGenerator::CastToReal3()</a>, <a class="el" href="a00005_source.html#l00069">IMPL_BuildNetwork()</a>, and <a class="el" href="a00008_source.html#l00350">min_connections</a>.</p>
+<p class="reference">References <a class="el" href="a00008_source.html#l00094">HF::GraphGenerator::CastToReal()</a>, <a class="el" href="a00008_source.html#l00107">HF::GraphGenerator::CastToReal3()</a>, <a class="el" href="a00005_source.html#l00069">IMPL_BuildNetwork()</a>, and <a class="el" href="a00008_source.html#l00353">min_connections</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="a00404_source.html#l00022">GenerateGraph()</a>, and <a class="el" href="a00404_source.html#l00062">GenerateGraphObstacles()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -514,7 +513,7 @@ template&lt;typename node_type , typename node2_type , typename up_step_type , t
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a01311_a0c12341433bbec41cc12cc1dbb41a976_cgraph.svg" width="1716" height="959"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01311_a0c12341433bbec41cc12cc1dbb41a976_cgraph.svg" width="1734" height="959"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -522,7 +521,7 @@ template&lt;typename node_type , typename node2_type , typename up_step_type , t
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a01311_a0c12341433bbec41cc12cc1dbb41a976_icgraph.svg" width="432" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01311_a0c12341433bbec41cc12cc1dbb41a976_icgraph.svg" width="435" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -563,7 +562,7 @@ template&lt;typename node_type , typename node2_type , typename up_step_type , t
 <div class="line">    </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"> </div>
 <div class="line">    <span class="comment">// Create a graphgenerator using the raytracer we just created</span></div>
-<div class="line">    <a class="code hl_class" href="a01311.html">HF::GraphGenerator::GraphGenerator</a> GG = <a class="code hl_class" href="a01311.html">GraphGenerator::GraphGenerator</a>(<a class="code hl_variable" href="a01311.html#a5801e0e8dbaaa13ccab14ff0cae69de0">ray_tracer</a>);</div>
+<div class="line">    <a class="code hl_class" href="a01311.html">HF::GraphGenerator::GraphGenerator</a> GG(<a class="code hl_variable" href="a01311.html#a5801e0e8dbaaa13ccab14ff0cae69de0">ray_tracer</a>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Set parameters for graph generation</span></div>
 <div class="line">    std::array&lt;float, 3&gt; start_point{ 0,1,0 };</div>
@@ -578,45 +577,33 @@ template&lt;typename node_type , typename node2_type , typename up_step_type , t
 <div class="line">    <span class="comment">// in the GraphGenerator in order to use this function standalone</span></div>
 <div class="line">    </div>
 <div class="line">    <span class="comment">// These parameters need to be set on the graph generator</span></div>
-<div class="line">    GG.<a class="code hl_variable" href="a01311.html#a16da7abe348f7af1d232867f2d719db1">core_count</a> = -1;</div>
-<div class="line">    GG.<a class="code hl_variable" href="a01311.html#a6afac9c527d8483943ef61e9e9a1ca15">max_nodes</a> = 5;</div>
-<div class="line">    GG.<a class="code hl_variable" href="a01311.html#a73847391cae1bc6c5a0ed5416844ab68">max_step_connection</a> = 1;</div>
-<div class="line">    GG.<a class="code hl_variable" href="a01311.html#aa04d1ae908956afc43e540b0cc6849f7">min_connections</a> = 1;</div>
+<div class="line">    GG.core_count = -1;</div>
+<div class="line">    GG.max_nodes = 5;</div>
+<div class="line">    GG.max_step_connection = 1;</div>
+<div class="line">    GG.min_connections = 1;</div>
 <div class="line">    </div>
 <div class="line">    <span class="comment">// Setup its params struct</span></div>
-<div class="line">    GG.<a class="code hl_variable" href="a01311.html#a6c85bb69456393934b602a242d8f0bed">params</a>.<a class="code hl_variable" href="a00463.html#a0b8afc5f531e3286ce2434b1bc2b1f50">up_step</a> = up_step; GG.<a class="code hl_variable" href="a01311.html#a6c85bb69456393934b602a242d8f0bed">params</a>.<a class="code hl_variable" href="a00463.html#add2b6fa6bf77a8c4626a1e6d0559970f">down_step</a> = down_step;</div>
-<div class="line">    GG.<a class="code hl_variable" href="a01311.html#a6c85bb69456393934b602a242d8f0bed">params</a>.<a class="code hl_variable" href="a00463.html#add7f080950668f5dfa8d857e9c66b89d">up_slope</a> = up_slope; GG.<a class="code hl_variable" href="a01311.html#a6c85bb69456393934b602a242d8f0bed">params</a>.<a class="code hl_variable" href="a00463.html#a7c141d33285a77c81fc1b9ce0b210d72">down_slope</a> = down_slope;</div>
-<div class="line">    GG.<a class="code hl_variable" href="a01311.html#a6c85bb69456393934b602a242d8f0bed">params</a>.<a class="code hl_variable" href="a00463.html#af7a57e8e6b17f86ac29a8df2685e56c1">precision</a>.<a class="code hl_variable" href="a00463.html#a4fa4f096863296469711e52da4b36b9c">ground_offset</a> = 0.01; </div>
-<div class="line">    GG.<a class="code hl_variable" href="a01311.html#a6c85bb69456393934b602a242d8f0bed">params</a>.<a class="code hl_variable" href="a00463.html#af7a57e8e6b17f86ac29a8df2685e56c1">precision</a>.<a class="code hl_variable" href="a00463.html#a6ec86cb69c1cc0e0dc8ea229310939b6">node_z</a> = 0.001f;</div>
-<div class="line">    GG.<a class="code hl_variable" href="a01311.html#a6c85bb69456393934b602a242d8f0bed">params</a>.<a class="code hl_variable" href="a00463.html#af7a57e8e6b17f86ac29a8df2685e56c1">precision</a>.<a class="code hl_variable" href="a00463.html#ac982230f7d151df6018c19d712cd3436">node_spacing</a> = 0.001;</div>
+<div class="line">    GG.params.up_step = up_step; GG.params.down_step = down_step;</div>
+<div class="line">    GG.params.up_slope = up_slope; GG.params.down_slope = down_slope;</div>
+<div class="line">    GG.params.precision.ground_offset = 0.01; </div>
+<div class="line">    GG.params.precision.node_z = 0.001f;</div>
+<div class="line">    GG.params.precision.node_spacing = 0.001;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Assign it&#39;s spacing member, making sure to convert it to real3, the graph generator&#39;s</span></div>
 <div class="line">    <span class="comment">// internal type for vectors of 3 coordinates.</span></div>
-<div class="line">    GG.<a class="code hl_variable" href="a01311.html#a9aba1df499733b653dff3ec59bf3871f">spacing</a> = <a class="code hl_function" href="a00463.html#a58892abe1152c28d26d3ca749c99ea4d">HF::GraphGenerator::CastToReal3</a>(<a class="code hl_variable" href="a01311.html#a9aba1df499733b653dff3ec59bf3871f">spacing</a>);</div>
+<div class="line">    GG.spacing = <a class="code hl_function" href="a00463.html#a58892abe1152c28d26d3ca749c99ea4d">HF::GraphGenerator::CastToReal3</a>(<a class="code hl_variable" href="a01311.html#a9aba1df499733b653dff3ec59bf3871f">spacing</a>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Construct a unique queue, and push back the start point</span></div>
 <div class="line">    <a class="code hl_class" href="a01315.html">HF::GraphGenerator::UniqueQueue</a> queue;</div>
 <div class="line">    queue.<a class="code hl_function" href="a01315.html#ae0dc637a2d7c3aae32d8f035ac6b8016">push</a>(start_point);</div>
 <div class="line">    </div>
-<div class="ttc" id="aa00463_html_a0b8afc5f531e3286ce2434b1bc2b1f50"><div class="ttname"><a href="a00463.html#a0b8afc5f531e3286ce2434b1bc2b1f50">HF::GraphGenerator::GraphParams::up_step</a></div><div class="ttdeci">real_t up_step</div><div class="ttdoc">Maximum height of a step the graph can traverse.Any steps higher this will be considered inaccessible...</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00256">graph_generator.h:256</a></div></div>
-<div class="ttc" id="aa00463_html_a4fa4f096863296469711e52da4b36b9c"><div class="ttname"><a href="a00463.html#a4fa4f096863296469711e52da4b36b9c">HF::GraphGenerator::Precision::ground_offset</a></div><div class="ttdeci">real_t ground_offset</div><div class="ttdoc">Distance to offset nodes from the ground before checking line of sight.</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00114">graph_generator.h:114</a></div></div>
-<div class="ttc" id="aa00463_html_a58892abe1152c28d26d3ca749c99ea4d"><div class="ttname"><a href="a00463.html#a58892abe1152c28d26d3ca749c99ea4d">HF::GraphGenerator::CastToReal3</a></div><div class="ttdeci">real3 CastToReal3(real_3_type t)</div><div class="ttdoc">Cast an array of 3 values to the graph_generator's real_3 type.</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00104">graph_generator.h:104</a></div></div>
-<div class="ttc" id="aa00463_html_a6ec86cb69c1cc0e0dc8ea229310939b6"><div class="ttname"><a href="a00463.html#a6ec86cb69c1cc0e0dc8ea229310939b6">HF::GraphGenerator::Precision::node_z</a></div><div class="ttdeci">real_t node_z</div><div class="ttdoc">Precision to round the z-component of nodes after a raycast is performed.</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00112">graph_generator.h:112</a></div></div>
-<div class="ttc" id="aa00463_html_a7c141d33285a77c81fc1b9ce0b210d72"><div class="ttname"><a href="a00463.html#a7c141d33285a77c81fc1b9ce0b210d72">HF::GraphGenerator::GraphParams::down_slope</a></div><div class="ttdeci">real_t down_slope</div><div class="ttdoc">The maximum downward slope the graph can traverse. Any slopes steeper than this will be considered in...</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00259">graph_generator.h:259</a></div></div>
-<div class="ttc" id="aa00463_html_ac982230f7d151df6018c19d712cd3436"><div class="ttname"><a href="a00463.html#ac982230f7d151df6018c19d712cd3436">HF::GraphGenerator::Precision::node_spacing</a></div><div class="ttdeci">real_t node_spacing</div><div class="ttdoc">Precision to round nodes after spacing is calculated.</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00113">graph_generator.h:113</a></div></div>
-<div class="ttc" id="aa00463_html_add2b6fa6bf77a8c4626a1e6d0559970f"><div class="ttname"><a href="a00463.html#add2b6fa6bf77a8c4626a1e6d0559970f">HF::GraphGenerator::GraphParams::down_step</a></div><div class="ttdeci">real_t down_step</div><div class="ttdoc">Maximum step down the graph can traverse.Any steps steeper than this will be considered inaccessible.</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00258">graph_generator.h:258</a></div></div>
-<div class="ttc" id="aa00463_html_add7f080950668f5dfa8d857e9c66b89d"><div class="ttname"><a href="a00463.html#add7f080950668f5dfa8d857e9c66b89d">HF::GraphGenerator::GraphParams::up_slope</a></div><div class="ttdeci">real_t up_slope</div><div class="ttdoc">Maximum upward slope the graph can traverse in degrees.Any slopes steeper than this will be considere...</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00257">graph_generator.h:257</a></div></div>
-<div class="ttc" id="aa00463_html_af7a57e8e6b17f86ac29a8df2685e56c1"><div class="ttname"><a href="a00463.html#af7a57e8e6b17f86ac29a8df2685e56c1">HF::GraphGenerator::GraphParams::precision</a></div><div class="ttdeci">Precision precision</div><div class="ttdoc">Tolerances for the graph.</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00260">graph_generator.h:260</a></div></div>
-<div class="ttc" id="aa01311_html_a16da7abe348f7af1d232867f2d719db1"><div class="ttname"><a href="a01311.html#a16da7abe348f7af1d232867f2d719db1">HF::GraphGenerator::GraphGenerator::core_count</a></div><div class="ttdeci">int core_count</div><div class="ttdoc">Number of cores to use for graph generation.</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00348">graph_generator.h:348</a></div></div>
-<div class="ttc" id="aa01311_html_a6c85bb69456393934b602a242d8f0bed"><div class="ttname"><a href="a01311.html#a6c85bb69456393934b602a242d8f0bed">HF::GraphGenerator::GraphGenerator::params</a></div><div class="ttdeci">GraphParams params</div><div class="ttdoc">Parameters to run the graph generator.</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00354">graph_generator.h:354</a></div></div>
-<div class="ttc" id="aa01311_html_a73847391cae1bc6c5a0ed5416844ab68"><div class="ttname"><a href="a01311.html#a73847391cae1bc6c5a0ed5416844ab68">HF::GraphGenerator::GraphGenerator::max_step_connection</a></div><div class="ttdeci">int max_step_connection</div><div class="ttdoc">Multiplier for number of children to generate. The higher this is, the more directions there will be.</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00351">graph_generator.h:351</a></div></div>
+<div class="ttc" id="aa00463_html_a58892abe1152c28d26d3ca749c99ea4d"><div class="ttname"><a href="a00463.html#a58892abe1152c28d26d3ca749c99ea4d">HF::GraphGenerator::CastToReal3</a></div><div class="ttdeci">real3 CastToReal3(real_3_type t)</div><div class="ttdoc">Cast an array of 3 values to the graph_generator's real_3 type.</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00107">graph_generator.h:107</a></div></div>
 <div class="ttc" id="aa01315_html"><div class="ttname"><a href="a01315.html">HF::GraphGenerator::UniqueQueue</a></div><div class="ttdoc">A queue that remembers every object inserted, and prevents the addition of nodes that have already be...</div><div class="ttdef"><b>Definition:</b> <a href="a00017_source.html#l00029">unique_queue.h:29</a></div></div>
 <div class="ttc" id="aa01315_html_ae0dc637a2d7c3aae32d8f035ac6b8016"><div class="ttname"><a href="a01315.html#ae0dc637a2d7c3aae32d8f035ac6b8016">HF::GraphGenerator::UniqueQueue::push</a></div><div class="ttdeci">bool push(const HF::SpatialStructures::Node &amp;p)</div><div class="ttdoc">Add a node to the queue if it has never previously been in the queue.</div><div class="ttdef"><b>Definition:</b> <a href="a00014_source.html#l00011">unique_queue.cpp:11</a></div></div>
 </div><!-- fragment --> <div class="fragment"><div class="line">    </div>
 <div class="line">    <span class="comment">// Call Crawl Geom with the queue</span></div>
-<div class="line">    <span class="keyword">auto</span> g = GG.<a class="code hl_function" href="a01311.html#ac7052d4b625fb96f29c5bfc091a86f7e">CrawlGeom</a>(queue);</div>
+<div class="line">    <span class="keyword">auto</span> g = GG.CrawlGeom(queue);</div>
 <div class="line"> </div>
-<div class="ttc" id="aa01311_html_ac7052d4b625fb96f29c5bfc091a86f7e"><div class="ttname"><a href="a01311.html#ac7052d4b625fb96f29c5bfc091a86f7e">HF::GraphGenerator::GraphGenerator::CrawlGeom</a></div><div class="ttdeci">SpatialStructures::Graph CrawlGeom(UniqueQueue &amp;todo)</div><div class="ttdoc">Perform breadth first search to populate the graph with with nodes and edges.</div><div class="ttdef"><b>Definition:</b> <a href="a00005_source.html#l00222">graph_generator.cpp:222</a></div></div>
 </div><!-- fragment --> <div class="fragment"><div class="line">    </div>
 <div class="line">    <span class="comment">// Get nodes from the graph</span></div>
 <div class="line">    <span class="keyword">auto</span> nodes = g.Nodes();</div>
@@ -635,7 +622,7 @@ template&lt;typename node_type , typename node2_type , typename up_step_type , t
 
 <p class="definition">Definition at line <a class="el" href="a00005_source.html#l00222">222</a> of file <a class="el" href="a00005_source.html">graph_generator.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="a01551.html#a37be5c12e488072dea7fa1c8c64346f7">HF::SpatialStructures::Graph::addEdge()</a>, <a class="el" href="a00008_source.html#l00104">HF::GraphGenerator::CastToReal3()</a>, <a class="el" href="a00011_source.html#l00201">HF::GraphGenerator::CreateDirecs()</a>, <a class="el" href="a00014_source.html#l00055">HF::GraphGenerator::UniqueQueue::empty()</a>, <a class="el" href="a00011_source.html#l00381">HF::GraphGenerator::GeneratePotentialChildren()</a>, <a class="el" href="a00011_source.html#l00218">HF::GraphGenerator::GetChildren()</a>, <a class="el" href="a00008_source.html#l00347">max_nodes</a>, <a class="el" href="a00008_source.html#l00351">max_step_connection</a>, <a class="el" href="a00008_source.html#l00354">params</a>, <a class="el" href="a00014_source.html#l00025">HF::GraphGenerator::UniqueQueue::pop()</a>, <a class="el" href="a00017_source.html#l00118">HF::GraphGenerator::UniqueQueue::PushAny()</a>, <a class="el" href="a00008_source.html#l00356">ray_tracer</a>, and <a class="el" href="a00008_source.html#l00352">spacing</a>.</p>
+<p class="reference">References <a class="el" href="a01551.html#a37be5c12e488072dea7fa1c8c64346f7">HF::SpatialStructures::Graph::addEdge()</a>, <a class="el" href="a00008_source.html#l00107">HF::GraphGenerator::CastToReal3()</a>, <a class="el" href="a00011_source.html#l00201">HF::GraphGenerator::CreateDirecs()</a>, <a class="el" href="a00014_source.html#l00055">HF::GraphGenerator::UniqueQueue::empty()</a>, <a class="el" href="a00011_source.html#l00544">HF::GraphGenerator::GeneratePotentialChildren()</a>, <a class="el" href="a00011_source.html#l00218">HF::GraphGenerator::GetChildren()</a>, <a class="el" href="a00008_source.html#l00350">max_nodes</a>, <a class="el" href="a00008_source.html#l00354">max_step_connection</a>, <a class="el" href="a00008_source.html#l00357">params</a>, <a class="el" href="a00014_source.html#l00025">HF::GraphGenerator::UniqueQueue::pop()</a>, <a class="el" href="a00017_source.html#l00118">HF::GraphGenerator::UniqueQueue::PushAny()</a>, <a class="el" href="a00008_source.html#l00359">ray_tracer</a>, and <a class="el" href="a00008_source.html#l00355">spacing</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="a00005_source.html#l00069">IMPL_BuildNetwork()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -643,7 +630,7 @@ template&lt;typename node_type , typename node2_type , typename up_step_type , t
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a01311_ac7052d4b625fb96f29c5bfc091a86f7e_cgraph.svg" width="1256" height="619"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01311_ac7052d4b625fb96f29c5bfc091a86f7e_cgraph.svg" width="1270" height="619"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -651,7 +638,7 @@ template&lt;typename node_type , typename node2_type , typename up_step_type , t
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a01311_ac7052d4b625fb96f29c5bfc091a86f7e_icgraph.svg" width="884" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01311_ac7052d4b625fb96f29c5bfc091a86f7e_icgraph.svg" width="890" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -691,7 +678,7 @@ template&lt;typename node_type , typename node2_type , typename up_step_type , t
 <div class="line">    </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"> </div>
 <div class="line">    <span class="comment">// Create a graphgenerator using the raytracer we just created</span></div>
-<div class="line">    <a class="code hl_class" href="a01311.html">HF::GraphGenerator::GraphGenerator</a> GG = <a class="code hl_class" href="a01311.html">GraphGenerator::GraphGenerator</a>(<a class="code hl_variable" href="a01311.html#a5801e0e8dbaaa13ccab14ff0cae69de0">ray_tracer</a>);</div>
+<div class="line">    <a class="code hl_class" href="a01311.html">HF::GraphGenerator::GraphGenerator</a> GG(<a class="code hl_variable" href="a01311.html#a5801e0e8dbaaa13ccab14ff0cae69de0">ray_tracer</a>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Set parameters for graph generation</span></div>
 <div class="line">    std::array&lt;float, 3&gt; start_point{ 0,1,0 };</div>
@@ -706,21 +693,21 @@ template&lt;typename node_type , typename node2_type , typename up_step_type , t
 <div class="line">    <span class="comment">// in the GraphGenerator in order to use this function standalone</span></div>
 <div class="line">    </div>
 <div class="line">    <span class="comment">// These parameters need to be set on the graph generator</span></div>
-<div class="line">    GG.<a class="code hl_variable" href="a01311.html#a16da7abe348f7af1d232867f2d719db1">core_count</a> = -1;</div>
-<div class="line">    GG.<a class="code hl_variable" href="a01311.html#a6afac9c527d8483943ef61e9e9a1ca15">max_nodes</a> = 5;</div>
-<div class="line">    GG.<a class="code hl_variable" href="a01311.html#a73847391cae1bc6c5a0ed5416844ab68">max_step_connection</a> = 1;</div>
-<div class="line">    GG.<a class="code hl_variable" href="a01311.html#aa04d1ae908956afc43e540b0cc6849f7">min_connections</a> = 1;</div>
+<div class="line">    GG.core_count = -1;</div>
+<div class="line">    GG.max_nodes = 5;</div>
+<div class="line">    GG.max_step_connection = 1;</div>
+<div class="line">    GG.min_connections = 1;</div>
 <div class="line">    </div>
 <div class="line">    <span class="comment">// Setup its params struct</span></div>
-<div class="line">    GG.<a class="code hl_variable" href="a01311.html#a6c85bb69456393934b602a242d8f0bed">params</a>.<a class="code hl_variable" href="a00463.html#a0b8afc5f531e3286ce2434b1bc2b1f50">up_step</a> = up_step; GG.<a class="code hl_variable" href="a01311.html#a6c85bb69456393934b602a242d8f0bed">params</a>.<a class="code hl_variable" href="a00463.html#add2b6fa6bf77a8c4626a1e6d0559970f">down_step</a> = down_step;</div>
-<div class="line">    GG.<a class="code hl_variable" href="a01311.html#a6c85bb69456393934b602a242d8f0bed">params</a>.<a class="code hl_variable" href="a00463.html#add7f080950668f5dfa8d857e9c66b89d">up_slope</a> = up_slope; GG.<a class="code hl_variable" href="a01311.html#a6c85bb69456393934b602a242d8f0bed">params</a>.<a class="code hl_variable" href="a00463.html#a7c141d33285a77c81fc1b9ce0b210d72">down_slope</a> = down_slope;</div>
-<div class="line">    GG.<a class="code hl_variable" href="a01311.html#a6c85bb69456393934b602a242d8f0bed">params</a>.<a class="code hl_variable" href="a00463.html#af7a57e8e6b17f86ac29a8df2685e56c1">precision</a>.<a class="code hl_variable" href="a00463.html#a4fa4f096863296469711e52da4b36b9c">ground_offset</a> = 0.01; </div>
-<div class="line">    GG.<a class="code hl_variable" href="a01311.html#a6c85bb69456393934b602a242d8f0bed">params</a>.<a class="code hl_variable" href="a00463.html#af7a57e8e6b17f86ac29a8df2685e56c1">precision</a>.<a class="code hl_variable" href="a00463.html#a6ec86cb69c1cc0e0dc8ea229310939b6">node_z</a> = 0.001f;</div>
-<div class="line">    GG.<a class="code hl_variable" href="a01311.html#a6c85bb69456393934b602a242d8f0bed">params</a>.<a class="code hl_variable" href="a00463.html#af7a57e8e6b17f86ac29a8df2685e56c1">precision</a>.<a class="code hl_variable" href="a00463.html#ac982230f7d151df6018c19d712cd3436">node_spacing</a> = 0.001;</div>
+<div class="line">    GG.params.up_step = up_step; GG.params.down_step = down_step;</div>
+<div class="line">    GG.params.up_slope = up_slope; GG.params.down_slope = down_slope;</div>
+<div class="line">    GG.params.precision.ground_offset = 0.01; </div>
+<div class="line">    GG.params.precision.node_z = 0.001f;</div>
+<div class="line">    GG.params.precision.node_spacing = 0.001;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Assign it&#39;s spacing member, making sure to convert it to real3, the graph generator&#39;s</span></div>
 <div class="line">    <span class="comment">// internal type for vectors of 3 coordinates.</span></div>
-<div class="line">    GG.<a class="code hl_variable" href="a01311.html#a9aba1df499733b653dff3ec59bf3871f">spacing</a> = <a class="code hl_function" href="a00463.html#a58892abe1152c28d26d3ca749c99ea4d">HF::GraphGenerator::CastToReal3</a>(<a class="code hl_variable" href="a01311.html#a9aba1df499733b653dff3ec59bf3871f">spacing</a>);</div>
+<div class="line">    GG.spacing = <a class="code hl_function" href="a00463.html#a58892abe1152c28d26d3ca749c99ea4d">HF::GraphGenerator::CastToReal3</a>(<a class="code hl_variable" href="a01311.html#a9aba1df499733b653dff3ec59bf3871f">spacing</a>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Construct a unique queue, and push back the start point</span></div>
 <div class="line">    <a class="code hl_class" href="a01315.html">HF::GraphGenerator::UniqueQueue</a> queue;</div>
@@ -728,9 +715,8 @@ template&lt;typename node_type , typename node2_type , typename up_step_type , t
 <div class="line">    </div>
 </div><!-- fragment --> <div class="fragment"><div class="line">    </div>
 <div class="line">    <span class="comment">// Call crawl geom parallel</span></div>
-<div class="line">    g = GG.<a class="code hl_function" href="a01311.html#a843cc6b5b69b5d013930b3685789fa15">CrawlGeomParallel</a>(queue);</div>
+<div class="line">    g = GG.CrawlGeomParallel(queue);</div>
 <div class="line">    </div>
-<div class="ttc" id="aa01311_html_a843cc6b5b69b5d013930b3685789fa15"><div class="ttname"><a href="a01311.html#a843cc6b5b69b5d013930b3685789fa15">HF::GraphGenerator::GraphGenerator::CrawlGeomParallel</a></div><div class="ttdeci">SpatialStructures::Graph CrawlGeomParallel(UniqueQueue &amp;todo)</div><div class="ttdoc">Perform breadth first search to populate the graph with nodes and edges using multiple cores.</div><div class="ttdef"><b>Definition:</b> <a href="a00005_source.html#l00141">graph_generator.cpp:141</a></div></div>
 </div><!-- fragment --> <div class="fragment"><div class="line">    </div>
 <div class="line">    <span class="comment">// Get nodes from the graph</span></div>
 <div class="line">    <span class="keyword">auto</span> nodes = g.Nodes();</div>
@@ -750,7 +736,7 @@ template&lt;typename node_type , typename node2_type , typename up_step_type , t
 
 <p class="definition">Definition at line <a class="el" href="a00005_source.html#l00141">141</a> of file <a class="el" href="a00005_source.html">graph_generator.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="a01551.html#a37be5c12e488072dea7fa1c8c64346f7">HF::SpatialStructures::Graph::addEdge()</a>, <a class="el" href="a00008_source.html#l00104">HF::GraphGenerator::CastToReal3()</a>, <a class="el" href="a00011_source.html#l00201">HF::GraphGenerator::CreateDirecs()</a>, <a class="el" href="a00014_source.html#l00055">HF::GraphGenerator::UniqueQueue::empty()</a>, <a class="el" href="a00011_source.html#l00381">HF::GraphGenerator::GeneratePotentialChildren()</a>, <a class="el" href="a00011_source.html#l00218">HF::GraphGenerator::GetChildren()</a>, <a class="el" href="a00008_source.html#l00347">max_nodes</a>, <a class="el" href="a00008_source.html#l00351">max_step_connection</a>, <a class="el" href="a00008_source.html#l00350">min_connections</a>, <a class="el" href="a00008_source.html#l00354">params</a>, <a class="el" href="a00014_source.html#l00064">HF::GraphGenerator::UniqueQueue::popMany()</a>, <a class="el" href="a00014_source.html#l00011">HF::GraphGenerator::UniqueQueue::push()</a>, <a class="el" href="a00008_source.html#l00356">ray_tracer</a>, <a class="el" href="a00014_source.html#l00032">HF::GraphGenerator::UniqueQueue::size()</a>, and <a class="el" href="a00008_source.html#l00352">spacing</a>.</p>
+<p class="reference">References <a class="el" href="a01551.html#a37be5c12e488072dea7fa1c8c64346f7">HF::SpatialStructures::Graph::addEdge()</a>, <a class="el" href="a00008_source.html#l00107">HF::GraphGenerator::CastToReal3()</a>, <a class="el" href="a00011_source.html#l00201">HF::GraphGenerator::CreateDirecs()</a>, <a class="el" href="a00014_source.html#l00055">HF::GraphGenerator::UniqueQueue::empty()</a>, <a class="el" href="a00011_source.html#l00544">HF::GraphGenerator::GeneratePotentialChildren()</a>, <a class="el" href="a00011_source.html#l00218">HF::GraphGenerator::GetChildren()</a>, <a class="el" href="a00008_source.html#l00350">max_nodes</a>, <a class="el" href="a00008_source.html#l00354">max_step_connection</a>, <a class="el" href="a00008_source.html#l00353">min_connections</a>, <a class="el" href="a00008_source.html#l00357">params</a>, <a class="el" href="a00014_source.html#l00064">HF::GraphGenerator::UniqueQueue::popMany()</a>, <a class="el" href="a00014_source.html#l00011">HF::GraphGenerator::UniqueQueue::push()</a>, <a class="el" href="a00008_source.html#l00359">ray_tracer</a>, <a class="el" href="a00014_source.html#l00032">HF::GraphGenerator::UniqueQueue::size()</a>, and <a class="el" href="a00008_source.html#l00355">spacing</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="a00005_source.html#l00069">IMPL_BuildNetwork()</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -758,7 +744,7 @@ template&lt;typename node_type , typename node2_type , typename up_step_type , t
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a01311_a843cc6b5b69b5d013930b3685789fa15_cgraph.svg" width="1252" height="622"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01311_a843cc6b5b69b5d013930b3685789fa15_cgraph.svg" width="1266" height="622"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -766,7 +752,7 @@ template&lt;typename node_type , typename node2_type , typename up_step_type , t
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a01311_a843cc6b5b69b5d013930b3685789fa15_icgraph.svg" width="884" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01311_a843cc6b5b69b5d013930b3685789fa15_icgraph.svg" width="890" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -890,15 +876,15 @@ template&lt;typename node_type , typename node2_type , typename up_step_type , t
 
 <p class="definition">Definition at line <a class="el" href="a00005_source.html#l00069">69</a> of file <a class="el" href="a00005_source.html">graph_generator.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="a00008_source.html#l00348">core_count</a>, <a class="el" href="a00005_source.html#l00222">CrawlGeom()</a>, <a class="el" href="a00005_source.html#l00141">CrawlGeomParallel()</a>, <a class="el" href="a00008_source.html#l00259">HF::GraphGenerator::GraphParams::down_slope</a>, <a class="el" href="a00008_source.html#l00258">HF::GraphGenerator::GraphParams::down_step</a>, <a class="el" href="a00008_source.html#l00114">HF::GraphGenerator::Precision::ground_offset</a>, <a class="el" href="a00008_source.html#l00347">max_nodes</a>, <a class="el" href="a00008_source.html#l00351">max_step_connection</a>, <a class="el" href="a00008_source.html#l00350">min_connections</a>, <a class="el" href="a00008_source.html#l00113">HF::GraphGenerator::Precision::node_spacing</a>, <a class="el" href="a00008_source.html#l00112">HF::GraphGenerator::Precision::node_z</a>, <a class="el" href="a00008_source.html#l00354">params</a>, <a class="el" href="a00008_source.html#l00260">HF::GraphGenerator::GraphParams::precision</a>, <a class="el" href="a00017_source.html#l00118">HF::GraphGenerator::UniqueQueue::PushAny()</a>, <a class="el" href="a00008_source.html#l00356">ray_tracer</a>, <a class="el" href="a00005_source.html#l00035">HF::GraphGenerator::SetupCoreCount()</a>, <a class="el" href="a00008_source.html#l00352">spacing</a>, <a class="el" href="a00008_source.html#l00257">HF::GraphGenerator::GraphParams::up_slope</a>, <a class="el" href="a00008_source.html#l00256">HF::GraphGenerator::GraphParams::up_step</a>, and <a class="el" href="a00011_source.html#l00107">HF::GraphGenerator::ValidateStartPoint()</a>.</p>
+<p class="reference">References <a class="el" href="a00008_source.html#l00351">core_count</a>, <a class="el" href="a00005_source.html#l00222">CrawlGeom()</a>, <a class="el" href="a00005_source.html#l00141">CrawlGeomParallel()</a>, <a class="el" href="a00008_source.html#l00262">HF::GraphGenerator::GraphParams::down_slope</a>, <a class="el" href="a00008_source.html#l00261">HF::GraphGenerator::GraphParams::down_step</a>, <a class="el" href="a00008_source.html#l00117">HF::GraphGenerator::Precision::ground_offset</a>, <a class="el" href="a00008_source.html#l00350">max_nodes</a>, <a class="el" href="a00008_source.html#l00354">max_step_connection</a>, <a class="el" href="a00008_source.html#l00353">min_connections</a>, <a class="el" href="a00008_source.html#l00116">HF::GraphGenerator::Precision::node_spacing</a>, <a class="el" href="a00008_source.html#l00115">HF::GraphGenerator::Precision::node_z</a>, <a class="el" href="a00008_source.html#l00357">params</a>, <a class="el" href="a00008_source.html#l00263">HF::GraphGenerator::GraphParams::precision</a>, <a class="el" href="a00017_source.html#l00118">HF::GraphGenerator::UniqueQueue::PushAny()</a>, <a class="el" href="a00008_source.html#l00359">ray_tracer</a>, <a class="el" href="a00005_source.html#l00035">HF::GraphGenerator::SetupCoreCount()</a>, <a class="el" href="a00008_source.html#l00355">spacing</a>, <a class="el" href="a00008_source.html#l00260">HF::GraphGenerator::GraphParams::up_slope</a>, <a class="el" href="a00008_source.html#l00259">HF::GraphGenerator::GraphParams::up_step</a>, and <a class="el" href="a00011_source.html#l00107">HF::GraphGenerator::ValidateStartPoint()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="a00008_source.html#l00464">BuildNetwork()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="a00008_source.html#l00467">BuildNetwork()</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a01311_a5788e421d921ec0ff27defc139c45106_cgraph.svg" width="1463" height="775"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01311_a5788e421d921ec0ff27defc139c45106_cgraph.svg" width="1479" height="772"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -906,7 +892,7 @@ template&lt;typename node_type , typename node2_type , typename up_step_type , t
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a01311_a5788e421d921ec0ff27defc139c45106_icgraph.svg" width="640" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01311_a5788e421d921ec0ff27defc139c45106_icgraph.svg" width="643" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -927,7 +913,7 @@ template&lt;typename node_type , typename node2_type , typename up_step_type , t
 
 <p>Number of cores to use for graph generation. </p>
 
-<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00348">348</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00351">351</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="a00005_source.html#l00069">IMPL_BuildNetwork()</a>.</p>
 
@@ -947,7 +933,7 @@ template&lt;typename node_type , typename node2_type , typename up_step_type , t
 
 <p>Maximum number of nodes to generate. If less than zero, generate nodes without a limit. </p>
 
-<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00347">347</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00350">350</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="a00005_source.html#l00222">CrawlGeom()</a>, <a class="el" href="a00005_source.html#l00141">CrawlGeomParallel()</a>, and <a class="el" href="a00005_source.html#l00069">IMPL_BuildNetwork()</a>.</p>
 
@@ -967,7 +953,7 @@ template&lt;typename node_type , typename node2_type , typename up_step_type , t
 
 <p>Multiplier for number of children to generate. The higher this is, the more directions there will be. </p>
 
-<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00351">351</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00354">354</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="a00005_source.html#l00222">CrawlGeom()</a>, <a class="el" href="a00005_source.html#l00141">CrawlGeomParallel()</a>, and <a class="el" href="a00005_source.html#l00069">IMPL_BuildNetwork()</a>.</p>
 
@@ -987,9 +973,9 @@ template&lt;typename node_type , typename node2_type , typename up_step_type , t
 
 <p>Minimum number of step connections for a node to be valid (minimum out degree of node) </p>
 
-<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00350">350</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00353">353</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="a00008_source.html#l00464">BuildNetwork()</a>, <a class="el" href="a00005_source.html#l00141">CrawlGeomParallel()</a>, and <a class="el" href="a00005_source.html#l00069">IMPL_BuildNetwork()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="a00008_source.html#l00467">BuildNetwork()</a>, <a class="el" href="a00005_source.html#l00141">CrawlGeomParallel()</a>, and <a class="el" href="a00005_source.html#l00069">IMPL_BuildNetwork()</a>.</p>
 
 </div>
 </div>
@@ -1007,7 +993,7 @@ template&lt;typename node_type , typename node2_type , typename up_step_type , t
 
 <p>Parameters to run the graph generator. </p>
 
-<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00354">354</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00357">357</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="a00005_source.html#l00063">GraphGenerator()</a>, <a class="el" href="a00005_source.html#l00222">CrawlGeom()</a>, <a class="el" href="a00005_source.html#l00141">CrawlGeomParallel()</a>, <a class="el" href="a00005_source.html#l00069">IMPL_BuildNetwork()</a>, and <a class="el" href="a00005_source.html#l00050">HF::GraphGenerator::setupRT()</a>.</p>
 
@@ -1027,7 +1013,7 @@ template&lt;typename node_type , typename node2_type , typename up_step_type , t
 
 <p>A pointer to the raytracer to use for ray intersections. </p>
 
-<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00356">356</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00359">359</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="a00005_source.html#l00063">GraphGenerator()</a>, <a class="el" href="a00005_source.html#l00222">CrawlGeom()</a>, <a class="el" href="a00005_source.html#l00141">CrawlGeomParallel()</a>, <a class="el" href="a00005_source.html#l00069">IMPL_BuildNetwork()</a>, and <a class="el" href="a00005_source.html#l00050">HF::GraphGenerator::setupRT()</a>.</p>
 
@@ -1047,7 +1033,7 @@ template&lt;typename node_type , typename node2_type , typename up_step_type , t
 
 <p>Spacing between nodes. New nodes will be generated with atleast this much distance between them. </p>
 
-<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00352">352</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00355">355</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="a00005_source.html#l00222">CrawlGeom()</a>, <a class="el" href="a00005_source.html#l00141">CrawlGeomParallel()</a>, and <a class="el" href="a00005_source.html#l00069">IMPL_BuildNetwork()</a>.</p>
 

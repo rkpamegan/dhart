@@ -1,0 +1,14 @@
+digraph "Cpp/pathfinding/src/boost_graph.h"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="Cpp/pathfinding/src\l/boost_graph.h",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Contains definitions for the BoostGraph class."];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="Cinterface/pathfinder\l_C.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00422.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="Cpp/pathfinding/src\l/boost_graph.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00197.html",tooltip="Contains implementation for the BoostGraph class."];
+  Node1 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="Cpp/pathfinding/src\l/path_finder.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00203.html",tooltip="Contains implmentation for the BoostGraphDeleter structure."];
+}

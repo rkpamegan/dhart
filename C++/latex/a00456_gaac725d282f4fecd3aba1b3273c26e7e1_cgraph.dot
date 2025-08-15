@@ -1,0 +1,13 @@
+digraph "GetPathInfo"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="GetPathInfo",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Get the size of a path and a pointer to its path members."];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="HF::SpatialStructures\l::Path::GetPMPointer",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a02083.html#a942cb49007bbeb5588e2d526c68bdcf9",tooltip="Get a pointer to the path's underlying path members vector."];
+  Node1 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="HF::SpatialStructures\l::Path::size",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a02083.html#a28f61f0f57b38a5249a11a725d9d692b",tooltip="Determine how many nodes are in this path."];
+}

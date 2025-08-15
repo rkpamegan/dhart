@@ -1,0 +1,14 @@
+digraph "LoadOBJ"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="LoadOBJ",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Load an obj from the given path then rotate it by x,y, and z."];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="GetMeshID",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00455.html#gaa07792b399e76e6101388bb6bbb96047",tooltip="Get the ID of a mesh."];
+  Node1 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="HF::Geometry::LoadMeshObjects",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00469.html#a06c0c11adb62f8b204e42f75ac1990ac",tooltip="Create MeshInfo instances from the OBJ at path."];
+  Node3 -> Node3 [color="steelblue1",style="solid"];
+}

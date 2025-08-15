@@ -1,6 +1,6 @@
 <map id="DHARTAPI.RayTracing.EmbreeBVH" name="DHARTAPI.RayTracing.EmbreeBVH">
-<area shape="rect" id="node1" title="A Bounding Volume Hierarchy for the EmbreeRaytracer." alt="" coords="5,188,236,215"/>
-<area shape="rect" id="node2" href="$class_d_h_a_r_t_a_p_i_1_1_native_utils_1_1_native_object.html" title="An object that holds a pointer to unmanaged memory or some other resource that must be freed." alt="" coords="43,96,198,139"/>
-<area shape="rect" id="node3" href="$class_safe_handle.html" title=" " alt="" coords="34,5,122,32"/>
-<area shape="rect" id="node4" title=" " alt="" coords="145,5,184,32"/>
+<area shape="rect" id="node1" title="A Bounding Volume Hierarchy for the EmbreeRaytracer." alt="" coords="5,188,242,215"/>
+<area shape="rect" id="node2" href="$class_d_h_a_r_t_a_p_i_1_1_native_utils_1_1_native_object.html" title="An object that holds a pointer to unmanaged memory or some other resource that must be freed." alt="" coords="43,96,204,139"/>
+<area shape="rect" id="node3" href="$class_safe_handle.html" title=" " alt="" coords="35,5,124,32"/>
+<area shape="rect" id="node4" title=" " alt="" coords="148,5,187,32"/>
 </map>

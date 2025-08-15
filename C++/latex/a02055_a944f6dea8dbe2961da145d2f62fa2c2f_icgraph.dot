@@ -1,0 +1,14 @@
+digraph "nlohmann::detail::serializer::dump_integer"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="nlohmann::detail::serializer\l::dump_integer",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="dump an integer"];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="nlohmann::detail::serializer\l::dump",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a02055.html#a95460ebd1a535a543e5a0ec52e00f48b",tooltip="internal implementation of the serialization function"];
+  Node2 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="nlohmann::basic_json\l::dump",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01659.html#a476756fb08e7f2416aad116d137977f4",tooltip="serialization"];
+}

@@ -1,0 +1,4 @@
+<map id="GetNodeAttributesFloat" name="GetNodeAttributesFloat">
+<area shape="rect" id="node1" title="Retrieve float node attribute values from *g." alt="" coords="5,13,164,40"/>
+<area shape="rect" id="node2" href="$a01551.html#a150e739eb5dbea7d980a2fbfa213f114" title="Get the score for the given attribute of every node in the graph. Nodes that do not have a score for ..." alt="" coords="212,5,421,48"/>
+</map>

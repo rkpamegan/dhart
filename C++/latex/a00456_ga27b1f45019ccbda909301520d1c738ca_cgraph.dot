@@ -1,0 +1,17 @@
+digraph "CalculateDistanceAndPredecessor"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="CalculateDistanceAndPredecessor",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Calculate the distance and predecessor matricies for a graph."];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="HF::Pathfinding::CreateBoost\lGraph",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00472.html#ae2106e09eb44d681fbc6c0f66a3d3ac4",tooltip="Create a new boost graph from a HF::SpatialStructures:Graph."];
+  Node1 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="HF::Pathfinding::Generate\lDistanceAndPred",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00472.html#ab58662be8e56c333d74d60a823e810e3",tooltip="Generate the distance and predecessor matricies for a specific boost graph."];
+  Node3 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="HF::Pathfinding::Distance\lAndPredecessor::GetRowOfDist",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01395.html#a7237256578bb77a912babbc2f777756c",tooltip="Get a pointer to the beginning of the ith row of the distance array."];
+  Node3 -> Node5 [color="steelblue1",style="solid"];
+  Node5 [label="HF::Pathfinding::Distance\lAndPredecessor::GetRowOfPred",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01395.html#a4ab3579abd7bd4f18456e8e5022b51ca",tooltip="Get a pointer to the beginning of the ith row of the predecessor array."];
+}

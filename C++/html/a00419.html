@@ -101,12 +101,13 @@ $(document).ready(function(){initNavTree('a00419.html',''); initResizable(); });
 <p>Header file for functions related to loading/storing an OBJ file (a mesh)  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00191_source.html">objloader.h</a>&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for objloader_C.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00420.svg" width="174" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00420.svg" width="291" height="262"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -114,7 +115,7 @@ $(document).ready(function(){initNavTree('a00419.html',''); initResizable(); });
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00421.svg" width="174" height="128"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00421.svg" width="176" height="128"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -131,7 +132,7 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a91fa3b2bb3a7312ec39d74cc1fbc7bbe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00419.html#a91fa3b2bb3a7312ec39d74cc1fbc7bbe">C_INTERFACE</a>&#160;&#160;&#160;extern &quot;C&quot; __declspec(dllexport) int</td></tr>
+<tr class="memitem:a91fa3b2bb3a7312ec39d74cc1fbc7bbe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00419.html#a91fa3b2bb3a7312ec39d74cc1fbc7bbe">C_INTERFACE</a>&#160;&#160;&#160;extern &quot;C&quot; __attribute__((visibility(&quot;default&quot;))) int</td></tr>
 <tr class="separator:a91fa3b2bb3a7312ec39d74cc1fbc7bbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -174,12 +175,12 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define C_INTERFACE&#160;&#160;&#160;extern &quot;C&quot; __declspec(dllexport) int</td>
+          <td class="memname">#define C_INTERFACE&#160;&#160;&#160;extern &quot;C&quot; __attribute__((visibility(&quot;default&quot;))) int</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00419_source.html#l00014">14</a> of file <a class="el" href="a00419_source.html">objloader_C.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00419_source.html#l00018">18</a> of file <a class="el" href="a00419_source.html">objloader_C.h</a>.</p>
 
 </div>
 </div>

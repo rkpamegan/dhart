@@ -1,0 +1,19 @@
+digraph "DeleteRawPtr"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="DeleteRawPtr",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Delete some object pointed to by ptr"];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="DestroyFloatVector",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00410.html#af77723a4383b278169e80cf0e361ec44",tooltip="Delete a float vector that's pointed to by float_vector"];
+  Node1 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="DestroyIntVector",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00410.html#aa1d3e9d7be8628eb59f2ef8f8e156a75",tooltip="Delete a vector of integers."];
+  Node1 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="DestroyMeshInfo",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00455.html#ga0ef9f7e63f067546b527947d4678dcd5",tooltip="Free the memory addressed by mesh_to_destroy, which was allocated by either LoadOBJ or StoreMesh."];
+  Node1 -> Node5 [dir="back",color="steelblue1",style="solid"];
+  Node5 [label="DestroyPath",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00456.html#ga884a3374d971261a01ccfd3b21e288e5",tooltip="Delete a path."];
+  Node1 -> Node6 [dir="back",color="steelblue1",style="solid"];
+  Node6 [label="DestroyRayResultVector",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00457.html#ga5a68e1d668554f73ee06de8aeeaaffad",tooltip="Destroy a vector of rayresults."];
+}

@@ -1,0 +1,21 @@
+digraph "HF::RayTracer::EmbreeRayTracer::ConstructGeometryFromBuffers"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="HF::RayTracer::EmbreeRay\lTracer::ConstructGeometryFrom\lBuffers",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Create a new instance of RTCGeometry from a triangle and vertex buffer."];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="HF::RayTracer::EmbreeRay\lTracer::EmbreeRayTracer",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01411.html#a99f9cf2231668b40902c19d6b886865a",tooltip="Create a new Raytracer and generate its BVH from a flat array of vertices."];
+  Node1 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="HF::RayTracer::EmbreeRay\lTracer::AddMesh",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01411.html#a6425a0f8f4a3ef8073e734ceb745cd1e",tooltip="Add a new mesh to this raytracer's BVH with the specified ID."];
+  Node3 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="HF::RayTracer::EmbreeRay\lTracer::EmbreeRayTracer",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01411.html#a0a3fa22a253ce3a7738f01286c11f589",tooltip="Create a new EmbreeRayTracer and add a single mesh to the scene."];
+  Node3 -> Node5 [dir="back",color="steelblue1",style="solid"];
+  Node5 [label="AddMesh",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00457.html#ga7f80c3aff3b2a8a28794830913ef2a36",tooltip="Add a new mesh to a raytracer."];
+  Node3 -> Node6 [dir="back",color="steelblue1",style="solid"];
+  Node6 [label="HF::RayTracer::EmbreeRay\lTracer::AddMesh",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01411.html#a3d478f577e30d1b437421224134b5a38",tooltip="Add several new meshes to the BVH."];
+  Node3 -> Node7 [dir="back",color="steelblue1",style="solid"];
+  Node7 [label="AddMeshes",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00457.html#ga06215cb24d54f979920f6022af214a00",tooltip="Add a new mesh to a raytracer."];
+}

@@ -1,0 +1,27 @@
+digraph "nlohmann::detail::serializer&lt; BasicJsonType &gt;"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="nlohmann::detail::serializer\l\< BasicJsonType \>",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" UTF8_ACCEPT\nUTF8_REJECT" ];
+  Node2 [label="uint8_t",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" o" ];
+  Node3 [label="output_adapter_t\< char \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" number_buffer" ];
+  Node4 [label="std::array\< char, 64 \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="darkorchid3",style="dashed",label=" elements" ];
+  Node5 [label="char",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" loc" ];
+  Node6 [label="lconv *",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" decimal_point\nindent_char\nthousands_sep" ];
+  Node7 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" string_buffer" ];
+  Node7 [label="std::array\< char, 512 \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node7 [dir="back",color="darkorchid3",style="dashed",label=" elements" ];
+  Node8 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" indent_string" ];
+  Node8 [label="string_t",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node9 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" error_handler" ];
+  Node9 [label="const error_handler_t",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+}

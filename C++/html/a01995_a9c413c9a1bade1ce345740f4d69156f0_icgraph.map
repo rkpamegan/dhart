@@ -1,19 +1,19 @@
 <map id="nlohmann::detail::binary_reader::exception_message" name="nlohmann::detail::binary_reader::exception_message">
-<area shape="rect" id="node1" title=" " alt="" coords="2043,804,2232,847"/>
-<area shape="rect" id="node2" href="$a01995.html#a9940f56290b9278c58772eda2931e599" title="Parses a byte array input of length len from the BSON input." alt="" coords="1396,175,1563,217"/>
+<area shape="rect" id="node1" title=" " alt="" coords="2045,804,2234,847"/>
+<area shape="rect" id="node2" href="$a01995.html#a9940f56290b9278c58772eda2931e599" title="Parses a byte array input of length len from the BSON input." alt="" coords="1397,175,1564,217"/>
 <area shape="rect" id="node7" href="$a01995.html#ab4afd9ee276bbb15a0f898061aad94dd" title=" " alt="" coords="405,385,564,428"/>
-<area shape="rect" id="node17" href="$a01995.html#a23921422802aa472360dd05023e20565" title="Parses a zero&#45;terminated string of length len from the BSON input." alt="" coords="1397,241,1562,284"/>
-<area shape="rect" id="node18" href="$a01995.html#acb001d18095dc5bcf7336ae5122b8340" title="reads a CBOR byte array" alt="" coords="1397,437,1562,480"/>
-<area shape="rect" id="node19" href="$a01995.html#a4e4accd5a2a41bfb2f18a8a0fcc9421c" title=" " alt="" coords="1139,444,1324,487"/>
-<area shape="rect" id="node22" href="$a01995.html#a545a44ae4b3fa2b7a61d9e8517fb7154" title="reads a CBOR string" alt="" coords="1399,528,1560,571"/>
-<area shape="rect" id="node23" href="$a01995.html#ad8cba5585327caa550dd5b6dd25a64f8" title="reads a MessagePack string" alt="" coords="1385,763,1574,805"/>
+<area shape="rect" id="node17" href="$a01995.html#a23921422802aa472360dd05023e20565" title="Parses a zero&#45;terminated string of length len from the BSON input." alt="" coords="1398,241,1563,284"/>
+<area shape="rect" id="node18" href="$a01995.html#acb001d18095dc5bcf7336ae5122b8340" title="reads a CBOR byte array" alt="" coords="1398,437,1563,480"/>
+<area shape="rect" id="node19" href="$a01995.html#a4e4accd5a2a41bfb2f18a8a0fcc9421c" title=" " alt="" coords="1138,444,1324,487"/>
+<area shape="rect" id="node22" href="$a01995.html#a545a44ae4b3fa2b7a61d9e8517fb7154" title="reads a CBOR string" alt="" coords="1400,528,1561,571"/>
+<area shape="rect" id="node23" href="$a01995.html#ad8cba5585327caa550dd5b6dd25a64f8" title="reads a MessagePack string" alt="" coords="1386,763,1575,805"/>
 <area shape="rect" id="node25" href="$a01995.html#ae020385ce9424271d61f85d3842c02cb" title=" " alt="" coords="894,704,1058,763"/>
 <area shape="rect" id="node27" href="$a01995.html#a26c694413fb860057e1a839d5422b361" title=" " alt="" coords="1148,1144,1314,1203"/>
-<area shape="rect" id="node28" href="$a01995.html#a7e5e0b71548d0649ce4f131280d06c33" title=" " alt="" coords="890,1063,1062,1105"/>
-<area shape="rect" id="node32" href="$a01995.html#a7b6c2d4c95d56751e233e285a5f1fea7" title="determine the type and size for a container" alt="" coords="1132,1248,1330,1291"/>
-<area shape="rect" id="node33" href="$a01995.html#aba7ba9ec9a52ad2bee8baff70176aa20" title=" " alt="" coords="1378,1163,1581,1205"/>
-<area shape="rect" id="node34" href="$a01995.html#a4ae90db51c102e912b7eac83c78733a6" title="reads a UBJSON string" alt="" coords="1392,944,1567,987"/>
-<area shape="rect" id="node35" href="$a01995.html#a61a0bd8bbe7b560bd429fa990ba3ba1a" title=" " alt="" coords="1836,699,1995,741"/>
+<area shape="rect" id="node28" href="$a01995.html#a7e5e0b71548d0649ce4f131280d06c33" title=" " alt="" coords="889,1053,1062,1096"/>
+<area shape="rect" id="node32" href="$a01995.html#a7b6c2d4c95d56751e233e285a5f1fea7" title="determine the type and size for a container" alt="" coords="1132,1239,1330,1281"/>
+<area shape="rect" id="node33" href="$a01995.html#aba7ba9ec9a52ad2bee8baff70176aa20" title=" " alt="" coords="1378,1163,1583,1205"/>
+<area shape="rect" id="node34" href="$a01995.html#a4ae90db51c102e912b7eac83c78733a6" title="reads a UBJSON string" alt="" coords="1393,944,1568,987"/>
+<area shape="rect" id="node35" href="$a01995.html#a61a0bd8bbe7b560bd429fa990ba3ba1a" title=" " alt="" coords="1838,699,1997,741"/>
 <area shape="rect" id="node3" href="$a01995.html#a23bde2450d7a5772bf5051e36ff560a4" title="Read a BSON document element of the given element_type." alt="" coords="1135,229,1327,288"/>
 <area shape="rect" id="node4" href="$a01995.html#a4e07b75ccb2579d0e738b894f0fd8cf8" title="Read a BSON element list (as specified in the BSON&#45;spec)" alt="" coords="868,244,1084,287"/>
 <area shape="rect" id="node5" href="$a01995.html#a23eb89a222e22533e9fd43e76722f44f" title="Reads an array from the BSON input and passes it to the SAX&#45;parser." alt="" coords="633,303,808,345"/>
@@ -31,12 +31,12 @@
 <area shape="rect" id="node21" href="$a01995.html#a47092a2195bf9cd3cdb4dda67cc404ed" title=" " alt="" coords="894,511,1058,553"/>
 <area shape="rect" id="node24" href="$a01995.html#a8bebd21ceef09b6b2562e87861832700" title=" " alt="" coords="1135,712,1327,755"/>
 <area shape="rect" id="node26" href="$a01995.html#a0ce1d7066597952efb008aaf578b2bd6" title=" " alt="" coords="627,712,814,755"/>
-<area shape="rect" id="node29" href="$a01995.html#afb36cb588b795efa513fc95e949493b7" title=" " alt="" coords="399,1185,570,1228"/>
-<area shape="rect" id="node30" href="$a01995.html#adcf64ad3207f4bf37a5a31c920a385c3" title=" " alt="" coords="396,1060,573,1103"/>
-<area shape="rect" id="node31" href="$a01995.html#a5a79480d661019b0f3fc615ae12f7de7" title=" " alt="" coords="621,989,820,1032"/>
-<area shape="rect" id="node36" href="$a01995.html#a55e13d567a53234573ab3833c0ca32e9" title="create a byte array by reading bytes from the input" alt="" coords="1629,464,1788,507"/>
-<area shape="rect" id="node38" href="$a01995.html#a354cbbaaea672c024ac949e1801c4302" title="Parses a C&#45;style string from the BSON input." alt="" coords="1629,43,1788,85"/>
-<area shape="rect" id="node39" href="$a01995.html#ac356c6364fe0273d3303fb7a447f4ef6" title=" " alt="" coords="1629,699,1788,741"/>
-<area shape="rect" id="node40" href="$a01995.html#a540919db22df36512f05a88945c13263" title="create a string by reading characters from the input" alt="" coords="1629,632,1788,675"/>
-<area shape="rect" id="node37" href="$a01995.html#a389e550fd397a48121cb82d92bb7475a" title="reads a MessagePack byte array" alt="" coords="1383,595,1576,637"/>
+<area shape="rect" id="node29" href="$a01995.html#afb36cb588b795efa513fc95e949493b7" title=" " alt="" coords="399,1176,570,1219"/>
+<area shape="rect" id="node30" href="$a01995.html#adcf64ad3207f4bf37a5a31c920a385c3" title=" " alt="" coords="396,1051,573,1093"/>
+<area shape="rect" id="node31" href="$a01995.html#a5a79480d661019b0f3fc615ae12f7de7" title=" " alt="" coords="621,980,820,1023"/>
+<area shape="rect" id="node36" href="$a01995.html#a55e13d567a53234573ab3833c0ca32e9" title="create a byte array by reading bytes from the input" alt="" coords="1631,464,1790,507"/>
+<area shape="rect" id="node38" href="$a01995.html#a354cbbaaea672c024ac949e1801c4302" title="Parses a C&#45;style string from the BSON input." alt="" coords="1631,43,1790,85"/>
+<area shape="rect" id="node39" href="$a01995.html#ac356c6364fe0273d3303fb7a447f4ef6" title=" " alt="" coords="1631,699,1790,741"/>
+<area shape="rect" id="node40" href="$a01995.html#a540919db22df36512f05a88945c13263" title="create a string by reading characters from the input" alt="" coords="1631,632,1790,675"/>
+<area shape="rect" id="node37" href="$a01995.html#a389e550fd397a48121cb82d92bb7475a" title="reads a MessagePack byte array" alt="" coords="1384,595,1577,637"/>
 </map>

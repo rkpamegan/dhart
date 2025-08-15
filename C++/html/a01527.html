@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('a01527.html',''); initResizable(); });
 <p>A connection to a child node.   
  <a href="a01527.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00263_source.html">Edge.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00263_source.html">edge.h</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for HF::SpatialStructures::Edge:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -136,7 +136,7 @@ Public Attributes</h2></td></tr>
 <div class="textblock"><p >A connection to a child node.  </p>
 <dl class="section remark"><dt>Remarks</dt><dd>To save memory, edge contains no parent node. This is usually because edges can be placed in arrays to match the order of parent nodes. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="a00263_source.html#l00029">29</a> of file <a class="el" href="a00263_source.html">Edge.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00263_source.html#l00029">29</a> of file <a class="el" href="a00263_source.html">edge.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aef0cf597e116d00ae3f4826578c14e7e" name="aef0cf597e116d00ae3f4826578c14e7e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aef0cf597e116d00ae3f4826578c14e7e">&#9670;&#160;</a></span>Edge() <span class="overload">[1/2]</span></h2>
@@ -179,15 +179,15 @@ Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="comment">// be sure to #include &quot;Edge.h&quot;</span></div>
+<div class="fragment"><div class="line"><span class="comment">// be sure to #include &quot;edge.h&quot;</span></div>
 <div class="line"> </div>
 <div class="line"><a class="code hl_struct" href="a02071.html">HF::SpatialStructures::Node</a> node(12.0, 23.1, 34.2, 456);</div>
 <div class="line"><span class="keywordtype">float</span> <a class="code hl_variable" href="a01527.html#a8ac634140d603f7471f059d5845e9467">score</a> = 4.3f;</div>
 <div class="line"> </div>
 <div class="line"><a class="code hl_struct" href="a01527.html">HF::SpatialStructures::Edge</a> edge(node, <a class="code hl_variable" href="a01527.html#a8ac634140d603f7471f059d5845e9467">score</a>, <a class="code hl_enumvalue" href="a00465.html#af0378d900074d484ba791d4317e5935ea7a2b5bf64195a97a6b132bf9c58d0bf9">STEP::NOT_CONNECTED</a>);</div>
-<div class="ttc" id="aa00465_html_af0378d900074d484ba791d4317e5935ea7a2b5bf64195a97a6b132bf9c58d0bf9"><div class="ttname"><a href="a00465.html#af0378d900074d484ba791d4317e5935ea7a2b5bf64195a97a6b132bf9c58d0bf9">HF::SpatialStructures::NOT_CONNECTED</a></div><div class="ttdeci">@ NOT_CONNECTED</div><div class="ttdoc">No connection between parent and child.</div><div class="ttdef"><b>Definition:</b> <a href="a00263_source.html#l00016">Edge.h:16</a></div></div>
-<div class="ttc" id="aa01527_html"><div class="ttname"><a href="a01527.html">HF::SpatialStructures::Edge</a></div><div class="ttdoc">A connection to a child node.</div><div class="ttdef"><b>Definition:</b> <a href="a00263_source.html#l00029">Edge.h:29</a></div></div>
-<div class="ttc" id="aa01527_html_a8ac634140d603f7471f059d5845e9467"><div class="ttname"><a href="a01527.html#a8ac634140d603f7471f059d5845e9467">HF::SpatialStructures::Edge::score</a></div><div class="ttdeci">float score</div><div class="ttdoc">The cost required to traverse this edge.</div><div class="ttdef"><b>Definition:</b> <a href="a00263_source.html#l00032">Edge.h:32</a></div></div>
+<div class="ttc" id="aa00465_html_af0378d900074d484ba791d4317e5935ea7a2b5bf64195a97a6b132bf9c58d0bf9"><div class="ttname"><a href="a00465.html#af0378d900074d484ba791d4317e5935ea7a2b5bf64195a97a6b132bf9c58d0bf9">HF::SpatialStructures::NOT_CONNECTED</a></div><div class="ttdeci">@ NOT_CONNECTED</div><div class="ttdoc">No connection between parent and child.</div><div class="ttdef"><b>Definition:</b> <a href="a00263_source.html#l00016">edge.h:16</a></div></div>
+<div class="ttc" id="aa01527_html"><div class="ttname"><a href="a01527.html">HF::SpatialStructures::Edge</a></div><div class="ttdoc">A connection to a child node.</div><div class="ttdef"><b>Definition:</b> <a href="a00263_source.html#l00029">edge.h:29</a></div></div>
+<div class="ttc" id="aa01527_html_a8ac634140d603f7471f059d5845e9467"><div class="ttname"><a href="a01527.html#a8ac634140d603f7471f059d5845e9467">HF::SpatialStructures::Edge::score</a></div><div class="ttdeci">float score</div><div class="ttdoc">The cost required to traverse this edge.</div><div class="ttdef"><b>Definition:</b> <a href="a00263_source.html#l00032">edge.h:32</a></div></div>
 <div class="ttc" id="aa02071_html"><div class="ttname"><a href="a02071.html">HF::SpatialStructures::Node</a></div><div class="ttdoc">A point in space with an ID.</div><div class="ttdef"><b>Definition:</b> <a href="a00275_source.html#l00038">node.h:38</a></div></div>
 </div><!-- fragment --> 
 <p class="definition">Definition at line <a class="el" href="a00260_source.html#l00012">12</a> of file <a class="el" href="a00260_source.html">edge.cpp</a>.</p>
@@ -219,7 +219,7 @@ Public Attributes</h2></td></tr>
 
 <p>Default Constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="a00263_source.html#l00053">53</a> of file <a class="el" href="a00263_source.html">Edge.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00263_source.html#l00053">53</a> of file <a class="el" href="a00263_source.html">edge.h</a>.</p>
 
 </div>
 </div>
@@ -238,7 +238,7 @@ Public Attributes</h2></td></tr>
 
 <p>The child node for this edge. </p>
 
-<p class="definition">Definition at line <a class="el" href="a00263_source.html#l00030">30</a> of file <a class="el" href="a00263_source.html">Edge.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00263_source.html#l00030">30</a> of file <a class="el" href="a00263_source.html">edge.h</a>.</p>
 
 </div>
 </div>
@@ -256,7 +256,7 @@ Public Attributes</h2></td></tr>
 
 <p>The cost required to traverse this edge. </p>
 
-<p class="definition">Definition at line <a class="el" href="a00263_source.html#l00032">32</a> of file <a class="el" href="a00263_source.html">Edge.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00263_source.html#l00032">32</a> of file <a class="el" href="a00263_source.html">edge.h</a>.</p>
 
 </div>
 </div>
@@ -275,12 +275,12 @@ Public Attributes</h2></td></tr>
 <p>Step required to traverse this edge. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="a00465.html#af0378d900074d484ba791d4317e5935e" title="Describes the type of step an edge connects to.">STEP</a> for info on every step type. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="a00263_source.html#l00031">31</a> of file <a class="el" href="a00263_source.html">Edge.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00263_source.html#l00031">31</a> of file <a class="el" href="a00263_source.html">edge.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
-<li>Cpp/spatialstructures/src/<a class="el" href="a00263_source.html">Edge.h</a></li>
+<li>Cpp/spatialstructures/src/<a class="el" href="a00263_source.html">edge.h</a></li>
 <li>Cpp/spatialstructures/src/<a class="el" href="a00260_source.html">edge.cpp</a></li>
 </ul>
 </div><!-- contents -->

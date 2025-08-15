@@ -1,0 +1,8 @@
+<map id="HF::GraphGenerator::CheckConnection" name="HF::GraphGenerator::CheckConnection">
+<area shape="rect" id="node1" title="Determine what kind of step (if any) is between parent and child, given that a connection was verifie..." alt="" coords="5,72,145,115"/>
+<area shape="rect" id="node2" href="$a00463.html#ace66c1b60785c32433402f012019ab81" title="Determine if there is a valid line of sight between parent and child." alt="" coords="193,72,332,115"/>
+<area shape="rect" id="node3" href="$a00463.html#a750afc15c798c79a8b6a0784ed092f3c" title="Calculate the normalized direction from one node to another." alt="" coords="391,5,530,48"/>
+<area shape="rect" id="node5" href="$a00463.html#a7f96186b8f24f878404d1feccf2f64db" title="Calculate the distance between two nodes." alt="" coords="391,72,530,115"/>
+<area shape="rect" id="node6" href="$a01419.html#a22ebf97e859ef651e81deb40b74f668f" title=" " alt="" coords="380,163,541,205"/>
+<area shape="rect" id="node4" href="$a00463.html#ad2e09e0825a1db4fc511907179eddf00" title="Normalize a vector." alt="" coords="589,5,729,48"/>
+</map>

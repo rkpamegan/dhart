@@ -1,10 +1,15 @@
 var a00011 =
 [
+    [ "CalculateAndStoreStepType", "a00011.html#a0251caf5a32eb2c1f9d846d88eb7fe22", null ],
+    [ "CalculateStepType", "a00011.html#a81398de53e151ae58b206523e555309e", null ],
+    [ "CalculateStepType", "a00011.html#a176c58b25fb5cb545d17128d4535f921", null ],
     [ "CheckChildren", "a00011.html#a4b7cc0ad0002975404acef5064f4f546", null ],
+    [ "CheckConnection", "a00011.html#a260a25e02193ce904849ee090daefa2e", null ],
     [ "CheckConnection", "a00011.html#aeab1db37b5aa614235f109d5dd9711a9", null ],
     [ "CheckGeometryID", "a00011.html#ab731d597ee2a843f7b7cb1ccbae67782", null ],
     [ "CheckRay", "a00011.html#a74be560268a713fc9e9b8b4a453afa2f", null ],
     [ "CheckSlope", "a00011.html#a9daa85cb56a1b18d44f46aa9c420afde", null ],
+    [ "CompareCheckConnections", "a00011.html#a5d2ad6de2131b1a90a80f901ac8dd185", null ],
     [ "CreateDirecs", "a00011.html#aefd344ebb2faadc64a56a16dc8582026", null ],
     [ "DirectionTo", "a00011.html#a750afc15c798c79a8b6a0784ed092f3c", null ],
     [ "DistanceTo", "a00011.html#a7f96186b8f24f878404d1feccf2f64db", null ],

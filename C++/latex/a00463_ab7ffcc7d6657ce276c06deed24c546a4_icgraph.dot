@@ -1,0 +1,22 @@
+digraph "HF::GraphGenerator::GetChildren"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="HF::GraphGenerator\l::GetChildren",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Calculate all possible edges between parent and possible_children."];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="HF::GraphGenerator\l::GraphGenerator::CrawlGeom",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01311.html#ac7052d4b625fb96f29c5bfc091a86f7e",tooltip="Perform breadth first search to populate the graph with with nodes and edges."];
+  Node2 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="HF::GraphGenerator\l::GraphGenerator::IMPL\l_BuildNetwork",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01311.html#a5788e421d921ec0ff27defc139c45106",tooltip="Generate a graph of accessible space."];
+  Node3 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="HF::GraphGenerator\l::GraphGenerator::BuildNetwork",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01311.html#a0c12341433bbec41cc12cc1dbb41a976",tooltip="Generate a graph of accessible space."];
+  Node4 -> Node5 [dir="back",color="steelblue1",style="solid"];
+  Node5 [label="GenerateGraph",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00454.html#ga2df84a732d1edfb70b7bd26d3282e129",tooltip="Construct a graph by performing a breadth-first search of accessible space."];
+  Node4 -> Node6 [dir="back",color="steelblue1",style="solid"];
+  Node6 [label="GenerateGraphObstacles",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00454.html#gab9f58e3ecc686fa9bc34519b0faed734",tooltip="Construct a graph by performing a breadth-first search of accessible space, seperating obstacles from..."];
+  Node1 -> Node7 [dir="back",color="steelblue1",style="solid"];
+  Node7 [label="HF::GraphGenerator\l::GraphGenerator::CrawlGeom\lParallel",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01311.html#a843cc6b5b69b5d013930b3685789fa15",tooltip="Perform breadth first search to populate the graph with nodes and edges using multiple cores."];
+  Node7 -> Node3 [dir="back",color="steelblue1",style="solid"];
+}

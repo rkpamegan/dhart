@@ -1,0 +1,15 @@
+digraph "HF::GraphGenerator::GeometryFlagMap::Set"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="HF::GraphGenerator\l::GeometryFlagMap::Set",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Set the value of a key in the internal dictionary."];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="HF::GraphGenerator\l::GeometryFlagMap::SetGeometryIds",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01299.html#a5f5b32d65d3d43143915633c8411acaf",tooltip="Set geometry ids as being walkable or obstacles."];
+  Node2 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="HF::GraphGenerator\l::GraphGenerator::GraphGenerator",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01311.html#a804c4c9a8169aa9901cb32ee0f64c555",tooltip="Construct a new graph generator with a specific raytracer."];
+  Node2 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="HF::GraphGenerator\l::setupRT",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00463.html#a124a96c53ed2021db9d819369fe6b7ad",tooltip="Converts the raytracer to a multiRT if required, then map geometry ids to hitflags."];
+}

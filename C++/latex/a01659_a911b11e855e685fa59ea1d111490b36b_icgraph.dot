@@ -1,0 +1,15 @@
+digraph "nlohmann::basic_json::is_boolean"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="nlohmann::basic_json\l::is_boolean",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="return whether value is a boolean"];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="nlohmann::basic_json\l::get_impl",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01659.html#a462f82051df2a68142c2bbd0a2798f56",tooltip="get a boolean (explicit)"];
+  Node1 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="nlohmann::basic_json\l::get_impl_ptr",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01659.html#a30c610612cd55d1679a980f27b4475dd",tooltip="get a pointer to the value (boolean)"];
+  Node1 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="nlohmann::basic_json\l::is_primitive",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01659.html#a548d2d4013da24e7d7510d90febc80c4",tooltip="return whether type is primitive"];
+}

@@ -1,0 +1,4 @@
+<map id="GetEdgesForNode" name="GetEdgesForNode">
+<area shape="rect" id="node1" title="Get a vector of edges every node in the given graph pointer." alt="" coords="5,13,135,40"/>
+<area shape="rect" id="node2" href="$a01551.html#afb7fd113e4afe1d0eb01dd23d69b5ecd" title="Check if this ID has already been assigned." alt="" coords="183,5,330,48"/>
+</map>

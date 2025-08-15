@@ -1,0 +1,15 @@
+digraph "HF::SpatialStructures::Node::Node"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="HF::SpatialStructures\l::Node::Node",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Default constructor. Every element contained is defaulted to NAN."];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="HF::SpatialStructures\l::Node::operator*",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a02071.html#a099271bad26dd059037f3c84459058e0",tooltip="Creates a new node from the dot product of this node and n2."];
+  Node1 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="HF::SpatialStructures\l::Node::operator+",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a02071.html#a064540b380fc6251bdf6d740abf7a169",tooltip="Creates a new node from the vector addition of this node and n2."];
+  Node1 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="HF::SpatialStructures\l::Node::operator-",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a02071.html#ad58a4eb9f0a15c645eedf668d9bcec54",tooltip="Creates a node from the vector subtraction of this node and n2's position."];
+}

@@ -1,0 +1,33 @@
+digraph "HF::SpatialStructures::Normalize"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="HF::SpatialStructures\l::Normalize",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="HF::SpatialStructures\l::Node::directionTo",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a02071.html#ad3f7898ef3178eef0c3579869a7f5c67",tooltip="Get the direction between this node and another node"];
+  Node2 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="HF::SpatialStructures\l::CostAlgorithms::Calculate\lEnergyExpenditure",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00475.html#ac51f2e76c00356f8a6145bee865cd922",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="CalculateAndStoreEnergyExpenditure",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00458.html#ga76d98cf2df63a766a74137dfa815d9a9",tooltip="Calculates energy expenditure for all subgraphs in *g and stores them in the graph at AlgorithmCostTi..."];
+  Node3 -> Node5 [dir="back",color="steelblue1",style="solid"];
+  Node5 [label="HF::SpatialStructures\l::CostAlgorithms::Calculate\lEnergyExpenditure",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00475.html#adbe5e58355a884494d6e99bf17fc5f7b",tooltip=" "];
+  Node2 -> Node6 [dir="back",color="steelblue1",style="solid"];
+  Node6 [label="HF::SpatialStructures\l::CostAlgorithms::GetPerpendicular\lEdges",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00475.html#aeec6f9a28592565ad59609852e482663",tooltip=" "];
+  Node2 -> Node7 [dir="back",color="steelblue1",style="solid"];
+  Node7 [label="HF::VisibilityGraph\l::IsOcclusionBetween",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00467.html#a4d9cf77879eb78075f7f7b0a7e31119a",tooltip="Perform a line of sight check between two nodes."];
+  Node7 -> Node8 [dir="back",color="steelblue1",style="solid"];
+  Node8 [label="HF::VisibilityGraph\l::AllToAll",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00467.html#a12eb1e4c06400c4625cd22d925927b03",tooltip="Generate a Visibility Graph between every node in a set of nodes in parallel."];
+  Node8 -> Node9 [dir="back",color="steelblue1",style="solid"];
+  Node9 [label="CreateVisibilityGraphAll\lToAll",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00460.html#ga0255e6c4811298e61110adc64c0f8acd",tooltip="Create a new directed visibility graph between all nodes in parameter nodes."];
+  Node7 -> Node10 [dir="back",color="steelblue1",style="solid"];
+  Node10 [label="HF::VisibilityGraph\l::AllToAllUndirected",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00467.html#ab1db87927118f70786a664c3b3cc7905",tooltip="Generate a Visibility Graph with every edge stored twice."];
+  Node10 -> Node11 [dir="back",color="steelblue1",style="solid"];
+  Node11 [label="CreateVisibilityGraphAll\lToAllUndirected",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00460.html#ga9b0664a60bcdf276b0fe0a2023b3d9b8",tooltip="Create a new undirected visibility graph between all nodes in nodes."];
+  Node7 -> Node12 [dir="back",color="steelblue1",style="solid"];
+  Node12 [label="HF::VisibilityGraph\l::GroupToGroup",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00467.html#ae42a5aafdfcc29b6a668355c07602efb",tooltip="Generate a Visibility Graph from a set of nodes to another set of nodes."];
+  Node12 -> Node13 [dir="back",color="steelblue1",style="solid"];
+  Node13 [label="CreateVisibilityGraphGroup\lToGroup",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00460.html#gaf2e404cb696aee3473cac0d1507576d8",tooltip="Create a new visibility graph from the nodes in group_a, into the nodes of group_b."];
+}

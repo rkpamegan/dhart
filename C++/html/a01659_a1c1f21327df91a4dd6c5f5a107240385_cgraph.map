@@ -12,17 +12,17 @@
 <area shape="rect" id="node25" href="$a01659.html#a33c7c8638bb0b12e6d1b69d8106dd2e0" title="returns the number of elements" alt="" coords="205,619,352,661"/>
 <area shape="rect" id="node26" href="$a01659.html#a5b7c4b35a0ad9f97474912a08965d7ad" title="return the type of the JSON value (explicit)" alt="" coords="205,685,352,728"/>
 <area shape="rect" id="node3" href="$a02011.html#a5d5f92c7f6848814bc82cf7e4e541820" title="set the iterator to the first value" alt="" coords="421,37,563,80"/>
-<area shape="rect" id="node4" href="$a02003.html#a9d9b005906106e12aed738f97d7fee42" title="set iterator to a defined beginning" alt="" coords="633,24,804,67"/>
-<area shape="rect" id="node5" href="$a02003.html#ad26a823483846a12d890c3feed3097eb" title="set iterator to a defined past the end" alt="" coords="857,112,1028,155"/>
+<area shape="rect" id="node4" href="$a02003.html#a9d9b005906106e12aed738f97d7fee42" title="set iterator to a defined beginning" alt="" coords="632,24,805,67"/>
+<area shape="rect" id="node5" href="$a02003.html#ad26a823483846a12d890c3feed3097eb" title="set iterator to a defined past the end" alt="" coords="857,112,1030,155"/>
 <area shape="rect" id="node8" href="$a02011.html#a23e50ad4c13aa62d9ac7f60a123823ee" title="set the iterator past the last value" alt="" coords="647,141,790,184"/>
-<area shape="rect" id="node11" href="$a01663.html#aa7649d30da9fc10b0e20704a27aea2a9" title="replace all occurrences of a substring by another string" alt="" coords="415,285,570,328"/>
-<area shape="rect" id="node13" href="$a01659.html#a57e8411a770a6263d6d8f2116c37f3aa" title="return whether value is an object" alt="" coords="419,219,566,261"/>
-<area shape="rect" id="node15" href="$a01567.html#a4e849260a3caa1b288c7e619130c6c09" title=" " alt="" coords="413,352,572,395"/>
+<area shape="rect" id="node11" href="$a01663.html#aa7649d30da9fc10b0e20704a27aea2a9" title="replace all occurrences of a substring by another string" alt="" coords="414,285,570,328"/>
+<area shape="rect" id="node13" href="$a01659.html#a57e8411a770a6263d6d8f2116c37f3aa" title="return whether value is an object" alt="" coords="418,219,566,261"/>
+<area shape="rect" id="node15" href="$a01567.html#a4e849260a3caa1b288c7e619130c6c09" title=" " alt="" coords="412,352,573,395"/>
 <area shape="rect" id="node17" href="$a01571.html#aecc083aea4b698c33d042670ba50c10f" title=" " alt="" coords="418,485,567,528"/>
-<area shape="rect" id="node18" href="$a01659.html#ab5c8034e997c5b852b92bdc6a3f70994" title="Helper for insertion of an iterator." alt="" coords="419,419,566,461"/>
-<area shape="rect" id="node19" href="$a01659.html#ab5b70d60a636b9c5e10f6c8caac60b9e" title="return whether value is an array" alt="" coords="419,552,566,595"/>
-<area shape="rect" id="node20" href="$a01659.html#ab8811fc4eab6091b32b34b3ac3e90474" title="return the type as string" alt="" coords="419,619,566,661"/>
+<area shape="rect" id="node18" href="$a01659.html#ab5c8034e997c5b852b92bdc6a3f70994" title="Helper for insertion of an iterator." alt="" coords="418,419,566,461"/>
+<area shape="rect" id="node19" href="$a01659.html#ab5b70d60a636b9c5e10f6c8caac60b9e" title="return whether value is an array" alt="" coords="418,552,566,595"/>
+<area shape="rect" id="node20" href="$a01659.html#ab8811fc4eab6091b32b34b3ac3e90474" title="return the type as string" alt="" coords="418,619,566,661"/>
 <area shape="rect" id="node16" href="$a01559.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="628,419,809,461"/>
-<area shape="rect" id="node23" href="$a01659.html#aa7e7b1bdb6e9dbcfa5e284e8a2fb6464" title="checks the class invariants" alt="" coords="419,685,566,728"/>
-<area shape="rect" id="node24" href="$a01659.html#aedc7afad96292b5ab61a2e0ad3067f5f" title="return whether value is null" alt="" coords="419,752,566,795"/>
+<area shape="rect" id="node23" href="$a01659.html#aa7e7b1bdb6e9dbcfa5e284e8a2fb6464" title="checks the class invariants" alt="" coords="418,685,566,728"/>
+<area shape="rect" id="node24" href="$a01659.html#aedc7afad96292b5ab61a2e0ad3067f5f" title="return whether value is null" alt="" coords="418,752,566,795"/>
 </map>

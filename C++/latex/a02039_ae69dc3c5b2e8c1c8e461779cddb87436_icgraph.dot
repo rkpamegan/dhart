@@ -1,0 +1,19 @@
+digraph "nlohmann::detail::binary_writer::write_compact_float"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="nlohmann::detail::binary\l_writer::write_compact_float",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="nlohmann::detail::binary\l_writer::write_cbor",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a02039.html#aa0ab8d27fd88a33a2f801413ac4c7fbc",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="nlohmann::basic_json\l::to_cbor",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01659.html#a2becf604016783e5644eaa7782a08683",tooltip=" "];
+  Node2 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node1 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="nlohmann::detail::binary\l_writer::write_msgpack",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a02039.html#ae4e0852b64102ce4b07d99f08f828b7c",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="steelblue1",style="solid"];
+  Node5 [label="nlohmann::basic_json\l::to_msgpack",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01659.html#aa8fe46eda86f6f92c5599c20b6c81819",tooltip=" "];
+  Node4 -> Node4 [dir="back",color="steelblue1",style="solid"];
+}

@@ -21,13 +21,7 @@ Contains implmentation for the \mbox{\hyperlink{a01391}{Boost\+Graph\+Deleter}} 
 {\ttfamily \#include $<$boost\+\_\+graph.\+h$>$}\newline
 {\ttfamily \#include $<$path.\+h$>$}\newline
 Include dependency graph for path\+\_\+finder.\+cpp\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a00204}
-\end{center}
-\end{figure}
+% FIG 0
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
@@ -60,7 +54,11 @@ void \mbox{\hyperlink{a00472_a417084c97d0672af2da7739157a9d8c0}{HF\+::\+Pathfind
 std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{a01383}{Boost\+Graph}}, \mbox{\hyperlink{a01391}{Boost\+Graph\+Deleter}} $>$ \mbox{\hyperlink{a00472_ae2106e09eb44d681fbc6c0f66a3d3ac4}{HF\+::\+Pathfinding\+::\+Create\+Boost\+Graph}} (const \mbox{\hyperlink{a01551}{HF\+::\+Spatial\+Structures\+::\+Graph}} \&g, const std\+::string \&cost\+\_\+type=\char`\"{}\char`\"{})
 \begin{DoxyCompactList}\small\item\em Create a new boost graph from a \mbox{\hyperlink{a00465}{HF\+::\+Spatial\+Structures}}\+:Graph. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{a00472_a69bd3efcc13788e7c4be43b67d6002e5}{HF\+::\+Pathfinding\+::\+Insert\+All\+To\+All\+Paths\+Into\+Array}} (\mbox{\hyperlink{a01383}{Boost\+Graph}} $\ast$bg, \mbox{\hyperlink{a02083}{HF\+::\+Spatial\+Structures\+::\+Path}} $\ast$$\ast$out\+\_\+paths, \mbox{\hyperlink{a02079}{HF\+::\+Spatial\+Structures\+::\+Path\+Member}} $\ast$$\ast$out\+\_\+path\+\_\+members, int $\ast$out\+\_\+sizes)
-\begin{DoxyCompactList}\small\item\em A special version of Find\+Paths optimized for the C\+\_\+\+Interface, such that all paths possible from each node to every other node are generated. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em A special version of Find\+Paths optimized for the C\+\_\+\+Interface, such that all paths possible from each node to every other node are generated. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{a00472_a3d6e0ea77f750fa05bbf4339584cc15a}{HF\+::\+Pathfinding\+::\+Construct\+Shortest\+Path\+Nodes\+From\+Pred}} (int start, int end, const std\+::vector$<$ size\+\_\+t $>$ \&pred)
+\begin{DoxyCompactList}\small\item\em Construct the shortest path of node ids given predecessor and distance vectors. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{a00472_a6d24adcb1c0891a98e7d9a8d36f8cc01}{HF\+::\+Pathfinding\+::\+Find\+APSP}} (\mbox{\hyperlink{a01383}{Boost\+Graph}} \&bg)
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}

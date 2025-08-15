@@ -1,0 +1,13 @@
+digraph "HF::Geometry::MeshInfo::GetIndexPointer"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="HF::Geometry::MeshInfo\l::GetIndexPointer",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Get a pointer to the index array of this mesh."];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="HF::RayTracer::NanoRTRay\lTracer::NanoRTRayTracer",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01519.html#a0229249855045b4fbf7097c31827f6e6",tooltip="Construct a new raytracer with an instance of meshinfo."];
+  Node1 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="GetVertsAndTris",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00455.html#ga89fc0803b894e7fa218ae271c46fb434",tooltip="Get a pointer to and the size of a mesh's triangle and vertex arrays."];
+}

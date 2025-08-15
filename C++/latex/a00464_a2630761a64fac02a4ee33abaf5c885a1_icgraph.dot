@@ -1,0 +1,43 @@
+digraph "HF::RayTracer::DidIntersect"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="HF::RayTracer::DidIntersect",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="HF::RayTracer::HitStruct\l::DidHit",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01415.html#a3d86c2c8d8e0ec6bf63a653ec89807a8",tooltip="Determine whether or not this hitstruct contains a hit."];
+  Node2 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="HF::GraphGenerator\l::CheckRay",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00463.html#a74be560268a713fc9e9b8b4a453afa2f",tooltip="Cast a ray and get the point of intersection if it connects."];
+  Node3 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="HF::GraphGenerator\l::CheckChildren",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00463.html#a4b7cc0ad0002975404acef5064f4f546",tooltip="Determine whether children are over valid ground, and and meet upstep/downstep requirements."];
+  Node4 -> Node5 [dir="back",color="steelblue1",style="solid"];
+  Node5 [label="HF::GraphGenerator\l::GetChildren",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00463.html#ab7ffcc7d6657ce276c06deed24c546a4",tooltip="Calculate all possible edges between parent and possible_children."];
+  Node5 -> Node6 [dir="back",color="steelblue1",style="solid"];
+  Node6 [label="HF::GraphGenerator\l::GraphGenerator::CrawlGeom",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01311.html#ac7052d4b625fb96f29c5bfc091a86f7e",tooltip="Perform breadth first search to populate the graph with with nodes and edges."];
+  Node6 -> Node7 [dir="back",color="steelblue1",style="solid"];
+  Node7 [label="HF::GraphGenerator\l::GraphGenerator::IMPL\l_BuildNetwork",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01311.html#a5788e421d921ec0ff27defc139c45106",tooltip="Generate a graph of accessible space."];
+  Node7 -> Node8 [dir="back",color="steelblue1",style="solid"];
+  Node8 [label="HF::GraphGenerator\l::GraphGenerator::BuildNetwork",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01311.html#a0c12341433bbec41cc12cc1dbb41a976",tooltip="Generate a graph of accessible space."];
+  Node8 -> Node9 [dir="back",color="steelblue1",style="solid"];
+  Node9 [label="GenerateGraph",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00454.html#ga2df84a732d1edfb70b7bd26d3282e129",tooltip="Construct a graph by performing a breadth-first search of accessible space."];
+  Node8 -> Node10 [dir="back",color="steelblue1",style="solid"];
+  Node10 [label="GenerateGraphObstacles",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00454.html#gab9f58e3ecc686fa9bc34519b0faed734",tooltip="Construct a graph by performing a breadth-first search of accessible space, seperating obstacles from..."];
+  Node5 -> Node11 [dir="back",color="steelblue1",style="solid"];
+  Node11 [label="HF::GraphGenerator\l::GraphGenerator::CrawlGeom\lParallel",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01311.html#a843cc6b5b69b5d013930b3685789fa15",tooltip="Perform breadth first search to populate the graph with nodes and edges using multiple cores."];
+  Node11 -> Node7 [dir="back",color="steelblue1",style="solid"];
+  Node3 -> Node12 [dir="back",color="steelblue1",style="solid"];
+  Node12 [label="HF::GraphGenerator\l::ValidateStartPoint",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00463.html#a9ddffecb75b34434d7157b49d3c67b60",tooltip="Determine if the start point of the graph is over valid ground."];
+  Node12 -> Node7 [dir="back",color="steelblue1",style="solid"];
+  Node2 -> Node13 [dir="back",color="steelblue1",style="solid"];
+  Node13 [label="HF::RayTracer::EmbreeRay\lTracer::IntersectOutputArguments",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01411.html#a7f8ab81033bdefaea0eea729aa9125ae",tooltip="Cast a ray from origin in direction and update the parameters instead of returning a hitstruct."];
+  Node13 -> Node14 [dir="back",color="steelblue1",style="solid"];
+  Node14 [label="CastRaysDistance",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00457.html#ga81a505c14bba3bed1515384b209b3422",tooltip="Cast rays for each node in origins/directions as ordered pairs and get distance back as a result."];
+  Node13 -> Node15 [dir="back",color="steelblue1",style="solid"];
+  Node15 [label="CastSingleRayDistance",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00457.html#ga1377ba0807c3141ef68b1c94682853e6",tooltip="Cast a single ray and get the distance to its hit and the mesh ID if it hit anything...."];
+  Node2 -> Node16 [dir="back",color="steelblue1",style="solid"];
+  Node16 [label="HF::RayTracer::EmbreeRay\lTracer::PointIntersection",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01411.html#a8de15e23054b0b579087acc48616149f",tooltip="Cast a single ray and get the hitpoint. x , y ,and z  are overridden with the hitpoint on a successfu..."];
+  Node1 -> Node17 [dir="back",color="steelblue1",style="solid"];
+  Node17 [label="HF::RayTracer::EmbreeRay\lTracer::Intersect",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01411.html#af37604ed6d68c27bb9224afd795cab18",tooltip="Cast a ray from origin in direction."];
+}

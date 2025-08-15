@@ -202,7 +202,7 @@ Functions</h2></td></tr>
 <div class="line">            std::cerr &lt;&lt; <span class="stringliteral">&quot;Error at CreateVisibilityGraphAllToAll, code: &quot;</span> &lt;&lt; status &lt;&lt; std::endl;</div>
 <div class="line">        }</div>
 <div class="ttc" id="aa00460_html_ga0255e6c4811298e61110adc64c0f8acd"><div class="ttname"><a href="a00460.html#ga0255e6c4811298e61110adc64c0f8acd">CreateVisibilityGraphAllToAll</a></div><div class="ttdeci">C_INTERFACE CreateVisibilityGraphAllToAll(EmbreeRayTracer *ert, const float *nodes, int num_nodes, Graph **out_graph, float height)</div><div class="ttdoc">Create a new directed visibility graph between all nodes in parameter nodes.</div><div class="ttdef"><b>Definition:</b> <a href="a00446_source.html#l00016">visibility_graph_C.cpp:16</a></div></div>
-<div class="ttc" id="aa01551_html"><div class="ttname"><a href="a01551.html">HF::SpatialStructures::Graph</a></div><div class="ttdoc">A Graph of nodes connected by edges that supports both integers and HF::SpatialStructures::Node.</div><div class="ttdef"><b>Definition:</b> <a href="a00269_source.html#l00486">graph.h:486</a></div></div>
+<div class="ttc" id="aa01551_html"><div class="ttname"><a href="a01551.html">HF::SpatialStructures::Graph</a></div><div class="ttdoc">A Graph of nodes connected by edges that supports both integers and HF::SpatialStructures::Node.</div><div class="ttdef"><b>Definition:</b> <a href="a00269_source.html#l00490">graph.h:490</a></div></div>
 </div><!-- fragment --><p >Very important: <b>after generating/adding edges to a graph &ndash; it must be compressed.</b> </p><div class="fragment"><div class="line">        <span class="comment">// Always compress the graph after generating a graph/adding new edges</span></div>
 <div class="line">        status = <a class="code hl_function" href="a00458.html#gab7ecc1be5c746ed3f99ab7494316c65d">Compress</a>(VG);</div>
 <div class="line"> </div>
@@ -213,7 +213,7 @@ Functions</h2></td></tr>
 <div class="line">        <span class="comment">//</span></div>
 <div class="line">        <span class="comment">// VG, the visibility graph, is now ready for use.</span></div>
 <div class="line">        <span class="comment">//</span></div>
-<div class="ttc" id="aa00458_html_gab7ecc1be5c746ed3f99ab7494316c65d"><div class="ttname"><a href="a00458.html#gab7ecc1be5c746ed3f99ab7494316c65d">Compress</a></div><div class="ttdeci">C_INTERFACE Compress(Graph *graph)</div><div class="ttdoc">Compress the given graph into a CSR representation.</div><div class="ttdef"><b>Definition:</b> <a href="a00434_source.html#l00228">spatialstructures_C.cpp:228</a></div></div>
+<div class="ttc" id="aa00458_html_gab7ecc1be5c746ed3f99ab7494316c65d"><div class="ttname"><a href="a00458.html#gab7ecc1be5c746ed3f99ab7494316c65d">Compress</a></div><div class="ttdeci">C_INTERFACE Compress(Graph *graph)</div><div class="ttdoc">Compress the given graph into a CSR representation.</div><div class="ttdef"><b>Definition:</b> <a href="a00434_source.html#l00395">spatialstructures_C.cpp:395</a></div></div>
 </div><!-- fragment --><p >You are now ready to use the visibility graph. Start by retrieving the <b>CSR representation</b> of the graph:<br  />
  </p><div class="fragment"><div class="line">        <span class="comment">// Retrieve CSR representation of graph</span></div>
 <div class="line">        <a class="code hl_struct" href="a01539.html">HF::SpatialStructures::CSRPtrs</a> csr;</div>
@@ -233,14 +233,14 @@ Functions</h2></td></tr>
 <div class="line">            <span class="comment">// Error!</span></div>
 <div class="line">            std::cerr &lt;&lt; <span class="stringliteral">&quot;Error at GetCSRPointers, code: &quot;</span> &lt;&lt; status &lt;&lt; std::endl;</div>
 <div class="line">        }</div>
-<div class="ttc" id="aa00458_html_ga58e27a4c3b5a2d9692536877c2e13691"><div class="ttname"><a href="a00458.html#ga58e27a4c3b5a2d9692536877c2e13691">GetCSRPointers</a></div><div class="ttdeci">C_INTERFACE GetCSRPointers(Graph *graph, int *out_nnz, int *out_num_rows, int *out_num_cols, float **out_data_ptr, int **out_inner_indices_ptr, int **out_outer_indices_ptr, const char *cost_type)</div><div class="ttdoc">Retrieve all information for a graph's CSR representation. This will compress the graph if it was not...</div><div class="ttdef"><b>Definition:</b> <a href="a00434_source.html#l00187">spatialstructures_C.cpp:187</a></div></div>
-<div class="ttc" id="aa01539_html"><div class="ttname"><a href="a01539.html">HF::SpatialStructures::CSRPtrs</a></div><div class="ttdoc">A struct to hold all necessary information for a CSR.</div><div class="ttdef"><b>Definition:</b> <a href="a00269_source.html#l00054">graph.h:54</a></div></div>
-<div class="ttc" id="aa01539_html_a49c0ac5c7fde9a797887699bc4670de4"><div class="ttname"><a href="a01539.html#a49c0ac5c7fde9a797887699bc4670de4">HF::SpatialStructures::CSRPtrs::outer_indices</a></div><div class="ttdeci">int * outer_indices</div><div class="ttdoc">Stores for each column (resp. row) the index of the first non-zero in the previous two arrays.</div><div class="ttdef"><b>Definition:</b> <a href="a00269_source.html#l00060">graph.h:60</a></div></div>
-<div class="ttc" id="aa01539_html_a5aed9a3184fd7d7aded80c97c33e2dc5"><div class="ttname"><a href="a01539.html#a5aed9a3184fd7d7aded80c97c33e2dc5">HF::SpatialStructures::CSRPtrs::cols</a></div><div class="ttdeci">int cols</div><div class="ttdoc">Number of columns in this CSR.</div><div class="ttdef"><b>Definition:</b> <a href="a00269_source.html#l00057">graph.h:57</a></div></div>
-<div class="ttc" id="aa01539_html_a67ae38cef6b322331f0e9100b3f480f8"><div class="ttname"><a href="a01539.html#a67ae38cef6b322331f0e9100b3f480f8">HF::SpatialStructures::CSRPtrs::nnz</a></div><div class="ttdeci">int nnz</div><div class="ttdoc">Number of non-zeros contained by the CSR.</div><div class="ttdef"><b>Definition:</b> <a href="a00269_source.html#l00055">graph.h:55</a></div></div>
-<div class="ttc" id="aa01539_html_a9a946e3ae6172a03c6a98e1dee39cc19"><div class="ttname"><a href="a01539.html#a9a946e3ae6172a03c6a98e1dee39cc19">HF::SpatialStructures::CSRPtrs::inner_indices</a></div><div class="ttdeci">int * inner_indices</div><div class="ttdoc">Stores the row (resp. column) indices of the non-zeros.</div><div class="ttdef"><b>Definition:</b> <a href="a00269_source.html#l00061">graph.h:61</a></div></div>
-<div class="ttc" id="aa01539_html_ab31bc5e69630e9101a82790c3a525386"><div class="ttname"><a href="a01539.html#ab31bc5e69630e9101a82790c3a525386">HF::SpatialStructures::CSRPtrs::data</a></div><div class="ttdeci">float * data</div><div class="ttdoc">Stores the coefficient values of the non-zeros.</div><div class="ttdef"><b>Definition:</b> <a href="a00269_source.html#l00059">graph.h:59</a></div></div>
-<div class="ttc" id="aa01539_html_ab7ef161d6dfc8b606c120cbf5181ed68"><div class="ttname"><a href="a01539.html#ab7ef161d6dfc8b606c120cbf5181ed68">HF::SpatialStructures::CSRPtrs::rows</a></div><div class="ttdeci">int rows</div><div class="ttdoc">Number of rows in this CSR.</div><div class="ttdef"><b>Definition:</b> <a href="a00269_source.html#l00056">graph.h:56</a></div></div>
+<div class="ttc" id="aa00458_html_ga58e27a4c3b5a2d9692536877c2e13691"><div class="ttname"><a href="a00458.html#ga58e27a4c3b5a2d9692536877c2e13691">GetCSRPointers</a></div><div class="ttdeci">C_INTERFACE GetCSRPointers(Graph *graph, int *out_nnz, int *out_num_rows, int *out_num_cols, float **out_data_ptr, int **out_inner_indices_ptr, int **out_outer_indices_ptr, const char *cost_type)</div><div class="ttdoc">Retrieve all information for a graph's CSR representation. This will compress the graph if it was not...</div><div class="ttdef"><b>Definition:</b> <a href="a00434_source.html#l00354">spatialstructures_C.cpp:354</a></div></div>
+<div class="ttc" id="aa01539_html"><div class="ttname"><a href="a01539.html">HF::SpatialStructures::CSRPtrs</a></div><div class="ttdoc">A struct to hold all necessary information for a CSR.</div><div class="ttdef"><b>Definition:</b> <a href="a00269_source.html#l00055">graph.h:55</a></div></div>
+<div class="ttc" id="aa01539_html_a49c0ac5c7fde9a797887699bc4670de4"><div class="ttname"><a href="a01539.html#a49c0ac5c7fde9a797887699bc4670de4">HF::SpatialStructures::CSRPtrs::outer_indices</a></div><div class="ttdeci">int * outer_indices</div><div class="ttdoc">Stores for each column (resp. row) the index of the first non-zero in the previous two arrays.</div><div class="ttdef"><b>Definition:</b> <a href="a00269_source.html#l00061">graph.h:61</a></div></div>
+<div class="ttc" id="aa01539_html_a5aed9a3184fd7d7aded80c97c33e2dc5"><div class="ttname"><a href="a01539.html#a5aed9a3184fd7d7aded80c97c33e2dc5">HF::SpatialStructures::CSRPtrs::cols</a></div><div class="ttdeci">int cols</div><div class="ttdoc">Number of columns in this CSR.</div><div class="ttdef"><b>Definition:</b> <a href="a00269_source.html#l00058">graph.h:58</a></div></div>
+<div class="ttc" id="aa01539_html_a67ae38cef6b322331f0e9100b3f480f8"><div class="ttname"><a href="a01539.html#a67ae38cef6b322331f0e9100b3f480f8">HF::SpatialStructures::CSRPtrs::nnz</a></div><div class="ttdeci">int nnz</div><div class="ttdoc">Number of non-zeros contained by the CSR.</div><div class="ttdef"><b>Definition:</b> <a href="a00269_source.html#l00056">graph.h:56</a></div></div>
+<div class="ttc" id="aa01539_html_a9a946e3ae6172a03c6a98e1dee39cc19"><div class="ttname"><a href="a01539.html#a9a946e3ae6172a03c6a98e1dee39cc19">HF::SpatialStructures::CSRPtrs::inner_indices</a></div><div class="ttdeci">int * inner_indices</div><div class="ttdoc">Stores the row (resp. column) indices of the non-zeros.</div><div class="ttdef"><b>Definition:</b> <a href="a00269_source.html#l00062">graph.h:62</a></div></div>
+<div class="ttc" id="aa01539_html_ab31bc5e69630e9101a82790c3a525386"><div class="ttname"><a href="a01539.html#ab31bc5e69630e9101a82790c3a525386">HF::SpatialStructures::CSRPtrs::data</a></div><div class="ttdeci">float * data</div><div class="ttdoc">Stores the coefficient values of the non-zeros.</div><div class="ttdef"><b>Definition:</b> <a href="a00269_source.html#l00060">graph.h:60</a></div></div>
+<div class="ttc" id="aa01539_html_ab7ef161d6dfc8b606c120cbf5181ed68"><div class="ttname"><a href="a01539.html#ab7ef161d6dfc8b606c120cbf5181ed68">HF::SpatialStructures::CSRPtrs::rows</a></div><div class="ttdeci">int rows</div><div class="ttdoc">Number of rows in this CSR.</div><div class="ttdef"><b>Definition:</b> <a href="a00269_source.html#l00057">graph.h:57</a></div></div>
 </div><!-- fragment --><p >Set up the <b>pointers</b> required to iterate over the CSR. Then <b>output the CSR to the console</b>:<br  />
  </p><div class="fragment"><div class="line">        <span class="comment">//</span></div>
 <div class="line">        <span class="comment">// Setting up a CSR &#39;iterator&#39;</span></div>
@@ -304,7 +304,7 @@ Functions</h2></td></tr>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00460_ga0255e6c4811298e61110adc64c0f8acd_cgraph.svg" width="1515" height="246"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00460_ga0255e6c4811298e61110adc64c0f8acd_cgraph.svg" width="1538" height="246"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -502,7 +502,7 @@ Functions</h2></td></tr>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00460_ga9b0664a60bcdf276b0fe0a2023b3d9b8_cgraph.svg" width="1515" height="246"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00460_ga9b0664a60bcdf276b0fe0a2023b3d9b8_cgraph.svg" width="1538" height="246"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -714,7 +714,7 @@ Functions</h2></td></tr>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00460_gaf2e404cb696aee3473cac0d1507576d8_cgraph.svg" width="1535" height="246"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00460_gaf2e404cb696aee3473cac0d1507576d8_cgraph.svg" width="1558" height="246"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

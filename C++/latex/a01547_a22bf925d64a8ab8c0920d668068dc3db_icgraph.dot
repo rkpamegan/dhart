@@ -1,0 +1,11 @@
+digraph "HF::SpatialStructures::EdgeCostSet::ResizeIfNeeded"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="HF::SpatialStructures\l::EdgeCostSet::ResizeIfNeeded",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Resize this edge matrix if needed."];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="HF::SpatialStructures\l::EdgeCostSet::EdgeCostSet",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01547.html#a292cb98e857b8ae2606395ed57ebcec8",tooltip="Create an edge cost set and allocate a specific size."];
+}

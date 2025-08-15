@@ -1,0 +1,11 @@
+digraph "HF::RayTracer::buffersToStructs"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="HF::RayTracer::buffersTo\lStructs",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Package raw arrays of floats and indices in buffers to the required Embree types."];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="HF::RayTracer::EmbreeRay\lTracer::AddMesh",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01411.html#ad5389e05e451a8d8820c4deea886db3f",tooltip="Add a new mesh to the BVH with the specified ID. If False, then the addition failed,..."];
+}

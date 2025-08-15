@@ -1,0 +1,4 @@
+<map id="HF::SpatialStructures::Graph::GetNodeAttributesByID" name="HF::SpatialStructures::Graph::GetNodeAttributesByID">
+<area shape="rect" id="node1" title="Get the score for the given attribute of the specified nodes. Nodes that do not have a score for this..." alt="" coords="213,5,423,48"/>
+<area shape="rect" id="node2" href="$a00458.html#ga925658e9904e0561ad3445674b35fc11" title="Retrieve node attribute values from *g." alt="" coords="5,13,165,40"/>
+</map>

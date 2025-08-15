@@ -1,0 +1,11 @@
+digraph "HF::Geometry::MeshInfo::VectorsToBuffers"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="HF::Geometry::MeshInfo\l::VectorsToBuffers",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Index vertices then insert them into verts and indices."];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="HF::Geometry::IndexRawVertices",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00469.html#aca0d05b15d2503073b9f668f330f7871",tooltip="Index an array of vertices."];
+}

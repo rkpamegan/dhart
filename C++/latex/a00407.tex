@@ -9,21 +9,9 @@ Header file for C Interface functions related to graph generation.
 {\ttfamily \#include $<$vector$>$}\newline
 {\ttfamily \#include $<$array$>$}\newline
 Include dependency graph for analysis\+\_\+\+C.\+h\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=199pt]{a00408}
-\end{center}
-\end{figure}
+% FIG 0
 This graph shows which files directly or indirectly include this file\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=199pt]{a00409}
-\end{center}
-\end{figure}
+% FIG 1
 \doxysubsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
@@ -38,7 +26,7 @@ namespace \mbox{\hyperlink{a00464}{HF\+::\+Ray\+Tracer}}
 \doxysubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\#define \mbox{\hyperlink{a00407_a91fa3b2bb3a7312ec39d74cc1fbc7bbe}{C\+\_\+\+INTERFACE}}~extern \char`\"{}C\char`\"{} \+\_\+\+\_\+declspec(dllexport) int
+\#define \mbox{\hyperlink{a00407_a91fa3b2bb3a7312ec39d74cc1fbc7bbe}{C\+\_\+\+INTERFACE}}~extern \char`\"{}C\char`\"{} \+\_\+\+\_\+attribute\+\_\+\+\_\+((visibility(\char`\"{}default\char`\"{}))) int
 \end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
@@ -46,7 +34,9 @@ namespace \mbox{\hyperlink{a00464}{HF\+::\+Ray\+Tracer}}
 \mbox{\hyperlink{a00407_a91fa3b2bb3a7312ec39d74cc1fbc7bbe}{C\+\_\+\+INTERFACE}} \mbox{\hyperlink{a00454_ga2df84a732d1edfb70b7bd26d3282e129}{Generate\+Graph}} (\mbox{\hyperlink{a01411}{HF\+::\+Ray\+Tracer\+::\+Embree\+Ray\+Tracer}} $\ast$ray\+\_\+tracer, const float $\ast$start\+\_\+point, const float $\ast$spacing, int Max\+Nodes, float Up\+Step, float Up\+Slope, float Down\+Step, float Down\+Slope, int max\+\_\+step\+\_\+connection, int min\+\_\+connections, int core\+\_\+count, \mbox{\hyperlink{a01551}{HF\+::\+Spatial\+Structures\+::\+Graph}} $\ast$$\ast$out\+\_\+graph)
 \begin{DoxyCompactList}\small\item\em Construct a graph by performing a breadth-\/first search of accessible space. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{a00407_a91fa3b2bb3a7312ec39d74cc1fbc7bbe}{C\+\_\+\+INTERFACE}} \mbox{\hyperlink{a00454_gab9f58e3ecc686fa9bc34519b0faed734}{Generate\+Graph\+Obstacles}} (\mbox{\hyperlink{a01411}{HF\+::\+Ray\+Tracer\+::\+Embree\+Ray\+Tracer}} $\ast$ray\+\_\+tracer, const float $\ast$start\+\_\+point, const float $\ast$spacing, int Max\+Nodes, float Up\+Step, float Up\+Slope, float Down\+Step, float Down\+Slope, int max\+\_\+step\+\_\+connection, int min\+\_\+connections, int core\+\_\+count, const int $\ast$obstacle\+\_\+ids, const int $\ast$walkable\+\_\+ids, int num\+\_\+obstacles, int num\+\_\+walkables, \mbox{\hyperlink{a01551}{HF\+::\+Spatial\+Structures\+::\+Graph}} $\ast$$\ast$out\+\_\+graph)
-\begin{DoxyCompactList}\small\item\em Construct a graph by performing a breadth-\/first search of accessible space, seperating obstacles from walkable geometry. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Construct a graph by performing a breadth-\/first search of accessible space, seperating obstacles from walkable geometry. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{a00407_a91fa3b2bb3a7312ec39d74cc1fbc7bbe}{C\+\_\+\+INTERFACE}} \mbox{\hyperlink{a00454_gae7f55e49ba1992471430d0e3d415ebae}{Calculate\+And\+Store\+Step\+Types}} (\mbox{\hyperlink{a01551}{HF\+::\+Spatial\+Structures\+::\+Graph}} $\ast$g, \mbox{\hyperlink{a01411}{HF\+::\+Ray\+Tracer\+::\+Embree\+Ray\+Tracer}} $\ast$ray\+\_\+tracer)
+\begin{DoxyCompactList}\small\item\em Query the graph and identify the step types of all edges, adding them to the graph. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -69,9 +59,9 @@ Definition in file \mbox{\hyperlink{a00407_source}{analysis\+\_\+\+C.\+h}}.
 \index{analysis\_C.h@{analysis\_C.h}!C\_INTERFACE@{C\_INTERFACE}}
 \index{C\_INTERFACE@{C\_INTERFACE}!analysis\_C.h@{analysis\_C.h}}
 \doxysubsubsection{\texorpdfstring{C\_INTERFACE}{C\_INTERFACE}}
-{\footnotesize\ttfamily \#define C\+\_\+\+INTERFACE~extern \char`\"{}C\char`\"{} \+\_\+\+\_\+declspec(dllexport) int}
+{\footnotesize\ttfamily \#define C\+\_\+\+INTERFACE~extern \char`\"{}C\char`\"{} \+\_\+\+\_\+attribute\+\_\+\+\_\+((visibility(\char`\"{}default\char`\"{}))) int}
 
 
 
-Definition at line \mbox{\hyperlink{a00407_source_l00016}{16}} of file \mbox{\hyperlink{a00407_source}{analysis\+\_\+\+C.\+h}}.
+Definition at line \mbox{\hyperlink{a00407_source_l00019}{19}} of file \mbox{\hyperlink{a00407_source}{analysis\+\_\+\+C.\+h}}.
 

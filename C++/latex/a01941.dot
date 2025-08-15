@@ -1,0 +1,16 @@
+digraph "nlohmann::detail::wide_string_input_adapter&lt; BaseInputAdapter, WideCharType &gt;"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="nlohmann::detail::wide\l_string_input_adapter\l\< BaseInputAdapter, WideCharType \>",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" base_adapter" ];
+  Node2 [label="BaseInputAdapter",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" utf8_bytes" ];
+  Node3 [label="std::array\< std::char\l_traits\< char \>::int\l_type, 4 \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="darkorchid3",style="dashed",label=" elements" ];
+  Node4 [label="int_type",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" utf8_bytes_filled\nutf8_bytes_index" ];
+  Node5 [label="size_t",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+}

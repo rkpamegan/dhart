@@ -1,0 +1,15 @@
+digraph "nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="nlohmann::detail::json\l_sax_dom_parser\< BasicJsonType \>",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="SAX implementation to create a JSON value from SAX events."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" object_element\nroot" ];
+  Node2 [label="BasicJsonType",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" ref_stack" ];
+  Node3 [label="std::vector\< BasicJsonType * \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="darkorchid3",style="dashed",label=" elements" ];
+  Node4 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" allow_exceptions\nerrored" ];
+  Node4 [label="bool",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+}

@@ -1,0 +1,13 @@
+digraph "HF::RayTracer::NanoRTRayTracer::NanoRTRayTracer"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="HF::RayTracer::NanoRTRay\lTracer::NanoRTRayTracer",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Construct a new raytracer with an instance of meshinfo."];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="HF::Geometry::MeshInfo\l::GetIndexPointer",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01351.html#a9ca41370061bec524b5c84d689114e41",tooltip="Get a pointer to the index array of this mesh."];
+  Node1 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="HF::Geometry::MeshInfo\l::GetVertexPointer",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01351.html#aa88fe8bcfc24db635994e529fac008da",tooltip="Get a pointer to the vertex array of this mesh."];
+}

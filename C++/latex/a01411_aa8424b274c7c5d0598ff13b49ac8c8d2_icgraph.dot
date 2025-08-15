@@ -1,0 +1,20 @@
+digraph "HF::RayTracer::EmbreeRayTracer::PointIntersection"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="HF::RayTracer::EmbreeRay\lTracer::PointIntersection",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Cast a ray and overwrite the origin with the hitpoint if it intersects any geometry."];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="CastRay",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00457.html#gab12d174cbad096750b3bc2acc1593ee7",tooltip="Cast a single ray from the raytracer and receive a point in return."];
+  Node1 -> Node1 [dir="back",color="steelblue1",style="solid"];
+  Node1 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="HF::RayTracer::EmbreeRay\lTracer::PointIntersections",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01411.html#a0c4abe0d3160c1a59231e0ae492fe537",tooltip="Cast multiple rays and recieve hitpoints in return."];
+  Node3 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="CastMultipleDirectionsOne\lOrigin",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00457.html#ga9debc0081ffc5b1f26262cd935b6f5ce",tooltip="Cast rays from a single origin point in multiple directions and get a the points where they intersect..."];
+  Node3 -> Node5 [dir="back",color="steelblue1",style="solid"];
+  Node5 [label="CastMultipleOriginsOneDirection",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00457.html#gad4a9f19d6fe4a802b7788948707ed5c0",tooltip="Cast rays from each origin point in the given direction."];
+  Node3 -> Node6 [dir="back",color="steelblue1",style="solid"];
+  Node6 [label="CastMultipleRays",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00457.html#ga7763f4488e7c507e078882fe699d717f",tooltip="Cast multiple rays at once in parallel and receive their hitpoints in return. The number of direction..."];
+}

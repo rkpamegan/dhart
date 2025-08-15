@@ -1,0 +1,30 @@
+digraph "nanort::TriangleIntersector&lt; T, H &gt;"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="nanort::TriangleIntersector\l\< T, H \>",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" t_\nt_min_\nu_\nv_\nvertices_" ];
+  Node2 [label="float",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" faces_\nprim_id_" ];
+  Node3 [label="int",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" vertex_stride_bytes_" ];
+  Node4 [label="size_t",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" ray_org_" ];
+  Node5 [label="nanort::real3\< float \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$a01443.html",tooltip=" "];
+  Node2 -> Node5 [dir="back",color="darkorchid3",style="dashed",label=" v" ];
+  Node6 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" ray_coeff_" ];
+  Node6 [label="nanort::TriangleIntersector\l\< T, H \>::RayCoeff",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$a01499.html#a01503",tooltip=" "];
+  Node7 -> Node6 [dir="back",color="darkorchid3",style="dashed",label=" Sx\nSy\nSz" ];
+  Node7 [label="T",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node6 [dir="back",color="darkorchid3",style="dashed",label=" kx\nky\nkz" ];
+  Node8 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" trace_options_" ];
+  Node8 [label="nanort::BVHTraceOptions",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$a01467.html",tooltip="BVH trace option."];
+  Node3 -> Node8 [dir="back",color="darkorchid3",style="dashed",label=" prim_ids_range\nskip_prim_id" ];
+  Node9 -> Node8 [dir="back",color="darkorchid3",style="dashed",label=" cull_back_face" ];
+  Node9 [label="bool",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node10 -> Node8 [dir="back",color="darkorchid3",style="dashed",label=" pad" ];
+  Node10 [label="unsigned char",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+}

@@ -1,0 +1,11 @@
+digraph "nanort::StackVector&lt; T, stack_capacity &gt;"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="nanort::StackVector\l\< T, stack_capacity \>",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="nanort::StackContainer\l\< std::vector\< T, StackAllocator\l\< T, stack_capacity \> \>, stack\l_capacity \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$a01435.html",tooltip=" "];
+}

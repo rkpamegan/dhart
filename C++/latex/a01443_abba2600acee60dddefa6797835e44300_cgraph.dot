@@ -1,0 +1,17 @@
+digraph "nanort::real3::operator+"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="nanort::real3::operator+",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="nanort::real3::real3",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01443.html#a0ae6f0e4cb138da0359e18103ce609b8",tooltip=" "];
+  Node1 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="nanort::real3::x",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01443.html#a245ee0e429d5695c33ea29ccbe1792ec",tooltip=" "];
+  Node1 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="nanort::real3::y",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01443.html#af92059bf1d44c9bf67c90ca2d46be17e",tooltip=" "];
+  Node1 -> Node5 [color="steelblue1",style="solid"];
+  Node5 [label="nanort::real3::z",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01443.html#a96d4a74ac8a453a85c5661d38d3003d1",tooltip=" "];
+}

@@ -1,0 +1,11 @@
+digraph "HF::SpatialStructures::Graph::AddNodeAttributes"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="HF::SpatialStructures\l::Graph::AddNodeAttributes",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Add an attribute to the node at id. If the node at id already has a score for the attribute at name,..."];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="AddNodeAttributes",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00458.html#gad7060ed66926e8d028cd2e43e0cb73e6",tooltip="Add a new node attribute in the graph for the nodes at ids."];
+}

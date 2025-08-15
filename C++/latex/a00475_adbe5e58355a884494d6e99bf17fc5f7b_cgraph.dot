@@ -1,0 +1,27 @@
+digraph "HF::SpatialStructures::CostAlgorithms::CalculateEnergyExpenditure"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="HF::SpatialStructures\l::CostAlgorithms::Calculate\lEnergyExpenditure",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="HF::SpatialStructures\l::CostAlgorithms::Calculate\lEnergyExpenditure",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00475.html#ac51f2e76c00356f8a6145bee865cd922",tooltip=" "];
+  Node2 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="HF::SpatialStructures\l::CostAlgorithms::Calculate\lSlope",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00475.html#ae06eb693d0d7858d7a863fae3a6eee2c",tooltip=" "];
+  Node3 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="HF::SpatialStructures\l::CostAlgorithms::to\l_degrees",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00475.html#adee2fb2573f4dbc2e5c7db153dff2694",tooltip=" "];
+  Node2 -> Node5 [color="steelblue1",style="solid"];
+  Node5 [label="HF::SpatialStructures\l::Node::directionTo",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a02071.html#ad3f7898ef3178eef0c3579869a7f5c67",tooltip="Get the direction between this node and another node"];
+  Node5 -> Node6 [color="steelblue1",style="solid"];
+  Node6 [label="HF::SpatialStructures\l::Normalize",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00465.html#ad9a8f0f70b3f60ac5cb7889885d851d1",tooltip=" "];
+  Node2 -> Node7 [color="steelblue1",style="solid"];
+  Node7 [label="HF::SpatialStructures\l::Node::distanceTo",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a02071.html#abbd66b566460f9557a373b5fbcc30bb1",tooltip="Calculate the distance between this node and n2."];
+  Node2 -> Node8 [color="steelblue1",style="solid"];
+  Node8 [label="HF::SpatialStructures\l::CostAlgorithms::to\l_radians",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00475.html#ae7b446fefe0b9994859f47b85de79039",tooltip=" "];
+  Node1 -> Node9 [color="steelblue1",style="solid"];
+  Node9 [label="HF::SpatialStructures\l::Graph::GetSubgraph",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01551.html#a89250c619a726fd0adbd71778d166887",tooltip="Retrieves a Subgraph using a Node."];
+  Node1 -> Node10 [color="steelblue1",style="solid"];
+  Node10 [label="HF::SpatialStructures\l::Graph::Nodes",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01551.html#aa70347b8a33b57c6f0a72d6eca4248d7",tooltip="Get a list of nodes from the graph sorted by ID."];
+}

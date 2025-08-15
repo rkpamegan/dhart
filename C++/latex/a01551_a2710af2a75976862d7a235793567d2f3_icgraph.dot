@@ -1,0 +1,25 @@
+digraph "HF::SpatialStructures::Graph::size"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="HF::SpatialStructures\l::Graph::size",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Determine how many nodes are in the graph."];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="HF::Pathfinding::BoostGraph\l::BoostGraph",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01383.html#ac7878a25105aec59a116942a717d71b4",tooltip="Create a boost graph from a HF::SpatialStructures::Graph."];
+  Node1 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="HF::VisibilityGraph\l::AllToAll",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00467.html#a12eb1e4c06400c4625cd22d925927b03",tooltip="Generate a Visibility Graph between every node in a set of nodes in parallel."];
+  Node3 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="CreateVisibilityGraphAll\lToAll",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00460.html#ga0255e6c4811298e61110adc64c0f8acd",tooltip="Create a new directed visibility graph between all nodes in parameter nodes."];
+  Node1 -> Node5 [dir="back",color="steelblue1",style="solid"];
+  Node5 [label="HF::VisibilityGraph\l::AllToAllUndirected",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00467.html#ab1db87927118f70786a664c3b3cc7905",tooltip="Generate a Visibility Graph with every edge stored twice."];
+  Node5 -> Node6 [dir="back",color="steelblue1",style="solid"];
+  Node6 [label="CreateVisibilityGraphAll\lToAllUndirected",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00460.html#ga9b0664a60bcdf276b0fe0a2023b3d9b8",tooltip="Create a new undirected visibility graph between all nodes in nodes."];
+  Node1 -> Node7 [dir="back",color="steelblue1",style="solid"];
+  Node7 [label="GetSizeOfGraph",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00458.html#ga5bbc8687b0d04c0f177fbb8385302a56",tooltip="Get the number of nodes in a graph."];
+  Node1 -> Node8 [dir="back",color="steelblue1",style="solid"];
+  Node8 [label="HF::VisibilityGraph\l::GroupToGroup",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00467.html#ae42a5aafdfcc29b6a668355c07602efb",tooltip="Generate a Visibility Graph from a set of nodes to another set of nodes."];
+  Node8 -> Node9 [dir="back",color="steelblue1",style="solid"];
+  Node9 [label="CreateVisibilityGraphGroup\lToGroup",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00460.html#gaf2e404cb696aee3473cac0d1507576d8",tooltip="Create a new visibility graph from the nodes in group_a, into the nodes of group_b."];
+}

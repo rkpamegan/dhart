@@ -1,4 +1,9 @@
 <map id="Cinterface/objloader_C.h" name="Cinterface/objloader_C.h">
-<area shape="rect" id="node1" title="Header file for functions related to loading/storing an OBJ file (a mesh)" alt="" coords="5,5,168,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="59,80,114,107"/>
+<area shape="rect" id="node1" title="Header file for functions related to loading/storing an OBJ file (a mesh)" alt="" coords="5,5,171,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="19,155,77,181"/>
+<area shape="rect" id="node3" href="$a00191.html" title="Contains definitions for the Geometry namespace." alt="" coords="86,80,170,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="101,155,155,181"/>
+<area shape="rect" id="node5" href="$a00185.html" title="Contains definitions for the MeshInfo class." alt="" coords="179,155,264,181"/>
+<area shape="rect" id="node6" title=" " alt="" coords="152,229,211,256"/>
+<area shape="rect" id="node7" title=" " alt="" coords="235,229,285,256"/>
 </map>

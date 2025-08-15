@@ -1,8 +1,9 @@
 <map id="Cpp/pathfinding/src/path_finder.h" name="Cpp/pathfinding/src/path_finder.h">
-<area shape="rect" id="node1" title="Contains definition for the BoostGraphDeleter structure." alt="" coords="137,5,270,48"/>
+<area shape="rect" id="node1" title="Contains definition for the BoostGraphDeleter structure." alt="" coords="180,5,315,48"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,96,74,123"/>
-<area shape="rect" id="node3" title=" " alt="" coords="97,96,153,123"/>
-<area shape="rect" id="node4" title=" " alt="" coords="177,96,230,123"/>
-<area shape="rect" id="node5" title=" " alt="" coords="254,96,318,123"/>
-<area shape="rect" id="node6" title=" " alt="" coords="343,96,414,123"/>
+<area shape="rect" id="node3" title=" " alt="" coords="98,96,155,123"/>
+<area shape="rect" id="node4" title=" " alt="" coords="180,96,233,123"/>
+<area shape="rect" id="node5" title=" " alt="" coords="257,96,321,123"/>
+<area shape="rect" id="node6" title=" " alt="" coords="345,96,416,123"/>
+<area shape="rect" id="node7" title=" " alt="" coords="440,96,498,123"/>
 </map>

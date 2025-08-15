@@ -1,0 +1,11 @@
+digraph "HF::VisibilityGraph::GroupToGroup"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="HF::VisibilityGraph\l::GroupToGroup",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Generate a Visibility Graph from a set of nodes to another set of nodes."];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="CreateVisibilityGraphGroup\lToGroup",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00460.html#gaf2e404cb696aee3473cac0d1507576d8",tooltip="Create a new visibility graph from the nodes in group_a, into the nodes of group_b."];
+}

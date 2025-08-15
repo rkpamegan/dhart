@@ -1,0 +1,21 @@
+digraph "nlohmann::detail::binary_writer::write_bson_object"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="nlohmann::detail::binary\l_writer::write_bson_object",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="nlohmann::detail::binary\l_writer::write_bson",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a02039.html#a9ffc566db5219b473762462234b47db9",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="nlohmann::basic_json\l::to_bson",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01659.html#a668e4c2ad9808218a25879700f4aef2b",tooltip="Serializes the given JSON object j to BSON and forwards the corresponding BSON-representation to the ..."];
+  Node1 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="nlohmann::detail::binary\l_writer::write_bson_object_entry",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a02039.html#a6231302930265eccb3f56c378f7b0661",tooltip="Writes a BSON element with key name and object value."];
+  Node4 -> Node5 [dir="back",color="steelblue1",style="solid"];
+  Node5 [label="nlohmann::detail::binary\l_writer::write_bson_element",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a02039.html#a7ff58bf1a80018148bed860667ffca07",tooltip="Serializes the JSON value j to BSON and associates it with the key name."];
+  Node5 -> Node6 [dir="back",color="steelblue1",style="solid"];
+  Node6 [label="nlohmann::detail::binary\l_writer::write_bson_array",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a02039.html#a025212bd170253638b9f05b3b6aa5bf9",tooltip="Writes a BSON element with key name and array value."];
+  Node6 -> Node5 [dir="back",color="steelblue1",style="solid"];
+  Node5 -> Node1 [dir="back",color="steelblue1",style="solid"];
+}

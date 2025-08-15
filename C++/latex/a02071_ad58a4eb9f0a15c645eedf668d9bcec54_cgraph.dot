@@ -1,0 +1,11 @@
+digraph "HF::SpatialStructures::Node::operator-"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="HF::SpatialStructures\l::Node::operator-",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Creates a node from the vector subtraction of this node and n2's position."];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="HF::SpatialStructures\l::Node::Node",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a02071.html#a3d229a53bb7328f88649fd48e6098b5d",tooltip="Default constructor. Every element contained is defaulted to NAN."];
+}

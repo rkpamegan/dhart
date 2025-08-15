@@ -6,7 +6,7 @@ var hierarchy =
       [ "nanort::StackAllocator< T, stack_capacity >", "a01423.html", null ]
     ] ],
     [ "HF::Geometry::array_and_size< ptr_type >", "a01347.html", null ],
-    [ "B1", "a03507.html", [
+    [ "B1", "a03511.html", [
       [ "nlohmann::detail::conjunction< B1 >", "a01839.html", null ]
     ] ],
     [ "nlohmann::basic_json< ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer, BinaryType >", "a01659.html", null ],
@@ -14,7 +14,7 @@ var hierarchy =
     [ "nanort::BBox< vertex_t >", "a01471.html", null ],
     [ "nlohmann::detail::binary_reader< BasicJsonType, InputAdapterType, SAX >", "a01995.html", null ],
     [ "nlohmann::detail::binary_writer< BasicJsonType, CharType >", "a02039.html", null ],
-    [ "BinaryType", "a03503.html", [
+    [ "BinaryType", "a03507.html", [
       [ "nlohmann::byte_container_with_subtype< BinaryType >", "a01915.html", null ]
     ] ],
     [ "nanort::BinBuffer", "a01507.html", null ],
@@ -249,12 +249,12 @@ var hierarchy =
       [ "nlohmann::detail::is_json_ref< json_ref< T > >", "a01687.html", null ]
     ] ],
     [ "std::tuple_element< N, ::nlohmann::detail::iteration_proxy_value< IteratorType > >", "a00461.html#a01871", null ],
-    [ "std::conditional::type", "a03511.html", [
+    [ "std::conditional::type", "a03515.html", [
       [ "nlohmann::detail::conjunction< B1, Bn... >", "a01843.html", null ]
     ] ],
     [ "HF::GraphGenerator::UniqueQueue", "a01315.html", null ],
     [ "HF::RayTracer::Vector3D", "a01407.html", null ],
-    [ "std::vector< std::pair< const Key, T >, std::allocator< std::pair< const Key, T > > >", "a03520.html", [
+    [ "std::vector< std::pair< const Key, T >, std::allocator< std::pair< const Key, T > > >", "a03524.html", [
       [ "nlohmann::ordered_map< Key, T, IgnoredLess, Allocator >", "a01667.html", null ]
     ] ],
     [ "HF::RayTracer::Vertex", "a00464.html#a01399", null ],

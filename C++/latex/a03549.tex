@@ -1,0 +1,44 @@
+\hypertarget{a03549}{}\doxysection{Cpp/raytracer/\+CMake\+Lists.txt File Reference}
+\label{a03549}\index{Cpp/raytracer/CMakeLists.txt@{Cpp/raytracer/CMakeLists.txt}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{a03549_a2b77c8840a3197e77323b9ce67f2749d}{cmake\+\_\+minimum\+\_\+required}} (VERSION 3.\+10) set(ROBIN\+\_\+\+HOOD\+\_\+\+DIR \$
+\item 
+external robin\+\_\+hood \mbox{\hyperlink{a03549_acb2f4b522254d622bcbaa13c8047b77e}{include}} (Fetch\+Content) \mbox{\hyperlink{a03540_a32d74c94157b6b67dd7b3f906349f54e}{add\+\_\+library}}(Embree\+Ray\+Tracer) target\+\_\+sources(Embree\+Ray\+Tracer PRIVATE src/embree\+\_\+raytracer.\+cpp src/Ray\+Request.\+cpp src/embree\+\_\+raytracer.\+h src/Ray\+Request.\+h src/nanort.\+h src/ray\+\_\+data.\+h src/nanort\+\_\+raytracer.\+cpp src/Multi\+RT.\+h src/Multi\+RT.\+cpp src/Hit\+Struct.\+cpp src/Hit\+Struct.\+h) set(Embree\+\_\+\+DIR \$
+\item 
+external Embree \mbox{\hyperlink{a03549_a899ebc83e3ee7785c77808b3bbd0eb71}{message}} (\mbox{[}STATUS\mbox{]} \char`\"{}Setting embree dir to \char`\"{} \$\{Embree\+\_\+\+DIR\}) find\+\_\+package(Embree 3.\+0 REQUIRED)() target\+\_\+include\+\_\+directories(Embree\+Ray\+Tracer PUBLIC \$
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{a03549_a2b77c8840a3197e77323b9ce67f2749d}\label{a03549_a2b77c8840a3197e77323b9ce67f2749d}} 
+\index{CMakeLists.txt@{CMakeLists.txt}!cmake\_minimum\_required@{cmake\_minimum\_required}}
+\index{cmake\_minimum\_required@{cmake\_minimum\_required}!CMakeLists.txt@{CMakeLists.txt}}
+\doxysubsubsection{\texorpdfstring{cmake\_minimum\_required()}{cmake\_minimum\_required()}}
+{\footnotesize\ttfamily cmake\+\_\+minimum\+\_\+required (\begin{DoxyParamCaption}\item[{VERSION 3.}]{10 }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{a03549_source_l00001}{1}} of file \mbox{\hyperlink{a03549_source}{CMake\+Lists.\+txt}}.
+
+\mbox{\Hypertarget{a03549_acb2f4b522254d622bcbaa13c8047b77e}\label{a03549_acb2f4b522254d622bcbaa13c8047b77e}} 
+\index{CMakeLists.txt@{CMakeLists.txt}!include@{include}}
+\index{include@{include}!CMakeLists.txt@{CMakeLists.txt}}
+\doxysubsubsection{\texorpdfstring{include()}{include()}}
+{\footnotesize\ttfamily external robin\+\_\+hood include (\begin{DoxyParamCaption}\item[{Fetch\+Content}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{a03549_source_l00004}{4}} of file \mbox{\hyperlink{a03549_source}{CMake\+Lists.\+txt}}.
+
+\mbox{\Hypertarget{a03549_a899ebc83e3ee7785c77808b3bbd0eb71}\label{a03549_a899ebc83e3ee7785c77808b3bbd0eb71}} 
+\index{CMakeLists.txt@{CMakeLists.txt}!message@{message}}
+\index{message@{message}!CMakeLists.txt@{CMakeLists.txt}}
+\doxysubsubsection{\texorpdfstring{message()}{message()}}
+{\footnotesize\ttfamily external Embree message (\begin{DoxyParamCaption}\item[{\mbox{[}\+STATUS\mbox{]} \char`\"{}Setting embree dir to \char`\"{} \$\{Embree\+\_\+\+DIR\}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{a03549_source_l00025}{25}} of file \mbox{\hyperlink{a03549_source}{CMake\+Lists.\+txt}}.
+

@@ -1,0 +1,12 @@
+digraph "Cinterface/spatialstructures_C.h"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="Cinterface/spatialstructures_C.h",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Header file related to manipulating nodes, edges, and graphs via CInterface."];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="Cinterface/spatialstructures\l_C.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00434.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="Cpp/spatialstructures\l/src/CInterface.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00245.html",tooltip="Contains implementation for the CInterface."];
+}

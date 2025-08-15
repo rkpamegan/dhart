@@ -12,13 +12,7 @@ A \mbox{\hyperlink{a01551}{Graph}} of nodes connected by edges that supports bot
 
 
 Collaboration diagram for HF\+::Spatial\+Structures\+::Graph\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01549}
-\end{center}
-\end{figure}
+% FIG 0
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -76,10 +70,38 @@ std\+::vector$<$ \mbox{\hyperlink{a02071}{Node}} $>$ \mbox{\hyperlink{a01551_a5b
 \begin{DoxyCompactList}\small\item\em Retrieves a \mbox{\hyperlink{a00465_a01543}{Subgraph}} using a parent node ID. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{a01551_a819ecd54d0148ddf867e6ca77fec8379}{Add\+Node\+Attribute}} (int id, const std\+::string \&attribute, const std\+::string \&score)
 \begin{DoxyCompactList}\small\item\em Add an attribute to the node at id  \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{a01551_aa16fd49e5cca70bc64a6e306de75e089}{Add\+Node\+Attribute\+Float}} (int id, const std\+::string \&name, const float score)
+\begin{DoxyCompactList}\small\item\em Add a float attribute to the node at id. If the node at id already has a score for the attribute at name, then existing score should be overwritten. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{a01551_a306a0277ba1caa0aa4a1227e2f847f09}{Add\+Node\+Attributes}} (const std\+::vector$<$ int $>$ \&id, const std\+::string \&name, const std\+::vector$<$ std\+::string $>$ \&scores)
 \begin{DoxyCompactList}\small\item\em Add an attribute to the node at id. If the node at id already has a score for the attribute at name, then existing score should be overwritten  \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{a01551_ace0104174af8ee72de49eae3e9dd8280}{Add\+Node\+Attributes\+Float}} (const std\+::vector$<$ int $>$ \&id, const std\+::string \&name, const std\+::vector$<$ float $>$ \&scores)
+\begin{DoxyCompactList}\small\item\em Add a float attribute to the node at id. If the node at id already has a score for the attribute at name, then existing score should be overwritten. \end{DoxyCompactList}\item 
 std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{a01551_aedd218785fbf6dabaa2fba2dca738618}{Get\+Node\+Attributes}} (std\+::string attribute) const
 \begin{DoxyCompactList}\small\item\em Get the score for the given attribute of every node in the graph. Nodes that do not have a score for this attribute should return an empty string for this array.  \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \mbox{\hyperlink{a01551_a150e739eb5dbea7d980a2fbfa213f114}{Get\+Node\+Attributes\+Float}} (std\+::string name) const
+\begin{DoxyCompactList}\small\item\em Get the score for the given attribute of every node in the graph. Nodes that do not have a score for this attribute should return the default value 0.\+0 for this array.  \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{a01551_a19e8bf9aa4b8c23beee618bd32d3c238}{Get\+Node\+Attributes\+By\+ID}} (std\+::vector$<$ int $>$ \&ids, std\+::string attribute) const
+\begin{DoxyCompactList}\small\item\em Get the score for the given attribute of the specified nodes. Nodes that do not have a score for this attribute should return an empty string for this array.  \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \mbox{\hyperlink{a01551_a34d65fb6990ba01f83f9f4424165c8f2}{Get\+Node\+Attributes\+By\+IDFloat}} (std\+::vector$<$ int $>$ \&ids, std\+::string name) const
+\begin{DoxyCompactList}\small\item\em Get the score for the given attribute of the specified nodes. Nodes that do not have a score for this attribute should return an empty string for this array.  \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{a01551_ae9038c7f6c83180f273e4e103ddd9636}{Is\+Float\+Attribute}} (const std\+::string \&name) const
+\begin{DoxyCompactList}\small\item\em Check if this attribute exists in the graph and contains float values. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{a01551_ac1d4649c2867e70900fbab7eeca5f6b6}{Count\+Edges}} (const std\+::string \&cost\+\_\+type) const
+\begin{DoxyCompactList}\small\item\em Count the number of edges of associated cost type  \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{a01551_a4a1f6bd7f9db0f0427482992519b6bc9}{Count\+Edges\+From\+Edge\+Sets}} (std\+::vector$<$ \mbox{\hyperlink{a01535}{Edge\+Set}} $>$ All\+Edges) const
+\begin{DoxyCompactList}\small\item\em Count the number of edges in a given edgeset.  \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \mbox{\hyperlink{a01551_ac2c59f04d4c958a0f78d92448600e393}{Get\+Edge\+Costs}} (const std\+::string \&cost\+\_\+type) const
+\begin{DoxyCompactList}\small\item\em Get edge costs of all given edges  \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \mbox{\hyperlink{a01551_aa79a555f9fa789581d9f1905ebb0c55f}{Get\+Edge\+Costs\+From\+Node\+IDs}} (std\+::vector$<$ int $>$ \&ids, const std\+::string \&cost\+\_\+type) const
+\begin{DoxyCompactList}\small\item\em Get costs of all given edges  \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{a01551_aeb28ad1f2f610b5564831415c0591fd9}{Map\+Path\+To\+Vector\+Of\+Nodes}} (\mbox{\hyperlink{a02083}{HF\+::\+Spatial\+Structures\+::\+Path}} path) const
+\begin{DoxyCompactList}\small\item\em Maps a path structure to a vector of node ids (n1,n2,n2,n3,n3...,nk-\/1,nk)  \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{a01551_a2708f74f927aab514a3c2d8662f22616}{Map\+Path\+To\+Vector\+Of\+Nodes}} (std\+::vector$<$ int $>$ \&path) const
+\begin{DoxyCompactList}\small\item\em Maps a path of node ids (n1,n2,...,nk) to (n1,n2,n2,n3,n3...,nk-\/1,nk)  \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \mbox{\hyperlink{a01551_a0fb4bbcb7d8b4b9c58b172fa71548890}{Alternate\+Costs\+Along\+Path}} (\mbox{\hyperlink{a02083}{Path}} path, const std\+::string \&cost\+\_\+type) const
+\begin{DoxyCompactList}\small\item\em Computes an alternate cost type between nodes along a path.  \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \mbox{\hyperlink{a01551_a016824f0f85631e758aa1f4b74f4e108}{Alternate\+Costs\+Along\+Path}} (std\+::vector$<$ int $>$ \&path, const std\+::string \&cost\+\_\+type) const
+\begin{DoxyCompactList}\small\item\em Computes an alternate cost type between nodes along a path.  \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{a01551_a0279f117df3d0d29d0a06301dac146a9}{Clear\+Node\+Attributes}} (std\+::string name)
 \begin{DoxyCompactList}\small\item\em Clears the attribute at name and all of its contents from the internal hashmap  \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{a01551_a0a73ceca4e8c54b18c6bba02e0a129ed}{Dump\+To\+Json}} (const std\+::string \&path)
@@ -94,8 +116,10 @@ std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{a01551_a8803f69bbfaebcdae726
 \begin{DoxyCompactList}\small\item\em Get an array of all cost names within this graph. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{a01551_a2bb134f68f988eeee4e0ba3e2a698852}{Get\+Cost}} (int parent\+\_\+id, int child\+\_\+id, const std\+::string \&cost\+\_\+type=\char`\"{}\char`\"{}) const
 \begin{DoxyCompactList}\small\item\em get the cost from parent\+\_\+id to child\+\_\+id in the given cost\+\_\+type. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{a01551_a7fb8dbfe1b401c67d85e7a0f361ebd69}{Graph\+::\+Add\+Edges}} (const std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{a01531}{Int\+Edge}} $>$ $>$ \&edges, const std\+::string \&cost\+\_\+type)
+void \mbox{\hyperlink{a01551_a113e2d3a443e2a053d53761b9169b706}{Add\+Edges}} (const std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{a01531}{Int\+Edge}} $>$ $>$ \&edges, const std\+::string \&cost\+\_\+type)
 \begin{DoxyCompactList}\small\item\em Add a set of intedges to the graph. \end{DoxyCompactList}\item 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{a01547}{Edge\+Cost\+Set}} $>$ \mbox{\hyperlink{a01551_ae43774cd6f288b83585fcebfd30ccaee}{Get\+Cost\+Map}} (const std\+::string \&cost\+\_\+type=\char`\"{} \char`\"{}) const
+\begin{DoxyCompactList}\small\item\em Get the cost map for the graph. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{a01551_a8f51b29e611c7bb59a0f4242d6e01c73}{Clear\+Cost\+Arrays}} (const std\+::string \&cost\+\_\+name=\char`\"{}\char`\"{})
 \begin{DoxyCompactList}\small\item\em Clear one or more cost arrays from the graph. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{a01551_acb6e9bc04bec84b28043c41c96139b1a}{Attr\+To\+Cost}} (const std\+::string \&node\+\_\+attribute, const std\+::string \&cost\+\_\+to\+\_\+store\+\_\+as, \mbox{\hyperlink{a00465_afac7c4ef1cb1104941f4d5a27973b47e}{Direction}} consider=\mbox{\hyperlink{a00465_afac7c4ef1cb1104941f4d5a27973b47eafb4081bff9f77d65456ceb00b153e4d4}{Direction\+::\+INCOMING}})
@@ -104,6 +128,8 @@ void \mbox{\hyperlink{a01551_acb6e9bc04bec84b28043c41c96139b1a}{Attr\+To\+Cost}}
 \begin{DoxyCompactItemize}
 \item 
 using \mbox{\hyperlink{a01551_acfe4780ebfdd7f66b9fa77a6f0301d52}{Node\+Attribute\+Value\+Map}} = robin\+\_\+hood\+::unordered\+\_\+map$<$ int, std\+::string $>$
+\item 
+using \mbox{\hyperlink{a01551_adf29585f237fcb9f1bdebb0ca40f415e}{Node\+Float\+Attribute\+Value\+Map}} = robin\+\_\+hood\+::unordered\+\_\+map$<$ int, float $>$
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -165,6 +191,8 @@ bool \mbox{\hyperlink{a01551_a1cbd600663187d7cf985e9b6e7cea73f}{needs\+\_\+compr
 \begin{DoxyCompactList}\small\item\em If true, the CSR is inaccurate and requires compression. \end{DoxyCompactList}\item 
 robin\+\_\+hood\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{a01551_acfe4780ebfdd7f66b9fa77a6f0301d52}{Node\+Attribute\+Value\+Map}} $>$ \mbox{\hyperlink{a01551_aeec76d5e193267be65a42eb1794a3abb}{node\+\_\+attr\+\_\+map}}
 \begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{a02071}{Node}} attribute type \+: Map of node id to node attribute. \end{DoxyCompactList}\item 
+robin\+\_\+hood\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{a01551_adf29585f237fcb9f1bdebb0ca40f415e}{Node\+Float\+Attribute\+Value\+Map}} $>$ \mbox{\hyperlink{a01551_a7a44380216849d6de32d77efce811c08}{node\+\_\+float\+\_\+attr\+\_\+map}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{a02071}{Node}} attribute type \+: Map of node id to node attribute for float. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{a01551_a73aed491dde212682fe65e248114371b}{active\+\_\+cost\+\_\+type}}
 \begin{DoxyCompactList}\small\item\em The active edge matrix to use for the graph. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{a00465_a40b235356dfcdd3f2e1adc0f3c342007}{Edge\+Matrix}} \mbox{\hyperlink{a01551_a0be5d62e01eabe7e1581d238cfb35ace}{edge\+\_\+matrix}}
@@ -194,7 +222,7 @@ This \mbox{\hyperlink{a01551}{Graph}} is capable of holding multiple cost types 
 \end{DoxyInvariant}
 
 
-Definition at line \mbox{\hyperlink{a00269_source_l00486}{486}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
+Definition at line \mbox{\hyperlink{a00269_source_l00490}{490}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
 
 
 
@@ -207,7 +235,17 @@ Definition at line \mbox{\hyperlink{a00269_source_l00486}{486}} of file \mbox{\h
 
 
 
-Definition at line \mbox{\hyperlink{a00269_source_l00487}{487}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
+Definition at line \mbox{\hyperlink{a00269_source_l00491}{491}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
+
+\mbox{\Hypertarget{a01551_adf29585f237fcb9f1bdebb0ca40f415e}\label{a01551_adf29585f237fcb9f1bdebb0ca40f415e}} 
+\index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!NodeFloatAttributeValueMap@{NodeFloatAttributeValueMap}}
+\index{NodeFloatAttributeValueMap@{NodeFloatAttributeValueMap}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
+\doxysubsubsection{\texorpdfstring{NodeFloatAttributeValueMap}{NodeFloatAttributeValueMap}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{a01551_adf29585f237fcb9f1bdebb0ca40f415e}{HF\+::\+Spatial\+Structures\+::\+Graph\+::\+Node\+Float\+Attribute\+Value\+Map}} =  robin\+\_\+hood\+::unordered\+\_\+map$<$int, float$>$\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{a00269_source_l00492}{492}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
 
 
 
@@ -324,7 +362,7 @@ This will not work if the graph wasn\textquotesingle{}t created from the empty c
 This adds a new element to the triplet list so next time Compress is called, the value is added to the graph.
 \end{DoxyRemark}
 \begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{a00452__todo000026}{Todo}}]How should this signal that the graph can\textquotesingle{}t have edges added to it? Or how do we add edges to an existing graph quickly without adding to its edge list?\end{DoxyRefDesc}
+\item[\mbox{\hyperlink{a00452__todo000027}{Todo}}]How should this signal that the graph can\textquotesingle{}t have edges added to it? Or how do we add edges to an existing graph quickly without adding to its edge list?\end{DoxyRefDesc}
 
 
 
@@ -356,16 +394,10 @@ This adds a new element to the triplet list so next time Compress is called, the
 \end{DoxyCode}
  
 
-Referenced by \mbox{\hyperlink{a00434_source_l00170}{Add\+Edge\+From\+Node\+IDs()}}, \mbox{\hyperlink{a00434_source_l00135}{Add\+Edge\+From\+Nodes()}}, \mbox{\hyperlink{a00005_source_l00222}{HF\+::\+Graph\+Generator\+::\+Graph\+Generator\+::\+Crawl\+Geom()}}, and \mbox{\hyperlink{a00005_source_l00141}{HF\+::\+Graph\+Generator\+::\+Graph\+Generator\+::\+Crawl\+Geom\+Parallel()}}.
+Referenced by \mbox{\hyperlink{a00434_source_l00210}{Add\+Edge\+From\+Node\+IDs()}}, \mbox{\hyperlink{a00434_source_l00175}{Add\+Edge\+From\+Nodes()}}, \mbox{\hyperlink{a00434_source_l00150}{Add\+Edge\+From\+Node\+Structs()}}, \mbox{\hyperlink{a00005_source_l00222}{HF\+::\+Graph\+Generator\+::\+Graph\+Generator\+::\+Crawl\+Geom()}}, and \mbox{\hyperlink{a00005_source_l00141}{HF\+::\+Graph\+Generator\+::\+Graph\+Generator\+::\+Crawl\+Geom\+Parallel()}}.
 
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01551_a37be5c12e488072dea7fa1c8c64346f7_icgraph}
-\end{center}
-\end{figure}
+% FIG 1
 \mbox{\Hypertarget{a01551_a0584ab845d5c21979b1542651a4cf3aa}\label{a01551_a0584ab845d5c21979b1542651a4cf3aa}} 
 \index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!addEdge@{addEdge}}
 \index{addEdge@{addEdge}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
@@ -408,7 +440,7 @@ This adds a new element to the triplet list so next time Compress is called, the
 \hline
 \end{DoxyExceptions}
 \begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{a00452__todo000027}{Todo}}]How should this signal that the graph can\textquotesingle{}t have edges added to it? Or how do we add edges to an existing graph quickly without adding to its edge list?\end{DoxyRefDesc}
+\item[\mbox{\hyperlink{a00452__todo000028}{Todo}}]How should this signal that the graph can\textquotesingle{}t have edges added to it? Or how do we add edges to an existing graph quickly without adding to its edge list?\end{DoxyRefDesc}
 
 
 
@@ -441,7 +473,7 @@ This adds a new element to the triplet list so next time Compress is called, the
  \mbox{\Hypertarget{a01551_a6f04c5320d4bf88120f8c5e31b0fb02a}\label{a01551_a6f04c5320d4bf88120f8c5e31b0fb02a}} 
 \index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!AddEdges@{AddEdges}}
 \index{AddEdges@{AddEdges}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
-\doxysubsubsection{\texorpdfstring{AddEdges()}{AddEdges()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\doxysubsubsection{\texorpdfstring{AddEdges()}{AddEdges()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily void HF\+::\+Spatial\+Structures\+::\+Graph\+::\+Add\+Edges (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{a01535}{Edge\+Set}} \&}]{edges,  }\item[{const std\+::string \&}]{cost\+\_\+name = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
 
 
@@ -469,26 +501,49 @@ Add multiple edges to the graph.
 \end{DoxyExceptions}
 
 
-Referenced by \mbox{\hyperlink{a00434_source_l00381}{Calculate\+And\+Store\+Cross\+Slope()}}, and \mbox{\hyperlink{a00434_source_l00273}{Calculate\+And\+Store\+Energy\+Expenditure()}}.
+Referenced by \mbox{\hyperlink{a00434_source_l00661}{Calculate\+And\+Store\+Cross\+Slope()}}, \mbox{\hyperlink{a00434_source_l00440}{Calculate\+And\+Store\+Energy\+Expenditure()}}, \mbox{\hyperlink{a00011_source_l00372}{HF\+::\+Graph\+Generator\+::\+Calculate\+And\+Store\+Step\+Type()}}, and \mbox{\hyperlink{a00404_source_l00109}{Calculate\+And\+Store\+Step\+Types()}}.
 
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01551_a6f04c5320d4bf88120f8c5e31b0fb02a_icgraph}
-\end{center}
-\end{figure}
+% FIG 2
 \mbox{\Hypertarget{a01551_a4fb7f82bbc403885c378d0896c742443}\label{a01551_a4fb7f82bbc403885c378d0896c742443}} 
 \index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!AddEdges@{AddEdges}}
 \index{AddEdges@{AddEdges}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
-\doxysubsubsection{\texorpdfstring{AddEdges()}{AddEdges()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\doxysubsubsection{\texorpdfstring{AddEdges()}{AddEdges()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
 {\footnotesize\ttfamily void HF\+::\+Spatial\+Structures\+::\+Graph\+::\+Add\+Edges (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{a01535}{Edge\+Set}} $>$ \&}]{edges,  }\item[{const std\+::string \&}]{cost\+\_\+name = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
 
 
 
 Add an array of edges to the graph. 
 
+\mbox{\Hypertarget{a01551_a113e2d3a443e2a053d53761b9169b706}\label{a01551_a113e2d3a443e2a053d53761b9169b706}} 
+\index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!AddEdges@{AddEdges}}
+\index{AddEdges@{AddEdges}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
+\doxysubsubsection{\texorpdfstring{AddEdges()}{AddEdges()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void HF\+::\+Spatial\+Structures\+::\+Graph\+::\+Add\+Edges (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{a01531}{Int\+Edge}} $>$ $>$ \&}]{edges,  }\item[{const std\+::string \&}]{cost\+\_\+type }\end{DoxyParamCaption})}
+
+
+
+Add a set of intedges to the graph. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em edges} & An ordered vector of vectors in which each outer vector holds a vector of edges for the node at the ID of that index. For example the vector at index 0 would hold a vector of intedges for the node at ID 0.\+a\\
+\hline
+{\em cost\+\_\+type} & The type of cost to add these edges to. If this cost type does not yet exist, then it will be created.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+1) If adding edges to an alternate cost type, the edges must already have been added to the default graph. 
+
+2) If adding an alternate edge to the graph, the graph must already be compressed
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & Trying to add an edge to an alternate cost type when it\textquotesingle{}s not compressed \\
+\hline
+{\em std\+::out\+\_\+of\+\_\+range} & Trying to add an edge to an alternate cost type when it hasn\textquotesingle{}t already been added to the default graph2) If adding an alternate edge to the graph, the graph must already be compressed \\
+\hline
+\end{DoxyExceptions}
 \mbox{\Hypertarget{a01551_a819ecd54d0148ddf867e6ca77fec8379}\label{a01551_a819ecd54d0148ddf867e6ca77fec8379}} 
 \index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!AddNodeAttribute@{AddNodeAttribute}}
 \index{AddNodeAttribute@{AddNodeAttribute}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
@@ -504,6 +559,32 @@ Add an attribute to the node at id
 {\em id} & The ID of the node that will receive attribute \\
 \hline
 {\em attribute} & The attribute that the node at ID will receive \\
+\hline
+{\em score} & The weight, or distance that extends from the node at id \\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// TODO example}}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{a01551_aa16fd49e5cca70bc64a6e306de75e089}\label{a01551_aa16fd49e5cca70bc64a6e306de75e089}} 
+\index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!AddNodeAttributeFloat@{AddNodeAttributeFloat}}
+\index{AddNodeAttributeFloat@{AddNodeAttributeFloat}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
+\doxysubsubsection{\texorpdfstring{AddNodeAttributeFloat()}{AddNodeAttributeFloat()}}
+{\footnotesize\ttfamily void HF\+::\+Spatial\+Structures\+::\+Graph\+::\+Add\+Node\+Attribute\+Float (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{const std\+::string \&}]{name,  }\item[{const float}]{score }\end{DoxyParamCaption})}
+
+
+
+Add a float attribute to the node at id. If the node at id already has a score for the attribute at name, then existing score should be overwritten. 
+
+If the attribute is a string attribute, score will be added as a string value. The attribute will not be converted into a float attribute.  
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID of the node that will receive attribute \\
+\hline
+{\em name} & The attribute that the node at ID will receive \\
 \hline
 {\em score} & The weight, or distance that extends from the node at id \\
 \hline
@@ -551,16 +632,50 @@ The length of ids, and the length of scores must be equal
 \end{DoxyCode}
  
 
-Referenced by \mbox{\hyperlink{a00434_source_l00290}{Add\+Node\+Attributes()}}.
+Referenced by \mbox{\hyperlink{a00434_source_l00457}{Add\+Node\+Attributes()}}.
 
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01551_a306a0277ba1caa0aa4a1227e2f847f09_icgraph}
-\end{center}
-\end{figure}
+% FIG 3
+\mbox{\Hypertarget{a01551_ace0104174af8ee72de49eae3e9dd8280}\label{a01551_ace0104174af8ee72de49eae3e9dd8280}} 
+\index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!AddNodeAttributesFloat@{AddNodeAttributesFloat}}
+\index{AddNodeAttributesFloat@{AddNodeAttributesFloat}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
+\doxysubsubsection{\texorpdfstring{AddNodeAttributesFloat()}{AddNodeAttributesFloat()}}
+{\footnotesize\ttfamily void HF\+::\+Spatial\+Structures\+::\+Graph\+::\+Add\+Node\+Attributes\+Float (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{id,  }\item[{const std\+::string \&}]{name,  }\item[{const std\+::vector$<$ float $>$ \&}]{scores }\end{DoxyParamCaption})}
+
+
+
+Add a float attribute to the node at id. If the node at id already has a score for the attribute at name, then existing score should be overwritten. 
+
+If the attribute is a string attribute, scores will be added as string values. The attribute will not be converted into a float attribute.  
+\begin{DoxyParams}{Parameters}
+{\em id} & The container of IDs from which nodes will be retrieved and given attributes \\
+\hline
+{\em name} & The attribute that each node will receive \\
+\hline
+{\em scores} & The container of score, ordered by the container of node IDs \\
+\hline
+\end{DoxyParams}
+
+
+\begin{DoxyPrecond}{Precondition}
+The length of ids, and the length of scores must be equal 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & The length of scores and the length of ID do not match\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// TODO example}}
+
+\end{DoxyCode}
+ 
+
+Referenced by \mbox{\hyperlink{a00434_source_l00489}{Add\+Node\+Attributes\+Float()}}.
+
+Here is the caller graph for this function\+:
+% FIG 4
 \mbox{\Hypertarget{a01551_a487b0b29dc7c554089e0255779218567}\label{a01551_a487b0b29dc7c554089e0255779218567}} 
 \index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!AggregateGraph@{AggregateGraph}}
 \index{AggregateGraph@{AggregateGraph}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
@@ -629,16 +744,56 @@ If directed\+: {\ttfamily O(n)} where n is the total number of nodes in the grap
 \end{DoxySeeAlso}
 
 
-Referenced by \mbox{\hyperlink{a00434_source_l00094}{Aggregate\+Costs()}}.
+Referenced by \mbox{\hyperlink{a00434_source_l00109}{Aggregate\+Costs()}}.
 
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=327pt]{a01551_a487b0b29dc7c554089e0255779218567_icgraph}
-\end{center}
-\end{figure}
+% FIG 5
+\mbox{\Hypertarget{a01551_a0fb4bbcb7d8b4b9c58b172fa71548890}\label{a01551_a0fb4bbcb7d8b4b9c58b172fa71548890}} 
+\index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!AlternateCostsAlongPath@{AlternateCostsAlongPath}}
+\index{AlternateCostsAlongPath@{AlternateCostsAlongPath}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
+\doxysubsubsection{\texorpdfstring{AlternateCostsAlongPath()}{AlternateCostsAlongPath()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ float $>$ HF\+::\+Spatial\+Structures\+::\+Graph\+::\+Alternate\+Costs\+Along\+Path (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{a02083}{Path}}}]{path,  }\item[{const std\+::string \&}]{cost\+\_\+type }\end{DoxyParamCaption}) const}
+
+
+
+Computes an alternate cost type between nodes along a path.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The path of nodes to get costs between. \\
+\hline
+{\em cost\+\_\+type} & The type of cost to query \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of floats, representing each cost between nodes along the path. 
+\end{DoxyReturn}
+
+
+Referenced by \mbox{\hyperlink{a00434_source_l00292}{Alternate\+Costs\+Along\+Path\+Struct()}}, and \mbox{\hyperlink{a00434_source_l00322}{Alternate\+Costs\+Along\+Path\+With\+IDs()}}.
+
+Here is the caller graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{a01551_a016824f0f85631e758aa1f4b74f4e108}\label{a01551_a016824f0f85631e758aa1f4b74f4e108}} 
+\index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!AlternateCostsAlongPath@{AlternateCostsAlongPath}}
+\index{AlternateCostsAlongPath@{AlternateCostsAlongPath}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
+\doxysubsubsection{\texorpdfstring{AlternateCostsAlongPath()}{AlternateCostsAlongPath()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ float $>$ HF\+::\+Spatial\+Structures\+::\+Graph\+::\+Alternate\+Costs\+Along\+Path (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$ \&}]{path,  }\item[{const std\+::string \&}]{cost\+\_\+type }\end{DoxyParamCaption}) const}
+
+
+
+Computes an alternate cost type between nodes along a path.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The path of nodes to get costs between. \\
+\hline
+{\em cost\+\_\+type} & The type of cost to query \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of floats, representing each cost between nodes along the path. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{a01551_acb6e9bc04bec84b28043c41c96139b1a}\label{a01551_acb6e9bc04bec84b28043c41c96139b1a}} 
 \index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!AttrToCost@{AttrToCost}}
 \index{AttrToCost@{AttrToCost}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
@@ -709,16 +864,10 @@ Generate edge costs from a set of node attributes.
 \end{DoxyParagraph}
 
 
-Referenced by \mbox{\hyperlink{a00434_source_l00405}{Graph\+Attrs\+To\+Costs()}}.
+Referenced by \mbox{\hyperlink{a00434_source_l00690}{Graph\+Attrs\+To\+Costs()}}.
 
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=325pt]{a01551_acb6e9bc04bec84b28043c41c96139b1a_icgraph}
-\end{center}
-\end{figure}
+% FIG 7
 \mbox{\Hypertarget{a01551_a902d654a1c1b6d391c27c6c2bd618bbc}\label{a01551_a902d654a1c1b6d391c27c6c2bd618bbc}} 
 \index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!checkForEdge@{checkForEdge}}
 \index{checkForEdge@{checkForEdge}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
@@ -793,16 +942,10 @@ Clear all nodes and edges from the graph.
 \end{DoxyCode}
  
 
-Referenced by \mbox{\hyperlink{a00434_source_l00234}{Clear\+Graph()}}.
+Referenced by \mbox{\hyperlink{a00434_source_l00401}{Clear\+Graph()}}.
 
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=291pt]{a01551_a994dbd15119eb6548d2e15f4de4b88a6_icgraph}
-\end{center}
-\end{figure}
+% FIG 8
 \mbox{\Hypertarget{a01551_a8f51b29e611c7bb59a0f4242d6e01c73}\label{a01551_a8f51b29e611c7bb59a0f4242d6e01c73}} 
 \index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!ClearCostArrays@{ClearCostArrays}}
 \index{ClearCostArrays@{ClearCostArrays}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
@@ -825,16 +968,10 @@ Clear one or more cost arrays from the graph.
 \end{DoxyExceptions}
 
 
-Referenced by \mbox{\hyperlink{a00434_source_l00234}{Clear\+Graph()}}.
+Referenced by \mbox{\hyperlink{a00434_source_l00401}{Clear\+Graph()}}.
 
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=306pt]{a01551_a8f51b29e611c7bb59a0f4242d6e01c73_icgraph}
-\end{center}
-\end{figure}
+% FIG 9
 \mbox{\Hypertarget{a01551_a0279f117df3d0d29d0a06301dac146a9}\label{a01551_a0279f117df3d0d29d0a06301dac146a9}} 
 \index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!ClearNodeAttributes@{ClearNodeAttributes}}
 \index{ClearNodeAttributes@{ClearNodeAttributes}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
@@ -864,16 +1001,10 @@ Clears the attribute at name and all of its contents from the internal hashmap
 \end{DoxyCode}
  
 
-Referenced by \mbox{\hyperlink{a00434_source_l00368}{Clear\+Attribute\+Type()}}.
+Referenced by \mbox{\hyperlink{a00434_source_l00648}{Clear\+Attribute\+Type()}}.
 
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01551_a0279f117df3d0d29d0a06301dac146a9_icgraph}
-\end{center}
-\end{figure}
+% FIG 10
 \mbox{\Hypertarget{a01551_a41cece77d0eee98df39ecc6d3a366ec8}\label{a01551_a41cece77d0eee98df39ecc6d3a366ec8}} 
 \index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!Compress@{Compress}}
 \index{Compress@{Compress}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
@@ -924,16 +1055,52 @@ This method of constructing the CSR is based on \mbox{\hyperlink{a00471}{Eigen}}
 \end{DoxyCode}
  
 
-Referenced by \mbox{\hyperlink{a00434_source_l00228}{Compress()}}.
+Referenced by \mbox{\hyperlink{a00011_source_l00372}{HF\+::\+Graph\+Generator\+::\+Calculate\+And\+Store\+Step\+Type()}}, \mbox{\hyperlink{a00404_source_l00109}{Calculate\+And\+Store\+Step\+Types()}}, and \mbox{\hyperlink{a00434_source_l00395}{Compress()}}.
 
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=286pt]{a01551_a41cece77d0eee98df39ecc6d3a366ec8_icgraph}
-\end{center}
-\end{figure}
+% FIG 11
+\mbox{\Hypertarget{a01551_ac1d4649c2867e70900fbab7eeca5f6b6}\label{a01551_ac1d4649c2867e70900fbab7eeca5f6b6}} 
+\index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!CountEdges@{CountEdges}}
+\index{CountEdges@{CountEdges}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
+\doxysubsubsection{\texorpdfstring{CountEdges()}{CountEdges()}}
+{\footnotesize\ttfamily int HF\+::\+Spatial\+Structures\+::\+Graph\+::\+Count\+Edges (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{cost\+\_\+type }\end{DoxyParamCaption}) const}
+
+
+
+Count the number of edges of associated cost type  
+
+
+\begin{DoxyParams}{Parameters}
+{\em cost\+\_\+type} & The desired cost type to count the number of edges of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of edges of associated cost type in the graph 
+\end{DoxyReturn}
+
+
+Referenced by \mbox{\hyperlink{a00434_source_l00685}{Count\+Number\+Of\+Edges()}}.
+
+Here is the caller graph for this function\+:
+% FIG 12
+\mbox{\Hypertarget{a01551_a4a1f6bd7f9db0f0427482992519b6bc9}\label{a01551_a4a1f6bd7f9db0f0427482992519b6bc9}} 
+\index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!CountEdgesFromEdgeSets@{CountEdgesFromEdgeSets}}
+\index{CountEdgesFromEdgeSets@{CountEdgesFromEdgeSets}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
+\doxysubsubsection{\texorpdfstring{CountEdgesFromEdgeSets()}{CountEdgesFromEdgeSets()}}
+{\footnotesize\ttfamily int HF\+::\+Spatial\+Structures\+::\+Graph\+::\+Count\+Edges\+From\+Edge\+Sets (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{a01535}{Edge\+Set}} $>$}]{All\+Edges }\end{DoxyParamCaption}) const}
+
+
+
+Count the number of edges in a given edgeset.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em All\+Edges} & The edgeset to count the number of edges in \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of edges in the given edgeset 
+\end{DoxyReturn}
 \mbox{\Hypertarget{a01551_abe55b81687ef86e24646e19c5eeb771c}\label{a01551_abe55b81687ef86e24646e19c5eeb771c}} 
 \index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!CreateCostArray@{CreateCostArray}}
 \index{CreateCostArray@{CreateCostArray}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
@@ -1096,16 +1263,10 @@ cost\+\_\+type must be the name of a cost that already exists in the graph, or b
 \end{DoxyPrecond}
 
 
-Referenced by \mbox{\hyperlink{a00434_source_l00066}{Get\+Edge\+Cost()}}.
+Referenced by \mbox{\hyperlink{a00434_source_l00081}{Get\+Edge\+Cost()}}.
 
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=300pt]{a01551_a2bb134f68f988eeee4e0ba3e2a698852_icgraph}
-\end{center}
-\end{figure}
+% FIG 13
 \mbox{\Hypertarget{a01551_ac27c41b7325344570458ee4953bc3f2a}\label{a01551_ac27c41b7325344570458ee4953bc3f2a}} 
 \index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!GetCostArray@{GetCostArray}}
 \index{GetCostArray@{GetCostArray}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
@@ -1186,6 +1347,21 @@ NAN if no edge exists in {\ttfamily set} between {\ttfamily parent\+\_\+id} and 
 \begin{DoxyPrecond}{Precondition}
 parent\+\_\+id and child\+\_\+id both belong to nodes that already exist in the graph. 
 \end{DoxyPrecond}
+\mbox{\Hypertarget{a01551_ae43774cd6f288b83585fcebfd30ccaee}\label{a01551_ae43774cd6f288b83585fcebfd30ccaee}} 
+\index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!GetCostMap@{GetCostMap}}
+\index{GetCostMap@{GetCostMap}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
+\doxysubsubsection{\texorpdfstring{GetCostMap()}{GetCostMap()}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{a01547}{Edge\+Cost\+Set}} $>$ HF\+::\+Spatial\+Structures\+::\+Graph\+::\+Get\+Cost\+Map (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{cost\+\_\+type = {\ttfamily \char`\"{}~\char`\"{}} }\end{DoxyParamCaption}) const}
+
+
+
+Get the cost map for the graph. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cost\+\_\+type} & Name of te cost to get the cost map for \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{a01551_a8803f69bbfaebcdae72680e01a90b94b}\label{a01551_a8803f69bbfaebcdae72680e01a90b94b}} 
 \index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!GetCostTypes@{GetCostTypes}}
 \index{GetCostTypes@{GetCostTypes}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
@@ -1256,16 +1432,60 @@ This can be useful for reconstructing or mapping to the CSR without interacting 
 \end{DoxySeeAlso}
 
 
-Referenced by \mbox{\hyperlink{a00434_source_l00187}{Get\+CSRPointers()}}.
+Referenced by \mbox{\hyperlink{a00434_source_l00354}{Get\+CSRPointers()}}.
 
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=330pt]{a01551_a7cd5d401dfbd61b3b075ca0ad63d959e_icgraph}
-\end{center}
-\end{figure}
+% FIG 14
+\mbox{\Hypertarget{a01551_ac2c59f04d4c958a0f78d92448600e393}\label{a01551_ac2c59f04d4c958a0f78d92448600e393}} 
+\index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!GetEdgeCosts@{GetEdgeCosts}}
+\index{GetEdgeCosts@{GetEdgeCosts}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
+\doxysubsubsection{\texorpdfstring{GetEdgeCosts()}{GetEdgeCosts()}}
+{\footnotesize\ttfamily std\+::vector$<$ float $>$ HF\+::\+Spatial\+Structures\+::\+Graph\+::\+Get\+Edge\+Costs (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{cost\+\_\+type }\end{DoxyParamCaption}) const}
+
+
+
+Get edge costs of all given edges  
+
+
+\begin{DoxyParams}{Parameters}
+{\em cost\+\_\+type} & The desired cost type to get costs for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of floats containing all costs of given cost type 
+\end{DoxyReturn}
+
+
+Referenced by \mbox{\hyperlink{a00434_source_l00227}{Get\+Edge\+Costs()}}.
+
+Here is the caller graph for this function\+:
+% FIG 15
+\mbox{\Hypertarget{a01551_aa79a555f9fa789581d9f1905ebb0c55f}\label{a01551_aa79a555f9fa789581d9f1905ebb0c55f}} 
+\index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!GetEdgeCostsFromNodeIDs@{GetEdgeCostsFromNodeIDs}}
+\index{GetEdgeCostsFromNodeIDs@{GetEdgeCostsFromNodeIDs}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
+\doxysubsubsection{\texorpdfstring{GetEdgeCostsFromNodeIDs()}{GetEdgeCostsFromNodeIDs()}}
+{\footnotesize\ttfamily std\+::vector$<$ float $>$ HF\+::\+Spatial\+Structures\+::\+Graph\+::\+Get\+Edge\+Costs\+From\+Node\+IDs (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$ \&}]{ids,  }\item[{const std\+::string \&}]{cost\+\_\+type }\end{DoxyParamCaption}) const}
+
+
+
+Get costs of all given edges  
+
+
+\begin{DoxyParams}{Parameters}
+{\em ids} & The ids of nodes to map to edges for cost calculation \\
+\hline
+{\em cost\+\_\+type} & The desired cost type to get costs for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of floats containing costs of given cost type associated with the given edges 
+\end{DoxyReturn}
+
+
+Referenced by \mbox{\hyperlink{a00434_source_l00256}{Get\+Edge\+Costs\+From\+Node\+IDs()}}.
+
+Here is the caller graph for this function\+:
+% FIG 16
 \mbox{\Hypertarget{a01551_a1a26ebb794b444e2214cf0b0fed5a529}\label{a01551_a1a26ebb794b444e2214cf0b0fed5a529}} 
 \index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!GetEdges@{GetEdges}}
 \index{GetEdges@{GetEdges}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
@@ -1325,13 +1545,7 @@ O(k) where k is the number of edges in the graph.
 Referenced by \mbox{\hyperlink{a00197_source_l00023}{HF\+::\+Pathfinding\+::\+Boost\+Graph\+::\+Boost\+Graph()}}.
 
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01551_a1a26ebb794b444e2214cf0b0fed5a529_icgraph}
-\end{center}
-\end{figure}
+% FIG 17
 \mbox{\Hypertarget{a01551_ad398849b00a0eac24c0682935d8c7966}\label{a01551_ad398849b00a0eac24c0682935d8c7966}} 
 \index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!GetEdges@{GetEdges}}
 \index{GetEdges@{GetEdges}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
@@ -1439,16 +1653,10 @@ The ID assigned to this node. -\/1 if it was not yet added to the graph
 \end{DoxyCode}
  
 
-Referenced by \mbox{\hyperlink{a00434_source_l00217}{Get\+Node\+ID()}}.
+Referenced by \mbox{\hyperlink{a00434_source_l00384}{Get\+Node\+ID()}}.
 
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=289pt]{a01551_af59beedafb4af0ee99d54761e1c681fc_icgraph}
-\end{center}
-\end{figure}
+% FIG 18
 \mbox{\Hypertarget{a01551_ad5227cd95744b58551b9964975017a37}\label{a01551_ad5227cd95744b58551b9964975017a37}} 
 \index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!GetIntEdges@{GetIntEdges}}
 \index{GetIntEdges@{GetIntEdges}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
@@ -1481,21 +1689,238 @@ A container of score, each in the form of a std\+::string, obtained from attribu
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{\textcolor{comment}{// TODO example}}
+\DoxyCodeLine{\textcolor{comment}{// be sure to \#include "{}graph.h"{}}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Create the nodes}}
+\DoxyCodeLine{\mbox{\hyperlink{a02071}{HF::SpatialStructures::Node}} node\_0(1.0f, 1.0f, 2.0f);}
+\DoxyCodeLine{\mbox{\hyperlink{a02071}{HF::SpatialStructures::Node}} node\_1(2.0f, 3.0f, 4.0f, 5);}
+\DoxyCodeLine{\mbox{\hyperlink{a02071}{HF::SpatialStructures::Node}} node\_2(11.0f, 22.0f, 140.0f);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Create a container (vector) of nodes}}
+\DoxyCodeLine{std::vector<HF::SpatialStructures::Node> nodes = \{ node\_0, node\_1, node\_2 \};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Create matrices for edges and distances, edges.size() == distances().size()}}
+\DoxyCodeLine{std::vector<std::vector<int>> edges = \{ \{ 1, 2 \}, \{ 2 \}, \{ 1 \} \};}
+\DoxyCodeLine{std::vector<std::vector<float>> distances = \{ \{ 1.0f, 2.5f \}, \{ 54.0f \}, \{ 39.0f \} \};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Now you can create a Graph -\/ note that nodes, edges, and distances are passed by reference}}
+\DoxyCodeLine{\mbox{\hyperlink{a01551}{HF::SpatialStructures::Graph}} graph(edges, distances, nodes);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Get node IDs}}
+\DoxyCodeLine{\textcolor{keywordtype}{int} ID\_0 = graph.getID(node\_0);}
+\DoxyCodeLine{\textcolor{keywordtype}{int} ID\_1 = graph.getID(node\_1);}
+\DoxyCodeLine{\textcolor{keywordtype}{int} ID\_2 = graph.getID(node\_2);}
+\DoxyCodeLine{}
+\DoxyCodeLine{std::vector<int> ids = \{ID\_0, ID\_1, ID\_2\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Assign attributes to nodes}}
+\DoxyCodeLine{std::string attribute = \textcolor{stringliteral}{"{}demo attribute"{}};}
+\DoxyCodeLine{std::vector<std::string> scores = \{\textcolor{stringliteral}{"{}2.3"{}}, \textcolor{stringliteral}{"{}6.1"{}}, \textcolor{stringliteral}{"{}4.0"{}}\};}
+\DoxyCodeLine{graph.AddNodeAttributes(ids, attribute, scores);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Get attribute for all nodes}}
+\DoxyCodeLine{std::vector<std::string> cross\_slopes = graph.GetNodeAttributes(attribute); \textcolor{comment}{// \{"{}2.3"{}, "{}6.1"{}, "{}4.0"{}\}}}
 
 \end{DoxyCode}
  
 
-Referenced by \mbox{\hyperlink{a00434_source_l00322}{Get\+Node\+Attributes()}}.
+Referenced by \mbox{\hyperlink{a00434_source_l00521}{Get\+Node\+Attributes()}}.
 
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=347pt]{a01551_aedd218785fbf6dabaa2fba2dca738618_icgraph}
-\end{center}
-\end{figure}
+% FIG 19
+\mbox{\Hypertarget{a01551_a19e8bf9aa4b8c23beee618bd32d3c238}\label{a01551_a19e8bf9aa4b8c23beee618bd32d3c238}} 
+\index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!GetNodeAttributesByID@{GetNodeAttributesByID}}
+\index{GetNodeAttributesByID@{GetNodeAttributesByID}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
+\doxysubsubsection{\texorpdfstring{GetNodeAttributesByID()}{GetNodeAttributesByID()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ HF\+::\+Spatial\+Structures\+::\+Graph\+::\+Get\+Node\+Attributes\+By\+ID (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$ \&}]{ids,  }\item[{std\+::string}]{attribute }\end{DoxyParamCaption}) const}
+
+
+
+Get the score for the given attribute of the specified nodes. Nodes that do not have a score for this attribute should return an empty string for this array.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em ids} & A list of node IDs to obtain scores for. \\
+\hline
+{\em attribute} & The attribute from which a container of scores will be obtained \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A container of score, each in the form of a std\+::string, obtained from attribute 
+\end{DoxyReturn}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// be sure to \#include "{}graph.h"{}}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Create the nodes}}
+\DoxyCodeLine{\mbox{\hyperlink{a02071}{HF::SpatialStructures::Node}} node\_0(1.0f, 1.0f, 2.0f);}
+\DoxyCodeLine{\mbox{\hyperlink{a02071}{HF::SpatialStructures::Node}} node\_1(2.0f, 3.0f, 4.0f, 5);}
+\DoxyCodeLine{\mbox{\hyperlink{a02071}{HF::SpatialStructures::Node}} node\_2(11.0f, 22.0f, 140.0f);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Create a container (vector) of nodes}}
+\DoxyCodeLine{std::vector<HF::SpatialStructures::Node> nodes = \{ node\_0, node\_1, node\_2 \};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Create matrices for edges and distances, edges.size() == distances().size()}}
+\DoxyCodeLine{std::vector<std::vector<int>> edges = \{ \{ 1, 2 \}, \{ 2 \}, \{ 1 \} \};}
+\DoxyCodeLine{std::vector<std::vector<float>> distances = \{ \{ 1.0f, 2.5f \}, \{ 54.0f \}, \{ 39.0f \} \};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Now you can create a Graph -\/ note that nodes, edges, and distances are passed by reference}}
+\DoxyCodeLine{\mbox{\hyperlink{a01551}{HF::SpatialStructures::Graph}} graph(edges, distances, nodes);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Get node IDs}}
+\DoxyCodeLine{\textcolor{keywordtype}{int} ID\_0 = graph.getID(node\_0);}
+\DoxyCodeLine{\textcolor{keywordtype}{int} ID\_1 = graph.getID(node\_1);}
+\DoxyCodeLine{\textcolor{keywordtype}{int} ID\_2 = graph.getID(node\_2);}
+\DoxyCodeLine{std::vector<int> ids = \{0, 1, 2\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Assign attributes to nodes}}
+\DoxyCodeLine{std::string attribute = \textcolor{stringliteral}{"{}demo attribute"{}};}
+\DoxyCodeLine{std::vector<std::string> scores = \{\textcolor{stringliteral}{"{}1.8"{}}, \textcolor{stringliteral}{"{}9.6"{}}, \textcolor{stringliteral}{"{}5.7"{}}\};}
+\DoxyCodeLine{graph.AddNodeAttributes(ids, attribute, scores);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Get attribute for specific nodes}}
+\DoxyCodeLine{std::vector<std::string> cross\_slope\_1 = graph.GetNodeAttributesByID(\{ID\_1\}, attribute); \textcolor{comment}{// \{"{}9.6"{}\}}}
+\DoxyCodeLine{std::vector<std::string> cross\_slope\_02 = graph.GetNodeAttributesByID(\{ID\_0, ID\_2\}, attribute); \textcolor{comment}{// \{"{}1.8"{}, "{}5.7"{}\}}}
+
+\end{DoxyCode}
+ 
+
+Referenced by \mbox{\hyperlink{a00434_source_l00551}{Get\+Node\+Attributes\+By\+ID()}}.
+
+Here is the caller graph for this function\+:
+% FIG 20
+\mbox{\Hypertarget{a01551_a34d65fb6990ba01f83f9f4424165c8f2}\label{a01551_a34d65fb6990ba01f83f9f4424165c8f2}} 
+\index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!GetNodeAttributesByIDFloat@{GetNodeAttributesByIDFloat}}
+\index{GetNodeAttributesByIDFloat@{GetNodeAttributesByIDFloat}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
+\doxysubsubsection{\texorpdfstring{GetNodeAttributesByIDFloat()}{GetNodeAttributesByIDFloat()}}
+{\footnotesize\ttfamily std\+::vector$<$ float $>$ HF\+::\+Spatial\+Structures\+::\+Graph\+::\+Get\+Node\+Attributes\+By\+IDFloat (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$ \&}]{ids,  }\item[{std\+::string}]{name }\end{DoxyParamCaption}) const}
+
+
+
+Get the score for the given attribute of the specified nodes. Nodes that do not have a score for this attribute should return an empty string for this array.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em ids} & A list of node IDs to obtain scores for. \\
+\hline
+{\em name} & The attribute from which a container of scores will be obtained. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A container of score, each in the form of a std\+::string, obtained from name 
+\end{DoxyReturn}
+
+
+\begin{DoxyPrecond}{Precondition}
+{\ttfamily name} is a float attribute. That is, only float values have been added to this attribute.
+\end{DoxyPrecond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// be sure to \#include "{}graph.h"{}}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Create the nodes}}
+\DoxyCodeLine{\mbox{\hyperlink{a02071}{HF::SpatialStructures::Node}} node\_0(1.0f, 1.0f, 2.0f);}
+\DoxyCodeLine{\mbox{\hyperlink{a02071}{HF::SpatialStructures::Node}} node\_1(2.0f, 3.0f, 4.0f, 5);}
+\DoxyCodeLine{\mbox{\hyperlink{a02071}{HF::SpatialStructures::Node}} node\_2(11.0f, 22.0f, 140.0f);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Create a container (vector) of nodes}}
+\DoxyCodeLine{std::vector<HF::SpatialStructures::Node> nodes = \{ node\_0, node\_1, node\_2 \};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Create matrices for edges and distances, edges.size() == distances().size()}}
+\DoxyCodeLine{std::vector<std::vector<int>> edges = \{ \{ 1, 2 \}, \{ 2 \}, \{ 1 \} \};}
+\DoxyCodeLine{std::vector<std::vector<float>> distances = \{ \{ 1.0f, 2.5f \}, \{ 54.0f \}, \{ 39.0f \} \};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Now you can create a Graph -\/ note that nodes, edges, and distances are passed by reference}}
+\DoxyCodeLine{\mbox{\hyperlink{a01551}{HF::SpatialStructures::Graph}} graph(edges, distances, nodes);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Get node IDs}}
+\DoxyCodeLine{\textcolor{keywordtype}{int} ID\_0 = graph.getID(node\_0);}
+\DoxyCodeLine{\textcolor{keywordtype}{int} ID\_1 = graph.getID(node\_1);}
+\DoxyCodeLine{\textcolor{keywordtype}{int} ID\_2 = graph.getID(node\_2);}
+\DoxyCodeLine{std::vector<int> ids = \{0, 1, 2\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Assign attributes to nodes}}
+\DoxyCodeLine{std::string attribute = \textcolor{stringliteral}{"{}demo attribute"{}};}
+\DoxyCodeLine{std::vector<float> scores = \{1.8, 9.6, 5.7\};}
+\DoxyCodeLine{graph.AddNodeAttributesFloat(ids, attribute, scores);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Get attribute for specific nodes}}
+\DoxyCodeLine{std::vector<float> cross\_slope\_1 = graph.GetNodeAttributesByIDFloat(\{ID\_1\}, attribute); \textcolor{comment}{// \{9.6\}}}
+\DoxyCodeLine{std::vector<float> cross\_slope\_02 = graph.GetNodeAttributesByIDFloat(\{ID\_0, ID\_2\}, attribute); \textcolor{comment}{// \{1.8, 5.7\}}}
+
+\end{DoxyCode}
+ 
+
+Referenced by \mbox{\hyperlink{a00434_source_l00605}{Get\+Node\+Attributes\+By\+IDFloat()}}.
+
+Here is the caller graph for this function\+:
+% FIG 21
+\mbox{\Hypertarget{a01551_a150e739eb5dbea7d980a2fbfa213f114}\label{a01551_a150e739eb5dbea7d980a2fbfa213f114}} 
+\index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!GetNodeAttributesFloat@{GetNodeAttributesFloat}}
+\index{GetNodeAttributesFloat@{GetNodeAttributesFloat}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
+\doxysubsubsection{\texorpdfstring{GetNodeAttributesFloat()}{GetNodeAttributesFloat()}}
+{\footnotesize\ttfamily std\+::vector$<$ float $>$ HF\+::\+Spatial\+Structures\+::\+Graph\+::\+Get\+Node\+Attributes\+Float (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption}) const}
+
+
+
+Get the score for the given attribute of every node in the graph. Nodes that do not have a score for this attribute should return the default value 0.\+0 for this array.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The attribute from which a container of scores will be obtained. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A container of score, each in the form of a float, obtained from attribute 
+\end{DoxyReturn}
+
+
+\begin{DoxyPrecond}{Precondition}
+{\ttfamily name} is a float attribute. That is, only float values have been added to this attribute.
+\end{DoxyPrecond}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// be sure to \#include "{}graph.h"{}}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Create the nodes}}
+\DoxyCodeLine{\mbox{\hyperlink{a02071}{HF::SpatialStructures::Node}} node\_0(1.0f, 1.0f, 2.0f);}
+\DoxyCodeLine{\mbox{\hyperlink{a02071}{HF::SpatialStructures::Node}} node\_1(2.0f, 3.0f, 4.0f, 5);}
+\DoxyCodeLine{\mbox{\hyperlink{a02071}{HF::SpatialStructures::Node}} node\_2(11.0f, 22.0f, 140.0f);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Create a container (vector) of nodes}}
+\DoxyCodeLine{std::vector<HF::SpatialStructures::Node> nodes = \{ node\_0, node\_1, node\_2 \};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Create matrices for edges and distances, edges.size() == distances().size()}}
+\DoxyCodeLine{std::vector<std::vector<int>> edges = \{ \{ 1, 2 \}, \{ 2 \}, \{ 1 \} \};}
+\DoxyCodeLine{std::vector<std::vector<float>> distances = \{ \{ 1.0f, 2.5f \}, \{ 54.0f \}, \{ 39.0f \} \};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Now you can create a Graph -\/ note that nodes, edges, and distances are passed by reference}}
+\DoxyCodeLine{\mbox{\hyperlink{a01551}{HF::SpatialStructures::Graph}} graph(edges, distances, nodes);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Get node IDs}}
+\DoxyCodeLine{\textcolor{keywordtype}{int} ID\_0 = graph.getID(node\_0);}
+\DoxyCodeLine{\textcolor{keywordtype}{int} ID\_1 = graph.getID(node\_1);}
+\DoxyCodeLine{\textcolor{keywordtype}{int} ID\_2 = graph.getID(node\_2);}
+\DoxyCodeLine{}
+\DoxyCodeLine{std::vector<int> ids = \{ID\_0, ID\_1, ID\_2\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Assign attributes to nodes}}
+\DoxyCodeLine{std::string attribute = \textcolor{stringliteral}{"{}demo attribute"{}};}
+\DoxyCodeLine{std::vector<float> scores = \{2.3, 6.1, 4.0\};}
+\DoxyCodeLine{graph.AddNodeAttributesFloat(ids, attribute, scores);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Get attribute for all nodes}}
+\DoxyCodeLine{std::vector<float> cross\_slopes = graph.GetNodeAttributesFloat(attribute); \textcolor{comment}{// \{2.3, 6.1, 4.0\}}}
+
+\end{DoxyCode}
+ 
+
+Referenced by \mbox{\hyperlink{a00434_source_l00584}{Get\+Node\+Attributes\+Float()}}.
+
+Here is the caller graph for this function\+:
+% FIG 22
 \mbox{\Hypertarget{a01551_afca147a681e4b39bc471e02d0f07eb37}\label{a01551_afca147a681e4b39bc471e02d0f07eb37}} 
 \index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!getOrAssignID@{getOrAssignID}}
 \index{getOrAssignID@{getOrAssignID}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
@@ -1607,16 +2032,10 @@ A structure that consists of parent\+\_\+node and the container of \mbox{\hyperl
 \end{DoxyCode}
  
 
-Referenced by \mbox{\hyperlink{a00254_source_l00283}{HF\+::\+Spatial\+Structures\+::\+Cost\+Algorithms\+::\+Calculate\+Cross\+Slope()}}, and \mbox{\hyperlink{a00254_source_l00162}{HF\+::\+Spatial\+Structures\+::\+Cost\+Algorithms\+::\+Calculate\+Energy\+Expenditure()}}.
+Referenced by \mbox{\hyperlink{a00254_source_l00283}{HF\+::\+Spatial\+Structures\+::\+Cost\+Algorithms\+::\+Calculate\+Cross\+Slope()}}, \mbox{\hyperlink{a00254_source_l00162}{HF\+::\+Spatial\+Structures\+::\+Cost\+Algorithms\+::\+Calculate\+Energy\+Expenditure()}}, and \mbox{\hyperlink{a00011_source_l00351}{HF\+::\+Graph\+Generator\+::\+Calculate\+Step\+Type()}}.
 
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01551_a89250c619a726fd0adbd71778d166887_icgraph}
-\end{center}
-\end{figure}
+% FIG 23
 \mbox{\Hypertarget{a01551_a9477544edee32c4bebc69ebedd96642a}\label{a01551_a9477544edee32c4bebc69ebedd96642a}} 
 \index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!GetSubgraph@{GetSubgraph}}
 \index{GetSubgraph@{GetSubgraph}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
@@ -1696,36 +2115,7 @@ operator\mbox{[}\mbox{]} to get a list of directed edges only containing edges f
 \DoxyCodeLine{std::vector<HF::SpatialStructures::Edge> undirected\_edges = graph.GetUndirectedEdges(get\_nodes[index]);}
 
 \end{DoxyCode}
- \mbox{\Hypertarget{a01551_a7fb8dbfe1b401c67d85e7a0f361ebd69}\label{a01551_a7fb8dbfe1b401c67d85e7a0f361ebd69}} 
-\index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!Graph::AddEdges@{Graph::AddEdges}}
-\index{Graph::AddEdges@{Graph::AddEdges}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
-\doxysubsubsection{\texorpdfstring{Graph::AddEdges()}{Graph::AddEdges()}}
-{\footnotesize\ttfamily void HF\+::\+Spatial\+Structures\+::\+Graph\+::\+Graph\+::\+Add\+Edges (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{a01531}{Int\+Edge}} $>$ $>$ \&}]{edges,  }\item[{const std\+::string \&}]{cost\+\_\+type }\end{DoxyParamCaption})}
-
-
-
-Add a set of intedges to the graph. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em edges} & An ordered vector of vectors in which each outer vector holds a vector of edges for the node at the ID of that index. For example the vector at index 0 would hold a vector of intedges for the node at ID 0.\+a\\
-\hline
-{\em cost\+\_\+type} & The type of cost to add these edges to. If this cost type does not yet exist, then it will be created.\\
-\hline
-\end{DoxyParams}
-\begin{DoxyPrecond}{Precondition}
-1) If adding edges to an alternate cost type, the edges must already have been added to the default graph. 
-
-2) If adding an alternate edge to the graph, the graph must already be compressed
-\end{DoxyPrecond}
-
-\begin{DoxyExceptions}{Exceptions}
-{\em std\+::logic\+\_\+error} & Trying to add an edge to an alternate cost type when it\textquotesingle{}s not compressed \\
-\hline
-{\em std\+::out\+\_\+of\+\_\+range} & Trying to add an edge to an alternate cost type when it hasn\textquotesingle{}t already been added to the default graph2) If adding an alternate edge to the graph, the graph must already be compressed \\
-\hline
-\end{DoxyExceptions}
-\mbox{\Hypertarget{a01551_a42d18ac87da28a676ec110d1d9c86b80}\label{a01551_a42d18ac87da28a676ec110d1d9c86b80}} 
+ \mbox{\Hypertarget{a01551_a42d18ac87da28a676ec110d1d9c86b80}\label{a01551_a42d18ac87da28a676ec110d1d9c86b80}} 
 \index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!HasCostArray@{HasCostArray}}
 \index{HasCostArray@{HasCostArray}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
 \doxysubsubsection{\texorpdfstring{HasCostArray()}{HasCostArray()}}
@@ -1946,6 +2336,12 @@ True if the ID has already been assigned to a node in the graph. False otherwise
 \begin{DoxyParagraph}{Time\+Complexity}
 Performs a search over every node in the graph\+: O(n). 
 \end{DoxyParagraph}
+
+
+Referenced by \mbox{\hyperlink{a00434_source_l00051}{Get\+Edges\+For\+Node()}}.
+
+Here is the caller graph for this function\+:
+% FIG 24
 \mbox{\Hypertarget{a01551_a42f23c075c3a912a5c12b8d243f15f70}\label{a01551_a42f23c075c3a912a5c12b8d243f15f70}} 
 \index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!HasNodeAttribute@{HasNodeAttribute}}
 \index{HasNodeAttribute@{HasNodeAttribute}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
@@ -2061,6 +2457,22 @@ True if this name belongs to the default CSR. False otherwise.
 \begin{DoxyNote}{Note}
 The default name is either the name the graph was constructed with (\char`\"{}\+Distance\char`\"{} if none) or an empty string that returns true when calling string.\+empty(). 
 \end{DoxyNote}
+\mbox{\Hypertarget{a01551_ae9038c7f6c83180f273e4e103ddd9636}\label{a01551_ae9038c7f6c83180f273e4e103ddd9636}} 
+\index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!IsFloatAttribute@{IsFloatAttribute}}
+\index{IsFloatAttribute@{IsFloatAttribute}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
+\doxysubsubsection{\texorpdfstring{IsFloatAttribute()}{IsFloatAttribute()}}
+{\footnotesize\ttfamily bool HF\+::\+Spatial\+Structures\+::\+Graph\+::\+Is\+Float\+Attribute (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption}) const}
+
+
+
+Check if this attribute exists in the graph and contains float values. 
+
+
+
+Referenced by \mbox{\hyperlink{a00434_source_l00629}{Is\+Float\+Attribute()}}.
+
+Here is the caller graph for this function\+:
+% FIG 25
 \mbox{\Hypertarget{a01551_a40581bf5c7751041e85e1763697cdb70}\label{a01551_a40581bf5c7751041e85e1763697cdb70}} 
 \index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!MapCostMatrix@{MapCostMatrix}}
 \index{MapCostMatrix@{MapCostMatrix}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
@@ -2084,6 +2496,42 @@ A newly constructed Temp\+Matrix with the outer and inner indices of the default
 
 2) cost\+\_\+type must not be the default cost type. 
 \end{DoxyPrecond}
+\mbox{\Hypertarget{a01551_aeb28ad1f2f610b5564831415c0591fd9}\label{a01551_aeb28ad1f2f610b5564831415c0591fd9}} 
+\index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!MapPathToVectorOfNodes@{MapPathToVectorOfNodes}}
+\index{MapPathToVectorOfNodes@{MapPathToVectorOfNodes}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
+\doxysubsubsection{\texorpdfstring{MapPathToVectorOfNodes()}{MapPathToVectorOfNodes()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ HF\+::\+Spatial\+Structures\+::\+Graph\+::\+Map\+Path\+To\+Vector\+Of\+Nodes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{a02083}{HF\+::\+Spatial\+Structures\+::\+Path}}}]{path }\end{DoxyParamCaption}) const}
+
+
+
+Maps a path structure to a vector of node ids (n1,n2,n2,n3,n3...,nk-\/1,nk)  
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The path of nodes to map \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of node ids that represents the path in the form (n1,n2,n2,n3,n3...,nk-\/1,nk) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{a01551_a2708f74f927aab514a3c2d8662f22616}\label{a01551_a2708f74f927aab514a3c2d8662f22616}} 
+\index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!MapPathToVectorOfNodes@{MapPathToVectorOfNodes}}
+\index{MapPathToVectorOfNodes@{MapPathToVectorOfNodes}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
+\doxysubsubsection{\texorpdfstring{MapPathToVectorOfNodes()}{MapPathToVectorOfNodes()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ HF\+::\+Spatial\+Structures\+::\+Graph\+::\+Map\+Path\+To\+Vector\+Of\+Nodes (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$ \&}]{path }\end{DoxyParamCaption}) const}
+
+
+
+Maps a path of node ids (n1,n2,...,nk) to (n1,n2,n2,n3,n3...,nk-\/1,nk)  
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The path of nodes to map \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of node ids that represents the path in the form (n1,n2,n2,n3,n3...,nk-\/1,nk) 
+\end{DoxyReturn}
 \mbox{\Hypertarget{a01551_a5d1505ad796c9f222c923a1a22980bb2}\label{a01551_a5d1505ad796c9f222c923a1a22980bb2}} 
 \index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!MaxID@{MaxID}}
 \index{MaxID@{MaxID}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
@@ -2105,13 +2553,7 @@ This shouldn\textquotesingle{}t be needed often, as unless this graph has intege
 Referenced by \mbox{\hyperlink{a00197_source_l00023}{HF\+::\+Pathfinding\+::\+Boost\+Graph\+::\+Boost\+Graph()}}.
 
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01551_a5d1505ad796c9f222c923a1a22980bb2_icgraph}
-\end{center}
-\end{figure}
+% FIG 26
 \mbox{\Hypertarget{a01551_a794c342603cefb342fdc698ba539b25f}\label{a01551_a794c342603cefb342fdc698ba539b25f}} 
 \index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!NodeFromID@{NodeFromID}}
 \index{NodeFromID@{NodeFromID}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
@@ -2165,6 +2607,12 @@ The node corresponding to id, by value.
  \\
 \hline
 \end{DoxyExceptions}
+
+
+Referenced by \mbox{\hyperlink{a00011_source_l00508}{HF\+::\+Graph\+Generator\+::\+Compare\+Check\+Connections()}}.
+
+Here is the caller graph for this function\+:
+% FIG 27
 \mbox{\Hypertarget{a01551_aa70347b8a33b57c6f0a72d6eca4248d7}\label{a01551_aa70347b8a33b57c6f0a72d6eca4248d7}} 
 \index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!Nodes@{Nodes}}
 \index{Nodes@{Nodes}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
@@ -2205,16 +2653,10 @@ A sorted vector of nodes.
 \end{DoxyCode}
  
 
-Referenced by \mbox{\hyperlink{a00254_source_l00283}{HF\+::\+Spatial\+Structures\+::\+Cost\+Algorithms\+::\+Calculate\+Cross\+Slope()}}, \mbox{\hyperlink{a00254_source_l00162}{HF\+::\+Spatial\+Structures\+::\+Cost\+Algorithms\+::\+Calculate\+Energy\+Expenditure()}}, \mbox{\hyperlink{a00404_source_l00022}{Generate\+Graph()}}, \mbox{\hyperlink{a00404_source_l00062}{Generate\+Graph\+Obstacles()}}, and \mbox{\hyperlink{a00434_source_l00032}{Get\+All\+Nodes\+From\+Graph()}}.
+Referenced by \mbox{\hyperlink{a00254_source_l00283}{HF\+::\+Spatial\+Structures\+::\+Cost\+Algorithms\+::\+Calculate\+Cross\+Slope()}}, \mbox{\hyperlink{a00254_source_l00162}{HF\+::\+Spatial\+Structures\+::\+Cost\+Algorithms\+::\+Calculate\+Energy\+Expenditure()}}, \mbox{\hyperlink{a00011_source_l00351}{HF\+::\+Graph\+Generator\+::\+Calculate\+Step\+Type()}}, \mbox{\hyperlink{a00011_source_l00508}{HF\+::\+Graph\+Generator\+::\+Compare\+Check\+Connections()}}, \mbox{\hyperlink{a00404_source_l00022}{Generate\+Graph()}}, \mbox{\hyperlink{a00404_source_l00062}{Generate\+Graph\+Obstacles()}}, and \mbox{\hyperlink{a00434_source_l00032}{Get\+All\+Nodes\+From\+Graph()}}.
 
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01551_aa70347b8a33b57c6f0a72d6eca4248d7_icgraph}
-\end{center}
-\end{figure}
+% FIG 28
 \mbox{\Hypertarget{a01551_aeddbbec01c6354b7076f47f71fc1a220}\label{a01551_aeddbbec01c6354b7076f47f71fc1a220}} 
 \index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!NodesAsFloat3@{NodesAsFloat3}}
 \index{NodesAsFloat3@{NodesAsFloat3}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
@@ -2275,7 +2717,7 @@ May be useful for to functions that take arrays instead of nodes.
 {\footnotesize\ttfamily const std\+::vector$<$ \mbox{\hyperlink{a01527}{Edge}} $>$ HF\+::\+Spatial\+Structures\+::\+Graph\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{a02071}{Node}} \&}]{n }\end{DoxyParamCaption}) const}
 
 \begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{a00452__todo000025}{Todo}}]Should this just return an empty list instead of throwing? \end{DoxyRefDesc}
+\item[\mbox{\hyperlink{a00452__todo000026}{Todo}}]Should this just return an empty list instead of throwing? \end{DoxyRefDesc}
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{// be sure to \#include "{}graph.h"{}}}
@@ -2372,16 +2814,10 @@ Size is directly returned from {\ttfamily id\+\_\+to\+\_\+nodes.\+size()}.
 \end{DoxyCode}
  
 
-Referenced by \mbox{\hyperlink{a00197_source_l00023}{HF\+::\+Pathfinding\+::\+Boost\+Graph\+::\+Boost\+Graph()}}, \mbox{\hyperlink{a00026_source_l00128}{HF\+::\+Visibility\+Graph\+::\+All\+To\+All()}}, \mbox{\hyperlink{a00026_source_l00252}{HF\+::\+Visibility\+Graph\+::\+All\+To\+All\+Undirected()}}, \mbox{\hyperlink{a00434_source_l00400}{Get\+Size\+Of\+Graph()}}, and \mbox{\hyperlink{a00026_source_l00189}{HF\+::\+Visibility\+Graph\+::\+Group\+To\+Group()}}.
+Referenced by \mbox{\hyperlink{a00197_source_l00023}{HF\+::\+Pathfinding\+::\+Boost\+Graph\+::\+Boost\+Graph()}}, \mbox{\hyperlink{a00026_source_l00128}{HF\+::\+Visibility\+Graph\+::\+All\+To\+All()}}, \mbox{\hyperlink{a00026_source_l00252}{HF\+::\+Visibility\+Graph\+::\+All\+To\+All\+Undirected()}}, \mbox{\hyperlink{a00434_source_l00680}{Get\+Size\+Of\+Graph()}}, and \mbox{\hyperlink{a00026_source_l00189}{HF\+::\+Visibility\+Graph\+::\+Group\+To\+Group()}}.
 
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01551_a2710af2a75976862d7a235793567d2f3_icgraph}
-\end{center}
-\end{figure}
+% FIG 29
 \mbox{\Hypertarget{a01551_a1c600a342694552e17cf8705d90163ef}\label{a01551_a1c600a342694552e17cf8705d90163ef}} 
 \index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!TripletsAddOrUpdateEdge@{TripletsAddOrUpdateEdge}}
 \index{TripletsAddOrUpdateEdge@{TripletsAddOrUpdateEdge}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
@@ -2419,7 +2855,7 @@ The active edge matrix to use for the graph.
 
 
 
-Definition at line \mbox{\hyperlink{a00269_source_l00501}{501}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
+Definition at line \mbox{\hyperlink{a00269_source_l00505}{505}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
 
 \mbox{\Hypertarget{a01551_aba19080a765d7a09b0acbf8ffdcd1277}\label{a01551_aba19080a765d7a09b0acbf8ffdcd1277}} 
 \index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!default\_cost@{default\_cost}}
@@ -2429,7 +2865,7 @@ Definition at line \mbox{\hyperlink{a00269_source_l00501}{501}} of file \mbox{\h
 
 
 
-Definition at line \mbox{\hyperlink{a00269_source_l00504}{504}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
+Definition at line \mbox{\hyperlink{a00269_source_l00508}{508}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
 
 \mbox{\Hypertarget{a01551_a4db3f8505fa2e7a4a54060fede1770f6}\label{a01551_a4db3f8505fa2e7a4a54060fede1770f6}} 
 \index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!edge\_cost\_maps@{edge\_cost\_maps}}
@@ -2443,7 +2879,7 @@ Definition at line \mbox{\hyperlink{a00269_source_l00504}{504}} of file \mbox{\h
 
 Hashmap containing evey alternate cost type 
 
-Definition at line \mbox{\hyperlink{a00269_source_l00505}{505}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
+Definition at line \mbox{\hyperlink{a00269_source_l00509}{509}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
 
 \mbox{\Hypertarget{a01551_a0be5d62e01eabe7e1581d238cfb35ace}\label{a01551_a0be5d62e01eabe7e1581d238cfb35ace}} 
 \index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!edge\_matrix@{edge\_matrix}}
@@ -2457,7 +2893,7 @@ The underlying CSR containing edge information.
 
 
 
-Definition at line \mbox{\hyperlink{a00269_source_l00502}{502}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
+Definition at line \mbox{\hyperlink{a00269_source_l00506}{506}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
 
 \mbox{\Hypertarget{a01551_aa0415ae8030d4c524f91538737155413}\label{a01551_aa0415ae8030d4c524f91538737155413}} 
 \index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!has\_cost\_arrays@{has\_cost\_arrays}}
@@ -2471,7 +2907,7 @@ Indicates that the graph has cost arrays.
 
 If this is true, and the graph compresses again, then all cost arrays will be wrecked. An exception should be thrown in the case this happens, because this is misuse. 
 
-Definition at line \mbox{\hyperlink{a00269_source_l00513}{513}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
+Definition at line \mbox{\hyperlink{a00269_source_l00517}{517}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
 
 \mbox{\Hypertarget{a01551_a4da5e288f03773d18053c82731369b2a}\label{a01551_a4da5e288f03773d18053c82731369b2a}} 
 \index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!idmap@{idmap}}
@@ -2485,7 +2921,7 @@ Maps a list of X,Y,Z positions to positions in ordered\+\_\+nodes.
 
 
 
-Definition at line \mbox{\hyperlink{a00269_source_l00494}{494}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
+Definition at line \mbox{\hyperlink{a00269_source_l00498}{498}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
 
 \mbox{\Hypertarget{a01551_a1cbd600663187d7cf985e9b6e7cea73f}\label{a01551_a1cbd600663187d7cf985e9b6e7cea73f}} 
 \index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!needs\_compression@{needs\_compression}}
@@ -2499,7 +2935,7 @@ If true, the CSR is inaccurate and requires compression.
 
 
 
-Definition at line \mbox{\hyperlink{a00269_source_l00497}{497}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
+Definition at line \mbox{\hyperlink{a00269_source_l00501}{501}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
 
 \mbox{\Hypertarget{a01551_aaab13304c641df6fdcd3662d5c54dc78}\label{a01551_aaab13304c641df6fdcd3662d5c54dc78}} 
 \index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!next\_id@{next\_id}}
@@ -2513,7 +2949,7 @@ The id for the next unique node.
 
 
 
-Definition at line \mbox{\hyperlink{a00269_source_l00490}{490}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
+Definition at line \mbox{\hyperlink{a00269_source_l00494}{494}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
 
 \mbox{\Hypertarget{a01551_aeec76d5e193267be65a42eb1794a3abb}\label{a01551_aeec76d5e193267be65a42eb1794a3abb}} 
 \index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!node\_attr\_map@{node\_attr\_map}}
@@ -2527,7 +2963,21 @@ Definition at line \mbox{\hyperlink{a00269_source_l00490}{490}} of file \mbox{\h
 
 
 
-Definition at line \mbox{\hyperlink{a00269_source_l00499}{499}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
+Definition at line \mbox{\hyperlink{a00269_source_l00503}{503}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
+
+\mbox{\Hypertarget{a01551_a7a44380216849d6de32d77efce811c08}\label{a01551_a7a44380216849d6de32d77efce811c08}} 
+\index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!node\_float\_attr\_map@{node\_float\_attr\_map}}
+\index{node\_float\_attr\_map@{node\_float\_attr\_map}!HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}}
+\doxysubsubsection{\texorpdfstring{node\_float\_attr\_map}{node\_float\_attr\_map}}
+{\footnotesize\ttfamily robin\+\_\+hood\+::unordered\+\_\+map$<$std\+::string, \mbox{\hyperlink{a01551_adf29585f237fcb9f1bdebb0ca40f415e}{Node\+Float\+Attribute\+Value\+Map}}$>$ HF\+::\+Spatial\+Structures\+::\+Graph\+::node\+\_\+float\+\_\+attr\+\_\+map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{a02071}{Node}} attribute type \+: Map of node id to node attribute for float. 
+
+
+
+Definition at line \mbox{\hyperlink{a00269_source_l00504}{504}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
 
 \mbox{\Hypertarget{a01551_a4330f0c85299f975495124514354b271}\label{a01551_a4330f0c85299f975495124514354b271}} 
 \index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!nodes\_out\_of\_order@{nodes\_out\_of\_order}}
@@ -2541,7 +2991,7 @@ Determines whether or not the graph is using integer nodes.
 
 This causes the graph to spend more time finding the maximum node ID, since it\textquotesingle{}s not gauranteed edges will be added in order. 
 
-Definition at line \mbox{\hyperlink{a00269_source_l00522}{522}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
+Definition at line \mbox{\hyperlink{a00269_source_l00526}{526}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
 
 \mbox{\Hypertarget{a01551_ad59ab7164b64e3d78b7032b28c2c6663}\label{a01551_ad59ab7164b64e3d78b7032b28c2c6663}} 
 \index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!ordered\_nodes@{ordered\_nodes}}
@@ -2555,7 +3005,7 @@ A list of nodes contained by the graph.
 
 
 
-Definition at line \mbox{\hyperlink{a00269_source_l00491}{491}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
+Definition at line \mbox{\hyperlink{a00269_source_l00495}{495}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
 
 \mbox{\Hypertarget{a01551_a1cf07c256da74c2a03f81b4977364e85}\label{a01551_a1cf07c256da74c2a03f81b4977364e85}} 
 \index{HF::SpatialStructures::Graph@{HF::SpatialStructures::Graph}!triplets@{triplets}}
@@ -2569,7 +3019,7 @@ Edges to be converted to a CSR when \mbox{\hyperlink{a01551_a41cece77d0eee98df39
 
 
 
-Definition at line \mbox{\hyperlink{a00269_source_l00496}{496}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
+Definition at line \mbox{\hyperlink{a00269_source_l00500}{500}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
 
 
 

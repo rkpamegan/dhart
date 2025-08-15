@@ -163,9 +163,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a69bd3efcc13788e7c4be43b67d6002e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00472.html#a69bd3efcc13788e7c4be43b67d6002e5">InsertAllToAllPathsIntoArray</a> (<a class="el" href="a01383.html">BoostGraph</a> *bg, <a class="el" href="a02083.html">HF::SpatialStructures::Path</a> **out_paths, <a class="el" href="a02079.html">HF::SpatialStructures::PathMember</a> **out_path_members, int *out_sizes)</td></tr>
 <tr class="memdesc:a69bd3efcc13788e7c4be43b67d6002e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">A special version of FindPaths optimized for the C_Interface, such that all paths possible from each node to every other node are generated.  <a href="a00472.html#a69bd3efcc13788e7c4be43b67d6002e5">More...</a><br /></td></tr>
 <tr class="separator:a69bd3efcc13788e7c4be43b67d6002e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d6e0ea77f750fa05bbf4339584cc15a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00472.html#a3d6e0ea77f750fa05bbf4339584cc15a">ConstructShortestPathNodesFromPred</a> (int start, int end, const std::vector&lt; size_t &gt; &amp;pred)</td></tr>
+<tr class="memdesc:a3d6e0ea77f750fa05bbf4339584cc15a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the shortest path of node ids given predecessor and distance vectors.  <a href="a00472.html#a3d6e0ea77f750fa05bbf4339584cc15a">More...</a><br /></td></tr>
+<tr class="separator:a3d6e0ea77f750fa05bbf4339584cc15a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d24adcb1c0891a98e7d9a8d36f8cc01"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00472.html#a6d24adcb1c0891a98e7d9a8d36f8cc01">FindAPSP</a> (<a class="el" href="a01383.html">BoostGraph</a> &amp;bg)</td></tr>
+<tr class="separator:a6d24adcb1c0891a98e7d9a8d36f8cc01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb65ba6c3ed7a1999d9f40ae14ba3269"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="a02083.html">HF::SpatialStructures::Path</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00472.html#abb65ba6c3ed7a1999d9f40ae14ba3269">FindAllPaths</a> (<a class="el" href="a01383.html">BoostGraph</a> *bg)</td></tr>
-<tr class="memdesc:abb65ba6c3ed7a1999d9f40ae14ba3269"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a path from every node to every node (NOTE: Not implemented yet.)   <a href="a00472.html#abb65ba6c3ed7a1999d9f40ae14ba3269">More...</a><br /></td></tr>
 <tr class="separator:abb65ba6c3ed7a1999d9f40ae14ba3269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a496379e77c1c41453ef021358f8372fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01395.html">DistanceAndPredecessor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00472.html#a496379e77c1c41453ef021358f8372fb">GenerateDistanceAndPredFast</a> (const <a class="el" href="a01383.html">BoostGraph</a> &amp;bg)</td></tr>
+<tr class="separator:a496379e77c1c41453ef021358f8372fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Algorithms to find the shortest path between nodes in a <a class="el" href="a01551.html" title="A Graph of nodes connected by edges that supports both integers and HF::SpatialStructures::Node.">HF::SpatialStructures::Graph</a>. </p>
@@ -195,7 +201,7 @@ Functions</h2></td></tr>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a01373.svg" width="194" height="128"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01373.svg" width="196" height="128"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="fieldtable">
@@ -231,7 +237,7 @@ Cost of traversing this edge. </td></tr>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a01377.svg" width="219" height="128"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01377.svg" width="223" height="128"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="fieldtable">
@@ -361,13 +367,13 @@ The index of a vertex in the CSR. </td></tr>
 
 <p class="reference">References <a class="el" href="a00203_source.html#l00049">HF::Pathfinding::DistPred::distance</a>, <a class="el" href="a00203_source.html#l00050">HF::Pathfinding::DistPred::predecessor</a>, and <a class="el" href="a00200_source.html#l00100">HF::Pathfinding::Edge_Cost::weight</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="a00203_source.html#l00166">FindPath()</a>, <a class="el" href="a00203_source.html#l00178">FindPaths()</a>, and <a class="el" href="a00203_source.html#l00201">InsertPathsIntoArray()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="a00203_source.html#l00461">FindAPSP()</a>, <a class="el" href="a00203_source.html#l00166">FindPath()</a>, <a class="el" href="a00203_source.html#l00178">FindPaths()</a>, and <a class="el" href="a00203_source.html#l00201">InsertPathsIntoArray()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00472_a9f6490539108da057db2486295458886_icgraph.svg" width="840" height="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00472_a9f6490539108da057db2486295458886_icgraph.svg" width="851" height="235"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -431,7 +437,7 @@ The index of a vertex in the CSR. </td></tr>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00472_a322ac32effd41c99359b82df0890e34a_cgraph.svg" width="602" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00472_a322ac32effd41c99359b82df0890e34a_cgraph.svg" width="610" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -505,7 +511,7 @@ The index of a vertex in the CSR. </td></tr>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00472_a977e4c93a977ab4e9e784d1e6fec79f4_cgraph.svg" width="380" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00472_a977e4c93a977ab4e9e784d1e6fec79f4_cgraph.svg" width="384" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -513,7 +519,73 @@ The index of a vertex in the CSR. </td></tr>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00472_a977e4c93a977ab4e9e784d1e6fec79f4_icgraph.svg" width="816" height="251"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00472_a977e4c93a977ab4e9e784d1e6fec79f4_icgraph.svg" width="827" height="251"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a3d6e0ea77f750fa05bbf4339584cc15a" name="a3d6e0ea77f750fa05bbf4339584cc15a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d6e0ea77f750fa05bbf4339584cc15a">&#9670;&#160;</a></span>ConstructShortestPathNodesFromPred()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; int &gt; HF::Pathfinding::ConstructShortestPathNodesFromPred </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>end</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>pred</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct the shortest path of node ids given predecessor and distance vectors. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">start</td><td>ID of the starting point. </td></tr>
+    <tr><td class="paramname">end</td><td>ID of the end point. </td></tr>
+    <tr><td class="paramname">pred</td><td>Predecessor matrix for the start node. </td></tr>
+    <tr><td class="paramname">distances</td><td>Distance matrix for pred</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="todo"><dt><b><a class="el" href="a00452.html#_todo000018">Todo:</a></b></dt><dd>Replace exception with an assert statment. It shouldn't be triggered unless there's a problem with this algorithm? </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="a00203_source.html#l00394">394</a> of file <a class="el" href="a00203_source.html">path_finder.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a00203_source.html#l00461">FindAPSP()</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00472_a3d6e0ea77f750fa05bbf4339584cc15a_icgraph.svg" width="624" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -594,18 +666,18 @@ The index of a vertex in the CSR. </td></tr>
 <div class="line"><span class="comment">// above easier.</span></div>
 <div class="line"><span class="keyword">auto</span> boostGraph = <a class="code hl_function" href="a00472.html#ae2106e09eb44d681fbc6c0f66a3d3ac4">CreateBoostGraph</a>(graph);</div>
 <div class="ttc" id="aa00472_html_ae2106e09eb44d681fbc6c0f66a3d3ac4"><div class="ttname"><a href="a00472.html#ae2106e09eb44d681fbc6c0f66a3d3ac4">HF::Pathfinding::CreateBoostGraph</a></div><div class="ttdeci">std::unique_ptr&lt; BoostGraph, BoostGraphDeleter &gt; CreateBoostGraph(const Graph &amp;g, const std::string &amp;cost_type)</div><div class="ttdoc">Create a new boost graph from a HF::SpatialStructures:Graph.</div><div class="ttdef"><b>Definition:</b> <a href="a00203_source.html#l00320">path_finder.cpp:320</a></div></div>
-<div class="ttc" id="aa01551_html"><div class="ttname"><a href="a01551.html">HF::SpatialStructures::Graph</a></div><div class="ttdoc">A Graph of nodes connected by edges that supports both integers and HF::SpatialStructures::Node.</div><div class="ttdef"><b>Definition:</b> <a href="a00269_source.html#l00486">graph.h:486</a></div></div>
+<div class="ttc" id="aa01551_html"><div class="ttname"><a href="a01551.html">HF::SpatialStructures::Graph</a></div><div class="ttdoc">A Graph of nodes connected by edges that supports both integers and HF::SpatialStructures::Node.</div><div class="ttdef"><b>Definition:</b> <a href="a00269_source.html#l00490">graph.h:490</a></div></div>
 <div class="ttc" id="aa02071_html"><div class="ttname"><a href="a02071.html">HF::SpatialStructures::Node</a></div><div class="ttdoc">A point in space with an ID.</div><div class="ttdef"><b>Definition:</b> <a href="a00275_source.html#l00038">node.h:38</a></div></div>
 </div><!-- fragment --> 
 <p class="definition">Definition at line <a class="el" href="a00203_source.html#l00320">320</a> of file <a class="el" href="a00203_source.html">path_finder.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="a00422_source.html#l00171">CalculateDistanceAndPredecessor()</a>, <a class="el" href="a00422_source.html#l00138">CreateAllToAllPaths()</a>, <a class="el" href="a00422_source.html#l00023">CreatePath()</a>, and <a class="el" href="a00422_source.html#l00070">CreatePaths()</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="a00422_source.html#l00173">CalculateDistanceAndPredecessor()</a>, <a class="el" href="a00422_source.html#l00203">CreateAllPredToPath()</a>, <a class="el" href="a00422_source.html#l00140">CreateAllToAllPaths()</a>, <a class="el" href="a00422_source.html#l00025">CreatePath()</a>, and <a class="el" href="a00422_source.html#l00072">CreatePaths()</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00472_ae2106e09eb44d681fbc6c0f66a3d3ac4_icgraph.svg" width="472" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00472_ae2106e09eb44d681fbc6c0f66a3d3ac4_icgraph.svg" width="476" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -626,15 +698,6 @@ The index of a vertex in the CSR. </td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Find a path from every node to every node (NOTE: Not implemented yet.)  </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">bg</td><td>Graph to generate all paths for. traversal </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A list of every path that could be generated from this graph. </dd></dl>
 <p >Calculate a permutation for every combination of nodes in the graph, then call FindPaths, OR Write a unique function inspired by FindPaths that just runs through a range of paths.</p>
 <dl class="section remark"><dt>Remarks</dt><dd>May benefit from using an algorithm optimized for this like <a href="https://www.boost.org/doc/libs/1_73_0/libs/graph/doc/floyd_warshall_shortest.html">https://www.boost.org/doc/libs/1_73_0/libs/graph/doc/floyd_warshall_shortest.html</a>.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
@@ -644,7 +707,7 @@ The index of a vertex in the CSR. </td></tr>
   </dd>
 </dl>
 <dl class="section warning"><dt>Warning</dt><dd>This will allocate a large amount of memory. Ensure that this won't run out of memory when called, or be prepared to catch an out of memory exception. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="a00452.html#_todo000019">Todo:</a></b></dt><dd>Implement this function to the specifications outlined here. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="a00452.html#_todo000020">Todo:</a></b></dt><dd>Implement this function to the specifications outlined here. </dd></dl>
 <div class="fragment"><div class="line"><span class="comment">// NOTE: HF::Pathfinding::FindAllPaths is not implemented yet.</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// be sure to #include &quot;path_finder.h&quot;, #include &quot;boost_graph.h&quot;, and #include &quot;graph.h&quot;</span></div>
@@ -665,10 +728,50 @@ The index of a vertex in the CSR. </td></tr>
 <div class="line"><span class="keyword">auto</span> all_paths = <a class="code hl_function" href="a00472.html#abb65ba6c3ed7a1999d9f40ae14ba3269">HF::Pathfinding::FindAllPaths</a>(boostGraph.get(), 0, 4);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// all_paths will contain all shortest paths for [node 0, node 4]</span></div>
-<div class="ttc" id="aa00472_html_abb65ba6c3ed7a1999d9f40ae14ba3269"><div class="ttname"><a href="a00472.html#abb65ba6c3ed7a1999d9f40ae14ba3269">HF::Pathfinding::FindAllPaths</a></div><div class="ttdeci">std::vector&lt; HF::SpatialStructures::Path &gt; FindAllPaths(BoostGraph *bg)</div><div class="ttdoc">Find a path from every node to every node (NOTE: Not implemented yet.)</div></div>
+<div class="ttc" id="aa00472_html_abb65ba6c3ed7a1999d9f40ae14ba3269"><div class="ttname"><a href="a00472.html#abb65ba6c3ed7a1999d9f40ae14ba3269">HF::Pathfinding::FindAllPaths</a></div><div class="ttdeci">std::vector&lt; HF::SpatialStructures::Path &gt; FindAllPaths(BoostGraph *bg)</div></div>
 <div class="ttc" id="aa01551_html_a37be5c12e488072dea7fa1c8c64346f7"><div class="ttname"><a href="a01551.html#a37be5c12e488072dea7fa1c8c64346f7">HF::SpatialStructures::Graph::addEdge</a></div><div class="ttdeci">void addEdge(const Node &amp;parent, const Node &amp;child, float score=1.0f, const std::string &amp;cost_type=&quot;&quot;)</div><div class="ttdoc">Add a new edge to the graph from parent to child.</div></div>
 <div class="ttc" id="aa01551_html_a41cece77d0eee98df39ecc6d3a366ec8"><div class="ttname"><a href="a01551.html#a41cece77d0eee98df39ecc6d3a366ec8">HF::SpatialStructures::Graph::Compress</a></div><div class="ttdeci">void Compress()</div><div class="ttdoc">Compress the graph to a CSR and enable the usage of several functions.</div></div>
 </div><!-- fragment --> 
+</div>
+</div>
+<a id="a6d24adcb1c0891a98e7d9a8d36f8cc01" name="a6d24adcb1c0891a98e7d9a8d36f8cc01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d24adcb1c0891a98e7d9a8d36f8cc01">&#9670;&#160;</a></span>FindAPSP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::vector&lt; int &gt; &gt; HF::Pathfinding::FindAPSP </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a01383.html">BoostGraph</a> &amp;&#160;</td>
+          <td class="paramname"><em>bg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="a00203_source.html#l00461">461</a> of file <a class="el" href="a00203_source.html">path_finder.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="a00203_source.html#l00146">BuildDistanceAndPredecessor()</a>, <a class="el" href="a00203_source.html#l00394">ConstructShortestPathNodesFromPred()</a>, <a class="el" href="a00200_source.html#l00168">HF::Pathfinding::BoostGraph::g</a>, and <a class="el" href="a00200_source.html#l00169">HF::Pathfinding::BoostGraph::p</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a00422_source.html#l00203">CreateAllPredToPath()</a>.</p>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00472_a6d24adcb1c0891a98e7d9a8d36f8cc01_cgraph.svg" width="442" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00472_a6d24adcb1c0891a98e7d9a8d36f8cc01_icgraph.svg" width="384" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
 </div>
 </div>
 <a id="a47d06b1c4bd84f4d0a7519ea0e96ff02" name="a47d06b1c4bd84f4d0a7519ea0e96ff02"></a>
@@ -745,21 +848,21 @@ The index of a vertex in the CSR. </td></tr>
 
 <p class="reference">References <a class="el" href="a00203_source.html#l00146">BuildDistanceAndPredecessor()</a>, <a class="el" href="a00203_source.html#l00078">ConstructShortestPathFromPred()</a>, and <a class="el" href="a00200_source.html#l00168">HF::Pathfinding::BoostGraph::g</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="a00422_source.html#l00023">CreatePath()</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="a00422_source.html#l00025">CreatePath()</a>.</p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00472_a47d06b1c4bd84f4d0a7519ea0e96ff02_cgraph.svg" width="622" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00472_a47d06b1c4bd84f4d0a7519ea0e96ff02_cgraph.svg" width="628" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00472_a47d06b1c4bd84f4d0a7519ea0e96ff02_icgraph.svg" width="316" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00472_a47d06b1c4bd84f4d0a7519ea0e96ff02_icgraph.svg" width="319" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -809,7 +912,7 @@ The index of a vertex in the CSR. </td></tr>
 <dl class="section return"><dt>Returns</dt><dd>An ordered array of paths matching the order of the pairs of start_id and end_id. Paths that could not be generated will be returned as paths with no nodes.</dd></dl>
 <p>More efficient than calling FindPath manually in a loop. Sorts paths by starting point, calculates only one predecessor matrix per unique starting point, then finds a path for every pair.</p>
 <dl class="section pre"><dt>Precondition</dt><dd>Length of start_points must match that of end_points.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="a00452.html#_todo000018">Todo:</a></b></dt><dd>This isn't in parallel! Can be implemented using a similar approach to InsertPathsIntoArray. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="a00452.html#_todo000019">Todo:</a></b></dt><dd>This isn't in parallel! Can be implemented using a similar approach to InsertPathsIntoArray. </dd></dl>
 <div class="fragment"><div class="line"><span class="comment">// be sure to #include &quot;path_finder.h&quot;, #include &quot;boost_graph.h&quot;, and #include &quot;graph.h&quot;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Create a Graph g, and compress it.</span></div>
@@ -852,12 +955,12 @@ The index of a vertex in the CSR. </td></tr>
 <p class="definition">Definition at line <a class="el" href="a00203_source.html#l00178">178</a> of file <a class="el" href="a00203_source.html">path_finder.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="a00203_source.html#l00146">BuildDistanceAndPredecessor()</a>, <a class="el" href="a00203_source.html#l00078">ConstructShortestPathFromPred()</a>, and <a class="el" href="a00200_source.html#l00168">HF::Pathfinding::BoostGraph::g</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00472_a15badb9d0a17849de7b21105605c9c91_cgraph.svg" width="630" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00472_a15badb9d0a17849de7b21105605c9c91_cgraph.svg" width="635" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -925,25 +1028,51 @@ The index of a vertex in the CSR. </td></tr>
 
 <p class="definition">Definition at line <a class="el" href="a00203_source.html#l00267">267</a> of file <a class="el" href="a00203_source.html">path_finder.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="a00200_source.html#l00168">HF::Pathfinding::BoostGraph::g</a>, <a class="el" href="a00206_source.html#l00439">HF::Pathfinding::DistanceAndPredecessor::GetRowOfDist()</a>, <a class="el" href="a00206_source.html#l00453">HF::Pathfinding::DistanceAndPredecessor::GetRowOfPred()</a>, <a class="el" href="a00200_source.html#l00169">HF::Pathfinding::BoostGraph::p</a>, and <a class="el" href="a00200_source.html#l00100">HF::Pathfinding::Edge_Cost::weight</a>.</p>
+<p class="reference">References <a class="el" href="a00200_source.html#l00168">HF::Pathfinding::BoostGraph::g</a>, <a class="el" href="a00206_source.html#l00437">HF::Pathfinding::DistanceAndPredecessor::GetRowOfDist()</a>, <a class="el" href="a00206_source.html#l00451">HF::Pathfinding::DistanceAndPredecessor::GetRowOfPred()</a>, <a class="el" href="a00200_source.html#l00169">HF::Pathfinding::BoostGraph::p</a>, and <a class="el" href="a00200_source.html#l00100">HF::Pathfinding::Edge_Cost::weight</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="a00422_source.html#l00171">CalculateDistanceAndPredecessor()</a>.</p>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="a00422_source.html#l00173">CalculateDistanceAndPredecessor()</a>.</p>
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00472_ab58662be8e56c333d74d60a823e810e3_cgraph.svg" width="442" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00472_ab58662be8e56c333d74d60a823e810e3_icgraph.svg" width="452" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00472_ab58662be8e56c333d74d60a823e810e3_cgraph.svg" width="447" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00472_ab58662be8e56c333d74d60a823e810e3_icgraph.svg" width="456" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a496379e77c1c41453ef021358f8372fb" name="a496379e77c1c41453ef021358f8372fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a496379e77c1c41453ef021358f8372fb">&#9670;&#160;</a></span>GenerateDistanceAndPredFast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a01395.html">DistanceAndPredecessor</a> HF::Pathfinding::GenerateDistanceAndPredFast </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a01383.html">BoostGraph</a> &amp;&#160;</td>
+          <td class="paramname"><em>bg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1108,21 +1237,21 @@ The index of a vertex in the CSR. </td></tr>
 
 <p class="reference">References <a class="el" href="a00203_source.html#l00201">InsertPathsIntoArray()</a>, and <a class="el" href="a00200_source.html#l00169">HF::Pathfinding::BoostGraph::p</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="a00422_source.html#l00138">CreateAllToAllPaths()</a>.</p>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="a00422_source.html#l00140">CreateAllToAllPaths()</a>.</p>
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00472_a69bd3efcc13788e7c4be43b67d6002e5_cgraph.svg" width="850" height="242"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00472_a69bd3efcc13788e7c4be43b67d6002e5_cgraph.svg" width="859" height="242"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00472_a69bd3efcc13788e7c4be43b67d6002e5_icgraph.svg" width="362" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00472_a69bd3efcc13788e7c4be43b67d6002e5_icgraph.svg" width="366" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1237,21 +1366,21 @@ The index of a vertex in the CSR. </td></tr>
 
 <p class="reference">References <a class="el" href="a00203_source.html#l00146">BuildDistanceAndPredecessor()</a>, <a class="el" href="a00203_source.html#l00078">ConstructShortestPathFromPred()</a>, <a class="el" href="a00200_source.html#l00168">HF::Pathfinding::BoostGraph::g</a>, <a class="el" href="a00278_source.html#l00056">HF::SpatialStructures::Path::GetPMPointer()</a>, and <a class="el" href="a00278_source.html#l00020">HF::SpatialStructures::Path::size()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="a00422_source.html#l00070">CreatePaths()</a>, and <a class="el" href="a00203_source.html#l00329">InsertAllToAllPathsIntoArray()</a>.</p>
-<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="a00422_source.html#l00072">CreatePaths()</a>, and <a class="el" href="a00203_source.html#l00329">InsertAllToAllPathsIntoArray()</a>.</p>
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00472_a417084c97d0672af2da7739157a9d8c0_cgraph.svg" width="636" height="242"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00472_a417084c97d0672af2da7739157a9d8c0_cgraph.svg" width="643" height="242"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00472_a417084c97d0672af2da7739157a9d8c0_icgraph.svg" width="594" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00472_a417084c97d0672af2da7739157a9d8c0_icgraph.svg" width="602" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

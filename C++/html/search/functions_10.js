@@ -15,5 +15,7 @@ var searchData=
   ['rotatemesh_12',['RotateMesh',['../a00455.html#ga907c8e39b159c8bad22645448bc97f57',1,'RotateMesh(MeshInfo&lt; float &gt; *mesh_to_rotate, float xrot, float yrot, float zrot):&#160;objloader_C.cpp'],['../a00455.html#ga907c8e39b159c8bad22645448bc97f57',1,'RotateMesh(HF::Geometry::MeshInfo&lt; float &gt; *mesh_to_rotate, float xrot, float yrot, float zrot):&#160;objloader_C.cpp']]],
   ['roundhf_13',['roundhf',['../a00465.html#a7055938c4b6cc98ac7d1e4409e1f63e9',1,'HF::SpatialStructures']]],
   ['roundhf_5ftail_14',['roundhf_tail',['../a00465.html#a0e6690272fb70b92279b9ab082a24302',1,'HF::SpatialStructures']]],
-  ['roundhf_5ftmp_15',['roundhf_tmp',['../a00465.html#a5db5f0307882796fcf7cdad83cb20c65',1,'HF::SpatialStructures::roundhf_tmp(numeric_type f, numeric_type p, numeric_type r)'],['../a00465.html#a34027bdf606bd5f03f7a473c61a3a4de',1,'HF::SpatialStructures::roundhf_tmp(numeric_type f, numeric_type p)'],['../a00465.html#a863bb6ac51410385569635e0b0e08ee2',1,'HF::SpatialStructures::roundhf_tmp(numeric_type f)']]]
+  ['roundhf_5ftmp_15',['roundhf_tmp',['../a00465.html#a5db5f0307882796fcf7cdad83cb20c65',1,'HF::SpatialStructures::roundhf_tmp(numeric_type f, numeric_type p, numeric_type r)'],['../a00465.html#a34027bdf606bd5f03f7a473c61a3a4de',1,'HF::SpatialStructures::roundhf_tmp(numeric_type f, numeric_type p)'],['../a00465.html#a863bb6ac51410385569635e0b0e08ee2',1,'HF::SpatialStructures::roundhf_tmp(numeric_type f)']]],
+  ['row_5fbegin_16',['row_begin',['../a01539.html#a9ca24cfb89e6aa56761ad041dbecfd56',1,'HF::SpatialStructures::CSRPtrs']]],
+  ['row_5fend_17',['row_end',['../a01539.html#ade635c77fdaf7f5ba326edad25f23202',1,'HF::SpatialStructures::CSRPtrs']]]
 ];

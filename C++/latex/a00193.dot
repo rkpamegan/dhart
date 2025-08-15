@@ -1,0 +1,15 @@
+digraph "Cpp/objloader/src/objloader.h"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="Cpp/objloader/src/objloader.h",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Contains definitions for the Geometry namespace."];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="Cinterface/objloader\l_C.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00416.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="Cinterface/objloader_C.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00419.html",tooltip="Header file for functions related to loading/storing an OBJ file (a mesh)"];
+  Node3 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node1 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="Cpp/objloader/src/objloader.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00188.html",tooltip="Contains implementation for the Geometry namespace."];
+}

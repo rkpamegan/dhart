@@ -1,0 +1,25 @@
+digraph "nanort::StackContainer&lt; TContainerType, stack_capacity &gt;"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="nanort::StackContainer\l\< TContainerType, stack\l_capacity \>",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" stack_data_" ];
+  Node2 [label="nanort::StackAllocator\l\< T, stack_capacity \>\l::Source",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$a01427.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="darkorchid3",style="dashed",label=" stack_buffer_" ];
+  Node3 [label="char",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node2 [dir="back",color="darkorchid3",style="dashed",label=" used_stack_buffer_" ];
+  Node4 [label="bool",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" pad_" ];
+  Node5 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" allocator_" ];
+  Node5 [label="nanort::StackAllocator\l\< ContainedType, stack\l_capacity \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$a01423.html",tooltip=" "];
+  Node6 -> Node5 [dir="back",color="steelblue1",style="solid"];
+  Node6 [label="std::allocator\< T \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node6 [dir="back",color="darkorchid3",style="dashed",label=" elements" ];
+  Node7 [label="T",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node2 -> Node5 [dir="back",color="darkorchid3",style="dashed",label=" source_" ];
+  Node8 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" container_" ];
+  Node8 [label="TContainerType",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+}

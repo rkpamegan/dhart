@@ -1,0 +1,13 @@
+digraph "nanort::StackAllocator::Source::stack_buffer"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="nanort::StackAllocator\l::Source::stack_buffer",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="nanort::StackAllocator\l::allocate",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01423.html#a5e0ce428678fdd1f7e29856b1d2ef0e5",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="nanort::StackAllocator\l::deallocate",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01423.html#ab75f6481223b08774332f16eee4747b9",tooltip=" "];
+}

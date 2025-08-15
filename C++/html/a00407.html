@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('a00407.html',''); initResizable(); });
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00408.svg" width="170" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00408.svg" width="208" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('a00407.html',''); initResizable(); });
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00409.svg" width="170" height="128"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00409.svg" width="172" height="128"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -139,7 +139,7 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a91fa3b2bb3a7312ec39d74cc1fbc7bbe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00407.html#a91fa3b2bb3a7312ec39d74cc1fbc7bbe">C_INTERFACE</a>&#160;&#160;&#160;extern &quot;C&quot; __declspec(dllexport) int</td></tr>
+<tr class="memitem:a91fa3b2bb3a7312ec39d74cc1fbc7bbe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00407.html#a91fa3b2bb3a7312ec39d74cc1fbc7bbe">C_INTERFACE</a>&#160;&#160;&#160;extern &quot;C&quot; __attribute__((visibility(&quot;default&quot;))) int</td></tr>
 <tr class="separator:a91fa3b2bb3a7312ec39d74cc1fbc7bbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -150,6 +150,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gab9f58e3ecc686fa9bc34519b0faed734"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00407.html#a91fa3b2bb3a7312ec39d74cc1fbc7bbe">C_INTERFACE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00454.html#gab9f58e3ecc686fa9bc34519b0faed734">GenerateGraphObstacles</a> (<a class="el" href="a01411.html">HF::RayTracer::EmbreeRayTracer</a> *ray_tracer, const float *start_point, const float *spacing, int MaxNodes, float UpStep, float UpSlope, float DownStep, float DownSlope, int max_step_connection, int min_connections, int core_count, const int *obstacle_ids, const int *walkable_ids, int num_obstacles, int num_walkables, <a class="el" href="a01551.html">HF::SpatialStructures::Graph</a> **out_graph)</td></tr>
 <tr class="memdesc:gab9f58e3ecc686fa9bc34519b0faed734"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a graph by performing a breadth-first search of accessible space, seperating obstacles from walkable geometry.  <a href="a00454.html#gab9f58e3ecc686fa9bc34519b0faed734">More...</a><br /></td></tr>
 <tr class="separator:gab9f58e3ecc686fa9bc34519b0faed734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae7f55e49ba1992471430d0e3d415ebae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00407.html#a91fa3b2bb3a7312ec39d74cc1fbc7bbe">C_INTERFACE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00454.html#gae7f55e49ba1992471430d0e3d415ebae">CalculateAndStoreStepTypes</a> (<a class="el" href="a01551.html">HF::SpatialStructures::Graph</a> *g, <a class="el" href="a01411.html">HF::RayTracer::EmbreeRayTracer</a> *ray_tracer)</td></tr>
+<tr class="memdesc:gae7f55e49ba1992471430d0e3d415ebae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query the graph and identify the step types of all edges, adding them to the graph.  <a href="a00454.html#gae7f55e49ba1992471430d0e3d415ebae">More...</a><br /></td></tr>
+<tr class="separator:gae7f55e49ba1992471430d0e3d415ebae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Header file for C Interface functions related to graph generation. </p>
@@ -165,12 +168,12 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define C_INTERFACE&#160;&#160;&#160;extern &quot;C&quot; __declspec(dllexport) int</td>
+          <td class="memname">#define C_INTERFACE&#160;&#160;&#160;extern &quot;C&quot; __attribute__((visibility(&quot;default&quot;))) int</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00407_source.html#l00016">16</a> of file <a class="el" href="a00407_source.html">analysis_C.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00407_source.html#l00019">19</a> of file <a class="el" href="a00407_source.html">analysis_C.h</a>.</p>
 
 </div>
 </div>

@@ -1,0 +1,21 @@
+digraph "nanort::BVHAccel::BuildTree"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="nanort::BVHAccel::BuildTree",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Builds BVH tree recursively."];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="nanort::ComputeBoundingBox",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00474.html#a06549eb8469b9a2004cc5332ca0d011e",tooltip=" "];
+  Node1 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="nanort::ContributeBinBuffer",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00474.html#a67ae269fe2215d261b995f1da13320f7",tooltip=" "];
+  Node1 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="nanort::FindCutFromBinBuffer",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00474.html#ac281b6ed7e50b406666a6e67e9547b7e",tooltip=" "];
+  Node4 -> Node5 [color="steelblue1",style="solid"];
+  Node5 [label="nanort::CalculateSurfaceArea",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00474.html#a1f672faac125854c89c907614545fe60",tooltip=" "];
+  Node4 -> Node6 [color="steelblue1",style="solid"];
+  Node6 [label="nanort::SAH",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00474.html#a2224f7a101ce863a9332f059dfef9dd1",tooltip=" "];
+  Node1 -> Node7 [color="steelblue1",style="solid"];
+  Node7 [label="nanort::GetBoundingBox",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00474.html#a60ac3f02ccb852decfdc6f7f02d7184f",tooltip=" "];
+}

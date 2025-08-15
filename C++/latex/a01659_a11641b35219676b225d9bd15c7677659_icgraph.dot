@@ -1,0 +1,13 @@
+digraph "nlohmann::basic_json::value"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="nlohmann::basic_json\l::value",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="access specified object element with default value"];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="nlohmann::basic_json\l::json_value::json_value",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a02059.html#ad7f122fa9bfc5aa4d9b65a3059892146",tooltip="constructor for strings"];
+  Node1 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="nlohmann::basic_json\l::value",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01659.html#adcfdefe95d5c2471a5c97e911d46ee88",tooltip="overload for a default value of type const char*"];
+}

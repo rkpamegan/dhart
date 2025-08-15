@@ -1,0 +1,11 @@
+digraph "ClearAttributeType"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="ClearAttributeType",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Deletes the node attribute values of the type denoted by s, from graph *g."];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="HF::SpatialStructures\l::Graph::ClearNodeAttributes",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01551.html#a0279f117df3d0d29d0a06301dac146a9",tooltip="Clears the attribute at name and all of its contents from the internal hashmap"];
+}

@@ -1,0 +1,11 @@
+digraph "HF::SpatialStructures::Graph::CountEdges"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="HF::SpatialStructures\l::Graph::CountEdges",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Count the number of edges of associated cost type"];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="CountNumberOfEdges",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00458.html#ga5686c81369a19470b8c9705d43eeff27",tooltip="Count the number of edges associated with cost_type in a given graph."];
+}

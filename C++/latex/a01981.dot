@@ -1,0 +1,37 @@
+digraph "nlohmann::detail::lexer&lt; BasicJsonType, InputAdapterType &gt;"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="nlohmann::detail::lexer\l\< BasicJsonType, InputAdapter\lType \>",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="lexical analysis"];
+  Node2 -> Node1 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="nlohmann::detail::lexer\l_base\< BasicJsonType \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$a01979.html",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" ia" ];
+  Node3 [label="InputAdapterType",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" ignore_comments\nnext_unget" ];
+  Node4 [label="bool",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" current" ];
+  Node5 [label="int_type",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" position" ];
+  Node6 [label="nlohmann::detail::position_t",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$a01555.html",tooltip="struct to capture the start position of the current token"];
+  Node7 -> Node6 [dir="back",color="darkorchid3",style="dashed",label=" chars_read_current\l_line\nchars_read_total\nlines_read" ];
+  Node7 [label="size_t",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node8 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" token_string" ];
+  Node8 [label="std::vector\< char_type \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node9 -> Node8 [dir="back",color="darkorchid3",style="dashed",label=" elements" ];
+  Node9 [label="char_type",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node10 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" token_buffer" ];
+  Node10 [label="string_t",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node11 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" error_message" ];
+  Node11 [label="char",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node12 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" value_integer" ];
+  Node12 [label="number_integer_t",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node13 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" value_unsigned" ];
+  Node13 [label="number_unsigned_t",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node14 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" value_float" ];
+  Node14 [label="number_float_t",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node15 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" decimal_point_char" ];
+  Node15 [label="const char_int_type",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+}

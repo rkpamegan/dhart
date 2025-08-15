@@ -12,13 +12,7 @@ Generate a graph of accessible space from a given start point.
 
 
 Collaboration diagram for HF\+::Graph\+Generator\+::Graph\+Generator\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01309}
-\end{center}
-\end{figure}
+% FIG 0
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -65,7 +59,7 @@ All arguments are in meters for distances and degrees for angles unless otherwis
 \end{DoxyNote}
 
 
-Definition at line \mbox{\hyperlink{a00008_source_l00344}{344}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
+Definition at line \mbox{\hyperlink{a00008_source_l00347}{347}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
 
 
 
@@ -141,16 +135,10 @@ Definition at line \mbox{\hyperlink{a00005_source_l00063}{63}} of file \mbox{\hy
 
 
 
-References \mbox{\hyperlink{a00008_source_l00261}{HF\+::\+Graph\+Generator\+::\+Graph\+Params\+::geom\+\_\+ids}}, \mbox{\hyperlink{a00008_source_l00354}{params}}, \mbox{\hyperlink{a00008_source_l00356}{ray\+\_\+tracer}}, and \mbox{\hyperlink{a00008_source_l00200}{HF\+::\+Graph\+Generator\+::\+Geometry\+Flag\+Map\+::\+Set\+Geometry\+Ids()}}.
+References \mbox{\hyperlink{a00008_source_l00264}{HF\+::\+Graph\+Generator\+::\+Graph\+Params\+::geom\+\_\+ids}}, \mbox{\hyperlink{a00008_source_l00357}{params}}, \mbox{\hyperlink{a00008_source_l00359}{ray\+\_\+tracer}}, and \mbox{\hyperlink{a00008_source_l00203}{HF\+::\+Graph\+Generator\+::\+Geometry\+Flag\+Map\+::\+Set\+Geometry\+Ids()}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01311_a804c4c9a8169aa9901cb32ee0f64c555_cgraph}
-\end{center}
-\end{figure}
+% FIG 1
 
 
 \doxysubsection{Member Function Documentation}
@@ -223,7 +211,7 @@ The extensive use of templating on this function is to allow any numeric type to
 \begin{DoxyCodeInclude}{0}
 \DoxyCodeLine{    }
 \DoxyCodeLine{    \textcolor{comment}{// Create a graphgenerator using the raytracer we just created}}
-\DoxyCodeLine{    \mbox{\hyperlink{a01311}{HF::GraphGenerator::GraphGenerator}} GG = GraphGenerator::GraphGenerator(\mbox{\hyperlink{a01311_a5801e0e8dbaaa13ccab14ff0cae69de0}{ray\_tracer}});}
+\DoxyCodeLine{    \mbox{\hyperlink{a01311}{HF::GraphGenerator::GraphGenerator}} GG(\mbox{\hyperlink{a01311_a5801e0e8dbaaa13ccab14ff0cae69de0}{ray\_tracer}});}
 \DoxyCodeLine{}
 \DoxyCodeLine{    \textcolor{comment}{// Setup Graph Parameters}}
 \DoxyCodeLine{    std::array<float, 3> start\_point\{ 0,0,0.25 \};}
@@ -235,7 +223,7 @@ The extensive use of templating on this function is to allow any numeric type to
 \DoxyCodeLine{    \textcolor{keywordtype}{int} \mbox{\hyperlink{a01311_aa04d1ae908956afc43e540b0cc6849f7}{min\_connections}} = 1;}
 \DoxyCodeLine{}
 \DoxyCodeLine{    \textcolor{comment}{// Generate the graph using our parameters}}
-\DoxyCodeLine{    \mbox{\hyperlink{a01551}{HF::SpatialStructures::Graph}} g = GG.\mbox{\hyperlink{a01311_a0c12341433bbec41cc12cc1dbb41a976}{BuildNetwork}}(}
+\DoxyCodeLine{    \mbox{\hyperlink{a01551}{HF::SpatialStructures::Graph}} g = GG.BuildNetwork(}
 \DoxyCodeLine{        start\_point,}
 \DoxyCodeLine{        \mbox{\hyperlink{a01311_a9aba1df499733b653dff3ec59bf3871f}{spacing}},}
 \DoxyCodeLine{        \mbox{\hyperlink{a01311_a6afac9c527d8483943ef61e9e9a1ca15}{max\_nodes}},}
@@ -269,32 +257,20 @@ The extensive use of templating on this function is to allow any numeric type to
 \end{DoxyParagraph}
 
 
-Definition at line \mbox{\hyperlink{a00008_source_l00464}{464}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
+Definition at line \mbox{\hyperlink{a00008_source_l00467}{467}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
 
 
 
-References \mbox{\hyperlink{a00008_source_l00091}{HF\+::\+Graph\+Generator\+::\+Cast\+To\+Real()}}, \mbox{\hyperlink{a00008_source_l00104}{HF\+::\+Graph\+Generator\+::\+Cast\+To\+Real3()}}, \mbox{\hyperlink{a00005_source_l00069}{IMPL\+\_\+\+Build\+Network()}}, and \mbox{\hyperlink{a00008_source_l00350}{min\+\_\+connections}}.
+References \mbox{\hyperlink{a00008_source_l00094}{HF\+::\+Graph\+Generator\+::\+Cast\+To\+Real()}}, \mbox{\hyperlink{a00008_source_l00107}{HF\+::\+Graph\+Generator\+::\+Cast\+To\+Real3()}}, \mbox{\hyperlink{a00005_source_l00069}{IMPL\+\_\+\+Build\+Network()}}, and \mbox{\hyperlink{a00008_source_l00353}{min\+\_\+connections}}.
 
 
 
 Referenced by \mbox{\hyperlink{a00404_source_l00022}{Generate\+Graph()}}, and \mbox{\hyperlink{a00404_source_l00062}{Generate\+Graph\+Obstacles()}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01311_a0c12341433bbec41cc12cc1dbb41a976_cgraph}
-\end{center}
-\end{figure}
+% FIG 2
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01311_a0c12341433bbec41cc12cc1dbb41a976_icgraph}
-\end{center}
-\end{figure}
+% FIG 3
 \mbox{\Hypertarget{a01311_ac7052d4b625fb96f29c5bfc091a86f7e}\label{a01311_ac7052d4b625fb96f29c5bfc091a86f7e}} 
 \index{HF::GraphGenerator::GraphGenerator@{HF::GraphGenerator::GraphGenerator}!CrawlGeom@{CrawlGeom}}
 \index{CrawlGeom@{CrawlGeom}!HF::GraphGenerator::GraphGenerator@{HF::GraphGenerator::GraphGenerator}}
@@ -335,7 +311,7 @@ The Graph generated by performing the breadth first search.
 \begin{DoxyCodeInclude}{0}
 \DoxyCodeLine{}
 \DoxyCodeLine{    \textcolor{comment}{// Create a graphgenerator using the raytracer we just created}}
-\DoxyCodeLine{    \mbox{\hyperlink{a01311}{HF::GraphGenerator::GraphGenerator}} GG = GraphGenerator::GraphGenerator(\mbox{\hyperlink{a01311_a5801e0e8dbaaa13ccab14ff0cae69de0}{ray\_tracer}});}
+\DoxyCodeLine{    \mbox{\hyperlink{a01311}{HF::GraphGenerator::GraphGenerator}} GG(\mbox{\hyperlink{a01311_a5801e0e8dbaaa13ccab14ff0cae69de0}{ray\_tracer}});}
 \DoxyCodeLine{}
 \DoxyCodeLine{    \textcolor{comment}{// Set parameters for graph generation}}
 \DoxyCodeLine{    std::array<float, 3> start\_point\{ 0,1,0 \};}
@@ -350,21 +326,21 @@ The Graph generated by performing the breadth first search.
 \DoxyCodeLine{    \textcolor{comment}{// in the GraphGenerator in order to use this function standalone}}
 \DoxyCodeLine{    }
 \DoxyCodeLine{    \textcolor{comment}{// These parameters need to be set on the graph generator}}
-\DoxyCodeLine{    GG.\mbox{\hyperlink{a01311_a16da7abe348f7af1d232867f2d719db1}{core\_count}} = -\/1;}
-\DoxyCodeLine{    GG.\mbox{\hyperlink{a01311_a6afac9c527d8483943ef61e9e9a1ca15}{max\_nodes}} = 5;}
-\DoxyCodeLine{    GG.\mbox{\hyperlink{a01311_a73847391cae1bc6c5a0ed5416844ab68}{max\_step\_connection}} = 1;}
-\DoxyCodeLine{    GG.\mbox{\hyperlink{a01311_aa04d1ae908956afc43e540b0cc6849f7}{min\_connections}} = 1;}
+\DoxyCodeLine{    GG.core\_count = -\/1;}
+\DoxyCodeLine{    GG.max\_nodes = 5;}
+\DoxyCodeLine{    GG.max\_step\_connection = 1;}
+\DoxyCodeLine{    GG.min\_connections = 1;}
 \DoxyCodeLine{    }
 \DoxyCodeLine{    \textcolor{comment}{// Setup its params struct}}
-\DoxyCodeLine{    GG.\mbox{\hyperlink{a01311_a6c85bb69456393934b602a242d8f0bed}{params}}.\mbox{\hyperlink{a00463_a0b8afc5f531e3286ce2434b1bc2b1f50}{up\_step}} = up\_step; GG.\mbox{\hyperlink{a01311_a6c85bb69456393934b602a242d8f0bed}{params}}.\mbox{\hyperlink{a00463_add2b6fa6bf77a8c4626a1e6d0559970f}{down\_step}} = down\_step;}
-\DoxyCodeLine{    GG.\mbox{\hyperlink{a01311_a6c85bb69456393934b602a242d8f0bed}{params}}.\mbox{\hyperlink{a00463_add7f080950668f5dfa8d857e9c66b89d}{up\_slope}} = up\_slope; GG.\mbox{\hyperlink{a01311_a6c85bb69456393934b602a242d8f0bed}{params}}.\mbox{\hyperlink{a00463_a7c141d33285a77c81fc1b9ce0b210d72}{down\_slope}} = down\_slope;}
-\DoxyCodeLine{    GG.\mbox{\hyperlink{a01311_a6c85bb69456393934b602a242d8f0bed}{params}}.\mbox{\hyperlink{a00463_af7a57e8e6b17f86ac29a8df2685e56c1}{precision}}.\mbox{\hyperlink{a00463_a4fa4f096863296469711e52da4b36b9c}{ground\_offset}} = 0.01; }
-\DoxyCodeLine{    GG.\mbox{\hyperlink{a01311_a6c85bb69456393934b602a242d8f0bed}{params}}.\mbox{\hyperlink{a00463_af7a57e8e6b17f86ac29a8df2685e56c1}{precision}}.\mbox{\hyperlink{a00463_a6ec86cb69c1cc0e0dc8ea229310939b6}{node\_z}} = 0.001f;}
-\DoxyCodeLine{    GG.\mbox{\hyperlink{a01311_a6c85bb69456393934b602a242d8f0bed}{params}}.\mbox{\hyperlink{a00463_af7a57e8e6b17f86ac29a8df2685e56c1}{precision}}.\mbox{\hyperlink{a00463_ac982230f7d151df6018c19d712cd3436}{node\_spacing}} = 0.001;}
+\DoxyCodeLine{    GG.params.up\_step = up\_step; GG.params.down\_step = down\_step;}
+\DoxyCodeLine{    GG.params.up\_slope = up\_slope; GG.params.down\_slope = down\_slope;}
+\DoxyCodeLine{    GG.params.precision.ground\_offset = 0.01; }
+\DoxyCodeLine{    GG.params.precision.node\_z = 0.001f;}
+\DoxyCodeLine{    GG.params.precision.node\_spacing = 0.001;}
 \DoxyCodeLine{}
 \DoxyCodeLine{    \textcolor{comment}{// Assign it's spacing member, making sure to convert it to real3, the graph generator's}}
 \DoxyCodeLine{    \textcolor{comment}{// internal type for vectors of 3 coordinates.}}
-\DoxyCodeLine{    GG.\mbox{\hyperlink{a01311_a9aba1df499733b653dff3ec59bf3871f}{spacing}} = \mbox{\hyperlink{a00463_a58892abe1152c28d26d3ca749c99ea4d}{HF::GraphGenerator::CastToReal3}}(\mbox{\hyperlink{a01311_a9aba1df499733b653dff3ec59bf3871f}{spacing}});}
+\DoxyCodeLine{    GG.spacing = \mbox{\hyperlink{a00463_a58892abe1152c28d26d3ca749c99ea4d}{HF::GraphGenerator::CastToReal3}}(\mbox{\hyperlink{a01311_a9aba1df499733b653dff3ec59bf3871f}{spacing}});}
 \DoxyCodeLine{}
 \DoxyCodeLine{    \textcolor{comment}{// Construct a unique queue, and push back the start point}}
 \DoxyCodeLine{    \mbox{\hyperlink{a01315}{HF::GraphGenerator::UniqueQueue}} queue;}
@@ -376,7 +352,7 @@ The Graph generated by performing the breadth first search.
 \begin{DoxyCodeInclude}{0}
 \DoxyCodeLine{    }
 \DoxyCodeLine{    \textcolor{comment}{// Call Crawl Geom with the queue}}
-\DoxyCodeLine{    \textcolor{keyword}{auto} g = GG.\mbox{\hyperlink{a01311_ac7052d4b625fb96f29c5bfc091a86f7e}{CrawlGeom}}(queue);}
+\DoxyCodeLine{    \textcolor{keyword}{auto} g = GG.CrawlGeom(queue);}
 \DoxyCodeLine{}
 
 \end{DoxyCodeInclude}
@@ -406,28 +382,16 @@ Definition at line \mbox{\hyperlink{a00005_source_l00222}{222}} of file \mbox{\h
 
 
 
-References \mbox{\hyperlink{a01551_a37be5c12e488072dea7fa1c8c64346f7}{HF\+::\+Spatial\+Structures\+::\+Graph\+::add\+Edge()}}, \mbox{\hyperlink{a00008_source_l00104}{HF\+::\+Graph\+Generator\+::\+Cast\+To\+Real3()}}, \mbox{\hyperlink{a00011_source_l00201}{HF\+::\+Graph\+Generator\+::\+Create\+Direcs()}}, \mbox{\hyperlink{a00014_source_l00055}{HF\+::\+Graph\+Generator\+::\+Unique\+Queue\+::empty()}}, \mbox{\hyperlink{a00011_source_l00381}{HF\+::\+Graph\+Generator\+::\+Generate\+Potential\+Children()}}, \mbox{\hyperlink{a00011_source_l00218}{HF\+::\+Graph\+Generator\+::\+Get\+Children()}}, \mbox{\hyperlink{a00008_source_l00347}{max\+\_\+nodes}}, \mbox{\hyperlink{a00008_source_l00351}{max\+\_\+step\+\_\+connection}}, \mbox{\hyperlink{a00008_source_l00354}{params}}, \mbox{\hyperlink{a00014_source_l00025}{HF\+::\+Graph\+Generator\+::\+Unique\+Queue\+::pop()}}, \mbox{\hyperlink{a00017_source_l00118}{HF\+::\+Graph\+Generator\+::\+Unique\+Queue\+::\+Push\+Any()}}, \mbox{\hyperlink{a00008_source_l00356}{ray\+\_\+tracer}}, and \mbox{\hyperlink{a00008_source_l00352}{spacing}}.
+References \mbox{\hyperlink{a01551_a37be5c12e488072dea7fa1c8c64346f7}{HF\+::\+Spatial\+Structures\+::\+Graph\+::add\+Edge()}}, \mbox{\hyperlink{a00008_source_l00107}{HF\+::\+Graph\+Generator\+::\+Cast\+To\+Real3()}}, \mbox{\hyperlink{a00011_source_l00201}{HF\+::\+Graph\+Generator\+::\+Create\+Direcs()}}, \mbox{\hyperlink{a00014_source_l00055}{HF\+::\+Graph\+Generator\+::\+Unique\+Queue\+::empty()}}, \mbox{\hyperlink{a00011_source_l00544}{HF\+::\+Graph\+Generator\+::\+Generate\+Potential\+Children()}}, \mbox{\hyperlink{a00011_source_l00218}{HF\+::\+Graph\+Generator\+::\+Get\+Children()}}, \mbox{\hyperlink{a00008_source_l00350}{max\+\_\+nodes}}, \mbox{\hyperlink{a00008_source_l00354}{max\+\_\+step\+\_\+connection}}, \mbox{\hyperlink{a00008_source_l00357}{params}}, \mbox{\hyperlink{a00014_source_l00025}{HF\+::\+Graph\+Generator\+::\+Unique\+Queue\+::pop()}}, \mbox{\hyperlink{a00017_source_l00118}{HF\+::\+Graph\+Generator\+::\+Unique\+Queue\+::\+Push\+Any()}}, \mbox{\hyperlink{a00008_source_l00359}{ray\+\_\+tracer}}, and \mbox{\hyperlink{a00008_source_l00355}{spacing}}.
 
 
 
 Referenced by \mbox{\hyperlink{a00005_source_l00069}{IMPL\+\_\+\+Build\+Network()}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01311_ac7052d4b625fb96f29c5bfc091a86f7e_cgraph}
-\end{center}
-\end{figure}
+% FIG 4
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01311_ac7052d4b625fb96f29c5bfc091a86f7e_icgraph}
-\end{center}
-\end{figure}
+% FIG 5
 \mbox{\Hypertarget{a01311_a843cc6b5b69b5d013930b3685789fa15}\label{a01311_a843cc6b5b69b5d013930b3685789fa15}} 
 \index{HF::GraphGenerator::GraphGenerator@{HF::GraphGenerator::GraphGenerator}!CrawlGeomParallel@{CrawlGeomParallel}}
 \index{CrawlGeomParallel@{CrawlGeomParallel}!HF::GraphGenerator::GraphGenerator@{HF::GraphGenerator::GraphGenerator}}
@@ -465,7 +429,7 @@ The Graph generated by performing the breadth first search.
 \begin{DoxyCodeInclude}{0}
 \DoxyCodeLine{}
 \DoxyCodeLine{    \textcolor{comment}{// Create a graphgenerator using the raytracer we just created}}
-\DoxyCodeLine{    \mbox{\hyperlink{a01311}{HF::GraphGenerator::GraphGenerator}} GG = GraphGenerator::GraphGenerator(\mbox{\hyperlink{a01311_a5801e0e8dbaaa13ccab14ff0cae69de0}{ray\_tracer}});}
+\DoxyCodeLine{    \mbox{\hyperlink{a01311}{HF::GraphGenerator::GraphGenerator}} GG(\mbox{\hyperlink{a01311_a5801e0e8dbaaa13ccab14ff0cae69de0}{ray\_tracer}});}
 \DoxyCodeLine{}
 \DoxyCodeLine{    \textcolor{comment}{// Set parameters for graph generation}}
 \DoxyCodeLine{    std::array<float, 3> start\_point\{ 0,1,0 \};}
@@ -480,21 +444,21 @@ The Graph generated by performing the breadth first search.
 \DoxyCodeLine{    \textcolor{comment}{// in the GraphGenerator in order to use this function standalone}}
 \DoxyCodeLine{    }
 \DoxyCodeLine{    \textcolor{comment}{// These parameters need to be set on the graph generator}}
-\DoxyCodeLine{    GG.\mbox{\hyperlink{a01311_a16da7abe348f7af1d232867f2d719db1}{core\_count}} = -\/1;}
-\DoxyCodeLine{    GG.\mbox{\hyperlink{a01311_a6afac9c527d8483943ef61e9e9a1ca15}{max\_nodes}} = 5;}
-\DoxyCodeLine{    GG.\mbox{\hyperlink{a01311_a73847391cae1bc6c5a0ed5416844ab68}{max\_step\_connection}} = 1;}
-\DoxyCodeLine{    GG.\mbox{\hyperlink{a01311_aa04d1ae908956afc43e540b0cc6849f7}{min\_connections}} = 1;}
+\DoxyCodeLine{    GG.core\_count = -\/1;}
+\DoxyCodeLine{    GG.max\_nodes = 5;}
+\DoxyCodeLine{    GG.max\_step\_connection = 1;}
+\DoxyCodeLine{    GG.min\_connections = 1;}
 \DoxyCodeLine{    }
 \DoxyCodeLine{    \textcolor{comment}{// Setup its params struct}}
-\DoxyCodeLine{    GG.\mbox{\hyperlink{a01311_a6c85bb69456393934b602a242d8f0bed}{params}}.\mbox{\hyperlink{a00463_a0b8afc5f531e3286ce2434b1bc2b1f50}{up\_step}} = up\_step; GG.\mbox{\hyperlink{a01311_a6c85bb69456393934b602a242d8f0bed}{params}}.\mbox{\hyperlink{a00463_add2b6fa6bf77a8c4626a1e6d0559970f}{down\_step}} = down\_step;}
-\DoxyCodeLine{    GG.\mbox{\hyperlink{a01311_a6c85bb69456393934b602a242d8f0bed}{params}}.\mbox{\hyperlink{a00463_add7f080950668f5dfa8d857e9c66b89d}{up\_slope}} = up\_slope; GG.\mbox{\hyperlink{a01311_a6c85bb69456393934b602a242d8f0bed}{params}}.\mbox{\hyperlink{a00463_a7c141d33285a77c81fc1b9ce0b210d72}{down\_slope}} = down\_slope;}
-\DoxyCodeLine{    GG.\mbox{\hyperlink{a01311_a6c85bb69456393934b602a242d8f0bed}{params}}.\mbox{\hyperlink{a00463_af7a57e8e6b17f86ac29a8df2685e56c1}{precision}}.\mbox{\hyperlink{a00463_a4fa4f096863296469711e52da4b36b9c}{ground\_offset}} = 0.01; }
-\DoxyCodeLine{    GG.\mbox{\hyperlink{a01311_a6c85bb69456393934b602a242d8f0bed}{params}}.\mbox{\hyperlink{a00463_af7a57e8e6b17f86ac29a8df2685e56c1}{precision}}.\mbox{\hyperlink{a00463_a6ec86cb69c1cc0e0dc8ea229310939b6}{node\_z}} = 0.001f;}
-\DoxyCodeLine{    GG.\mbox{\hyperlink{a01311_a6c85bb69456393934b602a242d8f0bed}{params}}.\mbox{\hyperlink{a00463_af7a57e8e6b17f86ac29a8df2685e56c1}{precision}}.\mbox{\hyperlink{a00463_ac982230f7d151df6018c19d712cd3436}{node\_spacing}} = 0.001;}
+\DoxyCodeLine{    GG.params.up\_step = up\_step; GG.params.down\_step = down\_step;}
+\DoxyCodeLine{    GG.params.up\_slope = up\_slope; GG.params.down\_slope = down\_slope;}
+\DoxyCodeLine{    GG.params.precision.ground\_offset = 0.01; }
+\DoxyCodeLine{    GG.params.precision.node\_z = 0.001f;}
+\DoxyCodeLine{    GG.params.precision.node\_spacing = 0.001;}
 \DoxyCodeLine{}
 \DoxyCodeLine{    \textcolor{comment}{// Assign it's spacing member, making sure to convert it to real3, the graph generator's}}
 \DoxyCodeLine{    \textcolor{comment}{// internal type for vectors of 3 coordinates.}}
-\DoxyCodeLine{    GG.\mbox{\hyperlink{a01311_a9aba1df499733b653dff3ec59bf3871f}{spacing}} = \mbox{\hyperlink{a00463_a58892abe1152c28d26d3ca749c99ea4d}{HF::GraphGenerator::CastToReal3}}(\mbox{\hyperlink{a01311_a9aba1df499733b653dff3ec59bf3871f}{spacing}});}
+\DoxyCodeLine{    GG.spacing = \mbox{\hyperlink{a00463_a58892abe1152c28d26d3ca749c99ea4d}{HF::GraphGenerator::CastToReal3}}(\mbox{\hyperlink{a01311_a9aba1df499733b653dff3ec59bf3871f}{spacing}});}
 \DoxyCodeLine{}
 \DoxyCodeLine{    \textcolor{comment}{// Construct a unique queue, and push back the start point}}
 \DoxyCodeLine{    \mbox{\hyperlink{a01315}{HF::GraphGenerator::UniqueQueue}} queue;}
@@ -506,7 +470,7 @@ The Graph generated by performing the breadth first search.
 \begin{DoxyCodeInclude}{0}
 \DoxyCodeLine{    }
 \DoxyCodeLine{    \textcolor{comment}{// Call crawl geom parallel}}
-\DoxyCodeLine{    g = GG.\mbox{\hyperlink{a01311_a843cc6b5b69b5d013930b3685789fa15}{CrawlGeomParallel}}(queue);}
+\DoxyCodeLine{    g = GG.CrawlGeomParallel(queue);}
 \DoxyCodeLine{    }
 
 \end{DoxyCodeInclude}
@@ -536,28 +500,16 @@ Definition at line \mbox{\hyperlink{a00005_source_l00141}{141}} of file \mbox{\h
 
 
 
-References \mbox{\hyperlink{a01551_a37be5c12e488072dea7fa1c8c64346f7}{HF\+::\+Spatial\+Structures\+::\+Graph\+::add\+Edge()}}, \mbox{\hyperlink{a00008_source_l00104}{HF\+::\+Graph\+Generator\+::\+Cast\+To\+Real3()}}, \mbox{\hyperlink{a00011_source_l00201}{HF\+::\+Graph\+Generator\+::\+Create\+Direcs()}}, \mbox{\hyperlink{a00014_source_l00055}{HF\+::\+Graph\+Generator\+::\+Unique\+Queue\+::empty()}}, \mbox{\hyperlink{a00011_source_l00381}{HF\+::\+Graph\+Generator\+::\+Generate\+Potential\+Children()}}, \mbox{\hyperlink{a00011_source_l00218}{HF\+::\+Graph\+Generator\+::\+Get\+Children()}}, \mbox{\hyperlink{a00008_source_l00347}{max\+\_\+nodes}}, \mbox{\hyperlink{a00008_source_l00351}{max\+\_\+step\+\_\+connection}}, \mbox{\hyperlink{a00008_source_l00350}{min\+\_\+connections}}, \mbox{\hyperlink{a00008_source_l00354}{params}}, \mbox{\hyperlink{a00014_source_l00064}{HF\+::\+Graph\+Generator\+::\+Unique\+Queue\+::pop\+Many()}}, \mbox{\hyperlink{a00014_source_l00011}{HF\+::\+Graph\+Generator\+::\+Unique\+Queue\+::push()}}, \mbox{\hyperlink{a00008_source_l00356}{ray\+\_\+tracer}}, \mbox{\hyperlink{a00014_source_l00032}{HF\+::\+Graph\+Generator\+::\+Unique\+Queue\+::size()}}, and \mbox{\hyperlink{a00008_source_l00352}{spacing}}.
+References \mbox{\hyperlink{a01551_a37be5c12e488072dea7fa1c8c64346f7}{HF\+::\+Spatial\+Structures\+::\+Graph\+::add\+Edge()}}, \mbox{\hyperlink{a00008_source_l00107}{HF\+::\+Graph\+Generator\+::\+Cast\+To\+Real3()}}, \mbox{\hyperlink{a00011_source_l00201}{HF\+::\+Graph\+Generator\+::\+Create\+Direcs()}}, \mbox{\hyperlink{a00014_source_l00055}{HF\+::\+Graph\+Generator\+::\+Unique\+Queue\+::empty()}}, \mbox{\hyperlink{a00011_source_l00544}{HF\+::\+Graph\+Generator\+::\+Generate\+Potential\+Children()}}, \mbox{\hyperlink{a00011_source_l00218}{HF\+::\+Graph\+Generator\+::\+Get\+Children()}}, \mbox{\hyperlink{a00008_source_l00350}{max\+\_\+nodes}}, \mbox{\hyperlink{a00008_source_l00354}{max\+\_\+step\+\_\+connection}}, \mbox{\hyperlink{a00008_source_l00353}{min\+\_\+connections}}, \mbox{\hyperlink{a00008_source_l00357}{params}}, \mbox{\hyperlink{a00014_source_l00064}{HF\+::\+Graph\+Generator\+::\+Unique\+Queue\+::pop\+Many()}}, \mbox{\hyperlink{a00014_source_l00011}{HF\+::\+Graph\+Generator\+::\+Unique\+Queue\+::push()}}, \mbox{\hyperlink{a00008_source_l00359}{ray\+\_\+tracer}}, \mbox{\hyperlink{a00014_source_l00032}{HF\+::\+Graph\+Generator\+::\+Unique\+Queue\+::size()}}, and \mbox{\hyperlink{a00008_source_l00355}{spacing}}.
 
 
 
 Referenced by \mbox{\hyperlink{a00005_source_l00069}{IMPL\+\_\+\+Build\+Network()}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01311_a843cc6b5b69b5d013930b3685789fa15_cgraph}
-\end{center}
-\end{figure}
+% FIG 6
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01311_a843cc6b5b69b5d013930b3685789fa15_icgraph}
-\end{center}
-\end{figure}
+% FIG 7
 \mbox{\Hypertarget{a01311_a5788e421d921ec0ff27defc139c45106}\label{a01311_a5788e421d921ec0ff27defc139c45106}} 
 \index{HF::GraphGenerator::GraphGenerator@{HF::GraphGenerator::GraphGenerator}!IMPL\_BuildNetwork@{IMPL\_BuildNetwork}}
 \index{IMPL\_BuildNetwork@{IMPL\_BuildNetwork}!HF::GraphGenerator::GraphGenerator@{HF::GraphGenerator::GraphGenerator}}
@@ -611,28 +563,16 @@ Definition at line \mbox{\hyperlink{a00005_source_l00069}{69}} of file \mbox{\hy
 
 
 
-References \mbox{\hyperlink{a00008_source_l00348}{core\+\_\+count}}, \mbox{\hyperlink{a00005_source_l00222}{Crawl\+Geom()}}, \mbox{\hyperlink{a00005_source_l00141}{Crawl\+Geom\+Parallel()}}, \mbox{\hyperlink{a00008_source_l00259}{HF\+::\+Graph\+Generator\+::\+Graph\+Params\+::down\+\_\+slope}}, \mbox{\hyperlink{a00008_source_l00258}{HF\+::\+Graph\+Generator\+::\+Graph\+Params\+::down\+\_\+step}}, \mbox{\hyperlink{a00008_source_l00114}{HF\+::\+Graph\+Generator\+::\+Precision\+::ground\+\_\+offset}}, \mbox{\hyperlink{a00008_source_l00347}{max\+\_\+nodes}}, \mbox{\hyperlink{a00008_source_l00351}{max\+\_\+step\+\_\+connection}}, \mbox{\hyperlink{a00008_source_l00350}{min\+\_\+connections}}, \mbox{\hyperlink{a00008_source_l00113}{HF\+::\+Graph\+Generator\+::\+Precision\+::node\+\_\+spacing}}, \mbox{\hyperlink{a00008_source_l00112}{HF\+::\+Graph\+Generator\+::\+Precision\+::node\+\_\+z}}, \mbox{\hyperlink{a00008_source_l00354}{params}}, \mbox{\hyperlink{a00008_source_l00260}{HF\+::\+Graph\+Generator\+::\+Graph\+Params\+::precision}}, \mbox{\hyperlink{a00017_source_l00118}{HF\+::\+Graph\+Generator\+::\+Unique\+Queue\+::\+Push\+Any()}}, \mbox{\hyperlink{a00008_source_l00356}{ray\+\_\+tracer}}, \mbox{\hyperlink{a00005_source_l00035}{HF\+::\+Graph\+Generator\+::\+Setup\+Core\+Count()}}, \mbox{\hyperlink{a00008_source_l00352}{spacing}}, \mbox{\hyperlink{a00008_source_l00257}{HF\+::\+Graph\+Generator\+::\+Graph\+Params\+::up\+\_\+slope}}, \mbox{\hyperlink{a00008_source_l00256}{HF\+::\+Graph\+Generator\+::\+Graph\+Params\+::up\+\_\+step}}, and \mbox{\hyperlink{a00011_source_l00107}{HF\+::\+Graph\+Generator\+::\+Validate\+Start\+Point()}}.
+References \mbox{\hyperlink{a00008_source_l00351}{core\+\_\+count}}, \mbox{\hyperlink{a00005_source_l00222}{Crawl\+Geom()}}, \mbox{\hyperlink{a00005_source_l00141}{Crawl\+Geom\+Parallel()}}, \mbox{\hyperlink{a00008_source_l00262}{HF\+::\+Graph\+Generator\+::\+Graph\+Params\+::down\+\_\+slope}}, \mbox{\hyperlink{a00008_source_l00261}{HF\+::\+Graph\+Generator\+::\+Graph\+Params\+::down\+\_\+step}}, \mbox{\hyperlink{a00008_source_l00117}{HF\+::\+Graph\+Generator\+::\+Precision\+::ground\+\_\+offset}}, \mbox{\hyperlink{a00008_source_l00350}{max\+\_\+nodes}}, \mbox{\hyperlink{a00008_source_l00354}{max\+\_\+step\+\_\+connection}}, \mbox{\hyperlink{a00008_source_l00353}{min\+\_\+connections}}, \mbox{\hyperlink{a00008_source_l00116}{HF\+::\+Graph\+Generator\+::\+Precision\+::node\+\_\+spacing}}, \mbox{\hyperlink{a00008_source_l00115}{HF\+::\+Graph\+Generator\+::\+Precision\+::node\+\_\+z}}, \mbox{\hyperlink{a00008_source_l00357}{params}}, \mbox{\hyperlink{a00008_source_l00263}{HF\+::\+Graph\+Generator\+::\+Graph\+Params\+::precision}}, \mbox{\hyperlink{a00017_source_l00118}{HF\+::\+Graph\+Generator\+::\+Unique\+Queue\+::\+Push\+Any()}}, \mbox{\hyperlink{a00008_source_l00359}{ray\+\_\+tracer}}, \mbox{\hyperlink{a00005_source_l00035}{HF\+::\+Graph\+Generator\+::\+Setup\+Core\+Count()}}, \mbox{\hyperlink{a00008_source_l00355}{spacing}}, \mbox{\hyperlink{a00008_source_l00260}{HF\+::\+Graph\+Generator\+::\+Graph\+Params\+::up\+\_\+slope}}, \mbox{\hyperlink{a00008_source_l00259}{HF\+::\+Graph\+Generator\+::\+Graph\+Params\+::up\+\_\+step}}, and \mbox{\hyperlink{a00011_source_l00107}{HF\+::\+Graph\+Generator\+::\+Validate\+Start\+Point()}}.
 
 
 
-Referenced by \mbox{\hyperlink{a00008_source_l00464}{Build\+Network()}}.
+Referenced by \mbox{\hyperlink{a00008_source_l00467}{Build\+Network()}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01311_a5788e421d921ec0ff27defc139c45106_cgraph}
-\end{center}
-\end{figure}
+% FIG 8
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01311_a5788e421d921ec0ff27defc139c45106_icgraph}
-\end{center}
-\end{figure}
+% FIG 9
 
 
 \doxysubsection{Member Data Documentation}
@@ -648,7 +588,7 @@ Number of cores to use for graph generation.
 
 
 
-Definition at line \mbox{\hyperlink{a00008_source_l00348}{348}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
+Definition at line \mbox{\hyperlink{a00008_source_l00351}{351}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
 
 
 
@@ -666,7 +606,7 @@ Maximum number of nodes to generate. If less than zero, generate nodes without a
 
 
 
-Definition at line \mbox{\hyperlink{a00008_source_l00347}{347}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
+Definition at line \mbox{\hyperlink{a00008_source_l00350}{350}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
 
 
 
@@ -684,7 +624,7 @@ Multiplier for number of children to generate. The higher this is, the more dire
 
 
 
-Definition at line \mbox{\hyperlink{a00008_source_l00351}{351}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
+Definition at line \mbox{\hyperlink{a00008_source_l00354}{354}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
 
 
 
@@ -702,11 +642,11 @@ Minimum number of step connections for a node to be valid (minimum out degree of
 
 
 
-Definition at line \mbox{\hyperlink{a00008_source_l00350}{350}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
+Definition at line \mbox{\hyperlink{a00008_source_l00353}{353}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
 
 
 
-Referenced by \mbox{\hyperlink{a00008_source_l00464}{Build\+Network()}}, \mbox{\hyperlink{a00005_source_l00141}{Crawl\+Geom\+Parallel()}}, and \mbox{\hyperlink{a00005_source_l00069}{IMPL\+\_\+\+Build\+Network()}}.
+Referenced by \mbox{\hyperlink{a00008_source_l00467}{Build\+Network()}}, \mbox{\hyperlink{a00005_source_l00141}{Crawl\+Geom\+Parallel()}}, and \mbox{\hyperlink{a00005_source_l00069}{IMPL\+\_\+\+Build\+Network()}}.
 
 \mbox{\Hypertarget{a01311_a6c85bb69456393934b602a242d8f0bed}\label{a01311_a6c85bb69456393934b602a242d8f0bed}} 
 \index{HF::GraphGenerator::GraphGenerator@{HF::GraphGenerator::GraphGenerator}!params@{params}}
@@ -720,7 +660,7 @@ Parameters to run the graph generator.
 
 
 
-Definition at line \mbox{\hyperlink{a00008_source_l00354}{354}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
+Definition at line \mbox{\hyperlink{a00008_source_l00357}{357}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
 
 
 
@@ -738,7 +678,7 @@ A pointer to the raytracer to use for ray intersections.
 
 
 
-Definition at line \mbox{\hyperlink{a00008_source_l00356}{356}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
+Definition at line \mbox{\hyperlink{a00008_source_l00359}{359}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
 
 
 
@@ -756,7 +696,7 @@ Spacing between nodes. New nodes will be generated with atleast this much distan
 
 
 
-Definition at line \mbox{\hyperlink{a00008_source_l00352}{352}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
+Definition at line \mbox{\hyperlink{a00008_source_l00355}{355}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
 
 
 

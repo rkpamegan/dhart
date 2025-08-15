@@ -1,0 +1,13 @@
+digraph "nlohmann::detail::iter_impl::operator=="
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="nlohmann::detail::iter\l_impl::operator==",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="comparison: equal"];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="nlohmann::detail::invalid\l_iterator::create",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01567.html#a4e849260a3caa1b288c7e619130c6c09",tooltip=" "];
+  Node2 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="nlohmann::detail::exception\l::name",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01559.html#abf41a7e9178356314082284e6cfea278",tooltip=" "];
+}

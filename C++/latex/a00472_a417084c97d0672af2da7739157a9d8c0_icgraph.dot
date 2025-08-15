@@ -1,0 +1,15 @@
+digraph "HF::Pathfinding::InsertPathsIntoArray"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="HF::Pathfinding::InsertPaths\lIntoArray",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="A special version of FindPaths optimized for the C_Interface."];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="CreatePaths",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00456.html#gae1ac2805c3b86883bb88269ed3868367",tooltip="Find multiple shortest paths in paralllel."];
+  Node1 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="HF::Pathfinding::InsertAll\lToAllPathsIntoArray",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00472.html#a69bd3efcc13788e7c4be43b67d6002e5",tooltip="A special version of FindPaths optimized for the C_Interface, such that all paths possible from each ..."];
+  Node3 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="CreateAllToAllPaths",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00456.html#gaba6ec6ce84974dd6a311d7d65dd34221",tooltip="Find a path from every node in a graph to every other node."];
+}

@@ -12,13 +12,7 @@ A set of edge costs for a graph.
 
 
 Collaboration diagram for HF\+::Spatial\+Structures\+::Edge\+Cost\+Set\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=190pt]{a01545}
-\end{center}
-\end{figure}
+% FIG 0
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -41,7 +35,9 @@ float \mbox{\hyperlink{a01547_a3ab14e57d0bb9b4ee68f7a58b0a568ec}{operator\mbox{[
 float $\ast$ \mbox{\hyperlink{a01547_a1dbef69c08db4137463175a46043547d}{Get\+Ptr}} ()
 \begin{DoxyCompactList}\small\item\em Get the pointer to the start of this array. \end{DoxyCompactList}\item 
 const float $\ast$ \mbox{\hyperlink{a01547_aff0b1e0be6be4c65abd0c05717131e14}{Get\+Ptr}} () const
-\begin{DoxyCompactList}\small\item\em Get the pointer to the start of this array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Get the pointer to the start of this array. \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \mbox{\hyperlink{a01547_a648a299faad8ac79626ea123f59b2da2}{Get\+Edge\+Cost\+Set\+Costs}} ()
+\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -54,7 +50,7 @@ A set of edge costs for a graph.
 
 Arrays that can be swapped in and out of the array\textquotesingle{}s indices. 
 
-Definition at line \mbox{\hyperlink{a00269_source_l00375}{375}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
+Definition at line \mbox{\hyperlink{a00269_source_l00376}{376}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
 
 
 
@@ -71,7 +67,7 @@ Construct an empty edge cost set.
 
 
 
-Definition at line \mbox{\hyperlink{a00269_source_l00381}{381}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
+Definition at line \mbox{\hyperlink{a00269_source_l00382}{382}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
 
 \mbox{\Hypertarget{a01547_a292cb98e857b8ae2606395ed57ebcec8}\label{a01547_a292cb98e857b8ae2606395ed57ebcec8}} 
 \index{HF::SpatialStructures::EdgeCostSet@{HF::SpatialStructures::EdgeCostSet}!EdgeCostSet@{EdgeCostSet}}
@@ -91,20 +87,14 @@ Create an edge cost set and allocate a specific size.
 \end{DoxyParams}
 
 
-Definition at line \mbox{\hyperlink{a00269_source_l00388}{388}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
+Definition at line \mbox{\hyperlink{a00269_source_l00389}{389}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
 
 
 
-References \mbox{\hyperlink{a00269_source_l00403}{Resize\+If\+Needed()}}.
+References \mbox{\hyperlink{a00269_source_l00404}{Resize\+If\+Needed()}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01547_a292cb98e857b8ae2606395ed57ebcec8_cgraph}
-\end{center}
-\end{figure}
+% FIG 1
 
 
 \doxysubsection{Member Function Documentation}
@@ -116,32 +106,20 @@ Here is the call graph for this function\+:
 
 
 
-Definition at line \mbox{\hyperlink{a00269_source_l00429}{429}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
+Definition at line \mbox{\hyperlink{a00269_source_l00430}{430}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
 
 
 
-References \mbox{\hyperlink{a00269_source_l00394}{size()}}.
+References \mbox{\hyperlink{a00269_source_l00395}{size()}}.
 
 
 
-Referenced by \mbox{\hyperlink{a00269_source_l00424}{operator\mbox{[}$\,$\mbox{]}()}}.
+Referenced by \mbox{\hyperlink{a00269_source_l00425}{operator\mbox{[}$\,$\mbox{]}()}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01547_a4b139518bc0939554df19e83c8e0b916_cgraph}
-\end{center}
-\end{figure}
+% FIG 2
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01547_a4b139518bc0939554df19e83c8e0b916_icgraph}
-\end{center}
-\end{figure}
+% FIG 3
 \mbox{\Hypertarget{a01547_a3cbcc68757254cc1a56efb4aa9a20e44}\label{a01547_a3cbcc68757254cc1a56efb4aa9a20e44}} 
 \index{HF::SpatialStructures::EdgeCostSet@{HF::SpatialStructures::EdgeCostSet}!Clear@{Clear}}
 \index{Clear@{Clear}!HF::SpatialStructures::EdgeCostSet@{HF::SpatialStructures::EdgeCostSet}}
@@ -154,7 +132,21 @@ Clear all values from this edge cost set.
 
 
 
-Definition at line \mbox{\hyperlink{a00269_source_l00417}{417}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
+Definition at line \mbox{\hyperlink{a00269_source_l00418}{418}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
+
+\mbox{\Hypertarget{a01547_a648a299faad8ac79626ea123f59b2da2}\label{a01547_a648a299faad8ac79626ea123f59b2da2}} 
+\index{HF::SpatialStructures::EdgeCostSet@{HF::SpatialStructures::EdgeCostSet}!GetEdgeCostSetCosts@{GetEdgeCostSetCosts}}
+\index{GetEdgeCostSetCosts@{GetEdgeCostSetCosts}!HF::SpatialStructures::EdgeCostSet@{HF::SpatialStructures::EdgeCostSet}}
+\doxysubsubsection{\texorpdfstring{GetEdgeCostSetCosts()}{GetEdgeCostSetCosts()}}
+{\footnotesize\ttfamily std\+::vector$<$ float $>$ HF\+::\+Spatial\+Structures\+::\+Edge\+Cost\+Set\+::\+Get\+Edge\+Cost\+Set\+Costs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{a00269_source_l00464}{464}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
+
+
+
+References \mbox{\hyperlink{a00269_source_l00378}{costs}}.
 
 \mbox{\Hypertarget{a01547_a1dbef69c08db4137463175a46043547d}\label{a01547_a1dbef69c08db4137463175a46043547d}} 
 \index{HF::SpatialStructures::EdgeCostSet@{HF::SpatialStructures::EdgeCostSet}!GetPtr@{GetPtr}}
@@ -171,7 +163,7 @@ a pointer to the value of this \mbox{\hyperlink{a01547}{Edge\+Cost\+Set}}\textqu
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{a00269_source_l00448}{448}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
+Definition at line \mbox{\hyperlink{a00269_source_l00449}{449}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
 
 \mbox{\Hypertarget{a01547_aff0b1e0be6be4c65abd0c05717131e14}\label{a01547_aff0b1e0be6be4c65abd0c05717131e14}} 
 \index{HF::SpatialStructures::EdgeCostSet@{HF::SpatialStructures::EdgeCostSet}!GetPtr@{GetPtr}}
@@ -188,7 +180,7 @@ a pointer to the value of this \mbox{\hyperlink{a01547}{Edge\+Cost\+Set}}\textqu
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{a00269_source_l00458}{458}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
+Definition at line \mbox{\hyperlink{a00269_source_l00459}{459}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
 
 \mbox{\Hypertarget{a01547_a383475da303d0b59bedfa2a83f1487b4}\label{a01547_a383475da303d0b59bedfa2a83f1487b4}} 
 \index{HF::SpatialStructures::EdgeCostSet@{HF::SpatialStructures::EdgeCostSet}!operator\mbox{[}\mbox{]}@{operator[]}}
@@ -210,20 +202,14 @@ the value at index i in costs.
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{a00269_source_l00424}{424}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
+Definition at line \mbox{\hyperlink{a00269_source_l00425}{425}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
 
 
 
-References \mbox{\hyperlink{a00269_source_l00429}{bounds\+\_\+check()}}.
+References \mbox{\hyperlink{a00269_source_l00430}{bounds\+\_\+check()}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01547_a383475da303d0b59bedfa2a83f1487b4_cgraph}
-\end{center}
-\end{figure}
+% FIG 4
 \mbox{\Hypertarget{a01547_a3ab14e57d0bb9b4ee68f7a58b0a568ec}\label{a01547_a3ab14e57d0bb9b4ee68f7a58b0a568ec}} 
 \index{HF::SpatialStructures::EdgeCostSet@{HF::SpatialStructures::EdgeCostSet}!operator\mbox{[}\mbox{]}@{operator[]}}
 \index{operator\mbox{[}\mbox{]}@{operator[]}!HF::SpatialStructures::EdgeCostSet@{HF::SpatialStructures::EdgeCostSet}}
@@ -244,20 +230,14 @@ the value at index i in costs.
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{a00269_source_l00438}{438}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
+Definition at line \mbox{\hyperlink{a00269_source_l00439}{439}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
 
 
 
-References \mbox{\hyperlink{a00269_source_l00429}{bounds\+\_\+check()}}.
+References \mbox{\hyperlink{a00269_source_l00430}{bounds\+\_\+check()}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01547_a3ab14e57d0bb9b4ee68f7a58b0a568ec_cgraph}
-\end{center}
-\end{figure}
+% FIG 5
 \mbox{\Hypertarget{a01547_a22bf925d64a8ab8c0920d668068dc3db}\label{a01547_a22bf925d64a8ab8c0920d668068dc3db}} 
 \index{HF::SpatialStructures::EdgeCostSet@{HF::SpatialStructures::EdgeCostSet}!ResizeIfNeeded@{ResizeIfNeeded}}
 \index{ResizeIfNeeded@{ResizeIfNeeded}!HF::SpatialStructures::EdgeCostSet@{HF::SpatialStructures::EdgeCostSet}}
@@ -275,32 +255,20 @@ Resize this edge matrix if needed.
 \end{DoxyParams}
 If size is less than the current size, this function doesn\textquotesingle{}t do anything. All new values are defaulted to NAN. 
 
-Definition at line \mbox{\hyperlink{a00269_source_l00403}{403}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
+Definition at line \mbox{\hyperlink{a00269_source_l00404}{404}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
 
 
 
-References \mbox{\hyperlink{a00269_source_l00377}{costs}}, and \mbox{\hyperlink{a00269_source_l00394}{size()}}.
+References \mbox{\hyperlink{a00269_source_l00378}{costs}}, and \mbox{\hyperlink{a00269_source_l00395}{size()}}.
 
 
 
-Referenced by \mbox{\hyperlink{a00269_source_l00388}{Edge\+Cost\+Set()}}.
+Referenced by \mbox{\hyperlink{a00269_source_l00389}{Edge\+Cost\+Set()}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01547_a22bf925d64a8ab8c0920d668068dc3db_cgraph}
-\end{center}
-\end{figure}
+% FIG 6
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01547_a22bf925d64a8ab8c0920d668068dc3db_icgraph}
-\end{center}
-\end{figure}
+% FIG 7
 \mbox{\Hypertarget{a01547_abc5ff8ee3175dca75cacbfbd592907db}\label{a01547_abc5ff8ee3175dca75cacbfbd592907db}} 
 \index{HF::SpatialStructures::EdgeCostSet@{HF::SpatialStructures::EdgeCostSet}!size@{size}}
 \index{size@{size}!HF::SpatialStructures::EdgeCostSet@{HF::SpatialStructures::EdgeCostSet}}
@@ -316,20 +284,14 @@ how many values this matrix can hold, or the size of its internal costs array.
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{a00269_source_l00394}{394}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
+Definition at line \mbox{\hyperlink{a00269_source_l00395}{395}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
 
 
 
-Referenced by \mbox{\hyperlink{a00269_source_l00429}{bounds\+\_\+check()}}, and \mbox{\hyperlink{a00269_source_l00403}{Resize\+If\+Needed()}}.
+Referenced by \mbox{\hyperlink{a00269_source_l00430}{bounds\+\_\+check()}}, and \mbox{\hyperlink{a00269_source_l00404}{Resize\+If\+Needed()}}.
 
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01547_abc5ff8ee3175dca75cacbfbd592907db_icgraph}
-\end{center}
-\end{figure}
+% FIG 8
 
 
 \doxysubsection{Member Data Documentation}
@@ -345,11 +307,11 @@ Array of costs to be used like eigen\textquotesingle{}s internal indices array.
 
 
 
-Definition at line \mbox{\hyperlink{a00269_source_l00377}{377}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
+Definition at line \mbox{\hyperlink{a00269_source_l00378}{378}} of file \mbox{\hyperlink{a00269_source}{graph.\+h}}.
 
 
 
-Referenced by \mbox{\hyperlink{a00269_source_l00403}{Resize\+If\+Needed()}}.
+Referenced by \mbox{\hyperlink{a00269_source_l00464}{Get\+Edge\+Cost\+Set\+Costs()}}, and \mbox{\hyperlink{a00269_source_l00404}{Resize\+If\+Needed()}}.
 
 
 

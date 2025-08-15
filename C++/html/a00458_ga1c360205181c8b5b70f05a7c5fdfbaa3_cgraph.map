@@ -1,0 +1,4 @@
+<map id="GetEdgeCosts" name="GetEdgeCosts">
+<area shape="rect" id="node1" title="Get all edge costs of type cost_type in the graph." alt="" coords="5,13,113,40"/>
+<area shape="rect" id="node2" href="$a01551.html#ac2c59f04d4c958a0f78d92448600e393" title="Get edge costs of all given edges" alt="" coords="161,5,319,48"/>
+</map>

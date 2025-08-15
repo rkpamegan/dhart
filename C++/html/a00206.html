@@ -105,12 +105,13 @@ $(document).ready(function(){initNavTree('a00206.html',''); initResizable(); });
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for path_finder.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00207.svg" width="419" height="128"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00207.svg" width="503" height="128"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -118,7 +119,7 @@ $(document).ready(function(){initNavTree('a00206.html',''); initResizable(); });
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00208.svg" width="307" height="144"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00208.svg" width="312" height="144"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -157,7 +158,6 @@ Functions</h2></td></tr>
 <tr class="memdesc:a15badb9d0a17849de7b21105605c9c91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a path from every id in start_ids to the matching end node in end_ids.  <a href="a00472.html#a15badb9d0a17849de7b21105605c9c91">More...</a><br /></td></tr>
 <tr class="separator:a15badb9d0a17849de7b21105605c9c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb65ba6c3ed7a1999d9f40ae14ba3269"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="a02083.html">HF::SpatialStructures::Path</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00472.html#abb65ba6c3ed7a1999d9f40ae14ba3269">HF::Pathfinding::FindAllPaths</a> (BoostGraph *bg)</td></tr>
-<tr class="memdesc:abb65ba6c3ed7a1999d9f40ae14ba3269"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a path from every node to every node (NOTE: Not implemented yet.)   <a href="a00472.html#abb65ba6c3ed7a1999d9f40ae14ba3269">More...</a><br /></td></tr>
 <tr class="separator:abb65ba6c3ed7a1999d9f40ae14ba3269"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a417084c97d0672af2da7739157a9d8c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00472.html#a417084c97d0672af2da7739157a9d8c0">HF::Pathfinding::InsertPathsIntoArray</a> (const <a class="el" href="a01383.html">BoostGraph</a> *bg, const std::vector&lt; int &gt; &amp;start_points, const std::vector&lt; int &gt; &amp;end_points, <a class="el" href="a02083.html">HF::SpatialStructures::Path</a> **out_paths, <a class="el" href="a02079.html">HF::SpatialStructures::PathMember</a> **out_path_members, int *out_sizes)</td></tr>
 <tr class="memdesc:a417084c97d0672af2da7739157a9d8c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">A special version of FindPaths optimized for the C_Interface.  <a href="a00472.html#a417084c97d0672af2da7739157a9d8c0">More...</a><br /></td></tr>
@@ -165,9 +165,13 @@ Functions</h2></td></tr>
 <tr class="memitem:ab58662be8e56c333d74d60a823e810e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01395.html">DistanceAndPredecessor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00472.html#ab58662be8e56c333d74d60a823e810e3">HF::Pathfinding::GenerateDistanceAndPred</a> (const <a class="el" href="a01383.html">BoostGraph</a> &amp;bg)</td></tr>
 <tr class="memdesc:ab58662be8e56c333d74d60a823e810e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the distance and predecessor matricies for a specific boost graph.  <a href="a00472.html#ab58662be8e56c333d74d60a823e810e3">More...</a><br /></td></tr>
 <tr class="separator:ab58662be8e56c333d74d60a823e810e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a496379e77c1c41453ef021358f8372fb"><td class="memItemLeft" align="right" valign="top">DistanceAndPredecessor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00472.html#a496379e77c1c41453ef021358f8372fb">HF::Pathfinding::GenerateDistanceAndPredFast</a> (const BoostGraph &amp;bg)</td></tr>
+<tr class="separator:a496379e77c1c41453ef021358f8372fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69bd3efcc13788e7c4be43b67d6002e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00472.html#a69bd3efcc13788e7c4be43b67d6002e5">HF::Pathfinding::InsertAllToAllPathsIntoArray</a> (<a class="el" href="a01383.html">BoostGraph</a> *bg, <a class="el" href="a02083.html">HF::SpatialStructures::Path</a> **out_paths, <a class="el" href="a02079.html">HF::SpatialStructures::PathMember</a> **out_path_members, int *out_sizes)</td></tr>
 <tr class="memdesc:a69bd3efcc13788e7c4be43b67d6002e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">A special version of FindPaths optimized for the C_Interface, such that all paths possible from each node to every other node are generated.  <a href="a00472.html#a69bd3efcc13788e7c4be43b67d6002e5">More...</a><br /></td></tr>
 <tr class="separator:a69bd3efcc13788e7c4be43b67d6002e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d24adcb1c0891a98e7d9a8d36f8cc01"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00472.html#a6d24adcb1c0891a98e7d9a8d36f8cc01">HF::Pathfinding::FindAPSP</a> (<a class="el" href="a01383.html">BoostGraph</a> &amp;bg)</td></tr>
+<tr class="separator:a6d24adcb1c0891a98e7d9a8d36f8cc01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13feb2f4c5d11a3eeea4ac367856d592"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00206.html#a13feb2f4c5d11a3eeea4ac367856d592">operator&lt;&lt;</a> (std::ostream &amp;os, <a class="el" href="a01395.html">HF::Pathfinding::DistanceAndPredecessor</a> &amp;dist_pred)</td></tr>
 <tr class="memdesc:a13feb2f4c5d11a3eeea4ac367856d592"><td class="mdescLeft">&#160;</td><td class="mdescRight">An overload to print <a class="el" href="a01395.html" title="Holds and maintains a distance and predecessor matrix.">HF::Pathfinding::DistanceAndPredecessor</a> when passed to cout .  <a href="a00206.html#a13feb2f4c5d11a3eeea4ac367856d592">More...</a><br /></td></tr>
 <tr class="separator:a13feb2f4c5d11a3eeea4ac367856d592"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -215,15 +219,15 @@ Functions</h2></td></tr>
 
 <p>An overload to print <a class="el" href="a01395.html" title="Holds and maintains a distance and predecessor matrix.">HF::Pathfinding::DistanceAndPredecessor</a> when passed to cout . </p>
 
-<p class="definition">Definition at line <a class="el" href="a00206_source.html#l00621">621</a> of file <a class="el" href="a00206_source.html">path_finder.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00206_source.html#l00625">625</a> of file <a class="el" href="a00206_source.html">path_finder.h</a>.</p>
 
-<p class="reference">References <a class="el" href="a00206_source.html#l00439">HF::Pathfinding::DistanceAndPredecessor::GetRowOfDist()</a>, <a class="el" href="a00206_source.html#l00453">HF::Pathfinding::DistanceAndPredecessor::GetRowOfPred()</a>, and <a class="el" href="a00206_source.html#l00413">HF::Pathfinding::DistanceAndPredecessor::size</a>.</p>
+<p class="reference">References <a class="el" href="a00206_source.html#l00437">HF::Pathfinding::DistanceAndPredecessor::GetRowOfDist()</a>, <a class="el" href="a00206_source.html#l00451">HF::Pathfinding::DistanceAndPredecessor::GetRowOfPred()</a>, and <a class="el" href="a00206_source.html#l00411">HF::Pathfinding::DistanceAndPredecessor::size</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00206_a13feb2f4c5d11a3eeea4ac367856d592_cgraph.svg" width="355" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00206_a13feb2f4c5d11a3eeea4ac367856d592_cgraph.svg" width="358" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

@@ -9,27 +9,16 @@ Contains declarations for all functions related to the graph generator.
 {\ttfamily \#include $<$set$>$}\newline
 {\ttfamily \#include $<$vector$>$}\newline
 {\ttfamily \#include $<$array$>$}\newline
-{\ttfamily \#include $<$Node.\+h$>$}\newline
+{\ttfamily \#include $<$node.\+h$>$}\newline
+{\ttfamily \#include $<$graph.\+h$>$}\newline
 {\ttfamily \#include $<$cassert$>$}\newline
 {\ttfamily \#include $<$variant$>$}\newline
 {\ttfamily \#include $<$Multi\+RT.\+h$>$}\newline
 {\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
 Include dependency graph for graph\+\_\+generator.\+h\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a00009}
-\end{center}
-\end{figure}
+% FIG 0
 This graph shows which files directly or indirectly include this file\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a00010}
-\end{center}
-\end{figure}
+% FIG 1
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
@@ -111,8 +100,18 @@ std\+::vector$<$ real3 $>$ \mbox{\hyperlink{a00463_a41e03f9bab54e4e0d1314c6a4bdf
 \begin{DoxyCompactList}\small\item\em Move a node in {\ttfamily direction} by {\ttfamily dist} units. \end{DoxyCompactList}\item 
 std\+::vector$<$ real3 $>$ \mbox{\hyperlink{a00463_a4b7cc0ad0002975404acef5064f4f546}{HF\+::\+Graph\+Generator\+::\+Check\+Children}} (const real3 \&parent, const std\+::vector$<$ real3 $>$ \&possible\+\_\+children, Ray\+Tracer \&rt, const Graph\+Params \&params)
 \begin{DoxyCompactList}\small\item\em Determine whether children are over valid ground, and and meet upstep/downstep requirements. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{a00465_af0378d900074d484ba791d4317e5935e}{HF\+::\+Spatial\+Structures\+::\+STEP}} \mbox{\hyperlink{a00463_a260a25e02193ce904849ee090daefa2e}{HF\+::\+Graph\+Generator\+::\+Check\+Connection}} (const real3 \&parent, const real3 \&child, Ray\+Tracer \&rt)
+\begin{DoxyCompactList}\small\item\em Determine what kind of step (if any) is between parent and child, given that a connection was verified using the graph generator. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{a00465_af0378d900074d484ba791d4317e5935e}{HF\+::\+Spatial\+Structures\+::\+STEP}} \mbox{\hyperlink{a00463_aeab1db37b5aa614235f109d5dd9711a9}{HF\+::\+Graph\+Generator\+::\+Check\+Connection}} (const real3 \&parent, const real3 \&child, Ray\+Tracer \&rt, const Graph\+Params \&params)
 \begin{DoxyCompactList}\small\item\em Determine what kind of step (if any) is between parent and child. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{a01535}{HF\+::\+Spatial\+Structures\+::\+Edge\+Set}} \mbox{\hyperlink{a00463_a176c58b25fb5cb545d17128d4535f921}{HF\+::\+Graph\+Generator\+::\+Calculate\+Step\+Type}} (const \mbox{\hyperlink{a00465_a01543}{HF\+::\+Spatial\+Structures\+::\+Subgraph}} \&sg, \mbox{\hyperlink{a01419}{HF\+::\+Ray\+Tracer\+::\+Multi\+RT}} \&rt)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{a01535}{HF\+::\+Spatial\+Structures\+::\+Edge\+Set}} $>$ \mbox{\hyperlink{a00463_a81398de53e151ae58b206523e555309e}{HF\+::\+Graph\+Generator\+::\+Calculate\+Step\+Type}} (const \mbox{\hyperlink{a01551}{HF\+::\+Spatial\+Structures\+::\+Graph}} \&g, \mbox{\hyperlink{a01419}{HF\+::\+Ray\+Tracer\+::\+Multi\+RT}} \&rt)
+\item 
+void \mbox{\hyperlink{a00463_a0251caf5a32eb2c1f9d846d88eb7fe22}{HF\+::\+Graph\+Generator\+::\+Calculate\+And\+Store\+Step\+Type}} (\mbox{\hyperlink{a01551}{HF\+::\+Spatial\+Structures\+::\+Graph}} \&g, \mbox{\hyperlink{a01419}{HF\+::\+Ray\+Tracer\+::\+Multi\+RT}} \&rt)
+\item 
+bool \mbox{\hyperlink{a00463_a5d2ad6de2131b1a90a80f901ac8dd185}{HF\+::\+Graph\+Generator\+::\+Compare\+Check\+Connections}} (\mbox{\hyperlink{a01551}{HF\+::\+Spatial\+Structures\+::\+Graph}} \&g, Ray\+Tracer \&rt, const Graph\+Params \&params, std\+::vector$<$ \mbox{\hyperlink{a01535}{HF\+::\+Spatial\+Structures\+::\+Edge\+Set}} $>$ to\+\_\+compare)
+\item 
 bool \mbox{\hyperlink{a00463_ace66c1b60785c32433402f012019ab81}{HF\+::\+Graph\+Generator\+::\+Occlusion\+Check}} (const real3 \&parent, const real3 \&child, Ray\+Tracer \&RT)
 \begin{DoxyCompactList}\small\item\em Determine if there is a valid line of sight between parent and child. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{a00463_a9daa85cb56a1b18d44f46aa9c420afde}{HF\+::\+Graph\+Generator\+::\+Check\+Slope}} (const real3 \&parent, const real3 \&child, const Graph\+Params \&gp)
@@ -149,18 +148,12 @@ Definition in file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
 \doxysubsubsection{struct HF\+::Graph\+Generator\+::Precision}
 Various parameters to set the precision of certain parts of the graph generator. 
 
-Definition at line \mbox{\hyperlink{a00008_source_l00111}{111}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
+Definition at line \mbox{\hyperlink{a00008_source_l00114}{114}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
 
 
 
 Collaboration diagram for HF\+::Graph\+Generator\+::Precision\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=193pt]{a01293}
-\end{center}
-\end{figure}
+% FIG 2
 \begin{DoxyFields}{Class Members}
 \mbox{\Hypertarget{a00463_a4fa4f096863296469711e52da4b36b9c}\label{a00463_a4fa4f096863296469711e52da4b36b9c}} 
 \mbox{\hyperlink{a00463_a6d9d3b43eebc7f05a36e6264eb08bb5a}{real\_t}}&
@@ -186,18 +179,12 @@ node\_z&
 \doxysubsubsection{struct HF\+::Graph\+Generator\+::Graph\+Params}
 Holds parameters for the \mbox{\hyperlink{a01311}{Graph\+Generator}}. 
 
-Definition at line \mbox{\hyperlink{a00008_source_l00255}{255}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
+Definition at line \mbox{\hyperlink{a00008_source_l00258}{258}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
 
 
 
 Collaboration diagram for HF\+::Graph\+Generator\+::Graph\+Params\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01301}
-\end{center}
-\end{figure}
+% FIG 3
 \begin{DoxyFields}{Class Members}
 \mbox{\Hypertarget{a00463_a7c141d33285a77c81fc1b9ce0b210d72}\label{a00463_a7c141d33285a77c81fc1b9ce0b210d72}} 
 \mbox{\hyperlink{a00463_a6d9d3b43eebc7f05a36e6264eb08bb5a}{real\_t}}&

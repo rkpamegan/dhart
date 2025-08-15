@@ -1,0 +1,15 @@
+digraph "CastSingleRayDistance"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="CastSingleRayDistance",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Cast a single ray and get the distance to its hit and the mesh ID if it hit anything...."];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="HF::RayTracer::EmbreeRay\lTracer::IntersectOutputArguments",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01411.html#a7f8ab81033bdefaea0eea729aa9125ae",tooltip="Cast a ray from origin in direction and update the parameters instead of returning a hitstruct."];
+  Node2 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="HF::RayTracer::HitStruct\l::DidHit",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01415.html#a3d86c2c8d8e0ec6bf63a653ec89807a8",tooltip="Determine whether or not this hitstruct contains a hit."];
+  Node3 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="HF::RayTracer::DidIntersect",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00464.html#a2630761a64fac02a4ee33abaf5c885a1",tooltip=" "];
+}

@@ -1,0 +1,21 @@
+digraph "HF::RayTracer::NanoRTRayTracer::PointIntersection"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="HF::RayTracer::NanoRTRay\lTracer::PointIntersection",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="HF::RayTracer::NanoRTRay\lTracer::Intersect",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01519.html#a980fe63296fb23f96ceafc82789cff6c",tooltip=" "];
+  Node2 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="HF::RayTracer::NanoRTRay\lTracer::CreateHit",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01519.html#a7aa768fa79aa76a2a70d2a5e348a2374",tooltip=" "];
+  Node2 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="nanort::BVHAccel::Traverse",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01483.html#a4d07d0fc035d860dd1bfbeaa90c14a11",tooltip="Traverse into BVH along ray and find closest hit point & primitive if found."];
+  Node4 -> Node5 [color="steelblue1",style="solid"];
+  Node5 [label="nanort::IntersectRayAABB",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00474.html#aa5a9a561d084639fafc84873ab8f3d51",tooltip=" "];
+  Node4 -> Node6 [color="steelblue1",style="solid"];
+  Node6 [label="nanort::vsafe_inverse",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00474.html#aa6d08ee0bfbbaa13319f31e5412111bc",tooltip=" "];
+  Node1 -> Node7 [color="steelblue1",style="solid"];
+  Node7 [label="HF::RayTracer::NanoRTRay\lTracer::MovePoint",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01519.html#a13640190d89da1907a459657aa99eb60",tooltip=" "];
+}

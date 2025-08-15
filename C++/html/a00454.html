@@ -104,10 +104,65 @@ Functions</h2></td></tr>
 <tr class="memitem:gab9f58e3ecc686fa9bc34519b0faed734"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00407.html#a91fa3b2bb3a7312ec39d74cc1fbc7bbe">C_INTERFACE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00454.html#gab9f58e3ecc686fa9bc34519b0faed734">GenerateGraphObstacles</a> (<a class="el" href="a01411.html">HF::RayTracer::EmbreeRayTracer</a> *ray_tracer, const float *start_point, const float *spacing, int MaxNodes, float UpStep, float UpSlope, float DownStep, float DownSlope, int max_step_connection, int min_connections, int core_count, const int *obstacle_ids, const int *walkable_ids, int num_obstacles, int num_walkables, <a class="el" href="a01551.html">HF::SpatialStructures::Graph</a> **out_graph)</td></tr>
 <tr class="memdesc:gab9f58e3ecc686fa9bc34519b0faed734"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a graph by performing a breadth-first search of accessible space, seperating obstacles from walkable geometry.  <a href="a00454.html#gab9f58e3ecc686fa9bc34519b0faed734">More...</a><br /></td></tr>
 <tr class="separator:gab9f58e3ecc686fa9bc34519b0faed734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae7f55e49ba1992471430d0e3d415ebae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00407.html#a91fa3b2bb3a7312ec39d74cc1fbc7bbe">C_INTERFACE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00454.html#gae7f55e49ba1992471430d0e3d415ebae">CalculateAndStoreStepTypes</a> (<a class="el" href="a01551.html">HF::SpatialStructures::Graph</a> *g, <a class="el" href="a01411.html">HF::RayTracer::EmbreeRayTracer</a> *ray_tracer)</td></tr>
+<tr class="memdesc:gae7f55e49ba1992471430d0e3d415ebae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query the graph and identify the step types of all edges, adding them to the graph.  <a href="a00454.html#gae7f55e49ba1992471430d0e3d415ebae">More...</a><br /></td></tr>
+<tr class="separator:gae7f55e49ba1992471430d0e3d415ebae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p >Perform a breadth-first search on a mesh to find accessible space. </p>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="gae7f55e49ba1992471430d0e3d415ebae" name="gae7f55e49ba1992471430d0e3d415ebae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae7f55e49ba1992471430d0e3d415ebae">&#9670;&#160;</a></span>CalculateAndStoreStepTypes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00407.html#a91fa3b2bb3a7312ec39d74cc1fbc7bbe">C_INTERFACE</a> CalculateAndStoreStepTypes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a01551.html">HF::SpatialStructures::Graph</a> *&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a01411.html">HF::RayTracer::EmbreeRayTracer</a> *&#160;</td>
+          <td class="paramname"><em>ray_tracer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="a00407.html">Cinterface/analysis_C.h</a>&gt;</code></p>
+
+<p>Query the graph and identify the step types of all edges, adding them to the graph. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>Graph used to query step types.</td></tr>
+    <tr><td class="paramname">ray_tracer</td><td>Raytracer containing the geometry to use for graph generation.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="">HF_STATUS::OK</a> if query was successful and edges corresponding to step types have been added to the graph. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="a00404_source.html#l00109">109</a> of file <a class="el" href="a00404_source.html">analysis_C.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="a01551.html#a6f04c5320d4bf88120f8c5e31b0fb02a">HF::SpatialStructures::Graph::AddEdges()</a>, <a class="el" href="a00011_source.html#l00303">HF::GraphGenerator::CalculateStepType()</a>, <a class="el" href="a01551.html#a41cece77d0eee98df39ecc6d3a366ec8">HF::SpatialStructures::Graph::Compress()</a>, and <a class="el" href="a00176_source.html#l00032">HF::Exceptions::OK</a>.</p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00454_gae7f55e49ba1992471430d0e3d415ebae_cgraph.svg" width="1170" height="278"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 <a id="ga2df84a732d1edfb70b7bd26d3282e129" name="ga2df84a732d1edfb70b7bd26d3282e129"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga2df84a732d1edfb70b7bd26d3282e129">&#9670;&#160;</a></span>GenerateGraph()</h2>
 
@@ -258,7 +313,7 @@ Functions</h2></td></tr>
 <div class="line">            std::cerr &lt;&lt; <span class="stringliteral">&quot;Error at GenerateGraph, code: &quot;</span> &lt;&lt; status &lt;&lt; std::endl;</div>
 <div class="line">        }</div>
 <div class="ttc" id="aa00454_html_ga2df84a732d1edfb70b7bd26d3282e129"><div class="ttname"><a href="a00454.html#ga2df84a732d1edfb70b7bd26d3282e129">GenerateGraph</a></div><div class="ttdeci">C_INTERFACE GenerateGraph(HF::RayTracer::EmbreeRayTracer *ray_tracer, const float *start_point, const float *spacing, int MaxNodes, float UpStep, float UpSlope, float DownStep, float DownSlope, int max_step_connections, int min_connections, int core_count, Graph **out_graph)</div><div class="ttdoc">Construct a graph by performing a breadth-first search of accessible space.</div><div class="ttdef"><b>Definition:</b> <a href="a00404_source.html#l00022">analysis_C.cpp:22</a></div></div>
-<div class="ttc" id="aa01551_html"><div class="ttname"><a href="a01551.html">HF::SpatialStructures::Graph</a></div><div class="ttdoc">A Graph of nodes connected by edges that supports both integers and HF::SpatialStructures::Node.</div><div class="ttdef"><b>Definition:</b> <a href="a00269_source.html#l00486">graph.h:486</a></div></div>
+<div class="ttc" id="aa01551_html"><div class="ttname"><a href="a01551.html">HF::SpatialStructures::Graph</a></div><div class="ttdoc">A Graph of nodes connected by edges that supports both integers and HF::SpatialStructures::Node.</div><div class="ttdef"><b>Definition:</b> <a href="a00269_source.html#l00490">graph.h:490</a></div></div>
 </div><!-- fragment --><p ><b>Very important!</b> <b>Compress the graph</b> after generating a graph or adding edges.<br  />
  </p><div class="fragment"><div class="line">        <span class="comment">// Always compress the graph after generating a graph/adding new edges</span></div>
 <div class="line">        status = <a class="code hl_function" href="a00458.html#gab7ecc1be5c746ed3f99ab7494316c65d">Compress</a>(graph);</div>
@@ -267,7 +322,7 @@ Functions</h2></td></tr>
 <div class="line">            <span class="comment">// Error!</span></div>
 <div class="line">            std::cerr &lt;&lt; <span class="stringliteral">&quot;Error at Compress, code: &quot;</span> &lt;&lt; status &lt;&lt; std::endl;</div>
 <div class="line">        }</div>
-<div class="ttc" id="aa00458_html_gab7ecc1be5c746ed3f99ab7494316c65d"><div class="ttname"><a href="a00458.html#gab7ecc1be5c746ed3f99ab7494316c65d">Compress</a></div><div class="ttdeci">C_INTERFACE Compress(Graph *graph)</div><div class="ttdoc">Compress the given graph into a CSR representation.</div><div class="ttdef"><b>Definition:</b> <a href="a00434_source.html#l00228">spatialstructures_C.cpp:228</a></div></div>
+<div class="ttc" id="aa00458_html_gab7ecc1be5c746ed3f99ab7494316c65d"><div class="ttname"><a href="a00458.html#gab7ecc1be5c746ed3f99ab7494316c65d">Compress</a></div><div class="ttdeci">C_INTERFACE Compress(Graph *graph)</div><div class="ttdoc">Compress the given graph into a CSR representation.</div><div class="ttdef"><b>Definition:</b> <a href="a00434_source.html#l00395">spatialstructures_C.cpp:395</a></div></div>
 </div><!-- fragment --><p >To output the graph to the console, we must <b>retrieve its nodes</b>.<br  />
  </p><div class="fragment"><div class="line">        <span class="comment">// Get all nodes from graph first (the container of nodes)</span></div>
 <div class="line">        <span class="comment">// The address of the local variable node_vector will be passed to GetAllNodesFromGraph;</span></div>
@@ -346,13 +401,13 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="a00404_source.html#l00022">22</a> of file <a class="el" href="a00404_source.html">analysis_C.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="a00008_source.html#l00464">HF::GraphGenerator::GraphGenerator::BuildNetwork()</a>, <a class="el" href="a01551.html#aa70347b8a33b57c6f0a72d6eca4248d7">HF::SpatialStructures::Graph::Nodes()</a>, and <a class="el" href="a00176_source.html#l00032">HF::Exceptions::OK</a>.</p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="a00008_source.html#l00467">HF::GraphGenerator::GraphGenerator::BuildNetwork()</a>, <a class="el" href="a01551.html#aa70347b8a33b57c6f0a72d6eca4248d7">HF::SpatialStructures::Graph::Nodes()</a>, and <a class="el" href="a00176_source.html#l00032">HF::Exceptions::OK</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00454_ga2df84a732d1edfb70b7bd26d3282e129_cgraph.svg" width="1874" height="959"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00454_ga2df84a732d1edfb70b7bd26d3282e129_cgraph.svg" width="1891" height="959"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -616,13 +671,13 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="a00404_source.html#l00062">62</a> of file <a class="el" href="a00404_source.html">analysis_C.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="a00008_source.html#l00464">HF::GraphGenerator::GraphGenerator::BuildNetwork()</a>, <a class="el" href="a00404_source.html#l00015">MapToVector()</a>, <a class="el" href="a01551.html#aa70347b8a33b57c6f0a72d6eca4248d7">HF::SpatialStructures::Graph::Nodes()</a>, and <a class="el" href="a00176_source.html#l00032">HF::Exceptions::OK</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="a00008_source.html#l00467">HF::GraphGenerator::GraphGenerator::BuildNetwork()</a>, <a class="el" href="a00404_source.html#l00015">MapToVector()</a>, <a class="el" href="a01551.html#aa70347b8a33b57c6f0a72d6eca4248d7">HF::SpatialStructures::Graph::Nodes()</a>, and <a class="el" href="a00176_source.html#l00032">HF::Exceptions::OK</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00454_gab9f58e3ecc686fa9bc34519b0faed734_cgraph.svg" width="1934" height="959"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00454_gab9f58e3ecc686fa9bc34519b0faed734_cgraph.svg" width="1950" height="959"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

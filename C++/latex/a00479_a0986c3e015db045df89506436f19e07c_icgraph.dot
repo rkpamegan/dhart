@@ -1,0 +1,13 @@
+digraph "nlohmann::detail::dtoa_impl::format_buffer"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="nlohmann::detail::dtoa\l_impl::format_buffer",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="prettify v = buf * 10^decimal_exponent"];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="nlohmann::detail::to\l_chars",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00477.html#a4ceeb4ec7f2cd493dd9cf328044c1e3c",tooltip="generates a decimal representation of the floating-point number value in [first, last)."];
+  Node2 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="nlohmann::detail::serializer\l::dump_float",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a02055.html#a24b0fe45dc774441237bde198a133d8a",tooltip=" "];
+}

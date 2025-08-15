@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('a01551.html',''); initResizable(); });
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a01549.svg" width="1118" height="672"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01549.svg" width="1130" height="759"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -194,12 +194,54 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a819ecd54d0148ddf867e6ca77fec8379"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01551.html#a819ecd54d0148ddf867e6ca77fec8379">AddNodeAttribute</a> (int id, const std::string &amp;attribute, const std::string &amp;score)</td></tr>
 <tr class="memdesc:a819ecd54d0148ddf867e6ca77fec8379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an attribute to the node at id   <a href="a01551.html#a819ecd54d0148ddf867e6ca77fec8379">More...</a><br /></td></tr>
 <tr class="separator:a819ecd54d0148ddf867e6ca77fec8379"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa16fd49e5cca70bc64a6e306de75e089"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01551.html#aa16fd49e5cca70bc64a6e306de75e089">AddNodeAttributeFloat</a> (int id, const std::string &amp;name, const float score)</td></tr>
+<tr class="memdesc:aa16fd49e5cca70bc64a6e306de75e089"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a float attribute to the node at id. If the node at id already has a score for the attribute at name, then existing score should be overwritten.  <a href="a01551.html#aa16fd49e5cca70bc64a6e306de75e089">More...</a><br /></td></tr>
+<tr class="separator:aa16fd49e5cca70bc64a6e306de75e089"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a306a0277ba1caa0aa4a1227e2f847f09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01551.html#a306a0277ba1caa0aa4a1227e2f847f09">AddNodeAttributes</a> (const std::vector&lt; int &gt; &amp;id, const std::string &amp;name, const std::vector&lt; std::string &gt; &amp;scores)</td></tr>
 <tr class="memdesc:a306a0277ba1caa0aa4a1227e2f847f09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an attribute to the node at id. If the node at id already has a score for the attribute at name, then existing score should be overwritten   <a href="a01551.html#a306a0277ba1caa0aa4a1227e2f847f09">More...</a><br /></td></tr>
 <tr class="separator:a306a0277ba1caa0aa4a1227e2f847f09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace0104174af8ee72de49eae3e9dd8280"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01551.html#ace0104174af8ee72de49eae3e9dd8280">AddNodeAttributesFloat</a> (const std::vector&lt; int &gt; &amp;id, const std::string &amp;name, const std::vector&lt; float &gt; &amp;scores)</td></tr>
+<tr class="memdesc:ace0104174af8ee72de49eae3e9dd8280"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a float attribute to the node at id. If the node at id already has a score for the attribute at name, then existing score should be overwritten.  <a href="a01551.html#ace0104174af8ee72de49eae3e9dd8280">More...</a><br /></td></tr>
+<tr class="separator:ace0104174af8ee72de49eae3e9dd8280"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedd218785fbf6dabaa2fba2dca738618"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01551.html#aedd218785fbf6dabaa2fba2dca738618">GetNodeAttributes</a> (std::string attribute) const</td></tr>
 <tr class="memdesc:aedd218785fbf6dabaa2fba2dca738618"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the score for the given attribute of every node in the graph. Nodes that do not have a score for this attribute should return an empty string for this array.   <a href="a01551.html#aedd218785fbf6dabaa2fba2dca738618">More...</a><br /></td></tr>
 <tr class="separator:aedd218785fbf6dabaa2fba2dca738618"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a150e739eb5dbea7d980a2fbfa213f114"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01551.html#a150e739eb5dbea7d980a2fbfa213f114">GetNodeAttributesFloat</a> (std::string name) const</td></tr>
+<tr class="memdesc:a150e739eb5dbea7d980a2fbfa213f114"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the score for the given attribute of every node in the graph. Nodes that do not have a score for this attribute should return the default value 0.0 for this array.   <a href="a01551.html#a150e739eb5dbea7d980a2fbfa213f114">More...</a><br /></td></tr>
+<tr class="separator:a150e739eb5dbea7d980a2fbfa213f114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19e8bf9aa4b8c23beee618bd32d3c238"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01551.html#a19e8bf9aa4b8c23beee618bd32d3c238">GetNodeAttributesByID</a> (std::vector&lt; int &gt; &amp;ids, std::string attribute) const</td></tr>
+<tr class="memdesc:a19e8bf9aa4b8c23beee618bd32d3c238"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the score for the given attribute of the specified nodes. Nodes that do not have a score for this attribute should return an empty string for this array.   <a href="a01551.html#a19e8bf9aa4b8c23beee618bd32d3c238">More...</a><br /></td></tr>
+<tr class="separator:a19e8bf9aa4b8c23beee618bd32d3c238"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34d65fb6990ba01f83f9f4424165c8f2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01551.html#a34d65fb6990ba01f83f9f4424165c8f2">GetNodeAttributesByIDFloat</a> (std::vector&lt; int &gt; &amp;ids, std::string name) const</td></tr>
+<tr class="memdesc:a34d65fb6990ba01f83f9f4424165c8f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the score for the given attribute of the specified nodes. Nodes that do not have a score for this attribute should return an empty string for this array.   <a href="a01551.html#a34d65fb6990ba01f83f9f4424165c8f2">More...</a><br /></td></tr>
+<tr class="separator:a34d65fb6990ba01f83f9f4424165c8f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9038c7f6c83180f273e4e103ddd9636"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01551.html#ae9038c7f6c83180f273e4e103ddd9636">IsFloatAttribute</a> (const std::string &amp;name) const</td></tr>
+<tr class="memdesc:ae9038c7f6c83180f273e4e103ddd9636"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this attribute exists in the graph and contains float values.  <a href="a01551.html#ae9038c7f6c83180f273e4e103ddd9636">More...</a><br /></td></tr>
+<tr class="separator:ae9038c7f6c83180f273e4e103ddd9636"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1d4649c2867e70900fbab7eeca5f6b6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01551.html#ac1d4649c2867e70900fbab7eeca5f6b6">CountEdges</a> (const std::string &amp;cost_type) const</td></tr>
+<tr class="memdesc:ac1d4649c2867e70900fbab7eeca5f6b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of edges of associated cost type   <a href="a01551.html#ac1d4649c2867e70900fbab7eeca5f6b6">More...</a><br /></td></tr>
+<tr class="separator:ac1d4649c2867e70900fbab7eeca5f6b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a1f6bd7f9db0f0427482992519b6bc9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01551.html#a4a1f6bd7f9db0f0427482992519b6bc9">CountEdgesFromEdgeSets</a> (std::vector&lt; <a class="el" href="a01535.html">EdgeSet</a> &gt; AllEdges) const</td></tr>
+<tr class="memdesc:a4a1f6bd7f9db0f0427482992519b6bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of edges in a given edgeset.   <a href="a01551.html#a4a1f6bd7f9db0f0427482992519b6bc9">More...</a><br /></td></tr>
+<tr class="separator:a4a1f6bd7f9db0f0427482992519b6bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2c59f04d4c958a0f78d92448600e393"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01551.html#ac2c59f04d4c958a0f78d92448600e393">GetEdgeCosts</a> (const std::string &amp;cost_type) const</td></tr>
+<tr class="memdesc:ac2c59f04d4c958a0f78d92448600e393"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get edge costs of all given edges   <a href="a01551.html#ac2c59f04d4c958a0f78d92448600e393">More...</a><br /></td></tr>
+<tr class="separator:ac2c59f04d4c958a0f78d92448600e393"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa79a555f9fa789581d9f1905ebb0c55f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01551.html#aa79a555f9fa789581d9f1905ebb0c55f">GetEdgeCostsFromNodeIDs</a> (std::vector&lt; int &gt; &amp;ids, const std::string &amp;cost_type) const</td></tr>
+<tr class="memdesc:aa79a555f9fa789581d9f1905ebb0c55f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get costs of all given edges   <a href="a01551.html#aa79a555f9fa789581d9f1905ebb0c55f">More...</a><br /></td></tr>
+<tr class="separator:aa79a555f9fa789581d9f1905ebb0c55f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb28ad1f2f610b5564831415c0591fd9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01551.html#aeb28ad1f2f610b5564831415c0591fd9">MapPathToVectorOfNodes</a> (<a class="el" href="a02083.html">HF::SpatialStructures::Path</a> path) const</td></tr>
+<tr class="memdesc:aeb28ad1f2f610b5564831415c0591fd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps a path structure to a vector of node ids (n1,n2,n2,n3,n3...,nk-1,nk)   <a href="a01551.html#aeb28ad1f2f610b5564831415c0591fd9">More...</a><br /></td></tr>
+<tr class="separator:aeb28ad1f2f610b5564831415c0591fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2708f74f927aab514a3c2d8662f22616"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01551.html#a2708f74f927aab514a3c2d8662f22616">MapPathToVectorOfNodes</a> (std::vector&lt; int &gt; &amp;path) const</td></tr>
+<tr class="memdesc:a2708f74f927aab514a3c2d8662f22616"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps a path of node ids (n1,n2,...,nk) to (n1,n2,n2,n3,n3...,nk-1,nk)   <a href="a01551.html#a2708f74f927aab514a3c2d8662f22616">More...</a><br /></td></tr>
+<tr class="separator:a2708f74f927aab514a3c2d8662f22616"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fb4bbcb7d8b4b9c58b172fa71548890"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01551.html#a0fb4bbcb7d8b4b9c58b172fa71548890">AlternateCostsAlongPath</a> (<a class="el" href="a02083.html">Path</a> path, const std::string &amp;cost_type) const</td></tr>
+<tr class="memdesc:a0fb4bbcb7d8b4b9c58b172fa71548890"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes an alternate cost type between nodes along a path.   <a href="a01551.html#a0fb4bbcb7d8b4b9c58b172fa71548890">More...</a><br /></td></tr>
+<tr class="separator:a0fb4bbcb7d8b4b9c58b172fa71548890"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a016824f0f85631e758aa1f4b74f4e108"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01551.html#a016824f0f85631e758aa1f4b74f4e108">AlternateCostsAlongPath</a> (std::vector&lt; int &gt; &amp;path, const std::string &amp;cost_type) const</td></tr>
+<tr class="memdesc:a016824f0f85631e758aa1f4b74f4e108"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes an alternate cost type between nodes along a path.   <a href="a01551.html#a016824f0f85631e758aa1f4b74f4e108">More...</a><br /></td></tr>
+<tr class="separator:a016824f0f85631e758aa1f4b74f4e108"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0279f117df3d0d29d0a06301dac146a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01551.html#a0279f117df3d0d29d0a06301dac146a9">ClearNodeAttributes</a> (std::string name)</td></tr>
 <tr class="memdesc:a0279f117df3d0d29d0a06301dac146a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the attribute at name and all of its contents from the internal hashmap   <a href="a01551.html#a0279f117df3d0d29d0a06301dac146a9">More...</a><br /></td></tr>
 <tr class="separator:a0279f117df3d0d29d0a06301dac146a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -220,9 +262,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2bb134f68f988eeee4e0ba3e2a698852"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01551.html#a2bb134f68f988eeee4e0ba3e2a698852">GetCost</a> (int parent_id, int child_id, const std::string &amp;cost_type=&quot;&quot;) const</td></tr>
 <tr class="memdesc:a2bb134f68f988eeee4e0ba3e2a698852"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the cost from parent_id to child_id in the given cost_type.  <a href="a01551.html#a2bb134f68f988eeee4e0ba3e2a698852">More...</a><br /></td></tr>
 <tr class="separator:a2bb134f68f988eeee4e0ba3e2a698852"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fb8dbfe1b401c67d85e7a0f361ebd69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01551.html#a7fb8dbfe1b401c67d85e7a0f361ebd69">Graph::AddEdges</a> (const std::vector&lt; std::vector&lt; <a class="el" href="a01531.html">IntEdge</a> &gt; &gt; &amp;edges, const std::string &amp;cost_type)</td></tr>
-<tr class="memdesc:a7fb8dbfe1b401c67d85e7a0f361ebd69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a set of intedges to the graph.  <a href="a01551.html#a7fb8dbfe1b401c67d85e7a0f361ebd69">More...</a><br /></td></tr>
-<tr class="separator:a7fb8dbfe1b401c67d85e7a0f361ebd69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a113e2d3a443e2a053d53761b9169b706"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01551.html#a113e2d3a443e2a053d53761b9169b706">AddEdges</a> (const std::vector&lt; std::vector&lt; <a class="el" href="a01531.html">IntEdge</a> &gt; &gt; &amp;edges, const std::string &amp;cost_type)</td></tr>
+<tr class="memdesc:a113e2d3a443e2a053d53761b9169b706"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a set of intedges to the graph.  <a href="a01551.html#a113e2d3a443e2a053d53761b9169b706">More...</a><br /></td></tr>
+<tr class="separator:a113e2d3a443e2a053d53761b9169b706"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae43774cd6f288b83585fcebfd30ccaee"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, <a class="el" href="a01547.html">EdgeCostSet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01551.html#ae43774cd6f288b83585fcebfd30ccaee">GetCostMap</a> (const std::string &amp;cost_type=&quot; &quot;) const</td></tr>
+<tr class="memdesc:ae43774cd6f288b83585fcebfd30ccaee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the cost map for the graph.  <a href="a01551.html#ae43774cd6f288b83585fcebfd30ccaee">More...</a><br /></td></tr>
+<tr class="separator:ae43774cd6f288b83585fcebfd30ccaee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f51b29e611c7bb59a0f4242d6e01c73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01551.html#a8f51b29e611c7bb59a0f4242d6e01c73">ClearCostArrays</a> (const std::string &amp;cost_name=&quot;&quot;)</td></tr>
 <tr class="memdesc:a8f51b29e611c7bb59a0f4242d6e01c73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear one or more cost arrays from the graph.  <a href="a01551.html#a8f51b29e611c7bb59a0f4242d6e01c73">More...</a><br /></td></tr>
 <tr class="separator:a8f51b29e611c7bb59a0f4242d6e01c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -234,6 +279,8 @@ Public Member Functions</h2></td></tr>
 Private Types</h2></td></tr>
 <tr class="memitem:acfe4780ebfdd7f66b9fa77a6f0301d52"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01551.html#acfe4780ebfdd7f66b9fa77a6f0301d52">NodeAttributeValueMap</a> = robin_hood::unordered_map&lt; int, std::string &gt;</td></tr>
 <tr class="separator:acfe4780ebfdd7f66b9fa77a6f0301d52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf29585f237fcb9f1bdebb0ca40f415e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01551.html#adf29585f237fcb9f1bdebb0ca40f415e">NodeFloatAttributeValueMap</a> = robin_hood::unordered_map&lt; int, float &gt;</td></tr>
+<tr class="separator:adf29585f237fcb9f1bdebb0ca40f415e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -321,6 +368,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:aeec76d5e193267be65a42eb1794a3abb"><td class="memItemLeft" align="right" valign="top">robin_hood::unordered_map&lt; std::string, <a class="el" href="a01551.html#acfe4780ebfdd7f66b9fa77a6f0301d52">NodeAttributeValueMap</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01551.html#aeec76d5e193267be65a42eb1794a3abb">node_attr_map</a></td></tr>
 <tr class="memdesc:aeec76d5e193267be65a42eb1794a3abb"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a02071.html" title="A point in space with an ID.">Node</a> attribute type : Map of node id to node attribute.  <a href="a01551.html#aeec76d5e193267be65a42eb1794a3abb">More...</a><br /></td></tr>
 <tr class="separator:aeec76d5e193267be65a42eb1794a3abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a44380216849d6de32d77efce811c08"><td class="memItemLeft" align="right" valign="top">robin_hood::unordered_map&lt; std::string, <a class="el" href="a01551.html#adf29585f237fcb9f1bdebb0ca40f415e">NodeFloatAttributeValueMap</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01551.html#a7a44380216849d6de32d77efce811c08">node_float_attr_map</a></td></tr>
+<tr class="memdesc:a7a44380216849d6de32d77efce811c08"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a02071.html" title="A point in space with an ID.">Node</a> attribute type : Map of node id to node attribute for float.  <a href="a01551.html#a7a44380216849d6de32d77efce811c08">More...</a><br /></td></tr>
+<tr class="separator:a7a44380216849d6de32d77efce811c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73aed491dde212682fe65e248114371b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01551.html#a73aed491dde212682fe65e248114371b">active_cost_type</a></td></tr>
 <tr class="memdesc:a73aed491dde212682fe65e248114371b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The active edge matrix to use for the graph.  <a href="a01551.html#a73aed491dde212682fe65e248114371b">More...</a><br /></td></tr>
 <tr class="separator:a73aed491dde212682fe65e248114371b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -347,7 +397,7 @@ Private Attributes</h2></td></tr>
 <dd>
 2) Any edge cost set will be a valid replacement for CSR's values array. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="a00269_source.html#l00486">486</a> of file <a class="el" href="a00269_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00269_source.html#l00490">490</a> of file <a class="el" href="a00269_source.html">graph.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="acfe4780ebfdd7f66b9fa77a6f0301d52" name="acfe4780ebfdd7f66b9fa77a6f0301d52"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acfe4780ebfdd7f66b9fa77a6f0301d52">&#9670;&#160;</a></span>NodeAttributeValueMap</h2>
@@ -369,7 +419,31 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00269_source.html#l00487">487</a> of file <a class="el" href="a00269_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00269_source.html#l00491">491</a> of file <a class="el" href="a00269_source.html">graph.h</a>.</p>
+
+</div>
+</div>
+<a id="adf29585f237fcb9f1bdebb0ca40f415e" name="adf29585f237fcb9f1bdebb0ca40f415e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf29585f237fcb9f1bdebb0ca40f415e">&#9670;&#160;</a></span>NodeFloatAttributeValueMap</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="a01551.html#adf29585f237fcb9f1bdebb0ca40f415e">HF::SpatialStructures::Graph::NodeFloatAttributeValueMap</a> =  robin_hood::unordered_map&lt;int, float&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="a00269_source.html#l00492">492</a> of file <a class="el" href="a00269_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -444,7 +518,7 @@ Private Attributes</h2></td></tr>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Now you can create a Graph - note that nodes, edges, and distances are passed by reference</span></div>
 <div class="line"><a class="code hl_class" href="a01551.html">HF::SpatialStructures::Graph</a> graph(edges, distances, nodes);</div>
-<div class="ttc" id="aa01551_html"><div class="ttname"><a href="a01551.html">HF::SpatialStructures::Graph</a></div><div class="ttdoc">A Graph of nodes connected by edges that supports both integers and HF::SpatialStructures::Node.</div><div class="ttdef"><b>Definition:</b> <a href="a00269_source.html#l00486">graph.h:486</a></div></div>
+<div class="ttc" id="aa01551_html"><div class="ttname"><a href="a01551.html">HF::SpatialStructures::Graph</a></div><div class="ttdoc">A Graph of nodes connected by edges that supports both integers and HF::SpatialStructures::Node.</div><div class="ttdef"><b>Definition:</b> <a href="a00269_source.html#l00490">graph.h:490</a></div></div>
 <div class="ttc" id="aa02071_html"><div class="ttname"><a href="a02071.html">HF::SpatialStructures::Node</a></div><div class="ttdoc">A point in space with an ID.</div><div class="ttdef"><b>Definition:</b> <a href="a00275_source.html#l00038">node.h:38</a></div></div>
 </div><!-- fragment --> 
 </div>
@@ -527,7 +601,7 @@ Private Attributes</h2></td></tr>
 <p >If the parent or child node do not have an ID. An ID will be assigned automatically.</p>
 <dl class="section warning"><dt>Warning</dt><dd>This will not work if the graph wasn't created from the empty constructor since it has no internal edge list to add to.</dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>This adds a new element to the triplet list so next time Compress is called, the value is added to the graph.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="a00452.html#_todo000026">Todo:</a></b></dt><dd>How should this signal that the graph can't have edges added to it? Or how do we add edges to an existing graph quickly without adding to its edge list?</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="a00452.html#_todo000027">Todo:</a></b></dt><dd>How should this signal that the graph can't have edges added to it? Or how do we add edges to an existing graph quickly without adding to its edge list?</dd></dl>
 <div class="fragment"><div class="line"><span class="comment">// be sure to #include &quot;graph.h&quot;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Create the nodes</span></div>
@@ -552,13 +626,13 @@ Private Attributes</h2></td></tr>
 <div class="line"> </div>
 <div class="line">graph.addEdge(n_parent, n_child);   <span class="comment">// default score is 1.0f</span></div>
 </div><!-- fragment --> 
-<p class="reference">Referenced by <a class="el" href="a00434_source.html#l00170">AddEdgeFromNodeIDs()</a>, <a class="el" href="a00434_source.html#l00135">AddEdgeFromNodes()</a>, <a class="el" href="a00005_source.html#l00222">HF::GraphGenerator::GraphGenerator::CrawlGeom()</a>, and <a class="el" href="a00005_source.html#l00141">HF::GraphGenerator::GraphGenerator::CrawlGeomParallel()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="a00434_source.html#l00210">AddEdgeFromNodeIDs()</a>, <a class="el" href="a00434_source.html#l00175">AddEdgeFromNodes()</a>, <a class="el" href="a00434_source.html#l00150">AddEdgeFromNodeStructs()</a>, <a class="el" href="a00005_source.html#l00222">HF::GraphGenerator::GraphGenerator::CrawlGeom()</a>, and <a class="el" href="a00005_source.html#l00141">HF::GraphGenerator::GraphGenerator::CrawlGeomParallel()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_a37be5c12e488072dea7fa1c8c64346f7_icgraph.svg" width="1079" height="238"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_a37be5c12e488072dea7fa1c8c64346f7_icgraph.svg" width="1084" height="288"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -627,7 +701,7 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="a00452.html#_todo000027">Todo:</a></b></dt><dd>How should this signal that the graph can't have edges added to it? Or how do we add edges to an existing graph quickly without adding to its edge list?</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="a00452.html#_todo000028">Todo:</a></b></dt><dd>How should this signal that the graph can't have edges added to it? Or how do we add edges to an existing graph quickly without adding to its edge list?</dd></dl>
 <div class="fragment"><div class="line"><span class="comment">// be sure to #include &quot;graph.h&quot;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Create the nodes</span></div>
@@ -655,7 +729,7 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a6f04c5320d4bf88120f8c5e31b0fb02a" name="a6f04c5320d4bf88120f8c5e31b0fb02a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f04c5320d4bf88120f8c5e31b0fb02a">&#9670;&#160;</a></span>AddEdges() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f04c5320d4bf88120f8c5e31b0fb02a">&#9670;&#160;</a></span>AddEdges() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -699,20 +773,20 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="a00434_source.html#l00381">CalculateAndStoreCrossSlope()</a>, and <a class="el" href="a00434_source.html#l00273">CalculateAndStoreEnergyExpenditure()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="a00434_source.html#l00661">CalculateAndStoreCrossSlope()</a>, <a class="el" href="a00434_source.html#l00440">CalculateAndStoreEnergyExpenditure()</a>, <a class="el" href="a00011_source.html#l00372">HF::GraphGenerator::CalculateAndStoreStepType()</a>, and <a class="el" href="a00404_source.html#l00109">CalculateAndStoreStepTypes()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_a6f04c5320d4bf88120f8c5e31b0fb02a_icgraph.svg" width="444" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_a6f04c5320d4bf88120f8c5e31b0fb02a_icgraph.svg" width="447" height="206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
 <a id="a4fb7f82bbc403885c378d0896c742443" name="a4fb7f82bbc403885c378d0896c742443"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4fb7f82bbc403885c378d0896c742443">&#9670;&#160;</a></span>AddEdges() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fb7f82bbc403885c378d0896c742443">&#9670;&#160;</a></span>AddEdges() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -738,6 +812,53 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Add an array of edges to the graph. </p>
+
+</div>
+</div>
+<a id="a113e2d3a443e2a053d53761b9169b706" name="a113e2d3a443e2a053d53761b9169b706"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a113e2d3a443e2a053d53761b9169b706">&#9670;&#160;</a></span>AddEdges() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HF::SpatialStructures::Graph::AddEdges </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::vector&lt; <a class="el" href="a01531.html">IntEdge</a> &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>edges</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>cost_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a set of intedges to the graph. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">edges</td><td>An ordered vector of vectors in which each outer vector holds a vector of edges for the node at the ID of that index. For example the vector at index 0 would hold a vector of intedges for the node at ID 0.a</td></tr>
+    <tr><td class="paramname">cost_type</td><td>The type of cost to add these edges to. If this cost type does not yet exist, then it will be created.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>Precondition</dt><dd>1) If adding edges to an alternate cost type, the edges must already have been added to the default graph. </dd>
+<dd>
+2) If adding an alternate edge to the graph, the graph must already be compressed</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::logic_error</td><td>Trying to add an edge to an alternate cost type when it's not compressed </td></tr>
+    <tr><td class="paramname">std::out_of_range</td><td>Trying to add an edge to an alternate cost type when it hasn't already been added to the default graph2) If adding an alternate edge to the graph, the graph must already be compressed </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -778,6 +899,51 @@ Private Attributes</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">id</td><td>The ID of the node that will receive attribute </td></tr>
     <tr><td class="paramname">attribute</td><td>The attribute that the node at ID will receive </td></tr>
+    <tr><td class="paramname">score</td><td>The weight, or distance that extends from the node at id </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="comment">// TODO example</span></div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="aa16fd49e5cca70bc64a6e306de75e089" name="aa16fd49e5cca70bc64a6e306de75e089"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa16fd49e5cca70bc64a6e306de75e089">&#9670;&#160;</a></span>AddNodeAttributeFloat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HF::SpatialStructures::Graph::AddNodeAttributeFloat </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>score</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a float attribute to the node at id. If the node at id already has a score for the attribute at name, then existing score should be overwritten. </p>
+<p >If the attribute is a string attribute, score will be added as a string value. The attribute will not be converted into a float attribute.  </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The ID of the node that will receive attribute </td></tr>
+    <tr><td class="paramname">name</td><td>The attribute that the node at ID will receive </td></tr>
     <tr><td class="paramname">score</td><td>The weight, or distance that extends from the node at id </td></tr>
   </table>
   </dd>
@@ -836,13 +1002,75 @@ Private Attributes</h2></td></tr>
 </dl>
 <div class="fragment"><div class="line"><span class="comment">// TODO example</span></div>
 </div><!-- fragment --> 
-<p class="reference">Referenced by <a class="el" href="a00434_source.html#l00290">AddNodeAttributes()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="a00434_source.html#l00457">AddNodeAttributes()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_a306a0277ba1caa0aa4a1227e2f847f09_icgraph.svg" width="371" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_a306a0277ba1caa0aa4a1227e2f847f09_icgraph.svg" width="372" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="ace0104174af8ee72de49eae3e9dd8280" name="ace0104174af8ee72de49eae3e9dd8280"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace0104174af8ee72de49eae3e9dd8280">&#9670;&#160;</a></span>AddNodeAttributesFloat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HF::SpatialStructures::Graph::AddNodeAttributesFloat </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; float &gt; &amp;&#160;</td>
+          <td class="paramname"><em>scores</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a float attribute to the node at id. If the node at id already has a score for the attribute at name, then existing score should be overwritten. </p>
+<p >If the attribute is a string attribute, scores will be added as string values. The attribute will not be converted into a float attribute.  </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The container of IDs from which nodes will be retrieved and given attributes </td></tr>
+    <tr><td class="paramname">name</td><td>The attribute that each node will receive </td></tr>
+    <tr><td class="paramname">scores</td><td>The container of score, ordered by the container of node IDs </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>Precondition</dt><dd>The length of ids, and the length of scores must be equal </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::logic_error</td><td>The length of scores and the length of ID do not match</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="comment">// TODO example</span></div>
+</div><!-- fragment --> 
+<p class="reference">Referenced by <a class="el" href="a00434_source.html#l00489">AddNodeAttributesFloat()</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_ace0104174af8ee72de49eae3e9dd8280_icgraph.svg" width="431" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -922,19 +1150,105 @@ If directed: <code>O(n)</code> where n is the total number of nodes in the graph
 <div class="line"> </div>
 <div class="line"><span class="comment">// directed parameter may be true or false</span></div>
 <div class="line">std::vector&lt;float&gt; aggregate_graph = graph.AggregateGraph(aggregate, <span class="keyword">true</span>);</div>
-<div class="ttc" id="aa00465_html_a6b23c0b2531c78f6d5049873c184f4f9"><div class="ttname"><a href="a00465.html#a6b23c0b2531c78f6d5049873c184f4f9">HF::SpatialStructures::COST_AGGREGATE</a></div><div class="ttdeci">COST_AGGREGATE</div><div class="ttdoc">Methods of aggregating the costs for edges for each node in the graph.</div><div class="ttdef"><b>Definition:</b> <a href="a00269_source.html#l00028">graph.h:28</a></div></div>
+<div class="ttc" id="aa00465_html_a6b23c0b2531c78f6d5049873c184f4f9"><div class="ttname"><a href="a00465.html#a6b23c0b2531c78f6d5049873c184f4f9">HF::SpatialStructures::COST_AGGREGATE</a></div><div class="ttdeci">COST_AGGREGATE</div><div class="ttdoc">Methods of aggregating the costs for edges for each node in the graph.</div><div class="ttdef"><b>Definition:</b> <a href="a00269_source.html#l00029">graph.h:29</a></div></div>
 <div class="ttc" id="aa00465_html_a6b23c0b2531c78f6d5049873c184f4f9a16de38737a9f8366e9b2042b4e9b6290"><div class="ttname"><a href="a00465.html#a6b23c0b2531c78f6d5049873c184f4f9a16de38737a9f8366e9b2042b4e9b6290">HF::SpatialStructures::COST_AGGREGATE::AVERAGE</a></div><div class="ttdeci">@ AVERAGE</div><div class="ttdoc">Average the cost of all edges.</div></div>
 </div><!-- fragment --> </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="a00434_source.html#l00094">AggregateCosts()</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="a00434_source.html#l00109">AggregateCosts()</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="a01551_a487b0b29dc7c554089e0255779218567_icgraph.svg" width="340" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
+
+</div>
+</div>
+<a id="a0fb4bbcb7d8b4b9c58b172fa71548890" name="a0fb4bbcb7d8b4b9c58b172fa71548890"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fb4bbcb7d8b4b9c58b172fa71548890">&#9670;&#160;</a></span>AlternateCostsAlongPath() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; float &gt; HF::SpatialStructures::Graph::AlternateCostsAlongPath </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a02083.html">Path</a>&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>cost_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Computes an alternate cost type between nodes along a path.  </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>The path of nodes to get costs between. </td></tr>
+    <tr><td class="paramname">cost_type</td><td>The type of cost to query </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A vector of floats, representing each cost between nodes along the path. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="a00434_source.html#l00292">AlternateCostsAlongPathStruct()</a>, and <a class="el" href="a00434_source.html#l00322">AlternateCostsAlongPathWithIDs()</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_a0fb4bbcb7d8b4b9c58b172fa71548890_icgraph.svg" width="495" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a016824f0f85631e758aa1f4b74f4e108" name="a016824f0f85631e758aa1f4b74f4e108"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a016824f0f85631e758aa1f4b74f4e108">&#9670;&#160;</a></span>AlternateCostsAlongPath() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; float &gt; HF::SpatialStructures::Graph::AlternateCostsAlongPath </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>cost_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Computes an alternate cost type between nodes along a path.  </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>The path of nodes to get costs between. </td></tr>
+    <tr><td class="paramname">cost_type</td><td>The type of cost to query </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A vector of floats, representing each cost between nodes along the path. </dd></dl>
 
 </div>
 </div>
@@ -1023,13 +1337,13 @@ If directed: <code>O(n)</code> where n is the total number of nodes in the graph
 <div class="ttc" id="aa00465_html_afac7c4ef1cb1104941f4d5a27973b47eafb4081bff9f77d65456ceb00b153e4d4"><div class="ttname"><a href="a00465.html#afac7c4ef1cb1104941f4d5a27973b47eafb4081bff9f77d65456ceb00b153e4d4">HF::SpatialStructures::Direction::INCOMING</a></div><div class="ttdeci">@ INCOMING</div></div>
 </div><!-- fragment --> <code>0-&gt;1: 111.000000</code> </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="a00434_source.html#l00405">GraphAttrsToCosts()</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="a00434_source.html#l00690">GraphAttrsToCosts()</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_acb6e9bc04bec84b28043c41c96139b1a_icgraph.svg" width="338" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_acb6e9bc04bec84b28043c41c96139b1a_icgraph.svg" width="340" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1088,7 +1402,7 @@ If directed: <code>O(n)</code> where n is the total number of nodes in the graph
 <div class="line">        </div>
 <div class="line">        <span class="comment">// If we&#39;ve gotten to this point, then the child doesn&#39;t exist in parent&#39;s row</span></div>
 <div class="line">        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="ttc" id="aa01551_html_a0be5d62e01eabe7e1581d238cfb35ace"><div class="ttname"><a href="a01551.html#a0be5d62e01eabe7e1581d238cfb35ace">HF::SpatialStructures::Graph::edge_matrix</a></div><div class="ttdeci">EdgeMatrix edge_matrix</div><div class="ttdoc">The underlying CSR containing edge information.</div><div class="ttdef"><b>Definition:</b> <a href="a00269_source.html#l00502">graph.h:502</a></div></div>
+<div class="ttc" id="aa01551_html_a0be5d62e01eabe7e1581d238cfb35ace"><div class="ttname"><a href="a01551.html#a0be5d62e01eabe7e1581d238cfb35ace">HF::SpatialStructures::Graph::edge_matrix</a></div><div class="ttdeci">EdgeMatrix edge_matrix</div><div class="ttdoc">The underlying CSR containing edge information.</div><div class="ttdef"><b>Definition:</b> <a href="a00269_source.html#l00506">graph.h:506</a></div></div>
 </div><!-- fragment --> </dd></dl>
 
 </div>
@@ -1132,13 +1446,13 @@ If directed: <code>O(n)</code> where n is the total number of nodes in the graph
 <div class="line">                                    <span class="comment">// triplets are also cleared, and</span></div>
 <div class="line">                                    <span class="comment">// needs_compression == true</span></div>
 </div><!-- fragment --> 
-<p class="reference">Referenced by <a class="el" href="a00434_source.html#l00234">ClearGraph()</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="a00434_source.html#l00401">ClearGraph()</a>.</p>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_a994dbd15119eb6548d2e15f4de4b88a6_icgraph.svg" width="292" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_a994dbd15119eb6548d2e15f4de4b88a6_icgraph.svg" width="294" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1174,13 +1488,13 @@ If directed: <code>O(n)</code> where n is the total number of nodes in the graph
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="a00434_source.html#l00234">ClearGraph()</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="a00434_source.html#l00401">ClearGraph()</a>.</p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_a8f51b29e611c7bb59a0f4242d6e01c73_icgraph.svg" width="312" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_a8f51b29e611c7bb59a0f4242d6e01c73_icgraph.svg" width="316" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1217,13 +1531,13 @@ If directed: <code>O(n)</code> where n is the total number of nodes in the graph
 </dl>
 <div class="fragment"><div class="line"><span class="comment">// TODO example</span></div>
 </div><!-- fragment --> 
-<p class="reference">Referenced by <a class="el" href="a00434_source.html#l00368">ClearAttributeType()</a>.</p>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="a00434_source.html#l00648">ClearAttributeType()</a>.</p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_a0279f117df3d0d29d0a06301dac146a9_icgraph.svg" width="376" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_a0279f117df3d0d29d0a06301dac146a9_icgraph.svg" width="379" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1275,15 +1589,79 @@ If directed: <code>O(n)</code> where n is the total number of nodes in the graph
 <div class="line"><span class="comment">// In order to use GetEdges, or AggregateGraph, we must compress our graph instance</span></div>
 <div class="line">graph.Compress();                       <span class="comment">// GetEdges and AggregateGraph are now usable</span></div>
 </div><!-- fragment --> 
-<p class="reference">Referenced by <a class="el" href="a00434_source.html#l00228">Compress()</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="a00011_source.html#l00372">HF::GraphGenerator::CalculateAndStoreStepType()</a>, <a class="el" href="a00404_source.html#l00109">CalculateAndStoreStepTypes()</a>, and <a class="el" href="a00434_source.html#l00395">Compress()</a>.</p>
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_a41cece77d0eee98df39ecc6d3a366ec8_icgraph.svg" width="286" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_a41cece77d0eee98df39ecc6d3a366ec8_icgraph.svg" width="400" height="155"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
+
+</div>
+</div>
+<a id="ac1d4649c2867e70900fbab7eeca5f6b6" name="ac1d4649c2867e70900fbab7eeca5f6b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1d4649c2867e70900fbab7eeca5f6b6">&#9670;&#160;</a></span>CountEdges()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int HF::SpatialStructures::Graph::CountEdges </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>cost_type</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Count the number of edges of associated cost type  </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cost_type</td><td>The desired cost type to count the number of edges of </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of edges of associated cost type in the graph </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="a00434_source.html#l00685">CountNumberOfEdges()</a>.</p>
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_ac1d4649c2867e70900fbab7eeca5f6b6_icgraph.svg" width="360" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a4a1f6bd7f9db0f0427482992519b6bc9" name="a4a1f6bd7f9db0f0427482992519b6bc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a1f6bd7f9db0f0427482992519b6bc9">&#9670;&#160;</a></span>CountEdgesFromEdgeSets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int HF::SpatialStructures::Graph::CountEdgesFromEdgeSets </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="a01535.html">EdgeSet</a> &gt;&#160;</td>
+          <td class="paramname"><em>AllEdges</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Count the number of edges in a given edgeset.  </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">AllEdges</td><td>The edgeset to count the number of edges in </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of edges in the given edgeset </dd></dl>
 
 </div>
 </div>
@@ -1547,13 +1925,13 @@ If directed: <code>O(n)</code> where n is the total number of nodes in the graph
 <dl class="section return"><dt>Returns</dt><dd>The cost of traversing from <code>parent_id</code> to <code>child_id</code> for <code>cost_type</code>.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd>cost_type must be the name of a cost that already exists in the graph, or blank. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="a00434_source.html#l00066">GetEdgeCost()</a>.</p>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="a00434_source.html#l00081">GetEdgeCost()</a>.</p>
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_a2bb134f68f988eeee4e0ba3e2a698852_icgraph.svg" width="304" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_a2bb134f68f988eeee4e0ba3e2a698852_icgraph.svg" width="307" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1698,6 +2076,32 @@ If directed: <code>O(n)</code> where n is the total number of nodes in the graph
 
 </div>
 </div>
+<a id="ae43774cd6f288b83585fcebfd30ccaee" name="ae43774cd6f288b83585fcebfd30ccaee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae43774cd6f288b83585fcebfd30ccaee">&#9670;&#160;</a></span>GetCostMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt; std::string, <a class="el" href="a01547.html">EdgeCostSet</a> &gt; HF::SpatialStructures::Graph::GetCostMap </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>cost_type</em> = <code>&quot;&#160;&quot;</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the cost map for the graph. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cost_type</td><td>Name of te cost to get the cost map for </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a8803f69bbfaebcdae72680e01a90b94b" name="a8803f69bbfaebcdae72680e01a90b94b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8803f69bbfaebcdae72680e01a90b94b">&#9670;&#160;</a></span>GetCostTypes()</h2>
 
@@ -1766,13 +2170,98 @@ If directed: <code>O(n)</code> where n is the total number of nodes in the graph
 <div class="line">CSRPtrs returned_csr = graph.GetCSRPointers();</div>
 </div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="a01539.html#a4665024245e559dac8c3d620372dc47e" title="Verify the CSR referenced by this instance is valid.">CSRPtrs.AreValid()</a> for checking if the return value represents a valid CSR. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="a00434_source.html#l00187">GetCSRPointers()</a>.</p>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="a00434_source.html#l00354">GetCSRPointers()</a>.</p>
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_a7cd5d401dfbd61b3b075ca0ad63d959e_icgraph.svg" width="344" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_a7cd5d401dfbd61b3b075ca0ad63d959e_icgraph.svg" width="348" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="ac2c59f04d4c958a0f78d92448600e393" name="ac2c59f04d4c958a0f78d92448600e393"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2c59f04d4c958a0f78d92448600e393">&#9670;&#160;</a></span>GetEdgeCosts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; float &gt; HF::SpatialStructures::Graph::GetEdgeCosts </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>cost_type</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get edge costs of all given edges  </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cost_type</td><td>The desired cost type to get costs for </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A vector of floats containing all costs of given cost type </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="a00434_source.html#l00227">GetEdgeCosts()</a>.</p>
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_ac2c59f04d4c958a0f78d92448600e393_icgraph.svg" width="324" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="aa79a555f9fa789581d9f1905ebb0c55f" name="aa79a555f9fa789581d9f1905ebb0c55f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa79a555f9fa789581d9f1905ebb0c55f">&#9670;&#160;</a></span>GetEdgeCostsFromNodeIDs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; float &gt; HF::SpatialStructures::Graph::GetEdgeCostsFromNodeIDs </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>cost_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get costs of all given edges  </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ids</td><td>The ids of nodes to map to edges for cost calculation </td></tr>
+    <tr><td class="paramname">cost_type</td><td>The desired cost type to get costs for </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A vector of floats containing costs of given cost type associated with the given edges </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="a00434_source.html#l00256">GetEdgeCostsFromNodeIDs()</a>.</p>
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_aa79a555f9fa789581d9f1905ebb0c55f_icgraph.svg" width="488" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1831,12 +2320,12 @@ If directed: <code>O(n)</code> where n is the total number of nodes in the graph
 <div class="line">std::vector&lt;HF::SpatialStructures::EdgeSet&gt; edge_set = graph.GetEdges();</div>
 </div><!-- fragment --> 
 <p class="reference">Referenced by <a class="el" href="a00197_source.html#l00023">HF::Pathfinding::BoostGraph::BoostGraph()</a>.</p>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_a1a26ebb794b444e2214cf0b0fed5a529_icgraph.svg" width="392" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_a1a26ebb794b444e2214cf0b0fed5a529_icgraph.svg" width="396" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1989,13 +2478,13 @@ If directed: <code>O(n)</code> where n is the total number of nodes in the graph
 <div class="line"> </div>
 <div class="line">ID = graph.getID(good_node);    <span class="comment">// ID &gt; -1, i.e. it is a Node instance that exists within this Graph.</span></div>
 </div><!-- fragment --> 
-<p class="reference">Referenced by <a class="el" href="a00434_source.html#l00217">GetNodeID()</a>.</p>
-<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="a00434_source.html#l00384">GetNodeID()</a>.</p>
+<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_af59beedafb4af0ee99d54761e1c681fc_icgraph.svg" width="290" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_af59beedafb4af0ee99d54761e1c681fc_icgraph.svg" width="294" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -2045,15 +2534,273 @@ If directed: <code>O(n)</code> where n is the total number of nodes in the graph
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A container of score, each in the form of a std::string, obtained from attribute </dd></dl>
-<div class="fragment"><div class="line"><span class="comment">// TODO example</span></div>
+<div class="fragment"><div class="line"><span class="comment">// be sure to #include &quot;graph.h&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Create the nodes</span></div>
+<div class="line"><a class="code hl_struct" href="a02071.html">HF::SpatialStructures::Node</a> node_0(1.0f, 1.0f, 2.0f);</div>
+<div class="line"><a class="code hl_struct" href="a02071.html">HF::SpatialStructures::Node</a> node_1(2.0f, 3.0f, 4.0f, 5);</div>
+<div class="line"><a class="code hl_struct" href="a02071.html">HF::SpatialStructures::Node</a> node_2(11.0f, 22.0f, 140.0f);</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Create a container (vector) of nodes</span></div>
+<div class="line">std::vector&lt;HF::SpatialStructures::Node&gt; nodes = { node_0, node_1, node_2 };</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Create matrices for edges and distances, edges.size() == distances().size()</span></div>
+<div class="line">std::vector&lt;std::vector&lt;int&gt;&gt; edges = { { 1, 2 }, { 2 }, { 1 } };</div>
+<div class="line">std::vector&lt;std::vector&lt;float&gt;&gt; distances = { { 1.0f, 2.5f }, { 54.0f }, { 39.0f } };</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Now you can create a Graph - note that nodes, edges, and distances are passed by reference</span></div>
+<div class="line"><a class="code hl_class" href="a01551.html">HF::SpatialStructures::Graph</a> graph(edges, distances, nodes);</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Get node IDs</span></div>
+<div class="line"><span class="keywordtype">int</span> ID_0 = graph.getID(node_0);</div>
+<div class="line"><span class="keywordtype">int</span> ID_1 = graph.getID(node_1);</div>
+<div class="line"><span class="keywordtype">int</span> ID_2 = graph.getID(node_2);</div>
+<div class="line"> </div>
+<div class="line">std::vector&lt;int&gt; ids = {ID_0, ID_1, ID_2};</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Assign attributes to nodes</span></div>
+<div class="line">std::string attribute = <span class="stringliteral">&quot;demo attribute&quot;</span>;</div>
+<div class="line">std::vector&lt;std::string&gt; scores = {<span class="stringliteral">&quot;2.3&quot;</span>, <span class="stringliteral">&quot;6.1&quot;</span>, <span class="stringliteral">&quot;4.0&quot;</span>};</div>
+<div class="line">graph.AddNodeAttributes(ids, attribute, scores);</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Get attribute for all nodes</span></div>
+<div class="line">std::vector&lt;std::string&gt; cross_slopes = graph.GetNodeAttributes(attribute); <span class="comment">// {&quot;2.3&quot;, &quot;6.1&quot;, &quot;4.0&quot;}</span></div>
 </div><!-- fragment --> 
-<p class="reference">Referenced by <a class="el" href="a00434_source.html#l00322">GetNodeAttributes()</a>.</p>
-<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="a00434_source.html#l00521">GetNodeAttributes()</a>.</p>
+<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_aedd218785fbf6dabaa2fba2dca738618_icgraph.svg" width="367" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_aedd218785fbf6dabaa2fba2dca738618_icgraph.svg" width="368" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a19e8bf9aa4b8c23beee618bd32d3c238" name="a19e8bf9aa4b8c23beee618bd32d3c238"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19e8bf9aa4b8c23beee618bd32d3c238">&#9670;&#160;</a></span>GetNodeAttributesByID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; HF::SpatialStructures::Graph::GetNodeAttributesByID </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>attribute</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the score for the given attribute of the specified nodes. Nodes that do not have a score for this attribute should return an empty string for this array.  </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ids</td><td>A list of node IDs to obtain scores for. </td></tr>
+    <tr><td class="paramname">attribute</td><td>The attribute from which a container of scores will be obtained </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A container of score, each in the form of a std::string, obtained from attribute </dd></dl>
+<div class="fragment"><div class="line"><span class="comment">// be sure to #include &quot;graph.h&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Create the nodes</span></div>
+<div class="line"><a class="code hl_struct" href="a02071.html">HF::SpatialStructures::Node</a> node_0(1.0f, 1.0f, 2.0f);</div>
+<div class="line"><a class="code hl_struct" href="a02071.html">HF::SpatialStructures::Node</a> node_1(2.0f, 3.0f, 4.0f, 5);</div>
+<div class="line"><a class="code hl_struct" href="a02071.html">HF::SpatialStructures::Node</a> node_2(11.0f, 22.0f, 140.0f);</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Create a container (vector) of nodes</span></div>
+<div class="line">std::vector&lt;HF::SpatialStructures::Node&gt; nodes = { node_0, node_1, node_2 };</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Create matrices for edges and distances, edges.size() == distances().size()</span></div>
+<div class="line">std::vector&lt;std::vector&lt;int&gt;&gt; edges = { { 1, 2 }, { 2 }, { 1 } };</div>
+<div class="line">std::vector&lt;std::vector&lt;float&gt;&gt; distances = { { 1.0f, 2.5f }, { 54.0f }, { 39.0f } };</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Now you can create a Graph - note that nodes, edges, and distances are passed by reference</span></div>
+<div class="line"><a class="code hl_class" href="a01551.html">HF::SpatialStructures::Graph</a> graph(edges, distances, nodes);</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Get node IDs</span></div>
+<div class="line"><span class="keywordtype">int</span> ID_0 = graph.getID(node_0);</div>
+<div class="line"><span class="keywordtype">int</span> ID_1 = graph.getID(node_1);</div>
+<div class="line"><span class="keywordtype">int</span> ID_2 = graph.getID(node_2);</div>
+<div class="line">std::vector&lt;int&gt; ids = {0, 1, 2};</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Assign attributes to nodes</span></div>
+<div class="line">std::string attribute = <span class="stringliteral">&quot;demo attribute&quot;</span>;</div>
+<div class="line">std::vector&lt;std::string&gt; scores = {<span class="stringliteral">&quot;1.8&quot;</span>, <span class="stringliteral">&quot;9.6&quot;</span>, <span class="stringliteral">&quot;5.7&quot;</span>};</div>
+<div class="line">graph.AddNodeAttributes(ids, attribute, scores);</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Get attribute for specific nodes</span></div>
+<div class="line">std::vector&lt;std::string&gt; cross_slope_1 = graph.GetNodeAttributesByID({ID_1}, attribute); <span class="comment">// {&quot;9.6&quot;}</span></div>
+<div class="line">std::vector&lt;std::string&gt; cross_slope_02 = graph.GetNodeAttributesByID({ID_0, ID_2}, attribute); <span class="comment">// {&quot;1.8&quot;, &quot;5.7&quot;}</span></div>
+</div><!-- fragment --> 
+<p class="reference">Referenced by <a class="el" href="a00434_source.html#l00551">GetNodeAttributesByID()</a>.</p>
+<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_a19e8bf9aa4b8c23beee618bd32d3c238_icgraph.svg" width="428" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a34d65fb6990ba01f83f9f4424165c8f2" name="a34d65fb6990ba01f83f9f4424165c8f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34d65fb6990ba01f83f9f4424165c8f2">&#9670;&#160;</a></span>GetNodeAttributesByIDFloat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; float &gt; HF::SpatialStructures::Graph::GetNodeAttributesByIDFloat </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the score for the given attribute of the specified nodes. Nodes that do not have a score for this attribute should return an empty string for this array.  </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ids</td><td>A list of node IDs to obtain scores for. </td></tr>
+    <tr><td class="paramname">name</td><td>The attribute from which a container of scores will be obtained. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A container of score, each in the form of a std::string, obtained from name </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><code>name</code> is a float attribute. That is, only float values have been added to this attribute.</dd></dl>
+<div class="fragment"><div class="line"><span class="comment">// be sure to #include &quot;graph.h&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Create the nodes</span></div>
+<div class="line"><a class="code hl_struct" href="a02071.html">HF::SpatialStructures::Node</a> node_0(1.0f, 1.0f, 2.0f);</div>
+<div class="line"><a class="code hl_struct" href="a02071.html">HF::SpatialStructures::Node</a> node_1(2.0f, 3.0f, 4.0f, 5);</div>
+<div class="line"><a class="code hl_struct" href="a02071.html">HF::SpatialStructures::Node</a> node_2(11.0f, 22.0f, 140.0f);</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Create a container (vector) of nodes</span></div>
+<div class="line">std::vector&lt;HF::SpatialStructures::Node&gt; nodes = { node_0, node_1, node_2 };</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Create matrices for edges and distances, edges.size() == distances().size()</span></div>
+<div class="line">std::vector&lt;std::vector&lt;int&gt;&gt; edges = { { 1, 2 }, { 2 }, { 1 } };</div>
+<div class="line">std::vector&lt;std::vector&lt;float&gt;&gt; distances = { { 1.0f, 2.5f }, { 54.0f }, { 39.0f } };</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Now you can create a Graph - note that nodes, edges, and distances are passed by reference</span></div>
+<div class="line"><a class="code hl_class" href="a01551.html">HF::SpatialStructures::Graph</a> graph(edges, distances, nodes);</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Get node IDs</span></div>
+<div class="line"><span class="keywordtype">int</span> ID_0 = graph.getID(node_0);</div>
+<div class="line"><span class="keywordtype">int</span> ID_1 = graph.getID(node_1);</div>
+<div class="line"><span class="keywordtype">int</span> ID_2 = graph.getID(node_2);</div>
+<div class="line">std::vector&lt;int&gt; ids = {0, 1, 2};</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Assign attributes to nodes</span></div>
+<div class="line">std::string attribute = <span class="stringliteral">&quot;demo attribute&quot;</span>;</div>
+<div class="line">std::vector&lt;float&gt; scores = {1.8, 9.6, 5.7};</div>
+<div class="line">graph.AddNodeAttributesFloat(ids, attribute, scores);</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Get attribute for specific nodes</span></div>
+<div class="line">std::vector&lt;float&gt; cross_slope_1 = graph.GetNodeAttributesByIDFloat({ID_1}, attribute); <span class="comment">// {9.6}</span></div>
+<div class="line">std::vector&lt;float&gt; cross_slope_02 = graph.GetNodeAttributesByIDFloat({ID_0, ID_2}, attribute); <span class="comment">// {1.8, 5.7}</span></div>
+</div><!-- fragment --> 
+<p class="reference">Referenced by <a class="el" href="a00434_source.html#l00605">GetNodeAttributesByIDFloat()</a>.</p>
+<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_a34d65fb6990ba01f83f9f4424165c8f2_icgraph.svg" width="444" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a150e739eb5dbea7d980a2fbfa213f114" name="a150e739eb5dbea7d980a2fbfa213f114"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a150e739eb5dbea7d980a2fbfa213f114">&#9670;&#160;</a></span>GetNodeAttributesFloat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; float &gt; HF::SpatialStructures::Graph::GetNodeAttributesFloat </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the score for the given attribute of every node in the graph. Nodes that do not have a score for this attribute should return the default value 0.0 for this array.  </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The attribute from which a container of scores will be obtained. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A container of score, each in the form of a float, obtained from attribute </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><code>name</code> is a float attribute. That is, only float values have been added to this attribute.</dd></dl>
+<div class="fragment"><div class="line"><span class="comment">// be sure to #include &quot;graph.h&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Create the nodes</span></div>
+<div class="line"><a class="code hl_struct" href="a02071.html">HF::SpatialStructures::Node</a> node_0(1.0f, 1.0f, 2.0f);</div>
+<div class="line"><a class="code hl_struct" href="a02071.html">HF::SpatialStructures::Node</a> node_1(2.0f, 3.0f, 4.0f, 5);</div>
+<div class="line"><a class="code hl_struct" href="a02071.html">HF::SpatialStructures::Node</a> node_2(11.0f, 22.0f, 140.0f);</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Create a container (vector) of nodes</span></div>
+<div class="line">std::vector&lt;HF::SpatialStructures::Node&gt; nodes = { node_0, node_1, node_2 };</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Create matrices for edges and distances, edges.size() == distances().size()</span></div>
+<div class="line">std::vector&lt;std::vector&lt;int&gt;&gt; edges = { { 1, 2 }, { 2 }, { 1 } };</div>
+<div class="line">std::vector&lt;std::vector&lt;float&gt;&gt; distances = { { 1.0f, 2.5f }, { 54.0f }, { 39.0f } };</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Now you can create a Graph - note that nodes, edges, and distances are passed by reference</span></div>
+<div class="line"><a class="code hl_class" href="a01551.html">HF::SpatialStructures::Graph</a> graph(edges, distances, nodes);</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Get node IDs</span></div>
+<div class="line"><span class="keywordtype">int</span> ID_0 = graph.getID(node_0);</div>
+<div class="line"><span class="keywordtype">int</span> ID_1 = graph.getID(node_1);</div>
+<div class="line"><span class="keywordtype">int</span> ID_2 = graph.getID(node_2);</div>
+<div class="line"> </div>
+<div class="line">std::vector&lt;int&gt; ids = {ID_0, ID_1, ID_2};</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Assign attributes to nodes</span></div>
+<div class="line">std::string attribute = <span class="stringliteral">&quot;demo attribute&quot;</span>;</div>
+<div class="line">std::vector&lt;float&gt; scores = {2.3, 6.1, 4.0};</div>
+<div class="line">graph.AddNodeAttributesFloat(ids, attribute, scores);</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Get attribute for all nodes</span></div>
+<div class="line">std::vector&lt;float&gt; cross_slopes = graph.GetNodeAttributesFloat(attribute); <span class="comment">// {2.3, 6.1, 4.0}</span></div>
+</div><!-- fragment --> 
+<p class="reference">Referenced by <a class="el" href="a00434_source.html#l00584">GetNodeAttributesFloat()</a>.</p>
+<div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-22-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_a150e739eb5dbea7d980a2fbfa213f114_icgraph.svg" width="427" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -2214,13 +2961,13 @@ If directed: <code>O(n)</code> where n is the total number of nodes in the graph
 <dl class="section return"><dt>Returns</dt><dd>A structure that consists of parent_node and the container of <a class="el" href="a01527.html" title="A connection to a child node.">Edge</a> that consists of the <a class="el" href="a01527.html" title="A connection to a child node.">Edge</a> that extend from parent</dd></dl>
 <div class="fragment"><div class="line"><span class="comment">// TODO example</span></div>
 </div><!-- fragment --> 
-<p class="reference">Referenced by <a class="el" href="a00254_source.html#l00283">HF::SpatialStructures::CostAlgorithms::CalculateCrossSlope()</a>, and <a class="el" href="a00254_source.html#l00162">HF::SpatialStructures::CostAlgorithms::CalculateEnergyExpenditure()</a>.</p>
-<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="a00254_source.html#l00283">HF::SpatialStructures::CostAlgorithms::CalculateCrossSlope()</a>, <a class="el" href="a00254_source.html#l00162">HF::SpatialStructures::CostAlgorithms::CalculateEnergyExpenditure()</a>, and <a class="el" href="a00011_source.html#l00351">HF::GraphGenerator::CalculateStepType()</a>.</p>
+<div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_a89250c619a726fd0adbd71778d166887_icgraph.svg" width="388" height="152"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-23-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_a89250c619a726fd0adbd71778d166887_icgraph.svg" width="390" height="219"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -2327,53 +3074,6 @@ If directed: <code>O(n)</code> where n is the total number of nodes in the graph
 <div class="line"><span class="keywordtype">int</span> index = 2;</div>
 <div class="line">std::vector&lt;HF::SpatialStructures::Edge&gt; undirected_edges = graph.GetUndirectedEdges(get_nodes[index]);</div>
 </div><!-- fragment --> 
-</div>
-</div>
-<a id="a7fb8dbfe1b401c67d85e7a0f361ebd69" name="a7fb8dbfe1b401c67d85e7a0f361ebd69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7fb8dbfe1b401c67d85e7a0f361ebd69">&#9670;&#160;</a></span>Graph::AddEdges()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void HF::SpatialStructures::Graph::Graph::AddEdges </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; std::vector&lt; <a class="el" href="a01531.html">IntEdge</a> &gt; &gt; &amp;&#160;</td>
-          <td class="paramname"><em>edges</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>cost_type</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Add a set of intedges to the graph. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">edges</td><td>An ordered vector of vectors in which each outer vector holds a vector of edges for the node at the ID of that index. For example the vector at index 0 would hold a vector of intedges for the node at ID 0.a</td></tr>
-    <tr><td class="paramname">cost_type</td><td>The type of cost to add these edges to. If this cost type does not yet exist, then it will be created.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section pre"><dt>Precondition</dt><dd>1) If adding edges to an alternate cost type, the edges must already have been added to the default graph. </dd>
-<dd>
-2) If adding an alternate edge to the graph, the graph must already be compressed</dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::logic_error</td><td>Trying to add an edge to an alternate cost type when it's not compressed </td></tr>
-    <tr><td class="paramname">std::out_of_range</td><td>Trying to add an edge to an alternate cost type when it hasn't already been added to the default graph2) If adding an alternate edge to the graph, the graph must already be compressed </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
 <a id="a42d18ac87da28a676ec110d1d9c86b80" name="a42d18ac87da28a676ec110d1d9c86b80"></a>
@@ -2701,6 +3401,16 @@ If directed: <code>O(n)</code> where n is the total number of nodes in the graph
 <dl class="section return"><dt>Returns</dt><dd>True if the ID has already been assigned to a node in the graph. False otherwise.</dd></dl>
 <dl class="section user"><dt>TimeComplexity</dt><dd>Performs a search over every node in the graph: O(n). </dd></dl>
 
+<p class="reference">Referenced by <a class="el" href="a00434_source.html#l00051">GetEdgesForNode()</a>.</p>
+<div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-24-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_afb7fd113e4afe1d0eb01dd23d69b5ecd_icgraph.svg" width="336" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
 </div>
 </div>
 <a id="a42f23c075c3a912a5c12b8d243f15f70" name="a42f23c075c3a912a5c12b8d243f15f70"></a>
@@ -2951,6 +3661,36 @@ If directed: <code>O(n)</code> where n is the total number of nodes in the graph
 
 </div>
 </div>
+<a id="ae9038c7f6c83180f273e4e103ddd9636" name="ae9038c7f6c83180f273e4e103ddd9636"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9038c7f6c83180f273e4e103ddd9636">&#9670;&#160;</a></span>IsFloatAttribute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HF::SpatialStructures::Graph::IsFloatAttribute </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if this attribute exists in the graph and contains float values. </p>
+
+<p class="reference">Referenced by <a class="el" href="a00434_source.html#l00629">IsFloatAttribute()</a>.</p>
+<div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-25-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_ae9038c7f6c83180f273e4e103ddd9636_icgraph.svg" width="331" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 <a id="a40581bf5c7751041e85e1763697cdb70" name="a40581bf5c7751041e85e1763697cdb70"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a40581bf5c7751041e85e1763697cdb70">&#9670;&#160;</a></span>MapCostMatrix()</h2>
 
@@ -2989,6 +3729,60 @@ If directed: <code>O(n)</code> where n is the total number of nodes in the graph
 
 </div>
 </div>
+<a id="aeb28ad1f2f610b5564831415c0591fd9" name="aeb28ad1f2f610b5564831415c0591fd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb28ad1f2f610b5564831415c0591fd9">&#9670;&#160;</a></span>MapPathToVectorOfNodes() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; int &gt; HF::SpatialStructures::Graph::MapPathToVectorOfNodes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a02083.html">HF::SpatialStructures::Path</a>&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maps a path structure to a vector of node ids (n1,n2,n2,n3,n3...,nk-1,nk)  </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>The path of nodes to map </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A vector of node ids that represents the path in the form (n1,n2,n2,n3,n3...,nk-1,nk) </dd></dl>
+
+</div>
+</div>
+<a id="a2708f74f927aab514a3c2d8662f22616" name="a2708f74f927aab514a3c2d8662f22616"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2708f74f927aab514a3c2d8662f22616">&#9670;&#160;</a></span>MapPathToVectorOfNodes() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; int &gt; HF::SpatialStructures::Graph::MapPathToVectorOfNodes </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maps a path of node ids (n1,n2,...,nk) to (n1,n2,n2,n3,n3...,nk-1,nk)  </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>The path of nodes to map </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A vector of node ids that represents the path in the form (n1,n2,n2,n3,n3...,nk-1,nk) </dd></dl>
+
+</div>
+</div>
 <a id="a5d1505ad796c9f222c923a1a22980bb2" name="a5d1505ad796c9f222c923a1a22980bb2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5d1505ad796c9f222c923a1a22980bb2">&#9670;&#160;</a></span>MaxID()</h2>
 
@@ -3009,12 +3803,12 @@ If directed: <code>O(n)</code> where n is the total number of nodes in the graph
 <dl class="section note"><dt>Note</dt><dd>This shouldn't be needed often, as unless this graph has integer edges, nodes will always be stored in order. </dd></dl>
 
 <p class="reference">Referenced by <a class="el" href="a00197_source.html#l00023">HF::Pathfinding::BoostGraph::BoostGraph()</a>.</p>
-<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-26-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_a5d1505ad796c9f222c923a1a22980bb2_icgraph.svg" width="392" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-26-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_a5d1505ad796c9f222c923a1a22980bb2_icgraph.svg" width="396" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -3075,6 +3869,16 @@ If directed: <code>O(n)</code> where n is the total number of nodes in the graph
   </dd>
 </dl>
 
+<p class="reference">Referenced by <a class="el" href="a00011_source.html#l00508">HF::GraphGenerator::CompareCheckConnections()</a>.</p>
+<div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-27-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-27-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_a794c342603cefb342fdc698ba539b25f_icgraph.svg" width="400" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
 </div>
 </div>
 <a id="aa70347b8a33b57c6f0a72d6eca4248d7" name="aa70347b8a33b57c6f0a72d6eca4248d7"></a>
@@ -3114,13 +3918,13 @@ If directed: <code>O(n)</code> where n is the total number of nodes in the graph
 <div class="line"><span class="comment">// Nodes() returns a copy of the ordered_nodes field</span></div>
 <div class="line">std::vector&lt;HF::SpatialStructures::Node&gt; nodes_from_graph = graph.Nodes();</div>
 </div><!-- fragment --> 
-<p class="reference">Referenced by <a class="el" href="a00254_source.html#l00283">HF::SpatialStructures::CostAlgorithms::CalculateCrossSlope()</a>, <a class="el" href="a00254_source.html#l00162">HF::SpatialStructures::CostAlgorithms::CalculateEnergyExpenditure()</a>, <a class="el" href="a00404_source.html#l00022">GenerateGraph()</a>, <a class="el" href="a00404_source.html#l00062">GenerateGraphObstacles()</a>, and <a class="el" href="a00434_source.html#l00032">GetAllNodesFromGraph()</a>.</p>
-<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="a00254_source.html#l00283">HF::SpatialStructures::CostAlgorithms::CalculateCrossSlope()</a>, <a class="el" href="a00254_source.html#l00162">HF::SpatialStructures::CostAlgorithms::CalculateEnergyExpenditure()</a>, <a class="el" href="a00011_source.html#l00351">HF::GraphGenerator::CalculateStepType()</a>, <a class="el" href="a00011_source.html#l00508">HF::GraphGenerator::CompareCheckConnections()</a>, <a class="el" href="a00404_source.html#l00022">GenerateGraph()</a>, <a class="el" href="a00404_source.html#l00062">GenerateGraphObstacles()</a>, and <a class="el" href="a00434_source.html#l00032">GetAllNodesFromGraph()</a>.</p>
+<div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-28-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-28-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_aa70347b8a33b57c6f0a72d6eca4248d7_icgraph.svg" width="386" height="304"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-28-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_aa70347b8a33b57c6f0a72d6eca4248d7_icgraph.svg" width="400" height="438"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -3193,7 +3997,7 @@ If directed: <code>O(n)</code> where n is the total number of nodes in the graph
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="a00452.html#_todo000025">Todo:</a></b></dt><dd>Should this just return an empty list instead of throwing? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="a00452.html#_todo000026">Todo:</a></b></dt><dd>Should this just return an empty list instead of throwing? </dd></dl>
 <div class="fragment"><div class="line"><span class="comment">// be sure to #include &quot;graph.h&quot;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Create the nodes</span></div>
@@ -3231,7 +4035,7 @@ If directed: <code>O(n)</code> where n is the total number of nodes in the graph
 <div class="line">    std::cout &lt;&lt; e.child.getArray() &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>;</div>
 <div class="line">}</div>
 <div class="line">std::cout &lt;&lt; std::endl;</div>
-<div class="ttc" id="aa02071_html_a51c4642674d54d02b8600f7ffeb45670"><div class="ttname"><a href="a02071.html#a51c4642674d54d02b8600f7ffeb45670">HF::SpatialStructures::Node::getArray</a></div><div class="ttdeci">std::array&lt; float, 3 &gt; getArray() const</div><div class="ttdoc">Returns the x,y,z of this node as an array of 3 floats.</div><div class="ttdef"><b>Definition:</b> <a href="a03554_source.html#l00141">node.cpp:141</a></div></div>
+<div class="ttc" id="aa02071_html_a51c4642674d54d02b8600f7ffeb45670"><div class="ttname"><a href="a02071.html#a51c4642674d54d02b8600f7ffeb45670">HF::SpatialStructures::Node::getArray</a></div><div class="ttdeci">std::array&lt; float, 3 &gt; getArray() const</div><div class="ttdoc">Returns the x,y,z of this node as an array of 3 floats.</div><div class="ttdef"><b>Definition:</b> <a href="a03558_source.html#l00141">node.cpp:141</a></div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -3301,13 +4105,13 @@ If directed: <code>O(n)</code> where n is the total number of nodes in the graph
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> id_count = graph.size();          <span class="comment">// We retrieve the size of the node id count within graph (3)</span></div>
 </div><!-- fragment --> 
-<p class="reference">Referenced by <a class="el" href="a00197_source.html#l00023">HF::Pathfinding::BoostGraph::BoostGraph()</a>, <a class="el" href="a00026_source.html#l00128">HF::VisibilityGraph::AllToAll()</a>, <a class="el" href="a00026_source.html#l00252">HF::VisibilityGraph::AllToAllUndirected()</a>, <a class="el" href="a00434_source.html#l00400">GetSizeOfGraph()</a>, and <a class="el" href="a00026_source.html#l00189">HF::VisibilityGraph::GroupToGroup()</a>.</p>
-<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="a00197_source.html#l00023">HF::Pathfinding::BoostGraph::BoostGraph()</a>, <a class="el" href="a00026_source.html#l00128">HF::VisibilityGraph::AllToAll()</a>, <a class="el" href="a00026_source.html#l00252">HF::VisibilityGraph::AllToAllUndirected()</a>, <a class="el" href="a00434_source.html#l00680">GetSizeOfGraph()</a>, and <a class="el" href="a00026_source.html#l00189">HF::VisibilityGraph::GroupToGroup()</a>.</p>
+<div id="dynsection-29" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-29-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-29-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-18-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_a2710af2a75976862d7a235793567d2f3_icgraph.svg" width="619" height="304"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-29-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01551_a2710af2a75976862d7a235793567d2f3_icgraph.svg" width="623" height="304"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -3389,7 +4193,7 @@ If directed: <code>O(n)</code> where n is the total number of nodes in the graph
 
 <p>The active edge matrix to use for the graph. </p>
 
-<p class="definition">Definition at line <a class="el" href="a00269_source.html#l00501">501</a> of file <a class="el" href="a00269_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00269_source.html#l00505">505</a> of file <a class="el" href="a00269_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -3413,7 +4217,7 @@ If directed: <code>O(n)</code> where n is the total number of nodes in the graph
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00269_source.html#l00504">504</a> of file <a class="el" href="a00269_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00269_source.html#l00508">508</a> of file <a class="el" href="a00269_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -3440,7 +4244,7 @@ If directed: <code>O(n)</code> where n is the total number of nodes in the graph
 <p>&lt; The default cost type of the graph. </p>
 <p >Hashmap containing evey alternate cost type </p>
 
-<p class="definition">Definition at line <a class="el" href="a00269_source.html#l00505">505</a> of file <a class="el" href="a00269_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00269_source.html#l00509">509</a> of file <a class="el" href="a00269_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -3466,7 +4270,7 @@ If directed: <code>O(n)</code> where n is the total number of nodes in the graph
 
 <p>The underlying CSR containing edge information. </p>
 
-<p class="definition">Definition at line <a class="el" href="a00269_source.html#l00502">502</a> of file <a class="el" href="a00269_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00269_source.html#l00506">506</a> of file <a class="el" href="a00269_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -3493,7 +4297,7 @@ If directed: <code>O(n)</code> where n is the total number of nodes in the graph
 <p>Indicates that the graph has cost arrays. </p>
 <p >If this is true, and the graph compresses again, then all cost arrays will be wrecked. An exception should be thrown in the case this happens, because this is misuse. </p>
 
-<p class="definition">Definition at line <a class="el" href="a00269_source.html#l00513">513</a> of file <a class="el" href="a00269_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00269_source.html#l00517">517</a> of file <a class="el" href="a00269_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -3519,7 +4323,7 @@ If directed: <code>O(n)</code> where n is the total number of nodes in the graph
 
 <p>Maps a list of X,Y,Z positions to positions in ordered_nodes. </p>
 
-<p class="definition">Definition at line <a class="el" href="a00269_source.html#l00494">494</a> of file <a class="el" href="a00269_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00269_source.html#l00498">498</a> of file <a class="el" href="a00269_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -3545,7 +4349,7 @@ If directed: <code>O(n)</code> where n is the total number of nodes in the graph
 
 <p>If true, the CSR is inaccurate and requires compression. </p>
 
-<p class="definition">Definition at line <a class="el" href="a00269_source.html#l00497">497</a> of file <a class="el" href="a00269_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00269_source.html#l00501">501</a> of file <a class="el" href="a00269_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -3571,7 +4375,7 @@ If directed: <code>O(n)</code> where n is the total number of nodes in the graph
 
 <p>The id for the next unique node. </p>
 
-<p class="definition">Definition at line <a class="el" href="a00269_source.html#l00490">490</a> of file <a class="el" href="a00269_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00269_source.html#l00494">494</a> of file <a class="el" href="a00269_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -3597,7 +4401,33 @@ If directed: <code>O(n)</code> where n is the total number of nodes in the graph
 
 <p><a class="el" href="a02071.html" title="A point in space with an ID.">Node</a> attribute type : Map of node id to node attribute. </p>
 
-<p class="definition">Definition at line <a class="el" href="a00269_source.html#l00499">499</a> of file <a class="el" href="a00269_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00269_source.html#l00503">503</a> of file <a class="el" href="a00269_source.html">graph.h</a>.</p>
+
+</div>
+</div>
+<a id="a7a44380216849d6de32d77efce811c08" name="a7a44380216849d6de32d77efce811c08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a44380216849d6de32d77efce811c08">&#9670;&#160;</a></span>node_float_attr_map</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">robin_hood::unordered_map&lt;std::string, <a class="el" href="a01551.html#adf29585f237fcb9f1bdebb0ca40f415e">NodeFloatAttributeValueMap</a>&gt; HF::SpatialStructures::Graph::node_float_attr_map</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="a02071.html" title="A point in space with an ID.">Node</a> attribute type : Map of node id to node attribute for float. </p>
+
+<p class="definition">Definition at line <a class="el" href="a00269_source.html#l00504">504</a> of file <a class="el" href="a00269_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -3624,7 +4454,7 @@ If directed: <code>O(n)</code> where n is the total number of nodes in the graph
 <p>Determines whether or not the graph is using integer nodes. </p>
 <p >This causes the graph to spend more time finding the maximum node ID, since it's not gauranteed edges will be added in order. </p>
 
-<p class="definition">Definition at line <a class="el" href="a00269_source.html#l00522">522</a> of file <a class="el" href="a00269_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00269_source.html#l00526">526</a> of file <a class="el" href="a00269_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -3650,7 +4480,7 @@ If directed: <code>O(n)</code> where n is the total number of nodes in the graph
 
 <p>A list of nodes contained by the graph. </p>
 
-<p class="definition">Definition at line <a class="el" href="a00269_source.html#l00491">491</a> of file <a class="el" href="a00269_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00269_source.html#l00495">495</a> of file <a class="el" href="a00269_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -3676,7 +4506,7 @@ If directed: <code>O(n)</code> where n is the total number of nodes in the graph
 
 <p>Edges to be converted to a CSR when <a class="el" href="a01551.html#a41cece77d0eee98df39ecc6d3a366ec8" title="Compress the graph to a CSR and enable the usage of several functions.">Graph::Compress()</a> is called. </p>
 
-<p class="definition">Definition at line <a class="el" href="a00269_source.html#l00496">496</a> of file <a class="el" href="a00269_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00269_source.html#l00500">500</a> of file <a class="el" href="a00269_source.html">graph.h</a>.</p>
 
 </div>
 </div>

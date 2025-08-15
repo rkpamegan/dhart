@@ -109,5 +109,20 @@
 \DoxyCodeLine{\Hypertarget{a00404_source_l00105}00105     *out\_graph = G;}
 \DoxyCodeLine{\Hypertarget{a00404_source_l00106}00106     \textcolor{keywordflow}{return} \mbox{\hyperlink{a00468_aed53c233beb1d9ec1b0c5fc2bfbb1051a1c4bb363b033df614cec357be815e09d}{OK}};}
 \DoxyCodeLine{\Hypertarget{a00404_source_l00107}00107 \}}
+\DoxyCodeLine{\Hypertarget{a00404_source_l00108}00108 }
+\DoxyCodeLine{\Hypertarget{a00404_source_l00109}\mbox{\hyperlink{a00454_gae7f55e49ba1992471430d0e3d415ebae}{00109}} \mbox{\hyperlink{a00407_a91fa3b2bb3a7312ec39d74cc1fbc7bbe}{C\_INTERFACE}} \mbox{\hyperlink{a00454_gae7f55e49ba1992471430d0e3d415ebae}{CalculateAndStoreStepTypes}}(}
+\DoxyCodeLine{\Hypertarget{a00404_source_l00110}00110     \mbox{\hyperlink{a01551}{HF::SpatialStructures::Graph}}* g, }
+\DoxyCodeLine{\Hypertarget{a00404_source_l00111}00111     \mbox{\hyperlink{a01411}{HF::RayTracer::EmbreeRayTracer}}* ray\_tracer}
+\DoxyCodeLine{\Hypertarget{a00404_source_l00112}00112     ) \{}
+\DoxyCodeLine{\Hypertarget{a00404_source_l00113}00113     }
+\DoxyCodeLine{\Hypertarget{a00404_source_l00114}00114     g-\/>\mbox{\hyperlink{a01551_a41cece77d0eee98df39ecc6d3a366ec8}{Compress}}();}
+\DoxyCodeLine{\Hypertarget{a00404_source_l00115}00115 }
+\DoxyCodeLine{\Hypertarget{a00404_source_l00116}00116     \mbox{\hyperlink{a01419}{HF::RayTracer::MultiRT}} multi\_rt = \mbox{\hyperlink{a01419}{HF::RayTracer::MultiRT}}(ray\_tracer);}
+\DoxyCodeLine{\Hypertarget{a00404_source_l00117}00117     \textcolor{keyword}{auto} result = \mbox{\hyperlink{a00463_a176c58b25fb5cb545d17128d4535f921}{HF::GraphGenerator::CalculateStepType}}(*g, multi\_rt);}
+\DoxyCodeLine{\Hypertarget{a00404_source_l00118}00118 }
+\DoxyCodeLine{\Hypertarget{a00404_source_l00119}00119     g-\/>\mbox{\hyperlink{a01551_a6f04c5320d4bf88120f8c5e31b0fb02a}{AddEdges}}(result, \textcolor{stringliteral}{"{}step\_type"{}});}
+\DoxyCodeLine{\Hypertarget{a00404_source_l00120}00120 }
+\DoxyCodeLine{\Hypertarget{a00404_source_l00121}00121     \textcolor{keywordflow}{return} \mbox{\hyperlink{a00468_aed53c233beb1d9ec1b0c5fc2bfbb1051a1c4bb363b033df614cec357be815e09d}{OK}};}
+\DoxyCodeLine{\Hypertarget{a00404_source_l00122}00122 \}}
 
 \end{DoxyCode}

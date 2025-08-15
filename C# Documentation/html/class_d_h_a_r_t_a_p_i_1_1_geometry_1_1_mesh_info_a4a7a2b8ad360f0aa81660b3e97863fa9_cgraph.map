@@ -1,10 +1,10 @@
 <map id="DHARTAPI.Geometry.MeshInfo.RotateMesh" name="DHARTAPI.Geometry.MeshInfo.RotateMesh">
-<area shape="rect" id="node1" title="Rotate this mesh by the desired magnitude." alt="" coords="5,63,212,105"/>
-<area shape="rect" id="node2" href="$class_d_h_a_r_t_a_p_i_1_1_geometry_1_1_native_methods.html#ac7438861fb6a4dc35a5d29ef84409fd3" title="Rotate an instance of MeshInfo." alt="" coords="270,29,456,72"/>
-<area shape="rect" id="node3" href="$class_d_h_a_r_t_a_p_i_1_1_geometry_1_1_mesh_info.html#a0409ac3fbfba81d4d488c32defdf3655" title="Updates this mesh&#39;s name, ID, and arrays with it&#39;s values from C++." alt="" coords="260,96,466,139"/>
-<area shape="rect" id="node4" href="$class_d_h_a_r_t_a_p_i_1_1_geometry_1_1_native_methods.html#a8267d494ee36917f65146966a585793a" title="Get pointers to the vertex and index arrays of a mesh in C++." alt="" coords="514,5,701,48"/>
-<area shape="rect" id="node6" href="$class_d_h_a_r_t_a_p_i_1_1_geometry_1_1_native_methods.html#afa9349278d57b0497f92edb3dff2c152" title="Get the ID of an instance of MeshInfo in c++." alt="" coords="515,96,700,139"/>
-<area shape="rect" id="node7" href="$class_d_h_a_r_t_a_p_i_1_1_geometry_1_1_native_methods.html#a1fe911a338ef131e97f4be6feb506615" title="Get the name of an instance of MeshInfo in c++." alt="" coords="515,187,700,229"/>
-<area shape="rect" id="node5" href="$class_d_h_a_r_t_a_p_i_1_1_geometry_1_1_native_methods.html#abbb9461128f297e7b82417a549a056e9" title=" " alt="" coords="749,5,935,48"/>
-<area shape="rect" id="node8" href="$class_d_h_a_r_t_a_p_i_1_1_geometry_1_1_native_methods.html#a2d22148d6821031e97d7305df6e9fde0" title=" " alt="" coords="749,187,935,229"/>
+<area shape="rect" id="node1" title="Rotate this mesh by the desired magnitude." alt="" coords="5,63,216,105"/>
+<area shape="rect" id="node2" href="$class_d_h_a_r_t_a_p_i_1_1_geometry_1_1_native_methods.html#ac7438861fb6a4dc35a5d29ef84409fd3" title="Rotate an instance of MeshInfo." alt="" coords="274,29,464,72"/>
+<area shape="rect" id="node3" href="$class_d_h_a_r_t_a_p_i_1_1_geometry_1_1_mesh_info.html#a0409ac3fbfba81d4d488c32defdf3655" title="Updates this mesh&#39;s name, ID, and arrays with it&#39;s values from C++." alt="" coords="264,96,474,139"/>
+<area shape="rect" id="node4" href="$class_d_h_a_r_t_a_p_i_1_1_geometry_1_1_native_methods.html#a8267d494ee36917f65146966a585793a" title="Get pointers to the vertex and index arrays of a mesh in C++." alt="" coords="522,5,712,48"/>
+<area shape="rect" id="node6" href="$class_d_h_a_r_t_a_p_i_1_1_geometry_1_1_native_methods.html#afa9349278d57b0497f92edb3dff2c152" title="Get the ID of an instance of MeshInfo in c++." alt="" coords="522,96,712,139"/>
+<area shape="rect" id="node7" href="$class_d_h_a_r_t_a_p_i_1_1_geometry_1_1_native_methods.html#a1fe911a338ef131e97f4be6feb506615" title="Get the name of an instance of MeshInfo in c++." alt="" coords="522,187,712,229"/>
+<area shape="rect" id="node5" href="$class_d_h_a_r_t_a_p_i_1_1_geometry_1_1_native_methods.html#abbb9461128f297e7b82417a549a056e9" title=" " alt="" coords="760,5,951,48"/>
+<area shape="rect" id="node8" href="$class_d_h_a_r_t_a_p_i_1_1_geometry_1_1_native_methods.html#a2d22148d6821031e97d7305df6e9fde0" title=" " alt="" coords="760,187,951,229"/>
 </map>

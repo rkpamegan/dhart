@@ -1,0 +1,33 @@
+digraph "HF::GraphGenerator::CastToReal3"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="HF::GraphGenerator\l::CastToReal3",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Cast an array of 3 values to the graph_generator's real_3 type."];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="HF::GraphGenerator\l::GraphGenerator::BuildNetwork",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01311.html#a0c12341433bbec41cc12cc1dbb41a976",tooltip="Generate a graph of accessible space."];
+  Node2 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="GenerateGraph",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00454.html#ga2df84a732d1edfb70b7bd26d3282e129",tooltip="Construct a graph by performing a breadth-first search of accessible space."];
+  Node2 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="GenerateGraphObstacles",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00454.html#gab9f58e3ecc686fa9bc34519b0faed734",tooltip="Construct a graph by performing a breadth-first search of accessible space, seperating obstacles from..."];
+  Node1 -> Node5 [dir="back",color="steelblue1",style="solid"];
+  Node5 [label="HF::GraphGenerator\l::CalculateStepType",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00463.html#a176c58b25fb5cb545d17128d4535f921",tooltip=" "];
+  Node5 -> Node6 [dir="back",color="steelblue1",style="solid"];
+  Node6 [label="HF::GraphGenerator\l::CalculateAndStoreStepType",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00463.html#a0251caf5a32eb2c1f9d846d88eb7fe22",tooltip=" "];
+  Node5 -> Node7 [dir="back",color="steelblue1",style="solid"];
+  Node7 [label="CalculateAndStoreStepTypes",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00454.html#gae7f55e49ba1992471430d0e3d415ebae",tooltip="Query the graph and identify the step types of all edges, adding them to the graph."];
+  Node5 -> Node8 [dir="back",color="steelblue1",style="solid"];
+  Node8 [label="HF::GraphGenerator\l::CalculateStepType",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00463.html#a81398de53e151ae58b206523e555309e",tooltip=" "];
+  Node1 -> Node9 [dir="back",color="steelblue1",style="solid"];
+  Node9 [label="HF::GraphGenerator\l::CompareCheckConnections",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00463.html#a5d2ad6de2131b1a90a80f901ac8dd185",tooltip=" "];
+  Node1 -> Node10 [dir="back",color="steelblue1",style="solid"];
+  Node10 [label="HF::GraphGenerator\l::GraphGenerator::CrawlGeom",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01311.html#ac7052d4b625fb96f29c5bfc091a86f7e",tooltip="Perform breadth first search to populate the graph with with nodes and edges."];
+  Node10 -> Node11 [dir="back",color="steelblue1",style="solid"];
+  Node11 [label="HF::GraphGenerator\l::GraphGenerator::IMPL\l_BuildNetwork",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01311.html#a5788e421d921ec0ff27defc139c45106",tooltip="Generate a graph of accessible space."];
+  Node11 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node1 -> Node12 [dir="back",color="steelblue1",style="solid"];
+  Node12 [label="HF::GraphGenerator\l::GraphGenerator::CrawlGeom\lParallel",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01311.html#a843cc6b5b69b5d013930b3685789fa15",tooltip="Perform breadth first search to populate the graph with nodes and edges using multiple cores."];
+  Node12 -> Node11 [dir="back",color="steelblue1",style="solid"];
+}

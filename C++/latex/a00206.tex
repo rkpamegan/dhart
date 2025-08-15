@@ -10,22 +10,11 @@ Contains definition for the \mbox{\hyperlink{a01391}{Boost\+Graph\+Deleter}} str
 {\ttfamily \#include $<$string$>$}\newline
 {\ttfamily \#include $<$cassert$>$}\newline
 {\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
 Include dependency graph for path\+\_\+finder.\+h\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a00207}
-\end{center}
-\end{figure}
+% FIG 0
 This graph shows which files directly or indirectly include this file\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=302pt]{a00208}
-\end{center}
-\end{figure}
+% FIG 1
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
@@ -52,13 +41,17 @@ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{a01383}{Boost\+Graph}}, \mbox{\hyperl
 vector$<$ \mbox{\hyperlink{a02083}{Path}} $>$ \mbox{\hyperlink{a00472_a15badb9d0a17849de7b21105605c9c91}{HF\+::\+Pathfinding\+::\+Find\+Paths}} (\mbox{\hyperlink{a01383}{Boost\+Graph}} $\ast$bg, const std\+::vector$<$ int $>$ \&start\+\_\+points, const std\+::vector$<$ int $>$ \&end\+\_\+points)
 \begin{DoxyCompactList}\small\item\em Find a path from every id in start\+\_\+ids to the matching end node in end\+\_\+ids. \end{DoxyCompactList}\item 
 std\+::vector$<$ \mbox{\hyperlink{a02083}{HF\+::\+Spatial\+Structures\+::\+Path}} $>$ \mbox{\hyperlink{a00472_abb65ba6c3ed7a1999d9f40ae14ba3269}{HF\+::\+Pathfinding\+::\+Find\+All\+Paths}} (Boost\+Graph $\ast$bg)
-\begin{DoxyCompactList}\small\item\em Find a path from every node to every node (NOTE\+: Not implemented yet.)  \end{DoxyCompactList}\item 
+\item 
 void \mbox{\hyperlink{a00472_a417084c97d0672af2da7739157a9d8c0}{HF\+::\+Pathfinding\+::\+Insert\+Paths\+Into\+Array}} (const \mbox{\hyperlink{a01383}{Boost\+Graph}} $\ast$bg, const std\+::vector$<$ int $>$ \&start\+\_\+points, const std\+::vector$<$ int $>$ \&end\+\_\+points, \mbox{\hyperlink{a02083}{HF\+::\+Spatial\+Structures\+::\+Path}} $\ast$$\ast$out\+\_\+paths, \mbox{\hyperlink{a02079}{HF\+::\+Spatial\+Structures\+::\+Path\+Member}} $\ast$$\ast$out\+\_\+path\+\_\+members, int $\ast$out\+\_\+sizes)
 \begin{DoxyCompactList}\small\item\em A special version of Find\+Paths optimized for the C\+\_\+\+Interface. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{a01395}{Distance\+And\+Predecessor}} \mbox{\hyperlink{a00472_ab58662be8e56c333d74d60a823e810e3}{HF\+::\+Pathfinding\+::\+Generate\+Distance\+And\+Pred}} (const \mbox{\hyperlink{a01383}{Boost\+Graph}} \&bg)
 \begin{DoxyCompactList}\small\item\em Generate the distance and predecessor matricies for a specific boost graph. \end{DoxyCompactList}\item 
+Distance\+And\+Predecessor \mbox{\hyperlink{a00472_a496379e77c1c41453ef021358f8372fb}{HF\+::\+Pathfinding\+::\+Generate\+Distance\+And\+Pred\+Fast}} (const Boost\+Graph \&bg)
+\item 
 void \mbox{\hyperlink{a00472_a69bd3efcc13788e7c4be43b67d6002e5}{HF\+::\+Pathfinding\+::\+Insert\+All\+To\+All\+Paths\+Into\+Array}} (\mbox{\hyperlink{a01383}{Boost\+Graph}} $\ast$bg, \mbox{\hyperlink{a02083}{HF\+::\+Spatial\+Structures\+::\+Path}} $\ast$$\ast$out\+\_\+paths, \mbox{\hyperlink{a02079}{HF\+::\+Spatial\+Structures\+::\+Path\+Member}} $\ast$$\ast$out\+\_\+path\+\_\+members, int $\ast$out\+\_\+sizes)
 \begin{DoxyCompactList}\small\item\em A special version of Find\+Paths optimized for the C\+\_\+\+Interface, such that all paths possible from each node to every other node are generated. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{a00472_a6d24adcb1c0891a98e7d9a8d36f8cc01}{HF\+::\+Pathfinding\+::\+Find\+APSP}} (\mbox{\hyperlink{a01383}{Boost\+Graph}} \&bg)
+\item 
 std\+::ostream \& \mbox{\hyperlink{a00206_a13feb2f4c5d11a3eeea4ac367856d592}{operator$<$$<$}} (std\+::ostream \&os, \mbox{\hyperlink{a01395}{HF\+::\+Pathfinding\+::\+Distance\+And\+Predecessor}} \&dist\+\_\+pred)
 \begin{DoxyCompactList}\small\item\em An overload to print \mbox{\hyperlink{a01395}{HF\+::\+Pathfinding\+::\+Distance\+And\+Predecessor}} when passed to cout . \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -91,17 +84,11 @@ An overload to print \mbox{\hyperlink{a01395}{HF\+::\+Pathfinding\+::\+Distance\
 
 
 
-Definition at line \mbox{\hyperlink{a00206_source_l00621}{621}} of file \mbox{\hyperlink{a00206_source}{path\+\_\+finder.\+h}}.
+Definition at line \mbox{\hyperlink{a00206_source_l00625}{625}} of file \mbox{\hyperlink{a00206_source}{path\+\_\+finder.\+h}}.
 
 
 
-References \mbox{\hyperlink{a00206_source_l00439}{HF\+::\+Pathfinding\+::\+Distance\+And\+Predecessor\+::\+Get\+Row\+Of\+Dist()}}, \mbox{\hyperlink{a00206_source_l00453}{HF\+::\+Pathfinding\+::\+Distance\+And\+Predecessor\+::\+Get\+Row\+Of\+Pred()}}, and \mbox{\hyperlink{a00206_source_l00413}{HF\+::\+Pathfinding\+::\+Distance\+And\+Predecessor\+::size}}.
+References \mbox{\hyperlink{a00206_source_l00437}{HF\+::\+Pathfinding\+::\+Distance\+And\+Predecessor\+::\+Get\+Row\+Of\+Dist()}}, \mbox{\hyperlink{a00206_source_l00451}{HF\+::\+Pathfinding\+::\+Distance\+And\+Predecessor\+::\+Get\+Row\+Of\+Pred()}}, and \mbox{\hyperlink{a00206_source_l00411}{HF\+::\+Pathfinding\+::\+Distance\+And\+Predecessor\+::size}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=338pt]{a00206_a13feb2f4c5d11a3eeea4ac367856d592_cgraph}
-\end{center}
-\end{figure}
+% FIG 2

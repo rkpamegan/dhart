@@ -1,0 +1,4 @@
+<map id="HF::SpatialStructures::Graph::GetEdgeCostsFromNodeIDs" name="HF::SpatialStructures::Graph::GetEdgeCostsFromNodeIDs">
+<area shape="rect" id="node1" title="Get costs of all given edges" alt="" coords="243,5,483,48"/>
+<area shape="rect" id="node2" href="$a00458.html#ga1da08530d654ccd7955a955f59d77972" title="Get the costs of traversing from parent to child in a given array." alt="" coords="5,13,195,40"/>
+</map>

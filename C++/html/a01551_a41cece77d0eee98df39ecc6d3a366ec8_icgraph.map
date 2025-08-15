@@ -1,4 +1,6 @@
 <map id="HF::SpatialStructures::Graph::Compress" name="HF::SpatialStructures::Graph::Compress">
-<area shape="rect" id="node1" title="Compress the graph to a CSR and enable the usage of several functions." alt="" coords="134,5,280,48"/>
-<area shape="rect" id="node2" href="$a00458.html#gab7ecc1be5c746ed3f99ab7494316c65d" title="Compress the given graph into a CSR representation." alt="" coords="5,13,86,40"/>
+<area shape="rect" id="node1" title="Compress the graph to a CSR and enable the usage of several functions." alt="" coords="247,64,394,107"/>
+<area shape="rect" id="node2" href="$a00463.html#a0251caf5a32eb2c1f9d846d88eb7fe22" title=" " alt="" coords="5,5,199,48"/>
+<area shape="rect" id="node3" href="$a00454.html#gae7f55e49ba1992471430d0e3d415ebae" title="Query the graph and identify the step types of all edges, adding them to the graph." alt="" coords="6,72,198,99"/>
+<area shape="rect" id="node4" href="$a00458.html#gab7ecc1be5c746ed3f99ab7494316c65d" title="Compress the given graph into a CSR representation." alt="" coords="61,123,143,149"/>
 </map>

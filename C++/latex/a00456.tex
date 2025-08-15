@@ -14,7 +14,9 @@
 \mbox{\hyperlink{a00407_a91fa3b2bb3a7312ec39d74cc1fbc7bbe}{C\+\_\+\+INTERFACE}} \mbox{\hyperlink{a00456_gaba6ec6ce84974dd6a311d7d65dd34221}{Create\+All\+To\+All\+Paths}} (const \mbox{\hyperlink{a01551}{HF\+::\+Spatial\+Structures\+::\+Graph}} $\ast$g, const char $\ast$cost\+\_\+type, \mbox{\hyperlink{a02083}{HF\+::\+Spatial\+Structures\+::\+Path}} $\ast$$\ast$out\+\_\+path\+\_\+ptr\+\_\+holder, \mbox{\hyperlink{a02079}{HF\+::\+Spatial\+Structures\+::\+Path\+Member}} $\ast$$\ast$out\+\_\+path\+\_\+member\+\_\+ptr\+\_\+holder, int $\ast$out\+\_\+sizes, int num\+\_\+paths)
 \begin{DoxyCompactList}\small\item\em Find a path from every node in a graph to every other node. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{a00407_a91fa3b2bb3a7312ec39d74cc1fbc7bbe}{C\+\_\+\+INTERFACE}} \mbox{\hyperlink{a00456_ga27b1f45019ccbda909301520d1c738ca}{Calculate\+Distance\+And\+Predecessor}} (const \mbox{\hyperlink{a01551}{HF\+::\+Spatial\+Structures\+::\+Graph}} $\ast$g, const char $\ast$cost\+\_\+name, std\+::vector$<$ float $>$ $\ast$$\ast$out\+\_\+dist\+\_\+vector, float $\ast$$\ast$out\+\_\+dist\+\_\+data, std\+::vector$<$ int $>$ $\ast$$\ast$out\+\_\+pred\+\_\+vector, int $\ast$$\ast$out\+\_\+pred\+\_\+data)
-\begin{DoxyCompactList}\small\item\em Calculate the distance and predecessor matricies for a graph. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Calculate the distance and predecessor matricies for a graph. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{a00407_a91fa3b2bb3a7312ec39d74cc1fbc7bbe}{C\+\_\+\+INTERFACE}} \mbox{\hyperlink{a00456_gaff8b6c35105e6a465af490691069727a}{Create\+All\+Pred\+To\+Path}} (const \mbox{\hyperlink{a01551}{HF\+::\+Spatial\+Structures\+::\+Graph}} $\ast$g, const char $\ast$cost\+\_\+name, std\+::vector$<$ int $>$ $\ast$$\ast$out\+\_\+nodes\+\_\+vector, int $\ast$$\ast$out\+\_\+nodes\+\_\+data, std\+::vector$<$ int $>$ $\ast$$\ast$out\+\_\+lengths\+\_\+vector, int $\ast$$\ast$out\+\_\+lengths\+\_\+data)
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -314,20 +316,34 @@ Print the result\+:~\newline
  {\ttfamily \texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} Distance Matrix\+: \mbox{[}0.\+000000, 10.\+000000, 5.\+000000, 10.\+000000, 0.\+000000, 15.\+000000, -\/1.\+000000, -\/1.\+000000, 0.\+000000\mbox{]}}~\newline
 {\ttfamily \texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} Predecessor Matrix\+: \mbox{[}0, 0, 0, 1, 1, 0, -\/1, -\/1, 2\mbox{]}\textbackslash{}n} 
 
-Definition at line \mbox{\hyperlink{a00422_source_l00171}{171}} of file \mbox{\hyperlink{a00422_source}{pathfinder\+\_\+\+C.\+cpp}}.
+Definition at line \mbox{\hyperlink{a00422_source_l00173}{173}} of file \mbox{\hyperlink{a00422_source}{pathfinder\+\_\+\+C.\+cpp}}.
 
 
 
-References \mbox{\hyperlink{a00203_source_l00320}{HF\+::\+Pathfinding\+::\+Create\+Boost\+Graph()}}, \mbox{\hyperlink{a00206_source_l00410}{HF\+::\+Pathfinding\+::\+Distance\+And\+Predecessor\+::dist}}, \mbox{\hyperlink{a00203_source_l00267}{HF\+::\+Pathfinding\+::\+Generate\+Distance\+And\+Pred()}}, and \mbox{\hyperlink{a00206_source_l00411}{HF\+::\+Pathfinding\+::\+Distance\+And\+Predecessor\+::pred}}.
+References \mbox{\hyperlink{a00203_source_l00320}{HF\+::\+Pathfinding\+::\+Create\+Boost\+Graph()}}, \mbox{\hyperlink{a00206_source_l00408}{HF\+::\+Pathfinding\+::\+Distance\+And\+Predecessor\+::dist}}, \mbox{\hyperlink{a00203_source_l00267}{HF\+::\+Pathfinding\+::\+Generate\+Distance\+And\+Pred()}}, and \mbox{\hyperlink{a00206_source_l00409}{HF\+::\+Pathfinding\+::\+Distance\+And\+Predecessor\+::pred}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a00456_ga27b1f45019ccbda909301520d1c738ca_cgraph}
-\end{center}
-\end{figure}
+% FIG 0
+\mbox{\Hypertarget{a00456_gaff8b6c35105e6a465af490691069727a}\label{a00456_gaff8b6c35105e6a465af490691069727a}} 
+\index{Pathfinding@{Pathfinding}!CreateAllPredToPath@{CreateAllPredToPath}}
+\index{CreateAllPredToPath@{CreateAllPredToPath}!Pathfinding@{Pathfinding}}
+\doxysubsubsection{\texorpdfstring{CreateAllPredToPath()}{CreateAllPredToPath()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{a00407_a91fa3b2bb3a7312ec39d74cc1fbc7bbe}{C\+\_\+\+INTERFACE}} Create\+All\+Pred\+To\+Path (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{a01551}{HF\+::\+Spatial\+Structures\+::\+Graph}} $\ast$}]{g,  }\item[{const char $\ast$}]{cost\+\_\+name,  }\item[{std\+::vector$<$ int $>$ $\ast$$\ast$}]{out\+\_\+nodes\+\_\+vector,  }\item[{int $\ast$$\ast$}]{out\+\_\+nodes\+\_\+data,  }\item[{std\+::vector$<$ int $>$ $\ast$$\ast$}]{out\+\_\+lengths\+\_\+vector,  }\item[{int $\ast$$\ast$}]{out\+\_\+lengths\+\_\+data }\end{DoxyParamCaption})}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{a00425}{Cinterface/pathfinder\+\_\+\+C.\+h}}$>$}
+
+
+
+Definition at line \mbox{\hyperlink{a00422_source_l00203}{203}} of file \mbox{\hyperlink{a00422_source}{pathfinder\+\_\+\+C.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{a00203_source_l00320}{HF\+::\+Pathfinding\+::\+Create\+Boost\+Graph()}}, and \mbox{\hyperlink{a00203_source_l00461}{HF\+::\+Pathfinding\+::\+Find\+APSP()}}.
+
+Here is the call graph for this function\+:
+% FIG 1
 \mbox{\Hypertarget{a00456_gaba6ec6ce84974dd6a311d7d65dd34221}\label{a00456_gaba6ec6ce84974dd6a311d7d65dd34221}} 
 \index{Pathfinding@{Pathfinding}!CreateAllToAllPaths@{CreateAllToAllPaths}}
 \index{CreateAllToAllPaths@{CreateAllToAllPaths}!Pathfinding@{Pathfinding}}
@@ -580,20 +596,14 @@ Now we are ready to invoke \mbox{\hyperlink{a00456_gaba6ec6ce84974dd6a311d7d65dd
 \end{DoxyCodeInclude}
  
 
-Definition at line \mbox{\hyperlink{a00422_source_l00138}{138}} of file \mbox{\hyperlink{a00422_source}{pathfinder\+\_\+\+C.\+cpp}}.
+Definition at line \mbox{\hyperlink{a00422_source_l00140}{140}} of file \mbox{\hyperlink{a00422_source}{pathfinder\+\_\+\+C.\+cpp}}.
 
 
 
 References \mbox{\hyperlink{a00203_source_l00320}{HF\+::\+Pathfinding\+::\+Create\+Boost\+Graph()}}, and \mbox{\hyperlink{a00203_source_l00329}{HF\+::\+Pathfinding\+::\+Insert\+All\+To\+All\+Paths\+Into\+Array()}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a00456_gaba6ec6ce84974dd6a311d7d65dd34221_cgraph}
-\end{center}
-\end{figure}
+% FIG 2
 \mbox{\Hypertarget{a00456_ga3dc85450e989a996a3c3fcfad0a5944e}\label{a00456_ga3dc85450e989a996a3c3fcfad0a5944e}} 
 \index{Pathfinding@{Pathfinding}!CreatePath@{CreatePath}}
 \index{CreatePath@{CreatePath}!Pathfinding@{Pathfinding}}
@@ -727,20 +737,14 @@ From here, please review the examples on how to destroy a path (\mbox{\hyperlink
 {\ttfamily \texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} Total path cost\+: 77.\+6772}~\newline
 
 
-Definition at line \mbox{\hyperlink{a00422_source_l00023}{23}} of file \mbox{\hyperlink{a00422_source}{pathfinder\+\_\+\+C.\+cpp}}.
+Definition at line \mbox{\hyperlink{a00422_source_l00025}{25}} of file \mbox{\hyperlink{a00422_source}{pathfinder\+\_\+\+C.\+cpp}}.
 
 
 
 References \mbox{\hyperlink{a00203_source_l00320}{HF\+::\+Pathfinding\+::\+Create\+Boost\+Graph()}}, \mbox{\hyperlink{a00278_source_l00016}{HF\+::\+Spatial\+Structures\+::\+Path\+::empty()}}, \mbox{\hyperlink{a00203_source_l00166}{HF\+::\+Pathfinding\+::\+Find\+Path()}}, \mbox{\hyperlink{a00176_source_l00038}{HF\+::\+Exceptions\+::\+GENERIC\+\_\+\+ERROR}}, \mbox{\hyperlink{a00278_source_l00056}{HF\+::\+Spatial\+Structures\+::\+Path\+::\+Get\+PMPointer()}}, \mbox{\hyperlink{a00176_source_l00050}{HF\+::\+Exceptions\+::\+NO\+\_\+\+COST}}, \mbox{\hyperlink{a00176_source_l00049}{HF\+::\+Exceptions\+::\+NO\+\_\+\+PATH}}, \mbox{\hyperlink{a00176_source_l00032}{HF\+::\+Exceptions\+::\+OK}}, and \mbox{\hyperlink{a00278_source_l00020}{HF\+::\+Spatial\+Structures\+::\+Path\+::size()}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a00456_ga3dc85450e989a996a3c3fcfad0a5944e_cgraph}
-\end{center}
-\end{figure}
+% FIG 3
 \mbox{\Hypertarget{a00456_gae1ac2805c3b86883bb88269ed3868367}\label{a00456_gae1ac2805c3b86883bb88269ed3868367}} 
 \index{Pathfinding@{Pathfinding}!CreatePaths@{CreatePaths}}
 \index{CreatePaths@{CreatePaths}!Pathfinding@{Pathfinding}}
@@ -945,20 +949,14 @@ With a cost type\+:~\newline
 {\ttfamily \texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} TODO output}~\newline
 
 
-Definition at line \mbox{\hyperlink{a00422_source_l00070}{70}} of file \mbox{\hyperlink{a00422_source}{pathfinder\+\_\+\+C.\+cpp}}.
+Definition at line \mbox{\hyperlink{a00422_source_l00072}{72}} of file \mbox{\hyperlink{a00422_source}{pathfinder\+\_\+\+C.\+cpp}}.
 
 
 
 References \mbox{\hyperlink{a00203_source_l00320}{HF\+::\+Pathfinding\+::\+Create\+Boost\+Graph()}}, \mbox{\hyperlink{a00176_source_l00038}{HF\+::\+Exceptions\+::\+GENERIC\+\_\+\+ERROR}}, \mbox{\hyperlink{a00203_source_l00201}{HF\+::\+Pathfinding\+::\+Insert\+Paths\+Into\+Array()}}, \mbox{\hyperlink{a00176_source_l00050}{HF\+::\+Exceptions\+::\+NO\+\_\+\+COST}}, and \mbox{\hyperlink{a00176_source_l00032}{HF\+::\+Exceptions\+::\+OK}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a00456_gae1ac2805c3b86883bb88269ed3868367_cgraph}
-\end{center}
-\end{figure}
+% FIG 4
 \mbox{\Hypertarget{a00456_ga884a3374d971261a01ccfd3b21e288e5}\label{a00456_ga884a3374d971261a01ccfd3b21e288e5}} 
 \index{Pathfinding@{Pathfinding}!DestroyPath@{DestroyPath}}
 \index{DestroyPath@{DestroyPath}!Pathfinding@{Pathfinding}}
@@ -1036,20 +1034,14 @@ HF\+\_\+\+STATUS\+::\+OK on return.
 {\ttfamily \texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} TODO output}~\newline
 
 
-Definition at line \mbox{\hyperlink{a00422_source_l00133}{133}} of file \mbox{\hyperlink{a00422_source}{pathfinder\+\_\+\+C.\+cpp}}.
+Definition at line \mbox{\hyperlink{a00422_source_l00135}{135}} of file \mbox{\hyperlink{a00422_source}{pathfinder\+\_\+\+C.\+cpp}}.
 
 
 
-References \mbox{\hyperlink{a00413_source_l00112}{Delete\+Raw\+Ptr()}}, and \mbox{\hyperlink{a00176_source_l00032}{HF\+::\+Exceptions\+::\+OK}}.
+References \mbox{\hyperlink{a00413_source_l00115}{Delete\+Raw\+Ptr()}}, and \mbox{\hyperlink{a00176_source_l00032}{HF\+::\+Exceptions\+::\+OK}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=261pt]{a00456_ga884a3374d971261a01ccfd3b21e288e5_cgraph}
-\end{center}
-\end{figure}
+% FIG 5
 \mbox{\Hypertarget{a00456_gaac725d282f4fecd3aba1b3273c26e7e1}\label{a00456_gaac725d282f4fecd3aba1b3273c26e7e1}} 
 \index{Pathfinding@{Pathfinding}!GetPathInfo@{GetPathInfo}}
 \index{GetPathInfo@{GetPathInfo}!Pathfinding@{Pathfinding}}
@@ -1132,17 +1124,11 @@ HF\+\_\+\+STATUS\+::\+OK on success, HF\+\_\+\+STATUS\+::\+NO\+\_\+\+PATH if the
 {\ttfamily \texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} TODO output}~\newline
  Get the size of a path and a pointer to its path members. 
 
-Definition at line \mbox{\hyperlink{a00422_source_l00115}{115}} of file \mbox{\hyperlink{a00422_source}{pathfinder\+\_\+\+C.\+cpp}}.
+Definition at line \mbox{\hyperlink{a00422_source_l00117}{117}} of file \mbox{\hyperlink{a00422_source}{pathfinder\+\_\+\+C.\+cpp}}.
 
 
 
 References \mbox{\hyperlink{a00278_source_l00056}{HF\+::\+Spatial\+Structures\+::\+Path\+::\+Get\+PMPointer()}}, \mbox{\hyperlink{a00176_source_l00049}{HF\+::\+Exceptions\+::\+NO\+\_\+\+PATH}}, \mbox{\hyperlink{a00176_source_l00032}{HF\+::\+Exceptions\+::\+OK}}, and \mbox{\hyperlink{a00278_source_l00020}{HF\+::\+Spatial\+Structures\+::\+Path\+::size()}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=293pt]{a00456_gaac725d282f4fecd3aba1b3273c26e7e1_cgraph}
-\end{center}
-\end{figure}
+% FIG 6

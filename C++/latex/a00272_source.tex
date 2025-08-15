@@ -2648,7 +2648,7 @@
 \DoxyCodeLine{\Hypertarget{a00272_source_l02905}02905          \textcolor{keyword}{template}<\textcolor{keyword}{typename} U> \textcolor{keyword}{class }AllocatorType = std::allocator,}
 \DoxyCodeLine{\Hypertarget{a00272_source_l02906}02906          \textcolor{keyword}{template}<\textcolor{keyword}{typename} T, \textcolor{keyword}{typename} SFINAE = \textcolor{keywordtype}{void}> \textcolor{keyword}{class }JSONSerializer =}
 \DoxyCodeLine{\Hypertarget{a00272_source_l02907}02907          adl\_serializer,}
-\DoxyCodeLine{\Hypertarget{a00272_source_l02908}02908          \textcolor{keyword}{class }\mbox{\hyperlink{a03503}{BinaryType}} = std::vector<std::uint8\_t>>}
+\DoxyCodeLine{\Hypertarget{a00272_source_l02908}02908          \textcolor{keyword}{class }\mbox{\hyperlink{a03507}{BinaryType}} = std::vector<std::uint8\_t>>}
 \DoxyCodeLine{\Hypertarget{a00272_source_l02909}02909 \textcolor{keyword}{class }basic\_json;}
 \DoxyCodeLine{\Hypertarget{a00272_source_l02910}02910 }
 \DoxyCodeLine{\Hypertarget{a00272_source_l02922}02922 \textcolor{keyword}{template}<\textcolor{keyword}{typename} BasicJsonType>}
@@ -3022,9 +3022,9 @@
 \DoxyCodeLine{\Hypertarget{a00272_source_l03321}03321 }
 \DoxyCodeLine{\Hypertarget{a00272_source_l03322}03322 \textcolor{comment}{// https://en.cppreference.com/w/cpp/types/conjunction}}
 \DoxyCodeLine{\Hypertarget{a00272_source_l03323}\mbox{\hyperlink{a01835}{03323}} \textcolor{keyword}{template}<\textcolor{keyword}{class}...> \textcolor{keyword}{struct }\mbox{\hyperlink{a01835}{conjunction}} : std::true\_type \{ \};}
-\DoxyCodeLine{\Hypertarget{a00272_source_l03324}\mbox{\hyperlink{a01839}{03324}} \textcolor{keyword}{template}<\textcolor{keyword}{class} B1> \textcolor{keyword}{struct }\mbox{\hyperlink{a01835}{conjunction<B1>}} : \mbox{\hyperlink{a03507}{B1}} \{ \};}
-\DoxyCodeLine{\Hypertarget{a00272_source_l03325}03325 \textcolor{keyword}{template}<\textcolor{keyword}{class }\mbox{\hyperlink{a03507}{B1}}, \textcolor{keyword}{class}... Bn>}
-\DoxyCodeLine{\Hypertarget{a00272_source_l03326}\mbox{\hyperlink{a01843}{03326}} \textcolor{keyword}{struct }\mbox{\hyperlink{a01835}{conjunction}}<\mbox{\hyperlink{a03507}{B1}}, Bn...>}
+\DoxyCodeLine{\Hypertarget{a00272_source_l03324}\mbox{\hyperlink{a01839}{03324}} \textcolor{keyword}{template}<\textcolor{keyword}{class} B1> \textcolor{keyword}{struct }\mbox{\hyperlink{a01835}{conjunction<B1>}} : \mbox{\hyperlink{a03511}{B1}} \{ \};}
+\DoxyCodeLine{\Hypertarget{a00272_source_l03325}03325 \textcolor{keyword}{template}<\textcolor{keyword}{class }\mbox{\hyperlink{a03511}{B1}}, \textcolor{keyword}{class}... Bn>}
+\DoxyCodeLine{\Hypertarget{a00272_source_l03326}\mbox{\hyperlink{a01843}{03326}} \textcolor{keyword}{struct }\mbox{\hyperlink{a01835}{conjunction}}<\mbox{\hyperlink{a03511}{B1}}, Bn...>}
 \DoxyCodeLine{\Hypertarget{a00272_source_l03327}03327 : std::conditional<bool(B1::value), conjunction<Bn...>, B1>::type \{\};}
 \DoxyCodeLine{\Hypertarget{a00272_source_l03328}03328 }
 \DoxyCodeLine{\Hypertarget{a00272_source_l03329}03329 \textcolor{keyword}{template}<\textcolor{keyword}{typename} T1, \textcolor{keyword}{typename} T2>}
@@ -4037,30 +4037,30 @@
 \DoxyCodeLine{\Hypertarget{a00272_source_l04417}04417 \{}
 \DoxyCodeLine{\Hypertarget{a00272_source_l04418}04418 }
 \DoxyCodeLine{\Hypertarget{a00272_source_l04432}04432 \textcolor{keyword}{template}<\textcolor{keyword}{typename} BinaryType>}
-\DoxyCodeLine{\Hypertarget{a00272_source_l04433}\mbox{\hyperlink{a01915}{04433}} \textcolor{keyword}{class }\mbox{\hyperlink{a01915}{byte\_container\_with\_subtype}} : \textcolor{keyword}{public} \mbox{\hyperlink{a03503}{BinaryType}}}
+\DoxyCodeLine{\Hypertarget{a00272_source_l04433}\mbox{\hyperlink{a01915}{04433}} \textcolor{keyword}{class }\mbox{\hyperlink{a01915}{byte\_container\_with\_subtype}} : \textcolor{keyword}{public} \mbox{\hyperlink{a03507}{BinaryType}}}
 \DoxyCodeLine{\Hypertarget{a00272_source_l04434}04434 \{}
 \DoxyCodeLine{\Hypertarget{a00272_source_l04435}04435   \textcolor{keyword}{public}:}
-\DoxyCodeLine{\Hypertarget{a00272_source_l04437}\mbox{\hyperlink{a01915_a4d27e8633c5a5e3b49dd4ccb06515713}{04437}}     \textcolor{keyword}{using }\mbox{\hyperlink{a03503}{container\_type}} = \mbox{\hyperlink{a03503}{BinaryType}};}
+\DoxyCodeLine{\Hypertarget{a00272_source_l04437}\mbox{\hyperlink{a01915_a4d27e8633c5a5e3b49dd4ccb06515713}{04437}}     \textcolor{keyword}{using }\mbox{\hyperlink{a03507}{container\_type}} = \mbox{\hyperlink{a03507}{BinaryType}};}
 \DoxyCodeLine{\Hypertarget{a00272_source_l04438}04438 }
-\DoxyCodeLine{\Hypertarget{a00272_source_l04439}\mbox{\hyperlink{a01915_a89c78caf8c7b54dc1bcfa4b0b23d2fc8}{04439}}     \mbox{\hyperlink{a01915_a89c78caf8c7b54dc1bcfa4b0b23d2fc8}{byte\_container\_with\_subtype}}() noexcept(noexcept(\mbox{\hyperlink{a03503}{container\_type}}()))}
-\DoxyCodeLine{\Hypertarget{a00272_source_l04440}04440         : \mbox{\hyperlink{a03503}{container\_type}}()}
+\DoxyCodeLine{\Hypertarget{a00272_source_l04439}\mbox{\hyperlink{a01915_a89c78caf8c7b54dc1bcfa4b0b23d2fc8}{04439}}     \mbox{\hyperlink{a01915_a89c78caf8c7b54dc1bcfa4b0b23d2fc8}{byte\_container\_with\_subtype}}() noexcept(noexcept(\mbox{\hyperlink{a03507}{container\_type}}()))}
+\DoxyCodeLine{\Hypertarget{a00272_source_l04440}04440         : \mbox{\hyperlink{a03507}{container\_type}}()}
 \DoxyCodeLine{\Hypertarget{a00272_source_l04441}04441     \{\}}
 \DoxyCodeLine{\Hypertarget{a00272_source_l04442}04442 }
-\DoxyCodeLine{\Hypertarget{a00272_source_l04443}\mbox{\hyperlink{a01915_a640b6dd55847e86dbb936f97b946170e}{04443}}     \mbox{\hyperlink{a01915_a640b6dd55847e86dbb936f97b946170e}{byte\_container\_with\_subtype}}(\textcolor{keyword}{const} \mbox{\hyperlink{a03503}{container\_type}}\& b) \textcolor{keyword}{noexcept}(\textcolor{keyword}{noexcept}(\mbox{\hyperlink{a01915_a4d27e8633c5a5e3b49dd4ccb06515713}{container\_type}}(b)))}
+\DoxyCodeLine{\Hypertarget{a00272_source_l04443}\mbox{\hyperlink{a01915_a640b6dd55847e86dbb936f97b946170e}{04443}}     \mbox{\hyperlink{a01915_a640b6dd55847e86dbb936f97b946170e}{byte\_container\_with\_subtype}}(\textcolor{keyword}{const} \mbox{\hyperlink{a03507}{container\_type}}\& b) \textcolor{keyword}{noexcept}(\textcolor{keyword}{noexcept}(\mbox{\hyperlink{a01915_a4d27e8633c5a5e3b49dd4ccb06515713}{container\_type}}(b)))}
 \DoxyCodeLine{\Hypertarget{a00272_source_l04444}04444         : \mbox{\hyperlink{a01915_a4d27e8633c5a5e3b49dd4ccb06515713}{container\_type}}(b)}
 \DoxyCodeLine{\Hypertarget{a00272_source_l04445}04445     \{\}}
 \DoxyCodeLine{\Hypertarget{a00272_source_l04446}04446 }
-\DoxyCodeLine{\Hypertarget{a00272_source_l04447}\mbox{\hyperlink{a01915_a73dcae1798eab1b496936bfae7b4b9c0}{04447}}     \mbox{\hyperlink{a01915_a73dcae1798eab1b496936bfae7b4b9c0}{byte\_container\_with\_subtype}}(\mbox{\hyperlink{a03503}{container\_type}}\&\& b) \textcolor{keyword}{noexcept}(\textcolor{keyword}{noexcept}(\mbox{\hyperlink{a01915_a4d27e8633c5a5e3b49dd4ccb06515713}{container\_type}}(std::move(b))))}
+\DoxyCodeLine{\Hypertarget{a00272_source_l04447}\mbox{\hyperlink{a01915_a73dcae1798eab1b496936bfae7b4b9c0}{04447}}     \mbox{\hyperlink{a01915_a73dcae1798eab1b496936bfae7b4b9c0}{byte\_container\_with\_subtype}}(\mbox{\hyperlink{a03507}{container\_type}}\&\& b) \textcolor{keyword}{noexcept}(\textcolor{keyword}{noexcept}(\mbox{\hyperlink{a01915_a4d27e8633c5a5e3b49dd4ccb06515713}{container\_type}}(std::move(b))))}
 \DoxyCodeLine{\Hypertarget{a00272_source_l04448}04448         : \mbox{\hyperlink{a01915_a4d27e8633c5a5e3b49dd4ccb06515713}{container\_type}}(std::move(b))}
 \DoxyCodeLine{\Hypertarget{a00272_source_l04449}04449     \{\}}
 \DoxyCodeLine{\Hypertarget{a00272_source_l04450}04450 }
-\DoxyCodeLine{\Hypertarget{a00272_source_l04451}\mbox{\hyperlink{a01915_ac267e4fe960124976452bb46d7fe6792}{04451}}     \mbox{\hyperlink{a01915_ac267e4fe960124976452bb46d7fe6792}{byte\_container\_with\_subtype}}(\textcolor{keyword}{const} \mbox{\hyperlink{a03503}{container\_type}}\& b, std::uint8\_t \mbox{\hyperlink{a01915_ac3ca9d09e55342f9588404e1dc2222f0}{subtype}}) \textcolor{keyword}{noexcept}(\textcolor{keyword}{noexcept}(\mbox{\hyperlink{a01915_a4d27e8633c5a5e3b49dd4ccb06515713}{container\_type}}(b)))}
+\DoxyCodeLine{\Hypertarget{a00272_source_l04451}\mbox{\hyperlink{a01915_ac267e4fe960124976452bb46d7fe6792}{04451}}     \mbox{\hyperlink{a01915_ac267e4fe960124976452bb46d7fe6792}{byte\_container\_with\_subtype}}(\textcolor{keyword}{const} \mbox{\hyperlink{a03507}{container\_type}}\& b, std::uint8\_t \mbox{\hyperlink{a01915_ac3ca9d09e55342f9588404e1dc2222f0}{subtype}}) \textcolor{keyword}{noexcept}(\textcolor{keyword}{noexcept}(\mbox{\hyperlink{a01915_a4d27e8633c5a5e3b49dd4ccb06515713}{container\_type}}(b)))}
 \DoxyCodeLine{\Hypertarget{a00272_source_l04452}04452         : \mbox{\hyperlink{a01915_a4d27e8633c5a5e3b49dd4ccb06515713}{container\_type}}(b)}
 \DoxyCodeLine{\Hypertarget{a00272_source_l04453}04453         , \mbox{\hyperlink{a01915_ae36c8f29f4f50a00962b0e9110ba2756}{m\_subtype}}(\mbox{\hyperlink{a01915_ac3ca9d09e55342f9588404e1dc2222f0}{subtype}})}
 \DoxyCodeLine{\Hypertarget{a00272_source_l04454}04454         , \mbox{\hyperlink{a01915_a69aa7a914a7a31b61d3a9567d74ddf7b}{m\_has\_subtype}}(\textcolor{keyword}{true})}
 \DoxyCodeLine{\Hypertarget{a00272_source_l04455}04455     \{\}}
 \DoxyCodeLine{\Hypertarget{a00272_source_l04456}04456 }
-\DoxyCodeLine{\Hypertarget{a00272_source_l04457}\mbox{\hyperlink{a01915_a7e3da6b709fc1ee661d298e74a29c06b}{04457}}     \mbox{\hyperlink{a01915_a7e3da6b709fc1ee661d298e74a29c06b}{byte\_container\_with\_subtype}}(\mbox{\hyperlink{a03503}{container\_type}}\&\& b, std::uint8\_t \mbox{\hyperlink{a01915_ac3ca9d09e55342f9588404e1dc2222f0}{subtype}}) \textcolor{keyword}{noexcept}(\textcolor{keyword}{noexcept}(\mbox{\hyperlink{a01915_a4d27e8633c5a5e3b49dd4ccb06515713}{container\_type}}(std::move(b))))}
+\DoxyCodeLine{\Hypertarget{a00272_source_l04457}\mbox{\hyperlink{a01915_a7e3da6b709fc1ee661d298e74a29c06b}{04457}}     \mbox{\hyperlink{a01915_a7e3da6b709fc1ee661d298e74a29c06b}{byte\_container\_with\_subtype}}(\mbox{\hyperlink{a03507}{container\_type}}\&\& b, std::uint8\_t \mbox{\hyperlink{a01915_ac3ca9d09e55342f9588404e1dc2222f0}{subtype}}) \textcolor{keyword}{noexcept}(\textcolor{keyword}{noexcept}(\mbox{\hyperlink{a01915_a4d27e8633c5a5e3b49dd4ccb06515713}{container\_type}}(std::move(b))))}
 \DoxyCodeLine{\Hypertarget{a00272_source_l04458}04458         : \mbox{\hyperlink{a01915_a4d27e8633c5a5e3b49dd4ccb06515713}{container\_type}}(std::move(b))}
 \DoxyCodeLine{\Hypertarget{a00272_source_l04459}04459         , \mbox{\hyperlink{a01915_ae36c8f29f4f50a00962b0e9110ba2756}{m\_subtype}}(\mbox{\hyperlink{a01915_ac3ca9d09e55342f9588404e1dc2222f0}{subtype}})}
 \DoxyCodeLine{\Hypertarget{a00272_source_l04460}04460         , \mbox{\hyperlink{a01915_a69aa7a914a7a31b61d3a9567d74ddf7b}{m\_has\_subtype}}(\textcolor{keyword}{true})}
@@ -4068,8 +4068,8 @@
 \DoxyCodeLine{\Hypertarget{a00272_source_l04462}04462 }
 \DoxyCodeLine{\Hypertarget{a00272_source_l04463}\mbox{\hyperlink{a01915_aee67fde9d3d571a07d5bb35df21c0555}{04463}}     \textcolor{keywordtype}{bool} \mbox{\hyperlink{a01915_aee67fde9d3d571a07d5bb35df21c0555}{operator==}}(\textcolor{keyword}{const} \mbox{\hyperlink{a01915}{byte\_container\_with\_subtype}}\& rhs)\textcolor{keyword}{ const}}
 \DoxyCodeLine{\Hypertarget{a00272_source_l04464}04464 \textcolor{keyword}{    }\{}
-\DoxyCodeLine{\Hypertarget{a00272_source_l04465}04465         \textcolor{keywordflow}{return} std::tie(\textcolor{keyword}{static\_cast<}\textcolor{keyword}{const }\mbox{\hyperlink{a03503}{BinaryType}}\&\textcolor{keyword}{>}(*\textcolor{keyword}{this}), \mbox{\hyperlink{a01915_ae36c8f29f4f50a00962b0e9110ba2756}{m\_subtype}}, \mbox{\hyperlink{a01915_a69aa7a914a7a31b61d3a9567d74ddf7b}{m\_has\_subtype}}) ==}
-\DoxyCodeLine{\Hypertarget{a00272_source_l04466}04466                std::tie(\textcolor{keyword}{static\_cast<}\textcolor{keyword}{const }\mbox{\hyperlink{a03503}{BinaryType}}\&\textcolor{keyword}{>}(rhs), rhs.\mbox{\hyperlink{a01915_ae36c8f29f4f50a00962b0e9110ba2756}{m\_subtype}}, rhs.\mbox{\hyperlink{a01915_a69aa7a914a7a31b61d3a9567d74ddf7b}{m\_has\_subtype}});}
+\DoxyCodeLine{\Hypertarget{a00272_source_l04465}04465         \textcolor{keywordflow}{return} std::tie(\textcolor{keyword}{static\_cast<}\textcolor{keyword}{const }\mbox{\hyperlink{a03507}{BinaryType}}\&\textcolor{keyword}{>}(*\textcolor{keyword}{this}), \mbox{\hyperlink{a01915_ae36c8f29f4f50a00962b0e9110ba2756}{m\_subtype}}, \mbox{\hyperlink{a01915_a69aa7a914a7a31b61d3a9567d74ddf7b}{m\_has\_subtype}}) ==}
+\DoxyCodeLine{\Hypertarget{a00272_source_l04466}04466                std::tie(\textcolor{keyword}{static\_cast<}\textcolor{keyword}{const }\mbox{\hyperlink{a03507}{BinaryType}}\&\textcolor{keyword}{>}(rhs), rhs.\mbox{\hyperlink{a01915_ae36c8f29f4f50a00962b0e9110ba2756}{m\_subtype}}, rhs.\mbox{\hyperlink{a01915_a69aa7a914a7a31b61d3a9567d74ddf7b}{m\_has\_subtype}});}
 \DoxyCodeLine{\Hypertarget{a00272_source_l04467}04467     \}}
 \DoxyCodeLine{\Hypertarget{a00272_source_l04468}04468 }
 \DoxyCodeLine{\Hypertarget{a00272_source_l04469}\mbox{\hyperlink{a01915_a760bf39cc5477bc663d8bb3c44aabf6a}{04469}}     \textcolor{keywordtype}{bool} \mbox{\hyperlink{a01915_a760bf39cc5477bc663d8bb3c44aabf6a}{operator!=}}(\textcolor{keyword}{const} \mbox{\hyperlink{a01915}{byte\_container\_with\_subtype}}\& rhs)\textcolor{keyword}{ const}}
@@ -14971,12 +14971,12 @@
 \DoxyCodeLine{\Hypertarget{a00272_source_l17583}17583             \mbox{\hyperlink{a02059_a8ce7315fa16a4a621a19fbd4de23ff78}{array}} = create<array\_t>(std::move(\mbox{\hyperlink{a01659_a11641b35219676b225d9bd15c7677659}{value}}));}
 \DoxyCodeLine{\Hypertarget{a00272_source_l17584}17584         \}}
 \DoxyCodeLine{\Hypertarget{a00272_source_l17585}17585 }
-\DoxyCodeLine{\Hypertarget{a00272_source_l17587}\mbox{\hyperlink{a02059_a6102b87cd0936f5372cc096f924e2c7a}{17587}}         \mbox{\hyperlink{a02059_a6102b87cd0936f5372cc096f924e2c7a}{json\_value}}(\textcolor{keyword}{const} \textcolor{keyword}{typename} \mbox{\hyperlink{a03503}{binary\_t::container\_type}}\& \mbox{\hyperlink{a01659_a11641b35219676b225d9bd15c7677659}{value}})}
+\DoxyCodeLine{\Hypertarget{a00272_source_l17587}\mbox{\hyperlink{a02059_a6102b87cd0936f5372cc096f924e2c7a}{17587}}         \mbox{\hyperlink{a02059_a6102b87cd0936f5372cc096f924e2c7a}{json\_value}}(\textcolor{keyword}{const} \textcolor{keyword}{typename} \mbox{\hyperlink{a03507}{binary\_t::container\_type}}\& \mbox{\hyperlink{a01659_a11641b35219676b225d9bd15c7677659}{value}})}
 \DoxyCodeLine{\Hypertarget{a00272_source_l17588}17588         \{}
 \DoxyCodeLine{\Hypertarget{a00272_source_l17589}17589             \mbox{\hyperlink{a02059_a192965a4d80027ffc779ef32b87dbde2}{binary}} = create<binary\_t>(\mbox{\hyperlink{a01659_a11641b35219676b225d9bd15c7677659}{value}});}
 \DoxyCodeLine{\Hypertarget{a00272_source_l17590}17590         \}}
 \DoxyCodeLine{\Hypertarget{a00272_source_l17591}17591 }
-\DoxyCodeLine{\Hypertarget{a00272_source_l17593}\mbox{\hyperlink{a02059_ad1b0f30d625f5141c023c558564b0e98}{17593}}         \mbox{\hyperlink{a02059_ad1b0f30d625f5141c023c558564b0e98}{json\_value}}(\textcolor{keyword}{typename} \mbox{\hyperlink{a03503}{binary\_t::container\_type}}\&\& \mbox{\hyperlink{a01659_a11641b35219676b225d9bd15c7677659}{value}})}
+\DoxyCodeLine{\Hypertarget{a00272_source_l17593}\mbox{\hyperlink{a02059_ad1b0f30d625f5141c023c558564b0e98}{17593}}         \mbox{\hyperlink{a02059_ad1b0f30d625f5141c023c558564b0e98}{json\_value}}(\textcolor{keyword}{typename} \mbox{\hyperlink{a03507}{binary\_t::container\_type}}\&\& \mbox{\hyperlink{a01659_a11641b35219676b225d9bd15c7677659}{value}})}
 \DoxyCodeLine{\Hypertarget{a00272_source_l17594}17594         \{}
 \DoxyCodeLine{\Hypertarget{a00272_source_l17595}17595             \mbox{\hyperlink{a02059_a192965a4d80027ffc779ef32b87dbde2}{binary}} = create<binary\_t>(std::move(\mbox{\hyperlink{a01659_a11641b35219676b225d9bd15c7677659}{value}}));}
 \DoxyCodeLine{\Hypertarget{a00272_source_l17596}17596         \}}
@@ -15229,7 +15229,7 @@
 \DoxyCodeLine{\Hypertarget{a00272_source_l18137}18137     \}}
 \DoxyCodeLine{\Hypertarget{a00272_source_l18138}18138 }
 \DoxyCodeLine{\Hypertarget{a00272_source_l18166}18166     \mbox{\hyperlink{a00272_a28d7e3b2d26bd5b8a3806da3db7dea03}{JSON\_HEDLEY\_WARN\_UNUSED\_RESULT}}}
-\DoxyCodeLine{\Hypertarget{a00272_source_l18167}\mbox{\hyperlink{a01659_a3d255dbe024ce2d0fdfb1b4837629091}{18167}}     \textcolor{keyword}{static} \mbox{\hyperlink{a01659}{basic\_json}} \mbox{\hyperlink{a01659_a3d255dbe024ce2d0fdfb1b4837629091}{binary}}(\textcolor{keyword}{const} \textcolor{keyword}{typename} \mbox{\hyperlink{a03503}{binary\_t::container\_type}}\& init)}
+\DoxyCodeLine{\Hypertarget{a00272_source_l18167}\mbox{\hyperlink{a01659_a3d255dbe024ce2d0fdfb1b4837629091}{18167}}     \textcolor{keyword}{static} \mbox{\hyperlink{a01659}{basic\_json}} \mbox{\hyperlink{a01659_a3d255dbe024ce2d0fdfb1b4837629091}{binary}}(\textcolor{keyword}{const} \textcolor{keyword}{typename} \mbox{\hyperlink{a03507}{binary\_t::container\_type}}\& init)}
 \DoxyCodeLine{\Hypertarget{a00272_source_l18168}18168     \{}
 \DoxyCodeLine{\Hypertarget{a00272_source_l18169}18169         \textcolor{keyword}{auto} res = \mbox{\hyperlink{a01659}{basic\_json}}();}
 \DoxyCodeLine{\Hypertarget{a00272_source_l18170}18170         res.m\_type = value\_t::binary;}
@@ -15238,7 +15238,7 @@
 \DoxyCodeLine{\Hypertarget{a00272_source_l18173}18173     \}}
 \DoxyCodeLine{\Hypertarget{a00272_source_l18174}18174 }
 \DoxyCodeLine{\Hypertarget{a00272_source_l18203}18203     \mbox{\hyperlink{a00272_a28d7e3b2d26bd5b8a3806da3db7dea03}{JSON\_HEDLEY\_WARN\_UNUSED\_RESULT}}}
-\DoxyCodeLine{\Hypertarget{a00272_source_l18204}\mbox{\hyperlink{a01659_acd2c506b279049f7d92ad7ae10a2f12b}{18204}}     \textcolor{keyword}{static} \mbox{\hyperlink{a01659}{basic\_json}} \mbox{\hyperlink{a01659_acd2c506b279049f7d92ad7ae10a2f12b}{binary}}(\textcolor{keyword}{const} \textcolor{keyword}{typename} \mbox{\hyperlink{a03503}{binary\_t::container\_type}}\& init, std::uint8\_t subtype)}
+\DoxyCodeLine{\Hypertarget{a00272_source_l18204}\mbox{\hyperlink{a01659_acd2c506b279049f7d92ad7ae10a2f12b}{18204}}     \textcolor{keyword}{static} \mbox{\hyperlink{a01659}{basic\_json}} \mbox{\hyperlink{a01659_acd2c506b279049f7d92ad7ae10a2f12b}{binary}}(\textcolor{keyword}{const} \textcolor{keyword}{typename} \mbox{\hyperlink{a03507}{binary\_t::container\_type}}\& init, std::uint8\_t subtype)}
 \DoxyCodeLine{\Hypertarget{a00272_source_l18205}18205     \{}
 \DoxyCodeLine{\Hypertarget{a00272_source_l18206}18206         \textcolor{keyword}{auto} res = \mbox{\hyperlink{a01659}{basic\_json}}();}
 \DoxyCodeLine{\Hypertarget{a00272_source_l18207}18207         res.m\_type = value\_t::binary;}
@@ -15247,7 +15247,7 @@
 \DoxyCodeLine{\Hypertarget{a00272_source_l18210}18210     \}}
 \DoxyCodeLine{\Hypertarget{a00272_source_l18211}18211 }
 \DoxyCodeLine{\Hypertarget{a00272_source_l18213}18213     \mbox{\hyperlink{a00272_a28d7e3b2d26bd5b8a3806da3db7dea03}{JSON\_HEDLEY\_WARN\_UNUSED\_RESULT}}}
-\DoxyCodeLine{\Hypertarget{a00272_source_l18214}\mbox{\hyperlink{a01659_ab085777bbfbfac5a472120b991ef5cf3}{18214}}     \textcolor{keyword}{static} \mbox{\hyperlink{a01659}{basic\_json}} \mbox{\hyperlink{a01659_ab085777bbfbfac5a472120b991ef5cf3}{binary}}(\textcolor{keyword}{typename} \mbox{\hyperlink{a03503}{binary\_t::container\_type}}\&\& init)}
+\DoxyCodeLine{\Hypertarget{a00272_source_l18214}\mbox{\hyperlink{a01659_ab085777bbfbfac5a472120b991ef5cf3}{18214}}     \textcolor{keyword}{static} \mbox{\hyperlink{a01659}{basic\_json}} \mbox{\hyperlink{a01659_ab085777bbfbfac5a472120b991ef5cf3}{binary}}(\textcolor{keyword}{typename} \mbox{\hyperlink{a03507}{binary\_t::container\_type}}\&\& init)}
 \DoxyCodeLine{\Hypertarget{a00272_source_l18215}18215     \{}
 \DoxyCodeLine{\Hypertarget{a00272_source_l18216}18216         \textcolor{keyword}{auto} res = \mbox{\hyperlink{a01659}{basic\_json}}();}
 \DoxyCodeLine{\Hypertarget{a00272_source_l18217}18217         res.m\_type = value\_t::binary;}
@@ -15256,7 +15256,7 @@
 \DoxyCodeLine{\Hypertarget{a00272_source_l18220}18220     \}}
 \DoxyCodeLine{\Hypertarget{a00272_source_l18221}18221 }
 \DoxyCodeLine{\Hypertarget{a00272_source_l18223}18223     \mbox{\hyperlink{a00272_a28d7e3b2d26bd5b8a3806da3db7dea03}{JSON\_HEDLEY\_WARN\_UNUSED\_RESULT}}}
-\DoxyCodeLine{\Hypertarget{a00272_source_l18224}\mbox{\hyperlink{a01659_a012e375f4016b89444c528ed46cce3af}{18224}}     \textcolor{keyword}{static} \mbox{\hyperlink{a01659}{basic\_json}} \mbox{\hyperlink{a01659_a012e375f4016b89444c528ed46cce3af}{binary}}(\textcolor{keyword}{typename} \mbox{\hyperlink{a03503}{binary\_t::container\_type}}\&\& init, std::uint8\_t subtype)}
+\DoxyCodeLine{\Hypertarget{a00272_source_l18224}\mbox{\hyperlink{a01659_a012e375f4016b89444c528ed46cce3af}{18224}}     \textcolor{keyword}{static} \mbox{\hyperlink{a01659}{basic\_json}} \mbox{\hyperlink{a01659_a012e375f4016b89444c528ed46cce3af}{binary}}(\textcolor{keyword}{typename} \mbox{\hyperlink{a03507}{binary\_t::container\_type}}\&\& init, std::uint8\_t subtype)}
 \DoxyCodeLine{\Hypertarget{a00272_source_l18225}18225     \{}
 \DoxyCodeLine{\Hypertarget{a00272_source_l18226}18226         \textcolor{keyword}{auto} res = \mbox{\hyperlink{a01659}{basic\_json}}();}
 \DoxyCodeLine{\Hypertarget{a00272_source_l18227}18227         res.m\_type = value\_t::binary;}
@@ -17022,7 +17022,7 @@
 \DoxyCodeLine{\Hypertarget{a00272_source_l22528}22528         \}}
 \DoxyCodeLine{\Hypertarget{a00272_source_l22529}22529     \}}
 \DoxyCodeLine{\Hypertarget{a00272_source_l22530}22530 }
-\DoxyCodeLine{\Hypertarget{a00272_source_l22532}\mbox{\hyperlink{a01659_a749a1f5091a5e63ccfe919e0aef986af}{22532}}     \textcolor{keywordtype}{void} \mbox{\hyperlink{a01659_a749a1f5091a5e63ccfe919e0aef986af}{swap}}(\textcolor{keyword}{typename} \mbox{\hyperlink{a03503}{binary\_t::container\_type}}\& other)}
+\DoxyCodeLine{\Hypertarget{a00272_source_l22532}\mbox{\hyperlink{a01659_a749a1f5091a5e63ccfe919e0aef986af}{22532}}     \textcolor{keywordtype}{void} \mbox{\hyperlink{a01659_a749a1f5091a5e63ccfe919e0aef986af}{swap}}(\textcolor{keyword}{typename} \mbox{\hyperlink{a03507}{binary\_t::container\_type}}\& other)}
 \DoxyCodeLine{\Hypertarget{a00272_source_l22533}22533     \{}
 \DoxyCodeLine{\Hypertarget{a00272_source_l22534}22534         \textcolor{comment}{// swap only works for strings}}
 \DoxyCodeLine{\Hypertarget{a00272_source_l22535}22535         \textcolor{keywordflow}{if} (\mbox{\hyperlink{a00272_a355f2770653ff7bdd5c74b204b5a3ad0}{JSON\_HEDLEY\_LIKELY}}(\mbox{\hyperlink{a01659_a9576224f7b3ff812a308e7c1e784ea80}{is\_binary}}()))}

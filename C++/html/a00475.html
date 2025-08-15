@@ -179,7 +179,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="comment">// These consist of alternate edge costs for all subgraphs in g.</span></div>
 <div class="line">std::vector&lt;std::vector&lt;IntEdge&gt;&gt; all_edge_costs = <a class="code hl_function" href="a00475.html#a51b88e596c3b5f68b7abbcbc91e30bdf">CalculateCrossSlope</a>(g);</div>
 <div class="ttc" id="aa00475_html_a51b88e596c3b5f68b7abbcbc91e30bdf"><div class="ttname"><a href="a00475.html#a51b88e596c3b5f68b7abbcbc91e30bdf">HF::SpatialStructures::CostAlgorithms::CalculateCrossSlope</a></div><div class="ttdeci">std::vector&lt; IntEdge &gt; CalculateCrossSlope(const Subgraph &amp;sg)</div><div class="ttdef"><b>Definition:</b> <a href="a00254_source.html#l00189">cost_algorithms.cpp:189</a></div></div>
-<div class="ttc" id="aa01551_html"><div class="ttname"><a href="a01551.html">HF::SpatialStructures::Graph</a></div><div class="ttdoc">A Graph of nodes connected by edges that supports both integers and HF::SpatialStructures::Node.</div><div class="ttdef"><b>Definition:</b> <a href="a00269_source.html#l00486">graph.h:486</a></div></div>
+<div class="ttc" id="aa01551_html"><div class="ttname"><a href="a01551.html">HF::SpatialStructures::Graph</a></div><div class="ttdoc">A Graph of nodes connected by edges that supports both integers and HF::SpatialStructures::Node.</div><div class="ttdef"><b>Definition:</b> <a href="a00269_source.html#l00490">graph.h:490</a></div></div>
 <div class="ttc" id="aa01551_html_a37be5c12e488072dea7fa1c8c64346f7"><div class="ttname"><a href="a01551.html#a37be5c12e488072dea7fa1c8c64346f7">HF::SpatialStructures::Graph::addEdge</a></div><div class="ttdeci">void addEdge(const Node &amp;parent, const Node &amp;child, float score=1.0f, const std::string &amp;cost_type=&quot;&quot;)</div><div class="ttdoc">Add a new edge to the graph from parent to child.</div></div>
 <div class="ttc" id="aa01551_html_a41cece77d0eee98df39ecc6d3a366ec8"><div class="ttname"><a href="a01551.html#a41cece77d0eee98df39ecc6d3a366ec8">HF::SpatialStructures::Graph::Compress</a></div><div class="ttdeci">void Compress()</div><div class="ttdoc">Compress the graph to a CSR and enable the usage of several functions.</div></div>
 <div class="ttc" id="aa02071_html"><div class="ttname"><a href="a02071.html">HF::SpatialStructures::Node</a></div><div class="ttdoc">A point in space with an ID.</div><div class="ttdef"><b>Definition:</b> <a href="a00275_source.html#l00038">node.h:38</a></div></div>
@@ -192,7 +192,7 @@ Functions</h2></td></tr>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00475_a6d12a3af69887cb335b490304138afc6_cgraph.svg" width="420" height="203"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00475_a6d12a3af69887cb335b490304138afc6_cgraph.svg" width="424" height="203"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -253,20 +253,20 @@ Functions</h2></td></tr>
 <div class="line"><span class="comment">// Get a container of vector&lt;IntEdge&gt;, ordered by parent ID.</span></div>
 <div class="line"><span class="comment">// These consist of alternate edge costs for Subgraph sg.</span></div>
 <div class="line">std::vector&lt;IntEdge&gt; edge_costs = <a class="code hl_function" href="a00475.html#a51b88e596c3b5f68b7abbcbc91e30bdf">CalculateCrossSlope</a>(sg);</div>
-<div class="ttc" id="aa00465_html_a01543"><div class="ttname"><a href="a00465.html#a01543">HF::SpatialStructures::Subgraph</a></div><div class="ttdoc">A Subgraph consists of a parent Node m_parent and a container of Edge m_edges such that all Edge in m...</div><div class="ttdef"><b>Definition:</b> <a href="a00269_source.html#l00364">graph.h:364</a></div></div>
+<div class="ttc" id="aa00465_html_a01543"><div class="ttname"><a href="a00465.html#a01543">HF::SpatialStructures::Subgraph</a></div><div class="ttdoc">A Subgraph consists of a parent Node m_parent and a container of Edge m_edges such that all Edge in m...</div><div class="ttdef"><b>Definition:</b> <a href="a00269_source.html#l00365">graph.h:365</a></div></div>
 <div class="ttc" id="aa01551_html_a89250c619a726fd0adbd71778d166887"><div class="ttname"><a href="a01551.html#a89250c619a726fd0adbd71778d166887">HF::SpatialStructures::Graph::GetSubgraph</a></div><div class="ttdeci">Subgraph GetSubgraph(const Node &amp;parent_node, const std::string &amp;cost_type=&quot;&quot;) const</div><div class="ttdoc">Retrieves a Subgraph using a Node.</div></div>
 </div><!-- fragment --> 
 <p class="definition">Definition at line <a class="el" href="a00254_source.html#l00189">189</a> of file <a class="el" href="a00254_source.html">cost_algorithms.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="a00275_source.html#l00042">HF::SpatialStructures::Node::id</a>, <a class="el" href="a00269_source.html#l00366">HF::SpatialStructures::Subgraph::m_edges</a>, <a class="el" href="a00269_source.html#l00365">HF::SpatialStructures::Subgraph::m_parent</a>, and <a class="el" href="a00275_source.html#l00040">HF::SpatialStructures::Node::z</a>.</p>
+<p class="reference">References <a class="el" href="a00275_source.html#l00042">HF::SpatialStructures::Node::id</a>, <a class="el" href="a00269_source.html#l00367">HF::SpatialStructures::Subgraph::m_edges</a>, <a class="el" href="a00269_source.html#l00366">HF::SpatialStructures::Subgraph::m_parent</a>, and <a class="el" href="a00275_source.html#l00040">HF::SpatialStructures::Node::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="a00434_source.html#l00381">CalculateAndStoreCrossSlope()</a>, and <a class="el" href="a00254_source.html#l00283">CalculateCrossSlope()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="a00434_source.html#l00661">CalculateAndStoreCrossSlope()</a>, and <a class="el" href="a00254_source.html#l00283">CalculateCrossSlope()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00475_a51b88e596c3b5f68b7abbcbc91e30bdf_icgraph.svg" width="436" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00475_a51b88e596c3b5f68b7abbcbc91e30bdf_icgraph.svg" width="440" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -334,7 +334,7 @@ Functions</h2></td></tr>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00475_adbe5e58355a884494d6e99bf17fc5f7b_cgraph.svg" width="843" height="311"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00475_adbe5e58355a884494d6e99bf17fc5f7b_cgraph.svg" width="850" height="311"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -398,15 +398,15 @@ Functions</h2></td></tr>
 </div><!-- fragment --> 
 <p class="definition">Definition at line <a class="el" href="a00254_source.html#l00096">96</a> of file <a class="el" href="a00254_source.html">cost_algorithms.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="a00254_source.html#l00034">CalculateSlope()</a>, <a class="el" href="a00263_source.html#l00059">HF::SpatialStructures::IntEdge::child</a>, <a class="el" href="a03554_source.html#l00131">HF::SpatialStructures::Node::directionTo()</a>, <a class="el" href="a03554_source.html#l00040">HF::SpatialStructures::Node::distanceTo()</a>, <a class="el" href="a00275_source.html#l00042">HF::SpatialStructures::Node::id</a>, <a class="el" href="a00269_source.html#l00366">HF::SpatialStructures::Subgraph::m_edges</a>, <a class="el" href="a00269_source.html#l00365">HF::SpatialStructures::Subgraph::m_parent</a>, and <a class="el" href="a00254_source.html#l00026">to_radians()</a>.</p>
+<p class="reference">References <a class="el" href="a00254_source.html#l00034">CalculateSlope()</a>, <a class="el" href="a00263_source.html#l00059">HF::SpatialStructures::IntEdge::child</a>, <a class="el" href="a03558_source.html#l00131">HF::SpatialStructures::Node::directionTo()</a>, <a class="el" href="a03558_source.html#l00040">HF::SpatialStructures::Node::distanceTo()</a>, <a class="el" href="a00275_source.html#l00042">HF::SpatialStructures::Node::id</a>, <a class="el" href="a00269_source.html#l00367">HF::SpatialStructures::Subgraph::m_edges</a>, <a class="el" href="a00269_source.html#l00366">HF::SpatialStructures::Subgraph::m_parent</a>, and <a class="el" href="a00254_source.html#l00026">to_radians()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="a00434_source.html#l00273">CalculateAndStoreEnergyExpenditure()</a>, and <a class="el" href="a00254_source.html#l00162">CalculateEnergyExpenditure()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="a00434_source.html#l00440">CalculateAndStoreEnergyExpenditure()</a>, and <a class="el" href="a00254_source.html#l00162">CalculateEnergyExpenditure()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00475_ac51f2e76c00356f8a6145bee865cd922_cgraph.svg" width="614" height="286"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00475_ac51f2e76c00356f8a6145bee865cd922_cgraph.svg" width="619" height="286"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -414,7 +414,7 @@ Functions</h2></td></tr>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00475_ac51f2e76c00356f8a6145bee865cd922_icgraph.svg" width="479" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00475_ac51f2e76c00356f8a6145bee865cd922_icgraph.svg" width="482" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -456,7 +456,7 @@ Functions</h2></td></tr>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00475_ae06eb693d0d7858d7a863fae3a6eee2c_cgraph.svg" width="386" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00475_ae06eb693d0d7858d7a863fae3a6eee2c_cgraph.svg" width="388" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -464,7 +464,7 @@ Functions</h2></td></tr>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00475_ae06eb693d0d7858d7a863fae3a6eee2c_icgraph.svg" width="707" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00475_ae06eb693d0d7858d7a863fae3a6eee2c_icgraph.svg" width="712" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -527,9 +527,9 @@ template&lt;size_t dimension, typename float_precision  = float&gt; </div>
 <div class="line"><span class="keywordtype">float</span> dot_prod = dot_product&lt;2&gt;(vec_u, vec_v);  <span class="comment">// 0.00000</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// vec_u and vec_v are perpendicular.</span></div>
-<div class="ttc" id="aa00475_html_afa250ed24ee2219f6632aaebfd7bd150"><div class="ttname"><a href="a00475.html#afa250ed24ee2219f6632aaebfd7bd150">HF::SpatialStructures::CostAlgorithms::dot_product</a></div><div class="ttdeci">float_precision dot_product(float_precision vec_U[], float_precision vec_V[])</div><div class="ttdef"><b>Definition:</b> <a href="a00257_source.html#l00132">cost_algorithms.h:132</a></div></div>
+<div class="ttc" id="aa00475_html_afa250ed24ee2219f6632aaebfd7bd150"><div class="ttname"><a href="a00475.html#afa250ed24ee2219f6632aaebfd7bd150">HF::SpatialStructures::CostAlgorithms::dot_product</a></div><div class="ttdeci">float_precision dot_product(float_precision vec_U[], float_precision vec_V[])</div><div class="ttdef"><b>Definition:</b> <a href="a00257_source.html#l00133">cost_algorithms.h:133</a></div></div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="a00257_source.html#l00132">132</a> of file <a class="el" href="a00257_source.html">cost_algorithms.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00257_source.html#l00133">133</a> of file <a class="el" href="a00257_source.html">cost_algorithms.h</a>.</p>
 
 </div>
 </div>
@@ -588,9 +588,9 @@ template&lt;size_t dimension, typename float_precision  = float&gt; </div>
 <div class="line"><span class="comment">// - dimension (2 for 2D, 3 for 3D, etc)</span></div>
 <div class="line"><span class="comment">// - float_precision (defaults to float if unspecified)</span></div>
 <div class="line"><span class="keywordtype">float</span> distance = euclidean_distance&lt;2&gt;(pos_a, pos_b);   <span class="comment">// 5.00000</span></div>
-<div class="ttc" id="aa00475_html_a355d486f17db42f6c56411cc53f76aec"><div class="ttname"><a href="a00475.html#a355d486f17db42f6c56411cc53f76aec">HF::SpatialStructures::CostAlgorithms::euclidean_distance</a></div><div class="ttdeci">float_precision euclidean_distance(float_precision point_a[], float_precision point_b[])</div><div class="ttdef"><b>Definition:</b> <a href="a00257_source.html#l00094">cost_algorithms.h:94</a></div></div>
+<div class="ttc" id="aa00475_html_a355d486f17db42f6c56411cc53f76aec"><div class="ttname"><a href="a00475.html#a355d486f17db42f6c56411cc53f76aec">HF::SpatialStructures::CostAlgorithms::euclidean_distance</a></div><div class="ttdeci">float_precision euclidean_distance(float_precision point_a[], float_precision point_b[])</div><div class="ttdef"><b>Definition:</b> <a href="a00257_source.html#l00095">cost_algorithms.h:95</a></div></div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="a00257_source.html#l00094">94</a> of file <a class="el" href="a00257_source.html">cost_algorithms.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00257_source.html#l00095">95</a> of file <a class="el" href="a00257_source.html">cost_algorithms.h</a>.</p>
 
 </div>
 </div>
@@ -666,17 +666,17 @@ template&lt;size_t dimension, typename float_precision  = float&gt; </div>
 <div class="line"><span class="comment">// The edge formed by n1 and n4 is perpendicular to</span></div>
 <div class="line"><span class="comment">// - the edge formed by n1 and n2</span></div>
 <div class="line"><span class="comment">// - the edge formed by n1 and n3</span></div>
-<div class="ttc" id="aa00475_html_aeec6f9a28592565ad59609852e482663"><div class="ttname"><a href="a00475.html#aeec6f9a28592565ad59609852e482663">HF::SpatialStructures::CostAlgorithms::GetPerpendicularEdges</a></div><div class="ttdeci">std::vector&lt; Edge &gt; GetPerpendicularEdges(const Subgraph &amp;sg, const Node &amp;child_node_a)</div><div class="ttdef"><b>Definition:</b> <a href="a00257_source.html#l00231">cost_algorithms.h:231</a></div></div>
+<div class="ttc" id="aa00475_html_aeec6f9a28592565ad59609852e482663"><div class="ttname"><a href="a00475.html#aeec6f9a28592565ad59609852e482663">HF::SpatialStructures::CostAlgorithms::GetPerpendicularEdges</a></div><div class="ttdeci">std::vector&lt; Edge &gt; GetPerpendicularEdges(const Subgraph &amp;sg, const Node &amp;child_node_a)</div><div class="ttdef"><b>Definition:</b> <a href="a00257_source.html#l00232">cost_algorithms.h:232</a></div></div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="a00257_source.html#l00231">231</a> of file <a class="el" href="a00257_source.html">cost_algorithms.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00257_source.html#l00232">232</a> of file <a class="el" href="a00257_source.html">cost_algorithms.h</a>.</p>
 
-<p class="reference">References <a class="el" href="a03554_source.html#l00131">HF::SpatialStructures::Node::directionTo()</a>, <a class="el" href="a00269_source.html#l00366">HF::SpatialStructures::Subgraph::m_edges</a>, and <a class="el" href="a00269_source.html#l00365">HF::SpatialStructures::Subgraph::m_parent</a>.</p>
+<p class="reference">References <a class="el" href="a03558_source.html#l00131">HF::SpatialStructures::Node::directionTo()</a>, <a class="el" href="a00269_source.html#l00367">HF::SpatialStructures::Subgraph::m_edges</a>, and <a class="el" href="a00269_source.html#l00366">HF::SpatialStructures::Subgraph::m_parent</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00475_aeec6f9a28592565ad59609852e482663_cgraph.svg" width="626" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00475_aeec6f9a28592565ad59609852e482663_cgraph.svg" width="630" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -739,9 +739,9 @@ template&lt;size_t dimension, typename float_precision  = float&gt; </div>
 <div class="line"><span class="keywordtype">bool</span> is_perp = is_perpendicular&lt;2&gt;(vec_u, vec_v);   <span class="comment">// true</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// vec_u and vec_v are perpendicular.</span></div>
-<div class="ttc" id="aa00475_html_a3de857e1e14eb6872146c36bef3b3fad"><div class="ttname"><a href="a00475.html#a3de857e1e14eb6872146c36bef3b3fad">HF::SpatialStructures::CostAlgorithms::is_perpendicular</a></div><div class="ttdeci">bool is_perpendicular(float_precision vec_U[], float_precision vec_V[])</div><div class="ttdef"><b>Definition:</b> <a href="a00257_source.html#l00169">cost_algorithms.h:169</a></div></div>
+<div class="ttc" id="aa00475_html_a3de857e1e14eb6872146c36bef3b3fad"><div class="ttname"><a href="a00475.html#a3de857e1e14eb6872146c36bef3b3fad">HF::SpatialStructures::CostAlgorithms::is_perpendicular</a></div><div class="ttdeci">bool is_perpendicular(float_precision vec_U[], float_precision vec_V[])</div><div class="ttdef"><b>Definition:</b> <a href="a00257_source.html#l00170">cost_algorithms.h:170</a></div></div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="a00257_source.html#l00169">169</a> of file <a class="el" href="a00257_source.html">cost_algorithms.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00257_source.html#l00170">170</a> of file <a class="el" href="a00257_source.html">cost_algorithms.h</a>.</p>
 
 <p class="reference">References <a class="el" href="a00251_source.html#l00030">HF::SpatialStructures::ROUNDING_PRECISION</a>.</p>
 
@@ -794,7 +794,7 @@ template&lt;size_t dimension, typename float_precision  = float&gt; </div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00475_adee2fb2573f4dbc2e5c7db153dff2694_icgraph.svg" width="902" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00475_adee2fb2573f4dbc2e5c7db153dff2694_icgraph.svg" width="907" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -839,7 +839,7 @@ template&lt;size_t dimension, typename float_precision  = float&gt; </div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00475_ae7b446fefe0b9994859f47b85de79039_icgraph.svg" width="674" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00475_ae7b446fefe0b9994859f47b85de79039_icgraph.svg" width="678" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

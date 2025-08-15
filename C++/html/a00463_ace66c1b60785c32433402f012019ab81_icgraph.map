@@ -1,11 +1,16 @@
 <map id="HF::GraphGenerator::OcclusionCheck" name="HF::GraphGenerator::OcclusionCheck">
-<area shape="rect" id="node1" title="Determine if there is a valid line of sight between parent and child." alt="" coords="1299,43,1438,85"/>
-<area shape="rect" id="node2" href="$a00463.html#aeab1db37b5aa614235f109d5dd9711a9" title="Determine what kind of step (if any) is between parent and child." alt="" coords="1113,43,1251,85"/>
-<area shape="rect" id="node3" href="$a00463.html#ab7ffcc7d6657ce276c06deed24c546a4" title="Calculate all possible edges between parent and possible_children." alt="" coords="927,43,1065,85"/>
-<area shape="rect" id="node4" href="$a01311.html#ac7052d4b625fb96f29c5bfc091a86f7e" title="Perform breadth first search to populate the graph with with nodes and edges." alt="" coords="682,5,879,48"/>
-<area shape="rect" id="node9" href="$a01311.html#a843cc6b5b69b5d013930b3685789fa15" title="Perform breadth first search to populate the graph with nodes and edges using multiple cores." alt="" coords="682,72,879,131"/>
-<area shape="rect" id="node5" href="$a01311.html#a5788e421d921ec0ff27defc139c45106" title="Generate a graph of accessible space." alt="" coords="475,35,634,93"/>
-<area shape="rect" id="node6" href="$a01311.html#a0c12341433bbec41cc12cc1dbb41a976" title="Generate a graph of accessible space." alt="" coords="222,43,427,85"/>
-<area shape="rect" id="node7" href="$a00454.html#ga2df84a732d1edfb70b7bd26d3282e129" title="Construct a graph by performing a breadth&#45;first search of accessible space." alt="" coords="35,25,144,52"/>
-<area shape="rect" id="node8" href="$a00454.html#gab9f58e3ecc686fa9bc34519b0faed734" title="Construct a graph by performing a breadth&#45;first search of accessible space, seperating obstacles from..." alt="" coords="5,76,174,103"/>
+<area shape="rect" id="node1" title="Determine if there is a valid line of sight between parent and child." alt="" coords="1360,131,1500,173"/>
+<area shape="rect" id="node2" href="$a00463.html#a260a25e02193ce904849ee090daefa2e" title="Determine what kind of step (if any) is between parent and child, given that a connection was verifie..." alt="" coords="1173,131,1312,173"/>
+<area shape="rect" id="node3" href="$a00463.html#a176c58b25fb5cb545d17128d4535f921" title=" " alt="" coords="959,64,1098,107"/>
+<area shape="rect" id="node7" href="$a00463.html#a5d2ad6de2131b1a90a80f901ac8dd185" title=" " alt="" coords="932,131,1125,173"/>
+<area shape="rect" id="node8" href="$a00463.html#ab7ffcc7d6657ce276c06deed24c546a4" title="Calculate all possible edges between parent and possible_children." alt="" coords="959,197,1098,240"/>
+<area shape="rect" id="node4" href="$a00463.html#a0251caf5a32eb2c1f9d846d88eb7fe22" title=" " alt="" coords="688,5,881,48"/>
+<area shape="rect" id="node5" href="$a00454.html#gae7f55e49ba1992471430d0e3d415ebae" title="Query the graph and identify the step types of all edges, adding them to the graph." alt="" coords="688,72,881,99"/>
+<area shape="rect" id="node6" href="$a00463.html#a81398de53e151ae58b206523e555309e" title=" " alt="" coords="715,123,854,165"/>
+<area shape="rect" id="node9" href="$a01311.html#ac7052d4b625fb96f29c5bfc091a86f7e" title="Perform breadth first search to populate the graph with with nodes and edges." alt="" coords="685,193,884,236"/>
+<area shape="rect" id="node14" href="$a01311.html#a843cc6b5b69b5d013930b3685789fa15" title="Perform breadth first search to populate the graph with nodes and edges using multiple cores." alt="" coords="685,260,884,319"/>
+<area shape="rect" id="node10" href="$a01311.html#a5788e421d921ec0ff27defc139c45106" title="Generate a graph of accessible space." alt="" coords="477,223,637,281"/>
+<area shape="rect" id="node11" href="$a01311.html#a0c12341433bbec41cc12cc1dbb41a976" title="Generate a graph of accessible space." alt="" coords="222,231,429,273"/>
+<area shape="rect" id="node12" href="$a00454.html#ga2df84a732d1edfb70b7bd26d3282e129" title="Construct a graph by performing a breadth&#45;first search of accessible space." alt="" coords="35,213,144,240"/>
+<area shape="rect" id="node13" href="$a00454.html#gab9f58e3ecc686fa9bc34519b0faed734" title="Construct a graph by performing a breadth&#45;first search of accessible space, seperating obstacles from..." alt="" coords="5,264,174,291"/>
 </map>

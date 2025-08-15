@@ -4,7 +4,7 @@
 <area shape="rect" id="node3" href="$a01995.html#a23eb89a222e22533e9fd43e76722f44f" title="Reads an array from the BSON input and passes it to the SAX&#45;parser." alt="" coords="643,13,818,56"/>
 <area shape="rect" id="node5" href="$a01995.html#abf2051ba57d9ea9b378a2e7c14e22b34" title="Reads in a BSON&#45;object and passes it to the SAX&#45;parser." alt="" coords="636,131,825,173"/>
 <area shape="rect" id="node4" href="$a01995.html#a23bde2450d7a5772bf5051e36ff560a4" title="Read a BSON document element of the given element_type." alt="" coords="396,56,588,115"/>
-<area shape="rect" id="node6" href="$a01995.html#ab4afd9ee276bbb15a0f898061aad94dd" title=" " alt="" coords="413,139,572,181"/>
+<area shape="rect" id="node6" href="$a01995.html#ab4afd9ee276bbb15a0f898061aad94dd" title=" " alt="" coords="412,139,572,181"/>
 <area shape="rect" id="node7" href="$a01659.html#a4e02793f2691aa29ab7cb69fddafbf5c" title="Create a JSON value from an input in BSON format." alt="" coords="201,5,348,48"/>
 <area shape="rect" id="node9" href="$a01659.html#a44dd5635fb2da4710f6cd6e42b72773f" title="create a JSON value from an input in CBOR format" alt="" coords="201,72,348,115"/>
 <area shape="rect" id="node11" href="$a01659.html#adbcab52fca1e25b3311ef14e71a57590" title="create a JSON value from an input in MessagePack format" alt="" coords="201,139,348,181"/>

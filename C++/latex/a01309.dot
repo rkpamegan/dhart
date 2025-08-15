@@ -1,0 +1,36 @@
+digraph "HF::GraphGenerator::GraphGenerator"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="HF::GraphGenerator\l::GraphGenerator",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Generate a graph of accessible space from a given start point."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" core_count\nmax_nodes\nmax_step_connection\nmin_connections" ];
+  Node2 [label="int",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" spacing" ];
+  Node3 [label="std::array\< real_t, 3 \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="darkorchid3",style="dashed",label=" elements" ];
+  Node4 [label="double",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$a00001.html#a02139",tooltip=" "];
+  Node5 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" params" ];
+  Node5 [label="HF::GraphGenerator\l::GraphParams",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$a00463.html#a01303",tooltip="Holds parameters for the GraphGenerator."];
+  Node4 -> Node5 [dir="back",color="darkorchid3",style="dashed",label=" down_slope\ndown_step\nup_slope\nup_step" ];
+  Node6 -> Node5 [dir="back",color="darkorchid3",style="dashed",label=" precision" ];
+  Node6 [label="HF::GraphGenerator\l::Precision",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$a00463.html#a01295",tooltip="Various parameters to set the precision of certain parts of the graph generator."];
+  Node4 -> Node6 [dir="back",color="darkorchid3",style="dashed",label=" ground_offset\nnode_spacing\nnode_z" ];
+  Node7 -> Node5 [dir="back",color="darkorchid3",style="dashed",label=" geom_ids" ];
+  Node7 [label="HF::GraphGenerator\l::GeometryFlagMap",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$a01299.html",tooltip="Manages rules and ids for different types of geometry in the graph generator."];
+  Node8 -> Node7 [dir="back",color="darkorchid3",style="dashed",label=" internal_dictionary" ];
+  Node8 [label="std::unordered_map\l\< int, HIT_FLAG \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node2 -> Node8 [dir="back",color="darkorchid3",style="dashed",label=" keys" ];
+  Node9 -> Node8 [dir="back",color="darkorchid3",style="dashed",label=" elements" ];
+  Node9 [label="HIT_FLAG",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node10 -> Node7 [dir="back",color="darkorchid3",style="dashed",label=" Mode" ];
+  Node10 [label="GeometryFilterMode",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node11 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" ray_tracer" ];
+  Node11 [label="HF::RayTracer::MultiRT",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$a01419.html",tooltip=" "];
+  Node12 -> Node11 [dir="back",color="darkorchid3",style="dashed",label=" RayTracer" ];
+  Node12 [label="void *",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node13 -> Node11 [dir="back",color="darkorchid3",style="dashed",label=" type" ];
+  Node13 [label="RT_Type",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+}

@@ -1,0 +1,15 @@
+digraph "HF::SpatialStructures::CostAlgorithms::CalculateCrossSlope"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="HF::SpatialStructures\l::CostAlgorithms::Calculate\lCrossSlope",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="HF::SpatialStructures\l::CostAlgorithms::Calculate\lCrossSlope",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00475.html#a51b88e596c3b5f68b7abbcbc91e30bdf",tooltip=" "];
+  Node1 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="HF::SpatialStructures\l::Graph::GetSubgraph",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01551.html#a89250c619a726fd0adbd71778d166887",tooltip="Retrieves a Subgraph using a Node."];
+  Node1 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="HF::SpatialStructures\l::Graph::Nodes",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01551.html#aa70347b8a33b57c6f0a72d6eca4248d7",tooltip="Get a list of nodes from the graph sorted by ID."];
+}

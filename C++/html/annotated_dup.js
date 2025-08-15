@@ -219,8 +219,8 @@ var annotated_dup =
       [ "tuple_element< N, ::nlohmann::detail::iteration_proxy_value< IteratorType > >", "a00461.html#a01871", "a00461_a01871_dup" ],
       [ "tuple_size<::nlohmann::detail::iteration_proxy_value< IteratorType > >", "a01867.html", null ]
     ] ],
-    [ "B1", "a03507.html", null ],
-    [ "BinaryType", "a03503.html", null ],
+    [ "B1", "a03511.html", null ],
+    [ "BinaryType", "a03507.html", null ],
     [ "nanoRT_Data", "a01515.html", "a01515" ],
     [ "RayResult", "a02087.html", "a02087" ]
 ];

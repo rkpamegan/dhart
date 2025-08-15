@@ -1,0 +1,19 @@
+digraph "HF::RayTracer::double3::double3"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="HF::RayTracer::double3\l::double3",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="HF::RayTracer::double3::neg",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01511.html#aa9469a197d7b23d54811dd45fb7fc719",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="HF::RayTracer::double3\l::operator*",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01511.html#abe98e17394908fa0b6db4f3cd6bbb52f",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="HF::RayTracer::double3\l::operator+",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01511.html#a946b0c048bdc441f58fdea464be2b1df",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="steelblue1",style="solid"];
+  Node5 [label="HF::RayTracer::double3\l::operator-",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01511.html#a59ea40cffd2d7698a0abdc5b467eb587",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="steelblue1",style="solid"];
+  Node6 [label="HF::RayTracer::double3\l::operator/",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01511.html#aabbfb9b8c3511d380b2036bcd019cac7",tooltip=" "];
+}

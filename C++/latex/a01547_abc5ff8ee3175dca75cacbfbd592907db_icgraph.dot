@@ -1,0 +1,17 @@
+digraph "HF::SpatialStructures::EdgeCostSet::size"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="HF::SpatialStructures\l::EdgeCostSet::size",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Get the size of this edge matrix."];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="HF::SpatialStructures\l::EdgeCostSet::bounds_check",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01547.html#a4b139518bc0939554df19e83c8e0b916",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="HF::SpatialStructures\l::EdgeCostSet::operator[]",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01547.html#a383475da303d0b59bedfa2a83f1487b4",tooltip="Index internal values array."];
+  Node1 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="HF::SpatialStructures\l::EdgeCostSet::ResizeIfNeeded",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01547.html#a22bf925d64a8ab8c0920d668068dc3db",tooltip="Resize this edge matrix if needed."];
+  Node4 -> Node5 [dir="back",color="steelblue1",style="solid"];
+  Node5 [label="HF::SpatialStructures\l::EdgeCostSet::EdgeCostSet",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01547.html#a292cb98e857b8ae2606395ed57ebcec8",tooltip="Create an edge cost set and allocate a specific size."];
+}

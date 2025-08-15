@@ -99,8 +99,8 @@ $(document).ready(function(){initNavTree('a00011.html',''); initResizable(); });
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="a00008_source.html">graph_generator.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="a00218_source.html">HitStruct.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00251_source.html">Constants.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00263_source.html">Edge.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00251_source.html">constants.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00263_source.html">edge.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="a00212_source.html">embree_raytracer.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="a00239_source.html">ray_data.h</a>&gt;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('a00011.html',''); initResizable(); });
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00012.svg" width="1870" height="278"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00012.svg" width="1944" height="427"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -169,9 +169,20 @@ Functions</h2></td></tr>
 <tr class="memitem:a9daa85cb56a1b18d44f46aa9c420afde"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00463.html#a9daa85cb56a1b18d44f46aa9c420afde">HF::GraphGenerator::CheckSlope</a> (const real3 &amp;parent, const real3 &amp;child, const GraphParams &amp;gp)</td></tr>
 <tr class="memdesc:a9daa85cb56a1b18d44f46aa9c420afde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if the slope between parent and child is traversable according to the graph parameters.  <a href="a00463.html#a9daa85cb56a1b18d44f46aa9c420afde">More...</a><br /></td></tr>
 <tr class="separator:a9daa85cb56a1b18d44f46aa9c420afde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a176c58b25fb5cb545d17128d4535f921"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01535.html">HF::SpatialStructures::EdgeSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00463.html#a176c58b25fb5cb545d17128d4535f921">HF::GraphGenerator::CalculateStepType</a> (const <a class="el" href="a00465.html#a01543">HF::SpatialStructures::Subgraph</a> &amp;sg, <a class="el" href="a01419.html">HF::RayTracer::MultiRT</a> &amp;rt)</td></tr>
+<tr class="separator:a176c58b25fb5cb545d17128d4535f921"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81398de53e151ae58b206523e555309e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="a01535.html">HF::SpatialStructures::EdgeSet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00463.html#a81398de53e151ae58b206523e555309e">HF::GraphGenerator::CalculateStepType</a> (const <a class="el" href="a01551.html">HF::SpatialStructures::Graph</a> &amp;g, <a class="el" href="a01419.html">HF::RayTracer::MultiRT</a> &amp;rt)</td></tr>
+<tr class="separator:a81398de53e151ae58b206523e555309e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0251caf5a32eb2c1f9d846d88eb7fe22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00463.html#a0251caf5a32eb2c1f9d846d88eb7fe22">HF::GraphGenerator::CalculateAndStoreStepType</a> (<a class="el" href="a01551.html">HF::SpatialStructures::Graph</a> &amp;g, <a class="el" href="a01419.html">HF::RayTracer::MultiRT</a> &amp;rt)</td></tr>
+<tr class="separator:a0251caf5a32eb2c1f9d846d88eb7fe22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a260a25e02193ce904849ee090daefa2e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00465.html#af0378d900074d484ba791d4317e5935e">HF::SpatialStructures::STEP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00463.html#a260a25e02193ce904849ee090daefa2e">HF::GraphGenerator::CheckConnection</a> (const real3 &amp;parent, const real3 &amp;child, RayTracer &amp;rt)</td></tr>
+<tr class="memdesc:a260a25e02193ce904849ee090daefa2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine what kind of step (if any) is between parent and child, given that a connection was verified using the graph generator.  <a href="a00463.html#a260a25e02193ce904849ee090daefa2e">More...</a><br /></td></tr>
+<tr class="separator:a260a25e02193ce904849ee090daefa2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeab1db37b5aa614235f109d5dd9711a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00465.html#af0378d900074d484ba791d4317e5935e">HF::SpatialStructures::STEP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00463.html#aeab1db37b5aa614235f109d5dd9711a9">HF::GraphGenerator::CheckConnection</a> (const real3 &amp;parent, const real3 &amp;child, RayTracer &amp;rt, const GraphParams &amp;params)</td></tr>
 <tr class="memdesc:aeab1db37b5aa614235f109d5dd9711a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine what kind of step (if any) is between parent and child.  <a href="a00463.html#aeab1db37b5aa614235f109d5dd9711a9">More...</a><br /></td></tr>
 <tr class="separator:aeab1db37b5aa614235f109d5dd9711a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d2ad6de2131b1a90a80f901ac8dd185"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00463.html#a5d2ad6de2131b1a90a80f901ac8dd185">HF::GraphGenerator::CompareCheckConnections</a> (<a class="el" href="a01551.html">HF::SpatialStructures::Graph</a> &amp;g, RayTracer &amp;rt, const GraphParams &amp;params, std::vector&lt; <a class="el" href="a01535.html">HF::SpatialStructures::EdgeSet</a> &gt; to_compare)</td></tr>
+<tr class="separator:a5d2ad6de2131b1a90a80f901ac8dd185"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41e03f9bab54e4e0d1314c6a4bdf2ec1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; real3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00463.html#a41e03f9bab54e4e0d1314c6a4bdf2ec1">HF::GraphGenerator::GeneratePotentialChildren</a> (const real3 &amp;parent, const std::vector&lt; pair &gt; &amp;direcs, const real3 &amp;spacing, const GraphParams &amp;gp)</td></tr>
 <tr class="memdesc:a41e03f9bab54e4e0d1314c6a4bdf2ec1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Populare out_children with a potential child position for every direction in directions.  <a href="a00463.html#a41e03f9bab54e4e0d1314c6a4bdf2ec1">More...</a><br /></td></tr>
 <tr class="separator:a41e03f9bab54e4e0d1314c6a4bdf2ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>

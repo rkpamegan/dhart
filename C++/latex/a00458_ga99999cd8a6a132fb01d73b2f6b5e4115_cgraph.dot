@@ -1,0 +1,11 @@
+digraph "GetNodeAttributesByIDFloat"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="GetNodeAttributesByIDFloat",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Retrieve float node attribute values from *g."];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="HF::SpatialStructures\l::Graph::GetNodeAttributesBy\lIDFloat",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01551.html#a34d65fb6990ba01f83f9f4424165c8f2",tooltip="Get the score for the given attribute of the specified nodes. Nodes that do not have a score for this..."];
+}

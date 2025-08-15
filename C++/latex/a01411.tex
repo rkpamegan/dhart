@@ -12,13 +12,7 @@ A wrapper for Intel\textquotesingle{}s Embree Library.
 
 
 Collaboration diagram for HF\+::Ray\+Tracer\+::Embree\+Ray\+Tracer\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01409}
-\end{center}
-\end{figure}
+% FIG 0
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -106,10 +100,10 @@ A wrapper for Intel\textquotesingle{}s Embree Library.
 Provides several functions to quickly and simply perform ray intersections using Embree. This class will automatically dispose of Embree buffers when destroyed, incrementing Embree\textquotesingle{}s reference counters on copy, and decrementing them on deletion. This class also provides methods for adding geometry to Embree\textquotesingle{}s geometry buffers. 
 
 \begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{a00452__todo000022}{Todo}}]Many functions support Mesh\+ID but don\textquotesingle{}t actually check for it. \end{DoxyRefDesc}
+\item[\mbox{\hyperlink{a00452__todo000023}{Todo}}]Many functions support Mesh\+ID but don\textquotesingle{}t actually check for it. \end{DoxyRefDesc}
 
 
-Definition at line \mbox{\hyperlink{a00212_source_l00080}{80}} of file \mbox{\hyperlink{a00212_source}{embree\+\_\+raytracer.\+h}}.
+Definition at line \mbox{\hyperlink{a00212_source_l00083}{83}} of file \mbox{\hyperlink{a00212_source}{embree\+\_\+raytracer.\+h}}.
 
 
 
@@ -142,20 +136,14 @@ Construct an empty \mbox{\hyperlink{a01411}{Embree\+Ray\+Tracer}};.
 \end{DoxyParams}
 
 
-Definition at line \mbox{\hyperlink{a00209_source_l00166}{166}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
+Definition at line \mbox{\hyperlink{a00209_source_l00168}{168}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
 
 
 
-References \mbox{\hyperlink{a00209_source_l00190}{Setup\+Scene()}}.
+References \mbox{\hyperlink{a00209_source_l00192}{Setup\+Scene()}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01411_aec975d50cd4a80c595e611db321713b8_cgraph}
-\end{center}
-\end{figure}
+% FIG 1
 \mbox{\Hypertarget{a01411_a0a3fa22a253ce3a7738f01286c11f589}\label{a01411_a0a3fa22a253ce3a7738f01286c11f589}} 
 \index{HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}!EmbreeRayTracer@{EmbreeRayTracer}}
 \index{EmbreeRayTracer@{EmbreeRayTracer}!HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}}
@@ -179,7 +167,7 @@ Create a new \mbox{\hyperlink{a01411}{Embree\+Ray\+Tracer}} and add a single mes
 \hline
 \end{DoxyExceptions}
 \begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{a00452__todo000023}{Todo}}]This function calls {\ttfamily  throw; } \href{https://en.cppreference.com/w/cpp/language/throw}{\texttt{ }} which is meant to only be used to rethrow previously thrown exceptions. This should be throwing \mbox{\hyperlink{a01323}{HF\+::\+Exceptions\+::\+Invalid\+OBJ}} \end{DoxyRefDesc}
+\item[\mbox{\hyperlink{a00452__todo000024}{Todo}}]This function calls {\ttfamily  throw; } \href{https://en.cppreference.com/w/cpp/language/throw}{\texttt{ }} which is meant to only be used to rethrow previously thrown exceptions. This should be throwing \mbox{\hyperlink{a01323}{HF\+::\+Exceptions\+::\+Invalid\+OBJ}} \end{DoxyRefDesc}
 
 
 
@@ -200,20 +188,14 @@ Create a new \mbox{\hyperlink{a01411}{Embree\+Ray\+Tracer}} and add a single mes
 \end{DoxyCode}
  
 
-Definition at line \mbox{\hyperlink{a00209_source_l00172}{172}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
+Definition at line \mbox{\hyperlink{a00209_source_l00174}{174}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
 
 
 
-References \mbox{\hyperlink{a00209_source_l00316}{Add\+Mesh()}}, and \mbox{\hyperlink{a00209_source_l00190}{Setup\+Scene()}}.
+References \mbox{\hyperlink{a00209_source_l00318}{Add\+Mesh()}}, and \mbox{\hyperlink{a00209_source_l00192}{Setup\+Scene()}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01411_a0a3fa22a253ce3a7738f01286c11f589_cgraph}
-\end{center}
-\end{figure}
+% FIG 2
 \mbox{\Hypertarget{a01411_a06d9f03f0a10fb1f185bfa8a3a4bc056}\label{a01411_a06d9f03f0a10fb1f185bfa8a3a4bc056}} 
 \index{HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}!EmbreeRayTracer@{EmbreeRayTracer}}
 \index{EmbreeRayTracer@{EmbreeRayTracer}!HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}}
@@ -233,20 +215,14 @@ Construct the raytracer using only a single mesh.
 \end{DoxyParams}
 
 
-Definition at line \mbox{\hyperlink{a00209_source_l00184}{184}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
+Definition at line \mbox{\hyperlink{a00209_source_l00186}{186}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
 
 
 
-References \mbox{\hyperlink{a00209_source_l00316}{Add\+Mesh()}}, \mbox{\hyperlink{a00209_source_l00190}{Setup\+Scene()}}, and \mbox{\hyperlink{a00212_source_l00092}{use\+\_\+precise}}.
+References \mbox{\hyperlink{a00209_source_l00318}{Add\+Mesh()}}, \mbox{\hyperlink{a00209_source_l00192}{Setup\+Scene()}}, and \mbox{\hyperlink{a00212_source_l00095}{use\+\_\+precise}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01411_a06d9f03f0a10fb1f185bfa8a3a4bc056_cgraph}
-\end{center}
-\end{figure}
+% FIG 3
 \mbox{\Hypertarget{a01411_abb8661ead02def167ed72228eccd4705}\label{a01411_abb8661ead02def167ed72228eccd4705}} 
 \index{HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}!EmbreeRayTracer@{EmbreeRayTracer}}
 \index{EmbreeRayTracer@{EmbreeRayTracer}!HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}}
@@ -259,11 +235,11 @@ Construct a raytracer using another raytracer.
 
 Increments Embree\textquotesingle{}s internal garbage collector to retain the scene and context. 
 
-Definition at line \mbox{\hyperlink{a00209_source_l00199}{199}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
+Definition at line \mbox{\hyperlink{a00209_source_l00201}{201}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
 
 
 
-References \mbox{\hyperlink{a00212_source_l00086}{context}}, \mbox{\hyperlink{a00212_source_l00082}{device}}, \mbox{\hyperlink{a00212_source_l00094}{geometry}}, and \mbox{\hyperlink{a00212_source_l00084}{scene}}.
+References \mbox{\hyperlink{a00212_source_l00089}{context}}, \mbox{\hyperlink{a00212_source_l00085}{device}}, \mbox{\hyperlink{a00212_source_l00097}{geometry}}, and \mbox{\hyperlink{a00212_source_l00087}{scene}}.
 
 \mbox{\Hypertarget{a01411_a99f9cf2231668b40902c19d6b886865a}\label{a01411_a99f9cf2231668b40902c19d6b886865a}} 
 \index{HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}!EmbreeRayTracer@{EmbreeRayTracer}}
@@ -311,20 +287,14 @@ Use of this function is discouraged since it is slower and less memory efficent 
 \end{DoxyCode}
  
 
-Definition at line \mbox{\hyperlink{a00209_source_l00301}{301}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
+Definition at line \mbox{\hyperlink{a00209_source_l00303}{303}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
 
 
 
-References \mbox{\hyperlink{a00209_source_l00336}{Construct\+Geometry\+From\+Buffers()}}, \mbox{\hyperlink{a00212_source_l00094}{geometry}}, \mbox{\hyperlink{a00209_source_l00212}{Insert\+Geom()}}, \mbox{\hyperlink{a00212_source_l00084}{scene}}, \mbox{\hyperlink{a00209_source_l00190}{Setup\+Scene()}}, and \mbox{\hyperlink{a00209_source_l00092}{HF\+::\+Ray\+Tracer\+::vectors\+To\+Buffers()}}.
+References \mbox{\hyperlink{a00209_source_l00338}{Construct\+Geometry\+From\+Buffers()}}, \mbox{\hyperlink{a00212_source_l00097}{geometry}}, \mbox{\hyperlink{a00209_source_l00214}{Insert\+Geom()}}, \mbox{\hyperlink{a00212_source_l00087}{scene}}, \mbox{\hyperlink{a00209_source_l00192}{Setup\+Scene()}}, and \mbox{\hyperlink{a00209_source_l00094}{HF\+::\+Ray\+Tracer\+::vectors\+To\+Buffers()}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01411_a99f9cf2231668b40902c19d6b886865a_cgraph}
-\end{center}
-\end{figure}
+% FIG 4
 \mbox{\Hypertarget{a01411_a2948458e764f0294996c91b00356073e}\label{a01411_a2948458e764f0294996c91b00356073e}} 
 \index{HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}!````~EmbreeRayTracer@{$\sim$EmbreeRayTracer}}
 \index{````~EmbreeRayTracer@{$\sim$EmbreeRayTracer}!HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}}
@@ -359,11 +329,11 @@ Custom destructor to ensure cleanup of embree resources.
 \end{DoxyCode}
  
 
-Definition at line \mbox{\hyperlink{a00209_source_l00644}{644}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
+Definition at line \mbox{\hyperlink{a00209_source_l00646}{646}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
 
 
 
-References \mbox{\hyperlink{a00212_source_l00082}{device}}, and \mbox{\hyperlink{a00212_source_l00084}{scene}}.
+References \mbox{\hyperlink{a00212_source_l00085}{device}}, and \mbox{\hyperlink{a00212_source_l00087}{scene}}.
 
 
 
@@ -438,20 +408,14 @@ True if successful
 {\ttfamily \texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>}Mesh insertion okay}~\newline
 
 
-Definition at line \mbox{\hyperlink{a00209_source_l00375}{375}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
+Definition at line \mbox{\hyperlink{a00209_source_l00377}{377}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
 
 
 
-References \mbox{\hyperlink{a00209_source_l00141}{HF\+::\+Ray\+Tracer\+::buffers\+To\+Structs()}}, \mbox{\hyperlink{a00209_source_l00336}{Construct\+Geometry\+From\+Buffers()}}, \mbox{\hyperlink{a00182_source_l00244}{HF\+::\+Geometry\+::\+Mesh\+Info$<$ numeric\+\_\+type $>$\+::\+Get\+Indexed\+Vertices()}}, \mbox{\hyperlink{a00182_source_l00256}{HF\+::\+Geometry\+::\+Mesh\+Info$<$ numeric\+\_\+type $>$\+::get\+Raw\+Indices()}}, \mbox{\hyperlink{a00209_source_l00212}{Insert\+Geom()}}, \mbox{\hyperlink{a00185_source_l00126}{HF\+::\+Geometry\+::\+Mesh\+Info$<$ numeric\+\_\+type $>$\+::meshid}}, \mbox{\hyperlink{a00182_source_l00181}{HF\+::\+Geometry\+::\+Mesh\+Info$<$ numeric\+\_\+type $>$\+::\+Num\+Tris()}}, \mbox{\hyperlink{a00182_source_l00178}{HF\+::\+Geometry\+::\+Mesh\+Info$<$ numeric\+\_\+type $>$\+::\+Num\+Verts()}}, and \mbox{\hyperlink{a00212_source_l00084}{scene}}.
+References \mbox{\hyperlink{a00209_source_l00143}{HF\+::\+Ray\+Tracer\+::buffers\+To\+Structs()}}, \mbox{\hyperlink{a00209_source_l00338}{Construct\+Geometry\+From\+Buffers()}}, \mbox{\hyperlink{a00182_source_l00245}{HF\+::\+Geometry\+::\+Mesh\+Info$<$ numeric\+\_\+type $>$\+::\+Get\+Indexed\+Vertices()}}, \mbox{\hyperlink{a00182_source_l00257}{HF\+::\+Geometry\+::\+Mesh\+Info$<$ numeric\+\_\+type $>$\+::get\+Raw\+Indices()}}, \mbox{\hyperlink{a00209_source_l00214}{Insert\+Geom()}}, \mbox{\hyperlink{a00185_source_l00126}{HF\+::\+Geometry\+::\+Mesh\+Info$<$ numeric\+\_\+type $>$\+::meshid}}, \mbox{\hyperlink{a00182_source_l00182}{HF\+::\+Geometry\+::\+Mesh\+Info$<$ numeric\+\_\+type $>$\+::\+Num\+Tris()}}, \mbox{\hyperlink{a00182_source_l00179}{HF\+::\+Geometry\+::\+Mesh\+Info$<$ numeric\+\_\+type $>$\+::\+Num\+Verts()}}, and \mbox{\hyperlink{a00212_source_l00087}{scene}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01411_ad5389e05e451a8d8820c4deea886db3f_cgraph}
-\end{center}
-\end{figure}
+% FIG 5
 \mbox{\Hypertarget{a01411_a3d478f577e30d1b437421224134b5a38}\label{a01411_a3d478f577e30d1b437421224134b5a38}} 
 \index{HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}!AddMesh@{AddMesh}}
 \index{AddMesh@{AddMesh}!HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}}
@@ -526,20 +490,14 @@ True.
 \end{DoxyCode}
  
 
-Definition at line \mbox{\hyperlink{a00209_source_l00398}{398}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
+Definition at line \mbox{\hyperlink{a00209_source_l00400}{400}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
 
 
 
-References \mbox{\hyperlink{a00209_source_l00316}{Add\+Mesh()}}, and \mbox{\hyperlink{a00212_source_l00084}{scene}}.
+References \mbox{\hyperlink{a00209_source_l00318}{Add\+Mesh()}}, and \mbox{\hyperlink{a00212_source_l00087}{scene}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01411_a3d478f577e30d1b437421224134b5a38_cgraph}
-\end{center}
-\end{figure}
+% FIG 6
 \mbox{\Hypertarget{a01411_a6425a0f8f4a3ef8073e734ceb745cd1e}\label{a01411_a6425a0f8f4a3ef8073e734ceb745cd1e}} 
 \index{HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}!AddMesh@{AddMesh}}
 \index{AddMesh@{AddMesh}!HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}}
@@ -602,32 +560,20 @@ True if the mesh was added successfully, false if the addition failed or the ID 
 {\ttfamily \texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>}status okay}~\newline
 
 
-Definition at line \mbox{\hyperlink{a00209_source_l00316}{316}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
+Definition at line \mbox{\hyperlink{a00209_source_l00318}{318}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
 
 
 
-References \mbox{\hyperlink{a00209_source_l00336}{Construct\+Geometry\+From\+Buffers()}}, \mbox{\hyperlink{a00209_source_l00212}{Insert\+Geom()}}, \mbox{\hyperlink{a00212_source_l00084}{scene}}, and \mbox{\hyperlink{a00209_source_l00092}{HF\+::\+Ray\+Tracer\+::vectors\+To\+Buffers()}}.
+References \mbox{\hyperlink{a00209_source_l00338}{Construct\+Geometry\+From\+Buffers()}}, \mbox{\hyperlink{a00209_source_l00214}{Insert\+Geom()}}, \mbox{\hyperlink{a00212_source_l00087}{scene}}, and \mbox{\hyperlink{a00209_source_l00094}{HF\+::\+Ray\+Tracer\+::vectors\+To\+Buffers()}}.
 
 
 
-Referenced by \mbox{\hyperlink{a00209_source_l00172}{Embree\+Ray\+Tracer()}}, \mbox{\hyperlink{a00428_source_l00084}{Add\+Mesh()}}, \mbox{\hyperlink{a00209_source_l00398}{Add\+Mesh()}}, and \mbox{\hyperlink{a00428_source_l00071}{Add\+Meshes()}}.
+Referenced by \mbox{\hyperlink{a00209_source_l00174}{Embree\+Ray\+Tracer()}}, \mbox{\hyperlink{a00428_source_l00084}{Add\+Mesh()}}, \mbox{\hyperlink{a00209_source_l00400}{Add\+Mesh()}}, and \mbox{\hyperlink{a00428_source_l00071}{Add\+Meshes()}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01411_a6425a0f8f4a3ef8073e734ceb745cd1e_cgraph}
-\end{center}
-\end{figure}
+% FIG 7
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01411_a6425a0f8f4a3ef8073e734ceb745cd1e_icgraph}
-\end{center}
-\end{figure}
+% FIG 8
 \mbox{\Hypertarget{a01411_a28032c693ac330c5b11bc2a877b04c75}\label{a01411_a28032c693ac330c5b11bc2a877b04c75}} 
 \index{HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}!CalculatePreciseDistance@{CalculatePreciseDistance}}
 \index{CalculatePreciseDistance@{CalculatePreciseDistance}!HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}}
@@ -664,32 +610,20 @@ This algorithm was implemented due to the relatively low precision of the distan
 \end{DoxySeeAlso}
 
 
-Definition at line \mbox{\hyperlink{a00209_source_l00282}{282}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
+Definition at line \mbox{\hyperlink{a00209_source_l00284}{284}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
 
 
 
-References \mbox{\hyperlink{a00209_source_l00450}{Get\+Triangle()}}, and \mbox{\hyperlink{a00209_source_l00246}{HF\+::\+Ray\+Tracer\+::\+Ray\+Triangle\+Intersection()}}.
+References \mbox{\hyperlink{a00209_source_l00452}{Get\+Triangle()}}, and \mbox{\hyperlink{a00209_source_l00248}{HF\+::\+Ray\+Tracer\+::\+Ray\+Triangle\+Intersection()}}.
 
 
 
-Referenced by \mbox{\hyperlink{a00212_source_l01041}{Intersect()}}.
+Referenced by \mbox{\hyperlink{a00212_source_l01044}{Intersect()}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01411_a28032c693ac330c5b11bc2a877b04c75_cgraph}
-\end{center}
-\end{figure}
+% FIG 9
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01411_a28032c693ac330c5b11bc2a877b04c75_icgraph}
-\end{center}
-\end{figure}
+% FIG 10
 \mbox{\Hypertarget{a01411_aa602f6c44fa5230477642942ebc3216e}\label{a01411_aa602f6c44fa5230477642942ebc3216e}} 
 \index{HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}!ConstructGeometryFromBuffers@{ConstructGeometryFromBuffers}}
 \index{ConstructGeometryFromBuffers@{ConstructGeometryFromBuffers}!HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}}
@@ -712,24 +646,18 @@ Committed \mbox{\hyperlink{a00469}{Geometry}} containing the specified triangles
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{a00209_source_l00336}{336}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
+Definition at line \mbox{\hyperlink{a00209_source_l00338}{338}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
 
 
 
-References \mbox{\hyperlink{a00212_source_l00082}{device}}, \mbox{\hyperlink{a00212_source_l00094}{geometry}}, \mbox{\hyperlink{a00212_source_l00088}{triangles}}, and \mbox{\hyperlink{a00212_source_l00090}{Vertices}}.
+References \mbox{\hyperlink{a00212_source_l00085}{device}}, \mbox{\hyperlink{a00212_source_l00097}{geometry}}, \mbox{\hyperlink{a00212_source_l00091}{triangles}}, and \mbox{\hyperlink{a00212_source_l00093}{Vertices}}.
 
 
 
-Referenced by \mbox{\hyperlink{a00209_source_l00301}{Embree\+Ray\+Tracer()}}, and \mbox{\hyperlink{a00209_source_l00316}{Add\+Mesh()}}.
+Referenced by \mbox{\hyperlink{a00209_source_l00303}{Embree\+Ray\+Tracer()}}, and \mbox{\hyperlink{a00209_source_l00318}{Add\+Mesh()}}.
 
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01411_aa602f6c44fa5230477642942ebc3216e_icgraph}
-\end{center}
-\end{figure}
+% FIG 11
 \mbox{\Hypertarget{a01411_a619072a17db71253fc9ce3bdf1ba1920}\label{a01411_a619072a17db71253fc9ce3bdf1ba1920}} 
 \index{HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}!GetTriangle@{GetTriangle}}
 \index{GetTriangle@{GetTriangle}!HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}}
@@ -757,32 +685,20 @@ The 3 vertices that comprise the triangle with ID {\ttfamily prim\+ID} in the ge
 \end{DoxyPrecond}
 
 
-Definition at line \mbox{\hyperlink{a00209_source_l00450}{450}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
+Definition at line \mbox{\hyperlink{a00209_source_l00452}{452}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
 
 
 
-References \mbox{\hyperlink{a00209_source_l00446}{HF\+::\+Ray\+Tracer\+::\+Get\+Point\+From\+Buffer()}}, \mbox{\hyperlink{a00212_source_l00084}{scene}}, \mbox{\hyperlink{a00209_source_l00082}{HF\+::\+Ray\+Tracer\+::\+Triangle\+::v0}}, \mbox{\hyperlink{a00209_source_l00082}{HF\+::\+Ray\+Tracer\+::\+Triangle\+::v1}}, and \mbox{\hyperlink{a00209_source_l00082}{HF\+::\+Ray\+Tracer\+::\+Triangle\+::v2}}.
+References \mbox{\hyperlink{a00209_source_l00448}{HF\+::\+Ray\+Tracer\+::\+Get\+Point\+From\+Buffer()}}, \mbox{\hyperlink{a00212_source_l00087}{scene}}, \mbox{\hyperlink{a00209_source_l00084}{HF\+::\+Ray\+Tracer\+::\+Triangle\+::v0}}, \mbox{\hyperlink{a00209_source_l00084}{HF\+::\+Ray\+Tracer\+::\+Triangle\+::v1}}, and \mbox{\hyperlink{a00209_source_l00084}{HF\+::\+Ray\+Tracer\+::\+Triangle\+::v2}}.
 
 
 
-Referenced by \mbox{\hyperlink{a00209_source_l00282}{Calculate\+Precise\+Distance()}}.
+Referenced by \mbox{\hyperlink{a00209_source_l00284}{Calculate\+Precise\+Distance()}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01411_a619072a17db71253fc9ce3bdf1ba1920_cgraph}
-\end{center}
-\end{figure}
+% FIG 12
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01411_a619072a17db71253fc9ce3bdf1ba1920_icgraph}
-\end{center}
-\end{figure}
+% FIG 13
 \mbox{\Hypertarget{a01411_a6ee1e15bc515878b156bc6a3778f8033}\label{a01411_a6ee1e15bc515878b156bc6a3778f8033}} 
 \index{HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}!InsertGeom@{InsertGeom}}
 \index{InsertGeom@{InsertGeom}!HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}}
@@ -805,32 +721,20 @@ the New ID if a new ID needed to be given to the mesh or the ID given by ID.
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{a00209_source_l00212}{212}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
+Definition at line \mbox{\hyperlink{a00209_source_l00214}{214}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
 
 
 
-References \mbox{\hyperlink{a00209_source_l00069}{HF\+::\+Ray\+Tracer\+::\+Check\+State()}}, \mbox{\hyperlink{a00212_source_l00082}{device}}, \mbox{\hyperlink{a00209_source_l00212}{Insert\+Geom()}}, and \mbox{\hyperlink{a00212_source_l00084}{scene}}.
+References \mbox{\hyperlink{a00209_source_l00071}{HF\+::\+Ray\+Tracer\+::\+Check\+State()}}, \mbox{\hyperlink{a00212_source_l00085}{device}}, \mbox{\hyperlink{a00209_source_l00214}{Insert\+Geom()}}, and \mbox{\hyperlink{a00212_source_l00087}{scene}}.
 
 
 
-Referenced by \mbox{\hyperlink{a00209_source_l00301}{Embree\+Ray\+Tracer()}}, \mbox{\hyperlink{a00209_source_l00316}{Add\+Mesh()}}, and \mbox{\hyperlink{a00209_source_l00212}{Insert\+Geom()}}.
+Referenced by \mbox{\hyperlink{a00209_source_l00303}{Embree\+Ray\+Tracer()}}, \mbox{\hyperlink{a00209_source_l00318}{Add\+Mesh()}}, and \mbox{\hyperlink{a00209_source_l00214}{Insert\+Geom()}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01411_a6ee1e15bc515878b156bc6a3778f8033_cgraph}
-\end{center}
-\end{figure}
+% FIG 14
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01411_a6ee1e15bc515878b156bc6a3778f8033_icgraph}
-\end{center}
-\end{figure}
+% FIG 15
 \mbox{\Hypertarget{a01411_aefb986188c0520e407fa3a39c89a0017}\label{a01411_aefb986188c0520e407fa3a39c89a0017}} 
 \index{HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}!Intersect@{Intersect}}
 \index{Intersect@{Intersect}!HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}}
@@ -873,20 +777,14 @@ If {\ttfamily use\+\_\+precise} is set to true then this will use a more precise
 \end{DoxySeeAlso}
 
 
-Definition at line \mbox{\hyperlink{a00212_source_l01001}{1001}} of file \mbox{\hyperlink{a00212_source}{embree\+\_\+raytracer.\+h}}.
+Definition at line \mbox{\hyperlink{a00212_source_l01004}{1004}} of file \mbox{\hyperlink{a00212_source}{embree\+\_\+raytracer.\+h}}.
 
 
 
 Referenced by \mbox{\hyperlink{a00428_source_l00286}{Precise\+Intersection()}}.
 
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01411_aefb986188c0520e407fa3a39c89a0017_icgraph}
-\end{center}
-\end{figure}
+% FIG 16
 \mbox{\Hypertarget{a01411_af37604ed6d68c27bb9224afd795cab18}\label{a01411_af37604ed6d68c27bb9224afd795cab18}} 
 \index{HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}!Intersect@{Intersect}}
 \index{Intersect@{Intersect}!HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}}
@@ -949,7 +847,8 @@ If {\ttfamily use\+\_\+precise} is set to true then this will use a more precise
 \DoxyCodeLine{    \textcolor{keyword}{const} vector<int> plane\_indices\{ 3, 1, 0, 2, 3, 0 \};}
 \DoxyCodeLine{}
 \DoxyCodeLine{    \textcolor{comment}{// Create RayTracer}}
-\DoxyCodeLine{    \mbox{\hyperlink{a01411_aec975d50cd4a80c595e611db321713b8}{EmbreeRayTracer}} ert(vector<\mbox{\hyperlink{a01351}{MeshInfo<float>}}>\{\mbox{\hyperlink{a01351}{MeshInfo<float>}}(plane\_vertices, plane\_indices, 0, \textcolor{stringliteral}{"{} "{}})\});}
+\DoxyCodeLine{    std::vector<MeshInfo<float>> meshInfos\{\mbox{\hyperlink{a01351}{MeshInfo<float>}}(plane\_vertices, plane\_indices, 0, \textcolor{stringliteral}{"{} "{}})\};}
+\DoxyCodeLine{    \mbox{\hyperlink{a01411_aec975d50cd4a80c595e611db321713b8}{EmbreeRayTracer}} ert(meshInfos);}
 \DoxyCodeLine{}
 \DoxyCodeLine{    \textcolor{comment}{// Cast a ray straight down}}
 \DoxyCodeLine{    \textcolor{keyword}{auto} straight\_down = ert.Intersect(0, 0, 1, 0, 0, -\/1);}
@@ -969,20 +868,14 @@ If {\ttfamily use\+\_\+precise} is set to true then this will use a more precise
 \end{DoxyParagraph}
 
 
-Definition at line \mbox{\hyperlink{a00212_source_l01041}{1041}} of file \mbox{\hyperlink{a00212_source}{embree\+\_\+raytracer.\+h}}.
+Definition at line \mbox{\hyperlink{a00212_source_l01044}{1044}} of file \mbox{\hyperlink{a00212_source}{embree\+\_\+raytracer.\+h}}.
 
 
 
-References \mbox{\hyperlink{a00209_source_l00282}{Calculate\+Precise\+Distance()}}, \mbox{\hyperlink{a00218_source_l00023}{HF\+::\+Ray\+Tracer\+::\+Did\+Intersect()}}, \mbox{\hyperlink{a00218_source_l00008}{HF\+::\+Ray\+Tracer\+::\+Hit\+Struct$<$ numeric\+\_\+type $>$\+::distance}}, \mbox{\hyperlink{a00209_source_l00543}{Intersect\+\_\+\+IMPL()}}, and \mbox{\hyperlink{a00218_source_l00009}{HF\+::\+Ray\+Tracer\+::\+Hit\+Struct$<$ numeric\+\_\+type $>$\+::meshid}}.
+References \mbox{\hyperlink{a00209_source_l00284}{Calculate\+Precise\+Distance()}}, \mbox{\hyperlink{a00218_source_l00024}{HF\+::\+Ray\+Tracer\+::\+Did\+Intersect()}}, \mbox{\hyperlink{a00218_source_l00009}{HF\+::\+Ray\+Tracer\+::\+Hit\+Struct$<$ numeric\+\_\+type $>$\+::distance}}, \mbox{\hyperlink{a00209_source_l00545}{Intersect\+\_\+\+IMPL()}}, and \mbox{\hyperlink{a00218_source_l00010}{HF\+::\+Ray\+Tracer\+::\+Hit\+Struct$<$ numeric\+\_\+type $>$\+::meshid}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01411_af37604ed6d68c27bb9224afd795cab18_cgraph}
-\end{center}
-\end{figure}
+% FIG 17
 \mbox{\Hypertarget{a01411_ae3341adf12ae91e33f1188a434d8e28d}\label{a01411_ae3341adf12ae91e33f1188a434d8e28d}} 
 \index{HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}!Intersect\_IMPL@{Intersect\_IMPL}}
 \index{Intersect\_IMPL@{Intersect\_IMPL}!HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}}
@@ -1059,32 +952,20 @@ A \mbox{\hyperlink{a01415}{Hit\+Struct}} containing information about the inters
 {\ttfamily \texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>}1}~\newline
 {\ttfamily \texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>}Miss} 
 
-Definition at line \mbox{\hyperlink{a00209_source_l00543}{543}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
+Definition at line \mbox{\hyperlink{a00209_source_l00545}{545}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
 
 
 
-References \mbox{\hyperlink{a00209_source_l00024}{HF\+::\+Ray\+Tracer\+::\+Construct\+Hit()}}, \mbox{\hyperlink{a00212_source_l00086}{context}}, and \mbox{\hyperlink{a00212_source_l00084}{scene}}.
+References \mbox{\hyperlink{a00209_source_l00026}{HF\+::\+Ray\+Tracer\+::\+Construct\+Hit()}}, \mbox{\hyperlink{a00212_source_l00089}{context}}, and \mbox{\hyperlink{a00212_source_l00087}{scene}}.
 
 
 
-Referenced by \mbox{\hyperlink{a00212_source_l01041}{Intersect()}}.
+Referenced by \mbox{\hyperlink{a00212_source_l01044}{Intersect()}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01411_ae3341adf12ae91e33f1188a434d8e28d_cgraph}
-\end{center}
-\end{figure}
+% FIG 18
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01411_ae3341adf12ae91e33f1188a434d8e28d_icgraph}
-\end{center}
-\end{figure}
+% FIG 19
 \mbox{\Hypertarget{a01411_afd4816ed296a73ccb7fe61e17cd75165}\label{a01411_afd4816ed296a73ccb7fe61e17cd75165}} 
 \index{HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}!Intersections@{Intersections}}
 \index{Intersections@{Intersections}!HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}}
@@ -1128,7 +1009,7 @@ The length of nodes must match the length of directions.
 \end{DoxyPrecond}
 
 
-Definition at line \mbox{\hyperlink{a00212_source_l01141}{1141}} of file \mbox{\hyperlink{a00212_source}{embree\+\_\+raytracer.\+h}}.
+Definition at line \mbox{\hyperlink{a00212_source_l01144}{1144}} of file \mbox{\hyperlink{a00212_source}{embree\+\_\+raytracer.\+h}}.
 
 \mbox{\Hypertarget{a01411_a7f8ab81033bdefaea0eea729aa9125ae}\label{a01411_a7f8ab81033bdefaea0eea729aa9125ae}} 
 \index{HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}!IntersectOutputArguments@{IntersectOutputArguments}}
@@ -1175,32 +1056,20 @@ It\textquotesingle{}s suggested to use Intersect instead of this function.
 \end{DoxySeeAlso}
 
 
-Definition at line \mbox{\hyperlink{a00212_source_l01098}{1098}} of file \mbox{\hyperlink{a00212_source}{embree\+\_\+raytracer.\+h}}.
+Definition at line \mbox{\hyperlink{a00212_source_l01101}{1101}} of file \mbox{\hyperlink{a00212_source}{embree\+\_\+raytracer.\+h}}.
 
 
 
-References \mbox{\hyperlink{a00218_source_l00017}{HF\+::\+Ray\+Tracer\+::\+Hit\+Struct$<$ numeric\+\_\+type $>$\+::\+Did\+Hit()}}, \mbox{\hyperlink{a00218_source_l00008}{HF\+::\+Ray\+Tracer\+::\+Hit\+Struct$<$ numeric\+\_\+type $>$\+::distance}}, and \mbox{\hyperlink{a00218_source_l00009}{HF\+::\+Ray\+Tracer\+::\+Hit\+Struct$<$ numeric\+\_\+type $>$\+::meshid}}.
+References \mbox{\hyperlink{a00218_source_l00018}{HF\+::\+Ray\+Tracer\+::\+Hit\+Struct$<$ numeric\+\_\+type $>$\+::\+Did\+Hit()}}, \mbox{\hyperlink{a00218_source_l00009}{HF\+::\+Ray\+Tracer\+::\+Hit\+Struct$<$ numeric\+\_\+type $>$\+::distance}}, and \mbox{\hyperlink{a00218_source_l00010}{HF\+::\+Ray\+Tracer\+::\+Hit\+Struct$<$ numeric\+\_\+type $>$\+::meshid}}.
 
 
 
 Referenced by \mbox{\hyperlink{a00428_source_l00111}{Cast\+Rays\+Distance()}}, and \mbox{\hyperlink{a00428_source_l00098}{Cast\+Single\+Ray\+Distance()}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01411_a7f8ab81033bdefaea0eea729aa9125ae_cgraph}
-\end{center}
-\end{figure}
+% FIG 20
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01411_a7f8ab81033bdefaea0eea729aa9125ae_icgraph}
-\end{center}
-\end{figure}
+% FIG 21
 \mbox{\Hypertarget{a01411_a3a7488f8e41c8a9e3dc9c334047c6457}\label{a01411_a3a7488f8e41c8a9e3dc9c334047c6457}} 
 \index{HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}!Occluded@{Occluded}}
 \index{Occluded@{Occluded}!HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}}
@@ -1249,7 +1118,8 @@ Occlusion rays are much faster than other intersection functions however they ar
 \DoxyCodeLine{    \textcolor{keyword}{const} vector<int> plane\_indices\{ 3, 1, 0, 2, 3, 0 \};}
 \DoxyCodeLine{}
 \DoxyCodeLine{    \textcolor{comment}{// Create RayTracer}}
-\DoxyCodeLine{    \mbox{\hyperlink{a01411_aec975d50cd4a80c595e611db321713b8}{EmbreeRayTracer}} ert(vector<\mbox{\hyperlink{a01351}{MeshInfo<float>}}>\{\mbox{\hyperlink{a01351}{MeshInfo<float>}}(plane\_vertices, plane\_indices, 0, \textcolor{stringliteral}{"{} "{}})\});}
+\DoxyCodeLine{    std::vector<MeshInfo<float>> meshInfos\{\mbox{\hyperlink{a01351}{MeshInfo<float>}}(plane\_vertices, plane\_indices, 0, \textcolor{stringliteral}{"{} "{}})\};}
+\DoxyCodeLine{    \mbox{\hyperlink{a01411_aec975d50cd4a80c595e611db321713b8}{EmbreeRayTracer}} ert(meshInfos);}
 \DoxyCodeLine{}
 \DoxyCodeLine{    \textcolor{comment}{// Cast a ray straight down}}
 \DoxyCodeLine{    \textcolor{keywordtype}{bool} straight\_down = ert.Occluded(}
@@ -1274,32 +1144,20 @@ Occlusion rays are much faster than other intersection functions however they ar
 {\ttfamily \texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} True}~\newline
 {\ttfamily \texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} False} 
 
-Definition at line \mbox{\hyperlink{a00212_source_l01186}{1186}} of file \mbox{\hyperlink{a00212_source}{embree\+\_\+raytracer.\+h}}.
+Definition at line \mbox{\hyperlink{a00212_source_l01189}{1189}} of file \mbox{\hyperlink{a00212_source}{embree\+\_\+raytracer.\+h}}.
 
 
 
-References \mbox{\hyperlink{a00209_source_l00624}{Occluded\+\_\+\+IMPL()}}.
+References \mbox{\hyperlink{a00209_source_l00626}{Occluded\+\_\+\+IMPL()}}.
 
 
 
 Referenced by \mbox{\hyperlink{a00026_source_l00047}{HF\+::\+Visibility\+Graph\+::\+Height\+Check()}}, and \mbox{\hyperlink{a00026_source_l00103}{HF\+::\+Visibility\+Graph\+::\+Is\+Occlusion\+Between()}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01411_a3a7488f8e41c8a9e3dc9c334047c6457_cgraph}
-\end{center}
-\end{figure}
+% FIG 22
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01411_a3a7488f8e41c8a9e3dc9c334047c6457_icgraph}
-\end{center}
-\end{figure}
+% FIG 23
 \mbox{\Hypertarget{a01411_ae6b86b94ab1c45e137e384b8955064ad}\label{a01411_ae6b86b94ab1c45e137e384b8955064ad}} 
 \index{HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}!Occluded@{Occluded}}
 \index{Occluded@{Occluded}!HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}}
@@ -1360,7 +1218,8 @@ Occlusion rays are much faster than other intersection functions however they ar
 \DoxyCodeLine{    \textcolor{keyword}{const} vector<int> plane\_indices\{ 3, 1, 0, 2, 3, 0 \};}
 \DoxyCodeLine{}
 \DoxyCodeLine{    \textcolor{comment}{// Create RayTracer}}
-\DoxyCodeLine{    \mbox{\hyperlink{a01411_aec975d50cd4a80c595e611db321713b8}{EmbreeRayTracer}} ert(vector<\mbox{\hyperlink{a01351}{MeshInfo<float>}}>\{\mbox{\hyperlink{a01351}{MeshInfo<float>}}(plane\_vertices, plane\_indices, 0, \textcolor{stringliteral}{"{} "{}})\});}
+\DoxyCodeLine{    std::vector<MeshInfo<float>> meshInfos\{\mbox{\hyperlink{a01351}{MeshInfo<float>}}(plane\_vertices, plane\_indices, 0, \textcolor{stringliteral}{"{} "{}})\};}
+\DoxyCodeLine{    \mbox{\hyperlink{a01411_aec975d50cd4a80c595e611db321713b8}{EmbreeRayTracer}} ert(meshInfos);}
 \DoxyCodeLine{}
 \DoxyCodeLine{    \textcolor{comment}{// Cast a ray straight down}}
 \DoxyCodeLine{    \textcolor{keywordtype}{bool} straight\_down = ert.Occluded(0, 0, 1, 0, 0, -\/1);}
@@ -1379,20 +1238,14 @@ Occlusion rays are much faster than other intersection functions however they ar
 {\ttfamily \texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} True}~\newline
 {\ttfamily \texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} False} 
 
-Definition at line \mbox{\hyperlink{a00212_source_l01233}{1233}} of file \mbox{\hyperlink{a00212_source}{embree\+\_\+raytracer.\+h}}.
+Definition at line \mbox{\hyperlink{a00212_source_l01236}{1236}} of file \mbox{\hyperlink{a00212_source}{embree\+\_\+raytracer.\+h}}.
 
 
 
-References \mbox{\hyperlink{a00209_source_l00624}{Occluded\+\_\+\+IMPL()}}.
+References \mbox{\hyperlink{a00209_source_l00626}{Occluded\+\_\+\+IMPL()}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01411_ae6b86b94ab1c45e137e384b8955064ad_cgraph}
-\end{center}
-\end{figure}
+% FIG 24
 \mbox{\Hypertarget{a01411_a7b06460e537c22386fa5a9af2701591a}\label{a01411_a7b06460e537c22386fa5a9af2701591a}} 
 \index{HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}!Occluded\_IMPL@{Occluded\_IMPL}}
 \index{Occluded\_IMPL@{Occluded\_IMPL}!HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}}
@@ -1467,20 +1320,14 @@ Occulsion rays are faster than the other ray functions, but can only tell if a r
 {\ttfamily \texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} True}~\newline
 {\ttfamily \texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} False} 
 
-Definition at line \mbox{\hyperlink{a00209_source_l00555}{555}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
+Definition at line \mbox{\hyperlink{a00209_source_l00557}{557}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
 
 
 
-References \mbox{\hyperlink{a00209_source_l00624}{Occluded\+\_\+\+IMPL()}}.
+References \mbox{\hyperlink{a00209_source_l00626}{Occluded\+\_\+\+IMPL()}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01411_a7b06460e537c22386fa5a9af2701591a_cgraph}
-\end{center}
-\end{figure}
+% FIG 25
 \mbox{\Hypertarget{a01411_ade19fda460dadd98769b347840bd305a}\label{a01411_ade19fda460dadd98769b347840bd305a}} 
 \index{HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}!Occluded\_IMPL@{Occluded\_IMPL}}
 \index{Occluded\_IMPL@{Occluded\_IMPL}!HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}}
@@ -1557,32 +1404,20 @@ True if the ray intersected any geometry. False otherwise.
 {\ttfamily \texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} True}~\newline
 {\ttfamily \texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} False} 
 
-Definition at line \mbox{\hyperlink{a00209_source_l00624}{624}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
+Definition at line \mbox{\hyperlink{a00209_source_l00626}{626}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
 
 
 
-References \mbox{\hyperlink{a00209_source_l00048}{HF\+::\+Ray\+Tracer\+::\+Construct\+Ray()}}, \mbox{\hyperlink{a00212_source_l00086}{context}}, and \mbox{\hyperlink{a00212_source_l00084}{scene}}.
+References \mbox{\hyperlink{a00209_source_l00050}{HF\+::\+Ray\+Tracer\+::\+Construct\+Ray()}}, \mbox{\hyperlink{a00212_source_l00089}{context}}, and \mbox{\hyperlink{a00212_source_l00087}{scene}}.
 
 
 
-Referenced by \mbox{\hyperlink{a00212_source_l01186}{Occluded()}}, \mbox{\hyperlink{a00209_source_l00555}{Occluded\+\_\+\+IMPL()}}, and \mbox{\hyperlink{a00209_source_l00563}{Occlusions()}}.
+Referenced by \mbox{\hyperlink{a00212_source_l01189}{Occluded()}}, \mbox{\hyperlink{a00209_source_l00557}{Occluded\+\_\+\+IMPL()}}, and \mbox{\hyperlink{a00209_source_l00565}{Occlusions()}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01411_ade19fda460dadd98769b347840bd305a_cgraph}
-\end{center}
-\end{figure}
+% FIG 26
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01411_ade19fda460dadd98769b347840bd305a_icgraph}
-\end{center}
-\end{figure}
+% FIG 27
 \mbox{\Hypertarget{a01411_af718d171387e217f3c2172f795abfb90}\label{a01411_af718d171387e217f3c2172f795abfb90}} 
 \index{HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}!Occlusions@{Occlusions}}
 \index{Occlusions@{Occlusions}!HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}}
@@ -1669,32 +1504,20 @@ Can be cast in 3 configurations\+:
 \end{DoxyParagraph}
 {\ttfamily \texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} \mbox{[}True, True, True, True, True, False, False, False, False, False\mbox{]}} 
 
-Definition at line \mbox{\hyperlink{a00209_source_l00563}{563}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
+Definition at line \mbox{\hyperlink{a00209_source_l00565}{565}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
 
 
 
-References \mbox{\hyperlink{a00209_source_l00624}{Occluded\+\_\+\+IMPL()}}.
+References \mbox{\hyperlink{a00209_source_l00626}{Occluded\+\_\+\+IMPL()}}.
 
 
 
 Referenced by \mbox{\hyperlink{a00428_source_l00271}{Cast\+Occlusion\+Rays()}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01411_af718d171387e217f3c2172f795abfb90_cgraph}
-\end{center}
-\end{figure}
+% FIG 28
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01411_af718d171387e217f3c2172f795abfb90_icgraph}
-\end{center}
-\end{figure}
+% FIG 29
 \mbox{\Hypertarget{a01411_a70b9c1baf8390d8114c541d6a2ccb4f4}\label{a01411_a70b9c1baf8390d8114c541d6a2ccb4f4}} 
 \index{HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}!operator=@{operator=}}
 \index{operator=@{operator=}!HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}}
@@ -1739,11 +1562,11 @@ Increment reference counters to prevent destruction when a copy is made.
 \end{DoxyCode}
  
 
-Definition at line \mbox{\hyperlink{a00209_source_l00632}{632}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
+Definition at line \mbox{\hyperlink{a00209_source_l00634}{634}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
 
 
 
-References \mbox{\hyperlink{a00212_source_l00086}{context}}, \mbox{\hyperlink{a00212_source_l00082}{device}}, \mbox{\hyperlink{a00212_source_l00094}{geometry}}, \mbox{\hyperlink{a00212_source_l00084}{scene}}, and \mbox{\hyperlink{a00212_source_l00092}{use\+\_\+precise}}.
+References \mbox{\hyperlink{a00212_source_l00089}{context}}, \mbox{\hyperlink{a00212_source_l00085}{device}}, \mbox{\hyperlink{a00212_source_l00097}{geometry}}, \mbox{\hyperlink{a00212_source_l00087}{scene}}, and \mbox{\hyperlink{a00212_source_l00095}{use\+\_\+precise}}.
 
 \mbox{\Hypertarget{a01411_a8de15e23054b0b579087acc48616149f}\label{a01411_a8de15e23054b0b579087acc48616149f}} 
 \index{HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}!PointIntersection@{PointIntersection}}
@@ -1826,20 +1649,14 @@ true if the ray hit, false otherwise
 {\ttfamily \texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>}(0, 0, 0)}~\newline
 {\ttfamily \texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>}Miss} 
 
-Definition at line \mbox{\hyperlink{a00209_source_l00420}{420}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
+Definition at line \mbox{\hyperlink{a00209_source_l00422}{422}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
 
 
 
-References \mbox{\hyperlink{a00218_source_l00017}{HF\+::\+Ray\+Tracer\+::\+Hit\+Struct$<$ numeric\+\_\+type $>$\+::\+Did\+Hit()}}, and \mbox{\hyperlink{a00218_source_l00008}{HF\+::\+Ray\+Tracer\+::\+Hit\+Struct$<$ numeric\+\_\+type $>$\+::distance}}.
+References \mbox{\hyperlink{a00218_source_l00018}{HF\+::\+Ray\+Tracer\+::\+Hit\+Struct$<$ numeric\+\_\+type $>$\+::\+Did\+Hit()}}, and \mbox{\hyperlink{a00218_source_l00009}{HF\+::\+Ray\+Tracer\+::\+Hit\+Struct$<$ numeric\+\_\+type $>$\+::distance}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01411_a8de15e23054b0b579087acc48616149f_cgraph}
-\end{center}
-\end{figure}
+% FIG 30
 \mbox{\Hypertarget{a01411_aa8424b274c7c5d0598ff13b49ac8c8d2}\label{a01411_aa8424b274c7c5d0598ff13b49ac8c8d2}} 
 \index{HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}!PointIntersection@{PointIntersection}}
 \index{PointIntersection@{PointIntersection}!HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}}
@@ -1916,32 +1733,20 @@ True if the ray intersected some geometry and the origin is updated with the hit
 {\ttfamily \texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>}(0,0,0)}~\newline
 {\ttfamily \texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>}Miss} 
 
-Definition at line \mbox{\hyperlink{a00209_source_l00411}{411}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
+Definition at line \mbox{\hyperlink{a00209_source_l00413}{413}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
 
 
 
-References \mbox{\hyperlink{a00209_source_l00411}{Point\+Intersection()}}.
+References \mbox{\hyperlink{a00209_source_l00413}{Point\+Intersection()}}.
 
 
 
-Referenced by \mbox{\hyperlink{a00428_source_l00193}{Cast\+Ray()}}, \mbox{\hyperlink{a00209_source_l00411}{Point\+Intersection()}}, and \mbox{\hyperlink{a00209_source_l00480}{Point\+Intersections()}}.
+Referenced by \mbox{\hyperlink{a00428_source_l00193}{Cast\+Ray()}}, \mbox{\hyperlink{a00209_source_l00413}{Point\+Intersection()}}, and \mbox{\hyperlink{a00209_source_l00482}{Point\+Intersections()}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=216pt]{a01411_aa8424b274c7c5d0598ff13b49ac8c8d2_cgraph}
-\end{center}
-\end{figure}
+% FIG 31
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01411_aa8424b274c7c5d0598ff13b49ac8c8d2_icgraph}
-\end{center}
-\end{figure}
+% FIG 32
 \mbox{\Hypertarget{a01411_a0c4abe0d3160c1a59231e0ae492fe537}\label{a01411_a0c4abe0d3160c1a59231e0ae492fe537}} 
 \index{HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}!PointIntersections@{PointIntersections}}
 \index{PointIntersections@{PointIntersections}!HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}}
@@ -2035,32 +1840,20 @@ Can be cast in 3 configurations\+:
 \end{DoxyParagraph}
 {\ttfamily \texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} \mbox{[}(0, 0, 0), (1.\+99, 0, 0), (3.\+98, 0, 0), (5.\+97, 0, 0), (7.\+96, 0, 0), (9.\+95, 0, 0), Miss, Miss, Miss, Miss\mbox{]}} 
 
-Definition at line \mbox{\hyperlink{a00209_source_l00480}{480}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
+Definition at line \mbox{\hyperlink{a00209_source_l00482}{482}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
 
 
 
-References \mbox{\hyperlink{a00209_source_l00411}{Point\+Intersection()}}.
+References \mbox{\hyperlink{a00209_source_l00413}{Point\+Intersection()}}.
 
 
 
 Referenced by \mbox{\hyperlink{a00428_source_l00249}{Cast\+Multiple\+Directions\+One\+Origin()}}, \mbox{\hyperlink{a00428_source_l00227}{Cast\+Multiple\+Origins\+One\+Direction()}}, and \mbox{\hyperlink{a00428_source_l00199}{Cast\+Multiple\+Rays()}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01411_a0c4abe0d3160c1a59231e0ae492fe537_cgraph}
-\end{center}
-\end{figure}
+% FIG 33
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01411_a0c4abe0d3160c1a59231e0ae492fe537_icgraph}
-\end{center}
-\end{figure}
+% FIG 34
 \mbox{\Hypertarget{a01411_a19527943d1afe002c1105cb3b3691ca7}\label{a01411_a19527943d1afe002c1105cb3b3691ca7}} 
 \index{HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}!SetupScene@{SetupScene}}
 \index{SetupScene@{SetupScene}!HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}}
@@ -2078,24 +1871,18 @@ Any changes to the internal settings of embree should be handled here. I.\+E. En
 \end{DoxyRemark}
 
 
-Definition at line \mbox{\hyperlink{a00209_source_l00190}{190}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
+Definition at line \mbox{\hyperlink{a00209_source_l00192}{192}} of file \mbox{\hyperlink{a00209_source}{embree\+\_\+raytracer.\+cpp}}.
 
 
 
-References \mbox{\hyperlink{a00212_source_l00086}{context}}, \mbox{\hyperlink{a00212_source_l00082}{device}}, and \mbox{\hyperlink{a00212_source_l00084}{scene}}.
+References \mbox{\hyperlink{a00212_source_l00089}{context}}, \mbox{\hyperlink{a00212_source_l00085}{device}}, and \mbox{\hyperlink{a00212_source_l00087}{scene}}.
 
 
 
-Referenced by \mbox{\hyperlink{a00209_source_l00166}{Embree\+Ray\+Tracer()}}.
+Referenced by \mbox{\hyperlink{a00209_source_l00168}{Embree\+Ray\+Tracer()}}.
 
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01411_a19527943d1afe002c1105cb3b3691ca7_icgraph}
-\end{center}
-\end{figure}
+% FIG 35
 
 
 \doxysubsection{Member Data Documentation}
@@ -2111,11 +1898,11 @@ Context to cast rays within.
 
 
 
-Definition at line \mbox{\hyperlink{a00212_source_l00086}{86}} of file \mbox{\hyperlink{a00212_source}{embree\+\_\+raytracer.\+h}}.
+Definition at line \mbox{\hyperlink{a00212_source_l00089}{89}} of file \mbox{\hyperlink{a00212_source}{embree\+\_\+raytracer.\+h}}.
 
 
 
-Referenced by \mbox{\hyperlink{a00209_source_l00199}{Embree\+Ray\+Tracer()}}, \mbox{\hyperlink{a00209_source_l00543}{Intersect\+\_\+\+IMPL()}}, \mbox{\hyperlink{a00209_source_l00624}{Occluded\+\_\+\+IMPL()}}, \mbox{\hyperlink{a00209_source_l00632}{operator=()}}, and \mbox{\hyperlink{a00209_source_l00190}{Setup\+Scene()}}.
+Referenced by \mbox{\hyperlink{a00209_source_l00201}{Embree\+Ray\+Tracer()}}, \mbox{\hyperlink{a00209_source_l00545}{Intersect\+\_\+\+IMPL()}}, \mbox{\hyperlink{a00209_source_l00626}{Occluded\+\_\+\+IMPL()}}, \mbox{\hyperlink{a00209_source_l00634}{operator=()}}, and \mbox{\hyperlink{a00209_source_l00192}{Setup\+Scene()}}.
 
 \mbox{\Hypertarget{a01411_a5608742889ff45a0294fdf21e5a85b2e}\label{a01411_a5608742889ff45a0294fdf21e5a85b2e}} 
 \index{HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}!device@{device}}
@@ -2129,11 +1916,11 @@ All objects in Embree are created from this. \href{https://www.embree.org/api.ht
 
 
 
-Definition at line \mbox{\hyperlink{a00212_source_l00082}{82}} of file \mbox{\hyperlink{a00212_source}{embree\+\_\+raytracer.\+h}}.
+Definition at line \mbox{\hyperlink{a00212_source_l00085}{85}} of file \mbox{\hyperlink{a00212_source}{embree\+\_\+raytracer.\+h}}.
 
 
 
-Referenced by \mbox{\hyperlink{a00209_source_l00199}{Embree\+Ray\+Tracer()}}, \mbox{\hyperlink{a00209_source_l00644}{$\sim$\+Embree\+Ray\+Tracer()}}, \mbox{\hyperlink{a00209_source_l00336}{Construct\+Geometry\+From\+Buffers()}}, \mbox{\hyperlink{a00209_source_l00212}{Insert\+Geom()}}, \mbox{\hyperlink{a00209_source_l00632}{operator=()}}, and \mbox{\hyperlink{a00209_source_l00190}{Setup\+Scene()}}.
+Referenced by \mbox{\hyperlink{a00209_source_l00201}{Embree\+Ray\+Tracer()}}, \mbox{\hyperlink{a00209_source_l00646}{$\sim$\+Embree\+Ray\+Tracer()}}, \mbox{\hyperlink{a00209_source_l00338}{Construct\+Geometry\+From\+Buffers()}}, \mbox{\hyperlink{a00209_source_l00214}{Insert\+Geom()}}, \mbox{\hyperlink{a00209_source_l00634}{operator=()}}, and \mbox{\hyperlink{a00209_source_l00192}{Setup\+Scene()}}.
 
 \mbox{\Hypertarget{a01411_a3a243ef02c74fc6df958a4fd2506e7cc}\label{a01411_a3a243ef02c74fc6df958a4fd2506e7cc}} 
 \index{HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}!geometry@{geometry}}
@@ -2143,11 +1930,11 @@ Referenced by \mbox{\hyperlink{a00209_source_l00199}{Embree\+Ray\+Tracer()}}, \m
 
 
 
-Definition at line \mbox{\hyperlink{a00212_source_l00094}{94}} of file \mbox{\hyperlink{a00212_source}{embree\+\_\+raytracer.\+h}}.
+Definition at line \mbox{\hyperlink{a00212_source_l00097}{97}} of file \mbox{\hyperlink{a00212_source}{embree\+\_\+raytracer.\+h}}.
 
 
 
-Referenced by \mbox{\hyperlink{a00209_source_l00199}{Embree\+Ray\+Tracer()}}, \mbox{\hyperlink{a00209_source_l00336}{Construct\+Geometry\+From\+Buffers()}}, and \mbox{\hyperlink{a00209_source_l00632}{operator=()}}.
+Referenced by \mbox{\hyperlink{a00209_source_l00201}{Embree\+Ray\+Tracer()}}, \mbox{\hyperlink{a00209_source_l00338}{Construct\+Geometry\+From\+Buffers()}}, and \mbox{\hyperlink{a00209_source_l00634}{operator=()}}.
 
 \mbox{\Hypertarget{a01411_a7c66f28f5b889021767745d198661da0}\label{a01411_a7c66f28f5b889021767745d198661da0}} 
 \index{HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}!scene@{scene}}
@@ -2161,11 +1948,11 @@ Container for a set of geometries, and the BVH. \href{https://www.embree.org/api
 
 
 
-Definition at line \mbox{\hyperlink{a00212_source_l00084}{84}} of file \mbox{\hyperlink{a00212_source}{embree\+\_\+raytracer.\+h}}.
+Definition at line \mbox{\hyperlink{a00212_source_l00087}{87}} of file \mbox{\hyperlink{a00212_source}{embree\+\_\+raytracer.\+h}}.
 
 
 
-Referenced by \mbox{\hyperlink{a00209_source_l00199}{Embree\+Ray\+Tracer()}}, \mbox{\hyperlink{a00209_source_l00644}{$\sim$\+Embree\+Ray\+Tracer()}}, \mbox{\hyperlink{a00209_source_l00316}{Add\+Mesh()}}, \mbox{\hyperlink{a00209_source_l00450}{Get\+Triangle()}}, \mbox{\hyperlink{a00209_source_l00212}{Insert\+Geom()}}, \mbox{\hyperlink{a00209_source_l00543}{Intersect\+\_\+\+IMPL()}}, \mbox{\hyperlink{a00209_source_l00624}{Occluded\+\_\+\+IMPL()}}, \mbox{\hyperlink{a00209_source_l00632}{operator=()}}, and \mbox{\hyperlink{a00209_source_l00190}{Setup\+Scene()}}.
+Referenced by \mbox{\hyperlink{a00209_source_l00201}{Embree\+Ray\+Tracer()}}, \mbox{\hyperlink{a00209_source_l00646}{$\sim$\+Embree\+Ray\+Tracer()}}, \mbox{\hyperlink{a00209_source_l00318}{Add\+Mesh()}}, \mbox{\hyperlink{a00209_source_l00452}{Get\+Triangle()}}, \mbox{\hyperlink{a00209_source_l00214}{Insert\+Geom()}}, \mbox{\hyperlink{a00209_source_l00545}{Intersect\+\_\+\+IMPL()}}, \mbox{\hyperlink{a00209_source_l00626}{Occluded\+\_\+\+IMPL()}}, \mbox{\hyperlink{a00209_source_l00634}{operator=()}}, and \mbox{\hyperlink{a00209_source_l00192}{Setup\+Scene()}}.
 
 \mbox{\Hypertarget{a01411_a6eced6bbe321079476603f7e7ef97ed8}\label{a01411_a6eced6bbe321079476603f7e7ef97ed8}} 
 \index{HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}!triangles@{triangles}}
@@ -2179,11 +1966,11 @@ Referenced by \mbox{\hyperlink{a00209_source_l00199}{Embree\+Ray\+Tracer()}}, \m
 
 
 
-Definition at line \mbox{\hyperlink{a00212_source_l00088}{88}} of file \mbox{\hyperlink{a00212_source}{embree\+\_\+raytracer.\+h}}.
+Definition at line \mbox{\hyperlink{a00212_source_l00091}{91}} of file \mbox{\hyperlink{a00212_source}{embree\+\_\+raytracer.\+h}}.
 
 
 
-Referenced by \mbox{\hyperlink{a00209_source_l00336}{Construct\+Geometry\+From\+Buffers()}}.
+Referenced by \mbox{\hyperlink{a00209_source_l00338}{Construct\+Geometry\+From\+Buffers()}}.
 
 \mbox{\Hypertarget{a01411_a10fe757b08ab77289cfd945b29d14b89}\label{a01411_a10fe757b08ab77289cfd945b29d14b89}} 
 \index{HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}!use\_precise@{use\_precise}}
@@ -2197,11 +1984,11 @@ If true, use custom triangle intersection intersection instead of embree\textquo
 
 
 
-Definition at line \mbox{\hyperlink{a00212_source_l00092}{92}} of file \mbox{\hyperlink{a00212_source}{embree\+\_\+raytracer.\+h}}.
+Definition at line \mbox{\hyperlink{a00212_source_l00095}{95}} of file \mbox{\hyperlink{a00212_source}{embree\+\_\+raytracer.\+h}}.
 
 
 
-Referenced by \mbox{\hyperlink{a00209_source_l00184}{Embree\+Ray\+Tracer()}}, and \mbox{\hyperlink{a00209_source_l00632}{operator=()}}.
+Referenced by \mbox{\hyperlink{a00209_source_l00186}{Embree\+Ray\+Tracer()}}, and \mbox{\hyperlink{a00209_source_l00634}{operator=()}}.
 
 \mbox{\Hypertarget{a01411_a62b06bf58c3b134de8f271fbc778e412}\label{a01411_a62b06bf58c3b134de8f271fbc778e412}} 
 \index{HF::RayTracer::EmbreeRayTracer@{HF::RayTracer::EmbreeRayTracer}!Vertices@{Vertices}}
@@ -2215,11 +2002,11 @@ Referenced by \mbox{\hyperlink{a00209_source_l00184}{Embree\+Ray\+Tracer()}}, an
 
 
 
-Definition at line \mbox{\hyperlink{a00212_source_l00090}{90}} of file \mbox{\hyperlink{a00212_source}{embree\+\_\+raytracer.\+h}}.
+Definition at line \mbox{\hyperlink{a00212_source_l00093}{93}} of file \mbox{\hyperlink{a00212_source}{embree\+\_\+raytracer.\+h}}.
 
 
 
-Referenced by \mbox{\hyperlink{a00209_source_l00336}{Construct\+Geometry\+From\+Buffers()}}.
+Referenced by \mbox{\hyperlink{a00209_source_l00338}{Construct\+Geometry\+From\+Buffers()}}.
 
 
 

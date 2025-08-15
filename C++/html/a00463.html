@@ -203,9 +203,20 @@ Functions</h2></td></tr>
 <tr class="memitem:a4b7cc0ad0002975404acef5064f4f546"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="a00463.html#a8f7754dd4958185062ba8e0bc28d6579">real3</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00463.html#a4b7cc0ad0002975404acef5064f4f546">CheckChildren</a> (const <a class="el" href="a00463.html#a8f7754dd4958185062ba8e0bc28d6579">real3</a> &amp;parent, const std::vector&lt; <a class="el" href="a00463.html#a8f7754dd4958185062ba8e0bc28d6579">real3</a> &gt; &amp;possible_children, <a class="el" href="a00463.html#aef833458d20e4569c73f409b52d03bee">RayTracer</a> &amp;rt, const <a class="el" href="a00463.html#a01303">GraphParams</a> &amp;params)</td></tr>
 <tr class="memdesc:a4b7cc0ad0002975404acef5064f4f546"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether children are over valid ground, and and meet upstep/downstep requirements.  <a href="a00463.html#a4b7cc0ad0002975404acef5064f4f546">More...</a><br /></td></tr>
 <tr class="separator:a4b7cc0ad0002975404acef5064f4f546"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a260a25e02193ce904849ee090daefa2e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00465.html#af0378d900074d484ba791d4317e5935e">HF::SpatialStructures::STEP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00463.html#a260a25e02193ce904849ee090daefa2e">CheckConnection</a> (const <a class="el" href="a00463.html#a8f7754dd4958185062ba8e0bc28d6579">real3</a> &amp;parent, const <a class="el" href="a00463.html#a8f7754dd4958185062ba8e0bc28d6579">real3</a> &amp;child, <a class="el" href="a00463.html#aef833458d20e4569c73f409b52d03bee">RayTracer</a> &amp;rt)</td></tr>
+<tr class="memdesc:a260a25e02193ce904849ee090daefa2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine what kind of step (if any) is between parent and child, given that a connection was verified using the graph generator.  <a href="a00463.html#a260a25e02193ce904849ee090daefa2e">More...</a><br /></td></tr>
+<tr class="separator:a260a25e02193ce904849ee090daefa2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeab1db37b5aa614235f109d5dd9711a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00465.html#af0378d900074d484ba791d4317e5935e">HF::SpatialStructures::STEP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00463.html#aeab1db37b5aa614235f109d5dd9711a9">CheckConnection</a> (const <a class="el" href="a00463.html#a8f7754dd4958185062ba8e0bc28d6579">real3</a> &amp;parent, const <a class="el" href="a00463.html#a8f7754dd4958185062ba8e0bc28d6579">real3</a> &amp;child, <a class="el" href="a00463.html#aef833458d20e4569c73f409b52d03bee">RayTracer</a> &amp;rt, const <a class="el" href="a00463.html#a01303">GraphParams</a> &amp;params)</td></tr>
 <tr class="memdesc:aeab1db37b5aa614235f109d5dd9711a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine what kind of step (if any) is between parent and child.  <a href="a00463.html#aeab1db37b5aa614235f109d5dd9711a9">More...</a><br /></td></tr>
 <tr class="separator:aeab1db37b5aa614235f109d5dd9711a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a176c58b25fb5cb545d17128d4535f921"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01535.html">HF::SpatialStructures::EdgeSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00463.html#a176c58b25fb5cb545d17128d4535f921">CalculateStepType</a> (const <a class="el" href="a00465.html#a01543">HF::SpatialStructures::Subgraph</a> &amp;sg, <a class="el" href="a01419.html">HF::RayTracer::MultiRT</a> &amp;rt)</td></tr>
+<tr class="separator:a176c58b25fb5cb545d17128d4535f921"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81398de53e151ae58b206523e555309e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="a01535.html">HF::SpatialStructures::EdgeSet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00463.html#a81398de53e151ae58b206523e555309e">CalculateStepType</a> (const <a class="el" href="a01551.html">HF::SpatialStructures::Graph</a> &amp;g, <a class="el" href="a01419.html">HF::RayTracer::MultiRT</a> &amp;rt)</td></tr>
+<tr class="separator:a81398de53e151ae58b206523e555309e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0251caf5a32eb2c1f9d846d88eb7fe22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00463.html#a0251caf5a32eb2c1f9d846d88eb7fe22">CalculateAndStoreStepType</a> (<a class="el" href="a01551.html">HF::SpatialStructures::Graph</a> &amp;g, <a class="el" href="a01419.html">HF::RayTracer::MultiRT</a> &amp;rt)</td></tr>
+<tr class="separator:a0251caf5a32eb2c1f9d846d88eb7fe22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d2ad6de2131b1a90a80f901ac8dd185"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00463.html#a5d2ad6de2131b1a90a80f901ac8dd185">CompareCheckConnections</a> (<a class="el" href="a01551.html">HF::SpatialStructures::Graph</a> &amp;g, <a class="el" href="a00463.html#aef833458d20e4569c73f409b52d03bee">RayTracer</a> &amp;rt, const <a class="el" href="a00463.html#a01303">GraphParams</a> &amp;params, std::vector&lt; <a class="el" href="a01535.html">HF::SpatialStructures::EdgeSet</a> &gt; to_compare)</td></tr>
+<tr class="separator:a5d2ad6de2131b1a90a80f901ac8dd185"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace66c1b60785c32433402f012019ab81"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00463.html#ace66c1b60785c32433402f012019ab81">OcclusionCheck</a> (const <a class="el" href="a00463.html#a8f7754dd4958185062ba8e0bc28d6579">real3</a> &amp;parent, const <a class="el" href="a00463.html#a8f7754dd4958185062ba8e0bc28d6579">real3</a> &amp;child, <a class="el" href="a00463.html#aef833458d20e4569c73f409b52d03bee">RayTracer</a> &amp;RT)</td></tr>
 <tr class="memdesc:ace66c1b60785c32433402f012019ab81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if there is a valid line of sight between parent and child.  <a href="a00463.html#ace66c1b60785c32433402f012019ab81">More...</a><br /></td></tr>
 <tr class="separator:ace66c1b60785c32433402f012019ab81"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -266,13 +277,13 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <div class="textblock"><p >Holds parameters for the <a class="el" href="a01311.html" title="Generate a graph of accessible space from a given start point.">GraphGenerator</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00255">255</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00258">258</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for HF::GraphGenerator::GraphParams:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a01301.svg" width="463" height="411"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01301.svg" width="466" height="411"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="fieldtable">
@@ -330,13 +341,13 @@ Maximum height of a step the graph can traverse.Any steps higher this will be co
 </div><div class="memdoc">
 <div class="textblock"><p >Various parameters to set the precision of certain parts of the graph generator. </p>
 
-<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00111">111</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00114">114</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
 </div><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for HF::GraphGenerator::Precision:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a01293.svg" width="162" height="176"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01293.svg" width="163" height="176"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="fieldtable">
@@ -378,7 +389,7 @@ node_z</td>
 
 <p>Type of edge for the graph generator to use internally. </p>
 
-<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00075">75</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00078">78</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
 
 </div>
 </div>
@@ -396,7 +407,7 @@ node_z</td>
 
 <p>Hashmap used for assigning and storing hitflags for IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00134">134</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00137">137</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
 
 </div>
 </div>
@@ -414,7 +425,7 @@ node_z</td>
 
 <p>Type for Directions to be stored as. </p>
 
-<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00082">82</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00085">85</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
 
 </div>
 </div>
@@ -432,7 +443,7 @@ node_z</td>
 
 <p>Type of raytracer to be used internally. </p>
 
-<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00081">81</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00084">84</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
 
 </div>
 </div>
@@ -450,7 +461,7 @@ node_z</td>
 
 <p>Type used for the standard coordinate set of the graph generator. </p>
 
-<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00074">74</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00077">77</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
 
 </div>
 </div>
@@ -468,7 +479,7 @@ node_z</td>
 
 <p>Internal decimal type of the graph generator. </p>
 
-<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00073">73</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00076">76</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
 
 </div>
 </div>
@@ -504,7 +515,7 @@ node_z</td>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00144">144</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00147">147</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
 
 </div>
 </div>
@@ -533,11 +544,141 @@ node_z</td>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00123">123</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00126">126</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a0251caf5a32eb2c1f9d846d88eb7fe22" name="a0251caf5a32eb2c1f9d846d88eb7fe22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0251caf5a32eb2c1f9d846d88eb7fe22">&#9670;&#160;</a></span>CalculateAndStoreStepType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HF::GraphGenerator::CalculateAndStoreStepType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a01551.html">HF::SpatialStructures::Graph</a> &amp;&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a01419.html">HF::RayTracer::MultiRT</a> &amp;&#160;</td>
+          <td class="paramname"><em>rt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="a00011_source.html#l00372">372</a> of file <a class="el" href="a00011_source.html">graph_utils.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="a01551.html#a6f04c5320d4bf88120f8c5e31b0fb02a">HF::SpatialStructures::Graph::AddEdges()</a>, <a class="el" href="a00011_source.html#l00303">CalculateStepType()</a>, and <a class="el" href="a01551.html#a41cece77d0eee98df39ecc6d3a366ec8">HF::SpatialStructures::Graph::Compress()</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_a0251caf5a32eb2c1f9d846d88eb7fe22_cgraph.svg" width="1171" height="278"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a81398de53e151ae58b206523e555309e" name="a81398de53e151ae58b206523e555309e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81398de53e151ae58b206523e555309e">&#9670;&#160;</a></span>CalculateStepType() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="a01535.html">HF::SpatialStructures::EdgeSet</a> &gt; HF::GraphGenerator::CalculateStepType </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a01551.html">HF::SpatialStructures::Graph</a> &amp;&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a01419.html">HF::RayTracer::MultiRT</a> &amp;&#160;</td>
+          <td class="paramname"><em>rt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="a00011_source.html#l00351">351</a> of file <a class="el" href="a00011_source.html">graph_utils.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="a00011_source.html#l00303">CalculateStepType()</a>, <a class="el" href="a01551.html#a89250c619a726fd0adbd71778d166887">HF::SpatialStructures::Graph::GetSubgraph()</a>, and <a class="el" href="a01551.html#aa70347b8a33b57c6f0a72d6eca4248d7">HF::SpatialStructures::Graph::Nodes()</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_a81398de53e151ae58b206523e555309e_cgraph.svg" width="1118" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a176c58b25fb5cb545d17128d4535f921" name="a176c58b25fb5cb545d17128d4535f921"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a176c58b25fb5cb545d17128d4535f921">&#9670;&#160;</a></span>CalculateStepType() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a01535.html">HF::SpatialStructures::EdgeSet</a> HF::GraphGenerator::CalculateStepType </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00465.html#a01543">HF::SpatialStructures::Subgraph</a> &amp;&#160;</td>
+          <td class="paramname"><em>sg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a01419.html">HF::RayTracer::MultiRT</a> &amp;&#160;</td>
+          <td class="paramname"><em>rt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="a00011_source.html#l00303">303</a> of file <a class="el" href="a00011_source.html">graph_utils.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="a00008_source.html#l00094">CastToReal()</a>, <a class="el" href="a00008_source.html#l00107">CastToReal3()</a>, <a class="el" href="a00011_source.html#l00385">CheckConnection()</a>, <a class="el" href="a00263_source.html#l00059">HF::SpatialStructures::IntEdge::child</a>, <a class="el" href="a00275_source.html#l00042">HF::SpatialStructures::Node::id</a>, <a class="el" href="a00269_source.html#l00367">HF::SpatialStructures::Subgraph::m_edges</a>, <a class="el" href="a00269_source.html#l00366">HF::SpatialStructures::Subgraph::m_parent</a>, <a class="el" href="a00275_source.html#l00040">HF::SpatialStructures::Node::x</a>, <a class="el" href="a00275_source.html#l00040">HF::SpatialStructures::Node::y</a>, and <a class="el" href="a00275_source.html#l00040">HF::SpatialStructures::Node::z</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a00011_source.html#l00372">CalculateAndStoreStepType()</a>, <a class="el" href="a00404_source.html#l00109">CalculateAndStoreStepTypes()</a>, and <a class="el" href="a00011_source.html#l00351">CalculateStepType()</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_a176c58b25fb5cb545d17128d4535f921_cgraph.svg" width="922" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_a176c58b25fb5cb545d17128d4535f921_icgraph.svg" width="392" height="171"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 <a id="a73b53db067a504d36e9481dfe3326b60" name="a73b53db067a504d36e9481dfe3326b60"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a73b53db067a504d36e9481dfe3326b60">&#9670;&#160;</a></span>CastToReal()</h2>
 
@@ -568,15 +709,15 @@ template&lt;typename real_type &gt; </div>
 <dl class="section remark"><dt>Remarks</dt><dd>Just a convience function. Same as static_cast&lt;real_t&gt;(t)</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd><code>static_cast&lt;real_t&gt;(t)</code> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00091">91</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00094">94</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="a00008_source.html#l00464">HF::GraphGenerator::GraphGenerator::BuildNetwork()</a>, and <a class="el" href="a00008_source.html#l00104">CastToReal3()</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="a00008_source.html#l00467">HF::GraphGenerator::GraphGenerator::BuildNetwork()</a>, <a class="el" href="a00011_source.html#l00303">CalculateStepType()</a>, <a class="el" href="a00008_source.html#l00107">CastToReal3()</a>, and <a class="el" href="a00011_source.html#l00508">CompareCheckConnections()</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_a73b53db067a504d36e9481dfe3326b60_icgraph.svg" width="1258" height="212"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_a73b53db067a504d36e9481dfe3326b60_icgraph.svg" width="1298" height="471"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -623,25 +764,25 @@ template&lt;typename real_3_type &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A real3 containing the x,y,z coordinates of <code>t</code> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00104">104</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00107">107</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
 
-<p class="reference">References <a class="el" href="a00008_source.html#l00091">CastToReal()</a>.</p>
+<p class="reference">References <a class="el" href="a00008_source.html#l00094">CastToReal()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="a00008_source.html#l00464">HF::GraphGenerator::GraphGenerator::BuildNetwork()</a>, <a class="el" href="a00005_source.html#l00222">HF::GraphGenerator::GraphGenerator::CrawlGeom()</a>, and <a class="el" href="a00005_source.html#l00141">HF::GraphGenerator::GraphGenerator::CrawlGeomParallel()</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="a00008_source.html#l00467">HF::GraphGenerator::GraphGenerator::BuildNetwork()</a>, <a class="el" href="a00011_source.html#l00303">CalculateStepType()</a>, <a class="el" href="a00011_source.html#l00508">CompareCheckConnections()</a>, <a class="el" href="a00005_source.html#l00222">HF::GraphGenerator::GraphGenerator::CrawlGeom()</a>, and <a class="el" href="a00005_source.html#l00141">HF::GraphGenerator::GraphGenerator::CrawlGeomParallel()</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_a58892abe1152c28d26d3ca749c99ea4d_cgraph.svg" width="336" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_a58892abe1152c28d26d3ca749c99ea4d_cgraph.svg" width="338" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_a58892abe1152c28d26d3ca749c99ea4d_icgraph.svg" width="1071" height="179"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_a58892abe1152c28d26d3ca749c99ea4d_icgraph.svg" width="1110" height="348"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -705,7 +846,7 @@ template&lt;typename real_3_type &gt; </div>
 <div class="line">    </div>
 <div class="ttc" id="aa00469_html_a06c0c11adb62f8b204e42f75ac1990ac"><div class="ttname"><a href="a00469.html#a06c0c11adb62f8b204e42f75ac1990ac">HF::Geometry::LoadMeshObjects</a></div><div class="ttdeci">vector&lt; MeshInfo&lt; float &gt; &gt; LoadMeshObjects(std::string path, GROUP_METHOD gm, bool change_coords, int scale)</div><div class="ttdoc">Create MeshInfo instances from the OBJ at path.</div><div class="ttdef"><b>Definition:</b> <a href="a00188_source.html#l00195">objloader.cpp:195</a></div></div>
 <div class="ttc" id="aa00469_html_aa9f0bc5275641fe23f6a7d760751bbc5a1f09cac4eec7512c5db99bd1c050ee1e"><div class="ttname"><a href="a00469.html#aa9f0bc5275641fe23f6a7d760751bbc5a1f09cac4eec7512c5db99bd1c050ee1e">HF::Geometry::ONLY_FILE</a></div><div class="ttdeci">@ ONLY_FILE</div><div class="ttdoc">Treat all the geometry in the file as a single mesh.</div><div class="ttdef"><b>Definition:</b> <a href="a00191_source.html#l00065">objloader.h:65</a></div></div>
-<div class="ttc" id="aa01411_html"><div class="ttname"><a href="a01411.html">HF::RayTracer::EmbreeRayTracer</a></div><div class="ttdoc">A wrapper for Intel's Embree Library.</div><div class="ttdef"><b>Definition:</b> <a href="a00212_source.html#l00080">embree_raytracer.h:80</a></div></div>
+<div class="ttc" id="aa01411_html"><div class="ttname"><a href="a01411.html">HF::RayTracer::EmbreeRayTracer</a></div><div class="ttdoc">A wrapper for Intel's Embree Library.</div><div class="ttdef"><b>Definition:</b> <a href="a00212_source.html#l00083">embree_raytracer.h:83</a></div></div>
 </div><!-- fragment --> <div class="fragment"><div class="line"> </div>
 <div class="line">    <span class="comment">// Create a parent node</span></div>
 <div class="line">    <a class="code hl_typedef" href="a00463.html#a8f7754dd4958185062ba8e0bc28d6579">HF::GraphGenerator::real3</a> parent{ 0,0,1 };</div>
@@ -724,7 +865,8 @@ template&lt;typename real_3_type &gt; </div>
 <div class="line">    params.<a class="code hl_variable" href="a00463.html#af7a57e8e6b17f86ac29a8df2685e56c1">precision</a>.<a class="code hl_variable" href="a00463.html#a4fa4f096863296469711e52da4b36b9c">ground_offset</a> = 0.01f;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Call CheckChildren </span></div>
-<div class="line">    <span class="keyword">auto</span> valid_children = <a class="code hl_function" href="a00463.html#a4b7cc0ad0002975404acef5064f4f546">HF::GraphGenerator::CheckChildren</a>(parent, possible_children, <a class="code hl_struct" href="a01419.html">HF::RayTracer::MultiRT</a>(&amp;ray_tracer), params);</div>
+<div class="line">    <a class="code hl_struct" href="a01419.html">HF::RayTracer::MultiRT</a> multi_rt(&amp;ray_tracer);</div>
+<div class="line">    <span class="keyword">auto</span> valid_children = <a class="code hl_function" href="a00463.html#a4b7cc0ad0002975404acef5064f4f546">HF::GraphGenerator::CheckChildren</a>(parent, possible_children, multi_rt, params);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Print children</span></div>
 <div class="line">    std::ostringstream out_str;</div>
@@ -734,45 +876,156 @@ template&lt;typename real_3_type &gt; </div>
 <div class="line"> </div>
 <div class="line">    std::cout &lt;&lt; out_str.str() &lt;&lt; std::endl;</div>
 <div class="line"> </div>
-<div class="ttc" id="aa00463_html_a01303"><div class="ttname"><a href="a00463.html#a01303">HF::GraphGenerator::GraphParams</a></div><div class="ttdoc">Holds parameters for the GraphGenerator.</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00255">graph_generator.h:255</a></div></div>
-<div class="ttc" id="aa00463_html_a0b8afc5f531e3286ce2434b1bc2b1f50"><div class="ttname"><a href="a00463.html#a0b8afc5f531e3286ce2434b1bc2b1f50">HF::GraphGenerator::GraphParams::up_step</a></div><div class="ttdeci">real_t up_step</div><div class="ttdoc">Maximum height of a step the graph can traverse.Any steps higher this will be considered inaccessible...</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00256">graph_generator.h:256</a></div></div>
+<div class="ttc" id="aa00463_html_a01303"><div class="ttname"><a href="a00463.html#a01303">HF::GraphGenerator::GraphParams</a></div><div class="ttdoc">Holds parameters for the GraphGenerator.</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00258">graph_generator.h:258</a></div></div>
+<div class="ttc" id="aa00463_html_a0b8afc5f531e3286ce2434b1bc2b1f50"><div class="ttname"><a href="a00463.html#a0b8afc5f531e3286ce2434b1bc2b1f50">HF::GraphGenerator::GraphParams::up_step</a></div><div class="ttdeci">real_t up_step</div><div class="ttdoc">Maximum height of a step the graph can traverse.Any steps higher this will be considered inaccessible...</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00259">graph_generator.h:259</a></div></div>
 <div class="ttc" id="aa00463_html_a4b7cc0ad0002975404acef5064f4f546"><div class="ttname"><a href="a00463.html#a4b7cc0ad0002975404acef5064f4f546">HF::GraphGenerator::CheckChildren</a></div><div class="ttdeci">std::vector&lt; real3 &gt; CheckChildren(const real3 &amp;parent, const std::vector&lt; real3 &gt; &amp;possible_children, RayTracer &amp;rt, const GraphParams &amp;params)</div><div class="ttdoc">Determine whether children are over valid ground, and and meet upstep/downstep requirements.</div><div class="ttdef"><b>Definition:</b> <a href="a00011_source.html#l00248">graph_utils.cpp:248</a></div></div>
-<div class="ttc" id="aa00463_html_a4fa4f096863296469711e52da4b36b9c"><div class="ttname"><a href="a00463.html#a4fa4f096863296469711e52da4b36b9c">HF::GraphGenerator::Precision::ground_offset</a></div><div class="ttdeci">real_t ground_offset</div><div class="ttdoc">Distance to offset nodes from the ground before checking line of sight.</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00114">graph_generator.h:114</a></div></div>
-<div class="ttc" id="aa00463_html_a6ec86cb69c1cc0e0dc8ea229310939b6"><div class="ttname"><a href="a00463.html#a6ec86cb69c1cc0e0dc8ea229310939b6">HF::GraphGenerator::Precision::node_z</a></div><div class="ttdeci">real_t node_z</div><div class="ttdoc">Precision to round the z-component of nodes after a raycast is performed.</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00112">graph_generator.h:112</a></div></div>
-<div class="ttc" id="aa00463_html_a7c141d33285a77c81fc1b9ce0b210d72"><div class="ttname"><a href="a00463.html#a7c141d33285a77c81fc1b9ce0b210d72">HF::GraphGenerator::GraphParams::down_slope</a></div><div class="ttdeci">real_t down_slope</div><div class="ttdoc">The maximum downward slope the graph can traverse. Any slopes steeper than this will be considered in...</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00259">graph_generator.h:259</a></div></div>
-<div class="ttc" id="aa00463_html_a8f7754dd4958185062ba8e0bc28d6579"><div class="ttname"><a href="a00463.html#a8f7754dd4958185062ba8e0bc28d6579">HF::GraphGenerator::real3</a></div><div class="ttdeci">std::array&lt; real_t, 3 &gt; real3</div><div class="ttdoc">Type used for the standard coordinate set of the graph generator.</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00074">graph_generator.h:74</a></div></div>
-<div class="ttc" id="aa00463_html_add2b6fa6bf77a8c4626a1e6d0559970f"><div class="ttname"><a href="a00463.html#add2b6fa6bf77a8c4626a1e6d0559970f">HF::GraphGenerator::GraphParams::down_step</a></div><div class="ttdeci">real_t down_step</div><div class="ttdoc">Maximum step down the graph can traverse.Any steps steeper than this will be considered inaccessible.</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00258">graph_generator.h:258</a></div></div>
-<div class="ttc" id="aa00463_html_add7f080950668f5dfa8d857e9c66b89d"><div class="ttname"><a href="a00463.html#add7f080950668f5dfa8d857e9c66b89d">HF::GraphGenerator::GraphParams::up_slope</a></div><div class="ttdeci">real_t up_slope</div><div class="ttdoc">Maximum upward slope the graph can traverse in degrees.Any slopes steeper than this will be considere...</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00257">graph_generator.h:257</a></div></div>
-<div class="ttc" id="aa00463_html_af7a57e8e6b17f86ac29a8df2685e56c1"><div class="ttname"><a href="a00463.html#af7a57e8e6b17f86ac29a8df2685e56c1">HF::GraphGenerator::GraphParams::precision</a></div><div class="ttdeci">Precision precision</div><div class="ttdoc">Tolerances for the graph.</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00260">graph_generator.h:260</a></div></div>
+<div class="ttc" id="aa00463_html_a4fa4f096863296469711e52da4b36b9c"><div class="ttname"><a href="a00463.html#a4fa4f096863296469711e52da4b36b9c">HF::GraphGenerator::Precision::ground_offset</a></div><div class="ttdeci">real_t ground_offset</div><div class="ttdoc">Distance to offset nodes from the ground before checking line of sight.</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00117">graph_generator.h:117</a></div></div>
+<div class="ttc" id="aa00463_html_a6ec86cb69c1cc0e0dc8ea229310939b6"><div class="ttname"><a href="a00463.html#a6ec86cb69c1cc0e0dc8ea229310939b6">HF::GraphGenerator::Precision::node_z</a></div><div class="ttdeci">real_t node_z</div><div class="ttdoc">Precision to round the z-component of nodes after a raycast is performed.</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00115">graph_generator.h:115</a></div></div>
+<div class="ttc" id="aa00463_html_a7c141d33285a77c81fc1b9ce0b210d72"><div class="ttname"><a href="a00463.html#a7c141d33285a77c81fc1b9ce0b210d72">HF::GraphGenerator::GraphParams::down_slope</a></div><div class="ttdeci">real_t down_slope</div><div class="ttdoc">The maximum downward slope the graph can traverse. Any slopes steeper than this will be considered in...</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00262">graph_generator.h:262</a></div></div>
+<div class="ttc" id="aa00463_html_a8f7754dd4958185062ba8e0bc28d6579"><div class="ttname"><a href="a00463.html#a8f7754dd4958185062ba8e0bc28d6579">HF::GraphGenerator::real3</a></div><div class="ttdeci">std::array&lt; real_t, 3 &gt; real3</div><div class="ttdoc">Type used for the standard coordinate set of the graph generator.</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00077">graph_generator.h:77</a></div></div>
+<div class="ttc" id="aa00463_html_add2b6fa6bf77a8c4626a1e6d0559970f"><div class="ttname"><a href="a00463.html#add2b6fa6bf77a8c4626a1e6d0559970f">HF::GraphGenerator::GraphParams::down_step</a></div><div class="ttdeci">real_t down_step</div><div class="ttdoc">Maximum step down the graph can traverse.Any steps steeper than this will be considered inaccessible.</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00261">graph_generator.h:261</a></div></div>
+<div class="ttc" id="aa00463_html_add7f080950668f5dfa8d857e9c66b89d"><div class="ttname"><a href="a00463.html#add7f080950668f5dfa8d857e9c66b89d">HF::GraphGenerator::GraphParams::up_slope</a></div><div class="ttdeci">real_t up_slope</div><div class="ttdoc">Maximum upward slope the graph can traverse in degrees.Any slopes steeper than this will be considere...</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00260">graph_generator.h:260</a></div></div>
+<div class="ttc" id="aa00463_html_af7a57e8e6b17f86ac29a8df2685e56c1"><div class="ttname"><a href="a00463.html#af7a57e8e6b17f86ac29a8df2685e56c1">HF::GraphGenerator::GraphParams::precision</a></div><div class="ttdeci">Precision precision</div><div class="ttdoc">Tolerances for the graph.</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00263">graph_generator.h:263</a></div></div>
 <div class="ttc" id="aa01419_html"><div class="ttname"><a href="a01419.html">HF::RayTracer::MultiRT</a></div><div class="ttdef"><b>Definition:</b> <a href="a00224_source.html#l00010">MultiRT.h:10</a></div></div>
 </div><!-- fragment --> <code>[(0, 2, 0),(1, 0, -0),(0, 1, 0),(2, 0, -0)]</code> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="a00011_source.html#l00248">248</a> of file <a class="el" href="a00011_source.html">graph_utils.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="a00011_source.html#l00146">CheckRay()</a>, <a class="el" href="a00011_source.html#l00013">down</a>, <a class="el" href="a00008_source.html#l00258">HF::GraphGenerator::GraphParams::down_step</a>, <a class="el" href="a00008_source.html#l00127">FLOORS</a>, <a class="el" href="a00008_source.html#l00261">HF::GraphGenerator::GraphParams::geom_ids</a>, <a class="el" href="a00008_source.html#l00112">HF::GraphGenerator::Precision::node_z</a>, <a class="el" href="a00008_source.html#l00260">HF::GraphGenerator::GraphParams::precision</a>, <a class="el" href="a00008_source.html#l00282">HF::GraphGenerator::optional_real3::pt</a>, and <a class="el" href="a00008_source.html#l00256">HF::GraphGenerator::GraphParams::up_step</a>.</p>
+<p class="reference">References <a class="el" href="a00011_source.html#l00146">CheckRay()</a>, <a class="el" href="a00011_source.html#l00013">down</a>, <a class="el" href="a00008_source.html#l00261">HF::GraphGenerator::GraphParams::down_step</a>, <a class="el" href="a00008_source.html#l00130">FLOORS</a>, <a class="el" href="a00008_source.html#l00264">HF::GraphGenerator::GraphParams::geom_ids</a>, <a class="el" href="a00008_source.html#l00115">HF::GraphGenerator::Precision::node_z</a>, <a class="el" href="a00008_source.html#l00263">HF::GraphGenerator::GraphParams::precision</a>, <a class="el" href="a00008_source.html#l00285">HF::GraphGenerator::optional_real3::pt</a>, and <a class="el" href="a00008_source.html#l00259">HF::GraphGenerator::GraphParams::up_step</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="a00011_source.html#l00218">GetChildren()</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_a4b7cc0ad0002975404acef5064f4f546_cgraph.svg" width="779" height="278"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_a4b7cc0ad0002975404acef5064f4f546_cgraph.svg" width="790" height="278"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_a4b7cc0ad0002975404acef5064f4f546_icgraph.svg" width="1258" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_a4b7cc0ad0002975404acef5064f4f546_icgraph.svg" width="1264" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a260a25e02193ce904849ee090daefa2e" name="a260a25e02193ce904849ee090daefa2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a260a25e02193ce904849ee090daefa2e">&#9670;&#160;</a></span>CheckConnection() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00465.html#af0378d900074d484ba791d4317e5935e">HF::SpatialStructures::STEP</a> HF::GraphGenerator::CheckConnection </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00463.html#a8f7754dd4958185062ba8e0bc28d6579">real3</a> &amp;&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00463.html#a8f7754dd4958185062ba8e0bc28d6579">real3</a> &amp;&#160;</td>
+          <td class="paramname"><em>child</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00463.html#aef833458d20e4569c73f409b52d03bee">RayTracer</a> &amp;&#160;</td>
+          <td class="paramname"><em>rt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determine what kind of step (if any) is between parent and child, given that a connection was verified using the graph generator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Node being traversed from </td></tr>
+    <tr><td class="paramname">child</td><td>Node being traversed to </td></tr>
+    <tr><td class="paramname">rt</td><td>Raytracer to use for all ray intersections</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The type of step between parent/child.</dd></dl>
+<dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line">    </div>
+<div class="line">    <span class="comment">// Load an OBJ containing a simple plane</span></div>
+<div class="line">    <span class="keyword">auto</span> mesh = <a class="code hl_function" href="a00469.html#a06c0c11adb62f8b204e42f75ac1990ac">HF::Geometry::LoadMeshObjects</a>(<span class="stringliteral">&quot;plane.obj&quot;</span>, <a class="code hl_enumvalue" href="a00469.html#aa9f0bc5275641fe23f6a7d760751bbc5a1f09cac4eec7512c5db99bd1c050ee1e">HF::Geometry::ONLY_FILE</a>, <span class="keyword">true</span>);</div>
+<div class="line">    </div>
+<div class="line">    <span class="comment">// Create a raytracer using this obj</span></div>
+<div class="line">    EmbreeRayTracer ray_tracer = <a class="code hl_class" href="a01411.html">HF::RayTracer::EmbreeRayTracer</a>(mesh);</div>
+<div class="line">    </div>
+</div><!-- fragment --> <div class="fragment"><div class="line"> </div>
+<div class="line">    <span class="comment">// Create a parent node</span></div>
+<div class="line">    <a class="code hl_typedef" href="a00463.html#a8f7754dd4958185062ba8e0bc28d6579">HF::GraphGenerator::real3</a> parent{ 0,0,1 };</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Create a vector of possible children</span></div>
+<div class="line">    std::vector&lt;HF::GraphGenerator::real3&gt; possible_children{</div>
+<div class="line">        <a class="code hl_typedef" href="a00463.html#a8f7754dd4958185062ba8e0bc28d6579">HF::GraphGenerator::real3</a>{0,2,0}, <a class="code hl_typedef" href="a00463.html#a8f7754dd4958185062ba8e0bc28d6579">HF::GraphGenerator::real3</a>{1,0,0},</div>
+<div class="line">        <a class="code hl_typedef" href="a00463.html#a8f7754dd4958185062ba8e0bc28d6579">HF::GraphGenerator::real3</a>{0,1,0}, <a class="code hl_typedef" href="a00463.html#a8f7754dd4958185062ba8e0bc28d6579">HF::GraphGenerator::real3</a>{2,0,0}</div>
+<div class="line">    };</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Create graph parameters</span></div>
+<div class="line">    <a class="code hl_struct" href="a00463.html#a01303">HF::GraphGenerator::GraphParams</a> params;</div>
+<div class="line">    params.<a class="code hl_variable" href="a00463.html#a0b8afc5f531e3286ce2434b1bc2b1f50">up_step</a> = 2; params.<a class="code hl_variable" href="a00463.html#add2b6fa6bf77a8c4626a1e6d0559970f">down_step</a> = 2;</div>
+<div class="line">    params.<a class="code hl_variable" href="a00463.html#add7f080950668f5dfa8d857e9c66b89d">up_slope</a> = 45; params.<a class="code hl_variable" href="a00463.html#a7c141d33285a77c81fc1b9ce0b210d72">down_slope</a> = 45;</div>
+<div class="line">    params.<a class="code hl_variable" href="a00463.html#af7a57e8e6b17f86ac29a8df2685e56c1">precision</a>.<a class="code hl_variable" href="a00463.html#a6ec86cb69c1cc0e0dc8ea229310939b6">node_z</a> = 0.01f;</div>
+<div class="line">    params.<a class="code hl_variable" href="a00463.html#af7a57e8e6b17f86ac29a8df2685e56c1">precision</a>.<a class="code hl_variable" href="a00463.html#a4fa4f096863296469711e52da4b36b9c">ground_offset</a> = 0.01f;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Loop through potential children call each one with check connection</span></div>
+<div class="line">    std::vector&lt;HF::SpatialStructures::STEP&gt; connections;</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; child : possible_children)</div>
+<div class="line">    {</div>
+<div class="line">        <a class="code hl_struct" href="a01419.html">HF::RayTracer::MultiRT</a> multi_rt(&amp;ray_tracer);</div>
+<div class="line">        connections.push_back(<a class="code hl_function" href="a00463.html#a260a25e02193ce904849ee090daefa2e">HF::GraphGenerator::CheckConnection</a>(parent, child, multi_rt, params));</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Print children</span></div>
+<div class="line">    std::ostringstream out_str;</div>
+<div class="line">    out_str &lt;&lt; <span class="stringliteral">&quot;[&quot;</span>;</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; connections.size(); i++)</div>
+<div class="line">        out_str &lt;&lt; connections[i] &lt;&lt; ((i != connections.size() - 1) ? <span class="stringliteral">&quot;,&quot;</span> : <span class="stringliteral">&quot;]&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// In the output, 0s indicate no connection, while 1s indicate that nodes are on a flat plane</span></div>
+<div class="line">    <span class="comment">// with no step between them. </span></div>
+<div class="line">    std::cout &lt;&lt; out_str.str() &lt;&lt; std::endl;</div>
+<div class="line"> </div>
+<div class="ttc" id="aa00463_html_a260a25e02193ce904849ee090daefa2e"><div class="ttname"><a href="a00463.html#a260a25e02193ce904849ee090daefa2e">HF::GraphGenerator::CheckConnection</a></div><div class="ttdeci">HF::SpatialStructures::STEP CheckConnection(const real3 &amp;parent, const real3 &amp;child, RayTracer &amp;rt)</div><div class="ttdoc">Determine what kind of step (if any) is between parent and child, given that a connection was verifie...</div><div class="ttdef"><b>Definition:</b> <a href="a00011_source.html#l00385">graph_utils.cpp:385</a></div></div>
+</div><!-- fragment --> <code>[1,0,0,1]</code> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="a00011_source.html#l00385">385</a> of file <a class="el" href="a00011_source.html">graph_utils.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="a00011_source.html#l00283">OcclusionCheck()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a00011_source.html#l00303">CalculateStepType()</a>, <a class="el" href="a00011_source.html#l00508">CompareCheckConnections()</a>, and <a class="el" href="a00011_source.html#l00218">GetChildren()</a>.</p>
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_a260a25e02193ce904849ee090daefa2e_cgraph.svg" width="735" height="211"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_a260a25e02193ce904849ee090daefa2e_icgraph.svg" width="1318" height="324"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
 <a id="aeab1db37b5aa614235f109d5dd9711a9" name="aeab1db37b5aa614235f109d5dd9711a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeab1db37b5aa614235f109d5dd9711a9">&#9670;&#160;</a></span>CheckConnection()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aeab1db37b5aa614235f109d5dd9711a9">&#9670;&#160;</a></span>CheckConnection() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -847,8 +1100,10 @@ template&lt;typename real_3_type &gt; </div>
 <div class="line">    <span class="comment">// Loop through potential children call each one with check connection</span></div>
 <div class="line">    std::vector&lt;HF::SpatialStructures::STEP&gt; connections;</div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; child : possible_children)</div>
-<div class="line">        connections.push_back(<a class="code hl_function" href="a00463.html#aeab1db37b5aa614235f109d5dd9711a9">HF::GraphGenerator::CheckConnection</a>(parent, child, <a class="code hl_struct" href="a01419.html">HF::RayTracer::MultiRT</a>(&amp;ray_tracer), params));</div>
-<div class="line">        </div>
+<div class="line">    {</div>
+<div class="line">        <a class="code hl_struct" href="a01419.html">HF::RayTracer::MultiRT</a> multi_rt(&amp;ray_tracer);</div>
+<div class="line">        connections.push_back(<a class="code hl_function" href="a00463.html#a260a25e02193ce904849ee090daefa2e">HF::GraphGenerator::CheckConnection</a>(parent, child, multi_rt, params));</div>
+<div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Print children</span></div>
 <div class="line">    std::ostringstream out_str;</div>
@@ -860,28 +1115,17 @@ template&lt;typename real_3_type &gt; </div>
 <div class="line">    <span class="comment">// with no step between them. </span></div>
 <div class="line">    std::cout &lt;&lt; out_str.str() &lt;&lt; std::endl;</div>
 <div class="line"> </div>
-<div class="ttc" id="aa00463_html_aeab1db37b5aa614235f109d5dd9711a9"><div class="ttname"><a href="a00463.html#aeab1db37b5aa614235f109d5dd9711a9">HF::GraphGenerator::CheckConnection</a></div><div class="ttdeci">HF::SpatialStructures::STEP CheckConnection(const real3 &amp;parent, const real3 &amp;child, RayTracer &amp;rt, const GraphParams &amp;params)</div><div class="ttdoc">Determine what kind of step (if any) is between parent and child.</div><div class="ttdef"><b>Definition:</b> <a href="a00011_source.html#l00303">graph_utils.cpp:303</a></div></div>
 </div><!-- fragment --> <code>[1,0,0,1]</code> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="a00011_source.html#l00303">303</a> of file <a class="el" href="a00011_source.html">graph_utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00011_source.html#l00430">430</a> of file <a class="el" href="a00011_source.html">graph_utils.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="a00011_source.html#l00290">CheckSlope()</a>, <a class="el" href="a00008_source.html#l00258">HF::GraphGenerator::GraphParams::down_step</a>, <a class="el" href="a00008_source.html#l00114">HF::GraphGenerator::Precision::ground_offset</a>, <a class="el" href="a00011_source.html#l00283">OcclusionCheck()</a>, <a class="el" href="a00008_source.html#l00260">HF::GraphGenerator::GraphParams::precision</a>, and <a class="el" href="a00008_source.html#l00256">HF::GraphGenerator::GraphParams::up_step</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a00011_source.html#l00218">GetChildren()</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="a00011_source.html#l00290">CheckSlope()</a>, <a class="el" href="a00008_source.html#l00261">HF::GraphGenerator::GraphParams::down_step</a>, <a class="el" href="a00008_source.html#l00117">HF::GraphGenerator::Precision::ground_offset</a>, <a class="el" href="a00011_source.html#l00283">OcclusionCheck()</a>, <a class="el" href="a00008_source.html#l00263">HF::GraphGenerator::GraphParams::precision</a>, and <a class="el" href="a00008_source.html#l00259">HF::GraphGenerator::GraphParams::up_step</a>.</p>
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_aeab1db37b5aa614235f109d5dd9711a9_cgraph.svg" width="727" height="211"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_aeab1db37b5aa614235f109d5dd9711a9_icgraph.svg" width="1258" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_aeab1db37b5aa614235f109d5dd9711a9_cgraph.svg" width="735" height="211"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -941,15 +1185,15 @@ template&lt;typename real_3_type &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="a00011_source.html#l00126">126</a> of file <a class="el" href="a00011_source.html">graph_utils.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="a00463.html#af86d7be7ec8351dfc26ab5c11f727207abd38aa552d58d6dee7dc932c374f0e04">ALL_INTERSECTIONS</a>, <a class="el" href="a00008_source.html#l00131">BOTH</a>, <a class="el" href="a00008_source.html#l00189">HF::GraphGenerator::GeometryFlagMap::Mode</a>, <a class="el" href="a00008_source.html#l00129">OBSTACLES</a>, <a class="el" href="a00463.html#af86d7be7ec8351dfc26ab5c11f727207adb49be99500731a1909db6bcf395d27f">OBSTACLES_AND_FLOORS</a>, and <a class="el" href="a00463.html#af86d7be7ec8351dfc26ab5c11f727207ac78656cbac82f2af0177cfe76dd1aa12">OBSTACLES_ONLY</a>.</p>
+<p class="reference">References <a class="el" href="a00463.html#af86d7be7ec8351dfc26ab5c11f727207abd38aa552d58d6dee7dc932c374f0e04">ALL_INTERSECTIONS</a>, <a class="el" href="a00008_source.html#l00134">BOTH</a>, <a class="el" href="a00008_source.html#l00192">HF::GraphGenerator::GeometryFlagMap::Mode</a>, <a class="el" href="a00008_source.html#l00132">OBSTACLES</a>, <a class="el" href="a00463.html#af86d7be7ec8351dfc26ab5c11f727207adb49be99500731a1909db6bcf395d27f">OBSTACLES_AND_FLOORS</a>, and <a class="el" href="a00463.html#af86d7be7ec8351dfc26ab5c11f727207ac78656cbac82f2af0177cfe76dd1aa12">OBSTACLES_ONLY</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="a00011_source.html#l00146">CheckRay()</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_ab731d597ee2a843f7b7cb1ccbae67782_icgraph.svg" width="1630" height="195"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_ab731d597ee2a843f7b7cb1ccbae67782_icgraph.svg" width="1639" height="195"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1035,8 +1279,9 @@ template&lt;typename real_3_type &gt; </div>
 <div class="line">    <a class="code hl_typedef" href="a00463.html#a8f7754dd4958185062ba8e0bc28d6579">HF::GraphGenerator::real3</a> direction{0,0,-1};</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Call CheckRay and capture the result</span></div>
+<div class="line">    <a class="code hl_struct" href="a01419.html">HF::RayTracer::MultiRT</a> multi_rt(&amp;ray_tracer);</div>
 <div class="line">    <a class="code hl_struct" href="a01307.html">HF::GraphGenerator::optional_real3</a> result = <a class="code hl_function" href="a00463.html#a74be560268a713fc9e9b8b4a453afa2f">HF::GraphGenerator::CheckRay</a>(</div>
-<div class="line">        <a class="code hl_struct" href="a01419.html">HF::RayTracer::MultiRT</a>(&amp;ray_tracer), start_point, direction, node_z);</div>
+<div class="line">        multi_rt, start_point, direction, node_z);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// If the ray intersected, print it</span></div>
 <div class="line">    <span class="keywordflow">if</span> (result)</div>
@@ -1051,29 +1296,29 @@ template&lt;typename real_3_type &gt; </div>
 <div class="line"> </div>
 <div class="ttc" id="aa00001_html_a02139"><div class="ttname"><a href="a00001.html#a02139">double</a></div></div>
 <div class="ttc" id="aa00463_html_a74be560268a713fc9e9b8b4a453afa2f"><div class="ttname"><a href="a00463.html#a74be560268a713fc9e9b8b4a453afa2f">HF::GraphGenerator::CheckRay</a></div><div class="ttdeci">optional_real3 CheckRay(RayTracer &amp;RT, const real3 &amp;origin, const real3 &amp;direction, real_t node_z_tolerance, HIT_FLAG flag=BOTH, const GeometryFlagMap &amp;geometry_dict=GeometryFlagMap())</div><div class="ttdoc">Cast a ray and get the point of intersection if it connects.</div><div class="ttdef"><b>Definition:</b> <a href="a00011_source.html#l00146">graph_utils.cpp:146</a></div></div>
-<div class="ttc" id="aa01307_html"><div class="ttname"><a href="a01307.html">HF::GraphGenerator::optional_real3</a></div><div class="ttdoc">A simple wrapper for real3 that is able to determine whether or not it's defined.</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00281">graph_generator.h:281</a></div></div>
+<div class="ttc" id="aa01307_html"><div class="ttname"><a href="a01307.html">HF::GraphGenerator::optional_real3</a></div><div class="ttdoc">A simple wrapper for real3 that is able to determine whether or not it's defined.</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00284">graph_generator.h:284</a></div></div>
 </div><!-- fragment --></dd></dl>
 <p><code>(1, 1, 0)</code> </p>
 
 <p class="definition">Definition at line <a class="el" href="a00011_source.html#l00146">146</a> of file <a class="el" href="a00011_source.html">graph_utils.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="a00011_source.html#l00126">CheckGeometryID()</a>, <a class="el" href="a00218_source.html#l00017">HF::RayTracer::HitStruct&lt; numeric_type &gt;::DidHit()</a>, <a class="el" href="a00218_source.html#l00008">HF::RayTracer::HitStruct&lt; numeric_type &gt;::distance</a>, <a class="el" href="a00221_source.html#l00040">HF::RayTracer::MultiRT::Intersect()</a>, <a class="el" href="a00218_source.html#l00009">HF::RayTracer::HitStruct&lt; numeric_type &gt;::meshid</a>, <a class="el" href="a00008_source.html#l00731">MoveNode()</a>, and <a class="el" href="a00008_source.html#l00282">HF::GraphGenerator::optional_real3::pt</a>.</p>
+<p class="reference">References <a class="el" href="a00011_source.html#l00126">CheckGeometryID()</a>, <a class="el" href="a00218_source.html#l00018">HF::RayTracer::HitStruct&lt; numeric_type &gt;::DidHit()</a>, <a class="el" href="a00218_source.html#l00009">HF::RayTracer::HitStruct&lt; numeric_type &gt;::distance</a>, <a class="el" href="a00221_source.html#l00040">HF::RayTracer::MultiRT::Intersect()</a>, <a class="el" href="a00218_source.html#l00010">HF::RayTracer::HitStruct&lt; numeric_type &gt;::meshid</a>, <a class="el" href="a00008_source.html#l00734">MoveNode()</a>, and <a class="el" href="a00008_source.html#l00285">HF::GraphGenerator::optional_real3::pt</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="a00011_source.html#l00248">CheckChildren()</a>, and <a class="el" href="a00011_source.html#l00107">ValidateStartPoint()</a>.</p>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_a74be560268a713fc9e9b8b4a453afa2f_cgraph.svg" width="592" height="278"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_a74be560268a713fc9e9b8b4a453afa2f_cgraph.svg" width="602" height="278"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_a74be560268a713fc9e9b8b4a453afa2f_icgraph.svg" width="1443" height="195"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_a74be560268a713fc9e9b8b4a453afa2f_icgraph.svg" width="1451" height="195"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1146,15 +1391,67 @@ template&lt;typename real_3_type &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="a00011_source.html#l00290">290</a> of file <a class="el" href="a00011_source.html">graph_utils.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="a00008_source.html#l00259">HF::GraphGenerator::GraphParams::down_slope</a>, and <a class="el" href="a00008_source.html#l00257">HF::GraphGenerator::GraphParams::up_slope</a>.</p>
+<p class="reference">References <a class="el" href="a00008_source.html#l00262">HF::GraphGenerator::GraphParams::down_slope</a>, and <a class="el" href="a00008_source.html#l00260">HF::GraphGenerator::GraphParams::up_slope</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="a00011_source.html#l00303">CheckConnection()</a>.</p>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="a00011_source.html#l00430">CheckConnection()</a>.</p>
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_a9daa85cb56a1b18d44f46aa9c420afde_icgraph.svg" width="1443" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_a9daa85cb56a1b18d44f46aa9c420afde_icgraph.svg" width="338" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a5d2ad6de2131b1a90a80f901ac8dd185" name="a5d2ad6de2131b1a90a80f901ac8dd185"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d2ad6de2131b1a90a80f901ac8dd185">&#9670;&#160;</a></span>CompareCheckConnections()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HF::GraphGenerator::CompareCheckConnections </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a01551.html">HF::SpatialStructures::Graph</a> &amp;&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00463.html#aef833458d20e4569c73f409b52d03bee">RayTracer</a> &amp;&#160;</td>
+          <td class="paramname"><em>rt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00463.html#a01303">GraphParams</a> &amp;&#160;</td>
+          <td class="paramname"><em>params</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="a01535.html">HF::SpatialStructures::EdgeSet</a> &gt;&#160;</td>
+          <td class="paramname"><em>to_compare</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="a00011_source.html#l00508">508</a> of file <a class="el" href="a00011_source.html">graph_utils.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="a00008_source.html#l00094">CastToReal()</a>, <a class="el" href="a00008_source.html#l00107">CastToReal3()</a>, <a class="el" href="a00011_source.html#l00385">CheckConnection()</a>, <a class="el" href="a01551.html#a794c342603cefb342fdc698ba539b25f">HF::SpatialStructures::Graph::NodeFromID()</a>, <a class="el" href="a01551.html#aa70347b8a33b57c6f0a72d6eca4248d7">HF::SpatialStructures::Graph::Nodes()</a>, <a class="el" href="a00275_source.html#l00040">HF::SpatialStructures::Node::x</a>, <a class="el" href="a00275_source.html#l00040">HF::SpatialStructures::Node::y</a>, and <a class="el" href="a00275_source.html#l00040">HF::SpatialStructures::Node::z</a>.</p>
+<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_a5d2ad6de2131b1a90a80f901ac8dd185_cgraph.svg" width="984" height="283"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1207,20 +1504,20 @@ template&lt;typename real_3_type &gt; </div>
 <p class="reference">References <a class="el" href="a00011_source.html#l00101">init_directs</a>, and <a class="el" href="a00011_source.html#l00180">permutations()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="a00005_source.html#l00222">HF::GraphGenerator::GraphGenerator::CrawlGeom()</a>, and <a class="el" href="a00005_source.html#l00141">HF::GraphGenerator::GraphGenerator::CrawlGeomParallel()</a>.</p>
-<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_aefd344ebb2faadc64a56a16dc8582026_cgraph.svg" width="336" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_aefd344ebb2faadc64a56a16dc8582026_cgraph.svg" width="338" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_aefd344ebb2faadc64a56a16dc8582026_icgraph.svg" width="1071" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_aefd344ebb2faadc64a56a16dc8582026_icgraph.svg" width="1076" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1283,20 +1580,20 @@ template&lt;typename vector_type &gt; </div>
 <p class="reference">References <a class="el" href="a00011_source.html#l00068">Normalize()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="a00011_source.html#l00283">OcclusionCheck()</a>.</p>
-<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_a750afc15c798c79a8b6a0784ed092f3c_cgraph.svg" width="336" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_a750afc15c798c79a8b6a0784ed092f3c_cgraph.svg" width="338" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_a750afc15c798c79a8b6a0784ed092f3c_icgraph.svg" width="1630" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-22-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_a750afc15c798c79a8b6a0784ed092f3c_icgraph.svg" width="1692" height="324"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1358,12 +1655,12 @@ template&lt;typename n1_type , typename n2_type &gt; </div>
 <p class="definition">Definition at line <a class="el" href="a00011_source.html#l00054">54</a> of file <a class="el" href="a00011_source.html">graph_utils.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="a00011_source.html#l00218">GetChildren()</a>, and <a class="el" href="a00011_source.html#l00283">OcclusionCheck()</a>.</p>
-<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_a7f96186b8f24f878404d1feccf2f64db_icgraph.svg" width="1630" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-23-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_a7f96186b8f24f878404d1feccf2f64db_icgraph.svg" width="1692" height="320"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1446,21 +1743,21 @@ template&lt;typename n1_type , typename n2_type &gt; </div>
 <div class="line">    <span class="comment">// Print to console</span></div>
 <div class="line">    std::cout &lt;&lt; out_str.str() &lt;&lt; std::endl;</div>
 <div class="line"> </div>
-<div class="ttc" id="aa00463_html_a41e03f9bab54e4e0d1314c6a4bdf2ec1"><div class="ttname"><a href="a00463.html#a41e03f9bab54e4e0d1314c6a4bdf2ec1">HF::GraphGenerator::GeneratePotentialChildren</a></div><div class="ttdeci">std::vector&lt; real3 &gt; GeneratePotentialChildren(const real3 &amp;parent, const std::vector&lt; pair &gt; &amp;direcs, const real3 &amp;spacing, const GraphParams &amp;gp)</div><div class="ttdoc">Populare out_children with a potential child position for every direction in directions.</div><div class="ttdef"><b>Definition:</b> <a href="a00011_source.html#l00381">graph_utils.cpp:381</a></div></div>
-<div class="ttc" id="aa00463_html_ac982230f7d151df6018c19d712cd3436"><div class="ttname"><a href="a00463.html#ac982230f7d151df6018c19d712cd3436">HF::GraphGenerator::Precision::node_spacing</a></div><div class="ttdeci">real_t node_spacing</div><div class="ttdoc">Precision to round nodes after spacing is calculated.</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00113">graph_generator.h:113</a></div></div>
+<div class="ttc" id="aa00463_html_a41e03f9bab54e4e0d1314c6a4bdf2ec1"><div class="ttname"><a href="a00463.html#a41e03f9bab54e4e0d1314c6a4bdf2ec1">HF::GraphGenerator::GeneratePotentialChildren</a></div><div class="ttdeci">std::vector&lt; real3 &gt; GeneratePotentialChildren(const real3 &amp;parent, const std::vector&lt; pair &gt; &amp;direcs, const real3 &amp;spacing, const GraphParams &amp;gp)</div><div class="ttdoc">Populare out_children with a potential child position for every direction in directions.</div><div class="ttdef"><b>Definition:</b> <a href="a00011_source.html#l00544">graph_utils.cpp:544</a></div></div>
+<div class="ttc" id="aa00463_html_ac982230f7d151df6018c19d712cd3436"><div class="ttname"><a href="a00463.html#ac982230f7d151df6018c19d712cd3436">HF::GraphGenerator::Precision::node_spacing</a></div><div class="ttdeci">real_t node_spacing</div><div class="ttdoc">Precision to round nodes after spacing is calculated.</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00116">graph_generator.h:116</a></div></div>
 </div><!-- fragment --> <code>[(0, 2, 4),(0, 4, 4),(1, 0, 4),(2, 0, 4),(1, 2, 4),(2, 2, 4)]</code> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="a00011_source.html#l00381">381</a> of file <a class="el" href="a00011_source.html">graph_utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00011_source.html#l00544">544</a> of file <a class="el" href="a00011_source.html">graph_utils.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="a00008_source.html#l00113">HF::GraphGenerator::Precision::node_spacing</a>, <a class="el" href="a00008_source.html#l00112">HF::GraphGenerator::Precision::node_z</a>, and <a class="el" href="a00008_source.html#l00260">HF::GraphGenerator::GraphParams::precision</a>.</p>
+<p class="reference">References <a class="el" href="a00008_source.html#l00116">HF::GraphGenerator::Precision::node_spacing</a>, <a class="el" href="a00008_source.html#l00115">HF::GraphGenerator::Precision::node_z</a>, and <a class="el" href="a00008_source.html#l00263">HF::GraphGenerator::GraphParams::precision</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="a00005_source.html#l00222">HF::GraphGenerator::GraphGenerator::CrawlGeom()</a>, and <a class="el" href="a00005_source.html#l00141">HF::GraphGenerator::GraphGenerator::CrawlGeomParallel()</a>.</p>
-<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-18-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_a41e03f9bab54e4e0d1314c6a4bdf2ec1_icgraph.svg" width="1112" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-24-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_a41e03f9bab54e4e0d1314c6a4bdf2ec1_icgraph.svg" width="1119" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1541,7 +1838,8 @@ template&lt;typename n1_type , typename n2_type &gt; </div>
 <div class="line">    params.<a class="code hl_variable" href="a00463.html#af7a57e8e6b17f86ac29a8df2685e56c1">precision</a>.<a class="code hl_variable" href="a00463.html#a4fa4f096863296469711e52da4b36b9c">ground_offset</a> = 0.01f;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Call GetChildren</span></div>
-<div class="line">    <span class="keyword">auto</span> edges = <a class="code hl_function" href="a00463.html#ab7ffcc7d6657ce276c06deed24c546a4">HF::GraphGenerator::GetChildren</a>(parent, possible_children, <a class="code hl_struct" href="a01419.html">HF::RayTracer::MultiRT</a>(&amp;ray_tracer), params);</div>
+<div class="line">    <a class="code hl_struct" href="a01419.html">HF::RayTracer::MultiRT</a> multi_rt(&amp;ray_tracer);</div>
+<div class="line">    <span class="keyword">auto</span> edges = <a class="code hl_function" href="a00463.html#ab7ffcc7d6657ce276c06deed24c546a4">HF::GraphGenerator::GetChildren</a>(parent, possible_children, multi_rt, params);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Print children</span></div>
 <div class="line">    std::ostringstream out_str;</div>
@@ -1556,23 +1854,23 @@ template&lt;typename n1_type , typename n2_type &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="a00011_source.html#l00218">218</a> of file <a class="el" href="a00011_source.html">graph_utils.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="a00011_source.html#l00248">CheckChildren()</a>, <a class="el" href="a00011_source.html#l00303">CheckConnection()</a>, <a class="el" href="a00011_source.html#l00054">DistanceTo()</a>, and <a class="el" href="a00011_source.html#l00036">ToNode()</a>.</p>
+<p class="reference">References <a class="el" href="a00011_source.html#l00248">CheckChildren()</a>, <a class="el" href="a00011_source.html#l00385">CheckConnection()</a>, <a class="el" href="a00011_source.html#l00054">DistanceTo()</a>, and <a class="el" href="a00011_source.html#l00036">ToNode()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="a00005_source.html#l00222">HF::GraphGenerator::GraphGenerator::CrawlGeom()</a>, and <a class="el" href="a00005_source.html#l00141">HF::GraphGenerator::GraphGenerator::CrawlGeomParallel()</a>.</p>
-<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-19-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_ab7ffcc7d6657ce276c06deed24c546a4_cgraph.svg" width="964" height="552"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-25-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_ab7ffcc7d6657ce276c06deed24c546a4_cgraph.svg" width="976" height="552"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-26-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-20-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_ab7ffcc7d6657ce276c06deed24c546a4_icgraph.svg" width="1071" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-26-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_ab7ffcc7d6657ce276c06deed24c546a4_icgraph.svg" width="1076" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1638,15 +1936,15 @@ template&lt;typename A , typename D , typename N &gt; </div>
 </dl>
 <dl class="section post"><dt>Postcondition</dt><dd>Node's members at [0], [1], [2] been moved in <code>direction</code> by <code>dist</code> units. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00731">731</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00734">734</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="a00011_source.html#l00146">CheckRay()</a>.</p>
-<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-27-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-21-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_a5ad3e8fac4a21eee744f3633f7a3692f_icgraph.svg" width="1630" height="195"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-27-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_a5ad3e8fac4a21eee744f3633f7a3692f_icgraph.svg" width="1639" height="195"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1696,12 +1994,12 @@ template&lt;typename vector_type &gt; </div>
 <p class="definition">Definition at line <a class="el" href="a00011_source.html#l00068">68</a> of file <a class="el" href="a00011_source.html">graph_utils.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="a00011_source.html#l00088">DirectionTo()</a>.</p>
-<div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-28-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-28-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-22-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_ad2e09e0825a1db4fc511907179eddf00_icgraph.svg" width="1816" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-28-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_ad2e09e0825a1db4fc511907179eddf00_icgraph.svg" width="1880" height="324"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1767,8 +2065,10 @@ template&lt;typename vector_type &gt; </div>
 <div class="line">    <a class="code hl_typedef" href="a00463.html#a8f7754dd4958185062ba8e0bc28d6579">HF::GraphGenerator::real3</a> child_2{ 0,0,1 };</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Perform slope checks</span></div>
-<div class="line">    <span class="keywordtype">bool</span> occlusion_check_child_1 = <a class="code hl_function" href="a00463.html#ace66c1b60785c32433402f012019ab81">HF::GraphGenerator::OcclusionCheck</a>(parent, child_1, <a class="code hl_struct" href="a01419.html">HF::RayTracer::MultiRT</a>(&amp;ray_tracer));</div>
-<div class="line">    <span class="keywordtype">bool</span> occlusion_check_child_2= <a class="code hl_function" href="a00463.html#ace66c1b60785c32433402f012019ab81">HF::GraphGenerator::OcclusionCheck</a>(parent, child_2, <a class="code hl_struct" href="a01419.html">HF::RayTracer::MultiRT</a>(&amp;ray_tracer));</div>
+<div class="line">    <a class="code hl_struct" href="a01419.html">HF::RayTracer::MultiRT</a> multi_rt1(&amp;ray_tracer);</div>
+<div class="line">    <a class="code hl_struct" href="a01419.html">HF::RayTracer::MultiRT</a> multi_rt2(&amp;ray_tracer);</div>
+<div class="line">    <span class="keywordtype">bool</span> occlusion_check_child_1 = <a class="code hl_function" href="a00463.html#ace66c1b60785c32433402f012019ab81">HF::GraphGenerator::OcclusionCheck</a>(parent, child_1, multi_rt1);</div>
+<div class="line">    <span class="keywordtype">bool</span> occlusion_check_child_2= <a class="code hl_function" href="a00463.html#ace66c1b60785c32433402f012019ab81">HF::GraphGenerator::OcclusionCheck</a>(parent, child_2, multi_rt2);</div>
 <div class="line"> </div>
 <div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Occlusion Check For Child 1 = &quot;</span> &lt;&lt; (occlusion_check_child_1 ? <span class="stringliteral">&quot;True&quot;</span> : <span class="stringliteral">&quot;False&quot;</span>) &lt;&lt; std::endl;</div>
 <div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Occlusion Check For Child 2 = &quot;</span> &lt;&lt; (occlusion_check_child_2 ? <span class="stringliteral">&quot;True&quot;</span> : <span class="stringliteral">&quot;False&quot;</span>) &lt;&lt; std::endl;</div>
@@ -1781,21 +2081,21 @@ template&lt;typename vector_type &gt; </div>
 
 <p class="reference">References <a class="el" href="a00011_source.html#l00088">DirectionTo()</a>, <a class="el" href="a00011_source.html#l00054">DistanceTo()</a>, and <a class="el" href="a00221_source.html#l00049">HF::RayTracer::MultiRT::Occluded()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="a00011_source.html#l00303">CheckConnection()</a>.</p>
-<div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="a00011_source.html#l00385">CheckConnection()</a>.</p>
+<div id="dynsection-29" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-29-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-29-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-23-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_ace66c1b60785c32433402f012019ab81_cgraph.svg" width="542" height="211"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-29-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_ace66c1b60785c32433402f012019ab81_cgraph.svg" width="547" height="211"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-30" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-30-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-30-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-24-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_ace66c1b60785c32433402f012019ab81_icgraph.svg" width="1443" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-30-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_ace66c1b60785c32433402f012019ab81_icgraph.svg" width="1506" height="324"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1829,12 +2129,12 @@ template&lt;typename vector_type &gt; </div>
 <p class="definition">Definition at line <a class="el" href="a00011_source.html#l00180">180</a> of file <a class="el" href="a00011_source.html">graph_utils.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="a00011_source.html#l00201">CreateDirecs()</a>.</p>
-<div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-31" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-31-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-31-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-25-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_afe5670b4cb780fd3ccf2a0d72a2e3c2e_icgraph.svg" width="1258" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-31-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_afe5670b4cb780fd3ccf2a0d72a2e3c2e_icgraph.svg" width="1264" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1875,12 +2175,12 @@ template&lt;typename vector_type &gt; </div>
 <p class="definition">Definition at line <a class="el" href="a00005_source.html#l00035">35</a> of file <a class="el" href="a00005_source.html">graph_generator.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="a00005_source.html#l00069">HF::GraphGenerator::GraphGenerator::IMPL_BuildNetwork()</a>.</p>
-<div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-26-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-32" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-32-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-32-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-26-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_af8cc1a7a794699308cf5c46d3ae59491_icgraph.svg" width="827" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-32-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_af8cc1a7a794699308cf5c46d3ae59491_icgraph.svg" width="831" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1947,13 +2247,13 @@ template&lt;typename raytracer_type &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="a00005_source.html#l00050">50</a> of file <a class="el" href="a00005_source.html">graph_generator.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="a00008_source.html#l00261">HF::GraphGenerator::GraphParams::geom_ids</a>, <a class="el" href="a00008_source.html#l00354">HF::GraphGenerator::GraphGenerator::params</a>, <a class="el" href="a00008_source.html#l00356">HF::GraphGenerator::GraphGenerator::ray_tracer</a>, and <a class="el" href="a00008_source.html#l00200">HF::GraphGenerator::GeometryFlagMap::SetGeometryIds()</a>.</p>
-<div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-27-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="a00008_source.html#l00264">HF::GraphGenerator::GraphParams::geom_ids</a>, <a class="el" href="a00008_source.html#l00357">HF::GraphGenerator::GraphGenerator::params</a>, <a class="el" href="a00008_source.html#l00359">HF::GraphGenerator::GraphGenerator::ray_tracer</a>, and <a class="el" href="a00008_source.html#l00203">HF::GraphGenerator::GeometryFlagMap::SetGeometryIds()</a>.</p>
+<div id="dynsection-33" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-33-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-33-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-27-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_a124a96c53ed2021db9d819369fe6b7ad_cgraph.svg" width="687" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-33-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_a124a96c53ed2021db9d819369fe6b7ad_cgraph.svg" width="690" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -2003,12 +2303,12 @@ template&lt;typename point_type &gt; </div>
 <p class="definition">Definition at line <a class="el" href="a00011_source.html#l00036">36</a> of file <a class="el" href="a00011_source.html">graph_utils.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="a00011_source.html#l00218">GetChildren()</a>.</p>
-<div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-28-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-28-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-34" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-34-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-34-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-28-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_abf1a3ae7dc89b3cf430e059a87fcd477_icgraph.svg" width="1258" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-34-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_abf1a3ae7dc89b3cf430e059a87fcd477_icgraph.svg" width="1264" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -2078,8 +2378,9 @@ template&lt;typename point_type &gt; </div>
 <div class="line">    <a class="code hl_typedef" href="a00463.html#a8f7754dd4958185062ba8e0bc28d6579">HF::GraphGenerator::real3</a> start_point{ 0,0,10 };</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Call ValidateStartPoint</span></div>
+<div class="line">    <a class="code hl_struct" href="a01419.html">HF::RayTracer::MultiRT</a> multi_rt(&amp;ray_tracer);</div>
 <div class="line">    <a class="code hl_struct" href="a01307.html">HF::GraphGenerator::optional_real3</a> result = <a class="code hl_function" href="a00463.html#a9ddffecb75b34434d7157b49d3c67b60">HF::GraphGenerator::ValidateStartPoint</a>(</div>
-<div class="line">        <a class="code hl_struct" href="a01419.html">HF::RayTracer::MultiRT</a>(&amp;ray_tracer), start_point, params</div>
+<div class="line">        multi_rt, start_point, params</div>
 <div class="line">    );</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// If the ray intersected, print the result</span></div>
@@ -2093,29 +2394,29 @@ template&lt;typename point_type &gt; </div>
 <div class="line">    <span class="keywordflow">else</span></div>
 <div class="line">        printf(<span class="stringliteral">&quot;No intersection found\n&quot;</span>);</div>
 <div class="line"> </div>
-<div class="ttc" id="aa00463_html_a01295"><div class="ttname"><a href="a00463.html#a01295">HF::GraphGenerator::Precision</a></div><div class="ttdoc">Various parameters to set the precision of certain parts of the graph generator.</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00111">graph_generator.h:111</a></div></div>
+<div class="ttc" id="aa00463_html_a01295"><div class="ttname"><a href="a00463.html#a01295">HF::GraphGenerator::Precision</a></div><div class="ttdoc">Various parameters to set the precision of certain parts of the graph generator.</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00114">graph_generator.h:114</a></div></div>
 <div class="ttc" id="aa00463_html_a9ddffecb75b34434d7157b49d3c67b60"><div class="ttname"><a href="a00463.html#a9ddffecb75b34434d7157b49d3c67b60">HF::GraphGenerator::ValidateStartPoint</a></div><div class="ttdeci">optional_real3 ValidateStartPoint(RayTracer &amp;RT, const real3 &amp;start_point, const GraphParams &amp;Params)</div><div class="ttdoc">Determine if the start point of the graph is over valid ground.</div><div class="ttdef"><b>Definition:</b> <a href="a00011_source.html#l00107">graph_utils.cpp:107</a></div></div>
 </div><!-- fragment --> <code>(0, 0, 0)</code> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="a00011_source.html#l00107">107</a> of file <a class="el" href="a00011_source.html">graph_utils.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="a00011_source.html#l00146">CheckRay()</a>, <a class="el" href="a00011_source.html#l00013">down</a>, <a class="el" href="a00008_source.html#l00127">FLOORS</a>, <a class="el" href="a00008_source.html#l00261">HF::GraphGenerator::GraphParams::geom_ids</a>, <a class="el" href="a00008_source.html#l00112">HF::GraphGenerator::Precision::node_z</a>, and <a class="el" href="a00008_source.html#l00260">HF::GraphGenerator::GraphParams::precision</a>.</p>
+<p class="reference">References <a class="el" href="a00011_source.html#l00146">CheckRay()</a>, <a class="el" href="a00011_source.html#l00013">down</a>, <a class="el" href="a00008_source.html#l00130">FLOORS</a>, <a class="el" href="a00008_source.html#l00264">HF::GraphGenerator::GraphParams::geom_ids</a>, <a class="el" href="a00008_source.html#l00115">HF::GraphGenerator::Precision::node_z</a>, and <a class="el" href="a00008_source.html#l00263">HF::GraphGenerator::GraphParams::precision</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="a00005_source.html#l00069">HF::GraphGenerator::GraphGenerator::IMPL_BuildNetwork()</a>.</p>
-<div id="dynsection-29" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-29-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-29-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-35" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-35-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-35-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-29-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_a9ddffecb75b34434d7157b49d3c67b60_cgraph.svg" width="779" height="278"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-35-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_a9ddffecb75b34434d7157b49d3c67b60_cgraph.svg" width="790" height="278"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-30" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-30-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-30-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-36" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-36-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-36-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-30-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_a9ddffecb75b34434d7157b49d3c67b60_icgraph.svg" width="827" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-36-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00463_a9ddffecb75b34434d7157b49d3c67b60_icgraph.svg" width="831" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -2142,7 +2443,7 @@ template&lt;typename point_type &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00078">78</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00081">81</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
 
 </div>
 </div>
@@ -2166,7 +2467,7 @@ template&lt;typename point_type &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00079">79</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00082">82</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
 
 </div>
 </div>
@@ -2190,7 +2491,7 @@ template&lt;typename point_type &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00077">77</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00008_source.html#l00080">80</a> of file <a class="el" href="a00008_source.html">graph_generator.h</a>.</p>
 
 </div>
 </div>
@@ -2246,7 +2547,7 @@ template&lt;typename point_type &gt; </div>
 <div class="line">        <a class="code hl_typedef" href="a00463.html#ab618c832ef23d48d9f4ea9d9e46116dc">pair</a>(0, -1), <a class="code hl_typedef" href="a00463.html#ab618c832ef23d48d9f4ea9d9e46116dc">pair</a>(0, 1), <a class="code hl_typedef" href="a00463.html#ab618c832ef23d48d9f4ea9d9e46116dc">pair</a>(1, -1),</div>
 <div class="line">        <a class="code hl_typedef" href="a00463.html#ab618c832ef23d48d9f4ea9d9e46116dc">pair</a>(1, 0), <a class="code hl_typedef" href="a00463.html#ab618c832ef23d48d9f4ea9d9e46116dc">pair</a>(1, 1)</div>
 <div class="line">    }</div>
-<div class="ttc" id="aa00463_html_ab618c832ef23d48d9f4ea9d9e46116dc"><div class="ttname"><a href="a00463.html#ab618c832ef23d48d9f4ea9d9e46116dc">HF::GraphGenerator::pair</a></div><div class="ttdeci">std::pair&lt; int, int &gt; pair</div><div class="ttdoc">Type for Directions to be stored as.</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00082">graph_generator.h:82</a></div></div>
+<div class="ttc" id="aa00463_html_ab618c832ef23d48d9f4ea9d9e46116dc"><div class="ttname"><a href="a00463.html#ab618c832ef23d48d9f4ea9d9e46116dc">HF::GraphGenerator::pair</a></div><div class="ttdeci">std::pair&lt; int, int &gt; pair</div><div class="ttdoc">Type for Directions to be stored as.</div><div class="ttdef"><b>Definition:</b> <a href="a00008_source.html#l00085">graph_generator.h:85</a></div></div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="a00011_source.html#l00101">101</a> of file <a class="el" href="a00011_source.html">graph_utils.cpp</a>.</p>
 

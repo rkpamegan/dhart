@@ -1,0 +1,26 @@
+digraph "HF::RayTracer::EmbreeRayTracer::AddMesh"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="HF::RayTracer::EmbreeRay\lTracer::AddMesh",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Add a new mesh to the BVH with the specified ID. If False, then the addition failed,..."];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="HF::RayTracer::buffersTo\lStructs",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00464.html#aac8c0b245ea813969c50b6496cc67945",tooltip="Package raw arrays of floats and indices in buffers to the required Embree types."];
+  Node1 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="HF::RayTracer::EmbreeRay\lTracer::ConstructGeometryFrom\lBuffers",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01411.html#aa602f6c44fa5230477642942ebc3216e",tooltip="Create a new instance of RTCGeometry from a triangle and vertex buffer."];
+  Node1 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="HF::Geometry::MeshInfo\l::GetIndexedVertices",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01351.html#af2d1b696c55aa036cff585d2e7eba50b",tooltip="A copy of every vertex in this array."];
+  Node1 -> Node5 [color="steelblue1",style="solid"];
+  Node5 [label="HF::Geometry::MeshInfo\l::getRawIndices",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01351.html#afddea10734ba213b2bb5cc148c24c942",tooltip="Retrieve a copy of this mesh's index buffer as a 1D array."];
+  Node1 -> Node6 [color="steelblue1",style="solid"];
+  Node6 [label="HF::RayTracer::EmbreeRay\lTracer::InsertGeom",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01411.html#a6ee1e15bc515878b156bc6a3778f8033",tooltip="Attach geometry to the current scene."];
+  Node6 -> Node7 [color="steelblue1",style="solid"];
+  Node7 [label="HF::RayTracer::CheckState",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00464.html#a19e11d13f73136d6819b8abee57b0fd9",tooltip="Check an embree device for errors."];
+  Node6 -> Node6 [color="steelblue1",style="solid"];
+  Node1 -> Node8 [color="steelblue1",style="solid"];
+  Node8 [label="HF::Geometry::MeshInfo\l::NumTris",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01351.html#a5fa8cc590a7bd0764a7903ed521e2fc4",tooltip="Calculate the total number of triangles in this mesh."];
+  Node1 -> Node9 [color="steelblue1",style="solid"];
+  Node9 [label="HF::Geometry::MeshInfo\l::NumVerts",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01351.html#a70a6f6b9270d47e0b8428cdc15b707d3",tooltip="Determine how many vertices are in this mesh."];
+}

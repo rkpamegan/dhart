@@ -1,8 +1,10 @@
 <map id="HF::SpatialStructures::Graph::Nodes" name="HF::SpatialStructures::Graph::Nodes">
-<area shape="rect" id="node1" title="Get a list of nodes from the graph sorted by ID." alt="" coords="234,163,380,205"/>
-<area shape="rect" id="node2" href="$a00475.html#a6d12a3af69887cb335b490304138afc6" title=" " alt="" coords="5,5,186,64"/>
-<area shape="rect" id="node3" href="$a00475.html#adbe5e58355a884494d6e99bf17fc5f7b" title=" " alt="" coords="5,88,186,147"/>
-<area shape="rect" id="node4" href="$a00454.html#ga2df84a732d1edfb70b7bd26d3282e129" title="Construct a graph by performing a breadth&#45;first search of accessible space." alt="" coords="41,171,150,197"/>
-<area shape="rect" id="node5" href="$a00454.html#gab9f58e3ecc686fa9bc34519b0faed734" title="Construct a graph by performing a breadth&#45;first search of accessible space, seperating obstacles from..." alt="" coords="11,221,180,248"/>
-<area shape="rect" id="node6" href="$a00458.html#ga0cc5b82caab046c65a201e4e7be5e9d4" title="Get a vector of every node in the given graph pointer." alt="" coords="16,272,175,299"/>
+<area shape="rect" id="node1" title="Get a list of nodes from the graph sorted by ID." alt="" coords="247,237,394,280"/>
+<area shape="rect" id="node2" href="$a00475.html#a6d12a3af69887cb335b490304138afc6" title=" " alt="" coords="11,5,193,64"/>
+<area shape="rect" id="node3" href="$a00475.html#adbe5e58355a884494d6e99bf17fc5f7b" title=" " alt="" coords="11,88,193,147"/>
+<area shape="rect" id="node4" href="$a00463.html#a81398de53e151ae58b206523e555309e" title=" " alt="" coords="32,171,172,213"/>
+<area shape="rect" id="node5" href="$a00463.html#a5d2ad6de2131b1a90a80f901ac8dd185" title=" " alt="" coords="5,237,199,280"/>
+<area shape="rect" id="node6" href="$a00454.html#ga2df84a732d1edfb70b7bd26d3282e129" title="Construct a graph by performing a breadth&#45;first search of accessible space." alt="" coords="47,304,157,331"/>
+<area shape="rect" id="node7" href="$a00454.html#gab9f58e3ecc686fa9bc34519b0faed734" title="Construct a graph by performing a breadth&#45;first search of accessible space, seperating obstacles from..." alt="" coords="18,355,186,381"/>
+<area shape="rect" id="node8" href="$a00458.html#ga0cc5b82caab046c65a201e4e7be5e9d4" title="Get a vector of every node in the given graph pointer." alt="" coords="22,405,182,432"/>
 </map>

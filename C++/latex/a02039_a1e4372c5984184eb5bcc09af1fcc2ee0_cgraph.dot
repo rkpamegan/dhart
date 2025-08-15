@@ -1,0 +1,28 @@
+digraph "nlohmann::detail::binary_writer::calc_bson_element_size"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="nlohmann::detail::binary\l_writer::calc_bson_element_size",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Calculates the size necessary to serialize the JSON value j with its name."];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="nlohmann::detail::binary\l_writer::calc_bson_array_size",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a02039.html#af08f9302a02516ff8cf358a99aaa1ddf",tooltip=" "];
+  Node2 -> Node1 [color="steelblue1",style="solid"];
+  Node1 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="nlohmann::detail::binary\l_writer::calc_bson_binary_size",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a02039.html#a9dd6062fd249a695e0f93d558dba4685",tooltip=" "];
+  Node1 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="nlohmann::detail::binary\l_writer::calc_bson_entry\l_header_size",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a02039.html#a5bae2f1db2c511b869dffaddf15a1653",tooltip=" "];
+  Node4 -> Node5 [color="steelblue1",style="solid"];
+  Node5 [label="nlohmann::detail::out\l_of_range::create",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01575.html#a3f6d82a6f967c4728a1ec735a7867073",tooltip=" "];
+  Node5 -> Node6 [color="steelblue1",style="solid"];
+  Node6 [label="nlohmann::detail::exception\l::name",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01559.html#abf41a7e9178356314082284e6cfea278",tooltip=" "];
+  Node1 -> Node7 [color="steelblue1",style="solid"];
+  Node7 [label="nlohmann::detail::binary\l_writer::calc_bson_integer_size",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a02039.html#aeab70c895931b96ea598306b37eca271",tooltip=" "];
+  Node1 -> Node8 [color="steelblue1",style="solid"];
+  Node8 [label="nlohmann::detail::binary\l_writer::calc_bson_object_size",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a02039.html#acc6f1cc1fd370ee84ebc8cf7b8712840",tooltip="Calculates the size of the BSON serialization of the given JSON-object j."];
+  Node1 -> Node9 [color="steelblue1",style="solid"];
+  Node9 [label="nlohmann::detail::binary\l_writer::calc_bson_string_size",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a02039.html#aea44fd97a5cb9b4f175e66e3e4fdf158",tooltip=" "];
+  Node1 -> Node10 [color="steelblue1",style="solid"];
+  Node10 [label="nlohmann::detail::binary\l_writer::calc_bson_unsigned_size",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a02039.html#aa1d6bb9f3af16f07ce2440c354b5787b",tooltip=" "];
+}

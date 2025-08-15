@@ -1,0 +1,15 @@
+digraph "HF::Pathfinding::BoostGraph::BoostGraph"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="HF::Pathfinding::BoostGraph\l::BoostGraph",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Create a boost graph from a HF::SpatialStructures::Graph."];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="HF::SpatialStructures\l::Graph::GetEdges",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01551.html#a1a26ebb794b444e2214cf0b0fed5a529",tooltip="Get every in the given graph as IDs."];
+  Node1 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="HF::SpatialStructures\l::Graph::MaxID",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01551.html#a5d1505ad796c9f222c923a1a22980bb2",tooltip="Calculate the maximum ID of any node in the graph."];
+  Node1 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="HF::SpatialStructures\l::Graph::size",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01551.html#a2710af2a75976862d7a235793567d2f3",tooltip="Determine how many nodes are in the graph."];
+}

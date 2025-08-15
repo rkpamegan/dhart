@@ -1,0 +1,4 @@
+<map id="HF::SpatialStructures::Graph::GetEdgeCosts" name="HF::SpatialStructures::Graph::GetEdgeCosts">
+<area shape="rect" id="node1" title="Get edge costs of all given edges" alt="" coords="161,5,319,48"/>
+<area shape="rect" id="node2" href="$a00458.html#ga1c360205181c8b5b70f05a7c5fdfbaa3" title="Get all edge costs of type cost_type in the graph." alt="" coords="5,13,113,40"/>
+</map>

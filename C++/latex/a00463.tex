@@ -76,8 +76,18 @@ std\+::vector$<$ \mbox{\hyperlink{a00463_a8f7754dd4958185062ba8e0bc28d6579}{real
 \begin{DoxyCompactList}\small\item\em Move a node in {\ttfamily direction} by {\ttfamily dist} units. \end{DoxyCompactList}\item 
 std\+::vector$<$ \mbox{\hyperlink{a00463_a8f7754dd4958185062ba8e0bc28d6579}{real3}} $>$ \mbox{\hyperlink{a00463_a4b7cc0ad0002975404acef5064f4f546}{Check\+Children}} (const \mbox{\hyperlink{a00463_a8f7754dd4958185062ba8e0bc28d6579}{real3}} \&parent, const std\+::vector$<$ \mbox{\hyperlink{a00463_a8f7754dd4958185062ba8e0bc28d6579}{real3}} $>$ \&possible\+\_\+children, \mbox{\hyperlink{a00463_aef833458d20e4569c73f409b52d03bee}{Ray\+Tracer}} \&rt, const \mbox{\hyperlink{a00463_a01303}{Graph\+Params}} \&params)
 \begin{DoxyCompactList}\small\item\em Determine whether children are over valid ground, and and meet upstep/downstep requirements. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{a00465_af0378d900074d484ba791d4317e5935e}{HF\+::\+Spatial\+Structures\+::\+STEP}} \mbox{\hyperlink{a00463_a260a25e02193ce904849ee090daefa2e}{Check\+Connection}} (const \mbox{\hyperlink{a00463_a8f7754dd4958185062ba8e0bc28d6579}{real3}} \&parent, const \mbox{\hyperlink{a00463_a8f7754dd4958185062ba8e0bc28d6579}{real3}} \&child, \mbox{\hyperlink{a00463_aef833458d20e4569c73f409b52d03bee}{Ray\+Tracer}} \&rt)
+\begin{DoxyCompactList}\small\item\em Determine what kind of step (if any) is between parent and child, given that a connection was verified using the graph generator. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{a00465_af0378d900074d484ba791d4317e5935e}{HF\+::\+Spatial\+Structures\+::\+STEP}} \mbox{\hyperlink{a00463_aeab1db37b5aa614235f109d5dd9711a9}{Check\+Connection}} (const \mbox{\hyperlink{a00463_a8f7754dd4958185062ba8e0bc28d6579}{real3}} \&parent, const \mbox{\hyperlink{a00463_a8f7754dd4958185062ba8e0bc28d6579}{real3}} \&child, \mbox{\hyperlink{a00463_aef833458d20e4569c73f409b52d03bee}{Ray\+Tracer}} \&rt, const \mbox{\hyperlink{a00463_a01303}{Graph\+Params}} \&params)
 \begin{DoxyCompactList}\small\item\em Determine what kind of step (if any) is between parent and child. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{a01535}{HF\+::\+Spatial\+Structures\+::\+Edge\+Set}} \mbox{\hyperlink{a00463_a176c58b25fb5cb545d17128d4535f921}{Calculate\+Step\+Type}} (const \mbox{\hyperlink{a00465_a01543}{HF\+::\+Spatial\+Structures\+::\+Subgraph}} \&sg, \mbox{\hyperlink{a01419}{HF\+::\+Ray\+Tracer\+::\+Multi\+RT}} \&rt)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{a01535}{HF\+::\+Spatial\+Structures\+::\+Edge\+Set}} $>$ \mbox{\hyperlink{a00463_a81398de53e151ae58b206523e555309e}{Calculate\+Step\+Type}} (const \mbox{\hyperlink{a01551}{HF\+::\+Spatial\+Structures\+::\+Graph}} \&g, \mbox{\hyperlink{a01419}{HF\+::\+Ray\+Tracer\+::\+Multi\+RT}} \&rt)
+\item 
+void \mbox{\hyperlink{a00463_a0251caf5a32eb2c1f9d846d88eb7fe22}{Calculate\+And\+Store\+Step\+Type}} (\mbox{\hyperlink{a01551}{HF\+::\+Spatial\+Structures\+::\+Graph}} \&g, \mbox{\hyperlink{a01419}{HF\+::\+Ray\+Tracer\+::\+Multi\+RT}} \&rt)
+\item 
+bool \mbox{\hyperlink{a00463_a5d2ad6de2131b1a90a80f901ac8dd185}{Compare\+Check\+Connections}} (\mbox{\hyperlink{a01551}{HF\+::\+Spatial\+Structures\+::\+Graph}} \&g, \mbox{\hyperlink{a00463_aef833458d20e4569c73f409b52d03bee}{Ray\+Tracer}} \&rt, const \mbox{\hyperlink{a00463_a01303}{Graph\+Params}} \&params, std\+::vector$<$ \mbox{\hyperlink{a01535}{HF\+::\+Spatial\+Structures\+::\+Edge\+Set}} $>$ to\+\_\+compare)
+\item 
 bool \mbox{\hyperlink{a00463_ace66c1b60785c32433402f012019ab81}{Occlusion\+Check}} (const \mbox{\hyperlink{a00463_a8f7754dd4958185062ba8e0bc28d6579}{real3}} \&parent, const \mbox{\hyperlink{a00463_a8f7754dd4958185062ba8e0bc28d6579}{real3}} \&child, \mbox{\hyperlink{a00463_aef833458d20e4569c73f409b52d03bee}{Ray\+Tracer}} \&RT)
 \begin{DoxyCompactList}\small\item\em Determine if there is a valid line of sight between parent and child. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{a00463_a9daa85cb56a1b18d44f46aa9c420afde}{Check\+Slope}} (const \mbox{\hyperlink{a00463_a8f7754dd4958185062ba8e0bc28d6579}{real3}} \&parent, const \mbox{\hyperlink{a00463_a8f7754dd4958185062ba8e0bc28d6579}{real3}} \&child, const \mbox{\hyperlink{a00463_a01303}{Graph\+Params}} \&gp)
@@ -129,18 +139,12 @@ All arguments are in meters for distances and degrees for angles unless otherwis
 \doxysubsubsection{struct HF\+::Graph\+Generator\+::Graph\+Params}
 Holds parameters for the \mbox{\hyperlink{a01311}{Graph\+Generator}}. 
 
-Definition at line \mbox{\hyperlink{a00008_source_l00255}{255}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
+Definition at line \mbox{\hyperlink{a00008_source_l00258}{258}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
 
 
 
 Collaboration diagram for HF\+::Graph\+Generator\+::Graph\+Params\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a01301}
-\end{center}
-\end{figure}
+% FIG 0
 \begin{DoxyFields}{Class Members}
 \mbox{\Hypertarget{a00463_a7c141d33285a77c81fc1b9ce0b210d72}\label{a00463_a7c141d33285a77c81fc1b9ce0b210d72}} 
 \mbox{\hyperlink{a00463_a6d9d3b43eebc7f05a36e6264eb08bb5a}{real\_t}}&
@@ -184,18 +188,12 @@ Maximum height of a step the graph can traverse.\+Any steps higher this will be 
 \doxysubsubsection{struct HF\+::Graph\+Generator\+::Precision}
 Various parameters to set the precision of certain parts of the graph generator. 
 
-Definition at line \mbox{\hyperlink{a00008_source_l00111}{111}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
+Definition at line \mbox{\hyperlink{a00008_source_l00114}{114}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
 
 
 
 Collaboration diagram for HF\+::Graph\+Generator\+::Precision\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=193pt]{a01293}
-\end{center}
-\end{figure}
+% FIG 1
 \begin{DoxyFields}{Class Members}
 \mbox{\Hypertarget{a00463_a4fa4f096863296469711e52da4b36b9c}\label{a00463_a4fa4f096863296469711e52da4b36b9c}} 
 \mbox{\hyperlink{a00463_a6d9d3b43eebc7f05a36e6264eb08bb5a}{real\_t}}&
@@ -231,7 +229,7 @@ Type of edge for the graph generator to use internally.
 
 
 
-Definition at line \mbox{\hyperlink{a00008_source_l00075}{75}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
+Definition at line \mbox{\hyperlink{a00008_source_l00078}{78}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
 
 \mbox{\Hypertarget{a00463_adacfd76227db1d19cad7c15a8dde7330}\label{a00463_adacfd76227db1d19cad7c15a8dde7330}} 
 \index{HF::GraphGenerator@{HF::GraphGenerator}!hashmap@{hashmap}}
@@ -245,7 +243,7 @@ Hashmap used for assigning and storing hitflags for IDs.
 
 
 
-Definition at line \mbox{\hyperlink{a00008_source_l00134}{134}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
+Definition at line \mbox{\hyperlink{a00008_source_l00137}{137}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
 
 \mbox{\Hypertarget{a00463_ab618c832ef23d48d9f4ea9d9e46116dc}\label{a00463_ab618c832ef23d48d9f4ea9d9e46116dc}} 
 \index{HF::GraphGenerator@{HF::GraphGenerator}!pair@{pair}}
@@ -259,7 +257,7 @@ Type for Directions to be stored as.
 
 
 
-Definition at line \mbox{\hyperlink{a00008_source_l00082}{82}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
+Definition at line \mbox{\hyperlink{a00008_source_l00085}{85}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
 
 \mbox{\Hypertarget{a00463_aef833458d20e4569c73f409b52d03bee}\label{a00463_aef833458d20e4569c73f409b52d03bee}} 
 \index{HF::GraphGenerator@{HF::GraphGenerator}!RayTracer@{RayTracer}}
@@ -273,7 +271,7 @@ Type of raytracer to be used internally.
 
 
 
-Definition at line \mbox{\hyperlink{a00008_source_l00081}{81}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
+Definition at line \mbox{\hyperlink{a00008_source_l00084}{84}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
 
 \mbox{\Hypertarget{a00463_a8f7754dd4958185062ba8e0bc28d6579}\label{a00463_a8f7754dd4958185062ba8e0bc28d6579}} 
 \index{HF::GraphGenerator@{HF::GraphGenerator}!real3@{real3}}
@@ -287,7 +285,7 @@ Type used for the standard coordinate set of the graph generator.
 
 
 
-Definition at line \mbox{\hyperlink{a00008_source_l00074}{74}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
+Definition at line \mbox{\hyperlink{a00008_source_l00077}{77}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
 
 \mbox{\Hypertarget{a00463_a6d9d3b43eebc7f05a36e6264eb08bb5a}\label{a00463_a6d9d3b43eebc7f05a36e6264eb08bb5a}} 
 \index{HF::GraphGenerator@{HF::GraphGenerator}!real\_t@{real\_t}}
@@ -301,7 +299,7 @@ Internal decimal type of the graph generator.
 
 
 
-Definition at line \mbox{\hyperlink{a00008_source_l00073}{73}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
+Definition at line \mbox{\hyperlink{a00008_source_l00076}{76}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
 
 
 
@@ -335,7 +333,7 @@ OBSTACLES\+\_\+\+AND\+\_\+\+FLOORS&Explicitly tag geometry ids as either obstacl
 \end{DoxyEnumFields}
 
 
-Definition at line \mbox{\hyperlink{a00008_source_l00144}{144}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
+Definition at line \mbox{\hyperlink{a00008_source_l00147}{147}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
 
 \mbox{\Hypertarget{a00463_a6180d5bc4bbfa9a5a426089e1f1ad598}\label{a00463_a6180d5bc4bbfa9a5a426089e1f1ad598}} 
 \index{HF::GraphGenerator@{HF::GraphGenerator}!HIT\_FLAG@{HIT\_FLAG}}
@@ -370,11 +368,65 @@ BOTH&Collide with floors and obstacles. \\
 \end{DoxyEnumFields}
 
 
-Definition at line \mbox{\hyperlink{a00008_source_l00123}{123}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
+Definition at line \mbox{\hyperlink{a00008_source_l00126}{126}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
 
 
 
 \doxysubsection{Function Documentation}
+\mbox{\Hypertarget{a00463_a0251caf5a32eb2c1f9d846d88eb7fe22}\label{a00463_a0251caf5a32eb2c1f9d846d88eb7fe22}} 
+\index{HF::GraphGenerator@{HF::GraphGenerator}!CalculateAndStoreStepType@{CalculateAndStoreStepType}}
+\index{CalculateAndStoreStepType@{CalculateAndStoreStepType}!HF::GraphGenerator@{HF::GraphGenerator}}
+\doxysubsubsection{\texorpdfstring{CalculateAndStoreStepType()}{CalculateAndStoreStepType()}}
+{\footnotesize\ttfamily void HF\+::\+Graph\+Generator\+::\+Calculate\+And\+Store\+Step\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{a01551}{HF\+::\+Spatial\+Structures\+::\+Graph}} \&}]{g,  }\item[{\mbox{\hyperlink{a01419}{HF\+::\+Ray\+Tracer\+::\+Multi\+RT}} \&}]{rt }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{a00011_source_l00372}{372}} of file \mbox{\hyperlink{a00011_source}{graph\+\_\+utils.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{a01551_a6f04c5320d4bf88120f8c5e31b0fb02a}{HF\+::\+Spatial\+Structures\+::\+Graph\+::\+Add\+Edges()}}, \mbox{\hyperlink{a00011_source_l00303}{Calculate\+Step\+Type()}}, and \mbox{\hyperlink{a01551_a41cece77d0eee98df39ecc6d3a366ec8}{HF\+::\+Spatial\+Structures\+::\+Graph\+::\+Compress()}}.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{a00463_a81398de53e151ae58b206523e555309e}\label{a00463_a81398de53e151ae58b206523e555309e}} 
+\index{HF::GraphGenerator@{HF::GraphGenerator}!CalculateStepType@{CalculateStepType}}
+\index{CalculateStepType@{CalculateStepType}!HF::GraphGenerator@{HF::GraphGenerator}}
+\doxysubsubsection{\texorpdfstring{CalculateStepType()}{CalculateStepType()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{a01535}{HF\+::\+Spatial\+Structures\+::\+Edge\+Set}} $>$ HF\+::\+Graph\+Generator\+::\+Calculate\+Step\+Type (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{a01551}{HF\+::\+Spatial\+Structures\+::\+Graph}} \&}]{g,  }\item[{\mbox{\hyperlink{a01419}{HF\+::\+Ray\+Tracer\+::\+Multi\+RT}} \&}]{rt }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{a00011_source_l00351}{351}} of file \mbox{\hyperlink{a00011_source}{graph\+\_\+utils.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{a00011_source_l00303}{Calculate\+Step\+Type()}}, \mbox{\hyperlink{a01551_a89250c619a726fd0adbd71778d166887}{HF\+::\+Spatial\+Structures\+::\+Graph\+::\+Get\+Subgraph()}}, and \mbox{\hyperlink{a01551_aa70347b8a33b57c6f0a72d6eca4248d7}{HF\+::\+Spatial\+Structures\+::\+Graph\+::\+Nodes()}}.
+
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{a00463_a176c58b25fb5cb545d17128d4535f921}\label{a00463_a176c58b25fb5cb545d17128d4535f921}} 
+\index{HF::GraphGenerator@{HF::GraphGenerator}!CalculateStepType@{CalculateStepType}}
+\index{CalculateStepType@{CalculateStepType}!HF::GraphGenerator@{HF::GraphGenerator}}
+\doxysubsubsection{\texorpdfstring{CalculateStepType()}{CalculateStepType()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{a01535}{HF\+::\+Spatial\+Structures\+::\+Edge\+Set}} HF\+::\+Graph\+Generator\+::\+Calculate\+Step\+Type (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{a00465_a01543}{HF\+::\+Spatial\+Structures\+::\+Subgraph}} \&}]{sg,  }\item[{\mbox{\hyperlink{a01419}{HF\+::\+Ray\+Tracer\+::\+Multi\+RT}} \&}]{rt }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{a00011_source_l00303}{303}} of file \mbox{\hyperlink{a00011_source}{graph\+\_\+utils.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{a00008_source_l00094}{Cast\+To\+Real()}}, \mbox{\hyperlink{a00008_source_l00107}{Cast\+To\+Real3()}}, \mbox{\hyperlink{a00011_source_l00385}{Check\+Connection()}}, \mbox{\hyperlink{a00263_source_l00059}{HF\+::\+Spatial\+Structures\+::\+Int\+Edge\+::child}}, \mbox{\hyperlink{a00275_source_l00042}{HF\+::\+Spatial\+Structures\+::\+Node\+::id}}, \mbox{\hyperlink{a00269_source_l00367}{HF\+::\+Spatial\+Structures\+::\+Subgraph\+::m\+\_\+edges}}, \mbox{\hyperlink{a00269_source_l00366}{HF\+::\+Spatial\+Structures\+::\+Subgraph\+::m\+\_\+parent}}, \mbox{\hyperlink{a00275_source_l00040}{HF\+::\+Spatial\+Structures\+::\+Node\+::x}}, \mbox{\hyperlink{a00275_source_l00040}{HF\+::\+Spatial\+Structures\+::\+Node\+::y}}, and \mbox{\hyperlink{a00275_source_l00040}{HF\+::\+Spatial\+Structures\+::\+Node\+::z}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00011_source_l00372}{Calculate\+And\+Store\+Step\+Type()}}, \mbox{\hyperlink{a00404_source_l00109}{Calculate\+And\+Store\+Step\+Types()}}, and \mbox{\hyperlink{a00011_source_l00351}{Calculate\+Step\+Type()}}.
+
+Here is the call graph for this function\+:
+% FIG 4
+Here is the caller graph for this function\+:
+% FIG 5
 \mbox{\Hypertarget{a00463_a73b53db067a504d36e9481dfe3326b60}\label{a00463_a73b53db067a504d36e9481dfe3326b60}} 
 \index{HF::GraphGenerator@{HF::GraphGenerator}!CastToReal@{CastToReal}}
 \index{CastToReal@{CastToReal}!HF::GraphGenerator@{HF::GraphGenerator}}
@@ -394,20 +446,14 @@ Just a convience function. Same as static\+\_\+cast$<$real\+\_\+t$>$(t)
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{a00008_source_l00091}{91}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
+Definition at line \mbox{\hyperlink{a00008_source_l00094}{94}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
 
 
 
-Referenced by \mbox{\hyperlink{a00008_source_l00464}{HF\+::\+Graph\+Generator\+::\+Graph\+Generator\+::\+Build\+Network()}}, and \mbox{\hyperlink{a00008_source_l00104}{Cast\+To\+Real3()}}.
+Referenced by \mbox{\hyperlink{a00008_source_l00467}{HF\+::\+Graph\+Generator\+::\+Graph\+Generator\+::\+Build\+Network()}}, \mbox{\hyperlink{a00011_source_l00303}{Calculate\+Step\+Type()}}, \mbox{\hyperlink{a00008_source_l00107}{Cast\+To\+Real3()}}, and \mbox{\hyperlink{a00011_source_l00508}{Compare\+Check\+Connections()}}.
 
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a00463_a73b53db067a504d36e9481dfe3326b60_icgraph}
-\end{center}
-\end{figure}
+% FIG 6
 \mbox{\Hypertarget{a00463_a58892abe1152c28d26d3ca749c99ea4d}\label{a00463_a58892abe1152c28d26d3ca749c99ea4d}} 
 \index{HF::GraphGenerator@{HF::GraphGenerator}!CastToReal3@{CastToReal3}}
 \index{CastToReal3@{CastToReal3}!HF::GraphGenerator@{HF::GraphGenerator}}
@@ -434,32 +480,20 @@ A real3 containing the x,y,z coordinates of {\ttfamily t}
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{a00008_source_l00104}{104}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
+Definition at line \mbox{\hyperlink{a00008_source_l00107}{107}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
 
 
 
-References \mbox{\hyperlink{a00008_source_l00091}{Cast\+To\+Real()}}.
+References \mbox{\hyperlink{a00008_source_l00094}{Cast\+To\+Real()}}.
 
 
 
-Referenced by \mbox{\hyperlink{a00008_source_l00464}{HF\+::\+Graph\+Generator\+::\+Graph\+Generator\+::\+Build\+Network()}}, \mbox{\hyperlink{a00005_source_l00222}{HF\+::\+Graph\+Generator\+::\+Graph\+Generator\+::\+Crawl\+Geom()}}, and \mbox{\hyperlink{a00005_source_l00141}{HF\+::\+Graph\+Generator\+::\+Graph\+Generator\+::\+Crawl\+Geom\+Parallel()}}.
+Referenced by \mbox{\hyperlink{a00008_source_l00467}{HF\+::\+Graph\+Generator\+::\+Graph\+Generator\+::\+Build\+Network()}}, \mbox{\hyperlink{a00011_source_l00303}{Calculate\+Step\+Type()}}, \mbox{\hyperlink{a00011_source_l00508}{Compare\+Check\+Connections()}}, \mbox{\hyperlink{a00005_source_l00222}{HF\+::\+Graph\+Generator\+::\+Graph\+Generator\+::\+Crawl\+Geom()}}, and \mbox{\hyperlink{a00005_source_l00141}{HF\+::\+Graph\+Generator\+::\+Graph\+Generator\+::\+Crawl\+Geom\+Parallel()}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=324pt]{a00463_a58892abe1152c28d26d3ca749c99ea4d_cgraph}
-\end{center}
-\end{figure}
+% FIG 7
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a00463_a58892abe1152c28d26d3ca749c99ea4d_icgraph}
-\end{center}
-\end{figure}
+% FIG 8
 \mbox{\Hypertarget{a00463_a4b7cc0ad0002975404acef5064f4f546}\label{a00463_a4b7cc0ad0002975404acef5064f4f546}} 
 \index{HF::GraphGenerator@{HF::GraphGenerator}!CheckChildren@{CheckChildren}}
 \index{CheckChildren@{CheckChildren}!HF::GraphGenerator@{HF::GraphGenerator}}
@@ -516,7 +550,8 @@ An array of children from {\ttfamily possible\+\_\+children} that are over valid
 \DoxyCodeLine{    params.\mbox{\hyperlink{a00463_af7a57e8e6b17f86ac29a8df2685e56c1}{precision}}.\mbox{\hyperlink{a00463_a4fa4f096863296469711e52da4b36b9c}{ground\_offset}} = 0.01f;}
 \DoxyCodeLine{}
 \DoxyCodeLine{    \textcolor{comment}{// Call CheckChildren }}
-\DoxyCodeLine{    \textcolor{keyword}{auto} valid\_children = \mbox{\hyperlink{a00463_a4b7cc0ad0002975404acef5064f4f546}{HF::GraphGenerator::CheckChildren}}(parent, possible\_children, \mbox{\hyperlink{a01419}{HF::RayTracer::MultiRT}}(\&ray\_tracer), params);}
+\DoxyCodeLine{    \mbox{\hyperlink{a01419}{HF::RayTracer::MultiRT}} multi\_rt(\&ray\_tracer);}
+\DoxyCodeLine{    \textcolor{keyword}{auto} valid\_children = \mbox{\hyperlink{a00463_a4b7cc0ad0002975404acef5064f4f546}{HF::GraphGenerator::CheckChildren}}(parent, possible\_children, multi\_rt, params);}
 \DoxyCodeLine{}
 \DoxyCodeLine{    \textcolor{comment}{// Print children}}
 \DoxyCodeLine{    std::ostringstream out\_str;}
@@ -536,32 +571,111 @@ Definition at line \mbox{\hyperlink{a00011_source_l00248}{248}} of file \mbox{\h
 
 
 
-References \mbox{\hyperlink{a00011_source_l00146}{Check\+Ray()}}, \mbox{\hyperlink{a00011_source_l00013}{down}}, \mbox{\hyperlink{a00008_source_l00258}{HF\+::\+Graph\+Generator\+::\+Graph\+Params\+::down\+\_\+step}}, \mbox{\hyperlink{a00008_source_l00127}{FLOORS}}, \mbox{\hyperlink{a00008_source_l00261}{HF\+::\+Graph\+Generator\+::\+Graph\+Params\+::geom\+\_\+ids}}, \mbox{\hyperlink{a00008_source_l00112}{HF\+::\+Graph\+Generator\+::\+Precision\+::node\+\_\+z}}, \mbox{\hyperlink{a00008_source_l00260}{HF\+::\+Graph\+Generator\+::\+Graph\+Params\+::precision}}, \mbox{\hyperlink{a00008_source_l00282}{HF\+::\+Graph\+Generator\+::optional\+\_\+real3\+::pt}}, and \mbox{\hyperlink{a00008_source_l00256}{HF\+::\+Graph\+Generator\+::\+Graph\+Params\+::up\+\_\+step}}.
+References \mbox{\hyperlink{a00011_source_l00146}{Check\+Ray()}}, \mbox{\hyperlink{a00011_source_l00013}{down}}, \mbox{\hyperlink{a00008_source_l00261}{HF\+::\+Graph\+Generator\+::\+Graph\+Params\+::down\+\_\+step}}, \mbox{\hyperlink{a00008_source_l00130}{FLOORS}}, \mbox{\hyperlink{a00008_source_l00264}{HF\+::\+Graph\+Generator\+::\+Graph\+Params\+::geom\+\_\+ids}}, \mbox{\hyperlink{a00008_source_l00115}{HF\+::\+Graph\+Generator\+::\+Precision\+::node\+\_\+z}}, \mbox{\hyperlink{a00008_source_l00263}{HF\+::\+Graph\+Generator\+::\+Graph\+Params\+::precision}}, \mbox{\hyperlink{a00008_source_l00285}{HF\+::\+Graph\+Generator\+::optional\+\_\+real3\+::pt}}, and \mbox{\hyperlink{a00008_source_l00259}{HF\+::\+Graph\+Generator\+::\+Graph\+Params\+::up\+\_\+step}}.
 
 
 
 Referenced by \mbox{\hyperlink{a00011_source_l00218}{Get\+Children()}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a00463_a4b7cc0ad0002975404acef5064f4f546_cgraph}
-\end{center}
-\end{figure}
+% FIG 9
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a00463_a4b7cc0ad0002975404acef5064f4f546_icgraph}
-\end{center}
-\end{figure}
+% FIG 10
+\mbox{\Hypertarget{a00463_a260a25e02193ce904849ee090daefa2e}\label{a00463_a260a25e02193ce904849ee090daefa2e}} 
+\index{HF::GraphGenerator@{HF::GraphGenerator}!CheckConnection@{CheckConnection}}
+\index{CheckConnection@{CheckConnection}!HF::GraphGenerator@{HF::GraphGenerator}}
+\doxysubsubsection{\texorpdfstring{CheckConnection()}{CheckConnection()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{a00465_af0378d900074d484ba791d4317e5935e}{HF\+::\+Spatial\+Structures\+::\+STEP}} HF\+::\+Graph\+Generator\+::\+Check\+Connection (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{a00463_a8f7754dd4958185062ba8e0bc28d6579}{real3}} \&}]{parent,  }\item[{const \mbox{\hyperlink{a00463_a8f7754dd4958185062ba8e0bc28d6579}{real3}} \&}]{child,  }\item[{\mbox{\hyperlink{a00463_aef833458d20e4569c73f409b52d03bee}{Ray\+Tracer}} \&}]{rt }\end{DoxyParamCaption})}
+
+
+
+Determine what kind of step (if any) is between parent and child, given that a connection was verified using the graph generator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Node being traversed from \\
+\hline
+{\em child} & Node being traversed to \\
+\hline
+{\em rt} & Raytracer to use for all ray intersections\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The type of step between parent/child.
+\end{DoxyReturn}
+\begin{DoxyParagraph}{Example}
+
+\begin{DoxyCodeInclude}{0}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{comment}{// Load an OBJ containing a simple plane}}
+\DoxyCodeLine{    \textcolor{keyword}{auto} mesh = \mbox{\hyperlink{a00469_a06c0c11adb62f8b204e42f75ac1990ac}{HF::Geometry::LoadMeshObjects}}(\textcolor{stringliteral}{"{}plane.obj"{}}, \mbox{\hyperlink{a00469_aa9f0bc5275641fe23f6a7d760751bbc5a1f09cac4eec7512c5db99bd1c050ee1e}{HF::Geometry::ONLY\_FILE}}, \textcolor{keyword}{true});}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{comment}{// Create a raytracer using this obj}}
+\DoxyCodeLine{    EmbreeRayTracer ray\_tracer = \mbox{\hyperlink{a01411}{HF::RayTracer::EmbreeRayTracer}}(mesh);}
+\DoxyCodeLine{    }
+
+\end{DoxyCodeInclude}
+ 
+\begin{DoxyCodeInclude}{0}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{// Create a parent node}}
+\DoxyCodeLine{    \mbox{\hyperlink{a00463_a8f7754dd4958185062ba8e0bc28d6579}{HF::GraphGenerator::real3}} parent\{ 0,0,1 \};}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{// Create a vector of possible children}}
+\DoxyCodeLine{    std::vector<HF::GraphGenerator::real3> possible\_children\{}
+\DoxyCodeLine{        \mbox{\hyperlink{a00463_a8f7754dd4958185062ba8e0bc28d6579}{HF::GraphGenerator::real3}}\{0,2,0\}, \mbox{\hyperlink{a00463_a8f7754dd4958185062ba8e0bc28d6579}{HF::GraphGenerator::real3}}\{1,0,0\},}
+\DoxyCodeLine{        \mbox{\hyperlink{a00463_a8f7754dd4958185062ba8e0bc28d6579}{HF::GraphGenerator::real3}}\{0,1,0\}, \mbox{\hyperlink{a00463_a8f7754dd4958185062ba8e0bc28d6579}{HF::GraphGenerator::real3}}\{2,0,0\}}
+\DoxyCodeLine{    \};}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{// Create graph parameters}}
+\DoxyCodeLine{    \mbox{\hyperlink{a00463_a01303}{HF::GraphGenerator::GraphParams}} params;}
+\DoxyCodeLine{    params.\mbox{\hyperlink{a00463_a0b8afc5f531e3286ce2434b1bc2b1f50}{up\_step}} = 2; params.\mbox{\hyperlink{a00463_add2b6fa6bf77a8c4626a1e6d0559970f}{down\_step}} = 2;}
+\DoxyCodeLine{    params.\mbox{\hyperlink{a00463_add7f080950668f5dfa8d857e9c66b89d}{up\_slope}} = 45; params.\mbox{\hyperlink{a00463_a7c141d33285a77c81fc1b9ce0b210d72}{down\_slope}} = 45;}
+\DoxyCodeLine{    params.\mbox{\hyperlink{a00463_af7a57e8e6b17f86ac29a8df2685e56c1}{precision}}.\mbox{\hyperlink{a00463_a6ec86cb69c1cc0e0dc8ea229310939b6}{node\_z}} = 0.01f;}
+\DoxyCodeLine{    params.\mbox{\hyperlink{a00463_af7a57e8e6b17f86ac29a8df2685e56c1}{precision}}.\mbox{\hyperlink{a00463_a4fa4f096863296469711e52da4b36b9c}{ground\_offset}} = 0.01f;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{// Loop through potential children call each one with check connection}}
+\DoxyCodeLine{    std::vector<HF::SpatialStructures::STEP> connections;}
+\DoxyCodeLine{    \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \textcolor{keyword}{auto}\& child : possible\_children)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \mbox{\hyperlink{a01419}{HF::RayTracer::MultiRT}} multi\_rt(\&ray\_tracer);}
+\DoxyCodeLine{        connections.push\_back(\mbox{\hyperlink{a00463_a260a25e02193ce904849ee090daefa2e}{HF::GraphGenerator::CheckConnection}}(parent, child, multi\_rt, params));}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{// Print children}}
+\DoxyCodeLine{    std::ostringstream out\_str;}
+\DoxyCodeLine{    out\_str << \textcolor{stringliteral}{"{}["{}};}
+\DoxyCodeLine{    \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < connections.size(); i++)}
+\DoxyCodeLine{        out\_str << connections[i] << ((i != connections.size() -\/ 1) ? \textcolor{stringliteral}{"{},"{}} : \textcolor{stringliteral}{"{}]"{}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{// In the output, 0s indicate no connection, while 1s indicate that nodes are on a flat plane}}
+\DoxyCodeLine{    \textcolor{comment}{// with no step between them. }}
+\DoxyCodeLine{    std::cout << out\_str.str() << std::endl;}
+\DoxyCodeLine{}
+
+\end{DoxyCodeInclude}
+ {\ttfamily \mbox{[}1,0,0,1\mbox{]}} 
+\end{DoxyParagraph}
+
+
+Definition at line \mbox{\hyperlink{a00011_source_l00385}{385}} of file \mbox{\hyperlink{a00011_source}{graph\+\_\+utils.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{a00011_source_l00283}{Occlusion\+Check()}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00011_source_l00303}{Calculate\+Step\+Type()}}, \mbox{\hyperlink{a00011_source_l00508}{Compare\+Check\+Connections()}}, and \mbox{\hyperlink{a00011_source_l00218}{Get\+Children()}}.
+
+Here is the call graph for this function\+:
+% FIG 11
+Here is the caller graph for this function\+:
+% FIG 12
 \mbox{\Hypertarget{a00463_aeab1db37b5aa614235f109d5dd9711a9}\label{a00463_aeab1db37b5aa614235f109d5dd9711a9}} 
 \index{HF::GraphGenerator@{HF::GraphGenerator}!CheckConnection@{CheckConnection}}
 \index{CheckConnection@{CheckConnection}!HF::GraphGenerator@{HF::GraphGenerator}}
-\doxysubsubsection{\texorpdfstring{CheckConnection()}{CheckConnection()}}
+\doxysubsubsection{\texorpdfstring{CheckConnection()}{CheckConnection()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \mbox{\hyperlink{a00465_af0378d900074d484ba791d4317e5935e}{HF\+::\+Spatial\+Structures\+::\+STEP}} HF\+::\+Graph\+Generator\+::\+Check\+Connection (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{a00463_a8f7754dd4958185062ba8e0bc28d6579}{real3}} \&}]{parent,  }\item[{const \mbox{\hyperlink{a00463_a8f7754dd4958185062ba8e0bc28d6579}{real3}} \&}]{child,  }\item[{\mbox{\hyperlink{a00463_aef833458d20e4569c73f409b52d03bee}{Ray\+Tracer}} \&}]{rt,  }\item[{const \mbox{\hyperlink{a00463_a01303}{Graph\+Params}} \&}]{params }\end{DoxyParamCaption})}
 
 
@@ -616,8 +730,10 @@ The type of step between parent/child or NO\+\_\+\+CONNECTION if no connection c
 \DoxyCodeLine{    \textcolor{comment}{// Loop through potential children call each one with check connection}}
 \DoxyCodeLine{    std::vector<HF::SpatialStructures::STEP> connections;}
 \DoxyCodeLine{    \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \textcolor{keyword}{auto}\& child : possible\_children)}
-\DoxyCodeLine{        connections.push\_back(\mbox{\hyperlink{a00463_aeab1db37b5aa614235f109d5dd9711a9}{HF::GraphGenerator::CheckConnection}}(parent, child, \mbox{\hyperlink{a01419}{HF::RayTracer::MultiRT}}(\&ray\_tracer), params));}
-\DoxyCodeLine{        }
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \mbox{\hyperlink{a01419}{HF::RayTracer::MultiRT}} multi\_rt(\&ray\_tracer);}
+\DoxyCodeLine{        connections.push\_back(\mbox{\hyperlink{a00463_a260a25e02193ce904849ee090daefa2e}{HF::GraphGenerator::CheckConnection}}(parent, child, multi\_rt, params));}
+\DoxyCodeLine{    \}}
 \DoxyCodeLine{}
 \DoxyCodeLine{    \textcolor{comment}{// Print children}}
 \DoxyCodeLine{    std::ostringstream out\_str;}
@@ -635,32 +751,14 @@ The type of step between parent/child or NO\+\_\+\+CONNECTION if no connection c
 \end{DoxyParagraph}
 
 
-Definition at line \mbox{\hyperlink{a00011_source_l00303}{303}} of file \mbox{\hyperlink{a00011_source}{graph\+\_\+utils.\+cpp}}.
+Definition at line \mbox{\hyperlink{a00011_source_l00430}{430}} of file \mbox{\hyperlink{a00011_source}{graph\+\_\+utils.\+cpp}}.
 
 
 
-References \mbox{\hyperlink{a00011_source_l00290}{Check\+Slope()}}, \mbox{\hyperlink{a00008_source_l00258}{HF\+::\+Graph\+Generator\+::\+Graph\+Params\+::down\+\_\+step}}, \mbox{\hyperlink{a00008_source_l00114}{HF\+::\+Graph\+Generator\+::\+Precision\+::ground\+\_\+offset}}, \mbox{\hyperlink{a00011_source_l00283}{Occlusion\+Check()}}, \mbox{\hyperlink{a00008_source_l00260}{HF\+::\+Graph\+Generator\+::\+Graph\+Params\+::precision}}, and \mbox{\hyperlink{a00008_source_l00256}{HF\+::\+Graph\+Generator\+::\+Graph\+Params\+::up\+\_\+step}}.
-
-
-
-Referenced by \mbox{\hyperlink{a00011_source_l00218}{Get\+Children()}}.
+References \mbox{\hyperlink{a00011_source_l00290}{Check\+Slope()}}, \mbox{\hyperlink{a00008_source_l00261}{HF\+::\+Graph\+Generator\+::\+Graph\+Params\+::down\+\_\+step}}, \mbox{\hyperlink{a00008_source_l00117}{HF\+::\+Graph\+Generator\+::\+Precision\+::ground\+\_\+offset}}, \mbox{\hyperlink{a00011_source_l00283}{Occlusion\+Check()}}, \mbox{\hyperlink{a00008_source_l00263}{HF\+::\+Graph\+Generator\+::\+Graph\+Params\+::precision}}, and \mbox{\hyperlink{a00008_source_l00259}{HF\+::\+Graph\+Generator\+::\+Graph\+Params\+::up\+\_\+step}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a00463_aeab1db37b5aa614235f109d5dd9711a9_cgraph}
-\end{center}
-\end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a00463_aeab1db37b5aa614235f109d5dd9711a9_icgraph}
-\end{center}
-\end{figure}
+% FIG 13
 \mbox{\Hypertarget{a00463_ab731d597ee2a843f7b7cb1ccbae67782}\label{a00463_ab731d597ee2a843f7b7cb1ccbae67782}} 
 \index{HF::GraphGenerator@{HF::GraphGenerator}!CheckGeometryID@{CheckGeometryID}}
 \index{CheckGeometryID@{CheckGeometryID}!HF::GraphGenerator@{HF::GraphGenerator}}
@@ -692,20 +790,14 @@ Definition at line \mbox{\hyperlink{a00011_source_l00126}{126}} of file \mbox{\h
 
 
 
-References \mbox{\hyperlink{a00463_af86d7be7ec8351dfc26ab5c11f727207abd38aa552d58d6dee7dc932c374f0e04}{ALL\+\_\+\+INTERSECTIONS}}, \mbox{\hyperlink{a00008_source_l00131}{BOTH}}, \mbox{\hyperlink{a00008_source_l00189}{HF\+::\+Graph\+Generator\+::\+Geometry\+Flag\+Map\+::\+Mode}}, \mbox{\hyperlink{a00008_source_l00129}{OBSTACLES}}, \mbox{\hyperlink{a00463_af86d7be7ec8351dfc26ab5c11f727207adb49be99500731a1909db6bcf395d27f}{OBSTACLES\+\_\+\+AND\+\_\+\+FLOORS}}, and \mbox{\hyperlink{a00463_af86d7be7ec8351dfc26ab5c11f727207ac78656cbac82f2af0177cfe76dd1aa12}{OBSTACLES\+\_\+\+ONLY}}.
+References \mbox{\hyperlink{a00463_af86d7be7ec8351dfc26ab5c11f727207abd38aa552d58d6dee7dc932c374f0e04}{ALL\+\_\+\+INTERSECTIONS}}, \mbox{\hyperlink{a00008_source_l00134}{BOTH}}, \mbox{\hyperlink{a00008_source_l00192}{HF\+::\+Graph\+Generator\+::\+Geometry\+Flag\+Map\+::\+Mode}}, \mbox{\hyperlink{a00008_source_l00132}{OBSTACLES}}, \mbox{\hyperlink{a00463_af86d7be7ec8351dfc26ab5c11f727207adb49be99500731a1909db6bcf395d27f}{OBSTACLES\+\_\+\+AND\+\_\+\+FLOORS}}, and \mbox{\hyperlink{a00463_af86d7be7ec8351dfc26ab5c11f727207ac78656cbac82f2af0177cfe76dd1aa12}{OBSTACLES\+\_\+\+ONLY}}.
 
 
 
 Referenced by \mbox{\hyperlink{a00011_source_l00146}{Check\+Ray()}}.
 
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a00463_ab731d597ee2a843f7b7cb1ccbae67782_icgraph}
-\end{center}
-\end{figure}
+% FIG 14
 \mbox{\Hypertarget{a00463_a74be560268a713fc9e9b8b4a453afa2f}\label{a00463_a74be560268a713fc9e9b8b4a453afa2f}} 
 \index{HF::GraphGenerator@{HF::GraphGenerator}!CheckRay@{CheckRay}}
 \index{CheckRay@{CheckRay}!HF::GraphGenerator@{HF::GraphGenerator}}
@@ -758,8 +850,9 @@ An invalid \mbox{\hyperlink{a01307}{optional\+\_\+real3}} if the ray did not int
 \DoxyCodeLine{    \mbox{\hyperlink{a00463_a8f7754dd4958185062ba8e0bc28d6579}{HF::GraphGenerator::real3}} direction\{0,0,-\/1\};}
 \DoxyCodeLine{}
 \DoxyCodeLine{    \textcolor{comment}{// Call CheckRay and capture the result}}
+\DoxyCodeLine{    \mbox{\hyperlink{a01419}{HF::RayTracer::MultiRT}} multi\_rt(\&ray\_tracer);}
 \DoxyCodeLine{    \mbox{\hyperlink{a01307}{HF::GraphGenerator::optional\_real3}} result = \mbox{\hyperlink{a00463_a74be560268a713fc9e9b8b4a453afa2f}{HF::GraphGenerator::CheckRay}}(}
-\DoxyCodeLine{        \mbox{\hyperlink{a01419}{HF::RayTracer::MultiRT}}(\&ray\_tracer), start\_point, direction, node\_z);}
+\DoxyCodeLine{        multi\_rt, start\_point, direction, node\_z);}
 \DoxyCodeLine{}
 \DoxyCodeLine{    \textcolor{comment}{// If the ray intersected, print it}}
 \DoxyCodeLine{    \textcolor{keywordflow}{if} (result)}
@@ -782,28 +875,16 @@ Definition at line \mbox{\hyperlink{a00011_source_l00146}{146}} of file \mbox{\h
 
 
 
-References \mbox{\hyperlink{a00011_source_l00126}{Check\+Geometry\+ID()}}, \mbox{\hyperlink{a00218_source_l00017}{HF\+::\+Ray\+Tracer\+::\+Hit\+Struct$<$ numeric\+\_\+type $>$\+::\+Did\+Hit()}}, \mbox{\hyperlink{a00218_source_l00008}{HF\+::\+Ray\+Tracer\+::\+Hit\+Struct$<$ numeric\+\_\+type $>$\+::distance}}, \mbox{\hyperlink{a00221_source_l00040}{HF\+::\+Ray\+Tracer\+::\+Multi\+RT\+::\+Intersect()}}, \mbox{\hyperlink{a00218_source_l00009}{HF\+::\+Ray\+Tracer\+::\+Hit\+Struct$<$ numeric\+\_\+type $>$\+::meshid}}, \mbox{\hyperlink{a00008_source_l00731}{Move\+Node()}}, and \mbox{\hyperlink{a00008_source_l00282}{HF\+::\+Graph\+Generator\+::optional\+\_\+real3\+::pt}}.
+References \mbox{\hyperlink{a00011_source_l00126}{Check\+Geometry\+ID()}}, \mbox{\hyperlink{a00218_source_l00018}{HF\+::\+Ray\+Tracer\+::\+Hit\+Struct$<$ numeric\+\_\+type $>$\+::\+Did\+Hit()}}, \mbox{\hyperlink{a00218_source_l00009}{HF\+::\+Ray\+Tracer\+::\+Hit\+Struct$<$ numeric\+\_\+type $>$\+::distance}}, \mbox{\hyperlink{a00221_source_l00040}{HF\+::\+Ray\+Tracer\+::\+Multi\+RT\+::\+Intersect()}}, \mbox{\hyperlink{a00218_source_l00010}{HF\+::\+Ray\+Tracer\+::\+Hit\+Struct$<$ numeric\+\_\+type $>$\+::meshid}}, \mbox{\hyperlink{a00008_source_l00734}{Move\+Node()}}, and \mbox{\hyperlink{a00008_source_l00285}{HF\+::\+Graph\+Generator\+::optional\+\_\+real3\+::pt}}.
 
 
 
 Referenced by \mbox{\hyperlink{a00011_source_l00248}{Check\+Children()}}, and \mbox{\hyperlink{a00011_source_l00107}{Validate\+Start\+Point()}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a00463_a74be560268a713fc9e9b8b4a453afa2f_cgraph}
-\end{center}
-\end{figure}
+% FIG 15
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a00463_a74be560268a713fc9e9b8b4a453afa2f_icgraph}
-\end{center}
-\end{figure}
+% FIG 16
 \mbox{\Hypertarget{a00463_a9daa85cb56a1b18d44f46aa9c420afde}\label{a00463_a9daa85cb56a1b18d44f46aa9c420afde}} 
 \index{HF::GraphGenerator@{HF::GraphGenerator}!CheckSlope@{CheckSlope}}
 \index{CheckSlope@{CheckSlope}!HF::GraphGenerator@{HF::GraphGenerator}}
@@ -858,20 +939,30 @@ Definition at line \mbox{\hyperlink{a00011_source_l00290}{290}} of file \mbox{\h
 
 
 
-References \mbox{\hyperlink{a00008_source_l00259}{HF\+::\+Graph\+Generator\+::\+Graph\+Params\+::down\+\_\+slope}}, and \mbox{\hyperlink{a00008_source_l00257}{HF\+::\+Graph\+Generator\+::\+Graph\+Params\+::up\+\_\+slope}}.
+References \mbox{\hyperlink{a00008_source_l00262}{HF\+::\+Graph\+Generator\+::\+Graph\+Params\+::down\+\_\+slope}}, and \mbox{\hyperlink{a00008_source_l00260}{HF\+::\+Graph\+Generator\+::\+Graph\+Params\+::up\+\_\+slope}}.
 
 
 
-Referenced by \mbox{\hyperlink{a00011_source_l00303}{Check\+Connection()}}.
+Referenced by \mbox{\hyperlink{a00011_source_l00430}{Check\+Connection()}}.
 
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a00463_a9daa85cb56a1b18d44f46aa9c420afde_icgraph}
-\end{center}
-\end{figure}
+% FIG 17
+\mbox{\Hypertarget{a00463_a5d2ad6de2131b1a90a80f901ac8dd185}\label{a00463_a5d2ad6de2131b1a90a80f901ac8dd185}} 
+\index{HF::GraphGenerator@{HF::GraphGenerator}!CompareCheckConnections@{CompareCheckConnections}}
+\index{CompareCheckConnections@{CompareCheckConnections}!HF::GraphGenerator@{HF::GraphGenerator}}
+\doxysubsubsection{\texorpdfstring{CompareCheckConnections()}{CompareCheckConnections()}}
+{\footnotesize\ttfamily bool HF\+::\+Graph\+Generator\+::\+Compare\+Check\+Connections (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{a01551}{HF\+::\+Spatial\+Structures\+::\+Graph}} \&}]{g,  }\item[{\mbox{\hyperlink{a00463_aef833458d20e4569c73f409b52d03bee}{Ray\+Tracer}} \&}]{rt,  }\item[{const \mbox{\hyperlink{a00463_a01303}{Graph\+Params}} \&}]{params,  }\item[{std\+::vector$<$ \mbox{\hyperlink{a01535}{HF\+::\+Spatial\+Structures\+::\+Edge\+Set}} $>$}]{to\+\_\+compare }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{a00011_source_l00508}{508}} of file \mbox{\hyperlink{a00011_source}{graph\+\_\+utils.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{a00008_source_l00094}{Cast\+To\+Real()}}, \mbox{\hyperlink{a00008_source_l00107}{Cast\+To\+Real3()}}, \mbox{\hyperlink{a00011_source_l00385}{Check\+Connection()}}, \mbox{\hyperlink{a01551_a794c342603cefb342fdc698ba539b25f}{HF\+::\+Spatial\+Structures\+::\+Graph\+::\+Node\+From\+ID()}}, \mbox{\hyperlink{a01551_aa70347b8a33b57c6f0a72d6eca4248d7}{HF\+::\+Spatial\+Structures\+::\+Graph\+::\+Nodes()}}, \mbox{\hyperlink{a00275_source_l00040}{HF\+::\+Spatial\+Structures\+::\+Node\+::x}}, \mbox{\hyperlink{a00275_source_l00040}{HF\+::\+Spatial\+Structures\+::\+Node\+::y}}, and \mbox{\hyperlink{a00275_source_l00040}{HF\+::\+Spatial\+Structures\+::\+Node\+::z}}.
+
+Here is the call graph for this function\+:
+% FIG 18
 \mbox{\Hypertarget{a00463_aefd344ebb2faadc64a56a16dc8582026}\label{a00463_aefd344ebb2faadc64a56a16dc8582026}} 
 \index{HF::GraphGenerator@{HF::GraphGenerator}!CreateDirecs@{CreateDirecs}}
 \index{CreateDirecs@{CreateDirecs}!HF::GraphGenerator@{HF::GraphGenerator}}
@@ -927,21 +1018,9 @@ References \mbox{\hyperlink{a00011_source_l00101}{init\+\_\+directs}}, and \mbox
 Referenced by \mbox{\hyperlink{a00005_source_l00222}{HF\+::\+Graph\+Generator\+::\+Graph\+Generator\+::\+Crawl\+Geom()}}, and \mbox{\hyperlink{a00005_source_l00141}{HF\+::\+Graph\+Generator\+::\+Graph\+Generator\+::\+Crawl\+Geom\+Parallel()}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=324pt]{a00463_aefd344ebb2faadc64a56a16dc8582026_cgraph}
-\end{center}
-\end{figure}
+% FIG 19
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a00463_aefd344ebb2faadc64a56a16dc8582026_icgraph}
-\end{center}
-\end{figure}
+% FIG 20
 \mbox{\Hypertarget{a00463_a750afc15c798c79a8b6a0784ed092f3c}\label{a00463_a750afc15c798c79a8b6a0784ed092f3c}} 
 \index{HF::GraphGenerator@{HF::GraphGenerator}!DirectionTo@{DirectionTo}}
 \index{DirectionTo@{DirectionTo}!HF::GraphGenerator@{HF::GraphGenerator}}
@@ -981,21 +1060,9 @@ References \mbox{\hyperlink{a00011_source_l00068}{Normalize()}}.
 Referenced by \mbox{\hyperlink{a00011_source_l00283}{Occlusion\+Check()}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=324pt]{a00463_a750afc15c798c79a8b6a0784ed092f3c_cgraph}
-\end{center}
-\end{figure}
+% FIG 21
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a00463_a750afc15c798c79a8b6a0784ed092f3c_icgraph}
-\end{center}
-\end{figure}
+% FIG 22
 \mbox{\Hypertarget{a00463_a7f96186b8f24f878404d1feccf2f64db}\label{a00463_a7f96186b8f24f878404d1feccf2f64db}} 
 \index{HF::GraphGenerator@{HF::GraphGenerator}!DistanceTo@{DistanceTo}}
 \index{DistanceTo@{DistanceTo}!HF::GraphGenerator@{HF::GraphGenerator}}
@@ -1033,13 +1100,7 @@ Definition at line \mbox{\hyperlink{a00011_source_l00054}{54}} of file \mbox{\hy
 Referenced by \mbox{\hyperlink{a00011_source_l00218}{Get\+Children()}}, and \mbox{\hyperlink{a00011_source_l00283}{Occlusion\+Check()}}.
 
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a00463_a7f96186b8f24f878404d1feccf2f64db_icgraph}
-\end{center}
-\end{figure}
+% FIG 23
 \mbox{\Hypertarget{a00463_a41e03f9bab54e4e0d1314c6a4bdf2ec1}\label{a00463_a41e03f9bab54e4e0d1314c6a4bdf2ec1}} 
 \index{HF::GraphGenerator@{HF::GraphGenerator}!GeneratePotentialChildren@{GeneratePotentialChildren}}
 \index{GeneratePotentialChildren@{GeneratePotentialChildren}!HF::GraphGenerator@{HF::GraphGenerator}}
@@ -1103,24 +1164,18 @@ An array of children offset from parent by spacing and directions.
 \end{DoxyParagraph}
 
 
-Definition at line \mbox{\hyperlink{a00011_source_l00381}{381}} of file \mbox{\hyperlink{a00011_source}{graph\+\_\+utils.\+cpp}}.
+Definition at line \mbox{\hyperlink{a00011_source_l00544}{544}} of file \mbox{\hyperlink{a00011_source}{graph\+\_\+utils.\+cpp}}.
 
 
 
-References \mbox{\hyperlink{a00008_source_l00113}{HF\+::\+Graph\+Generator\+::\+Precision\+::node\+\_\+spacing}}, \mbox{\hyperlink{a00008_source_l00112}{HF\+::\+Graph\+Generator\+::\+Precision\+::node\+\_\+z}}, and \mbox{\hyperlink{a00008_source_l00260}{HF\+::\+Graph\+Generator\+::\+Graph\+Params\+::precision}}.
+References \mbox{\hyperlink{a00008_source_l00116}{HF\+::\+Graph\+Generator\+::\+Precision\+::node\+\_\+spacing}}, \mbox{\hyperlink{a00008_source_l00115}{HF\+::\+Graph\+Generator\+::\+Precision\+::node\+\_\+z}}, and \mbox{\hyperlink{a00008_source_l00263}{HF\+::\+Graph\+Generator\+::\+Graph\+Params\+::precision}}.
 
 
 
 Referenced by \mbox{\hyperlink{a00005_source_l00222}{HF\+::\+Graph\+Generator\+::\+Graph\+Generator\+::\+Crawl\+Geom()}}, and \mbox{\hyperlink{a00005_source_l00141}{HF\+::\+Graph\+Generator\+::\+Graph\+Generator\+::\+Crawl\+Geom\+Parallel()}}.
 
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a00463_a41e03f9bab54e4e0d1314c6a4bdf2ec1_icgraph}
-\end{center}
-\end{figure}
+% FIG 24
 \mbox{\Hypertarget{a00463_ab7ffcc7d6657ce276c06deed24c546a4}\label{a00463_ab7ffcc7d6657ce276c06deed24c546a4}} 
 \index{HF::GraphGenerator@{HF::GraphGenerator}!GetChildren@{GetChildren}}
 \index{GetChildren@{GetChildren}!HF::GraphGenerator@{HF::GraphGenerator}}
@@ -1180,7 +1235,8 @@ An array of all edges that could be created between parent and possible\+\_\+chi
 \DoxyCodeLine{    params.\mbox{\hyperlink{a00463_af7a57e8e6b17f86ac29a8df2685e56c1}{precision}}.\mbox{\hyperlink{a00463_a4fa4f096863296469711e52da4b36b9c}{ground\_offset}} = 0.01f;}
 \DoxyCodeLine{}
 \DoxyCodeLine{    \textcolor{comment}{// Call GetChildren}}
-\DoxyCodeLine{    \textcolor{keyword}{auto} edges = \mbox{\hyperlink{a00463_ab7ffcc7d6657ce276c06deed24c546a4}{HF::GraphGenerator::GetChildren}}(parent, possible\_children, \mbox{\hyperlink{a01419}{HF::RayTracer::MultiRT}}(\&ray\_tracer), params);}
+\DoxyCodeLine{    \mbox{\hyperlink{a01419}{HF::RayTracer::MultiRT}} multi\_rt(\&ray\_tracer);}
+\DoxyCodeLine{    \textcolor{keyword}{auto} edges = \mbox{\hyperlink{a00463_ab7ffcc7d6657ce276c06deed24c546a4}{HF::GraphGenerator::GetChildren}}(parent, possible\_children, multi\_rt, params);}
 \DoxyCodeLine{}
 \DoxyCodeLine{    \textcolor{comment}{// Print children}}
 \DoxyCodeLine{    std::ostringstream out\_str;}
@@ -1200,28 +1256,16 @@ Definition at line \mbox{\hyperlink{a00011_source_l00218}{218}} of file \mbox{\h
 
 
 
-References \mbox{\hyperlink{a00011_source_l00248}{Check\+Children()}}, \mbox{\hyperlink{a00011_source_l00303}{Check\+Connection()}}, \mbox{\hyperlink{a00011_source_l00054}{Distance\+To()}}, and \mbox{\hyperlink{a00011_source_l00036}{To\+Node()}}.
+References \mbox{\hyperlink{a00011_source_l00248}{Check\+Children()}}, \mbox{\hyperlink{a00011_source_l00385}{Check\+Connection()}}, \mbox{\hyperlink{a00011_source_l00054}{Distance\+To()}}, and \mbox{\hyperlink{a00011_source_l00036}{To\+Node()}}.
 
 
 
 Referenced by \mbox{\hyperlink{a00005_source_l00222}{HF\+::\+Graph\+Generator\+::\+Graph\+Generator\+::\+Crawl\+Geom()}}, and \mbox{\hyperlink{a00005_source_l00141}{HF\+::\+Graph\+Generator\+::\+Graph\+Generator\+::\+Crawl\+Geom\+Parallel()}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a00463_ab7ffcc7d6657ce276c06deed24c546a4_cgraph}
-\end{center}
-\end{figure}
+% FIG 25
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a00463_ab7ffcc7d6657ce276c06deed24c546a4_icgraph}
-\end{center}
-\end{figure}
+% FIG 26
 \mbox{\Hypertarget{a00463_a5ad3e8fac4a21eee744f3633f7a3692f}\label{a00463_a5ad3e8fac4a21eee744f3633f7a3692f}} 
 \index{HF::GraphGenerator@{HF::GraphGenerator}!MoveNode@{MoveNode}}
 \index{MoveNode@{MoveNode}!HF::GraphGenerator@{HF::GraphGenerator}}
@@ -1254,20 +1298,14 @@ Node\textquotesingle{}s members at \mbox{[}0\mbox{]}, \mbox{[}1\mbox{]}, \mbox{[
 \end{DoxyPostcond}
 
 
-Definition at line \mbox{\hyperlink{a00008_source_l00731}{731}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
+Definition at line \mbox{\hyperlink{a00008_source_l00734}{734}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
 
 
 
 Referenced by \mbox{\hyperlink{a00011_source_l00146}{Check\+Ray()}}.
 
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a00463_a5ad3e8fac4a21eee744f3633f7a3692f_icgraph}
-\end{center}
-\end{figure}
+% FIG 27
 \mbox{\Hypertarget{a00463_ad2e09e0825a1db4fc511907179eddf00}\label{a00463_ad2e09e0825a1db4fc511907179eddf00}} 
 \index{HF::GraphGenerator@{HF::GraphGenerator}!Normalize@{Normalize}}
 \index{Normalize@{Normalize}!HF::GraphGenerator@{HF::GraphGenerator}}
@@ -1301,13 +1339,7 @@ Definition at line \mbox{\hyperlink{a00011_source_l00068}{68}} of file \mbox{\hy
 Referenced by \mbox{\hyperlink{a00011_source_l00088}{Direction\+To()}}.
 
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a00463_ad2e09e0825a1db4fc511907179eddf00_icgraph}
-\end{center}
-\end{figure}
+% FIG 28
 \mbox{\Hypertarget{a00463_ace66c1b60785c32433402f012019ab81}\label{a00463_ace66c1b60785c32433402f012019ab81}} 
 \index{HF::GraphGenerator@{HF::GraphGenerator}!OcclusionCheck@{OcclusionCheck}}
 \index{OcclusionCheck@{OcclusionCheck}!HF::GraphGenerator@{HF::GraphGenerator}}
@@ -1356,8 +1388,10 @@ Determine if there is a valid line of sight between parent and child.
 \DoxyCodeLine{    \mbox{\hyperlink{a00463_a8f7754dd4958185062ba8e0bc28d6579}{HF::GraphGenerator::real3}} child\_2\{ 0,0,1 \};}
 \DoxyCodeLine{}
 \DoxyCodeLine{    \textcolor{comment}{// Perform slope checks}}
-\DoxyCodeLine{    \textcolor{keywordtype}{bool} occlusion\_check\_child\_1 = \mbox{\hyperlink{a00463_ace66c1b60785c32433402f012019ab81}{HF::GraphGenerator::OcclusionCheck}}(parent, child\_1, \mbox{\hyperlink{a01419}{HF::RayTracer::MultiRT}}(\&ray\_tracer));}
-\DoxyCodeLine{    \textcolor{keywordtype}{bool} occlusion\_check\_child\_2= \mbox{\hyperlink{a00463_ace66c1b60785c32433402f012019ab81}{HF::GraphGenerator::OcclusionCheck}}(parent, child\_2, \mbox{\hyperlink{a01419}{HF::RayTracer::MultiRT}}(\&ray\_tracer));}
+\DoxyCodeLine{    \mbox{\hyperlink{a01419}{HF::RayTracer::MultiRT}} multi\_rt1(\&ray\_tracer);}
+\DoxyCodeLine{    \mbox{\hyperlink{a01419}{HF::RayTracer::MultiRT}} multi\_rt2(\&ray\_tracer);}
+\DoxyCodeLine{    \textcolor{keywordtype}{bool} occlusion\_check\_child\_1 = \mbox{\hyperlink{a00463_ace66c1b60785c32433402f012019ab81}{HF::GraphGenerator::OcclusionCheck}}(parent, child\_1, multi\_rt1);}
+\DoxyCodeLine{    \textcolor{keywordtype}{bool} occlusion\_check\_child\_2= \mbox{\hyperlink{a00463_ace66c1b60785c32433402f012019ab81}{HF::GraphGenerator::OcclusionCheck}}(parent, child\_2, multi\_rt2);}
 \DoxyCodeLine{}
 \DoxyCodeLine{    std::cout << \textcolor{stringliteral}{"{}Occlusion Check For Child 1 = "{}} << (occlusion\_check\_child\_1 ? \textcolor{stringliteral}{"{}True"{}} : \textcolor{stringliteral}{"{}False"{}}) << std::endl;}
 \DoxyCodeLine{    std::cout << \textcolor{stringliteral}{"{}Occlusion Check For Child 2 = "{}} << (occlusion\_check\_child\_2 ? \textcolor{stringliteral}{"{}True"{}} : \textcolor{stringliteral}{"{}False"{}}) << std::endl;}
@@ -1375,24 +1409,12 @@ References \mbox{\hyperlink{a00011_source_l00088}{Direction\+To()}}, \mbox{\hype
 
 
 
-Referenced by \mbox{\hyperlink{a00011_source_l00303}{Check\+Connection()}}.
+Referenced by \mbox{\hyperlink{a00011_source_l00385}{Check\+Connection()}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a00463_ace66c1b60785c32433402f012019ab81_cgraph}
-\end{center}
-\end{figure}
+% FIG 29
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a00463_ace66c1b60785c32433402f012019ab81_icgraph}
-\end{center}
-\end{figure}
+% FIG 30
 \mbox{\Hypertarget{a00463_afe5670b4cb780fd3ccf2a0d72a2e3c2e}\label{a00463_afe5670b4cb780fd3ccf2a0d72a2e3c2e}} 
 \index{HF::GraphGenerator@{HF::GraphGenerator}!permutations@{permutations}}
 \index{permutations@{permutations}!HF::GraphGenerator@{HF::GraphGenerator}}
@@ -1420,13 +1442,7 @@ Definition at line \mbox{\hyperlink{a00011_source_l00180}{180}} of file \mbox{\h
 Referenced by \mbox{\hyperlink{a00011_source_l00201}{Create\+Direcs()}}.
 
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a00463_afe5670b4cb780fd3ccf2a0d72a2e3c2e_icgraph}
-\end{center}
-\end{figure}
+% FIG 31
 \mbox{\Hypertarget{a00463_af8cc1a7a794699308cf5c46d3ae59491}\label{a00463_af8cc1a7a794699308cf5c46d3ae59491}} 
 \index{HF::GraphGenerator@{HF::GraphGenerator}!SetupCoreCount@{SetupCoreCount}}
 \index{SetupCoreCount@{SetupCoreCount}!HF::GraphGenerator@{HF::GraphGenerator}}
@@ -1451,13 +1467,7 @@ Definition at line \mbox{\hyperlink{a00005_source_l00035}{35}} of file \mbox{\hy
 Referenced by \mbox{\hyperlink{a00005_source_l00069}{HF\+::\+Graph\+Generator\+::\+Graph\+Generator\+::\+IMPL\+\_\+\+Build\+Network()}}.
 
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a00463_af8cc1a7a794699308cf5c46d3ae59491_icgraph}
-\end{center}
-\end{figure}
+% FIG 32
 \mbox{\Hypertarget{a00463_a124a96c53ed2021db9d819369fe6b7ad}\label{a00463_a124a96c53ed2021db9d819369fe6b7ad}} 
 \index{HF::GraphGenerator@{HF::GraphGenerator}!setupRT@{setupRT}}
 \index{setupRT@{setupRT}!HF::GraphGenerator@{HF::GraphGenerator}}
@@ -1487,16 +1497,10 @@ Definition at line \mbox{\hyperlink{a00005_source_l00050}{50}} of file \mbox{\hy
 
 
 
-References \mbox{\hyperlink{a00008_source_l00261}{HF\+::\+Graph\+Generator\+::\+Graph\+Params\+::geom\+\_\+ids}}, \mbox{\hyperlink{a00008_source_l00354}{HF\+::\+Graph\+Generator\+::\+Graph\+Generator\+::params}}, \mbox{\hyperlink{a00008_source_l00356}{HF\+::\+Graph\+Generator\+::\+Graph\+Generator\+::ray\+\_\+tracer}}, and \mbox{\hyperlink{a00008_source_l00200}{HF\+::\+Graph\+Generator\+::\+Geometry\+Flag\+Map\+::\+Set\+Geometry\+Ids()}}.
+References \mbox{\hyperlink{a00008_source_l00264}{HF\+::\+Graph\+Generator\+::\+Graph\+Params\+::geom\+\_\+ids}}, \mbox{\hyperlink{a00008_source_l00357}{HF\+::\+Graph\+Generator\+::\+Graph\+Generator\+::params}}, \mbox{\hyperlink{a00008_source_l00359}{HF\+::\+Graph\+Generator\+::\+Graph\+Generator\+::ray\+\_\+tracer}}, and \mbox{\hyperlink{a00008_source_l00203}{HF\+::\+Graph\+Generator\+::\+Geometry\+Flag\+Map\+::\+Set\+Geometry\+Ids()}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a00463_a124a96c53ed2021db9d819369fe6b7ad_cgraph}
-\end{center}
-\end{figure}
+% FIG 33
 \mbox{\Hypertarget{a00463_abf1a3ae7dc89b3cf430e059a87fcd477}\label{a00463_abf1a3ae7dc89b3cf430e059a87fcd477}} 
 \index{HF::GraphGenerator@{HF::GraphGenerator}!ToNode@{ToNode}}
 \index{ToNode@{ToNode}!HF::GraphGenerator@{HF::GraphGenerator}}
@@ -1530,13 +1534,7 @@ Definition at line \mbox{\hyperlink{a00011_source_l00036}{36}} of file \mbox{\hy
 Referenced by \mbox{\hyperlink{a00011_source_l00218}{Get\+Children()}}.
 
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a00463_abf1a3ae7dc89b3cf430e059a87fcd477_icgraph}
-\end{center}
-\end{figure}
+% FIG 34
 \mbox{\Hypertarget{a00463_a9ddffecb75b34434d7157b49d3c67b60}\label{a00463_a9ddffecb75b34434d7157b49d3c67b60}} 
 \index{HF::GraphGenerator@{HF::GraphGenerator}!ValidateStartPoint@{ValidateStartPoint}}
 \index{ValidateStartPoint@{ValidateStartPoint}!HF::GraphGenerator@{HF::GraphGenerator}}
@@ -1588,8 +1586,9 @@ An invalid \mbox{\hyperlink{a01307}{optional\+\_\+real3}} if the check failed, o
 \DoxyCodeLine{    \mbox{\hyperlink{a00463_a8f7754dd4958185062ba8e0bc28d6579}{HF::GraphGenerator::real3}} start\_point\{ 0,0,10 \};}
 \DoxyCodeLine{}
 \DoxyCodeLine{    \textcolor{comment}{// Call ValidateStartPoint}}
+\DoxyCodeLine{    \mbox{\hyperlink{a01419}{HF::RayTracer::MultiRT}} multi\_rt(\&ray\_tracer);}
 \DoxyCodeLine{    \mbox{\hyperlink{a01307}{HF::GraphGenerator::optional\_real3}} result = \mbox{\hyperlink{a00463_a9ddffecb75b34434d7157b49d3c67b60}{HF::GraphGenerator::ValidateStartPoint}}(}
-\DoxyCodeLine{        \mbox{\hyperlink{a01419}{HF::RayTracer::MultiRT}}(\&ray\_tracer), start\_point, params}
+\DoxyCodeLine{        multi\_rt, start\_point, params}
 \DoxyCodeLine{    );}
 \DoxyCodeLine{}
 \DoxyCodeLine{    \textcolor{comment}{// If the ray intersected, print the result}}
@@ -1613,28 +1612,16 @@ Definition at line \mbox{\hyperlink{a00011_source_l00107}{107}} of file \mbox{\h
 
 
 
-References \mbox{\hyperlink{a00011_source_l00146}{Check\+Ray()}}, \mbox{\hyperlink{a00011_source_l00013}{down}}, \mbox{\hyperlink{a00008_source_l00127}{FLOORS}}, \mbox{\hyperlink{a00008_source_l00261}{HF\+::\+Graph\+Generator\+::\+Graph\+Params\+::geom\+\_\+ids}}, \mbox{\hyperlink{a00008_source_l00112}{HF\+::\+Graph\+Generator\+::\+Precision\+::node\+\_\+z}}, and \mbox{\hyperlink{a00008_source_l00260}{HF\+::\+Graph\+Generator\+::\+Graph\+Params\+::precision}}.
+References \mbox{\hyperlink{a00011_source_l00146}{Check\+Ray()}}, \mbox{\hyperlink{a00011_source_l00013}{down}}, \mbox{\hyperlink{a00008_source_l00130}{FLOORS}}, \mbox{\hyperlink{a00008_source_l00264}{HF\+::\+Graph\+Generator\+::\+Graph\+Params\+::geom\+\_\+ids}}, \mbox{\hyperlink{a00008_source_l00115}{HF\+::\+Graph\+Generator\+::\+Precision\+::node\+\_\+z}}, and \mbox{\hyperlink{a00008_source_l00263}{HF\+::\+Graph\+Generator\+::\+Graph\+Params\+::precision}}.
 
 
 
 Referenced by \mbox{\hyperlink{a00005_source_l00069}{HF\+::\+Graph\+Generator\+::\+Graph\+Generator\+::\+IMPL\+\_\+\+Build\+Network()}}.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a00463_a9ddffecb75b34434d7157b49d3c67b60_cgraph}
-\end{center}
-\end{figure}
+% FIG 35
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a00463_a9ddffecb75b34434d7157b49d3c67b60_icgraph}
-\end{center}
-\end{figure}
+% FIG 36
 
 
 \doxysubsection{Variable Documentation}
@@ -1646,7 +1633,7 @@ Here is the caller graph for this function\+:
 
 
 
-Definition at line \mbox{\hyperlink{a00008_source_l00078}{78}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
+Definition at line \mbox{\hyperlink{a00008_source_l00081}{81}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
 
 \mbox{\Hypertarget{a00463_a361fb70f3e88bb239a59900c9e21b5ac}\label{a00463_a361fb70f3e88bb239a59900c9e21b5ac}} 
 \index{HF::GraphGenerator@{HF::GraphGenerator}!default\_spacing\_precision@{default\_spacing\_precision}}
@@ -1656,7 +1643,7 @@ Definition at line \mbox{\hyperlink{a00008_source_l00078}{78}} of file \mbox{\hy
 
 
 
-Definition at line \mbox{\hyperlink{a00008_source_l00079}{79}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
+Definition at line \mbox{\hyperlink{a00008_source_l00082}{82}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
 
 \mbox{\Hypertarget{a00463_ad1ee2b33ac4982f6f4c4263946bf9e6b}\label{a00463_ad1ee2b33ac4982f6f4c4263946bf9e6b}} 
 \index{HF::GraphGenerator@{HF::GraphGenerator}!default\_z\_precision@{default\_z\_precision}}
@@ -1666,7 +1653,7 @@ Definition at line \mbox{\hyperlink{a00008_source_l00079}{79}} of file \mbox{\hy
 
 
 
-Definition at line \mbox{\hyperlink{a00008_source_l00077}{77}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
+Definition at line \mbox{\hyperlink{a00008_source_l00080}{80}} of file \mbox{\hyperlink{a00008_source}{graph\+\_\+generator.\+h}}.
 
 \mbox{\Hypertarget{a00463_a986887183de94b00a1b8b05572da8767}\label{a00463_a986887183de94b00a1b8b05572da8767}} 
 \index{HF::GraphGenerator@{HF::GraphGenerator}!down@{down}}

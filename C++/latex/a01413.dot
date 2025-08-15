@@ -1,0 +1,12 @@
+digraph "HF::RayTracer::HitStruct&lt; numeric_type &gt;"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="HF::RayTracer::HitStruct\l\< numeric_type \>",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="A simple hit struct to carry all relevant information about hits."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" distance" ];
+  Node2 [label="double",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$a00001.html#a02139",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" meshid" ];
+  Node3 [label="int",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+}

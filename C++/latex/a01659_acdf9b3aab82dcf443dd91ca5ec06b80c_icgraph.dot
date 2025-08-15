@@ -1,0 +1,20 @@
+digraph "nlohmann::basic_json::find"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="nlohmann::basic_json\l::find",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="find an element in a JSON object"];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="nlohmann::basic_json\l::diff",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01659.html#a1c1f21327df91a4dd6c5f5a107240385",tooltip="creates a diff as a JSON patch"];
+  Node2 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node1 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="nlohmann::basic_json\l::patch",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01659.html#adcc786998f220a5b3083ee8a37c4553e",tooltip="applies a JSON patch"];
+  Node1 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="nlohmann::basic_json\l::value",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01659.html#a11641b35219676b225d9bd15c7677659",tooltip="access specified object element with default value"];
+  Node4 -> Node5 [dir="back",color="steelblue1",style="solid"];
+  Node5 [label="nlohmann::basic_json\l::json_value::json_value",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a02059.html#ad7f122fa9bfc5aa4d9b65a3059892146",tooltip="constructor for strings"];
+  Node4 -> Node6 [dir="back",color="steelblue1",style="solid"];
+  Node6 [label="nlohmann::basic_json\l::value",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01659.html#adcfdefe95d5c2471a5c97e911d46ee88",tooltip="overload for a default value of type const char*"];
+}

@@ -113,12 +113,12 @@ $(document).ready(function(){initNavTree('a02083.html',''); initResizable(); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a61a8a911a572d91683229a80ede5f541"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02083.html#a61a8a911a572d91683229a80ede5f541">Path::Path</a> ()</td></tr>
-<tr class="memdesc:a61a8a911a572d91683229a80ede5f541"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an empty path.  <a href="a02083.html#a61a8a911a572d91683229a80ede5f541">More...</a><br /></td></tr>
-<tr class="separator:a61a8a911a572d91683229a80ede5f541"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d38f5fb939535a26e10ea2a969b2333"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02083.html#a6d38f5fb939535a26e10ea2a969b2333">Path::Path</a> (const std::vector&lt; <a class="el" href="a02079.html">PathMember</a> &gt; &amp;pm)</td></tr>
-<tr class="memdesc:a6d38f5fb939535a26e10ea2a969b2333"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a path from an ordered list of PathMembers.   <a href="a02083.html#a6d38f5fb939535a26e10ea2a969b2333">More...</a><br /></td></tr>
-<tr class="separator:a6d38f5fb939535a26e10ea2a969b2333"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a149e399da7720d11fa0fc3a5cb4d6700"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02083.html#a149e399da7720d11fa0fc3a5cb4d6700">Path</a> ()</td></tr>
+<tr class="memdesc:a149e399da7720d11fa0fc3a5cb4d6700"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an empty path.  <a href="a02083.html#a149e399da7720d11fa0fc3a5cb4d6700">More...</a><br /></td></tr>
+<tr class="separator:a149e399da7720d11fa0fc3a5cb4d6700"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a3658b6f2fe18df24a96d4cf16ceb5a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02083.html#a7a3658b6f2fe18df24a96d4cf16ceb5a">Path</a> (const std::vector&lt; <a class="el" href="a02079.html">PathMember</a> &gt; &amp;pm)</td></tr>
+<tr class="memdesc:a7a3658b6f2fe18df24a96d4cf16ceb5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a path from an ordered list of PathMembers.   <a href="a02083.html#a7a3658b6f2fe18df24a96d4cf16ceb5a">More...</a><br /></td></tr>
+<tr class="separator:a7a3658b6f2fe18df24a96d4cf16ceb5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55ded4e02787eb739770ebe28ef386a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02083.html#a55ded4e02787eb739770ebe28ef386a9">AddNode</a> (int node, float cost)</td></tr>
 <tr class="memdesc:a55ded4e02787eb739770ebe28ef386a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new node to the path.  <a href="a02083.html#a55ded4e02787eb739770ebe28ef386a9">More...</a><br /></td></tr>
 <tr class="separator:a55ded4e02787eb739770ebe28ef386a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,7 +151,80 @@ Public Attributes</h2></td></tr>
 <div class="textblock"><p >A collection of nodes that form a path.  </p>
 
 <p class="definition">Definition at line <a class="el" href="a00281_source.html#l00076">76</a> of file <a class="el" href="a00281_source.html">path.h</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a149e399da7720d11fa0fc3a5cb4d6700" name="a149e399da7720d11fa0fc3a5cb4d6700"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a149e399da7720d11fa0fc3a5cb4d6700">&#9670;&#160;</a></span>Path() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HF::SpatialStructures::Path::Path </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct an empty path. </p>
+<div class="fragment"><div class="line"><span class="comment">// be sure to #include &quot;path.h&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><a class="code hl_struct" href="a02083.html">HF::SpatialStructures::Path</a> path;</div>
+<div class="ttc" id="aa02083_html"><div class="ttname"><a href="a02083.html">HF::SpatialStructures::Path</a></div><div class="ttdoc">A collection of nodes that form a path.</div><div class="ttdef"><b>Definition:</b> <a href="a00281_source.html#l00076">path.h:76</a></div></div>
+</div><!-- fragment --> 
+<p class="definition">Definition at line <a class="el" href="a00281_source.html#l00088">88</a> of file <a class="el" href="a00281_source.html">path.h</a>.</p>
+
+</div>
+</div>
+<a id="a7a3658b6f2fe18df24a96d4cf16ceb5a" name="a7a3658b6f2fe18df24a96d4cf16ceb5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a3658b6f2fe18df24a96d4cf16ceb5a">&#9670;&#160;</a></span>Path() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HF::SpatialStructures::Path::Path </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="a02079.html">PathMember</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>pm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct a path from an ordered list of PathMembers.  </p>
+<div class="fragment"><div class="line"><span class="comment">// be sure to #include &quot;path.h&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Create the PathMembers</span></div>
+<div class="line"><a class="code hl_struct" href="a02079.html">HF::SpatialStructures::PathMember</a> p0 = { 3.14f, 3 };</div>
+<div class="line"><a class="code hl_struct" href="a02079.html">HF::SpatialStructures::PathMember</a> p1 = { 2.78f, 2 };</div>
+<div class="line"><a class="code hl_struct" href="a02079.html">HF::SpatialStructures::PathMember</a> p2 = { 1.64f, 1 };</div>
+<div class="line"><a class="code hl_struct" href="a02079.html">HF::SpatialStructures::PathMember</a> p3 = { 9.35, 7 };</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Create the container of PathMembers</span></div>
+<div class="line">std::vector&lt;HF::SpatialStructures::PathMember&gt; <a class="code hl_variable" href="a02083.html#a864cebbf4e5d7c135c501a63d42f8708">members</a>{p0, p1, p2, p3};</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Create the path, using the container of PathMembers</span></div>
+<div class="line"><a class="code hl_struct" href="a02083.html">HF::SpatialStructures::Path</a> path(<a class="code hl_variable" href="a02083.html#a864cebbf4e5d7c135c501a63d42f8708">members</a>);</div>
+<div class="ttc" id="aa02079_html"><div class="ttname"><a href="a02079.html">HF::SpatialStructures::PathMember</a></div><div class="ttdoc">The ID of a node, and the cost cost to the node after it.</div><div class="ttdef"><b>Definition:</b> <a href="a00281_source.html#l00019">path.h:19</a></div></div>
+<div class="ttc" id="aa02083_html_a864cebbf4e5d7c135c501a63d42f8708"><div class="ttname"><a href="a02083.html#a864cebbf4e5d7c135c501a63d42f8708">HF::SpatialStructures::Path::members</a></div><div class="ttdeci">std::vector&lt; PathMember &gt; members</div><div class="ttdoc">Ordered array of PathMembers that comprise the path.</div><div class="ttdef"><b>Definition:</b> <a href="a00281_source.html#l00078">path.h:78</a></div></div>
+</div><!-- fragment --> 
+<p class="definition">Definition at line <a class="el" href="a00278_source.html#l00052">52</a> of file <a class="el" href="a00278_source.html">path.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="a00281_source.html#l00078">members</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a55ded4e02787eb739770ebe28ef386a9" name="a55ded4e02787eb739770ebe28ef386a9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a55ded4e02787eb739770ebe28ef386a9">&#9670;&#160;</a></span>AddNode()</h2>
 
@@ -205,9 +278,6 @@ Public Attributes</h2></td></tr>
 <div class="line">path.AddNode(node_id, cost);    <span class="comment">// A PathMember is constructed within AddNode from node_id and cost</span></div>
 <div class="line">                                <span class="comment">// and is then appended to the underlying</span></div>
 <div class="line">                                <span class="comment">// members vector (via push_back)</span></div>
-<div class="ttc" id="aa02079_html"><div class="ttname"><a href="a02079.html">HF::SpatialStructures::PathMember</a></div><div class="ttdoc">The ID of a node, and the cost cost to the node after it.</div><div class="ttdef"><b>Definition:</b> <a href="a00281_source.html#l00019">path.h:19</a></div></div>
-<div class="ttc" id="aa02083_html"><div class="ttname"><a href="a02083.html">HF::SpatialStructures::Path</a></div><div class="ttdoc">A collection of nodes that form a path.</div><div class="ttdef"><b>Definition:</b> <a href="a00281_source.html#l00076">path.h:76</a></div></div>
-<div class="ttc" id="aa02083_html_a864cebbf4e5d7c135c501a63d42f8708"><div class="ttname"><a href="a02083.html#a864cebbf4e5d7c135c501a63d42f8708">HF::SpatialStructures::Path::members</a></div><div class="ttdeci">std::vector&lt; PathMember &gt; members</div><div class="ttdoc">Ordered array of PathMembers that comprise the path.</div><div class="ttdef"><b>Definition:</b> <a href="a00281_source.html#l00078">path.h:78</a></div></div>
 </div><!-- fragment --> 
 <p class="definition">Definition at line <a class="el" href="a00278_source.html#l00012">12</a> of file <a class="el" href="a00278_source.html">path.cpp</a>.</p>
 
@@ -219,7 +289,7 @@ Public Attributes</h2></td></tr>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a02083_a55ded4e02787eb739770ebe28ef386a9_icgraph.svg" width="1011" height="251"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a02083_a55ded4e02787eb739770ebe28ef386a9_icgraph.svg" width="1022" height="251"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -259,13 +329,13 @@ Public Attributes</h2></td></tr>
 
 <p class="reference">References <a class="el" href="a00281_source.html#l00078">members</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="a00422_source.html#l00023">CreatePath()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="a00422_source.html#l00025">CreatePath()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a02083_a3066bac2d76b5c8a28b35a8d1f6ace71_icgraph.svg" width="292" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a02083_a3066bac2d76b5c8a28b35a8d1f6ace71_icgraph.svg" width="294" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -318,13 +388,13 @@ Public Attributes</h2></td></tr>
 
 <p class="reference">References <a class="el" href="a00281_source.html#l00078">members</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="a00422_source.html#l00023">CreatePath()</a>, <a class="el" href="a00422_source.html#l00115">GetPathInfo()</a>, and <a class="el" href="a00203_source.html#l00201">HF::Pathfinding::InsertPathsIntoArray()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="a00422_source.html#l00025">CreatePath()</a>, <a class="el" href="a00422_source.html#l00117">GetPathInfo()</a>, and <a class="el" href="a00203_source.html#l00201">HF::Pathfinding::InsertPathsIntoArray()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a02083_a942cb49007bbeb5588e2d526c68bdcf9_icgraph.svg" width="788" height="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a02083_a942cb49007bbeb5588e2d526c68bdcf9_icgraph.svg" width="796" height="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -398,7 +468,7 @@ Public Attributes</h2></td></tr>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a02083_ac8cd7f5bcbaf0f399ce196c8967ae87e_cgraph.svg" width="352" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a02083_ac8cd7f5bcbaf0f399ce196c8967ae87e_cgraph.svg" width="354" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -460,71 +530,6 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a61a8a911a572d91683229a80ede5f541" name="a61a8a911a572d91683229a80ede5f541"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61a8a911a572d91683229a80ede5f541">&#9670;&#160;</a></span>Path::Path() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">HF::SpatialStructures::Path::Path::Path </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Construct an empty path. </p>
-<div class="fragment"><div class="line"><span class="comment">// be sure to #include &quot;path.h&quot;</span></div>
-<div class="line"> </div>
-<div class="line"><a class="code hl_struct" href="a02083.html">HF::SpatialStructures::Path</a> path;</div>
-</div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="a00281_source.html#l00088">88</a> of file <a class="el" href="a00281_source.html">path.h</a>.</p>
-
-</div>
-</div>
-<a id="a6d38f5fb939535a26e10ea2a969b2333" name="a6d38f5fb939535a26e10ea2a969b2333"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d38f5fb939535a26e10ea2a969b2333">&#9670;&#160;</a></span>Path::Path() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">HF::SpatialStructures::Path::Path::Path </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="a02079.html">PathMember</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>pm</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Construct a path from an ordered list of PathMembers.  </p>
-<div class="fragment"><div class="line"><span class="comment">// be sure to #include &quot;path.h&quot;</span></div>
-<div class="line"> </div>
-<div class="line"><span class="comment">// Create the PathMembers</span></div>
-<div class="line"><a class="code hl_struct" href="a02079.html">HF::SpatialStructures::PathMember</a> p0 = { 3.14f, 3 };</div>
-<div class="line"><a class="code hl_struct" href="a02079.html">HF::SpatialStructures::PathMember</a> p1 = { 2.78f, 2 };</div>
-<div class="line"><a class="code hl_struct" href="a02079.html">HF::SpatialStructures::PathMember</a> p2 = { 1.64f, 1 };</div>
-<div class="line"><a class="code hl_struct" href="a02079.html">HF::SpatialStructures::PathMember</a> p3 = { 9.35, 7 };</div>
-<div class="line"> </div>
-<div class="line"><span class="comment">// Create the container of PathMembers</span></div>
-<div class="line">std::vector&lt;HF::SpatialStructures::PathMember&gt; <a class="code hl_variable" href="a02083.html#a864cebbf4e5d7c135c501a63d42f8708">members</a>{p0, p1, p2, p3};</div>
-<div class="line"> </div>
-<div class="line"><span class="comment">// Create the path, using the container of PathMembers</span></div>
-<div class="line"><a class="code hl_struct" href="a02083.html">HF::SpatialStructures::Path</a> path(<a class="code hl_variable" href="a02083.html#a864cebbf4e5d7c135c501a63d42f8708">members</a>);</div>
-</div><!-- fragment --> 
-</div>
-</div>
 <a id="adf2bad9ac73dbdc436c365654d54ad98" name="adf2bad9ac73dbdc436c365654d54ad98"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adf2bad9ac73dbdc436c365654d54ad98">&#9670;&#160;</a></span>Reverse()</h2>
 
@@ -569,7 +574,7 @@ Public Attributes</h2></td></tr>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a02083_adf2bad9ac73dbdc436c365654d54ad98_icgraph.svg" width="1011" height="251"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a02083_adf2bad9ac73dbdc436c365654d54ad98_icgraph.svg" width="1022" height="251"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -614,13 +619,13 @@ Public Attributes</h2></td></tr>
 
 <p class="reference">References <a class="el" href="a00281_source.html#l00078">members</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="a00203_source.html#l00078">HF::Pathfinding::ConstructShortestPathFromPred()</a>, <a class="el" href="a00422_source.html#l00023">CreatePath()</a>, <a class="el" href="a00422_source.html#l00115">GetPathInfo()</a>, <a class="el" href="a00203_source.html#l00201">HF::Pathfinding::InsertPathsIntoArray()</a>, <a class="el" href="a00281_source.html#l00344">std::operator&lt;&lt;()</a>, and <a class="el" href="a00278_source.html#l00028">operator==()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="a00203_source.html#l00078">HF::Pathfinding::ConstructShortestPathFromPred()</a>, <a class="el" href="a00422_source.html#l00025">CreatePath()</a>, <a class="el" href="a00422_source.html#l00117">GetPathInfo()</a>, <a class="el" href="a00203_source.html#l00201">HF::Pathfinding::InsertPathsIntoArray()</a>, <a class="el" href="a00281_source.html#l00344">std::operator&lt;&lt;()</a>, and <a class="el" href="a00278_source.html#l00028">operator==()</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a02083_a28f61f0f57b38a5249a11a725d9d692b_icgraph.svg" width="1011" height="375"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a02083_a28f61f0f57b38a5249a11a725d9d692b_icgraph.svg" width="1022" height="375"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -643,7 +648,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="a00281_source.html#l00078">78</a> of file <a class="el" href="a00281_source.html">path.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="a00278_source.html#l00012">AddNode()</a>, <a class="el" href="a00278_source.html#l00016">empty()</a>, <a class="el" href="a00278_source.html#l00056">GetPMPointer()</a>, <a class="el" href="a00278_source.html#l00048">operator[]()</a>, <a class="el" href="a00278_source.html#l00024">Reverse()</a>, and <a class="el" href="a00278_source.html#l00020">size()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="a00278_source.html#l00052">Path()</a>, <a class="el" href="a00278_source.html#l00012">AddNode()</a>, <a class="el" href="a00278_source.html#l00016">empty()</a>, <a class="el" href="a00278_source.html#l00056">GetPMPointer()</a>, <a class="el" href="a00278_source.html#l00048">operator[]()</a>, <a class="el" href="a00278_source.html#l00024">Reverse()</a>, and <a class="el" href="a00278_source.html#l00020">size()</a>.</p>
 
 </div>
 </div>

@@ -2,7 +2,7 @@
 <area shape="rect" id="node1" title="Read a BSON document element of the given element_type." alt="" coords="5,320,198,379"/>
 <area shape="rect" id="node2" href="$a01563.html#a137ea4d27de45d8a844fd13451d40f3d" title="create a parse error exception" alt="" coords="1186,85,1342,128"/>
 <area shape="rect" id="node5" href="$a01995.html#ad222095c0b21a87824cb10629299629a" title="get next character from the input" alt="" coords="963,416,1122,459"/>
-<area shape="rect" id="node6" href="$a01995.html#a9940f56290b9278c58772eda2931e599" title="Parses a byte array input of length len from the BSON input." alt="" coords="507,144,674,187"/>
+<area shape="rect" id="node6" href="$a01995.html#a9940f56290b9278c58772eda2931e599" title="Parses a byte array input of length len from the BSON input." alt="" coords="506,144,674,187"/>
 <area shape="rect" id="node11" href="$a01995.html#a23921422802aa472360dd05023e20565" title="Parses a zero&#45;terminated string of length len from the BSON input." alt="" coords="508,471,672,513"/>
 <area shape="rect" id="node13" href="$a01995.html#a23eb89a222e22533e9fd43e76722f44f" title="Reads an array from the BSON input and passes it to the SAX&#45;parser." alt="" coords="252,328,428,371"/>
 <area shape="rect" id="node16" href="$a01995.html#abf2051ba57d9ea9b378a2e7c14e22b34" title="Reads in a BSON&#45;object and passes it to the SAX&#45;parser." alt="" coords="246,261,434,304"/>

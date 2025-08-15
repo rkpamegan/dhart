@@ -1,0 +1,27 @@
+digraph "HF::SpatialStructures::Path::Reverse"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="HF::SpatialStructures\l::Path::Reverse",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Reverse the direction of this path."];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="HF::Pathfinding::Construct\lShortestPathFromPred",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00472.html#a977e4c93a977ab4e9e784d1e6fec79f4",tooltip="Construct the shortest path from start to end using the given predecessor and distance vectors."];
+  Node2 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="HF::Pathfinding::Construct\lShortestPathFromPred",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00472.html#a322ac32effd41c99359b82df0890e34a",tooltip="Overload to call this with a distPred instead of the raw arrays."];
+  Node2 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="HF::Pathfinding::FindPath",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00472.html#a47d06b1c4bd84f4d0a7519ea0e96ff02",tooltip="Find a path between points A and B using Dijkstra's Shortest Path algorithm."];
+  Node4 -> Node5 [dir="back",color="steelblue1",style="solid"];
+  Node5 [label="CreatePath",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00456.html#ga3dc85450e989a996a3c3fcfad0a5944e",tooltip="Find the shortest path from start to end."];
+  Node2 -> Node6 [dir="back",color="steelblue1",style="solid"];
+  Node6 [label="HF::Pathfinding::FindPaths",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00472.html#a15badb9d0a17849de7b21105605c9c91",tooltip="Find a path from every id in start_ids to the matching end node in end_ids."];
+  Node2 -> Node7 [dir="back",color="steelblue1",style="solid"];
+  Node7 [label="HF::Pathfinding::InsertPaths\lIntoArray",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00472.html#a417084c97d0672af2da7739157a9d8c0",tooltip="A special version of FindPaths optimized for the C_Interface."];
+  Node7 -> Node8 [dir="back",color="steelblue1",style="solid"];
+  Node8 [label="CreatePaths",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00456.html#gae1ac2805c3b86883bb88269ed3868367",tooltip="Find multiple shortest paths in paralllel."];
+  Node7 -> Node9 [dir="back",color="steelblue1",style="solid"];
+  Node9 [label="HF::Pathfinding::InsertAll\lToAllPathsIntoArray",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00472.html#a69bd3efcc13788e7c4be43b67d6002e5",tooltip="A special version of FindPaths optimized for the C_Interface, such that all paths possible from each ..."];
+  Node9 -> Node10 [dir="back",color="steelblue1",style="solid"];
+  Node10 [label="CreateAllToAllPaths",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00456.html#gaba6ec6ce84974dd6a311d7d65dd34221",tooltip="Find a path from every node in a graph to every other node."];
+}

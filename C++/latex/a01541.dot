@@ -1,0 +1,24 @@
+digraph "HF::SpatialStructures::Subgraph"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="HF::SpatialStructures\l::Subgraph",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="A Subgraph consists of a parent Node m_parent and a container of Edge m_edges such that all Edge in m..."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" m_parent" ];
+  Node2 [label="HF::SpatialStructures\l::Node",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$a02071.html",tooltip="A point in space with an ID."];
+  Node3 -> Node2 [dir="back",color="darkorchid3",style="dashed",label=" x\ny\nz" ];
+  Node3 [label="float",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node2 [dir="back",color="darkorchid3",style="dashed",label=" type" ];
+  Node4 [label="short",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node2 [dir="back",color="darkorchid3",style="dashed",label=" id" ];
+  Node5 [label="int",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" m_edges" ];
+  Node6 [label="std::vector\< HF::Spatial\lStructures::Edge \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node6 [dir="back",color="darkorchid3",style="dashed",label=" elements" ];
+  Node7 [label="HF::SpatialStructures\l::Edge",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$a01527.html",tooltip="A connection to a child node."];
+  Node2 -> Node7 [dir="back",color="darkorchid3",style="dashed",label=" child" ];
+  Node8 -> Node7 [dir="back",color="darkorchid3",style="dashed",label=" step_type" ];
+  Node8 [label="STEP",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node7 [dir="back",color="darkorchid3",style="dashed",label=" score" ];
+}

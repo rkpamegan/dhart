@@ -1,0 +1,35 @@
+digraph "nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer, BinaryType &gt;"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="nlohmann::basic_json\l\< ObjectType, ArrayType,\l StringType, BooleanType,\l NumberIntegerType, NumberUnsigned\lType, NumberFloatType, AllocatorType,\l JSONSerializer, BinaryType \>",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="a class to store JSON values"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" m_type" ];
+  Node2 [label="value_t",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" m_value" ];
+  Node3 [label="nlohmann::basic_json\l\< ObjectType, ArrayType,\l StringType, BooleanType,\l NumberIntegerType, NumberUnsigned\lType, NumberFloatType, AllocatorType,\l JSONSerializer, BinaryType \>::json_value",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$a02059.html",tooltip="a JSON value"];
+  Node4 -> Node3 [dir="back",color="darkorchid3",style="dashed",label=" object" ];
+  Node4 [label="object_t *",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node3 [dir="back",color="darkorchid3",style="dashed",label=" array" ];
+  Node5 [label="array_t *",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node3 [dir="back",color="darkorchid3",style="dashed",label=" string" ];
+  Node6 [label="string_t *",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node3 [dir="back",color="darkorchid3",style="dashed",label=" binary" ];
+  Node7 [label="nlohmann::byte_container\l_with_subtype\< BinaryType \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$a01915.html",tooltip="an internal type for a backed binary type"];
+  Node8 -> Node7 [dir="back",color="steelblue1",style="solid"];
+  Node8 [label="BinaryType",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$a03507.html",tooltip=" "];
+  Node9 -> Node7 [dir="back",color="darkorchid3",style="dashed",label=" m_subtype" ];
+  Node9 [label="uint8_t",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node10 -> Node7 [dir="back",color="darkorchid3",style="dashed",label=" m_has_subtype" ];
+  Node10 [label="bool",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node11 -> Node3 [dir="back",color="darkorchid3",style="dashed",label=" boolean" ];
+  Node11 [label="BooleanType",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node12 -> Node3 [dir="back",color="darkorchid3",style="dashed",label=" number_integer" ];
+  Node12 [label="NumberIntegerType",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node13 -> Node3 [dir="back",color="darkorchid3",style="dashed",label=" number_unsigned" ];
+  Node13 [label="NumberUnsignedType",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node14 -> Node3 [dir="back",color="darkorchid3",style="dashed",label=" number_float" ];
+  Node14 [label="NumberFloatType",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+}

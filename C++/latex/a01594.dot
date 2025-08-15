@@ -1,0 +1,11 @@
+digraph "nlohmann::detail::make_index_sequence&lt; N &gt;"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="nlohmann::detail::make\l_index_sequence\< N \>",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="nlohmann::detail::merge\l_and_renumber\< make_index\l_sequence\< N/2 \>::type, make\l_index_sequence\< N - N/2 \>::type \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$a00477.html",tooltip=" "];
+}

@@ -1,9 +1,8 @@
 <map id="Cpp/raytracer/src/embree_raytracer.h" name="Cpp/raytracer/src/embree_raytracer.h">
-<area shape="rect" id="node1" title="Contains definitions for the EmbreeRayTracer" alt="" coords="226,5,395,48"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,96,56,123"/>
-<area shape="rect" id="node3" title=" " alt="" coords="79,96,145,123"/>
-<area shape="rect" id="node4" title=" " alt="" coords="168,96,325,123"/>
-<area shape="rect" id="node5" title=" " alt="" coords="348,96,404,123"/>
-<area shape="rect" id="node6" title=" " alt="" coords="428,96,478,123"/>
-<area shape="rect" id="node7" href="$a00218.html" title=" " alt="" coords="502,96,586,123"/>
+<area shape="rect" id="node1" title="Contains definitions for the EmbreeRayTracer" alt="" coords="116,5,285,48"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,96,71,123"/>
+<area shape="rect" id="node3" title=" " alt="" coords="95,96,152,123"/>
+<area shape="rect" id="node4" title=" " alt="" coords="176,96,226,123"/>
+<area shape="rect" id="node5" href="$a00218.html" title=" " alt="" coords="250,96,335,123"/>
+<area shape="rect" id="node6" title=" " alt="" coords="359,96,416,123"/>
 </map>

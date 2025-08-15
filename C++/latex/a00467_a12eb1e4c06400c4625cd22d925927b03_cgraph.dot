@@ -1,0 +1,31 @@
+digraph "HF::VisibilityGraph::AllToAll"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="HF::VisibilityGraph\l::AllToAll",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Generate a Visibility Graph between every node in a set of nodes in parallel."];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="HF::SpatialStructures\l::Node::distanceTo",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a02071.html#abbd66b566460f9557a373b5fbcc30bb1",tooltip="Calculate the distance between this node and n2."];
+  Node1 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="HF::VisibilityGraph\l::HeightCheckAllNodes",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00467.html#a05b8a83ab27113369c95649470d864b9",tooltip="Obtain the indexes of all nodes that pass the HeightCheck."];
+  Node3 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="HF::VisibilityGraph\l::HeightCheck",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00467.html#af811d21e4c49275521912df9254bb737",tooltip="Check if Node can be raised by height without clipping into any geometry."];
+  Node4 -> Node5 [color="steelblue1",style="solid"];
+  Node5 [label="HF::RayTracer::EmbreeRay\lTracer::Occluded",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01411.html#a3a7488f8e41c8a9e3dc9c334047c6457",tooltip="Determine if there is an intersection with any geometry."];
+  Node5 -> Node6 [color="steelblue1",style="solid"];
+  Node6 [label="HF::RayTracer::EmbreeRay\lTracer::Occluded_IMPL",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01411.html#ade19fda460dadd98769b347840bd305a",tooltip="Implementation for fundamental occlusion ray intersection."];
+  Node6 -> Node7 [color="steelblue1",style="solid"];
+  Node7 [label="HF::RayTracer::ConstructRay",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00464.html#a76e5d26b5063f0e5b49b4ba835f1da93",tooltip=" "];
+  Node1 -> Node8 [color="steelblue1",style="solid"];
+  Node8 [label="HF::VisibilityGraph\l::IsOcclusionBetween",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00467.html#a4d9cf77879eb78075f7f7b0a7e31119a",tooltip="Perform a line of sight check between two nodes."];
+  Node8 -> Node9 [color="steelblue1",style="solid"];
+  Node9 [label="HF::SpatialStructures\l::Node::directionTo",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a02071.html#ad3f7898ef3178eef0c3579869a7f5c67",tooltip="Get the direction between this node and another node"];
+  Node9 -> Node10 [color="steelblue1",style="solid"];
+  Node10 [label="HF::SpatialStructures\l::Normalize",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00465.html#ad9a8f0f70b3f60ac5cb7889885d851d1",tooltip=" "];
+  Node8 -> Node2 [color="steelblue1",style="solid"];
+  Node8 -> Node5 [color="steelblue1",style="solid"];
+  Node1 -> Node11 [color="steelblue1",style="solid"];
+  Node11 [label="HF::SpatialStructures\l::Graph::size",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01551.html#a2710af2a75976862d7a235793567d2f3",tooltip="Determine how many nodes are in the graph."];
+}

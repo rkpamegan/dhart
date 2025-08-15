@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['b1_0',['B1',['../a03507.html',1,'']]],
+  ['b1_0',['B1',['../a03511.html',1,'']]],
   ['basic_5fjson_1',['basic_json',['../a01659.html',1,'nlohmann']]],
   ['bbox_2',['BBox',['../a01471.html',1,'nanort']]],
   ['bbox_3c_20vertex_5ft_20_3e_3',['BBox&lt; vertex_t &gt;',['../a01471.html',1,'nanort']]],
   ['binary_5freader_4',['binary_reader',['../a01995.html',1,'nlohmann::detail']]],
   ['binary_5fwriter_5',['binary_writer',['../a02039.html',1,'nlohmann::detail']]],
-  ['binarytype_6',['BinaryType',['../a03503.html',1,'']]],
+  ['binarytype_6',['BinaryType',['../a03507.html',1,'']]],
   ['binbuffer_7',['BinBuffer',['../a01507.html',1,'nanort']]],
   ['boostgraph_8',['BoostGraph',['../a01383.html',1,'HF::Pathfinding']]],
   ['boostgraphdeleter_9',['BoostGraphDeleter',['../a01391.html',1,'HF::Pathfinding']]],

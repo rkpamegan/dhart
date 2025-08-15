@@ -1,0 +1,31 @@
+digraph "nlohmann::json_pointer::array_index"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="nlohmann::json_pointer\l::array_index",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="nlohmann::json_pointer\l::contains",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01663.html#a90d38e45e2d3add52d824bc55da8f772",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="nlohmann::basic_json\l::contains",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01659.html#adb82c1f34c73486e013da71ae369e597",tooltip="check the existence of an element in a JSON object given a JSON pointer"];
+  Node1 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="nlohmann::json_pointer\l::get_and_create",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01663.html#aa2f86764d08ce1fb82327327e7f9a87d",tooltip="create and return a reference to the pointed to value"];
+  Node4 -> Node5 [dir="back",color="steelblue1",style="solid"];
+  Node5 [label="nlohmann::json_pointer\l::unflatten",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01663.html#a920065221e3c81676c3211c100d024a7",tooltip=" "];
+  Node5 -> Node6 [dir="back",color="steelblue1",style="solid"];
+  Node6 [label="nlohmann::basic_json\l::unflatten",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01659.html#adea158bff8642202420898f6322da479",tooltip="unflatten a previously flattened JSON value"];
+  Node1 -> Node7 [dir="back",color="steelblue1",style="solid"];
+  Node7 [label="nlohmann::json_pointer\l::get_checked",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01663.html#ac97f74aff788336b07bc5ecf85598b14",tooltip=" "];
+  Node7 -> Node8 [dir="back",color="steelblue1",style="solid"];
+  Node8 [label="nlohmann::basic_json::at",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01659.html#aa014a978f8b6c085db8825faa8dad320",tooltip="access specified element via JSON Pointer"];
+  Node7 -> Node9 [dir="back",color="steelblue1",style="solid"];
+  Node9 [label="nlohmann::basic_json\l::value",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01659.html#a36bd6765ccd8aeeeb4e49a766ba639df",tooltip="access specified object element via JSON Pointer with default value"];
+  Node1 -> Node10 [dir="back",color="steelblue1",style="solid"];
+  Node10 [label="nlohmann::json_pointer\l::get_unchecked",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01663.html#aef65869da8f68d30b30021f3efdc54f8",tooltip="return a reference to the pointed to value"];
+  Node10 -> Node11 [dir="back",color="steelblue1",style="solid"];
+  Node11 [label="nlohmann::basic_json\l::operator[]",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01659.html#a0d3deaa73b3644b4da3f8ef3172cd8d2",tooltip="access specified element via JSON Pointer"];
+  Node1 -> Node12 [dir="back",color="steelblue1",style="solid"];
+  Node12 [label="nlohmann::basic_json\l::patch",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01659.html#adcc786998f220a5b3083ee8a37c4553e",tooltip="applies a JSON patch"];
+}

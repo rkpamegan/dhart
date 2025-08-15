@@ -1,0 +1,12 @@
+digraph "CastRay"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="CastRay",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Cast a single ray from the raytracer and receive a point in return."];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="HF::RayTracer::EmbreeRay\lTracer::PointIntersection",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01411.html#aa8424b274c7c5d0598ff13b49ac8c8d2",tooltip="Cast a ray and overwrite the origin with the hitpoint if it intersects any geometry."];
+  Node2 -> Node2 [color="steelblue1",style="solid"];
+}

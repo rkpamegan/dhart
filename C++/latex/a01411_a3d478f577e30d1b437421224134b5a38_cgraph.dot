@@ -1,0 +1,20 @@
+digraph "HF::RayTracer::EmbreeRayTracer::AddMesh"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="HF::RayTracer::EmbreeRay\lTracer::AddMesh",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Add several new meshes to the BVH."];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="HF::RayTracer::EmbreeRay\lTracer::AddMesh",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01411.html#a6425a0f8f4a3ef8073e734ceb745cd1e",tooltip="Add a new mesh to this raytracer's BVH with the specified ID."];
+  Node2 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="HF::RayTracer::EmbreeRay\lTracer::ConstructGeometryFrom\lBuffers",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01411.html#aa602f6c44fa5230477642942ebc3216e",tooltip="Create a new instance of RTCGeometry from a triangle and vertex buffer."];
+  Node2 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="HF::RayTracer::EmbreeRay\lTracer::InsertGeom",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a01411.html#a6ee1e15bc515878b156bc6a3778f8033",tooltip="Attach geometry to the current scene."];
+  Node4 -> Node5 [color="steelblue1",style="solid"];
+  Node5 [label="HF::RayTracer::CheckState",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00464.html#a19e11d13f73136d6819b8abee57b0fd9",tooltip="Check an embree device for errors."];
+  Node4 -> Node4 [color="steelblue1",style="solid"];
+  Node2 -> Node6 [color="steelblue1",style="solid"];
+  Node6 [label="HF::RayTracer::vectorsTo\lBuffers",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00464.html#a732eb910d06064bea04e6a959fd235f0",tooltip="Index a list of verticies and place them into a triangle and vertex buffer."];
+}

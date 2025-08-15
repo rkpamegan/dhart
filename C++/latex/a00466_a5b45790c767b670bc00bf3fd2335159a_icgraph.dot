@@ -1,0 +1,21 @@
+digraph "HF::ViewAnalysis::FibbonacciDist"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="HF::ViewAnalysis::FibbonacciDist",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="HF::ViewAnalysis::Fibbonacci\lDistributePoints",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00459.html#ga6ca336e3887ef82d17b0713c2bf862df",tooltip="Evenly distribute a set of points around a sphere centered at the origin."];
+  Node2 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="SphericalDistribute",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00459.html#gaf572b7bec28d55bf2c72719742703dff",tooltip="Equally distribute points around a unit sphere."];
+  Node2 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="HF::ViewAnalysis::Spherical\lRayshootWithAnyRTForDistance",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00459.html#ga78f77d24531d0fa55c9b60d7ec1bf32a",tooltip="Conduct view analysis and recieve a summarized set of results for each node."];
+  Node4 -> Node5 [dir="back",color="steelblue1",style="solid"];
+  Node5 [label="SphereicalViewAnalysisAggregate",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00459.html#gab6b8e3eab649b42ac014fb7d02d54892",tooltip="Conduct view analysis, then aggregate the results."];
+  Node4 -> Node6 [dir="back",color="steelblue1",style="solid"];
+  Node6 [label="SphereicalViewAnalysisAggregateFlat",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00459.html#gaa4c5714c1e557ef83a03d447eb30c6d0",tooltip="Conduct view analysis, and aggregate the results."];
+  Node2 -> Node7 [dir="back",color="steelblue1",style="solid"];
+  Node7 [label="HF::ViewAnalysis::Spherical\lViewAnalysis",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00459.html#gaecaa04882696ac6d73173227bd28e91b",tooltip="Conduct view analysis with any Raytracer in parallel."];
+}

@@ -2,19 +2,13 @@
 \label{a00011}\index{Cpp/analysismethods/src/graph\_utils.cpp@{Cpp/analysismethods/src/graph\_utils.cpp}}
 {\ttfamily \#include $<$graph\+\_\+generator.\+h$>$}\newline
 {\ttfamily \#include $<$Hit\+Struct.\+h$>$}\newline
-{\ttfamily \#include $<$Constants.\+h$>$}\newline
-{\ttfamily \#include $<$Edge.\+h$>$}\newline
+{\ttfamily \#include $<$constants.\+h$>$}\newline
+{\ttfamily \#include $<$edge.\+h$>$}\newline
 {\ttfamily \#include $<$embree\+\_\+raytracer.\+h$>$}\newline
 {\ttfamily \#include $<$ray\+\_\+data.\+h$>$}\newline
 {\ttfamily \#include $<$cassert$>$}\newline
 Include dependency graph for graph\+\_\+utils.\+cpp\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a00012}
-\end{center}
-\end{figure}
+% FIG 0
 \doxysubsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
@@ -51,8 +45,18 @@ bool \mbox{\hyperlink{a00463_ace66c1b60785c32433402f012019ab81}{HF\+::\+Graph\+G
 \begin{DoxyCompactList}\small\item\em Determine if there is a valid line of sight between parent and child. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{a00463_a9daa85cb56a1b18d44f46aa9c420afde}{HF\+::\+Graph\+Generator\+::\+Check\+Slope}} (const real3 \&parent, const real3 \&child, const Graph\+Params \&gp)
 \begin{DoxyCompactList}\small\item\em Determine if the slope between parent and child is traversable according to the graph parameters. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{a01535}{HF\+::\+Spatial\+Structures\+::\+Edge\+Set}} \mbox{\hyperlink{a00463_a176c58b25fb5cb545d17128d4535f921}{HF\+::\+Graph\+Generator\+::\+Calculate\+Step\+Type}} (const \mbox{\hyperlink{a00465_a01543}{HF\+::\+Spatial\+Structures\+::\+Subgraph}} \&sg, \mbox{\hyperlink{a01419}{HF\+::\+Ray\+Tracer\+::\+Multi\+RT}} \&rt)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{a01535}{HF\+::\+Spatial\+Structures\+::\+Edge\+Set}} $>$ \mbox{\hyperlink{a00463_a81398de53e151ae58b206523e555309e}{HF\+::\+Graph\+Generator\+::\+Calculate\+Step\+Type}} (const \mbox{\hyperlink{a01551}{HF\+::\+Spatial\+Structures\+::\+Graph}} \&g, \mbox{\hyperlink{a01419}{HF\+::\+Ray\+Tracer\+::\+Multi\+RT}} \&rt)
+\item 
+void \mbox{\hyperlink{a00463_a0251caf5a32eb2c1f9d846d88eb7fe22}{HF\+::\+Graph\+Generator\+::\+Calculate\+And\+Store\+Step\+Type}} (\mbox{\hyperlink{a01551}{HF\+::\+Spatial\+Structures\+::\+Graph}} \&g, \mbox{\hyperlink{a01419}{HF\+::\+Ray\+Tracer\+::\+Multi\+RT}} \&rt)
+\item 
+\mbox{\hyperlink{a00465_af0378d900074d484ba791d4317e5935e}{HF\+::\+Spatial\+Structures\+::\+STEP}} \mbox{\hyperlink{a00463_a260a25e02193ce904849ee090daefa2e}{HF\+::\+Graph\+Generator\+::\+Check\+Connection}} (const real3 \&parent, const real3 \&child, Ray\+Tracer \&rt)
+\begin{DoxyCompactList}\small\item\em Determine what kind of step (if any) is between parent and child, given that a connection was verified using the graph generator. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{a00465_af0378d900074d484ba791d4317e5935e}{HF\+::\+Spatial\+Structures\+::\+STEP}} \mbox{\hyperlink{a00463_aeab1db37b5aa614235f109d5dd9711a9}{HF\+::\+Graph\+Generator\+::\+Check\+Connection}} (const real3 \&parent, const real3 \&child, Ray\+Tracer \&rt, const Graph\+Params \&params)
 \begin{DoxyCompactList}\small\item\em Determine what kind of step (if any) is between parent and child. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{a00463_a5d2ad6de2131b1a90a80f901ac8dd185}{HF\+::\+Graph\+Generator\+::\+Compare\+Check\+Connections}} (\mbox{\hyperlink{a01551}{HF\+::\+Spatial\+Structures\+::\+Graph}} \&g, Ray\+Tracer \&rt, const Graph\+Params \&params, std\+::vector$<$ \mbox{\hyperlink{a01535}{HF\+::\+Spatial\+Structures\+::\+Edge\+Set}} $>$ to\+\_\+compare)
+\item 
 std\+::vector$<$ real3 $>$ \mbox{\hyperlink{a00463_a41e03f9bab54e4e0d1314c6a4bdf2ec1}{HF\+::\+Graph\+Generator\+::\+Generate\+Potential\+Children}} (const real3 \&parent, const std\+::vector$<$ pair $>$ \&direcs, const real3 \&spacing, const Graph\+Params \&gp)
 \begin{DoxyCompactList}\small\item\em Populare out\+\_\+children with a potential child position for every direction in directions. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Variables}

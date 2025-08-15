@@ -7,21 +7,9 @@ Header file for C Interface pathfinding functionality.
 
 {\ttfamily \#include $<$cinterface\+\_\+utils.\+h$>$}\newline
 Include dependency graph for pathfinder\+\_\+\+C.\+h\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=205pt]{a00426}
-\end{center}
-\end{figure}
+% FIG 0
 This graph shows which files directly or indirectly include this file\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=205pt]{a00427}
-\end{center}
-\end{figure}
+% FIG 1
 \doxysubsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
@@ -34,7 +22,7 @@ namespace \mbox{\hyperlink{a00472}{HF\+::\+Pathfinding}}
 \doxysubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\#define \mbox{\hyperlink{a00425_a91fa3b2bb3a7312ec39d74cc1fbc7bbe}{C\+\_\+\+INTERFACE}}~extern \char`\"{}C\char`\"{} \+\_\+\+\_\+declspec(dllexport) int
+\#define \mbox{\hyperlink{a00425_a91fa3b2bb3a7312ec39d74cc1fbc7bbe}{C\+\_\+\+INTERFACE}}~extern \char`\"{}C\char`\"{} \+\_\+\+\_\+attribute\+\_\+\+\_\+((visibility(\char`\"{}default\char`\"{}))) int
 \end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
@@ -50,7 +38,9 @@ namespace \mbox{\hyperlink{a00472}{HF\+::\+Pathfinding}}
 \mbox{\hyperlink{a00407_a91fa3b2bb3a7312ec39d74cc1fbc7bbe}{C\+\_\+\+INTERFACE}} \mbox{\hyperlink{a00456_gaba6ec6ce84974dd6a311d7d65dd34221}{Create\+All\+To\+All\+Paths}} (const \mbox{\hyperlink{a01551}{HF\+::\+Spatial\+Structures\+::\+Graph}} $\ast$g, const char $\ast$cost\+\_\+type, \mbox{\hyperlink{a02083}{HF\+::\+Spatial\+Structures\+::\+Path}} $\ast$$\ast$out\+\_\+path\+\_\+ptr\+\_\+holder, \mbox{\hyperlink{a02079}{HF\+::\+Spatial\+Structures\+::\+Path\+Member}} $\ast$$\ast$out\+\_\+path\+\_\+member\+\_\+ptr\+\_\+holder, int $\ast$out\+\_\+sizes, int num\+\_\+paths)
 \begin{DoxyCompactList}\small\item\em Find a path from every node in a graph to every other node. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{a00407_a91fa3b2bb3a7312ec39d74cc1fbc7bbe}{C\+\_\+\+INTERFACE}} \mbox{\hyperlink{a00456_ga27b1f45019ccbda909301520d1c738ca}{Calculate\+Distance\+And\+Predecessor}} (const \mbox{\hyperlink{a01551}{HF\+::\+Spatial\+Structures\+::\+Graph}} $\ast$g, const char $\ast$cost\+\_\+name, std\+::vector$<$ float $>$ $\ast$$\ast$out\+\_\+dist\+\_\+vector, float $\ast$$\ast$out\+\_\+dist\+\_\+data, std\+::vector$<$ int $>$ $\ast$$\ast$out\+\_\+pred\+\_\+vector, int $\ast$$\ast$out\+\_\+pred\+\_\+data)
-\begin{DoxyCompactList}\small\item\em Calculate the distance and predecessor matricies for a graph. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Calculate the distance and predecessor matricies for a graph. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{a00407_a91fa3b2bb3a7312ec39d74cc1fbc7bbe}{C\+\_\+\+INTERFACE}} \mbox{\hyperlink{a00456_gaff8b6c35105e6a465af490691069727a}{Create\+All\+Pred\+To\+Path}} (const \mbox{\hyperlink{a01551}{HF\+::\+Spatial\+Structures\+::\+Graph}} $\ast$g, const char $\ast$cost\+\_\+name, std\+::vector$<$ int $>$ $\ast$$\ast$out\+\_\+nodes\+\_\+vector, int $\ast$$\ast$out\+\_\+nodes\+\_\+data, std\+::vector$<$ int $>$ $\ast$$\ast$out\+\_\+lengths\+\_\+vector, int $\ast$$\ast$out\+\_\+lengths\+\_\+data)
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -73,9 +63,9 @@ Definition in file \mbox{\hyperlink{a00425_source}{pathfinder\+\_\+\+C.\+h}}.
 \index{pathfinder\_C.h@{pathfinder\_C.h}!C\_INTERFACE@{C\_INTERFACE}}
 \index{C\_INTERFACE@{C\_INTERFACE}!pathfinder\_C.h@{pathfinder\_C.h}}
 \doxysubsubsection{\texorpdfstring{C\_INTERFACE}{C\_INTERFACE}}
-{\footnotesize\ttfamily \#define C\+\_\+\+INTERFACE~extern \char`\"{}C\char`\"{} \+\_\+\+\_\+declspec(dllexport) int}
+{\footnotesize\ttfamily \#define C\+\_\+\+INTERFACE~extern \char`\"{}C\char`\"{} \+\_\+\+\_\+attribute\+\_\+\+\_\+((visibility(\char`\"{}default\char`\"{}))) int}
 
 
 
-Definition at line \mbox{\hyperlink{a00425_source_l00014}{14}} of file \mbox{\hyperlink{a00425_source}{pathfinder\+\_\+\+C.\+h}}.
+Definition at line \mbox{\hyperlink{a00425_source_l00017}{17}} of file \mbox{\hyperlink{a00425_source}{pathfinder\+\_\+\+C.\+h}}.
 

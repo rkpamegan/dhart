@@ -1,0 +1,11 @@
+digraph "HF::SpatialStructures::Graph::GetCSRPointers"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="HF::SpatialStructures\l::Graph::GetCSRPointers",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Obtain the size of and pointers to the 3 arrays that comprise this graph's CSR. graph if it isn't com..."];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="GetCSRPointers",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00458.html#ga58e27a4c3b5a2d9692536877c2e13691",tooltip="Retrieve all information for a graph's CSR representation. This will compress the graph if it was not..."];
+}
