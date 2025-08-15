@@ -1,4 +1,4 @@
-﻿cmake_minimum_required (VERSION 3.8)
+﻿cmake_minimum_required (VERSION 3.10)
 
 add_library(SpatialStructures STATIC)
 
@@ -6,14 +6,14 @@ set(CMAKE_CXX_STANDARD 17)
 target_sources(
 	SpatialStructures
 	PRIVATE
-		src/Constants.cpp
+		src/constants.cpp
 		src/edge.cpp
 		src/node.cpp
 		src/path.cpp
 		src/graph.cpp
 		src/cost_algorithms.cpp
-		src/Constants.h
-		src/Edge.h
+		src/constants.h
+		src/edge.h
 		src/node.h
 		src/path.h
 		src/graph.h

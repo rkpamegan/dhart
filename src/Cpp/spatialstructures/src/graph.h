@@ -9,8 +9,9 @@
 
 #include <robin_hood.h>
 #include <vector>
-#include <Edge.h>
-#include <Node.h>
+#include <edge.h>
+#include <node.h>
+#include <path.h>
 #include <Eigen>
 #include <iostream>
 
@@ -108,7 +109,7 @@ namespace HF::SpatialStructures {
 				// TODO example
 			\endcode
 		*/
-		inline float* CSRPtrs::data_begin() const {
+		inline float* data_begin() const {
 			return data ? data : nullptr;
 		}
 
@@ -127,7 +128,7 @@ namespace HF::SpatialStructures {
 				// TODO example
 			/endcode
 		*/
-		inline float* CSRPtrs::data_end() const {
+		inline float* data_end() const {
 			if (nnz > 0) {
 				return data ? data + nnz : nullptr;
 			}
@@ -150,7 +151,7 @@ namespace HF::SpatialStructures {
 			\endcode
 		*/
 
-		inline int* CSRPtrs::inner_begin() const {
+		inline int* inner_begin() const {
 			return inner_indices ? inner_indices : nullptr;
 		}
 
@@ -171,7 +172,7 @@ namespace HF::SpatialStructures {
 			\endcode
 		*/
 
-		inline int* CSRPtrs::inner_end() const {
+		inline int* inner_end() const {
 			if (nnz > 0) {
 				return inner_indices ? inner_indices + nnz : nullptr;
 			}
@@ -193,7 +194,7 @@ namespace HF::SpatialStructures {
 				// TODO example
 			\endcode
 		*/
-		inline int* CSRPtrs::outer_begin() const {
+		inline int* outer_begin() const {
 			return outer_indices ? outer_indices : nullptr;
 		}
 
@@ -212,7 +213,7 @@ namespace HF::SpatialStructures {
 				// TODO example
 			\endcode
 		*/
-		inline int* CSRPtrs::outer_end() const {
+		inline int* outer_end() const {
 			if (rows > 0) {
 				return outer_indices ? outer_indices + rows : nullptr;
 			}
@@ -238,7 +239,7 @@ namespace HF::SpatialStructures {
 				// TODO example
 			\endcode
 		*/
-		inline float* CSRPtrs::row_begin(int row_number) const {
+		inline float* row_begin(int row_number) const {
 			float* begin = nullptr;
 
 			if (data && rows > 0) {
@@ -271,7 +272,7 @@ namespace HF::SpatialStructures {
 				// TODO example
 			\endcode
 		*/
-		inline float* CSRPtrs::row_end(int row_number) const {
+		inline float* row_end(int row_number) const {
 			float* end = nullptr;
 			const int next_row = row_number + 1;
 
@@ -309,7 +310,7 @@ namespace HF::SpatialStructures {
 			\endcode
 		*/
 
-		inline int* CSRPtrs::col_begin(int row_number) const {
+		inline int* col_begin(int row_number) const {
 			int* begin = nullptr;
 
 			if (inner_indices && outer_indices) {
@@ -341,7 +342,7 @@ namespace HF::SpatialStructures {
 				// TODO example
 			\endcode
 		*/
-		inline int* CSRPtrs::col_end(int row_number) const {
+		inline int* col_end(int row_number) const {
 			int* end = nullptr;
 			const int next_row = row_number + 1;
 
@@ -460,6 +461,9 @@ namespace HF::SpatialStructures {
 			return this->costs.data(); 
 		}
 
+		inline std::vector<float> GetEdgeCostSetCosts() {
+			return this->costs;
+		}
 	};
 
 	/*! \brief A Graph of nodes connected by edges that supports both integers and HF::SpatialStructures::Node.
@@ -485,7 +489,7 @@ namespace HF::SpatialStructures {
 	*/
 	class Graph {
 		using NodeAttributeValueMap = robin_hood::unordered_map<int, std::string>;
-
+		using NodeFloatAttributeValueMap = robin_hood::unordered_map<int, float>;
 	private:
 		int next_id = 0;								///< The id for the next unique node.
 		std::vector<Node> ordered_nodes;				///< A list of nodes contained by the graph.
@@ -497,7 +501,7 @@ namespace HF::SpatialStructures {
 		bool needs_compression = true;					///< If true, the CSR is inaccurate and requires compression.
 
 		robin_hood::unordered_map<std::string, NodeAttributeValueMap> node_attr_map; ///< Node attribute type : Map of node id to node attribute
-
+		robin_hood::unordered_map<std::string, NodeFloatAttributeValueMap> node_float_attr_map; ///< Node attribute type : Map of node id to node attribute for float
 		std::string active_cost_type;								///< The active edge matrix to use for the graph
 		EdgeMatrix edge_matrix;				///< The underlying CSR containing edge information.
 
@@ -1808,6 +1812,32 @@ namespace HF::SpatialStructures {
 		void AddNodeAttribute(int id, const std::string & attribute, const std::string & score);
 
 		/// <summary>
+		/// Add a float attribute to the node at id. If the node at id already has a score for the
+		/// attribute at name, then existing score should be overwritten.
+		/// 
+		/// If the attribute is a string attribute, score will be added
+		/// as a string value. The attribute will not be converted into a float
+		///	attribute.
+		/// </summary>
+		/// <param name="id">
+		/// The ID of the node that will receive attribute
+		/// </param>
+		/// <param name="name">
+		/// The attribute that the node at ID will receive
+		/// </param>
+		/// <param name="score">
+		/// The weight, or distance that extends from the node at id
+		/// </param>
+
+		/*!
+			\code
+				// TODO example
+			\endcode
+		*/
+
+		void AddNodeAttributeFloat(int id, const std::string& name, const float score);
+
+		/// <summary>
 		/// Add an attribute to the node at id. If the node at id already has a score for the
 		/// attribute at name, then existing score should be overwritten
 		/// </summary>
@@ -1830,6 +1860,33 @@ namespace HF::SpatialStructures {
 			\endcode
 		*/
 		void AddNodeAttributes(const std::vector<int> & id, const std::string &  name, const std::vector<std::string> & scores);
+		/// <summary>
+		/// Add a float attribute to the node at id. If the node at id already has a score for the
+		/// attribute at name, then existing score should be overwritten.
+		/// 
+		/// If the attribute is a string attribute, scores will be added
+		/// as string values. The attribute will not be converted into a float
+		///	attribute.
+		/// </summary>
+		/// <param name="id">
+		/// The container of IDs from which nodes will be retrieved and given attributes
+		/// </param>
+		/// <param name="name">
+		/// The attribute that each node will receive
+		/// </param>
+		/// <param name="scores">
+		/// The container of score, ordered by the container of node IDs
+		/// </param>
+
+		/*!
+			\pre The length of ids, and the length of scores must be equal
+			\throws std::logic_error The length of scores and the length of ID do not match
+
+			\code
+				// TODO example
+			\endcode
+		*/
+		void AddNodeAttributesFloat(const std::vector<int>& id, const std::string& name, const std::vector<float>& scores);
 
 		/// <summary>
 		/// Get the score for the given attribute of every node in the graph. Nodes that do not have
@@ -1878,7 +1935,54 @@ namespace HF::SpatialStructures {
 			\endcode
 		*/
 		std::vector<std::string> GetNodeAttributes(std::string attribute) const;
+		/// <summary>
+		/// Get the score for the given attribute of every node in the graph. Nodes that do not have
+		/// a score for this attribute should return the default value 0.0 for this array.
+		/// </summary>
+		/// <param name="name">
+		/// The attribute from which a container of scores will be obtained. 
+		/// </param>
+		/// <returns>
+		/// A container of score, each in the form of a float, obtained from attribute
+		/// </returns>
+		/*!
+			\pre	`name` is a float attribute. That is, only float values have been added to this attribute.
 
+			\code
+				// be sure to #include "graph.h"
+
+				// Create the nodes
+				HF::SpatialStructures::Node node_0(1.0f, 1.0f, 2.0f);
+				HF::SpatialStructures::Node node_1(2.0f, 3.0f, 4.0f, 5);
+				HF::SpatialStructures::Node node_2(11.0f, 22.0f, 140.0f);
+
+				// Create a container (vector) of nodes
+				std::vector<HF::SpatialStructures::Node> nodes = { node_0, node_1, node_2 };
+
+				// Create matrices for edges and distances, edges.size() == distances().size()
+				std::vector<std::vector<int>> edges = { { 1, 2 }, { 2 }, { 1 } };
+				std::vector<std::vector<float>> distances = { { 1.0f, 2.5f }, { 54.0f }, { 39.0f } };
+
+				// Now you can create a Graph - note that nodes, edges, and distances are passed by reference
+				HF::SpatialStructures::Graph graph(edges, distances, nodes);
+
+				// Get node IDs
+				int ID_0 = graph.getID(node_0);
+				int ID_1 = graph.getID(node_1);
+				int ID_2 = graph.getID(node_2);
+
+				std::vector<int> ids = {ID_0, ID_1, ID_2};
+
+				// Assign attributes to nodes
+				std::string attribute = "demo attribute";
+				std::vector<float> scores = {2.3, 6.1, 4.0};
+				graph.AddNodeAttributesFloat(ids, attribute, scores);
+
+				// Get attribute for all nodes
+				std::vector<float> cross_slopes = graph.GetNodeAttributesFloat(attribute); // {2.3, 6.1, 4.0}
+			\endcode
+		*/
+		std::vector<float> GetNodeAttributesFloat(std::string name) const;
 		/// <summary>
 		/// Get the score for the given attribute of the specified nodes. Nodes that do not have
 		/// a score for this attribute should return an empty string for this array.
@@ -1928,6 +2032,167 @@ namespace HF::SpatialStructures {
 			\endcode
 		*/
 		std::vector<std::string> GetNodeAttributesByID(std::vector<int>& ids, std::string attribute) const;
+
+		/// <summary>
+		/// Get the score for the given attribute of the specified nodes. Nodes that do not have
+		/// a score for this attribute should return an empty string for this array.
+		/// </summary>
+		/// <param name="ids">
+		/// A list of node IDs to obtain scores for.
+		/// </param>
+		/// <param name="name">
+		/// The attribute from which a container of scores will be obtained.
+		/// </param>
+		/// <returns>
+		/// A container of score, each in the form of a std::string, obtained from name
+		/// </returns>
+		/*!
+			\pre	`name` is a float attribute. That is, only float values have been added to this attribute.
+
+			\code
+				// be sure to #include "graph.h"
+
+				// Create the nodes
+				HF::SpatialStructures::Node node_0(1.0f, 1.0f, 2.0f);
+				HF::SpatialStructures::Node node_1(2.0f, 3.0f, 4.0f, 5);
+				HF::SpatialStructures::Node node_2(11.0f, 22.0f, 140.0f);
+
+				// Create a container (vector) of nodes
+				std::vector<HF::SpatialStructures::Node> nodes = { node_0, node_1, node_2 };
+
+				// Create matrices for edges and distances, edges.size() == distances().size()
+				std::vector<std::vector<int>> edges = { { 1, 2 }, { 2 }, { 1 } };
+				std::vector<std::vector<float>> distances = { { 1.0f, 2.5f }, { 54.0f }, { 39.0f } };
+
+				// Now you can create a Graph - note that nodes, edges, and distances are passed by reference
+				HF::SpatialStructures::Graph graph(edges, distances, nodes);
+
+				// Get node IDs
+				int ID_0 = graph.getID(node_0);
+				int ID_1 = graph.getID(node_1);
+				int ID_2 = graph.getID(node_2);
+				std::vector<int> ids = {0, 1, 2};
+
+				// Assign attributes to nodes
+				std::string attribute = "demo attribute";
+				std::vector<float> scores = {1.8, 9.6, 5.7};
+				graph.AddNodeAttributesFloat(ids, attribute, scores);
+
+				// Get attribute for specific nodes
+				std::vector<float> cross_slope_1 = graph.GetNodeAttributesByIDFloat({ID_1}, attribute); // {9.6}
+				std::vector<float> cross_slope_02 = graph.GetNodeAttributesByIDFloat({ID_0, ID_2}, attribute); // {1.8, 5.7}
+			\endcode
+		*/
+		std::vector<float> GetNodeAttributesByIDFloat(std::vector<int>& ids, std::string name) const;
+
+		/*! \brief Check if this attribute exists in the graph and contains float values*/
+		bool IsFloatAttribute(const std::string& name) const;
+
+		/// <summary>
+		/// Count the number of edges of associated cost type
+		/// </summary>
+		/// <param name="cost_type">
+		/// The desired cost type to count the number of edges of
+		/// </param>
+		/// <returns>
+		/// The number of edges of associated cost type in the graph
+		/// </returns>
+
+		int CountEdges(const std::string& cost_type) const;
+
+		/// <summary>
+		/// Count the number of edges in a given edgeset.
+		/// </summary>
+		/// <param name="AllEdges">
+		/// The edgeset to count the number of edges in
+		/// </param>
+		/// <returns>
+		/// The number of edges in the given edgeset
+		/// </returns>
+		
+		int CountEdgesFromEdgeSets(std::vector<EdgeSet> AllEdges) const;
+
+		/// <summary>
+		/// Get edge costs of all given edges
+		/// </summary>
+		/// <param name="cost_type">
+		///  The desired cost type to get costs for
+		/// </param>
+		/// <returns>
+		/// A vector of floats containing all costs of given cost type
+		/// </returns>
+
+		std::vector<float> GetEdgeCosts(const std::string& cost_type) const;
+
+		/// <summary>
+		/// Get costs of all given edges
+		/// </summary>
+		/// <param name="ids">
+		///  The ids of nodes to map to edges for cost calculation
+		/// </param>
+		/// <param name="cost_type">
+		///  The desired cost type to get costs for
+		/// </param>
+		/// <returns>
+		/// A vector of floats containing costs of given cost type associated with the given edges
+		/// </returns>
+		
+		std::vector<float> GetEdgeCostsFromNodeIDs(std::vector<int>& ids, const std::string& cost_type) const;
+		
+		/// <summary>
+		/// Maps a path structure to a vector of node ids (n1,n2,n2,n3,n3...,nk-1,nk)
+		/// </summary>
+		/// <param name="path">
+		///  The path of nodes to map
+		/// </param>
+		/// <returns>
+		/// A vector of node ids that represents the path in the form (n1,n2,n2,n3,n3...,nk-1,nk)
+		/// </returns>
+
+		std::vector<int> MapPathToVectorOfNodes(HF::SpatialStructures::Path path) const;
+
+		/// <summary>
+		/// Maps a path of node ids (n1,n2,...,nk) to (n1,n2,n2,n3,n3...,nk-1,nk)
+		/// </summary>
+		/// <param name="path">
+		///  The path of nodes to map
+		/// </param>
+		/// <returns>
+		/// A vector of node ids that represents the path in the form (n1,n2,n2,n3,n3...,nk-1,nk)
+		/// </returns>
+
+		std::vector<int> MapPathToVectorOfNodes(std::vector<int>& path) const;
+
+		/// <summary>
+		///  Computes an alternate cost type between nodes along a path.
+		/// </summary>
+		/// <param name="path">
+		///	The path of nodes to get costs between.
+		/// </param>
+		/// <param name="cost_type">
+		///	The type of cost to query
+		/// </param>
+		/// <returns>
+		/// A vector of floats, representing each cost between nodes along the path.
+		/// </returns>
+
+		std::vector<float> AlternateCostsAlongPath(Path path, const std::string& cost_type) const;
+
+		/// <summary>
+		///  Computes an alternate cost type between nodes along a path.
+		/// </summary>
+		/// <param name="path">
+		///	The path of nodes to get costs between.
+		/// </param>
+		/// <param name="cost_type">
+		///	The type of cost to query
+		/// </param>
+		/// <returns>
+		/// A vector of floats, representing each cost between nodes along the path.
+		/// </returns>
+		
+		std::vector<float> AlternateCostsAlongPath(std::vector<int>& path, const std::string& cost_type) const;
+
 		/// <summary>
 		/// Clears the attribute at name and all of its contents from the internal hashmap
 		/// </summary>
@@ -2019,7 +2284,17 @@ namespace HF::SpatialStructures {
 			\throws std::out_of_range Trying to add an edge to an alternate cost type when it hasn't already
 			been added to the default graph2) If adding an alternate edge to the graph, the graph must already be compressed
 		*/
-		void Graph::AddEdges(const std::vector<std::vector<IntEdge>>& edges, const std::string& cost_type);
+		void AddEdges(const std::vector<std::vector<IntEdge>>& edges, const std::string& cost_type);
+
+
+		/*! \brief Get the cost map for the graph
+ 
+
+			\param cost_type Name of te cost to get the cost map for
+		
+		*/
+		std::unordered_map<std::string, EdgeCostSet> GetCostMap(const std::string& cost_type = " ") const;
+
 
 		/*!
 			\brief Clear one or more cost arrays from the graph.

@@ -1,4 +1,4 @@
-﻿cmake_minimum_required (VERSION 3.8)
+﻿cmake_minimum_required (VERSION 3.10)
 
 # Break this into two libraries?
 add_library(Pathfinder STATIC)
@@ -23,4 +23,5 @@ target_include_directories(
 		${CMAKE_CURRENT_LIST_DIR}/src
 		${EXTERNAL_DIR}/robin_hood
 		${EXTERNAL_DIR}/boost
+		${EXTERNAL_DIR}/Embree/include
 	)
