@@ -93,22 +93,22 @@
 <h1>dhart.spatialstructures.Graph.attrs_to_costs<a class="headerlink" href="#dhart-spatialstructures-graph-attrs-to-costs" title="Permalink to this heading">¶</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="dhart.spatialstructures.Graph.attrs_to_costs">
-<span class="sig-prename descclassname"><span class="pre">Graph.</span></span><span class="sig-name descname"><span class="pre">attrs_to_costs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">attribute_string</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">cost_string</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="dhart.spatialstructures.Direction.html#dhart.spatialstructures.Direction" title="dhart.spatialstructures.graph.Direction"><span class="pre">Direction</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dhart.spatialstructures.Graph.attrs_to_costs" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">Graph.</span></span><span class="sig-name descname"><span class="pre">attrs_to_costs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">attribute_string</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">cost_string</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="dhart.spatialstructures.Direction.html#dhart.spatialstructures.Direction" title="dhart.spatialstructures.graph.Direction"><span class="pre">Direction</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dhart.spatialstructures.Graph.attrs_to_costs" title="Permalink to this definition">¶</a></dt>
 <dd><p>Generate a cost set based on a set of node parameters</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>attribute_string</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Attribute to create a new cost set from.]</p></li>
-<li><p><strong>cost_string</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Key for the newly generated cost set.</p></li>
+<li><p><strong>attribute_string</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><em>str</em></a>) – Attribute to create a new cost set from.]</p></li>
+<li><p><strong>cost_string</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><em>str</em></a>) – Key for the newly generated cost set.</p></li>
 <li><p><strong>direction</strong> (<a class="reference internal" href="dhart.spatialstructures.Direction.html#dhart.spatialstructures.Direction" title="dhart.spatialstructures.Direction"><em>Direction</em></a>) – Direction to use for calculating the cost of any edge. For example INCOMING will use the cost of the node being traveled to by the edge.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Raises<span class="colon">:</span></dt>
-<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#KeyError" title="(in Python v3.11)"><strong>KeyError</strong></a> – attribute_string was not the key of any node attribute in the graph</p>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#KeyError" title="(in Python v3.13)"><strong>KeyError</strong></a> – attribute_string was not the key of any node attribute in the graph</p>
 </dd>
 </dl>
 <p class="rubric">Examples</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">dhart.spatialstructures</span> <span class="kn">import</span> <span class="n">Graph</span><span class="p">,</span> <span class="n">Direction</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">dhart.spatialstructures</span><span class="w"> </span><span class="kn">import</span> <span class="n">Graph</span><span class="p">,</span> <span class="n">Direction</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">g</span> <span class="o">=</span> <span class="n">Graph</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">g</span><span class="o">.</span><span class="n">AddEdgeToGraph</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">g</span><span class="o">.</span><span class="n">AddEdgeToGraph</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
@@ -179,7 +179,7 @@
         &copy; Copyright 2020.
       </li>
       <li>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 7.0.1.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 7.1.2.
       </li>
     </ul>
     </div>

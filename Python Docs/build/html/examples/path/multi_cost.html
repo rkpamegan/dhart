@@ -95,15 +95,15 @@
 <p>This example uses a simple obj file included in example models.
 For context of what the top-down view is based on, see the figure below.</p>
 <img alt="../../_images/energy_hill.png" src="../../_images/energy_hill.png" />
-<span class="target" id="module-dhart.Examples.PathPlanningCosts"></span><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="target" id="module-dhart.Examples.PathPlanningCosts"></span><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="gp">&gt;&gt;&gt;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">dhart</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">dhart.geometry</span> <span class="kn">import</span> <span class="n">LoadOBJ</span><span class="p">,</span> <span class="n">CommonRotations</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">dhart.graphgenerator</span> <span class="kn">import</span> <span class="n">GenerateGraph</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">dhart.raytracer</span> <span class="kn">import</span> <span class="n">EmbreeBVH</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">dhart.pathfinding</span> <span class="kn">import</span> <span class="n">DijkstraShortestPath</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">dhart.spatialstructures.cost_algorithms</span> <span class="kn">import</span> <span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">dhart</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">dhart.geometry</span><span class="w"> </span><span class="kn">import</span> <span class="n">LoadOBJ</span><span class="p">,</span> <span class="n">CommonRotations</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">dhart.graphgenerator</span><span class="w"> </span><span class="kn">import</span> <span class="n">GenerateGraph</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">dhart.raytracer</span><span class="w"> </span><span class="kn">import</span> <span class="n">EmbreeBVH</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">dhart.pathfinding</span><span class="w"> </span><span class="kn">import</span> <span class="n">DijkstraShortestPath</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">dhart.spatialstructures.cost_algorithms</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
 <span class="gp">... </span>                                    <span class="n">CalculateEnergyExpenditure</span><span class="p">,</span> <span class="n">CostAlgorithmKeys</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -143,7 +143,7 @@ For context of what the top-down view is based on, see the figure below.</p>
 <span class="go">Closest Node:  [  0 786]</span>
 </pre></div>
 </div>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">scipy.spatial.distance</span> <span class="kn">import</span> <span class="n">cdist</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">scipy.spatial.distance</span><span class="w"> </span><span class="kn">import</span> <span class="n">cdist</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">closest_nodes_all</span> <span class="o">=</span> <span class="n">cdist</span><span class="p">(</span><span class="n">graph</span><span class="o">.</span><span class="n">get_node_points</span><span class="p">(),</span> <span class="n">graph</span><span class="o">.</span><span class="n">get_node_points</span><span class="p">())</span>
 <span class="gp">&gt;&gt;&gt;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># Define a start and end node to use for the path (from, to)</span>
@@ -262,7 +262,7 @@ edge cost for the calculation.</p>
         &copy; Copyright 2020.
       </li>
       <li>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 7.0.1.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 7.1.2.
       </li>
     </ul>
     </div>

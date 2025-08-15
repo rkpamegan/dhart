@@ -98,13 +98,13 @@ For context of what the top-down view is based on, see the figure below.</p>
 </section>
 <section id="module-dhart.Examples.GraphGeneratorPlot">
 <span id="basic-graph-visualization"></span><h2>Basic Graph Visualization<a class="headerlink" href="#module-dhart.Examples.GraphGeneratorPlot" title="Permalink to this heading">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">mpl_toolkits.mplot3d</span> <span class="kn">import</span> <span class="n">Axes3D</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">mpl_toolkits.mplot3d</span><span class="w"> </span><span class="kn">import</span> <span class="n">Axes3D</span>
 
-<span class="kn">from</span> <span class="nn">dhart.geometry</span> <span class="kn">import</span> <span class="n">LoadOBJ</span>
-<span class="kn">from</span> <span class="nn">dhart.raytracer</span> <span class="kn">import</span> <span class="n">EmbreeBVH</span>
-<span class="kn">from</span> <span class="nn">dhart.graphgenerator</span> <span class="kn">import</span> <span class="n">GenerateGraph</span>
-<span class="kn">import</span> <span class="nn">dhart</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dhart.geometry</span><span class="w"> </span><span class="kn">import</span> <span class="n">LoadOBJ</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dhart.raytracer</span><span class="w"> </span><span class="kn">import</span> <span class="n">EmbreeBVH</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dhart.graphgenerator</span><span class="w"> </span><span class="kn">import</span> <span class="n">GenerateGraph</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">dhart</span>
 
 <span class="c1"># Get a sample model path</span>
 <span class="n">obj_path</span> <span class="o">=</span> <span class="n">dhart</span><span class="o">.</span><span class="n">get_sample_model</span><span class="p">(</span><span class="s2">&quot;energy_blob_zup.obj&quot;</span><span class="p">)</span>
@@ -171,12 +171,12 @@ an obj or use a proper engine like OpenGL).</p>
 <span id="slope-settings"></span><h2>Slope Settings<a class="headerlink" href="#module-dhart.Examples.GraphGeneratorSlope" title="Permalink to this heading">¶</a></h2>
 <p>To illustrate the thresholds of this wavy hill, we can reduce the slope
 tolerances and plot a new graph which shows certain areas are not reachable.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
-<span class="kn">from</span> <span class="nn">dhart.geometry</span> <span class="kn">import</span> <span class="n">LoadOBJ</span>
-<span class="kn">from</span> <span class="nn">dhart.raytracer</span> <span class="kn">import</span> <span class="n">EmbreeBVH</span>
-<span class="kn">from</span> <span class="nn">dhart.graphgenerator</span> <span class="kn">import</span> <span class="n">GenerateGraph</span>
-<span class="kn">import</span> <span class="nn">dhart</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dhart.geometry</span><span class="w"> </span><span class="kn">import</span> <span class="n">LoadOBJ</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dhart.raytracer</span><span class="w"> </span><span class="kn">import</span> <span class="n">EmbreeBVH</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dhart.graphgenerator</span><span class="w"> </span><span class="kn">import</span> <span class="n">GenerateGraph</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">dhart</span>
 
 <span class="c1"># Get a sample model path</span>
 <span class="n">obj_path</span> <span class="o">=</span> <span class="n">dhart</span><span class="o">.</span><span class="n">get_sample_model</span><span class="p">(</span><span class="s2">&quot;energy_blob_zup.obj&quot;</span><span class="p">)</span>
@@ -232,12 +232,12 @@ tolerances and plot a new graph which shows certain areas are not reachable.</p>
 <p>Using the min_connections parameter we can ensure nodes have a minimum number
 of out directions (out-degree), which can avoid walls/edges and prevent
 ‘islands’ caused by single edge connections</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
-<span class="kn">from</span> <span class="nn">dhart.geometry</span> <span class="kn">import</span> <span class="n">LoadOBJ</span>
-<span class="kn">from</span> <span class="nn">dhart.raytracer</span> <span class="kn">import</span> <span class="n">EmbreeBVH</span>
-<span class="kn">from</span> <span class="nn">dhart.graphgenerator</span> <span class="kn">import</span> <span class="n">GenerateGraph</span>
-<span class="kn">import</span> <span class="nn">dhart</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dhart.geometry</span><span class="w"> </span><span class="kn">import</span> <span class="n">LoadOBJ</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dhart.raytracer</span><span class="w"> </span><span class="kn">import</span> <span class="n">EmbreeBVH</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dhart.graphgenerator</span><span class="w"> </span><span class="kn">import</span> <span class="n">GenerateGraph</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">dhart</span>
 
 <span class="c1"># Get a sample model path</span>
 <span class="n">obj_path</span> <span class="o">=</span> <span class="n">dhart</span><span class="o">.</span><span class="n">get_sample_model</span><span class="p">(</span><span class="s2">&quot;energy_blob_zup.obj&quot;</span><span class="p">)</span>
@@ -340,7 +340,7 @@ of out directions (out-degree), which can avoid walls/edges and prevent
         &copy; Copyright 2020.
       </li>
       <li>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 7.0.1.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 7.1.2.
       </li>
     </ul>
     </div>

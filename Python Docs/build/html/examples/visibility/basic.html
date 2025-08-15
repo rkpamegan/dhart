@@ -95,14 +95,14 @@
 <p>This example uses a simple obj file included in example models.
 For context of what the points are showing in the example, the model itself looks like the image displayed below.</p>
 <img alt="../../_images/visibility_ex_rendered.png" src="../../_images/visibility_ex_rendered.png" />
-<span class="target" id="module-dhart.Examples.VisibilityGraphPlots"></span><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">mpl_toolkits.mplot3d</span> <span class="kn">import</span> <span class="n">Axes3D</span>
+<span class="target" id="module-dhart.Examples.VisibilityGraphPlots"></span><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">mpl_toolkits.mplot3d</span><span class="w"> </span><span class="kn">import</span> <span class="n">Axes3D</span>
 
-<span class="kn">from</span> <span class="nn">dhart.geometry</span> <span class="kn">import</span> <span class="n">LoadOBJ</span>
-<span class="kn">from</span> <span class="nn">dhart.raytracer</span> <span class="kn">import</span> <span class="n">EmbreeBVH</span>
-<span class="kn">from</span> <span class="nn">dhart.graphgenerator</span> <span class="kn">import</span> <span class="n">GenerateGraph</span>
-<span class="kn">from</span> <span class="nn">dhart.visibilitygraph</span> <span class="kn">import</span> <span class="n">VisibilityGraphAllToAll</span>
-<span class="kn">import</span> <span class="nn">dhart</span> <span class="k">as</span> <span class="nn">hfpy</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dhart.geometry</span><span class="w"> </span><span class="kn">import</span> <span class="n">LoadOBJ</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dhart.raytracer</span><span class="w"> </span><span class="kn">import</span> <span class="n">EmbreeBVH</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dhart.graphgenerator</span><span class="w"> </span><span class="kn">import</span> <span class="n">GenerateGraph</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dhart.visibilitygraph</span><span class="w"> </span><span class="kn">import</span> <span class="n">VisibilityGraphAllToAll</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">dhart</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">hfpy</span>
 
 <span class="c1"># Get a sample model path</span>
 <span class="n">obj_path</span> <span class="o">=</span> <span class="n">hfpy</span><span class="o">.</span><span class="n">get_sample_model</span><span class="p">(</span><span class="s2">&quot;VisibilityTestCases.obj&quot;</span><span class="p">)</span>
@@ -246,7 +246,7 @@ by our known model offset</p>
         &copy; Copyright 2020.
       </li>
       <li>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 7.0.1.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 7.1.2.
       </li>
     </ul>
     </div>
