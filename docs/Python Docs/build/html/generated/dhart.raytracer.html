@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>dhart.raytracer &mdash; DHART 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" type="text/css" href="../_static/css/spc-bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../_static/css/spc-extend.css">
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" >
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" >
+    <link rel="stylesheet" href="../_static/scipy.css" type="text/css" >
+    <link rel="stylesheet" href="../_static/plot_directive.css" type="text/css" >
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+    <script type="text/javascript" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/sphinx_highlight.js"></script>
+    <script type="text/javascript" src="../_static/js/copybutton.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" >
+    <link rel="search" title="Search" href="../search.html" >
+    <link rel="top" title="DHART 0.0.1 documentation" href="../index.html" >
+    <link rel="up" title="Code Reference" href="../code.html" >
+    <link rel="next" title="dhart.raytracer.EmbreeBVH" href="dhart.raytracer.EmbreeBVH.html" >
+    <link rel="prev" title="dhart.pathfinding.get_path_from_csr" href="dhart.pathfinding.get_path_from_csr.html" > 
+  </head>
+  <body>
+
+  <div class="container">
+    <div class="header">
+    </div>
+  </div>
+
+
+    <div class="container">
+      <div class="main">
+        
+	<div class="row-fluid">
+	  <div class="span12">
+	    <div class="spc-navbar">
+              
+    <ul class="nav nav-pills pull-left">
+        <li class="active"><a href="http://">Git</a></li>
+	
+        <li class="active"><a href="../index.html">DHART 0.0.1 documentation</a></li>
+	
+          <li class="active"><a href="../code.html" accesskey="U">Code Reference</a></li> 
+    </ul>
+              
+              
+    <ul class="nav nav-pills pull-right">
+      <li class="active">
+        <a href="../genindex.html" title="General Index"
+           accesskey="I">index</a>
+      </li>
+      <li class="active">
+        <a href="dhart.raytracer.EmbreeBVH.html" title="dhart.raytracer.EmbreeBVH"
+           accesskey="N">next</a>
+      </li>
+      <li class="active">
+        <a href="dhart.pathfinding.get_path_from_csr.html" title="dhart.pathfinding.get_path_from_csr"
+           accesskey="P">previous</a>
+      </li>
+    </ul>
+              
+	    </div>
+	  </div>
+	</div>
+        
+
+	<div class="row-fluid">
+          <div class="span9">
+            
+        <div class="bodywrapper">
+          <div class="body" id="spc-section-body">
+            
+  <section id="dhart-raytracer">
+<h1>dhart.raytracer<a class="headerlink" href="#dhart-raytracer" title="Link to this heading">¶</a></h1>
+<p class="rubric">Description</p>
+<section id="perform-efficent-ray-intersections-with-geometry">
+<span id="module-dhart.raytracer"></span><h2>Perform efficent ray intersections with geometry.<a class="headerlink" href="#perform-efficent-ray-intersections-with-geometry" title="Link to this heading">¶</a></h2>
+<p>This library is focused on performing ray intersections with geometry. The key
+datatype for this is the EmbreeBVH, which is required for most functions in
+this package.</p>
+<p>Raytracing involves determining where a line would intersect a mesh
+if it were to continue infinitely form a specific point in the space.
+Many of the other modules in DHARTAPI make use of ray intersections
+in their analysis.</p>
+</section>
+<p class="rubric">Classes</p>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="dhart.raytracer.EmbreeBVH.html#dhart.raytracer.EmbreeBVH" title="dhart.raytracer.EmbreeBVH"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EmbreeBVH</span></code></a>(geometry[, use_precise])</p></td>
+<td><p>An acceelerated datastructure optimized for high performane ray intersections</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dhart.raytracer.RayResultList.html#dhart.raytracer.RayResultList" title="dhart.raytracer.RayResultList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RayResultList</span></code></a>(vector_ptr, data_ptr, ...)</p></td>
+<td><p>A list of results from a set of ray queries.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dhart.raytracer.ResultStruct.html#dhart.raytracer.ResultStruct" title="dhart.raytracer.ResultStruct"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ResultStruct</span></code></a></p></td>
+<td><p>A struct of results containing distance, and meshid</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Functions</p>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="dhart.raytracer.Intersect.html#dhart.raytracer.Intersect" title="dhart.raytracer.Intersect"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Intersect</span></code></a>(bvh, origin, direction[, max_distance])</p></td>
+<td><p>Cast one or more rays to get the distance to their point of intersection and the ID of the mesh they intersected.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dhart.raytracer.IntersectDistanceDouble.html#dhart.raytracer.IntersectDistanceDouble" title="dhart.raytracer.IntersectDistanceDouble"><code class="xref py py-obj docutils literal notranslate"><span class="pre">IntersectDistanceDouble</span></code></a>(bvh, origin, direction)</p></td>
+<td><p>Obtain the distance between a raycast and a point of intersection with double precision</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dhart.raytracer.IntersectForPoint.html#dhart.raytracer.IntersectForPoint" title="dhart.raytracer.IntersectForPoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">IntersectForPoint</span></code></a>(bvh, origins, directions)</p></td>
+<td><p>Cast one or more rays based on input origins and directions</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dhart.raytracer.IntersectOccluded.html#dhart.raytracer.IntersectOccluded" title="dhart.raytracer.IntersectOccluded"><code class="xref py py-obj docutils literal notranslate"><span class="pre">IntersectOccluded</span></code></a>(bvh, origins, directions)</p></td>
+<td><p>Cast one or more occlusion rays in C++</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dhart.raytracer.isValidBVH.html#dhart.raytracer.isValidBVH" title="dhart.raytracer.isValidBVH"><code class="xref py py-obj docutils literal notranslate"><span class="pre">isValidBVH</span></code></a>(bvh)</p></td>
+<td><p>Check if the given object is actually a BVH before sending the pointer to C++</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+
+
+          </div>
+        </div>
+          </div>
+      <div class="spc-rightsidebar span3">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">dhart.raytracer</a><ul>
+<li><a class="reference internal" href="#perform-efficent-ray-intersections-with-geometry">Perform efficent ray intersections with geometry.</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="dhart.pathfinding.get_path_from_csr.html"
+                          title="previous chapter">dhart.pathfinding.get_path_from_csr</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="dhart.raytracer.EmbreeBVH.html"
+                          title="next chapter">dhart.raytracer.EmbreeBVH</a></p>
+  </div>
+
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container container-navbar-bottom">
+      <div class="spc-navbar">
+        
+      </div>
+    </div>
+    <div class="container">
+    <div class="footer">
+    <div class="row-fluid">
+    <ul class="inline pull-left">
+      <li>
+        &copy; Copyright 2020.
+      </li>
+      <li>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 8.1.3.
+      </li>
+    </ul>
+    </div>
+    </div>
+    </div>
+  </body>
+</html>
