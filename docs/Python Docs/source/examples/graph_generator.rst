@@ -8,7 +8,7 @@ Generating a Graph
    graph/generating.rst
    graph/get_csr.rst
    graph/visualize.rst
-
+   graph/custom.rst
 
 .. seealso::
     These examples use methods found in the following modules:

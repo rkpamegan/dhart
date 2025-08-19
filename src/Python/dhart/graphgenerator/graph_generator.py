@@ -9,7 +9,7 @@ from dhart.spatialstructures import Graph
 from . import graph_generator_native_functions
 from dhart.raytracer import EmbreeBVH
 
-__all__ = ['GenerateGraph']
+__all__ = ['GenerateGraph', 'CalculateAndStoreStepTypes']
 
 def GenerateGraph(
     bvh: EmbreeBVH,
@@ -171,10 +171,11 @@ def CalculateAndStoreStepTypes(
 
     Examples:
         Generate a graph and query its step types.
+
         >>> from dhart.geometry import LoadOBJ, MeshInfo, CommonRotations
         >>> from dhart.raytracer import EmbreeBVH  
         >>> from dhart.geometry.mesh_info import ConstructPlane
-        >>> from dhart.graphgenerator import GenerateGraph
+        >>> from dhart.graphgenerator import GenerateGraph, CalculateAndStoreStepTypes
         >>> import dhart
 
         >>> obj_path = dhart.get_sample_model("energy_blob_zup.obj")
@@ -190,14 +191,33 @@ def CalculateAndStoreStepTypes(
         >>> min_connections = 4
 
         >>> g = GenerateGraph(bvh, start_point, spacing, max_nodes,
-                            up_step,up_slope,down_step,down_slope,
-                            max_step_connections, min_connections)
+        ...                 up_step,up_slope,down_step,down_slope,
+        ...                 max_step_connections, min_connections)
 
 
         >>> CalculateAndStoreStepTypes(g, bvh)
         
         >>> print(g.GetEdgeCost(0, 1, "step_type"))
         3.0
+
+        Find a path with the least number of steps required between two nodes.
+
+        >>> from dhart.pathfinding import DijkstraShortestPath
+        >>> SP = DijkstraShortestPath(g, 0, 100, "step_type")
+        >>> print(SP)
+        [(2.,   0) (2.,   4) (1.,  12) (1.,  22) (1.,  41) (1.,  67) (0., 100)]
+
+        >>> total_steps = 0
+        >>> for cost in SP['cost_to_next']:
+        ...    # Costs of 2, 3, and 4 map to up, down, and over steps,
+        ...    # while costs of 0 or 1 map to no connection or no step required 
+        ...    if cost > 1:
+        ...         total_steps += 1
+        >>>
+        >>> print(total_steps)
+        2
+
+
     """
     graph_generator_native_functions.CalculateAndStoreStepTypes(
         g.graph_ptr,
